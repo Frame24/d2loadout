@@ -1,4 +1,11 @@
 ## Preparations
+# !auto-py-to-exe
+import sys
+
+# Определяем, использовать ли print вместо display
+if hasattr(sys, 'frozen'):  # Если код выполняется в собранном файле
+    def display(*args, **kwargs):
+        print(*args, **kwargs)
 import warnings
 warnings.filterwarnings("ignore")
 print("d2loadout update started")
@@ -6,6 +13,7 @@ import json
 import os
 import re
 import pandas as pd
+import numpy as np
 import requests
 from fake_useragent import UserAgent
 from selenium import webdriver
@@ -44,29 +52,102 @@ link_meta = "https://dota2protracker.com/meta"
 driver.implicitly_wait(3)
 driver.get(link_meta)
 driver.implicitly_wait(10)
-def get_d2pt_page_table(driver):
-    # finding table rows in site and converting to format, readable by pandas
-    time.sleep(0.2)
-    category_name_elements = driver.find_elements(By.XPATH, "//*[@data-wr]")
-    div_inner_strs = []
-    for elem in category_name_elements:
-        div_inner_str = (
-            elem.get_attribute("outerHTML").split(">")[0].replace("data-", "")
-        )
-        div_items = re.findall(
-            r'[-\w]+="[\w\d\s.,\/#!$%\^&\*;:{}=\-_`~()\'\\/\[\]]+"', div_inner_str
-        )
-        temp_dict = {}
-        for item in div_items:
-            temp_split = item.split("=")
-            temp_dict[temp_split[0]] = temp_split[1].replace('"', "")
-        div_inner_strs.append(temp_dict)
+from bs4 import BeautifulSoup
+import pandas as pd
+from selenium.webdriver.common.by import By
+import time
 
-    # Dataframe dtype converts
-    df_heroes_table = pd.DataFrame(data=div_inner_strs)
-    df_heroes_table = df_heroes_table.apply(pd.to_numeric, errors="ignore")
-    df_heroes_table = df_heroes_table.round(1)
+def get_d2pt_page_table(driver):
+    # Даем время на загрузку контента
+    time.sleep(0.2)
+
+    # Получаем HTML страницы
+    page_source = driver.page_source
+
+    # Парсим HTML с помощью BeautifulSoup
+    soup = BeautifulSoup(page_source, 'html.parser')
+
+    # Ищем строки таблицы по их CSS-классу
+    table_rows = soup.find_all('div', class_='grid', style=True)
+
+    # Список для хранения данных
+    data = []
+    headers = []
+
+    for index, row in enumerate(table_rows):
+        # Проверяем, чтобы строка не была заголовком
+        cols = row.find_all('div', recursive=False)
+
+        if index == 0:
+            # Считаем первую строку заголовком
+            for col in cols:
+                header_text = col.get_text(strip=True)
+                headers.append(header_text if header_text else None)
+            continue
+
+        row_data = []
+        for col in cols:
+            # Проверяем наличие изображений для извлечения роли
+            img = col.find('img', alt=True)
+            if img:
+                row_data.append(img['alt'])
+                continue
+
+            # Обрабатываем содержимое внутри span
+            spans = col.find_all('span')
+            if spans:
+                span_text = ' '.join([span.get_text(strip=True) for span in spans])
+                row_data.append(span_text if span_text else None)
+                continue
+
+            # Извлекаем текст и убираем пустые значения
+            text = col.get_text(strip=True)
+            row_data.append(text if text else None)
+
+        if row_data:  # Только если данные не пусты
+            data.append(row_data)
+
+    # Преобразуем список в DataFrame
+    df_heroes_table = pd.DataFrame(data, columns=headers)
+
+    # Убираем лишние строки или обрабатываем некорректные данные
+    df_heroes_table = df_heroes_table.dropna(how='all')
+
+    # Очистка данных в процентах и диапазонах
+    def clean_data(value):
+        if isinstance(value, str):
+            if '%' in value:
+                try:
+                    return float(value.replace('%', ''))
+                except ValueError:
+                    return value  # Вернуть исходное значение, если не удалось преобразовать
+            elif '(' in value and ')' in value:
+                try:
+                    main_value, range_values = value.split('(')
+                    main_value = main_value.strip()
+                    range_values = range_values.replace(')', '').split('-')
+                    return {
+                        'main': int(main_value),
+                        'range_min': int(range_values[0]),
+                        'range_max': int(range_values[1])
+                    }
+                except ValueError:
+                    return value  # Вернуть исходное значение, если формат не соответствует
+        return value
+
+    # Применяем очистку данных ко всем ячейкам
+    df_heroes_table = df_heroes_table.applymap(clean_data)
+
+    # Обработка типов данных для чисел
+    df_heroes_table = df_heroes_table.apply(lambda x: pd.to_numeric(x, errors='ignore') if x.name != 2 else x)
+
     return df_heroes_table
+
+# Пример использования:
+# driver = ...  # Selenium WebDriver
+# df = get_d2pt_page_table(driver)
+# print(df)
+
 print("checking meta...")
 print("fetching heroes info for pos 1")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Carry')]").click()
@@ -89,29 +170,71 @@ driver.find_element(By.XPATH, "//div[contains(text(), 'Pos 5')]").click()
 df_5 = get_d2pt_page_table(driver)
 
 df_full = pd.concat([df_1, df_2, df_3, df_4, df_5], axis=0)
-# df_full = df_full.drop(["class"], axis=1)
 df_full
 ## Facets
 link = "https://dota2protracker.com/facets"
 driver.implicitly_wait(2)
 driver.get(link)
 hero_req = requests.get("https://dota2protracker.com/hero/Tiny")
-facetData = re.findall(r'facetData:{.+}', hero_req.text)[0].replace("facetData:", "")
+import re
+
+# Пример HTML-кода (замени на свой)
+html_text = hero_req.text
+# Регулярное выражение для нахождения объекта data
+pattern = r'const data = (\[.+?\]);'
+constdata = re.findall(pattern, html_text, re.DOTALL)[0]
+
 import js2py
-tojs = re.findall(r'const data = \[.+\"data\":{', hero_req.text)[0]
-tojs = tojs + re.findall(r'facetData:{.+},buildData', hero_req.text)[0].replace(",buildData", "}}]")
-js_res = js2py.eval_js(tojs) 
-d = js_res[2]["data"]["facetData"]
-[d[item]["facets"] for item in d]
-facets_d = {}
-for item in d:
-    facet_names = []
-    for facets in d[item]["facets"]:
-        facet_names.append(facets["name"].upper())
-    facets_d[item] = facet_names
-facets_d
-# with open("./facetData.json", 'w+', encoding="utf-8") as f:
-#     f.write(re.findall(r'facetData:{.+}', hero_req.text)[0].replace("facetData:", ""))
+import json
+import pandas as pd
+
+# Пример JavaScript-кода
+js_code = f"""
+var data = {constdata};
+
+// Возвращаем JSON-строку facetData
+JSON.stringify(data[2].data.facetData);
+"""
+
+# Исполняем JavaScript-код
+result = js2py.eval_js(js_code)
+
+if result:
+    # Преобразуем JSON-строку в Python-словарь
+    facet_data = json.loads(result)
+    
+    # Инициализируем пустой DataFrame
+    all_facets_df = pd.DataFrame()
+
+    # Итерация по всем ключам в facetData
+    for key, value in facet_data.items():
+        facets = value.get("facets", [])
+        # Преобразуем каждый набор facets в DataFrame
+        facets_data = []
+        for facet in facets:
+            if not facet.get("deprecated", False):  # Пропускаем deprecated
+                facets_data.append(facet)
+        
+        facets_df = pd.DataFrame(facets_data)
+        
+        # Добавляем информацию о ключе, id и localized_name в DataFrame
+        facets_df["key"] = key  # Ключ из facetData
+        facets_df["id"] = value.get("id")
+        facets_df["localized_name"] = value.get("localized_name")
+        
+        # Объединяем текущий DataFrame с общим
+        all_facets_df = pd.concat([all_facets_df, facets_df], ignore_index=True)
+    
+    # Перенумерация facet_number
+    all_facets_df["facet_number"] = (
+        all_facets_df.groupby(["key", "id"]).cumcount() + 1
+    )
+    
+    # Выводим общий DataFrame
+    display(all_facets_df)
+else:
+    print("Данные не найдены или невалидны.")
+
 def get_d2pt_page_table_facets(driver):
     time.sleep(0.2)
     # finding table rows in site and converting to format, readable by pandas
@@ -135,332 +258,469 @@ print("checking facets...")
 print("fetching facets info for pos 1")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Carry')]").click()
 df_1 = get_d2pt_page_table_facets(driver)
-df_1["pos"] = "pos 1"
+df_1["Role"] = "pos 1"
 
 print("fetching facets info for pos 2")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Mid')]").click()
 df_2 = get_d2pt_page_table_facets(driver)
-df_2["pos"] = "pos 2"
+df_2["Role"] = "pos 2"
 
 print("fetching facets info for pos 3")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Off')]").click()
 df_3 = get_d2pt_page_table_facets(driver)
-df_3["pos"] = "pos 3"
+df_3["Role"] = "pos 3"
 
 print("fetching facets info for pos 4")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Pos 4')]").click()
 df_4 = get_d2pt_page_table_facets(driver)
-df_4["pos"] = "pos 4"
+df_4["Role"] = "pos 4"
 
 print("fetching facets info for pos 5")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Pos 5')]").click()
 df_5 = get_d2pt_page_table_facets(driver)
-df_5["pos"] = "pos 5"
+df_5["Role"] = "pos 5"
 
 df_full_facets = pd.concat([df_1,df_2,df_3,df_4,df_5], axis=0)
 
 df_full_facets = df_full_facets.rename({
     "Hero": "hero",
     "Facet": "facet",
-    "Matches": "matches",
-    "Win Rate": "wr"
-}, axis=1)[["hero", "facet", "matches", "wr", "pos"]]
+    "Matches": "Matches",
+    "Win Rate": "Win Rate"
+}, axis=1)[["hero", "facet", "Matches", "Win Rate", "Role"]]
 
-df_full_facets["wr"] = df_full_facets["wr"].apply(lambda x: x.replace("%", ""))
+df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(lambda x: x.replace("%", ""))
 df_full_facets = df_full_facets.apply(pd.to_numeric, errors='ignore')
 
 df_full_facets
 ## Results
 print("creating in-game loadouts")
-req = requests.get("https://dota2protracker.com/_get/search").json()
-hero_names = [item["displayName"] for item in req["heroes"]]
-hero_ids = [item["hero_id"] for item in req["heroes"]]
-hero_id = dict(zip(hero_names, hero_ids))
-df_full["hero_id"] = df_full["hero"].apply(lambda x: hero_id[x])
-df_full_facets["hero_id"] = df_full_facets["hero"].apply(lambda x: hero_id[x])
-df_full_facets["facet_id"] = df_full_facets.apply(lambda x: facets_d[f"{x.hero_id}"].index(x.facet), axis=1)
-pd.set_option('display.max_rows', 20)
-df_full_facets
-pd.set_option('display.max_rows', 20)
-def make_config(get_df_func, df, name):
-    margin = 20
-    width = 585 - margin
-    height = 189 - margin
-    not_included = [
-        id
-        for id in hero_ids
-        if id
-        not in [
-            j for sub in [get_df_func(df, i) for i in [1, 2, 3, 4, 5]] for j in sub
-        ]
-    ]
+import pandas as pd
 
-    return {
-        "config_name": name,
-        "categories": [
-            {
-                "category_name": "Carry",
-                "x_position": 0.000000,
-                "y_position": 0.000000,
-                "width": width,
-                "height": height,
-                "hero_ids": get_df_func(df, 1),
-            },
-            {
-                "category_name": "Mid",
-                "x_position": 0.000000,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": get_df_func(df, 2),
-            },
-            {
-                "category_name": "Offlane",
-                "x_position": 0.000000,
-                "y_position": (height + margin) * 2,
-                "width": width,
-                "height": height,
-                "hero_ids": get_df_func(df, 3),
-            },
-            {
-                "category_name": "Semi-Support",
-                "x_position": width + margin,
-                "y_position": 0.000000,
-                "width": width,
-                "height": height,
-                "hero_ids": get_df_func(df, 4),
-            },
-            {
-                "category_name": "Full-Support",
-                "x_position": width + margin,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": get_df_func(df, 5),
-            },
-            {
-                "category_name": "Not-Included",
-                "x_position": width + margin,
-                "y_position": (height + margin) * 2,
-                "width": width,
-                "height": height,
-                "hero_ids": not_included,
-            },
-        ],
-    }
-df_full_facets.sort_values("hero")
-df_full_facets[
-    (df_full_facets["pos"] == f"pos {5}") & (df_full_facets["matches"] >= 50) & (df_full_facets["wr"] > 51)
-].sort_values(["wr"], ascending=False)
-def make_config_facet(df, name, settings_num=1):
-    max_height = 570
-    max_width = 1180 - 100
-    margin = 20
-    width = max_width / 5 - margin
-    height = max_height / 2 - margin
-    
-    height_3 = (max_height / 5) - 20
-    width_3 = 70
-    
-    arr_df = []
-    for position in [1,2,3,4,5]:
-        if settings_num == 1:
-            arr_df.append(df[
-                (df["pos"] == f"pos {position}") & (df["matches"] > 200) & (df["wr"] > 51)
-            ].sort_values(["wr"], ascending=False))
-        if settings_num == 2:
-            arr_df.append(df[
-                (df["pos"] == f"pos {position}") & (df["matches"] > 50) & (df["wr"] > 51)
-            ].sort_values(["wr"], ascending=False))
-        
-    return {
-        "config_name": name,
-        "categories": [
-            {
-                "category_name": "Carry Facet 1",
-                "x_position": (width + margin) * 0,
-                "y_position": (height + margin) * 0,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[0][arr_df[0]["facet_id"] == 0]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Mid Facet 1",
-                "x_position": (width + margin) * 1,
-                "y_position": (height + margin) * 0,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[1][arr_df[1]["facet_id"] == 0]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Offlane Facet 1",
-                "x_position": (width + margin) * 2,
-                "y_position": (height + margin) * 0,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[2][arr_df[2]["facet_id"] == 0]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Semi-Support Facet 1",
-                "x_position": (width + margin) * 3,
-                "y_position": (height + margin) * 0,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[3][arr_df[3]["facet_id"] == 0]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Full-Support Facet 1",
-                "x_position": (width + margin) * 4,
-                "y_position": (height + margin) * 0,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[4][arr_df[4]["facet_id"] == 0]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Carry Facet 2",
-                "x_position": (width + margin) * 0,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[0][arr_df[0]["facet_id"] == 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Mid Facet 2",
-                "x_position": (width + margin) * 1,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[1][arr_df[1]["facet_id"] == 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Offlane Facet 2",
-                "x_position": (width + margin) * 2,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[2][arr_df[2]["facet_id"] == 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Semi-Support Facet 2",
-                "x_position": (width + margin) * 3,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[3][arr_df[3]["facet_id"] == 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "Full-Support Facet 2",
-                "x_position": (width + margin) * 4,
-                "y_position": (height + margin) * 1,
-                "width": width,
-                "height": height,
-                "hero_ids": arr_df[4][arr_df[4]["facet_id"] == 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "pos1 F 3+",
-                "x_position": max_width + margin,
-                "y_position": 0.000000,
-                "width": width_3,
-                "height": height_3,
-                "hero_ids": arr_df[0][arr_df[0]["facet_id"] > 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "pos2 F 3+",
-                "x_position": max_width + margin,
-                "y_position": (height_3 + margin) * 1,
-                "width": width_3,
-                "height": height_3,
-                "hero_ids": arr_df[1][arr_df[1]["facet_id"] > 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "pos3 F 3+",
-                "x_position": max_width + margin,
-                "y_position": (height_3 + margin) * 2,
-                "width": width_3,
-                "height": height_3,
-                "hero_ids": arr_df[2][arr_df[2]["facet_id"] > 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "pos4 F 3+",
-                "x_position": max_width + margin,
-                "y_position": (height_3 + margin) * 3,
-                "width": width_3,
-                "height": height_3,
-                "hero_ids": arr_df[3][arr_df[3]["facet_id"] > 1]["hero_id"].values.tolist(),
-            },
-            {
-                "category_name": "pos5 F 3+",
-                "x_position": max_width + margin,
-                "y_position": (height_3 + margin) * 4,
-                "width": width_3,
-                "height": height_3,
-                "hero_ids": arr_df[4][arr_df[4]["facet_id"] > 1]["hero_id"].values.tolist(),
-            },
-        ],
-    }
-df = df_full
-position = 5
-(
-    df[
-        (df["pos"] == f"pos {position}") & (df["matches"] > 200) & (df["wr"] > 50)
-    ].sort_values(["matches"], ascending=False)
-)
-def filer_heroes(df, pos=1, matches=0, wr=0, sort_by="wr"):
-    return df[
-        (df["pos"] == f"pos {pos}") & (df["matches"] > matches) & (df["wr"] > wr)
-    ].sort_values([sort_by], ascending=False)
-df = df_full
-filer_heroes(df, 5, 200, 0, "matches")
-df = df_full
-position = 5
-df[
-    (df["pos"] == f"pos {position}") 
-    & (df["matches"] > 200) 
-    & (df["wr"] > 50)
-].sort_values(["wr"], ascending=False)
-def get_by_rating(df: pd.DataFrame, position: int):
-    return (
-        df[(df["pos"] == f"pos {position}") & (df["matches"] > 200)]
-        .sort_values(["rating"], ascending=False)["hero_id"]
-        .values
-        .tolist()
-    )
-def get_expert(df: pd.DataFrame, position: int):
-    return (
-        df[
-            (df["pos"] == f"pos {position}")
-            & (df["expertmatches"] > 20)
-            & (df["expert"] > 55)
-            & (df["matches"] > 100)
+
+class HeroConfigProcessor:
+    def __init__(self, df, name, data_type="facet"):
+        """
+        Класс для обработки и создания конфигураций на основе DataFrame.
+
+        Args:
+            df (pd.DataFrame): DataFrame с данными героев.
+            name (str): Имя конфигурации.
+            data_type (str): Тип данных ('facet' или 'regular').
+        """
+        self.df = df
+        self.name = name
+        self.data_type = data_type
+
+    def get_hero_ids(
+        self,
+        position,
+        facet_number=None,
+        facet_id=None,
+        wr_threshold=50,
+        matches_threshold=50,
+        expert_matches_threshold=None,
+        expert_wr_threshold=None,
+        mmr_9500_matches_threshold=None,
+        mmr_9500_wr_threshold=None,
+        rating_threshold=None,
+        sort_by="Win Rate",
+        ascending=False,
+    ):
+        """
+        Получает список идентификаторов героев для указанной позиции.
+
+        Args:
+            position (int): Позиция героя (1 для pos 1, 2 для pos 2 и т.д.).
+            facet_number (int, optional): Номер фасета.
+            facet_id (int, optional): Идентификатор фасета (название фасета).
+            wr_threshold (float, optional): Минимальный win rate.
+            matches_threshold (int, optional): Минимальное количество матчей.
+            expert_matches_threshold (int, optional): Минимальное количество экспертных матчей.
+            expert_wr_threshold (float, optional): Минимальный экспертный win rate.
+            mmr_9500_matches_threshold (int, optional): Минимальное количество матчей для 9500 MMR.
+            mmr_9500_wr_threshold (float, optional): Минимальный win rate для 9500 MMR.
+            rating_threshold (float, optional): Минимальный D2PT рейтинг.
+            sort_by (str, optional): Поле для сортировки.
+            ascending (bool, optional): Порядок сортировки.
+
+        Returns:
+            list: Список идентификаторов героев.
+        """
+        position_str = f"pos {position}"
+
+        # Фильтруем данные по базовым критериям
+        filtered_df = self.df[
+            (self.df["Role"] == position_str)
+            & (self.df["Matches"] > matches_threshold)
+            & (self.df["Win Rate"] > wr_threshold)
         ]
-        .sort_values(["expert"], ascending=False)["hero_id"]
-        .values.tolist()
-    )
-def get_popular(df: pd.DataFrame, position: int):
-    return (
-        df[(df["pos"] == f"pos {position}") & (df["matches"] > 200)]
-        .sort_values(["matches"], ascending=False)["hero_id"]
-        .values
-        .tolist()
-    )
-def get_wr(df: pd.DataFrame, position: int):
-    return (
-        df[(df["pos"] == f"pos {position}") & (df["matches"] > 200) & (df["wr"] > 50)]
-        .sort_values(["wr"], ascending=False)["hero_id"]
-        .values
-        .tolist()
-    )
+
+        # Дополнительные фильтры
+        if expert_matches_threshold is not None and "Expert Matches" in self.df.columns:
+            filtered_df = filtered_df[
+                filtered_df["Expert Matches"] > expert_matches_threshold
+            ]
+        if expert_wr_threshold is not None and "Expert Win Rate" in self.df.columns:
+            filtered_df = filtered_df[
+                filtered_df["Expert Win Rate"] > expert_wr_threshold
+            ]
+        if mmr_9500_matches_threshold is not None and "9500 Matches" in self.df.columns:
+            filtered_df = filtered_df[
+                filtered_df["9500 Matches"] > mmr_9500_matches_threshold
+            ]
+        if mmr_9500_wr_threshold is not None and "9500 Win Rate" in self.df.columns:
+            filtered_df = filtered_df[
+                filtered_df["9500 Win Rate"] > mmr_9500_wr_threshold
+            ]
+        if rating_threshold is not None and "D2PT Rating" in self.df.columns:
+            filtered_df = filtered_df[filtered_df["D2PT Rating"] > rating_threshold]
+
+        # Фильтрация для фасетов
+        if self.data_type == "facet":
+            if facet_number is not None:
+                if facet_number == "3+":
+                    filtered_df = filtered_df[filtered_df["facet_number"] > 2]
+                else:
+                    filtered_df = filtered_df[
+                        filtered_df["facet_number"] == facet_number
+                    ]
+            if facet_id is not None:
+                filtered_df = filtered_df[filtered_df["facet"] == facet_id]
+
+        # Сортировка данных
+        if sort_by in filtered_df.columns:
+            filtered_df = filtered_df.sort_values(by=sort_by, ascending=ascending)
+
+        return filtered_df["hero_id"].tolist()
+
+    def build_config(
+        self,
+        wr_threshold=50,
+        matches_threshold=50,
+        expert_matches_threshold=None,
+        expert_wr_threshold=None,
+        mmr_9500_matches_threshold=None,
+        mmr_9500_wr_threshold=None,
+        rating_threshold=None,
+        sort_by="Win Rate",
+        ascending=False,
+    ):
+        """
+        Создает конфигурацию на основе обработанных данных.
+
+        Args:
+            wr_threshold (float, optional): Минимальный win rate.
+            matches_threshold (int, optional): Минимальное количество матчей.
+            expert_matches_threshold (int, optional): Минимальное количество экспертных матчей.
+            expert_wr_threshold (float, optional): Минимальный экспертный win rate.
+            mmr_9500_matches_threshold (int, optional): Минимальное количество матчей для 9500 MMR.
+            mmr_9500_wr_threshold (float, optional): Минимальный win rate для 9500 MMR.
+            rating_threshold (float, optional): Минимальный D2PT рейтинг.
+            sort_by (str, optional): Поле для сортировки.
+            ascending (bool, optional): Порядок сортировки.
+
+        Returns:
+            dict: Конфигурация категорий.
+        """
+        if self.data_type == "facet":
+            return self._build_facet_config(
+                wr_threshold,
+                matches_threshold,
+                expert_matches_threshold,
+                expert_wr_threshold,
+                mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold,
+                rating_threshold,
+                sort_by,
+                ascending,
+            )
+        elif self.data_type == "regular":
+            return self._build_regular_config(
+                wr_threshold,
+                matches_threshold,
+                expert_matches_threshold,
+                expert_wr_threshold,
+                mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold,
+                rating_threshold,
+                sort_by,
+                ascending,
+            )
+        else:
+            raise ValueError(f"Unsupported data type: {self.data_type}")
+
+    def _build_facet_config(
+        self,
+        wr_threshold,
+        matches_threshold,
+        expert_matches_threshold,
+        expert_wr_threshold,
+        mmr_9500_matches_threshold,
+        mmr_9500_wr_threshold,
+        rating_threshold,
+        sort_by,
+        ascending,
+    ):
+        margin = 20
+        max_height = 570
+        max_width = 1180 - 100
+        width = max_width / 5 - margin
+        height = max_height / 2 - margin
+
+        height_3 = (max_height / 5) - 20
+        width_3 = 70
+
+        categories = []
+        for position in range(1, 6):
+            hero_ids_facet_1 = self.get_hero_ids(
+                position,
+                facet_number=1,
+                wr_threshold=wr_threshold,
+                matches_threshold=matches_threshold,
+                expert_matches_threshold=expert_matches_threshold,
+                expert_wr_threshold=expert_wr_threshold,
+                mmr_9500_matches_threshold=mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold=mmr_9500_wr_threshold,
+                rating_threshold=rating_threshold,
+                sort_by=sort_by,
+                ascending=ascending,
+            )
+            hero_ids_facet_2 = self.get_hero_ids(
+                position,
+                facet_number=2,
+                wr_threshold=wr_threshold,
+                matches_threshold=matches_threshold,
+                expert_matches_threshold=expert_matches_threshold,
+                expert_wr_threshold=expert_wr_threshold,
+                mmr_9500_matches_threshold=mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold=mmr_9500_wr_threshold,
+                rating_threshold=rating_threshold,
+                sort_by=sort_by,
+                ascending=ascending,
+            )
+            hero_ids_facet_3_plus = self.get_hero_ids(
+                position,
+                facet_number="3+",
+                wr_threshold=wr_threshold,
+                matches_threshold=matches_threshold,
+                expert_matches_threshold=expert_matches_threshold,
+                expert_wr_threshold=expert_wr_threshold,
+                mmr_9500_matches_threshold=mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold=mmr_9500_wr_threshold,
+                rating_threshold=rating_threshold,
+                sort_by=sort_by,
+                ascending=ascending,
+            )
+
+            if hero_ids_facet_1:
+                categories.append(
+                    {
+                        "category_name": f"Pos {position} F 1",
+                        "x_position": (width + margin) * (position - 1),
+                        "y_position": 0,
+                        "width": width,
+                        "height": height,
+                        "hero_ids": hero_ids_facet_1,
+                    }
+                )
+            if hero_ids_facet_2:
+                categories.append(
+                    {
+                        "category_name": f"Pos {position} F 2",
+                        "x_position": (width + margin) * (position - 1),
+                        "y_position": height + margin,
+                        "width": width,
+                        "height": height,
+                        "hero_ids": hero_ids_facet_2,
+                    }
+                )
+            if hero_ids_facet_3_plus:
+                categories.append(
+                    {
+                        "category_name": f"Pos {position} F 3+",
+                        "x_position": max_width + margin,
+                        "y_position": (height_3 + margin) * (position - 1),
+                        "width": width_3,
+                        "height": height_3,
+                        "hero_ids": hero_ids_facet_3_plus,
+                    }
+                )
+
+        return {
+            "config_name": self.name,
+            "categories": categories,
+        }
+
+    def _build_regular_config(
+        self,
+        wr_threshold,
+        matches_threshold,
+        expert_matches_threshold,
+        expert_wr_threshold,
+        mmr_9500_matches_threshold,
+        mmr_9500_wr_threshold,
+        rating_threshold,
+        sort_by,
+        ascending,
+    ):
+        margin = 20
+        width = 585 - margin
+        height = 189 - margin
+
+        included_hero_ids = set()
+        categories = []
+
+        for position in range(1, 6):
+            hero_ids_regular = self.get_hero_ids(
+                position,
+                wr_threshold=wr_threshold,
+                matches_threshold=matches_threshold,
+                expert_matches_threshold=expert_matches_threshold,
+                expert_wr_threshold=expert_wr_threshold,
+                mmr_9500_matches_threshold=mmr_9500_matches_threshold,
+                mmr_9500_wr_threshold=mmr_9500_wr_threshold,
+                rating_threshold=rating_threshold,
+                sort_by=sort_by,
+                ascending=ascending,
+            )
+
+            included_hero_ids.update(hero_ids_regular)
+
+            if position <= 3:
+                categories.append(
+                    {
+                        "category_name": f"Regular Pos {position}",
+                        "x_position": 0.0,
+                        "y_position": (height + margin) * (position - 1),
+                        "width": width,
+                        "height": height,
+                        "hero_ids": hero_ids_regular,
+                    }
+                )
+            else:
+                categories.append(
+                    {
+                        "category_name": f"Regular Pos {position}",
+                        "x_position": width + margin,
+                        "y_position": (height + margin) * (position - 4),
+                        "width": width,
+                        "height": height,
+                        "hero_ids": hero_ids_regular,
+                    }
+                )
+
+        all_hero_ids = set(self.df["hero_id"].unique())
+        not_included_hero_ids = list(all_hero_ids - included_hero_ids)
+
+        if not_included_hero_ids:
+            categories.append(
+                {
+                    "category_name": "Not-Included",
+                    "x_position": width + margin,
+                    "y_position": (height + margin) * 2,
+                    "width": width,
+                    "height": height,
+                    "hero_ids": not_included_hero_ids,
+                }
+            )
+
+        return {
+            "config_name": self.name,
+            "categories": categories,
+        }
+# Оставляем только уникальные значения в правом DataFrame
+all_facets_df_unique = all_facets_df.drop_duplicates(subset=["localized_name"], keep="first")
+
+# Выполняем объединение
+df_final = pd.merge(
+    df_full,
+    all_facets_df_unique[["id", "localized_name"]],  # Оставляем только нужные столбцы
+    left_on=["Hero"],  # Соответствие по названию фасета и герою
+    right_on=["localized_name"],  # Название фасета и героя
+    how="left"  # Оставляем все строки из df_full
+)
+
+# Переименовываем столбец "id" в "hero_id"
+df_final.rename(columns={"id": "hero_id"}, inplace=True)
+
+# Перемещаем "hero_id" на нулевую позицию
+cols = ["hero_id"] + [col for col in df_final.columns if col != "hero_id"]
+df_final = df_final[cols]
+
+# Заменить hero_id на 76 для строк, где Hero = "Outworld Destroyer"
+df_final.loc[df_final['Hero'] == "Outworld Destroyer", 'hero_id'] = 76
+
+# Разделяем столбец Expert
+df_final["Expert Win Rate"] = df_final["Expert"].str.extract(r"(\d+\.\d+)%").astype(float)
+df_final["Expert Matches"] = df_final["Expert"].str.extract(r"\((\d+)\)").astype(int)
+
+# Разделяем столбец WR 9500+ MMR
+df_final["9500 Win Rate"] = df_final["WR 9500+ MMR"].str.extract(r"(\d+\.\d+)%").astype(float)
+df_final["9500 Matches"] = df_final["WR 9500+ MMR"].str.extract(r" (\d+) ").astype(int)
+
+# Удаляем старые столбцы (если нужно)
+df_final.drop(columns=["Expert", "WR 9500+ MMR"], inplace=True)
+
+# Результат
+display(df_final)
+
+# Приводим названия фасетов к единому регистру
+df_full_facets["facet_upper"] = df_full_facets["facet"].str.upper()  # В верхний регистр
+all_facets_df["name_upper"] = all_facets_df["name"].str.upper()  # В верхний регистр
+
+# Выполняем объединение (merge) двух DataFrame по колонкам с названиями фасетов
+df_final_facets = pd.merge(
+    df_full_facets,
+    all_facets_df[["facet_number", "id", "name_upper", "localized_name"]],  # Оставляем только нужные столбцы
+    left_on=["facet_upper", "hero"],  # Соответствие по названию фасета и герою
+    right_on=["name_upper", "localized_name"],  # Название фасета и героя
+    how="left"  # Оставляем все строки из df_full_facets
+)
+
+# Удаляем временные колонки с верхним регистром (если они не нужны)
+df_final_facets.drop(columns=["facet_upper", "name_upper"], inplace=True)
+
+# Переименовываем столбец "id" в "hero_id"
+df_final_facets.rename(columns={"id": "hero_id"}, inplace=True)
+
+# Перемещаем "hero_id" на нулевую позицию
+cols = ["hero_id"] + [col for col in df_final_facets.columns if col != "hero_id"]
+df_final_facets = df_final_facets[cols]
+
+# Итоговые столбцы
+df_final_facets = df_final_facets[["hero_id", "hero", "facet", "Matches", "Win Rate", "Role", "facet_number"]]
+
+# Результат
+display(df_final_facets)
+
 config = {
     "version": 3,
     "configs": [
-        make_config_facet(df_full_facets, "Facets matches>200"),
-        make_config_facet(df_full_facets, "Facets All", 2),
-        make_config(get_wr, df_full, "Win rate"),
-        make_config(get_popular, df_full, "Popularity"),
-        make_config(get_by_rating, df_full, "D2PT Rating"),
+        # Фасеты
+        HeroConfigProcessor(df_final_facets, "Facet Matches>200", data_type="facet").build_config(matches_threshold=200, wr_threshold=51),
+        HeroConfigProcessor(df_final_facets, "Facet Matches>50", data_type="facet").build_config(matches_threshold=50, wr_threshold=51),
+        
+        # Регулярные конфиги
+        HeroConfigProcessor(df_final, "Win Rate", data_type="regular").build_config(matches_threshold=200, wr_threshold=51),
+        HeroConfigProcessor(df_final, "D2PT", data_type="regular").build_config(matches_threshold=200, wr_threshold=0, sort_by="D2PT Rating"),
+        
+        # Эксперты
+        HeroConfigProcessor(df_final, "Expert Win Rate", data_type="regular").build_config(
+            expert_matches_threshold=50, expert_wr_threshold=51, sort_by="Expert Win Rate"
+        ),
+        
+        # 9500 MMR
+        HeroConfigProcessor(df_final, "9500 Win Rate", data_type="regular").build_config(
+            mmr_9500_matches_threshold=100, mmr_9500_wr_threshold=51, sort_by="9500 Win Rate"
+        ),
     ],
 }
-driver.quit()
+
+import threading
+
+
+threading.Thread(target=lambda: driver.quit() if driver.service.process else None).start()
 ## Find Steam
 import os
 import winreg
@@ -510,8 +770,31 @@ steam_dir
 dirs_to_check = [os.path.join(steam_dir, id, "570", "remote", "cfg") for id in os.listdir(steam_dir)]
 cfg_dirs = [dir for dir in dirs_to_check if os.path.isdir(dir)]
 cfg_dirs
+from datetime import datetime
+
 for dir in cfg_dirs:
-    with open(os.path.join(dir, "hero_grid_config.json"), 'w+') as f:
+    # Убедимся, что папка old_grid существует
+    old_grid_dir = os.path.join(dir, "old_grid")
+    os.makedirs(old_grid_dir, exist_ok=True)
+
+    # Путь к текущему файлу конфигурации
+    current_config_path = os.path.join(dir, "hero_grid_config.json")
+
+    # Если текущий конфиг существует, переместим его в old_grid с отметкой времени
+    if os.path.exists(current_config_path):
+        timestamp = datetime.now().strftime("%Y%m%d")
+        old_config_path = os.path.join(
+            old_grid_dir, f"hero_grid_config_{timestamp}.json"
+        )
+
+        # Если файл с таким именем уже существует, удаляем его перед перемещением
+        if os.path.exists(old_config_path):
+            os.remove(old_config_path)
+
+        os.rename(current_config_path, old_config_path)
+
+    # Сохраняем новую версию конфигурации
+    with open(current_config_path, "w") as f:
         json.dump(dict(config), f)
 ## Autorun
 import getpass
