@@ -7,11 +7,11 @@
   },
   {
    "optionDest": "filenames",
-   "value": "D:/Kirill/Desktop/d2loadout/main.py"
+   "value": "D:/Desktop/d2loadout/test.py"
   },
   {
    "optionDest": "onefile",
-   "value": true
+   "value": false
   },
   {
    "optionDest": "console",
@@ -19,7 +19,7 @@
   },
   {
    "optionDest": "icon_file",
-   "value": "D:/Kirill/Desktop/d2loadout/icon.ico"
+   "value": "D:/Desktop/d2loadout/icon.ico"
   },
   {
    "optionDest": "name",
@@ -58,12 +58,12 @@
    "value": false
   },
   {
-   "optionDest": "pathex",
-   "value": "D:/Kirill/Desktop/d2loadout/env/Lib/site-packages"
-  },
-  {
    "optionDest": "collect_data",
    "value": "fake_useragent"
+  },
+  {
+   "optionDest": "pathex",
+   "value": "D:/Desktop/d2loadout/env/Lib/site-packages"
   }
  ],
  "nonPyinstallerOptions": {

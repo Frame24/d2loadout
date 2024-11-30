@@ -89,7 +89,7 @@ driver.find_element(By.XPATH, "//div[contains(text(), 'Pos 5')]").click()
 df_5 = get_d2pt_page_table(driver)
 
 df_full = pd.concat([df_1, df_2, df_3, df_4, df_5], axis=0)
-df_full = df_full.drop(["class"], axis=1)
+# df_full = df_full.drop(["class"], axis=1)
 df_full
 ## Facets
 link = "https://dota2protracker.com/facets"
