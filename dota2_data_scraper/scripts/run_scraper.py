@@ -17,11 +17,11 @@ print("checking meta...")
 
 # Список позиций и соответствующие XPATH для парсинга
 positions = {
-    "Carry": "//div[contains(text(), 'Carry')]",
-    "Mid": "//div[contains(text(), 'Mid')]",
-    "Off": "//div[contains(text(), 'Off')]",
-    "Pos 4": "//div[contains(text(), 'Pos 4')]",
-    "Pos 5": "//div[contains(text(), 'Pos 5')]"
+    "pos 1": "//div[contains(text(), 'Carry')]",
+    "pos 2": "//div[contains(text(), 'Mid')]",
+    "pos 3": "//div[contains(text(), 'Off')]",
+    "pos 4": "//div[contains(text(), 'Pos 4')]",
+    "pos 5": "//div[contains(text(), 'Pos 5')]"
 }
 
 dfs = []
