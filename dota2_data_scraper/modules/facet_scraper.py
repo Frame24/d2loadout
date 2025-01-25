@@ -99,7 +99,7 @@ def get_d2pt_page_table_facets(driver):
 
     # Преобразование данных в DataFrame
     df_heroes_table = pd.DataFrame(data=hero_rows, columns=hero_columns)
-    df_heroes_table = df_heroes_table.apply(pd.to_numeric, errors='ignore')
+    df_heroes_table = df_heroes_table.convert_dtypes()
     df_heroes_table = df_heroes_table.round(1)
     
     logging.info("Извлечение таблицы завершено.")
@@ -149,7 +149,7 @@ def scrape_facet_data(driver):
 
     # Очистка данных
     df_full_facets["win_rate"] = df_full_facets["win_rate"].apply(lambda x: x.replace("%", ""))
-    df_full_facets = df_full_facets.apply(pd.to_numeric, errors='ignore')
+    df_full_facets = df_full_facets.convert_dtypes()
 
     logging.info("Сбор данных Facets завершен.")
     return df_full_facets
