@@ -180,9 +180,11 @@ import re
 
 # Пример HTML-кода (замени на свой)
 html_text = hero_req.text
-# Регулярное выражение для нахождения объекта data
-pattern = r'const data = (\[.+?\]);'
+# Регулярное выражение для извлечения объекта facetData
+pattern = r'facetData:\s*({.*?})\s*\}\s*,'
 constdata = re.findall(pattern, html_text, re.DOTALL)[0]
+
+constdata
 
 import js2py
 import json
@@ -193,7 +195,7 @@ js_code = f"""
 var data = {constdata};
 
 // Возвращаем JSON-строку facetData
-JSON.stringify(data[2].data.facetData);
+JSON.stringify(data);
 """
 
 # Исполняем JavaScript-код
