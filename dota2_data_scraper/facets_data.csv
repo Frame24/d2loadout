@@ -1,0 +1,1321 @@
+hero,facet,matches,win_rate,Role
+Tidehunter,KRAKEN SWELL,22,54.5,pos 1
+Warlock,BLACK GRIMOIRE,1,100.0,pos 1
+Bounty Hunter,THROUGH AND THROUGH,7,0.0,pos 1
+Spirit Breaker,BULL RUSH,3,0.0,pos 1
+Rubick,FRUGAL FILCH,2,0.0,pos 1
+Mars,BLOOD SPORT,1,100.0,pos 1
+Tinker,TRANSLOCATOR,6,0.0,pos 1
+Lion,ESSENCE EATER,5,20.0,pos 1
+Invoker,AGNOSTIC,5,40.0,pos 1
+Doom,DEVIL'S BARGAIN,30,50.0,pos 1
+Tinker,REPAIR BOTS,3,0.0,pos 1
+Ogre Magi,LEARNING CURVE,13,38.5,pos 1
+Vengeful Spirit,AVENGING MISSILE,13,92.3,pos 1
+Riki,EXTERMINATOR,67,44.8,pos 1
+Brewmaster,DRUNKEN MASTER,12,25.0,pos 1
+Axe,ONE MAN ARMY,16,18.8,pos 1
+Chaos Knight,PHANTASMAGORIA,96,52.1,pos 1
+Tiny,CRASH LANDING,174,51.7,pos 1
+Pudge,FRESH MEAT,33,42.4,pos 1
+Sniper,GHILLIE SUIT,56,41.1,pos 1
+Muerta,DANCE OF THE DEAD,72,41.7,pos 1
+Beastmaster,WILD HUNT,6,33.3,pos 1
+Sven,HEAVY PLATE,16,37.5,pos 1
+Broodmother,NECROTIC WEBS,18,38.9,pos 1
+Windranger,FOCUS FIRE,25,32.0,pos 1
+Medusa,VENOMOUS VOLLEY,844,52.7,pos 1
+Razor,DYNAMO,36,55.6,pos 1
+Alchemist,SEED MONEY,4480,53.1,pos 1
+Lifestealer,UNFETTERED,190,50.5,pos 1
+Shadow Fiend,LASTING PRESENCE,394,45.4,pos 1
+Clinkz,SUPPRESSIVE FIRE,21,61.9,pos 1
+Slark,DARK REEF RENEGADE,63,38.1,pos 1
+Morphling,FLOW,65,43.1,pos 1
+Bristleback,BERSERK,18,38.9,pos 1
+Phantom Assassin,METHODICAL,4149,50.0,pos 1
+Bloodseeker,ARTERIAL SPRAY,3530,54.1,pos 1
+Juggernaut,BLADEFORM,188,54.3,pos 1
+Bane,SLEEPWALK,0,0.0,pos 1
+Earthshaker,TECTONIC BUILDUP,4,0.0,pos 1
+Mirana,MOONLIGHT SHADOW,1,100.0,pos 1
+Puck,CURVEBALL,1,0.0,pos 1
+Sand King,DUST DEVIL,1,0.0,pos 1
+Zeus,LIVEWIRE,11,18.2,pos 1
+Kunkka,HIGH TIDE,2,50.0,pos 1
+Lina,THERMAL RUNAWAY,41,36.6,pos 1
+Shadow Shaman,CLUSTER CLUCK,2,0.0,pos 1
+Slardar,LEG DAY,7,42.9,pos 1
+Tidehunter,KRILL EATER,3,0.0,pos 1
+Witch Doctor,CLEFT DEATH,0,0.0,pos 1
+Warlock,CHAMPION OF GORROTH,2,0.0,pos 1
+Venomancer,PLAGUE CARRIER,772,32.4,pos 1
+Death Prophet,SPIRIT COLLECTOR,2,0.0,pos 1
+Pugna,REWARDS OF RUIN,0,0.0,pos 1
+Dazzle,NOTHL BOON,0,0.0,pos 1
+Clockwerk,HOOKUP,0,0.0,pos 1
+Leshrac,CHRONOPTIC NOURISHMENT,6,33.3,pos 1
+Nature's Prophet,SOOTHING SAPLINGS,1,0.0,pos 1
+Dark Seer,QUICK WIT,3,0.0,pos 1
+Omniknight,HEALING HAMMER,0,0.0,pos 1
+Huskar,NOTHL TRANSFUSION,0,0.0,pos 1
+Jakiro,LIQUID FIRE,26,92.3,pos 1
+Batrider,ARSONIST,3,33.3,pos 1
+Chen,WOLF CONVERT,0,0.0,pos 1
+Chen,TROLL CONVERT,2,50.0,pos 1
+Ancient Apparition,BONE CHILL,3,33.3,pos 1
+Doom,IMPENDING DOOM,0,0.0,pos 1
+Outworld Devourer,OBSIDIAN DECIMATOR,2,50.0,pos 1
+Lycan,SPIRIT WOLVES,11,72.7,pos 1
+Shadow Demon,SHADOW SERVANT,1,0.0,pos 1
+Treant Protector,PRIMEVAL POWER,7,14.3,pos 1
+Undying,RIPPED,1,0.0,pos 1
+Disruptor,KINETIC FENCE,0,0.0,pos 1
+Nyx Assassin,SCUTTLE,38,28.9,pos 1
+Naga Siren,DELUGE,2,50.0,pos 1
+Keeper of the Light,RECALL,0,0.0,pos 1
+Visage,FAITHFUL FOLLOWERS,0,0.0,pos 1
+Centaur Warrunner,HORSEPOWER,5,20.0,pos 1
+Magnus,REVERSE REVERSE POLARITY,1,100.0,pos 1
+Skywrath Mage,SHIELD OF THE SCION,2,0.0,pos 1
+Elder Titan,DECONSTRUCTION,3,0.0,pos 1
+Legion Commander,STONEHALL PLATE,33,39.4,pos 1
+Techies,SPLEEN'S SECRET SAUCE,0,0.0,pos 1
+Earth Spirit,STEPPING STONE,0,0.0,pos 1
+Underlord,DEMON'S REACH,0,0.0,pos 1
+Phoenix,DYING LIGHT,10,50.0,pos 1
+Oracle,CLAIRVOYANT CURSE,3,33.3,pos 1
+Winter Wyvern,ESSENCE OF THE BLUEHEART,3,0.0,pos 1
+Dark Willow,THORNY THICKET,1,0.0,pos 1
+Hoodwink,GO NUTS,0,0.0,pos 1
+Void Spirit,SANCTUARY,38,28.9,pos 1
+Snapfire,RICOCHET II,6,16.7,pos 1
+Mars,VICTORY FEAST,0,0.0,pos 1
+Primal Beast,ROMP N' STOMP,3,33.3,pos 1
+Kez,HERO OF THE FLIGHTLESS,1451,51.6,pos 1
+Anti-Mage,MANA THIRST,1612,49.0,pos 1
+Drow Ranger,SIDESTEP,1059,50.1,pos 1
+Bristleback,SNOT ROCKET,77,62.3,pos 1
+Phantom Assassin,VEILED ONE,691,47.9,pos 1
+Monkey King,WUKONG'S FAITHFUL,175,45.7,pos 1
+Spectre,TWIST THE KNIFE,4491,52.6,pos 1
+Phantom Lancer,DIVERGENCE,53,45.3,pos 1
+Templar Assassin,VOIDBLADES,1100,46.1,pos 1
+Weaver,SKITTERSTEP,289,49.1,pos 1
+Faceless Void,TIME ZONE,35,40.0,pos 1
+Ursa,GRUDGE BEARER,526,50.4,pos 1
+Terrorblade,CONDEMNED,1060,49.7,pos 1
+Gyrocopter,SECONDARY STRIKES,831,45.8,pos 1
+Troll Warlord,BAD INFLUENCE,9,0.0,pos 1
+Lycan,PACK LEADER,10,40.0,pos 1
+Meepo,PACK RAT,72,52.8,pos 1
+Queen of Pain,MASOCHIST,5,20.0,pos 1
+Abaddon,THE QUICKENING,29,79.3,pos 1
+Night Stalker,BLINDING VOID,22,63.6,pos 1
+Luna,MOONSHIELD,42,54.8,pos 1
+Axe,CALL OUT,5,40.0,pos 1
+Chaos Knight,IRRATIONALITY,42,45.2,pos 1
+Enigma,EVENT HORIZON,11,36.4,pos 1
+Timbersaw,TWISTED CHAKRAM,8,37.5,pos 1
+Ogre Magi,FAT CHANCE,2,50.0,pos 1
+Vengeful Spirit,SOUL STRIKE,27,22.2,pos 1
+Marci,BODYGUARD,186,57.0,pos 1
+Doom,GLUTTONY,20,65.0,pos 1
+Necrophos,RAPID DECAY,3,33.3,pos 1
+Visage,DEATH TOLL,2,0.0,pos 1
+Pangolier,THUNDERBOLT,3,33.3,pos 1
+Puck,JOSTLING RIFT,3,33.3,pos 1
+Lich,FROSTBOUND,6,16.7,pos 1
+Omniknight,OMNIPRESENT,8,62.5,pos 1
+Silencer,REVERBERATING SILENCE,19,26.3,pos 1
+Rubick,ARCANE ACCUMULATION,2,100.0,pos 1
+Tusk,TAG TEAM,3,66.7,pos 1
+Earth Spirit,RESONANCE,2,50.0,pos 1
+Witch Doctor,HEADHUNTER,4,0.0,pos 1
+Death Prophet,MOURNING RITUAL,1,100.0,pos 1
+Batrider,STOKED,4,50.0,pos 1
+Silencer,IRREPRESSIBLE,15,33.3,pos 1
+Winter Wyvern,DRAGON SIGHT,4,25.0,pos 1
+Pangolier,DOUBLE JUMP,9,33.3,pos 1
+Ember Spirit,CHAIN GANG,5,100.0,pos 1
+Necrophos,PROFANE POTENCY,14,57.1,pos 1
+Visage,SEPULCHRE,1,100.0,pos 1
+Wraith King,SPECTRAL BLADE,71,60.6,pos 1
+Marci,SIDEKICK,91,59.3,pos 1
+Arc Warden,DISORDER,18,38.9,pos 1
+Lone Druid,BEAR NECESSITIES,7,71.4,pos 1
+Timbersaw,SHREDDER,11,54.5,pos 1
+Enigma,SPLITTING IMAGE,14,42.9,pos 1
+Huskar,INCENDIARY,77,23.4,pos 1
+Dawnbreaker,SOLAR CHARGED,45,44.4,pos 1
+Luna,MOONSTORM,139,41.7,pos 1
+Night Stalker,NIGHT REIGN,75,52.0,pos 1
+Abaddon,MEPHITIC SHROUD,36,41.7,pos 1
+Queen of Pain,SUCCUBUS,8,75.0,pos 1
+Meepo,MORE MEEPO,97,58.8,pos 1
+Lycan,ALPHA WOLVES,172,51.2,pos 1
+Troll Warlord,INSENSITIVE,297,49.5,pos 1
+Gyrocopter,AFTERBURNER,697,48.9,pos 1
+Terrorblade,SOUL FRAGMENT,181,53.6,pos 1
+Ursa,BEAR DOWN,1130,50.4,pos 1
+Faceless Void,CHRONOSPHERE,217,46.1,pos 1
+Weaver,HIVEMIND,3,33.3,pos 1
+Templar Assassin,REFRACTOR,81,56.8,pos 1
+Phantom Lancer,CONVERGENCE,95,52.6,pos 1
+Spectre,FORSAKEN,52,42.3,pos 1
+Dragon Knight,FIRE DRAGON,2682,49.0,pos 1
+Monkey King,SIMIAN STRIDE,592,48.6,pos 1
+Drow Ranger,VANTAGE POINT,52,44.2,pos 1
+Anti-Mage,MAGEBANE'S MIRROR,100,40.0,pos 1
+Bane,DREAM STALKER,1,0.0,pos 1
+Crystal Maiden,COLD COMFORT,0,0.0,pos 1
+Earthshaker,SLUGGER,75,41.3,pos 1
+Mirana,SOLAR FLARE,9,22.2,pos 1
+Sand King,SANDSHROUD,3,33.3,pos 1
+Storm Spirit,SHOCK COLLAR,2,50.0,pos 1
+Zeus,DIVINE RAMPAGE,1,0.0,pos 1
+Kunkka,GROG BLOSSOM,0,0.0,pos 1
+Lina,SLOW BURN,1,0.0,pos 1
+Shadow Shaman,MASSIVE SERPENT WARD,0,0.0,pos 1
+Slardar,BRINEGUARD,0,0.0,pos 1
+Witch Doctor,VOODOO FESTERATION,1,100.0,pos 1
+Lich,GROWING COLD,0,0.0,pos 1
+Venomancer,PATIENT ZERO,6,16.7,pos 1
+Death Prophet,SUPPRESS,0,0.0,pos 1
+Pugna,SIPHONING WARD,5,0.0,pos 1
+Viper,CAUSTIC BATH,1,0.0,pos 1
+Dazzle,POISON BLOOM,4,25.0,pos 1
+Clockwerk,EXPANDED ARMATURE,2,0.0,pos 1
+Leshrac,MISANTHROPY,0,0.0,pos 1
+Nature's Prophet,IRONWOOD TREANT,236,44.1,pos 1
+Dark Seer,HEART OF BATTLE,0,0.0,pos 1
+Enchantress,OVERPROTECTIVE WISPS,2,0.0,pos 1
+Bounty Hunter,CUTPURSE,0,0.0,pos 1
+Jakiro,LIQUID FROST,1,0.0,pos 1
+Chen,CENTAUR CONVERT,0,0.0,pos 1
+Chen,HELLBEAR CONVERT,0,0.0,pos 1
+Chen,SATYR CONVERT,1,0.0,pos 1
+Ancient Apparition,EXPOSURE,1,0.0,pos 1
+Spirit Breaker,IMBALANCED,0,0.0,pos 1
+Outworld Devourer,OVERWHELMING DEVOURER,0,0.0,pos 1
+Shadow Demon,PROMULGATE,7,14.3,pos 1
+Lone Druid,UNBEARABLE,0,0.0,pos 1
+Treant Protector,SAPLING,1,0.0,pos 1
+Disruptor,THUNDERSTORM,5,20.0,pos 1
+Nyx Assassin,MANA BURN,0,0.0,pos 1
+Naga Siren,RIP TIDE,66,42.4,pos 1
+Keeper of the Light,SOLAR BIND,2,0.0,pos 1
+Io,MEDIGUN,0,0.0,pos 1
+Centaur Warrunner,COUNTER-STRIKE,1,0.0,pos 1
+Magnus,REVERSE POLARITY,371,50.7,pos 1
+Tusk,DRINKING BUDDIES,0,0.0,pos 1
+Skywrath Mage,STAFF OF THE SCION,0,0.0,pos 1
+Elder Titan,MOMENTUM,1,0.0,pos 1
+Legion Commander,SPOILS OF WAR,3,66.7,pos 1
+Techies,SPOON'S STASH,3,0.0,pos 1
+Earth Spirit,READY TO ROLL,0,0.0,pos 1
+Underlord,ABYSSAL HORDE,0,0.0,pos 1
+Phoenix,HOTSPOT,0,0.0,pos 1
+Oracle,CLAIRVOYANT CURE,1,0.0,pos 1
+Dark Willow,THROWING SHADE,17,47.1,pos 1
+Grimstroke,FINE ART,1,100.0,pos 1
+Hoodwink,TREEBOUNCE TRICKSHOT,1,100.0,pos 1
+Void Spirit,CALL OF THE VOID,1,0.0,pos 1
+Snapfire,FULL BORE,1,0.0,pos 1
+Ringmaster,CENTER STAGE,0,0.0,pos 1
+Primal Beast,FEROCITY,0,0.0,pos 1
+Juggernaut,BLADESTORM,494,43.9,pos 1
+Bloodseeker,BLOODRUSH,21,52.4,pos 1
+Dragon Knight,CORROSIVE DRAGON,3,33.3,pos 1
+Bristleback,SEEING RED,579,53.2,pos 1
+Dragon Knight,FROST DRAGON,19,42.1,pos 1
+Morphling,EBB,4239,51.0,pos 1
+Slark,LEECHING LEASH,976,51.9,pos 1
+Clinkz,ENGULFING STEP,71,54.9,pos 1
+Shadow Fiend,SHADOWMIRE,9,66.7,pos 1
+Lifestealer,RAGE,1142,48.2,pos 1
+Alchemist,MIXOLOGIST,474,50.8,pos 1
+Razor,THUNDERHEAD,239,45.6,pos 1
+Medusa,ENGORGED,37,51.4,pos 1
+Windranger,WHIRLWIND,15,73.3,pos 1
+Broodmother,FEEDING FRENZY,303,50.2,pos 1
+Sven,WRATH OF GOD,134,46.3,pos 1
+Beastmaster,BEAST MODE,55,49.1,pos 1
+Muerta,OFRENDA,172,49.4,pos 1
+Sniper,SCATTERSHOT,22,50.0,pos 1
+Pudge,FLAYER'S HOOK,36,30.6,pos 1
+Tiny,INSURMOUNTABLE,61,52.5,pos 1
+Huskar,BLOODBATH,11,36.4,pos 1
+Dawnbreaker,GLEAMING HAMMER,4,0.0,pos 1
+Brewmaster,ROLL OUT THE BARREL,1,0.0,pos 1
+Riki,CONTRACT KILLER,18,72.2,pos 1
+Arc Warden,ORDER,4,50.0,pos 1
+Lone Druid,BEAR WITH ME,52,42.3,pos 1
+Wraith King,BONE GUARD,68,42.6,pos 1
+Lion,FIST OF DEATH,12,41.7,pos 1
+Invoker,ELITIST,8,25.0,pos 1
+Ember Spirit,DOUBLE IMPACT,19,26.3,pos 1
+Crystal Maiden,FROZEN EXPANSE,4,25.0,pos 1
+Storm Spirit,STATIC SLIDE,7,71.4,pos 1
+Viper,POISON BURST,18,44.4,pos 1
+Enchantress,SPELLBOUND,2,0.0,pos 1
+Undying,ROTTING MITTS,6,16.7,pos 1
+Io,KRITZKRIEG,7,14.3,pos 1
+Techies,SQUEE'S SCOPE,4,0.0,pos 1
+Grimstroke,INKSTIGATE,2,50.0,pos 1
+Axe,CALL OUT,6,50.0,pos 2
+Shadow Shaman,CLUSTER CLUCK,5,60.0,pos 2
+Luna,MOONSTORM,2,50.0,pos 2
+Weaver,SKITTERSTEP,2,50.0,pos 2
+Shadow Demon,PROMULGATE,9,55.6,pos 2
+Underlord,ABYSSAL HORDE,7,57.1,pos 2
+Enchantress,OVERPROTECTIVE WISPS,4,75.0,pos 2
+Lich,FROSTBOUND,15,46.7,pos 2
+Elder Titan,MOMENTUM,3,0.0,pos 2
+Gyrocopter,AFTERBURNER,7,28.6,pos 2
+Riki,EXTERMINATOR,52,38.5,pos 2
+Sand King,SANDSHROUD,137,52.6,pos 2
+Lion,ESSENCE EATER,7,14.3,pos 2
+Pudge,FRESH MEAT,44,38.6,pos 2
+Rubick,ARCANE ACCUMULATION,173,55.5,pos 2
+Snapfire,RICOCHET II,18,38.9,pos 2
+Muerta,OFRENDA,28,28.6,pos 2
+Batrider,ARSONIST,34,41.2,pos 2
+Clinkz,ENGULFING STEP,56,58.9,pos 2
+Slark,DARK REEF RENEGADE,3,100.0,pos 2
+Lone Druid,BEAR WITH ME,349,52.1,pos 2
+Visage,DEATH TOLL,161,50.3,pos 2
+Kunkka,GROG BLOSSOM,29,65.5,pos 2
+Legion Commander,SPOILS OF WAR,3,33.3,pos 2
+Sniper,GHILLIE SUIT,565,49.7,pos 2
+Marci,SIDEKICK,116,54.3,pos 2
+Beastmaster,BEAST MODE,50,48.0,pos 2
+Lycan,PACK LEADER,46,58.7,pos 2
+Slardar,LEG DAY,43,46.5,pos 2
+Lone Druid,BEAR NECESSITIES,4,0.0,pos 2
+Death Prophet,SUPPRESS,5,20.0,pos 2
+Primal Beast,FEROCITY,12,58.3,pos 2
+Invoker,AGNOSTIC,71,53.5,pos 2
+Dragon Knight,FIRE DRAGON,164,43.9,pos 2
+Timbersaw,SHREDDER,101,58.4,pos 2
+Meepo,PACK RAT,80,56.3,pos 2
+Viper,POISON BURST,377,56.8,pos 2
+Nature's Prophet,IRONWOOD TREANT,308,50.3,pos 2
+Queen of Pain,SUCCUBUS,62,43.5,pos 2
+Broodmother,FEEDING FRENZY,678,53.4,pos 2
+Earth Spirit,READY TO ROLL,13,69.2,pos 2
+Magnus,REVERSE POLARITY,1115,50.4,pos 2
+Necrophos,RAPID DECAY,62,41.9,pos 2
+Leshrac,CHRONOPTIC NOURISHMENT,27,37.0,pos 2
+Tiny,CRASH LANDING,3565,49.5,pos 2
+Bane,SLEEPWALK,1,0.0,pos 2
+Bloodseeker,BLOODRUSH,1,100.0,pos 2
+Drow Ranger,VANTAGE POINT,4,75.0,pos 2
+Juggernaut,BLADEFORM,1,100.0,pos 2
+Mirana,SOLAR FLARE,12,41.7,pos 2
+Sven,HEAVY PLATE,0,0.0,pos 2
+Vengeful Spirit,AVENGING MISSILE,1,100.0,pos 2
+Shadow Shaman,MASSIVE SERPENT WARD,1,100.0,pos 2
+Warlock,CHAMPION OF GORROTH,4,50.0,pos 2
+Venomancer,PATIENT ZERO,0,0.0,pos 2
+Faceless Void,CHRONOSPHERE,2,50.0,pos 2
+Wraith King,BONE GUARD,1,100.0,pos 2
+Phantom Assassin,METHODICAL,12,33.3,pos 2
+Pugna,REWARDS OF RUIN,10,20.0,pos 2
+Dazzle,POISON BLOOM,54,59.3,pos 2
+Omniknight,OMNIPRESENT,1,0.0,pos 2
+Bounty Hunter,THROUGH AND THROUGH,148,46.6,pos 2
+Weaver,HIVEMIND,0,0.0,pos 2
+Jakiro,LIQUID FROST,2,0.0,pos 2
+Chen,WOLF CONVERT,1,100.0,pos 2
+Chen,TROLL CONVERT,0,0.0,pos 2
+Spectre,FORSAKEN,3,33.3,pos 2
+Doom,IMPENDING DOOM,1,100.0,pos 2
+Spirit Breaker,IMBALANCED,0,0.0,pos 2
+Brewmaster,DRUNKEN MASTER,35,54.3,pos 2
+Chaos Knight,PHANTASMAGORIA,1,100.0,pos 2
+Treant Protector,PRIMEVAL POWER,5,40.0,pos 2
+Undying,ROTTING MITTS,21,47.6,pos 2
+Disruptor,THUNDERSTORM,2,0.0,pos 2
+Nyx Assassin,SCUTTLE,154,53.2,pos 2
+Naga Siren,DELUGE,0,0.0,pos 2
+Io,MEDIGUN,0,0.0,pos 2
+Troll Warlord,INSENSITIVE,3,100.0,pos 2
+Centaur Warrunner,COUNTER-STRIKE,0,0.0,pos 2
+Bristleback,BERSERK,1,0.0,pos 2
+Tusk,DRINKING BUDDIES,5,80.0,pos 2
+Skywrath Mage,STAFF OF THE SCION,3,66.7,pos 2
+Underlord,DEMON'S REACH,0,0.0,pos 2
+Terrorblade,SOUL FRAGMENT,0,0.0,pos 2
+Phoenix,HOTSPOT,4,25.0,pos 2
+Oracle,CLAIRVOYANT CURE,2,0.0,pos 2
+Dark Willow,THORNY THICKET,3,0.0,pos 2
+Grimstroke,FINE ART,26,50.0,pos 2
+Ringmaster,CENTER STAGE,0,0.0,pos 2
+Earth Spirit,STEPPING STONE,75,50.7,pos 2
+Puck,JOSTLING RIFT,2999,52.4,pos 2
+Earthshaker,TECTONIC BUILDUP,10,30.0,pos 2
+Ember Spirit,DOUBLE IMPACT,2284,53.7,pos 2
+Magnus,REVERSE REVERSE POLARITY,2,50.0,pos 2
+Lina,THERMAL RUNAWAY,5108,49.6,pos 2
+Broodmother,NECROTIC WEBS,26,50.0,pos 2
+Nature's Prophet,SOOTHING SAPLINGS,16,31.3,pos 2
+Viper,CAUSTIC BATH,27,48.1,pos 2
+Meepo,MORE MEEPO,264,51.5,pos 2
+Keeper of the Light,RECALL,4,0.0,pos 2
+Outworld Devourer,OVERWHELMING DEVOURER,109,44.0,pos 2
+Void Spirit,SANCTUARY,596,48.8,pos 2
+Tinker,TRANSLOCATOR,223,47.1,pos 2
+Death Prophet,SPIRIT COLLECTOR,27,40.7,pos 2
+Zeus,LIVEWIRE,446,47.1,pos 2
+Beastmaster,WILD HUNT,18,38.9,pos 2
+Lycan,ALPHA WOLVES,259,51.7,pos 2
+Marci,BODYGUARD,102,55.9,pos 2
+Sniper,SCATTERSHOT,688,42.9,pos 2
+Legion Commander,STONEHALL PLATE,64,50.0,pos 2
+Kunkka,HIGH TIDE,68,47.1,pos 2
+Visage,SEPULCHRE,50,60.0,pos 2
+Templar Assassin,VOIDBLADES,356,47.2,pos 2
+Slark,LEECHING LEASH,20,75.0,pos 2
+Anti-Mage,MAGEBANE'S MIRROR,1,100.0,pos 2
+Muerta,DANCE OF THE DEAD,16,50.0,pos 2
+Lone Druid,UNBEARABLE,16,43.8,pos 2
+Doom,GLUTTONY,40,50.0,pos 2
+Rubick,FRUGAL FILCH,85,45.9,pos 2
+Pudge,FLAYER'S HOOK,136,39.0,pos 2
+Clockwerk,HOOKUP,1,0.0,pos 2
+Sand King,DUST DEVIL,52,38.5,pos 2
+Riki,CONTRACT KILLER,19,52.6,pos 2
+Winter Wyvern,ESSENCE OF THE BLUEHEART,2,50.0,pos 2
+Tidehunter,KRAKEN SWELL,14,57.1,pos 2
+Witch Doctor,VOODOO FESTERATION,3,33.3,pos 2
+Dark Seer,QUICK WIT,6,33.3,pos 2
+Ogre Magi,FAT CHANCE,5,60.0,pos 2
+Enchantress,SPELLBOUND,6,50.0,pos 2
+Crystal Maiden,FROZEN EXPANSE,3,33.3,pos 2
+Luna,MOONSHIELD,2,50.0,pos 2
+Disruptor,KINETIC FENCE,1,0.0,pos 2
+Phantom Lancer,CONVERGENCE,1,0.0,pos 2
+Wraith King,SPECTRAL BLADE,4,25.0,pos 2
+Lifestealer,RAGE,1,0.0,pos 2
+Ancient Apparition,BONE CHILL,15,40.0,pos 2
+Abaddon,MEPHITIC SHROUD,4,25.0,pos 2
+Hoodwink,TREEBOUNCE TRICKSHOT,9,11.1,pos 2
+Tidehunter,KRILL EATER,6,33.3,pos 2
+Ogre Magi,LEARNING CURVE,15,26.7,pos 2
+Silencer,REVERBERATING SILENCE,21,47.6,pos 2
+Winter Wyvern,DRAGON SIGHT,34,55.9,pos 2
+Medusa,ENGORGED,3,66.7,pos 2
+Alchemist,MIXOLOGIST,21,33.3,pos 2
+Clockwerk,EXPANDED ARMATURE,11,27.3,pos 2
+Mars,VICTORY FEAST,32,81.3,pos 2
+Doom,DEVIL'S BARGAIN,37,51.4,pos 2
+Ursa,GRUDGE BEARER,12,33.3,pos 2
+Enigma,EVENT HORIZON,10,30.0,pos 2
+Anti-Mage,MANA THIRST,35,34.3,pos 2
+Dawnbreaker,SOLAR CHARGED,127,51.2,pos 2
+Templar Assassin,REFRACTOR,232,45.3,pos 2
+Techies,SPLEEN'S SECRET SAUCE,8,12.5,pos 2
+Arc Warden,ORDER,20,60.0,pos 2
+Shadow Fiend,SHADOWMIRE,421,42.5,pos 2
+Razor,THUNDERHEAD,142,51.4,pos 2
+Pangolier,DOUBLE JUMP,475,48.8,pos 2
+Morphling,FLOW,69,37.7,pos 2
+Windranger,FOCUS FIRE,130,48.5,pos 2
+Zeus,DIVINE RAMPAGE,153,51.0,pos 2
+Bristleback,SNOT ROCKET,52,59.6,pos 2
+Dragon Knight,CORROSIVE DRAGON,17,41.2,pos 2
+Tinker,REPAIR BOTS,31,35.5,pos 2
+Void Spirit,CALL OF THE VOID,32,43.8,pos 2
+Outworld Devourer,OBSIDIAN DECIMATOR,357,42.6,pos 2
+Keeper of the Light,SOLAR BIND,421,52.0,pos 2
+Night Stalker,BLINDING VOID,9,44.4,pos 2
+Monkey King,WUKONG'S FAITHFUL,105,53.3,pos 2
+Storm Spirit,SHOCK COLLAR,165,44.8,pos 2
+Huskar,INCENDIARY,1249,49.9,pos 2
+Lycan,SPIRIT WOLVES,2,50.0,pos 2
+Death Prophet,MOURNING RITUAL,50,42.0,pos 2
+Lina,SLOW BURN,86,53.5,pos 2
+Ember Spirit,CHAIN GANG,180,51.7,pos 2
+Earthshaker,SLUGGER,2403,53.0,pos 2
+Puck,CURVEBALL,128,60.2,pos 2
+Bane,DREAM STALKER,41,48.8,pos 2
+Bloodseeker,ARTERIAL SPRAY,66,48.5,pos 2
+Crystal Maiden,COLD COMFORT,0,0.0,pos 2
+Drow Ranger,SIDESTEP,6,33.3,pos 2
+Mirana,MOONLIGHT SHADOW,0,0.0,pos 2
+Phantom Lancer,DIVERGENCE,0,0.0,pos 2
+Sven,WRATH OF GOD,1,0.0,pos 2
+Vengeful Spirit,SOUL STRIKE,36,52.8,pos 2
+Witch Doctor,CLEFT DEATH,0,0.0,pos 2
+Warlock,BLACK GRIMOIRE,0,0.0,pos 2
+Venomancer,PLAGUE CARRIER,17,17.6,pos 2
+Faceless Void,TIME ZONE,5,40.0,pos 2
+Phantom Assassin,VEILED ONE,1,0.0,pos 2
+Pugna,SIPHONING WARD,49,49.0,pos 2
+Dazzle,NOTHL BOON,0,0.0,pos 2
+Lifestealer,UNFETTERED,1,0.0,pos 2
+Omniknight,HEALING HAMMER,0,0.0,pos 2
+Bounty Hunter,CUTPURSE,0,0.0,pos 2
+Jakiro,LIQUID FIRE,7,57.1,pos 2
+Chen,CENTAUR CONVERT,0,0.0,pos 2
+Chen,HELLBEAR CONVERT,0,0.0,pos 2
+Chen,SATYR CONVERT,0,0.0,pos 2
+Spectre,TWIST THE KNIFE,45,62.2,pos 2
+Spirit Breaker,BULL RUSH,19,36.8,pos 2
+Brewmaster,ROLL OUT THE BARREL,3,66.7,pos 2
+Shadow Demon,SHADOW SERVANT,0,0.0,pos 2
+Chaos Knight,IRRATIONALITY,2,0.0,pos 2
+Treant Protector,SAPLING,0,0.0,pos 2
+Undying,RIPPED,0,0.0,pos 2
+Nyx Assassin,MANA BURN,2,50.0,pos 2
+Naga Siren,RIP TIDE,2,100.0,pos 2
+Io,KRITZKRIEG,14,35.7,pos 2
+Visage,FAITHFUL FOLLOWERS,0,0.0,pos 2
+Troll Warlord,BAD INFLUENCE,0,0.0,pos 2
+Centaur Warrunner,HORSEPOWER,2,0.0,pos 2
+Tusk,TAG TEAM,28,35.7,pos 2
+Skywrath Mage,SHIELD OF THE SCION,13,38.5,pos 2
+Techies,SQUEE'S SCOPE,0,0.0,pos 2
+Terrorblade,CONDEMNED,22,40.9,pos 2
+Phoenix,DYING LIGHT,447,45.2,pos 2
+Oracle,CLAIRVOYANT CURSE,7,57.1,pos 2
+Dark Willow,THROWING SHADE,18,50.0,pos 2
+Grimstroke,INKSTIGATE,1,100.0,pos 2
+Hoodwink,GO NUTS,0,0.0,pos 2
+Kez,HERO OF THE FLIGHTLESS,1038,51.2,pos 2
+Tiny,INSURMOUNTABLE,17,41.2,pos 2
+Leshrac,MISANTHROPY,400,52.3,pos 2
+Necrophos,PROFANE POTENCY,255,47.5,pos 2
+Huskar,NOTHL TRANSFUSION,8,37.5,pos 2
+Huskar,BLOODBATH,84,60.7,pos 2
+Earth Spirit,RESONANCE,1427,53.8,pos 2
+Queen of Pain,MASOCHIST,3138,47.5,pos 2
+Storm Spirit,STATIC SLIDE,1845,50.6,pos 2
+Monkey King,SIMIAN STRIDE,1584,53.6,pos 2
+Night Stalker,NIGHT REIGN,80,40.0,pos 2
+Timbersaw,TWISTED CHAKRAM,486,45.1,pos 2
+Invoker,ELITIST,2922,50.3,pos 2
+Primal Beast,ROMP N' STOMP,312,50.6,pos 2
+Bristleback,SEEING RED,39,59.0,pos 2
+Slardar,BRINEGUARD,5,60.0,pos 2
+Windranger,WHIRLWIND,7,42.9,pos 2
+Dragon Knight,FROST DRAGON,9,44.4,pos 2
+Morphling,EBB,66,28.8,pos 2
+Pangolier,THUNDERBOLT,586,49.1,pos 2
+Razor,DYNAMO,26,30.8,pos 2
+Shadow Fiend,LASTING PRESENCE,263,47.1,pos 2
+Arc Warden,DISORDER,219,53.4,pos 2
+Techies,SPOON'S STASH,7,28.6,pos 2
+Dawnbreaker,GLEAMING HAMMER,5,20.0,pos 2
+Clinkz,SUPPRESSIVE FIRE,23,60.9,pos 2
+Batrider,STOKED,91,51.6,pos 2
+Enigma,SPLITTING IMAGE,20,60.0,pos 2
+Ursa,BEAR DOWN,38,52.6,pos 2
+Snapfire,FULL BORE,8,62.5,pos 2
+Mars,BLOOD SPORT,49,46.9,pos 2
+Lion,FIST OF DEATH,52,38.5,pos 2
+Alchemist,SEED MONEY,153,43.8,pos 2
+Medusa,VENOMOUS VOLLEY,22,54.5,pos 2
+Gyrocopter,SECONDARY STRIKES,6,16.7,pos 2
+Silencer,IRREPRESSIBLE,10,30.0,pos 2
+Witch Doctor,HEADHUNTER,1,0.0,pos 2
+Lich,GROWING COLD,2,0.0,pos 2
+Dark Seer,HEART OF BATTLE,1,0.0,pos 2
+Elder Titan,DECONSTRUCTION,3,66.7,pos 2
+Axe,ONE MAN ARMY,11,18.2,pos 2
+Juggernaut,BLADESTORM,5,20.0,pos 2
+Ancient Apparition,EXPOSURE,6,16.7,pos 2
+Abaddon,THE QUICKENING,6,66.7,pos 2
+Crystal Maiden,FROZEN EXPANSE,8,25.0,pos 3
+Mirana,SOLAR FLARE,9,11.1,pos 3
+Lich,FROSTBOUND,8,0.0,pos 3
+Luna,MOONSHIELD,2,50.0,pos 3
+Outworld Devourer,OBSIDIAN DECIMATOR,9,55.6,pos 3
+Ringmaster,CENTER STAGE,4,25.0,pos 3
+Morphling,FLOW,33,60.6,pos 3
+Lion,ESSENCE EATER,6,0.0,pos 3
+Clinkz,SUPPRESSIVE FIRE,3,33.3,pos 3
+Techies,SPLEEN'S SECRET SAUCE,7,57.1,pos 3
+Grimstroke,INKSTIGATE,5,0.0,pos 3
+Dark Willow,THORNY THICKET,4,50.0,pos 3
+Meepo,PACK RAT,4,50.0,pos 3
+Snapfire,FULL BORE,8,25.0,pos 3
+Ursa,BEAR DOWN,34,38.2,pos 3
+Batrider,STOKED,70,52.9,pos 3
+Ogre Magi,LEARNING CURVE,44,43.2,pos 3
+Leshrac,CHRONOPTIC NOURISHMENT,4,50.0,pos 3
+Tinker,TRANSLOCATOR,6,16.7,pos 3
+Spectre,FORSAKEN,3,66.7,pos 3
+Dazzle,NOTHL BOON,2,100.0,pos 3
+Underlord,DEMON'S REACH,64,45.3,pos 3
+Centaur Warrunner,HORSEPOWER,479,52.0,pos 3
+Anti-Mage,MANA THIRST,54,48.1,pos 3
+Nature's Prophet,SOOTHING SAPLINGS,15,0.0,pos 3
+Razor,DYNAMO,51,39.2,pos 3
+Bristleback,SNOT ROCKET,1053,53.0,pos 3
+Slardar,LEG DAY,328,48.8,pos 3
+Monkey King,SIMIAN STRIDE,129,56.6,pos 3
+Winter Wyvern,ESSENCE OF THE BLUEHEART,12,50.0,pos 3
+Venomancer,PLAGUE CARRIER,122,41.0,pos 3
+Queen of Pain,SUCCUBUS,15,33.3,pos 3
+Rubick,FRUGAL FILCH,18,38.9,pos 3
+Tiny,CRASH LANDING,433,49.0,pos 3
+Pudge,FRESH MEAT,116,57.8,pos 3
+Alchemist,MIXOLOGIST,20,45.0,pos 3
+Earthshaker,SLUGGER,799,50.3,pos 3
+Vengeful Spirit,AVENGING MISSILE,24,75.0,pos 3
+Tidehunter,KRAKEN SWELL,2158,51.6,pos 3
+Undying,RIPPED,8,37.5,pos 3
+Death Prophet,MOURNING RITUAL,70,52.9,pos 3
+Night Stalker,NIGHT REIGN,2825,50.4,pos 3
+Legion Commander,SPOILS OF WAR,36,50.0,pos 3
+Phoenix,HOTSPOT,8,37.5,pos 3
+Axe,ONE MAN ARMY,1159,50.9,pos 3
+Dawnbreaker,SOLAR CHARGED,4097,53.2,pos 3
+Kunkka,HIGH TIDE,96,50.0,pos 3
+Lycan,ALPHA WOLVES,1950,47.8,pos 3
+Terrorblade,SOUL FRAGMENT,138,48.6,pos 3
+Bane,DREAM STALKER,7,57.1,pos 3
+Bloodseeker,ARTERIAL SPRAY,232,48.3,pos 3
+Crystal Maiden,COLD COMFORT,0,0.0,pos 3
+Juggernaut,BLADEFORM,4,50.0,pos 3
+Puck,JOSTLING RIFT,7,28.6,pos 3
+Storm Spirit,STATIC SLIDE,8,12.5,pos 3
+Sven,WRATH OF GOD,6,33.3,pos 3
+Zeus,DIVINE RAMPAGE,4,0.0,pos 3
+Lina,SLOW BURN,1,0.0,pos 3
+Shadow Shaman,MASSIVE SERPENT WARD,0,0.0,pos 3
+Witch Doctor,VOODOO FESTERATION,7,42.9,pos 3
+Lich,GROWING COLD,1,0.0,pos 3
+Warlock,BLACK GRIMOIRE,0,0.0,pos 3
+Templar Assassin,REFRACTOR,2,50.0,pos 3
+Clockwerk,HOOKUP,3,0.0,pos 3
+Huskar,NOTHL TRANSFUSION,0,0.0,pos 3
+Jakiro,LIQUID FROST,4,50.0,pos 3
+Chen,WOLF CONVERT,0,0.0,pos 3
+Chen,TROLL CONVERT,0,0.0,pos 3
+Ancient Apparition,EXPOSURE,1,0.0,pos 3
+Spirit Breaker,IMBALANCED,2,100.0,pos 3
+Silencer,IRREPRESSIBLE,3,33.3,pos 3
+Shadow Demon,PROMULGATE,5,20.0,pos 3
+Lone Druid,BEAR WITH ME,116,53.4,pos 3
+Treant Protector,PRIMEVAL POWER,6,0.0,pos 3
+Disruptor,THUNDERSTORM,4,25.0,pos 3
+Naga Siren,DELUGE,0,0.0,pos 3
+Visage,FAITHFUL FOLLOWERS,2,0.0,pos 3
+Medusa,VENOMOUS VOLLEY,20,55.0,pos 3
+Tusk,TAG TEAM,46,56.5,pos 3
+Skywrath Mage,STAFF OF THE SCION,1,0.0,pos 3
+Oracle,CLAIRVOYANT CURSE,4,0.0,pos 3
+Arc Warden,ORDER,0,0.0,pos 3
+Hoodwink,GO NUTS,1,0.0,pos 3
+Void Spirit,SANCTUARY,28,39.3,pos 3
+Kez,HERO OF THE FLIGHTLESS,389,47.6,pos 3
+Ember Spirit,CHAIN GANG,17,52.9,pos 3
+Marci,BODYGUARD,240,57.1,pos 3
+Magnus,REVERSE REVERSE POLARITY,15,46.7,pos 3
+Bristleback,BERSERK,56,42.9,pos 3
+Dawnbreaker,GLEAMING HAMMER,133,45.1,pos 3
+Axe,CALL OUT,421,48.5,pos 3
+Phoenix,DYING LIGHT,876,54.7,pos 3
+Dark Seer,HEART OF BATTLE,79,54.4,pos 3
+Night Stalker,BLINDING VOID,315,47.3,pos 3
+Death Prophet,SPIRIT COLLECTOR,24,33.3,pos 3
+Undying,ROTTING MITTS,280,48.9,pos 3
+Elder Titan,DECONSTRUCTION,48,68.8,pos 3
+Visage,DEATH TOLL,936,54.7,pos 3
+Doom,DEVIL'S BARGAIN,2052,53.6,pos 3
+Abaddon,MEPHITIC SHROUD,222,50.9,pos 3
+Nyx Assassin,MANA BURN,6,33.3,pos 3
+Pangolier,THUNDERBOLT,175,47.4,pos 3
+Phantom Assassin,VEILED ONE,18,50.0,pos 3
+Brewmaster,DRUNKEN MASTER,332,53.9,pos 3
+Beastmaster,WILD HUNT,1126,55.9,pos 3
+Windranger,WHIRLWIND,16,56.3,pos 3
+Bounty Hunter,CUTPURSE,2,50.0,pos 3
+Slardar,BRINEGUARD,80,48.8,pos 3
+Razor,THUNDERHEAD,550,46.4,pos 3
+Nature's Prophet,IRONWOOD TREANT,134,51.5,pos 3
+Faceless Void,CHRONOSPHERE,7,28.6,pos 3
+Centaur Warrunner,COUNTER-STRIKE,136,52.2,pos 3
+Underlord,ABYSSAL HORDE,203,44.8,pos 3
+Dragon Knight,FROST DRAGON,36,47.2,pos 3
+Wraith King,BONE GUARD,70,45.7,pos 3
+Earth Spirit,RESONANCE,87,49.4,pos 3
+Leshrac,MISANTHROPY,30,53.3,pos 3
+Huskar,BLOODBATH,13,76.9,pos 3
+Ogre Magi,FAT CHANCE,25,56.0,pos 3
+Phantom Lancer,DIVERGENCE,2,50.0,pos 3
+Riki,EXTERMINATOR,33,48.5,pos 3
+Omniknight,HEALING HAMMER,3,33.3,pos 3
+Meepo,MORE MEEPO,25,44.0,pos 3
+Shadow Fiend,LASTING PRESENCE,7,42.9,pos 3
+Clinkz,ENGULFING STEP,4,25.0,pos 3
+Enchantress,SPELLBOUND,3,33.3,pos 3
+Grimstroke,FINE ART,4,25.0,pos 3
+Phantom Lancer,CONVERGENCE,5,40.0,pos 3
+Gyrocopter,AFTERBURNER,12,50.0,pos 3
+Ancient Apparition,BONE CHILL,5,0.0,pos 3
+Naga Siren,RIP TIDE,10,70.0,pos 3
+Troll Warlord,INSENSITIVE,6,83.3,pos 3
+Drow Ranger,SIDESTEP,10,30.0,pos 3
+Puck,CURVEBALL,1,0.0,pos 3
+Templar Assassin,VOIDBLADES,4,50.0,pos 3
+Silencer,REVERBERATING SILENCE,14,50.0,pos 3
+Skywrath Mage,SHIELD OF THE SCION,7,42.9,pos 3
+Pugna,REWARDS OF RUIN,10,70.0,pos 3
+Lifestealer,UNFETTERED,2,100.0,pos 3
+Lion,FIST OF DEATH,13,38.5,pos 3
+Slark,DARK REEF RENEGADE,18,72.2,pos 3
+Techies,SPOON'S STASH,6,83.3,pos 3
+Shadow Fiend,SHADOWMIRE,8,50.0,pos 3
+Omniknight,OMNIPRESENT,21,42.9,pos 3
+Keeper of the Light,SOLAR BIND,19,47.4,pos 3
+Lifestealer,RAGE,5,60.0,pos 3
+Riki,CONTRACT KILLER,10,50.0,pos 3
+Sniper,SCATTERSHOT,10,20.0,pos 3
+Muerta,OFRENDA,16,18.8,pos 3
+Huskar,INCENDIARY,86,51.2,pos 3
+Earth Spirit,STEPPING STONE,8,25.0,pos 3
+Wraith King,SPECTRAL BLADE,28,25.0,pos 3
+Weaver,HIVEMIND,3,33.3,pos 3
+Enigma,SPLITTING IMAGE,627,60.1,pos 3
+Viper,CAUSTIC BATH,56,50.0,pos 3
+Faceless Void,TIME ZONE,31,54.8,pos 3
+Sand King,SANDSHROUD,467,44.5,pos 3
+Primal Beast,ROMP N' STOMP,487,48.3,pos 3
+Dragon Knight,FIRE DRAGON,120,45.0,pos 3
+Bounty Hunter,THROUGH AND THROUGH,103,46.6,pos 3
+Windranger,FOCUS FIRE,123,37.4,pos 3
+Beastmaster,BEAST MODE,1805,47.5,pos 3
+Brewmaster,ROLL OUT THE BARREL,81,54.3,pos 3
+Phantom Assassin,METHODICAL,23,60.9,pos 3
+Pangolier,DOUBLE JUMP,303,46.2,pos 3
+Nyx Assassin,SCUTTLE,285,43.9,pos 3
+Abaddon,THE QUICKENING,159,62.3,pos 3
+Dragon Knight,CORROSIVE DRAGON,5,20.0,pos 3
+Visage,SEPULCHRE,47,40.4,pos 3
+Elder Titan,MOMENTUM,50,54.0,pos 3
+Doom,GLUTTONY,801,43.4,pos 3
+Mars,BLOOD SPORT,1715,47.5,pos 3
+Broodmother,FEEDING FRENZY,663,44.9,pos 3
+Dark Seer,QUICK WIT,147,58.5,pos 3
+Doom,IMPENDING DOOM,27,51.9,pos 3
+Chaos Knight,PHANTASMAGORIA,36,50.0,pos 3
+Timbersaw,TWISTED CHAKRAM,665,48.4,pos 3
+Necrophos,PROFANE POTENCY,115,47.0,pos 3
+Magnus,REVERSE POLARITY,2981,49.1,pos 3
+Marci,SIDEKICK,109,46.8,pos 3
+Lycan,PACK LEADER,298,60.4,pos 3
+Bane,SLEEPWALK,0,0.0,pos 3
+Bloodseeker,BLOODRUSH,3,33.3,pos 3
+Drow Ranger,VANTAGE POINT,0,0.0,pos 3
+Mirana,MOONLIGHT SHADOW,3,33.3,pos 3
+Storm Spirit,SHOCK COLLAR,1,100.0,pos 3
+Sven,HEAVY PLATE,1,0.0,pos 3
+Zeus,LIVEWIRE,47,38.3,pos 3
+Lina,THERMAL RUNAWAY,23,21.7,pos 3
+Shadow Shaman,CLUSTER CLUCK,9,44.4,pos 3
+Witch Doctor,HEADHUNTER,5,20.0,pos 3
+Witch Doctor,CLEFT DEATH,0,0.0,pos 3
+Warlock,CHAMPION OF GORROTH,3,66.7,pos 3
+Death Prophet,SUPPRESS,5,60.0,pos 3
+Luna,MOONSTORM,2,50.0,pos 3
+Clockwerk,EXPANDED ARMATURE,28,32.1,pos 3
+Jakiro,LIQUID FIRE,19,68.4,pos 3
+Chen,CENTAUR CONVERT,0,0.0,pos 3
+Chen,HELLBEAR CONVERT,0,0.0,pos 3
+Chen,SATYR CONVERT,0,0.0,pos 3
+Spirit Breaker,BULL RUSH,107,43.0,pos 3
+Invoker,AGNOSTIC,1,0.0,pos 3
+Outworld Devourer,OVERWHELMING DEVOURER,6,16.7,pos 3
+Shadow Demon,SHADOW SERVANT,1,0.0,pos 3
+Lone Druid,BEAR NECESSITIES,9,44.4,pos 3
+Treant Protector,SAPLING,1,0.0,pos 3
+Disruptor,KINETIC FENCE,0,0.0,pos 3
+Io,MEDIGUN,0,0.0,pos 3
+Medusa,ENGORGED,2,100.0,pos 3
+Troll Warlord,BAD INFLUENCE,1,0.0,pos 3
+Tusk,DRINKING BUDDIES,1,0.0,pos 3
+Ember Spirit,DOUBLE IMPACT,22,45.5,pos 3
+Oracle,CLAIRVOYANT CURE,1,100.0,pos 3
+Arc Warden,DISORDER,1,0.0,pos 3
+Hoodwink,TREEBOUNCE TRICKSHOT,17,47.1,pos 3
+Void Spirit,CALL OF THE VOID,4,50.0,pos 3
+Lone Druid,UNBEARABLE,2,0.0,pos 3
+Terrorblade,CONDEMNED,433,53.8,pos 3
+Lycan,SPIRIT WOLVES,7,28.6,pos 3
+Kunkka,GROG BLOSSOM,52,55.8,pos 3
+Necrophos,RAPID DECAY,44,40.9,pos 3
+Timbersaw,SHREDDER,1207,48.6,pos 3
+Chaos Knight,IRRATIONALITY,42,42.9,pos 3
+Legion Commander,STONEHALL PLATE,1630,51.4,pos 3
+Earth Spirit,READY TO ROLL,6,33.3,pos 3
+Broodmother,NECROTIC WEBS,67,50.7,pos 3
+Mars,VICTORY FEAST,125,49.6,pos 3
+Tidehunter,KRILL EATER,194,46.9,pos 3
+Vengeful Spirit,SOUL STRIKE,365,52.6,pos 3
+Earthshaker,TECTONIC BUILDUP,13,23.1,pos 3
+Alchemist,SEED MONEY,185,38.9,pos 3
+Pudge,FLAYER'S HOOK,310,50.6,pos 3
+Tiny,INSURMOUNTABLE,5,60.0,pos 3
+Rubick,ARCANE ACCUMULATION,26,50.0,pos 3
+Queen of Pain,MASOCHIST,44,47.7,pos 3
+Venomancer,PATIENT ZERO,35,37.1,pos 3
+Winter Wyvern,DRAGON SIGHT,140,47.9,pos 3
+Monkey King,WUKONG'S FAITHFUL,22,36.4,pos 3
+Bristleback,SEEING RED,1318,47.0,pos 3
+Primal Beast,FEROCITY,26,50.0,pos 3
+Sand King,DUST DEVIL,86,39.5,pos 3
+Anti-Mage,MAGEBANE'S MIRROR,10,10.0,pos 3
+Viper,POISON BURST,287,50.5,pos 3
+Enigma,EVENT HORIZON,388,52.8,pos 3
+Weaver,SKITTERSTEP,124,53.2,pos 3
+Dazzle,POISON BLOOM,71,46.5,pos 3
+Spectre,TWIST THE KNIFE,35,51.4,pos 3
+Tinker,REPAIR BOTS,16,43.8,pos 3
+Gyrocopter,SECONDARY STRIKES,19,47.4,pos 3
+Muerta,DANCE OF THE DEAD,23,26.1,pos 3
+Batrider,ARSONIST,53,50.9,pos 3
+Sniper,GHILLIE SUIT,6,50.0,pos 3
+Ursa,GRUDGE BEARER,17,17.6,pos 3
+Keeper of the Light,RECALL,1,100.0,pos 3
+Snapfire,RICOCHET II,18,33.3,pos 3
+Dark Willow,THROWING SHADE,34,41.2,pos 3
+Enchantress,OVERPROTECTIVE WISPS,5,60.0,pos 3
+Slark,LEECHING LEASH,70,52.9,pos 3
+Morphling,EBB,22,40.9,pos 3
+Pugna,SIPHONING WARD,17,47.1,pos 3
+Juggernaut,BLADESTORM,9,55.6,pos 3
+Invoker,ELITIST,13,30.8,pos 3
+Io,KRITZKRIEG,26,80.8,pos 3
+Techies,SQUEE'S SCOPE,2,0.0,pos 3
+Bloodseeker,ARTERIAL SPRAY,7,14.3,pos 4
+Slardar,BRINEGUARD,1,0.0,pos 4
+Brewmaster,ROLL OUT THE BARREL,10,10.0,pos 4
+Ursa,BEAR DOWN,7,71.4,pos 4
+Axe,CALL OUT,10,10.0,pos 4
+Omniknight,HEALING HAMMER,7,85.7,pos 4
+Arc Warden,ORDER,2,50.0,pos 4
+Puck,CURVEBALL,12,41.7,pos 4
+Elder Titan,MOMENTUM,37,45.9,pos 4
+Void Spirit,CALL OF THE VOID,7,57.1,pos 4
+Riki,EXTERMINATOR,399,45.1,pos 4
+Phantom Assassin,VEILED ONE,17,35.3,pos 4
+Shadow Fiend,LASTING PRESENCE,6,33.3,pos 4
+Mars,BLOOD SPORT,34,29.4,pos 4
+Ancient Apparition,BONE CHILL,87,48.3,pos 4
+Lina,THERMAL RUNAWAY,183,41.0,pos 4
+Broodmother,NECROTIC WEBS,8,0.0,pos 4
+Legion Commander,STONEHALL PLATE,24,58.3,pos 4
+Skywrath Mage,STAFF OF THE SCION,92,50.0,pos 4
+Io,MEDIGUN,11,54.5,pos 4
+Primal Beast,ROMP N' STOMP,37,59.5,pos 4
+Grimstroke,FINE ART,204,56.4,pos 4
+Crystal Maiden,FROZEN EXPANSE,148,46.6,pos 4
+Doom,IMPENDING DOOM,19,52.6,pos 4
+Batrider,STOKED,1021,46.7,pos 4
+Timbersaw,TWISTED CHAKRAM,17,29.4,pos 4
+Shadow Demon,PROMULGATE,1138,50.7,pos 4
+Doom,GLUTTONY,136,44.9,pos 4
+Snapfire,RICOCHET II,42,38.1,pos 4
+Alchemist,MIXOLOGIST,18,33.3,pos 4
+Monkey King,SIMIAN STRIDE,274,50.7,pos 4
+Mirana,MOONLIGHT SHADOW,65,52.3,pos 4
+Keeper of the Light,SOLAR BIND,117,49.6,pos 4
+Venomancer,PLAGUE CARRIER,102,42.2,pos 4
+Ember Spirit,CHAIN GANG,31,64.5,pos 4
+Windranger,WHIRLWIND,16,31.3,pos 4
+Rubick,FRUGAL FILCH,913,49.1,pos 4
+Marci,SIDEKICK,289,51.9,pos 4
+Phoenix,DYING LIGHT,987,52.0,pos 4
+Disruptor,THUNDERSTORM,223,52.0,pos 4
+Weaver,HIVEMIND,30,43.3,pos 4
+Dawnbreaker,GLEAMING HAMMER,68,42.6,pos 4
+Hoodwink,TREEBOUNCE TRICKSHOT,1039,48.6,pos 4
+Spirit Breaker,IMBALANCED,10,30.0,pos 4
+Leshrac,CHRONOPTIC NOURISHMENT,14,50.0,pos 4
+Lich,FROSTBOUND,670,54.9,pos 4
+Tusk,TAG TEAM,988,50.4,pos 4
+Nyx Assassin,SCUTTLE,3992,52.5,pos 4
+Zeus,DIVINE RAMPAGE,369,51.5,pos 4
+Pudge,FRESH MEAT,41,36.6,pos 4
+Tiny,INSURMOUNTABLE,2,50.0,pos 4
+Drow Ranger,VANTAGE POINT,0,0.0,pos 4
+Juggernaut,BLADEFORM,1,100.0,pos 4
+Phantom Lancer,DIVERGENCE,0,0.0,pos 4
+Razor,DYNAMO,0,0.0,pos 4
+Sven,WRATH OF GOD,1,0.0,pos 4
+Kunkka,HIGH TIDE,7,28.6,pos 4
+Necrophos,PROFANE POTENCY,4,25.0,pos 4
+Faceless Void,CHRONOSPHERE,3,0.0,pos 4
+Wraith King,SPECTRAL BLADE,4,0.0,pos 4
+Death Prophet,SPIRIT COLLECTOR,2,50.0,pos 4
+Templar Assassin,VOIDBLADES,9,22.2,pos 4
+Viper,POISON BURST,36,36.1,pos 4
+Luna,MOONSHIELD,3,0.0,pos 4
+Dragon Knight,CORROSIVE DRAGON,0,0.0,pos 4
+Lifestealer,UNFETTERED,0,0.0,pos 4
+Clinkz,SUPPRESSIVE FIRE,12,50.0,pos 4
+Huskar,NOTHL TRANSFUSION,0,0.0,pos 4
+Night Stalker,NIGHT REIGN,30,46.7,pos 4
+Chen,TROLL CONVERT,0,0.0,pos 4
+Spectre,TWIST THE KNIFE,13,23.1,pos 4
+Lycan,SPIRIT WOLVES,0,0.0,pos 4
+Chaos Knight,IRRATIONALITY,5,60.0,pos 4
+Visage,SEPULCHRE,7,28.6,pos 4
+Visage,DEATH TOLL,77,42.9,pos 4
+Medusa,VENOMOUS VOLLEY,8,37.5,pos 4
+Troll Warlord,BAD INFLUENCE,1,100.0,pos 4
+Underlord,DEMON'S REACH,14,92.9,pos 4
+Ringmaster,CENTER STAGE,531,52.2,pos 4
+Outworld Devourer,OVERWHELMING DEVOURER,2,0.0,pos 4
+Pudge,FLAYER'S HOOK,3390,48.9,pos 4
+Zeus,LIVEWIRE,2463,52.9,pos 4
+Nyx Assassin,MANA BURN,63,46.0,pos 4
+Tusk,DRINKING BUDDIES,43,48.8,pos 4
+Lich,GROWING COLD,46,45.7,pos 4
+Leshrac,MISANTHROPY,274,49.3,pos 4
+Witch Doctor,CLEFT DEATH,14,42.9,pos 4
+Hoodwink,GO NUTS,33,42.4,pos 4
+Dawnbreaker,SOLAR CHARGED,134,42.5,pos 4
+Weaver,SKITTERSTEP,267,48.3,pos 4
+Magnus,REVERSE REVERSE POLARITY,15,40.0,pos 4
+Treant Protector,SAPLING,28,42.9,pos 4
+Earth Spirit,RESONANCE,163,42.9,pos 4
+Marci,BODYGUARD,265,44.9,pos 4
+Rubick,ARCANE ACCUMULATION,1305,46.8,pos 4
+Windranger,FOCUS FIRE,115,45.2,pos 4
+Ember Spirit,DOUBLE IMPACT,18,44.4,pos 4
+Venomancer,PATIENT ZERO,152,49.3,pos 4
+Keeper of the Light,RECALL,26,34.6,pos 4
+Mirana,SOLAR FLARE,108,47.2,pos 4
+Monkey King,WUKONG'S FAITHFUL,12,66.7,pos 4
+Alchemist,SEED MONEY,98,46.9,pos 4
+Snapfire,FULL BORE,277,49.8,pos 4
+Shadow Demon,SHADOW SERVANT,160,49.4,pos 4
+Timbersaw,SHREDDER,65,55.4,pos 4
+Enchantress,OVERPROTECTIVE WISPS,52,46.2,pos 4
+Crystal Maiden,COLD COMFORT,28,57.1,pos 4
+Tidehunter,KRAKEN SWELL,44,38.6,pos 4
+Huskar,INCENDIARY,76,40.8,pos 4
+Jakiro,LIQUID FIRE,87,56.3,pos 4
+Dazzle,NOTHL BOON,11,36.4,pos 4
+Skywrath Mage,SHIELD OF THE SCION,445,49.9,pos 4
+Abaddon,MEPHITIC SHROUD,177,48.0,pos 4
+Gyrocopter,SECONDARY STRIKES,159,47.8,pos 4
+Legion Commander,SPOILS OF WAR,2,0.0,pos 4
+Lycan,PACK LEADER,14,64.3,pos 4
+Warlock,CHAMPION OF GORROTH,14,57.1,pos 4
+Bristleback,SNOT ROCKET,37,48.6,pos 4
+Queen of Pain,SUCCUBUS,12,16.7,pos 4
+Chen,HELLBEAR CONVERT,7,28.6,pos 4
+Riki,CONTRACT KILLER,148,45.9,pos 4
+Storm Spirit,SHOCK COLLAR,5,20.0,pos 4
+Void Spirit,SANCTUARY,8,37.5,pos 4
+Beastmaster,BEAST MODE,18,27.8,pos 4
+Sand King,DUST DEVIL,6,33.3,pos 4
+Axe,ONE MAN ARMY,12,16.7,pos 4
+Arc Warden,DISORDER,4,25.0,pos 4
+Lone Druid,BEAR WITH ME,3,33.3,pos 4
+Slardar,LEG DAY,11,36.4,pos 4
+Lifestealer,RAGE,5,20.0,pos 4
+Brewmaster,DRUNKEN MASTER,12,41.7,pos 4
+Naga Siren,DELUGE,9,44.4,pos 4
+Drow Ranger,SIDESTEP,5,40.0,pos 4
+Wraith King,BONE GUARD,7,57.1,pos 4
+Centaur Warrunner,COUNTER-STRIKE,7,57.1,pos 4
+Anti-Mage,MANA THIRST,15,20.0,pos 4
+Omniknight,OMNIPRESENT,26,57.7,pos 4
+Meepo,MORE MEEPO,11,0.0,pos 4
+Chen,SATYR CONVERT,24,54.2,pos 4
+Beastmaster,WILD HUNT,13,38.5,pos 4
+Storm Spirit,STATIC SLIDE,10,40.0,pos 4
+Slark,LEECHING LEASH,87,58.6,pos 4
+Winter Wyvern,DRAGON SIGHT,177,58.2,pos 4
+Queen of Pain,MASOCHIST,54,37.0,pos 4
+Bristleback,SEEING RED,17,29.4,pos 4
+Warlock,BLACK GRIMOIRE,37,43.2,pos 4
+Lycan,ALPHA WOLVES,19,26.3,pos 4
+Pangolier,DOUBLE JUMP,12,16.7,pos 4
+Gyrocopter,AFTERBURNER,137,46.7,pos 4
+Abaddon,THE QUICKENING,53,64.2,pos 4
+Dazzle,POISON BLOOM,45,51.1,pos 4
+Jakiro,LIQUID FROST,83,57.8,pos 4
+Huskar,BLOODBATH,9,77.8,pos 4
+Tidehunter,KRILL EATER,7,28.6,pos 4
+Oracle,CLAIRVOYANT CURSE,26,53.8,pos 4
+Enchantress,SPELLBOUND,41,41.5,pos 4
+Techies,SPLEEN'S SECRET SAUCE,223,41.3,pos 4
+Sniper,SCATTERSHOT,173,50.9,pos 4
+Witch Doctor,VOODOO FESTERATION,37,56.8,pos 4
+Silencer,REVERBERATING SILENCE,400,48.0,pos 4
+Morphling,FLOW,93,43.0,pos 4
+Earth Spirit,STEPPING STONE,25,56.0,pos 4
+Bane,DREAM STALKER,119,58.0,pos 4
+Nature's Prophet,IRONWOOD TREANT,215,40.5,pos 4
+Terrorblade,SOUL FRAGMENT,6,33.3,pos 4
+Tinker,TRANSLOCATOR,12,33.3,pos 4
+Shadow Shaman,CLUSTER CLUCK,965,52.4,pos 4
+Dark Willow,THORNY THICKET,431,49.7,pos 4
+Enigma,SPLITTING IMAGE,18,50.0,pos 4
+Clockwerk,EXPANDED ARMATURE,1205,52.8,pos 4
+Treant Protector,PRIMEVAL POWER,14,0.0,pos 4
+Magnus,REVERSE POLARITY,638,48.0,pos 4
+Muerta,OFRENDA,138,45.7,pos 4
+Lion,FIST OF DEATH,1178,51.4,pos 4
+Techies,SQUEE'S SCOPE,14,50.0,pos 4
+Invoker,AGNOSTIC,21,52.4,pos 4
+Vengeful Spirit,SOUL STRIKE,123,50.4,pos 4
+Undying,ROTTING MITTS,154,45.5,pos 4
+Pugna,SIPHONING WARD,551,53.4,pos 4
+Earthshaker,TECTONIC BUILDUP,87,43.7,pos 4
+Ogre Magi,LEARNING CURVE,430,47.9,pos 4
+Bounty Hunter,THROUGH AND THROUGH,2886,57.8,pos 4
+Bloodseeker,BLOODRUSH,0,0.0,pos 4
+Juggernaut,BLADESTORM,4,25.0,pos 4
+Phantom Lancer,CONVERGENCE,0,0.0,pos 4
+Razor,THUNDERHEAD,17,58.8,pos 4
+Sven,HEAVY PLATE,9,44.4,pos 4
+Tiny,CRASH LANDING,554,46.8,pos 4
+Kunkka,GROG BLOSSOM,6,16.7,pos 4
+Necrophos,RAPID DECAY,1,0.0,pos 4
+Faceless Void,TIME ZONE,16,62.5,pos 4
+Death Prophet,SUPPRESS,3,33.3,pos 4
+Death Prophet,MOURNING RITUAL,9,66.7,pos 4
+Templar Assassin,REFRACTOR,1,100.0,pos 4
+Viper,CAUSTIC BATH,1,0.0,pos 4
+Dragon Knight,FIRE DRAGON,4,0.0,pos 4
+Dragon Knight,FROST DRAGON,12,58.3,pos 4
+Dark Seer,HEART OF BATTLE,3,0.0,pos 4
+Clinkz,ENGULFING STEP,32,50.0,pos 4
+Night Stalker,BLINDING VOID,10,60.0,pos 4
+Chen,WOLF CONVERT,0,0.0,pos 4
+Spectre,FORSAKEN,0,0.0,pos 4
+Outworld Devourer,OBSIDIAN DECIMATOR,10,20.0,pos 4
+Lone Druid,BEAR NECESSITIES,2,0.0,pos 4
+Naga Siren,RIP TIDE,3,0.0,pos 4
+Visage,FAITHFUL FOLLOWERS,1,0.0,pos 4
+Medusa,ENGORGED,2,0.0,pos 4
+Troll Warlord,INSENSITIVE,3,66.7,pos 4
+Bristleback,BERSERK,1,0.0,pos 4
+Underlord,ABYSSAL HORDE,2,50.0,pos 4
+Kez,HERO OF THE FLIGHTLESS,70,30.0,pos 4
+Bounty Hunter,CUTPURSE,125,56.0,pos 4
+Ogre Magi,FAT CHANCE,16,56.3,pos 4
+Earthshaker,SLUGGER,659,50.5,pos 4
+Pugna,REWARDS OF RUIN,29,62.1,pos 4
+Undying,RIPPED,25,56.0,pos 4
+Vengeful Spirit,AVENGING MISSILE,97,56.7,pos 4
+Invoker,ELITIST,118,48.3,pos 4
+Spirit Breaker,BULL RUSH,940,51.0,pos 4
+Lion,ESSENCE EATER,1379,53.4,pos 4
+Muerta,DANCE OF THE DEAD,2328,49.0,pos 4
+Earth Spirit,READY TO ROLL,126,46.8,pos 4
+Disruptor,KINETIC FENCE,22,50.0,pos 4
+Phoenix,HOTSPOT,74,56.8,pos 4
+Clockwerk,HOOKUP,19,52.6,pos 4
+Enigma,EVENT HORIZON,49,46.9,pos 4
+Dark Willow,THROWING SHADE,1152,48.8,pos 4
+Shadow Shaman,MASSIVE SERPENT WARD,29,48.3,pos 4
+Tinker,REPAIR BOTS,186,53.8,pos 4
+Terrorblade,CONDEMNED,94,48.9,pos 4
+Nature's Prophet,SOOTHING SAPLINGS,54,40.7,pos 4
+Bane,SLEEPWALK,27,59.3,pos 4
+Morphling,EBB,6,16.7,pos 4
+Witch Doctor,HEADHUNTER,142,50.0,pos 4
+Silencer,IRREPRESSIBLE,28,39.3,pos 4
+Sniper,GHILLIE SUIT,10,40.0,pos 4
+Batrider,ARSONIST,89,47.2,pos 4
+Oracle,CLAIRVOYANT CURE,48,50.0,pos 4
+Techies,SPOON'S STASH,113,44.2,pos 4
+Grimstroke,INKSTIGATE,245,48.2,pos 4
+Primal Beast,FEROCITY,3,33.3,pos 4
+Io,KRITZKRIEG,144,54.2,pos 4
+Chen,CENTAUR CONVERT,2,100.0,pos 4
+Doom,DEVIL'S BARGAIN,73,43.8,pos 4
+Broodmother,FEEDING FRENZY,7,42.9,pos 4
+Pangolier,THUNDERBOLT,7,14.3,pos 4
+Lina,SLOW BURN,78,47.4,pos 4
+Ancient Apparition,EXPOSURE,59,45.8,pos 4
+Shadow Fiend,SHADOWMIRE,17,23.5,pos 4
+Mars,VICTORY FEAST,13,92.3,pos 4
+Phantom Assassin,METHODICAL,21,28.6,pos 4
+Winter Wyvern,ESSENCE OF THE BLUEHEART,90,45.6,pos 4
+Slark,DARK REEF RENEGADE,86,44.2,pos 4
+Lone Druid,UNBEARABLE,1,0.0,pos 4
+Elder Titan,DECONSTRUCTION,64,60.9,pos 4
+Puck,JOSTLING RIFT,18,27.8,pos 4
+Anti-Mage,MAGEBANE'S MIRROR,4,25.0,pos 4
+Meepo,PACK RAT,1,100.0,pos 4
+Sand King,SANDSHROUD,14,42.9,pos 4
+Ursa,GRUDGE BEARER,2,0.0,pos 4
+Luna,MOONSTORM,2,50.0,pos 4
+Dark Seer,QUICK WIT,7,14.3,pos 4
+Chaos Knight,PHANTASMAGORIA,1,0.0,pos 4
+Centaur Warrunner,HORSEPOWER,8,62.5,pos 4
+Queen of Pain,MASOCHIST,12,16.7,pos 5
+Chaos Knight,PHANTASMAGORIA,6,33.3,pos 5
+Underlord,ABYSSAL HORDE,3,0.0,pos 5
+Phantom Lancer,CONVERGENCE,6,16.7,pos 5
+Wraith King,SPECTRAL BLADE,8,0.0,pos 5
+Beastmaster,WILD HUNT,4,50.0,pos 5
+Naga Siren,DELUGE,15,33.3,pos 5
+Pangolier,DOUBLE JUMP,5,20.0,pos 5
+Dawnbreaker,SOLAR CHARGED,54,48.1,pos 5
+Drow Ranger,SIDESTEP,25,24.0,pos 5
+Mirana,SOLAR FLARE,47,40.4,pos 5
+Lone Druid,BEAR NECESSITIES,1,0.0,pos 5
+Timbersaw,TWISTED CHAKRAM,9,11.1,pos 5
+Sven,HEAVY PLATE,31,74.2,pos 5
+Earth Spirit,READY TO ROLL,15,40.0,pos 5
+Enigma,EVENT HORIZON,21,52.4,pos 5
+Lifestealer,UNFETTERED,3,66.7,pos 5
+Earthshaker,TECTONIC BUILDUP,8,37.5,pos 5
+Enchantress,SPELLBOUND,168,45.2,pos 5
+Tidehunter,KRAKEN SWELL,18,33.3,pos 5
+Lone Druid,BEAR WITH ME,8,12.5,pos 5
+Phantom Assassin,METHODICAL,107,24.3,pos 5
+Windranger,WHIRLWIND,4,25.0,pos 5
+Ancient Apparition,EXPOSURE,164,48.2,pos 5
+Bristleback,SNOT ROCKET,90,54.4,pos 5
+Marci,BODYGUARD,270,48.5,pos 5
+Monkey King,WUKONG'S FAITHFUL,6,50.0,pos 5
+Chen,SATYR CONVERT,217,55.8,pos 5
+Doom,DEVIL'S BARGAIN,21,47.6,pos 5
+Gyrocopter,AFTERBURNER,177,46.9,pos 5
+Spirit Breaker,IMBALANCED,5,80.0,pos 5
+Alchemist,SEED MONEY,231,37.7,pos 5
+Warlock,CHAMPION OF GORROTH,79,39.2,pos 5
+Rubick,FRUGAL FILCH,211,47.4,pos 5
+Shadow Shaman,CLUSTER CLUCK,980,52.1,pos 5
+Doom,IMPENDING DOOM,4,75.0,pos 5
+Techies,SQUEE'S SCOPE,8,50.0,pos 5
+Witch Doctor,HEADHUNTER,451,47.5,pos 5
+Oracle,CLAIRVOYANT CURSE,69,50.7,pos 5
+Vengeful Spirit,AVENGING MISSILE,126,57.9,pos 5
+Ogre Magi,FAT CHANCE,73,34.2,pos 5
+Omniknight,HEALING HAMMER,33,57.6,pos 5
+Chen,TROLL CONVERT,6,16.7,pos 5
+Winter Wyvern,DRAGON SIGHT,121,56.2,pos 5
+Huskar,BLOODBATH,14,64.3,pos 5
+Nyx Assassin,SCUTTLE,432,44.4,pos 5
+Huskar,NOTHL TRANSFUSION,4,0.0,pos 5
+Elder Titan,MOMENTUM,55,50.9,pos 5
+Undying,ROTTING MITTS,868,49.0,pos 5
+Pugna,SIPHONING WARD,1025,54.4,pos 5
+Pudge,FRESH MEAT,12,33.3,pos 5
+Tusk,DRINKING BUDDIES,20,60.0,pos 5
+Dark Willow,THROWING SHADE,289,49.8,pos 5
+Lich,FROSTBOUND,5451,54.6,pos 5
+Bloodseeker,ARTERIAL SPRAY,84,26.2,pos 5
+Puck,CURVEBALL,4,0.0,pos 5
+Sand King,DUST DEVIL,1,0.0,pos 5
+Tiny,CRASH LANDING,61,24.6,pos 5
+Kunkka,HIGH TIDE,2,0.0,pos 5
+Necrophos,PROFANE POTENCY,9,33.3,pos 5
+Death Prophet,MOURNING RITUAL,5,80.0,pos 5
+Viper,CAUSTIC BATH,1,0.0,pos 5
+Dragon Knight,CORROSIVE DRAGON,0,0.0,pos 5
+Dark Seer,HEART OF BATTLE,0,0.0,pos 5
+Broodmother,FEEDING FRENZY,10,50.0,pos 5
+Weaver,HIVEMIND,10,50.0,pos 5
+Invoker,ELITIST,24,29.2,pos 5
+Outworld Devourer,OVERWHELMING DEVOURER,1,0.0,pos 5
+Lycan,SPIRIT WOLVES,0,0.0,pos 5
+Brewmaster,ROLL OUT THE BARREL,6,16.7,pos 5
+Chaos Knight,IRRATIONALITY,5,20.0,pos 5
+Visage,FAITHFUL FOLLOWERS,0,0.0,pos 5
+Medusa,VENOMOUS VOLLEY,24,20.8,pos 5
+Legion Commander,STONEHALL PLATE,18,61.1,pos 5
+Earth Spirit,STEPPING STONE,4,50.0,pos 5
+Terrorblade,CONDEMNED,62,33.9,pos 5
+Arc Warden,ORDER,3,33.3,pos 5
+Void Spirit,SANCTUARY,8,0.0,pos 5
+Mars,VICTORY FEAST,1,100.0,pos 5
+Ringmaster,CENTER STAGE,516,48.8,pos 5
+Primal Beast,FEROCITY,2,50.0,pos 5
+Anti-Mage,MAGEBANE'S MIRROR,8,0.0,pos 5
+Clockwerk,EXPANDED ARMATURE,2487,53.5,pos 5
+Bounty Hunter,CUTPURSE,22,50.0,pos 5
+Shadow Demon,SHADOW SERVANT,185,49.7,pos 5
+Disruptor,THUNDERSTORM,1375,53.5,pos 5
+Nature's Prophet,IRONWOOD TREANT,134,37.3,pos 5
+Zeus,LIVEWIRE,1893,53.4,pos 5
+Silencer,REVERBERATING SILENCE,874,44.5,pos 5
+Nyx Assassin,MANA BURN,15,53.3,pos 5
+Io,KRITZKRIEG,647,51.0,pos 5
+Chen,CENTAUR CONVERT,2,0.0,pos 5
+Omniknight,OMNIPRESENT,85,49.4,pos 5
+Ogre Magi,LEARNING CURVE,3774,51.6,pos 5
+Vengeful Spirit,SOUL STRIKE,122,37.7,pos 5
+Oracle,CLAIRVOYANT CURE,593,52.3,pos 5
+Huskar,INCENDIARY,96,32.3,pos 5
+Shadow Shaman,MASSIVE SERPENT WARD,43,41.9,pos 5
+Rubick,ARCANE ACCUMULATION,299,47.5,pos 5
+Witch Doctor,CLEFT DEATH,26,42.3,pos 5
+Skywrath Mage,STAFF OF THE SCION,17,52.9,pos 5
+Treant Protector,PRIMEVAL POWER,57,50.9,pos 5
+Spirit Breaker,BULL RUSH,164,54.3,pos 5
+Lina,SLOW BURN,27,48.1,pos 5
+Batrider,ARSONIST,28,35.7,pos 5
+Doom,GLUTTONY,44,52.3,pos 5
+Sniper,GHILLIE SUIT,9,33.3,pos 5
+Snapfire,FULL BORE,146,47.9,pos 5
+Ancient Apparition,BONE CHILL,244,48.8,pos 5
+Windranger,FOCUS FIRE,47,42.6,pos 5
+Phantom Assassin,VEILED ONE,14,21.4,pos 5
+Bristleback,SEEING RED,24,37.5,pos 5
+Templar Assassin,REFRACTOR,3,33.3,pos 5
+Venomancer,PLAGUE CARRIER,210,48.6,pos 5
+Lifestealer,RAGE,22,27.3,pos 5
+Techies,SPLEEN'S SECRET SAUCE,113,40.7,pos 5
+Enigma,SPLITTING IMAGE,20,50.0,pos 5
+Razor,DYNAMO,3,33.3,pos 5
+Visage,SEPULCHRE,5,40.0,pos 5
+Timbersaw,SHREDDER,32,34.4,pos 5
+Juggernaut,BLADEFORM,9,22.2,pos 5
+Luna,MOONSTORM,8,12.5,pos 5
+Riki,CONTRACT KILLER,30,43.3,pos 5
+Axe,CALL OUT,5,60.0,pos 5
+Death Prophet,SUPPRESS,5,60.0,pos 5
+Naga Siren,RIP TIDE,12,8.3,pos 5
+Wraith King,BONE GUARD,17,52.9,pos 5
+Ember Spirit,CHAIN GANG,7,42.9,pos 5
+Puck,JOSTLING RIFT,8,50.0,pos 5
+Kunkka,GROG BLOSSOM,5,60.0,pos 5
+Queen of Pain,SUCCUBUS,7,0.0,pos 5
+Dark Seer,QUICK WIT,3,33.3,pos 5
+Faceless Void,CHRONOSPHERE,8,12.5,pos 5
+Meepo,MORE MEEPO,7,28.6,pos 5
+Clinkz,ENGULFING STEP,11,36.4,pos 5
+Ember Spirit,DOUBLE IMPACT,12,58.3,pos 5
+Axe,ONE MAN ARMY,5,20.0,pos 5
+Death Prophet,SPIRIT COLLECTOR,2,0.0,pos 5
+Troll Warlord,BAD INFLUENCE,2,50.0,pos 5
+Pangolier,THUNDERBOLT,2,0.0,pos 5
+Riki,EXTERMINATOR,20,45.0,pos 5
+Luna,MOONSHIELD,9,77.8,pos 5
+Juggernaut,BLADESTORM,10,30.0,pos 5
+Ursa,GRUDGE BEARER,8,25.0,pos 5
+Razor,THUNDERHEAD,11,0.0,pos 5
+Visage,DEATH TOLL,38,60.5,pos 5
+Keeper of the Light,RECALL,17,41.2,pos 5
+Shadow Fiend,LASTING PRESENCE,14,28.6,pos 5
+Night Stalker,NIGHT REIGN,15,26.7,pos 5
+Venomancer,PATIENT ZERO,509,58.3,pos 5
+Techies,SPOON'S STASH,69,46.4,pos 5
+Templar Assassin,VOIDBLADES,34,29.4,pos 5
+Slark,LEECHING LEASH,80,41.3,pos 5
+Dazzle,NOTHL BOON,30,36.7,pos 5
+Grimstroke,INKSTIGATE,215,46.5,pos 5
+Bane,SLEEPWALK,78,56.4,pos 5
+Snapfire,RICOCHET II,23,47.8,pos 5
+Sniper,SCATTERSHOT,46,41.3,pos 5
+Batrider,STOKED,563,46.9,pos 5
+Spectre,FORSAKEN,4,25.0,pos 5
+Lina,THERMAL RUNAWAY,67,43.3,pos 5
+Hoodwink,TREEBOUNCE TRICKSHOT,265,50.2,pos 5
+Treant Protector,SAPLING,177,42.9,pos 5
+Skywrath Mage,SHIELD OF THE SCION,87,39.1,pos 5
+Tinker,TRANSLOCATOR,17,47.1,pos 5
+Leshrac,MISANTHROPY,102,45.1,pos 5
+Bristleback,BERSERK,3,66.7,pos 5
+Lion,ESSENCE EATER,999,49.1,pos 5
+Witch Doctor,VOODOO FESTERATION,70,34.3,pos 5
+Magnus,REVERSE POLARITY,312,41.3,pos 5
+Crystal Maiden,FROZEN EXPANSE,1074,49.1,pos 5
+Abaddon,THE QUICKENING,281,54.1,pos 5
+Jakiro,LIQUID FIRE,309,48.9,pos 5
+Chen,WOLF CONVERT,7,71.4,pos 5
+Muerta,OFRENDA,21,28.6,pos 5
+Io,MEDIGUN,46,63.0,pos 5
+Morphling,EBB,123,30.9,pos 5
+Phoenix,DYING LIGHT,1205,52.2,pos 5
+Silencer,IRREPRESSIBLE,34,44.1,pos 5
+Zeus,DIVINE RAMPAGE,136,47.8,pos 5
+Nature's Prophet,SOOTHING SAPLINGS,30,40.0,pos 5
+Disruptor,KINETIC FENCE,84,48.8,pos 5
+Shadow Demon,PROMULGATE,1224,49.8,pos 5
+Bounty Hunter,THROUGH AND THROUGH,458,53.1,pos 5
+Clockwerk,HOOKUP,13,46.2,pos 5
+Anti-Mage,MANA THIRST,44,22.7,pos 5
+Bloodseeker,BLOODRUSH,1,100.0,pos 5
+Sand King,SANDSHROUD,5,60.0,pos 5
+Storm Spirit,SHOCK COLLAR,1,0.0,pos 5
+Tiny,INSURMOUNTABLE,2,0.0,pos 5
+Slardar,BRINEGUARD,0,0.0,pos 5
+Necrophos,RAPID DECAY,0,0.0,pos 5
+Viper,POISON BURST,14,57.1,pos 5
+Dragon Knight,FIRE DRAGON,102,36.3,pos 5
+Dragon Knight,FROST DRAGON,1,0.0,pos 5
+Broodmother,NECROTIC WEBS,1,0.0,pos 5
+Weaver,SKITTERSTEP,99,47.5,pos 5
+Invoker,AGNOSTIC,2,50.0,pos 5
+Outworld Devourer,OBSIDIAN DECIMATOR,5,40.0,pos 5
+Lycan,PACK LEADER,0,0.0,pos 5
+Lycan,ALPHA WOLVES,26,34.6,pos 5
+Brewmaster,DRUNKEN MASTER,4,25.0,pos 5
+Meepo,PACK RAT,2,0.0,pos 5
+Medusa,ENGORGED,2,0.0,pos 5
+Centaur Warrunner,HORSEPOWER,6,33.3,pos 5
+Legion Commander,SPOILS OF WAR,1,100.0,pos 5
+Underlord,DEMON'S REACH,0,0.0,pos 5
+Terrorblade,SOUL FRAGMENT,6,66.7,pos 5
+Arc Warden,DISORDER,4,25.0,pos 5
+Void Spirit,CALL OF THE VOID,2,50.0,pos 5
+Mars,BLOOD SPORT,14,50.0,pos 5
+Primal Beast,ROMP N' STOMP,13,38.5,pos 5
+Kez,HERO OF THE FLIGHTLESS,66,30.3,pos 5
+Lich,GROWING COLD,394,54.1,pos 5
+Dark Willow,THORNY THICKET,217,47.0,pos 5
+Tusk,TAG TEAM,1130,46.3,pos 5
+Pudge,FLAYER'S HOOK,2079,45.9,pos 5
+Pugna,REWARDS OF RUIN,27,44.4,pos 5
+Undying,RIPPED,85,42.4,pos 5
+Elder Titan,DECONSTRUCTION,434,53.9,pos 5
+Phoenix,HOTSPOT,87,57.5,pos 5
+Morphling,FLOW,27,44.4,pos 5
+Winter Wyvern,ESSENCE OF THE BLUEHEART,152,50.0,pos 5
+Muerta,DANCE OF THE DEAD,245,48.6,pos 5
+Jakiro,LIQUID FROST,392,48.2,pos 5
+Abaddon,MEPHITIC SHROUD,1292,52.5,pos 5
+Crystal Maiden,COLD COMFORT,370,48.6,pos 5
+Magnus,REVERSE REVERSE POLARITY,8,37.5,pos 5
+Lion,FIST OF DEATH,566,49.8,pos 5
+Leshrac,CHRONOPTIC NOURISHMENT,13,46.2,pos 5
+Tinker,REPAIR BOTS,290,52.4,pos 5
+Warlock,BLACK GRIMOIRE,547,48.4,pos 5
+Alchemist,MIXOLOGIST,23,34.8,pos 5
+Hoodwink,GO NUTS,11,36.4,pos 5
+Gyrocopter,SECONDARY STRIKES,112,53.6,pos 5
+Spectre,TWIST THE KNIFE,134,35.8,pos 5
+Monkey King,SIMIAN STRIDE,54,42.6,pos 5
+Chen,HELLBEAR CONVERT,85,52.9,pos 5
+Marci,SIDEKICK,685,50.1,pos 5
+Bane,DREAM STALKER,218,52.3,pos 5
+Grimstroke,FINE ART,117,47.9,pos 5
+Dazzle,POISON BLOOM,164,53.0,pos 5
+Slark,DARK REEF RENEGADE,45,53.3,pos 5
+Tidehunter,KRILL EATER,6,50.0,pos 5
+Enchantress,OVERPROTECTIVE WISPS,278,38.5,pos 5
+Earthshaker,SLUGGER,52,38.5,pos 5
+Night Stalker,BLINDING VOID,2,50.0,pos 5
+Shadow Fiend,SHADOWMIRE,20,45.0,pos 5
+Keeper of the Light,SOLAR BIND,30,36.7,pos 5
+Sven,WRATH OF GOD,3,0.0,pos 5
+Earth Spirit,RESONANCE,16,37.5,pos 5
+Ursa,BEAR DOWN,26,30.8,pos 5
+Mirana,MOONLIGHT SHADOW,28,57.1,pos 5
+Drow Ranger,VANTAGE POINT,5,0.0,pos 5
+Dawnbreaker,GLEAMING HAMMER,45,66.7,pos 5
+Beastmaster,BEAST MODE,8,12.5,pos 5
+Lone Druid,UNBEARABLE,3,33.3,pos 5
+Troll Warlord,INSENSITIVE,13,46.2,pos 5
+Phantom Lancer,DIVERGENCE,4,0.0,pos 5
+Clinkz,SUPPRESSIVE FIRE,6,66.7,pos 5
+Storm Spirit,STATIC SLIDE,8,37.5,pos 5
+Slardar,LEG DAY,8,62.5,pos 5
+Faceless Void,TIME ZONE,10,40.0,pos 5
+Centaur Warrunner,COUNTER-STRIKE,4,75.0,pos 5
