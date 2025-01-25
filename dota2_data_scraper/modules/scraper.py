@@ -81,9 +81,9 @@ def get_d2pt_page_table(driver):
         return value
 
     # Применяем очистку данных ко всем ячейкам
-    df_heroes_table = df_heroes_table.applymap(clean_data)
+    df_heroes_table = df_heroes_table.map(clean_data)
 
     # Обработка типов данных для чисел
-    df_heroes_table = df_heroes_table.apply(lambda x: pd.to_numeric(x, errors='ignore') if x.name != 2 else x)
+    df_heroes_table = df_heroes_table.apply(lambda x: x.convert_dtypes() if x.name != 2 else x)
 
     return df_heroes_table
