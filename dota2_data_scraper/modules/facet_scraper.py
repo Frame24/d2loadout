@@ -138,17 +138,8 @@ def scrape_facet_data(driver):
 
     dfs = [collect_position_data(driver, role, xpath) for role, xpath in positions.items()]
     df_full_facets = pd.concat(dfs, axis=0)
-
-    # Переименование колонок
-    df_full_facets = df_full_facets.rename({
-        "Hero": "hero",
-        "Facet": "facet",
-        "Matches": "matches",
-        "Win Rate": "win_rate"
-    }, axis=1)[["hero", "facet", "matches", "win_rate", "Role"]]
-
     # Очистка данных
-    df_full_facets["win_rate"] = df_full_facets["win_rate"].apply(lambda x: x.replace("%", ""))
+    df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(lambda x: x.replace("%", ""))
     df_full_facets = df_full_facets.convert_dtypes()
 
     logging.info("Сбор данных Facets завершен.")
