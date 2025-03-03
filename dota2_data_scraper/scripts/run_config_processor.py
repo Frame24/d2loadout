@@ -45,7 +45,7 @@ df_final.loc[df_final["Hero"] == "Outworld Destroyer", "hero_id"] = 76
 
 # Обработка столбцов Expert и WR 9500+ MMR
 df_final["Expert Win Rate"] = (
-    df_final["Expert"].str.extract(r"(\d+\.\d+)%").astype(float)
+    df_final["Expert"].astype(str).str.extract(r"(\d+\.\d+)").astype(float)
 )
 df_final["Expert Matches"] = df_final["Expert"].str.extract(r"\((\d+)\)").astype(int)
 df_final["9500 Win Rate"] = (
