@@ -44,16 +44,16 @@ df_final = df_final[cols]
 df_final.loc[df_final["Hero"] == "Outworld Destroyer", "hero_id"] = 76
 
 # Обработка столбцов Expert и WR 9500+ MMR
-df_final["Expert Win Rate"] = (
-    df_final["Expert"].astype(str).str.extract(r"(\d+\.\d+)").astype(float)
-)
-df_final["Expert Matches"] = df_final["Expert"].str.extract(r"\((\d+)\)").astype(int)
-df_final["9500 Win Rate"] = (
-    df_final["WR 9500+ MMR"].str.extract(r"(\d+\.\d+)%").astype(float)
-)
-df_final["9500 Matches"] = df_final["WR 9500+ MMR"].str.extract(r" (\d+) ").astype(int)
+# df_final["Expert Win Rate"] = (
+#     df_final["Expert"].astype(str).str.extract(r"(\d+\.\d+)").astype(float)
+# )
+# df_final["Expert Matches"] = df_final["Expert"].str.extract(r"\((\d+)\)").astype(int)
+# df_final["9500 Win Rate"] = (
+#     df_final["WR 9500+ MMR"].str.extract(r"(\d+\.\d+)%").astype(float)
+# )
+# df_final["9500 Matches"] = df_final["WR 9500+ MMR"].str.extract(r" (\d+) ").astype(int)
 
-df_final.drop(columns=["Expert", "WR 9500+ MMR"], inplace=True)
+# df_final.drop(columns=["Expert", "WR 9500+ MMR"], inplace=True)
 
 # Обработка данных фасетов (df_final_facets)
 df_full_facets["facet_upper"] = df_full_facets["Facet"].str.upper()

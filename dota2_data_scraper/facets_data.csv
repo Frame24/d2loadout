@@ -1,1336 +1,1336 @@
 Hero,Facet,Matches,Change,Win Rate,Change,Pick Rate,Other Facet WR Diff,Role
-Bane,DREAM STALKER,13,+14.3%,92.3,+14.3%,100.0%,+92.3%,pos 1
-Witch Doctor,HEADHUNTER,5,+14.3%,60.0,+7.1%,100.0%,+60.0%,pos 1
-Enigma,EVENT HORIZON,8,+14.3%,37.5,0.0%,40.0%,+4.2%,pos 1
-Bounty Hunter,THROUGH AND THROUGH,8,+14.3%,12.5,0.0%,80.0%,-37.5%,pos 1
-Ancient Apparition,BONE CHILL,5,+14.3%,40.0,0.0%,83.3%,+40.0%,pos 1
-Rubick,FRUGAL FILCH,5,+14.3%,0.0,0.0%,71.4%,-50.0%,pos 1
-Nyx Assassin,MANA BURN,4,+14.3%,50.0,+14.3%,66.7%,+50.0%,pos 1
-Skywrath Mage,SHIELD OF THE SCION,4,+14.3%,0.0,0.0%,100.0%,0.0%,pos 1
-Winter Wyvern,RECURSIVE,16,+14.3%,37.5,0.0%,100.0%,+37.5%,pos 1
-Ringmaster,CARNY CLASSICS,3,+14.3%,0.0,0.0%,75.0%,0.0%,pos 1
-Axe,CALL OUT,6,+7.1%,50.0,+14.3%,33.3%,+25.0%,pos 1
-Silencer,IRREPRESSIBLE,9,+7.1%,22.2,0.0%,50.0%,0.0%,pos 1
-Leshrac,MISANTHROPY,55,+6.2%,60.0,0.0%,65.5%,+18.6%,pos 1
-Jakiro,ICE BREAKER,14,+5.7%,14.3,+3.6%,20.9%,-36.7%,pos 1
-Necrophos,PROFANE POTENCY,32,+5.4%,28.1,-3.6%,47.1%,-16.3%,pos 1
-Visage,SEPULCHRE,21,+4.8%,57.1,-7.1%,84.0%,+57.1%,pos 1
-Invoker,AGENT OF GALLARON,17,+4.8%,29.4,-7.1%,89.5%,+29.4%,pos 1
-Sniper,SCATTERSHOT,39,+4.4%,48.7,+7.1%,30.5%,-1.8%,pos 1
-Arc Warden,RUNED REPLICA,48,+4.1%,43.8,-5.7%,76.2%,+10.4%,pos 1
-Bristleback,SNOT ROCKET,344,+3.6%,48.8,+0.4%,65.9%,+10.6%,pos 1
-Death Prophet,SPIRIT COLLECTOR,19,+2.9%,36.8,+1.2%,73.1%,-20.3%,pos 1
-Queen of Pain,MASOCHIST,7,+2.4%,42.9,+7.1%,26.9%,-15.0%,pos 1
-Luna,MOONSHIELD,926,+2.2%,46.7,+0.5%,76.8%,+5.6%,pos 1
-Meepo,CODEPENDENT,154,+2.0%,58.4,-2.0%,75.1%,+5.5%,pos 1
-Templar Assassin,VOIDBLADES,538,+1.8%,41.6,+0.4%,85.5%,-8.4%,pos 1
-Mirana,STARSTRUCK,57,+1.6%,42.1,+1.2%,87.7%,+4.6%,pos 1
-Doom,GLUTTONY,20,+1.6%,35.0,+14.3%,35.1%,-15.0%,pos 1
-Void Spirit,CALL OF THE VOID,2,+1.4%,100.0,+14.3%,7.1%,+61.5%,pos 1
-Phantom Lancer,DIVERGENCE,200,+1.3%,43.0,+3.8%,16.1%,-0.4%,pos 1
-Slardar,LEG DAY,114,+1.2%,57.9,+1.1%,85.1%,+22.9%,pos 1
-Timbersaw,TWISTED CHAKRAM,8,+1.2%,25.0,-14.3%,28.6%,-25.0%,pos 1
-Medusa,VENOMOUS VOLLEY,974,+1.0%,49.0,-0.7%,66.5%,+0.1%,pos 1
-Weaver,HIVEMIND,32,+0.9%,40.6,+4.8%,7.5%,-7.1%,pos 1
-Wraith King,SPECTRAL BLADE,248,+0.9%,41.9,-3.9%,46.4%,-2.7%,pos 1
-Nature's Prophet,IRONWOOD TREANT,3073,+0.8%,54.1,+1.2%,98.9%,-1.8%,pos 1
-Chaos Knight,FUNDAMENTAL FORGING,361,+0.8%,44.9,-0.1%,68.2%,+3.5%,pos 1
-Slark,LEECHING LEASH,3291,+0.7%,52.4,-1.6%,87.2%,+0.4%,pos 1
-Abaddon,THE QUICKENING,59,+0.6%,52.5,-4.3%,7.6%,-0.5%,pos 1
-Riki,CONTRACT KILLER,36,+0.5%,50.0,-9.5%,3.8%,+0.8%,pos 1
-Alchemist,SEED MONEY,759,+0.4%,50.3,+1.6%,82.4%,-5.9%,pos 1
-Alchemist,MIXOLOGIST,89,+0.4%,56.2,+4.3%,9.7%,+11.0%,pos 1
-Chaos Knight,CLOVEN CHAOS,29,+0.4%,41.4,-1.4%,5.5%,-4.7%,pos 1
-Medusa,ENGORGED,43,+0.3%,48.8,+3.3%,2.9%,-0.2%,pos 1
-Shadow Fiend,SHADOWMIRE,10,+0.2%,40.0,-7.1%,3.5%,-10.2%,pos 1
-Tidehunter,KRAKEN SWELL,53,+0.1%,56.6,0.0%,23.6%,+7.8%,pos 1
-Morphling,FLOW,44,+0.0%,40.9,0.0%,1.5%,-9.3%,pos 1
-Kez,FLUTTER,607,+0.0%,44.6,-0.8%,88.9%,+6.5%,pos 1
-Crystal Maiden,GLACIAL GUARD,12,0.0%,16.7,0.0%,80.0%,-16.7%,pos 1
-Earthshaker,SLUGGER,69,0.0%,49.3,-6.0%,100.0%,+49.3%,pos 1
-Puck,CURVEBALL,0,0.0%,0.0,0.0%,0.0%,-100.0%,pos 1
-Storm Spirit,SHOCK COLLAR,0,0.0%,0.0,0.0%,0.0%,-31.6%,pos 1
-Vengeful Spirit,AVENGING MISSILE,0,0.0%,0.0,0.0%,0.0%,-41.4%,pos 1
-Zeus,LIVEWIRE,20,0.0%,25.0,+14.3%,100.0%,+25.0%,pos 1
-Kunkka,HIGH TIDE,3,0.0%,0.0,0.0%,75.0%,0.0%,pos 1
-Lina,THERMAL RUNAWAY,104,0.0%,44.2,-4.1%,98.1%,+44.2%,pos 1
-Lion,FIST OF DEATH,2,0.0%,50.0,0.0%,18.2%,+38.9%,pos 1
-Shadow Shaman,MASSIVE SERPENT WARD,0,0.0%,0.0,0.0%,0.0%,-30.0%,pos 1
-Lich,GROWING COLD,0,0.0%,0.0,0.0%,0.0%,-66.7%,pos 1
-Tinker,REPAIR BOTS,2,0.0%,0.0,0.0%,22.2%,-57.1%,pos 1
-Pugna,REWARDS OF RUIN,0,0.0%,0.0,0.0%,0.0%,-14.3%,pos 1
-Dazzle,POISON BLOOM,167,0.0%,62.9,+1.4%,98.2%,+62.9%,pos 1
-Clockwerk,EXPANDED ARMATURE,5,0.0%,60.0,0.0%,100.0%,+60.0%,pos 1
-Dark Seer,HEART OF BATTLE,1,0.0%,0.0,0.0%,5.9%,-18.8%,pos 1
-Omniknight,HEALING HAMMER,1,0.0%,0.0,0.0%,20.0%,-25.0%,pos 1
-Batrider,STOKED,1,0.0%,100.0,0.0%,25.0%,+66.7%,pos 1
-Chen,HELLBEAR CONVERT,0,0.0%,0.0,0.0%,0.0%,-50.0%,pos 1
-Chen,SATYR CONVERT,1,0.0%,0.0,0.0%,16.7%,-50.0%,pos 1
-Spirit Breaker,BULL RUSH,3,0.0%,0.0,0.0%,42.9%,-25.0%,pos 1
-Invoker,SCHOLAR OF KORYX,0,0.0%,0.0,0.0%,0.0%,-29.4%,pos 1
-Outworld Devourer,OVERWHELMING DEVOURER,1,0.0%,100.0,0.0%,8.3%,+54.5%,pos 1
-Shadow Demon,PROMULGATE,2,0.0%,0.0,0.0%,66.7%,0.0%,pos 1
-Treant Protector,SAPLING,1,0.0%,0.0,0.0%,5.0%,-52.6%,pos 1
-Undying,RIPPED,0,0.0%,0.0,0.0%,0.0%,-64.3%,pos 1
-Disruptor,KINETIC FENCE,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
-Naga Siren,RIP TIDE,323,0.0%,48.6,-0.9%,99.7%,-51.4%,pos 1
-Keeper of the Light,SOLAR BIND,5,0.0%,20.0,0.0%,45.5%,-13.3%,pos 1
-Io,MEDIGUN,1,0.0%,0.0,0.0%,4.8%,-35.0%,pos 1
-Centaur Warrunner,HORSEPOWER,2,0.0%,100.0,0.0%,66.7%,+100.0%,pos 1
-Tusk,DRINKING BUDDIES,1,0.0%,0.0,0.0%,7.7%,-25.0%,pos 1
-Elder Titan,DECONSTRUCTION,7,0.0%,14.3,0.0%,87.5%,-85.7%,pos 1
-Techies,SPLEEN'S SECRET SAUCE,2,0.0%,0.0,0.0%,22.2%,-20.0%,pos 1
+Bane,DREAM STALKER,42,+14.3%,73.8,+14.3%,100.0%,+73.8%,pos 1
+Witch Doctor,HEADHUNTER,14,+14.3%,50.0,+7.1%,93.3%,-50.0%,pos 1
+Enigma,EVENT HORIZON,14,+14.3%,35.7,0.0%,34.1%,-12.4%,pos 1
+Bounty Hunter,THROUGH AND THROUGH,11,+14.3%,18.2,0.0%,84.6%,-31.8%,pos 1
+Ancient Apparition,BONE CHILL,19,+14.3%,42.1,0.0%,82.6%,+42.1%,pos 1
+Rubick,FRUGAL FILCH,6,+14.3%,0.0,0.0%,50.0%,-16.7%,pos 1
+Nyx Assassin,MANA BURN,9,+14.3%,22.2,+14.3%,75.0%,+22.2%,pos 1
+Skywrath Mage,SHIELD OF THE SCION,5,+14.3%,0.0,0.0%,83.3%,0.0%,pos 1
+Winter Wyvern,RECURSIVE,31,+14.3%,32.3,0.0%,83.8%,-1.1%,pos 1
+Ringmaster,CARNY CLASSICS,6,+14.3%,16.7,0.0%,85.7%,+16.7%,pos 1
+Axe,CALL OUT,18,+7.1%,61.1,+14.3%,37.5%,+27.8%,pos 1
+Silencer,IRREPRESSIBLE,18,+7.1%,27.8,0.0%,46.2%,-0.8%,pos 1
+Leshrac,MISANTHROPY,113,+6.2%,48.7,0.0%,66.5%,+3.1%,pos 1
+Jakiro,ICE BREAKER,25,+5.7%,16.0,+3.6%,23.1%,-35.8%,pos 1
+Necrophos,PROFANE POTENCY,79,+5.4%,32.9,-3.6%,50.0%,-13.9%,pos 1
+Visage,SEPULCHRE,39,+4.8%,46.2,-7.1%,75.0%,+46.2%,pos 1
+Invoker,AGENT OF GALLARON,31,+4.8%,32.3,-7.1%,88.6%,+32.3%,pos 1
+Sniper,SCATTERSHOT,65,+4.4%,46.2,+7.1%,24.4%,-4.6%,pos 1
+Arc Warden,RUNED REPLICA,79,+4.1%,45.6,-5.7%,73.1%,+11.1%,pos 1
+Bristleback,SNOT ROCKET,565,+3.6%,50.3,+0.4%,65.6%,+10.1%,pos 1
+Death Prophet,SPIRIT COLLECTOR,30,+2.9%,33.3,+1.2%,69.8%,-12.8%,pos 1
+Queen of Pain,MASOCHIST,27,+2.4%,40.7,+7.1%,45.8%,-6.1%,pos 1
+Luna,MOONSHIELD,1533,+2.2%,48.7,+0.5%,77.3%,+6.7%,pos 1
+Meepo,CODEPENDENT,307,+2.0%,58.3,-2.0%,72.7%,-0.8%,pos 1
+Templar Assassin,VOIDBLADES,951,+1.8%,43.0,+0.4%,85.5%,+2.6%,pos 1
+Mirana,STARSTRUCK,104,+1.6%,43.3,+1.2%,88.1%,+0.4%,pos 1
+Doom,GLUTTONY,37,+1.6%,32.4,+14.3%,41.1%,-12.5%,pos 1
+Void Spirit,CALL OF THE VOID,5,+1.4%,60.0,+14.3%,7.6%,+27.2%,pos 1
+Phantom Lancer,DIVERGENCE,281,+1.3%,43.8,+3.8%,18.2%,+1.2%,pos 1
+Slardar,LEG DAY,193,+1.2%,59.1,+1.1%,87.3%,+23.4%,pos 1
+Timbersaw,TWISTED CHAKRAM,18,+1.2%,38.9,-14.3%,36.7%,-9.5%,pos 1
+Medusa,VENOMOUS VOLLEY,1877,+1.0%,50.3,-0.7%,68.8%,+2.6%,pos 1
+Weaver,HIVEMIND,112,+0.9%,41.1,+4.8%,13.0%,-7.4%,pos 1
+Wraith King,SPECTRAL BLADE,466,+0.9%,41.4,-3.9%,43.6%,-6.0%,pos 1
+Nature's Prophet,IRONWOOD TREANT,10260,+0.8%,54.1,+1.2%,99.4%,+0.3%,pos 1
+Chaos Knight,FUNDAMENTAL FORGING,581,+0.8%,44.4,-0.1%,67.3%,-5.0%,pos 1
+Slark,LEECHING LEASH,9205,+0.7%,52.8,-1.6%,89.8%,+0.9%,pos 1
+Abaddon,THE QUICKENING,126,+0.6%,55.6,-4.3%,8.5%,+2.8%,pos 1
+Riki,CONTRACT KILLER,78,+0.5%,46.2,-9.5%,3.9%,-3.5%,pos 1
+Alchemist,SEED MONEY,1301,+0.4%,49.3,+1.6%,83.1%,-7.7%,pos 1
+Alchemist,MIXOLOGIST,135,+0.4%,57.0,+4.3%,8.6%,+10.9%,pos 1
+Chaos Knight,CLOVEN CHAOS,41,+0.4%,46.3,-1.4%,4.8%,-3.0%,pos 1
+Medusa,ENGORGED,148,+0.3%,52.7,+3.3%,5.4%,+4.9%,pos 1
+Shadow Fiend,SHADOWMIRE,27,+0.2%,37.0,-7.1%,4.3%,-11.1%,pos 1
+Tidehunter,KRAKEN SWELL,77,+0.1%,50.6,0.0%,17.7%,+1.9%,pos 1
+Morphling,FLOW,67,+0.0%,44.8,0.0%,0.8%,-7.5%,pos 1
+Kez,FLUTTER,1167,+0.0%,46.9,-0.8%,82.6%,+4.2%,pos 1
+Crystal Maiden,GLACIAL GUARD,18,0.0%,27.8,0.0%,75.0%,+11.1%,pos 1
+Earthshaker,SLUGGER,130,0.0%,47.7,-6.0%,98.5%,-52.3%,pos 1
+Puck,CURVEBALL,0,0.0%,0.0,0.0%,0.0%,-60.0%,pos 1
+Storm Spirit,SHOCK COLLAR,4,0.0%,25.0,0.0%,8.5%,-5.2%,pos 1
+Vengeful Spirit,AVENGING MISSILE,1,0.0%,100.0,0.0%,1.3%,+55.8%,pos 1
+Zeus,LIVEWIRE,30,0.0%,23.3,+14.3%,96.8%,-76.7%,pos 1
+Kunkka,HIGH TIDE,9,0.0%,22.2,0.0%,90.0%,+22.2%,pos 1
+Lina,THERMAL RUNAWAY,259,0.0%,42.9,-4.1%,98.1%,+2.9%,pos 1
+Lion,FIST OF DEATH,3,0.0%,33.3,0.0%,16.7%,+26.7%,pos 1
+Shadow Shaman,MASSIVE SERPENT WARD,1,0.0%,0.0,0.0%,3.4%,-25.0%,pos 1
+Lich,GROWING COLD,0,0.0%,0.0,0.0%,0.0%,-62.5%,pos 1
+Tinker,REPAIR BOTS,9,0.0%,55.6,0.0%,32.1%,+2.9%,pos 1
+Pugna,REWARDS OF RUIN,0,0.0%,0.0,0.0%,0.0%,-13.6%,pos 1
+Dazzle,POISON BLOOM,702,0.0%,58.0,+1.4%,99.2%,+41.3%,pos 1
+Clockwerk,EXPANDED ARMATURE,7,0.0%,42.9,0.0%,100.0%,+42.9%,pos 1
+Dark Seer,HEART OF BATTLE,1,0.0%,0.0,0.0%,3.6%,-29.6%,pos 1
+Omniknight,HEALING HAMMER,1,0.0%,0.0,0.0%,14.3%,-33.3%,pos 1
+Batrider,STOKED,2,0.0%,100.0,0.0%,22.2%,+71.4%,pos 1
+Chen,HELLBEAR CONVERT,0,0.0%,0.0,0.0%,0.0%,-78.6%,pos 1
+Chen,SATYR CONVERT,1,0.0%,0.0,0.0%,6.3%,-78.6%,pos 1
+Spirit Breaker,BULL RUSH,10,0.0%,0.0,0.0%,58.8%,-42.9%,pos 1
+Invoker,SCHOLAR OF KORYX,0,0.0%,0.0,0.0%,0.0%,-32.3%,pos 1
+Outworld Devourer,OVERWHELMING DEVOURER,10,0.0%,60.0,0.0%,13.5%,+14.7%,pos 1
+Shadow Demon,PROMULGATE,14,0.0%,14.3,0.0%,93.3%,+14.3%,pos 1
+Treant Protector,SAPLING,1,0.0%,0.0,0.0%,1.9%,-51.0%,pos 1
+Undying,RIPPED,2,0.0%,0.0,0.0%,5.7%,-69.7%,pos 1
+Disruptor,KINETIC FENCE,0,0.0%,0.0,0.0%,0.0%,-14.3%,pos 1
+Naga Siren,RIP TIDE,590,0.0%,45.1,-0.9%,99.2%,-14.9%,pos 1
+Keeper of the Light,SOLAR BIND,10,0.0%,20.0,0.0%,58.8%,-8.6%,pos 1
+Io,MEDIGUN,2,0.0%,0.0,0.0%,4.9%,-56.4%,pos 1
+Centaur Warrunner,HORSEPOWER,4,0.0%,50.0,0.0%,66.7%,0.0%,pos 1
+Tusk,DRINKING BUDDIES,1,0.0%,0.0,0.0%,4.0%,-25.0%,pos 1
+Elder Titan,DECONSTRUCTION,21,0.0%,38.1,0.0%,84.0%,-36.9%,pos 1
+Techies,SPLEEN'S SECRET SAUCE,3,0.0%,0.0,0.0%,25.0%,-14.3%,pos 1
 Earth Spirit,STEPPING STONE,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
-Underlord,ABYSSAL HORDE,2,0.0%,50.0,0.0%,22.2%,-7.1%,pos 1
-Oracle,CLAIRVOYANT CURE,3,0.0%,0.0,0.0%,42.9%,-25.0%,pos 1
-Pangolier,DOUBLE JUMP,6,0.0%,33.3,0.0%,46.2%,+19.0%,pos 1
-Grimstroke,FINE ART,3,0.0%,0.0,0.0%,75.0%,0.0%,pos 1
-Snapfire,FULL BORE,1,0.0%,0.0,0.0%,6.3%,-66.7%,pos 1
-Mars,BLOOD SPORT,6,0.0%,33.3,-14.3%,85.7%,-66.7%,pos 1
-Dawnbreaker,TRAILBLAZER,1,0.0%,0.0,0.0%,1.2%,-57.1%,pos 1
-Kez,SHADOWHAWK,76,-0.0%,38.2,-1.5%,11.1%,-6.5%,pos 1
-Morphling,EBB,2905,-0.0%,50.2,-0.8%,98.5%,+9.3%,pos 1
-Tidehunter,KRILL EATER,172,-0.1%,48.8,-2.0%,76.4%,-7.8%,pos 1
-Shadow Fiend,LASTING PRESENCE,279,-0.2%,50.2,-1.7%,96.5%,+10.2%,pos 1
-Sven,HEAVY PLATE,33,-0.2%,57.6,+1.0%,1.9%,+9.8%,pos 1
-Beastmaster,WILD HUNT,5,-0.4%,20.0,-14.3%,1.5%,-26.5%,pos 1
-Faceless Void,TIME ZONE,109,-0.5%,45.9,-2.4%,19.2%,-3.6%,pos 1
-Troll Warlord,BAD INFLUENCE,1266,-0.6%,49.8,-0.0%,87.0%,+7.4%,pos 1
-Ursa,BEAR DOWN,1380,-0.6%,48.0,-1.9%,70.4%,-1.8%,pos 1
-Razor,THUNDERHEAD,431,-0.7%,46.2,+0.2%,85.7%,-2.4%,pos 1
-Juggernaut,BLADEFORM,335,-0.8%,48.4,+3.0%,31.5%,-0.5%,pos 1
-Terrorblade,SOUL FRAGMENT,193,-0.8%,41.5,-1.4%,8.7%,-8.4%,pos 1
-Wraith King,BONE GUARD,287,-0.9%,44.6,+1.3%,53.6%,+2.7%,pos 1
-Weaver,SKITTERSTEP,396,-0.9%,47.7,-0.5%,92.5%,+7.1%,pos 1
-Chaos Knight,IRRATIONALITY,139,-1.1%,46.0,-0.8%,26.3%,+4.7%,pos 1
-Anti-Mage,MAGEBANE'S MIRROR,185,-1.2%,49.7,-2.3%,11.0%,-0.3%,pos 1
-Lifestealer,GORESTORM,192,-1.3%,54.2,+3.3%,2.2%,+0.8%,pos 1
-Medusa,UNDULATION,447,-1.3%,49.0,+0.7%,30.5%,+0.2%,pos 1
-Void Spirit,SANCTUARY,26,-1.4%,38.5,-2.5%,92.9%,-61.5%,pos 1
-Mirana,LEAPS AND BOUNDS,8,-1.6%,37.5,-14.3%,12.3%,-4.6%,pos 1
-Night Stalker,NIGHT REIGN,93,-1.6%,52.7,+5.0%,92.1%,+2.7%,pos 1
-Broodmother,FEEDING FRENZY,109,-1.9%,57.8,-2.6%,11.3%,+3.1%,pos 1
-Meepo,MORE MEEPO,51,-2.0%,52.9,-3.8%,24.9%,-5.5%,pos 1
-Ember Spirit,CHAIN GANG,3,-2.0%,33.3,-14.3%,3.5%,-5.2%,pos 1
-Luna,MOONSTORM,280,-2.2%,41.1,-1.7%,23.2%,-5.6%,pos 1
-Queen of Pain,BONDAGE,19,-2.4%,57.9,0.0%,73.1%,+15.0%,pos 1
-Death Prophet,MOURNING RITUAL,7,-2.9%,57.1,-14.3%,26.9%,+20.3%,pos 1
-Hoodwink,HIPSHOT,3,-3.6%,33.3,0.0%,21.4%,+6.1%,pos 1
-Muerta,OFRENDA,185,-4.1%,53.0,-4.1%,58.9%,+8.0%,pos 1
-Sniper,GHILLIE SUIT,89,-4.4%,50.6,+0.8%,69.5%,+1.8%,pos 1
-Viper,CAUSTIC BATH,4,-4.8%,25.0,-14.3%,15.4%,-25.0%,pos 1
-Visage,DEATH TOLL,4,-4.8%,75.0,-14.3%,16.0%,+75.0%,pos 1
-Lone Druid,BEAR NECESSITIES,28,-5.4%,53.6,+1.4%,40.0%,+13.1%,pos 1
-Jakiro,TWIN TERROR,53,-5.7%,50.9,+3.7%,79.1%,+36.7%,pos 1
-Windranger,KILLSHOT,57,-5.8%,42.1,-2.4%,61.3%,+6.0%,pos 1
-Axe,ONE MAN ARMY,12,-7.1%,25.0,0.0%,66.7%,-25.0%,pos 1
-Silencer,REVERBERATING SILENCE,9,-7.1%,22.2,0.0%,50.0%,0.0%,pos 1
-Dark Willow,THROWING SHADE,5,-7.1%,20.0,-14.3%,71.4%,-30.0%,pos 1
-Dawnbreaker,STARSURGE,49,-7.5%,57.1,+9.5%,57.0%,+57.1%,pos 1
-Hoodwink,GO NUTS,11,-10.7%,27.3,0.0%,78.6%,-6.1%,pos 1
-Sand King,SANDSHROUD,10,-14.3%,60.0,-11.9%,83.3%,+10.0%,pos 1
-Enchantress,SPELLBOUND,3,-14.3%,0.0,0.0%,27.3%,-100.0%,pos 1
-Brewmaster,DRUNKEN MASTER,2,-14.3%,0.0,0.0%,100.0%,0.0%,pos 1
-Underlord,DEMON'S REACH,7,-14.3%,57.1,-7.1%,77.8%,+7.1%,pos 1
-Primal Beast,PROVOKE THE BEAST,2,-14.3%,100.0,-14.3%,40.0%,+66.7%,pos 1
-Lion,ESSENCE EATER,9,+14.3%,11.1,0.0%,81.8%,-38.9%,pos 1
-Lich,FROSTBOUND,15,+14.3%,66.7,+12.5%,100.0%,+66.7%,pos 1
-Enchantress,OVERPROTECTIVE WISPS,8,+14.3%,100.0,+14.3%,72.7%,+100.0%,pos 1
-Batrider,ARSONIST,3,+14.3%,33.3,+14.3%,75.0%,-66.7%,pos 1
-Treant Protector,PRIMEVAL POWER,19,+14.3%,52.6,+9.5%,95.0%,+52.6%,pos 1
-Disruptor,THUNDERSTORM,7,+14.3%,0.0,0.0%,100.0%,0.0%,pos 1
-Keeper of the Light,RECALL,6,+14.3%,33.3,0.0%,54.5%,+13.3%,pos 1
-Oracle,CLAIRVOYANT CURSE,4,+14.3%,25.0,0.0%,57.1%,+25.0%,pos 1
-Pangolier,THUNDERBOLT,7,+14.3%,14.3,0.0%,53.8%,-19.0%,pos 1
-Dawnbreaker,SOLAR CHARGED,36,+7.5%,47.2,-8.9%,41.9%,+47.2%,pos 1
-Warlock,CHAMPION OF GORROTH,8,+7.1%,75.0,+14.3%,47.1%,+52.8%,pos 1
-Ogre Magi,LEARNING CURVE,9,+7.1%,0.0,0.0%,50.0%,-55.6%,pos 1
-Windranger,TANGLED,36,+5.8%,36.1,+3.3%,38.7%,-6.0%,pos 1
-Legion Commander,STONEHALL PLATE,40,+5.7%,50.0,-7.1%,72.7%,+3.3%,pos 1
-Lone Druid,BEAR WITH ME,42,+5.4%,40.5,-4.8%,60.0%,-13.1%,pos 1
-Viper,POISON BURST,22,+4.8%,50.0,-14.3%,84.6%,+25.0%,pos 1
-Tiny,INSURMOUNTABLE,7690,+4.8%,53.3,-1.2%,95.7%,+7.7%,pos 1
-Lycan,ALPHA WOLVES,34,+4.1%,32.4,-5.7%,70.8%,+21.2%,pos 1
-Muerta,DANCE OF THE DEAD,129,+4.1%,45.0,-4.0%,41.1%,-8.0%,pos 1
-Huskar,INCENDIARY,90,+2.9%,54.4,+6.8%,52.0%,+9.9%,pos 1
-Phantom Assassin,METHODICAL,5482,+2.4%,47.2,-0.3%,88.3%,+0.8%,pos 1
-Gyrocopter,SECONDARY STRIKES,675,+2.3%,50.4,+1.0%,59.8%,-0.4%,pos 1
-Ember Spirit,DOUBLE IMPACT,83,+2.0%,38.6,+1.4%,96.5%,+5.2%,pos 1
-Broodmother,NECROTIC WEBS,854,+1.9%,54.7,-1.1%,88.7%,-3.1%,pos 1
-Spectre,TWIST THE KNIFE,1016,+1.6%,46.9,+1.0%,90.6%,+8.3%,pos 1
-Night Stalker,VOIDBRINGER,8,+1.6%,50.0,0.0%,7.9%,-2.7%,pos 1
-Clinkz,SUPPRESSIVE FIRE,104,+1.6%,52.9,-3.2%,39.2%,+2.0%,pos 1
-Bloodseeker,BLOODRUSH,320,+1.3%,45.0,0.0%,23.0%,-4.3%,pos 1
-Lifestealer,FLESHFEAST,8622,+1.3%,53.4,+0.4%,97.8%,-0.8%,pos 1
-Anti-Mage,MANA THIRST,1504,+1.2%,50.1,+0.3%,89.0%,+0.3%,pos 1
-Dragon Knight,FIRE DRAGON,3929,+1.0%,55.5,-1.9%,97.2%,+5.5%,pos 1
-Monkey King,WUKONG'S FAITHFUL,527,+1.0%,53.1,-0.2%,31.3%,+5.9%,pos 1
-Drow Ranger,VANTAGE POINT,586,+0.9%,44.7,+2.3%,41.2%,-3.1%,pos 1
-Terrorblade,CONDEMNED,2025,+0.8%,49.9,-0.5%,91.3%,+8.4%,pos 1
-Juggernaut,BLADESTORM,727,+0.8%,48.8,-0.0%,68.5%,+0.5%,pos 1
-Razor,DYNAMO,72,+0.7%,48.6,-0.5%,14.3%,+2.4%,pos 1
-Ursa,GRUDGE BEARER,580,+0.6%,49.8,+1.9%,29.6%,+1.8%,pos 1
-Troll Warlord,INSENSITIVE,189,+0.6%,42.3,+1.0%,13.0%,-7.4%,pos 1
-Faceless Void,CHRONOSPHERE,459,+0.5%,49.5,-0.2%,80.8%,+3.6%,pos 1
-Pudge,FRESH MEAT,58,+0.4%,55.2,-1.0%,5.2%,+10.1%,pos 1
-Beastmaster,BEAST MODE,329,+0.4%,46.5,-1.8%,98.5%,+26.5%,pos 1
-Marci,FLEETING FURY,1143,+0.3%,49.8,-0.3%,88.0%,+13.8%,pos 1
-Sven,WRATH OF GOD,1691,+0.2%,47.8,-0.9%,98.1%,-9.8%,pos 1
-Templar Assassin,REFRACTOR,56,+0.1%,50.0,+9.5%,8.9%,+8.4%,pos 1
-Magnus,DIMINISHING RETURN,39,+0.1%,41.0,+9.5%,1.9%,-9.0%,pos 1
-Venomancer,PLAGUE CARRIER,640,+0.0%,38.0,+0.7%,99.4%,-12.0%,pos 1
-Bane,SLEEPWALK,0,0.0%,0.0,0.0%,0.0%,-92.3%,pos 1
-Earthshaker,TECTONIC BUILDUP,0,0.0%,0.0,0.0%,0.0%,-49.3%,pos 1
-Puck,JOSTLING RIFT,2,0.0%,100.0,0.0%,100.0%,+100.0%,pos 1
-Sand King,DUST DEVIL,2,0.0%,50.0,0.0%,16.7%,-10.0%,pos 1
-Storm Spirit,STATIC SLIDE,19,0.0%,31.6,0.0%,100.0%,+31.6%,pos 1
-Vengeful Spirit,SOUL STRIKE,29,0.0%,41.4,-3.6%,100.0%,+41.4%,pos 1
-Zeus,DIVINE RAMPAGE,0,0.0%,0.0,0.0%,0.0%,-25.0%,pos 1
-Kunkka,GROG BLOSSOM,1,0.0%,0.0,0.0%,25.0%,0.0%,pos 1
-Lina,SLOW BURN,2,0.0%,0.0,0.0%,1.9%,-44.2%,pos 1
-Shadow Shaman,CHICKEN FINGERS,10,0.0%,30.0,+4.8%,100.0%,+30.0%,pos 1
-Witch Doctor,CLEFT DEATH,0,0.0%,0.0,0.0%,0.0%,-60.0%,pos 1
-Enigma,SPLITTING IMAGE,12,0.0%,33.3,0.0%,60.0%,-4.2%,pos 1
-Tinker,TRANSLOCATOR,7,0.0%,57.1,0.0%,77.8%,+57.1%,pos 1
-Dazzle,NOTHL BOON,3,0.0%,0.0,0.0%,1.8%,-62.9%,pos 1
-Clockwerk,HOOKUP,0,0.0%,0.0,0.0%,0.0%,-60.0%,pos 1
-Dark Seer,QUICK WIT,16,0.0%,18.8,+14.3%,94.1%,+18.8%,pos 1
-Omniknight,OMNIPRESENT,4,0.0%,25.0,0.0%,80.0%,+25.0%,pos 1
-Bounty Hunter,CUTPURSE,2,0.0%,50.0,0.0%,20.0%,+37.5%,pos 1
-Chen,CENTAUR CONVERT,4,0.0%,50.0,0.0%,66.7%,+50.0%,pos 1
-Chen,TROLL CONVERT,1,0.0%,0.0,0.0%,16.7%,-50.0%,pos 1
-Doom,DEVIL'S BARGAIN,34,0.0%,50.0,+4.8%,59.6%,+16.7%,pos 1
-Spirit Breaker,BULL'S HIT,4,0.0%,25.0,0.0%,57.1%,+25.0%,pos 1
-Outworld Devourer,OBSIDIAN DECIMATOR,11,0.0%,45.5,0.0%,91.7%,-54.5%,pos 1
-Brewmaster,ROLL OUT THE BARREL,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
-Shadow Demon,SHADOW SERVANT,1,0.0%,0.0,0.0%,33.3%,0.0%,pos 1
-Undying,ROTTING MITTS,14,0.0%,64.3,+7.1%,100.0%,+64.3%,pos 1
-Rubick,ARCANE ACCUMULATION,2,0.0%,50.0,0.0%,28.6%,+50.0%,pos 1
-Nyx Assassin,SCUTTLE,2,0.0%,0.0,0.0%,33.3%,-50.0%,pos 1
-Naga Siren,DELUGE,1,0.0%,100.0,0.0%,0.3%,+51.4%,pos 1
-Io,KRITZKRIEG,20,0.0%,35.0,+6.0%,95.2%,+35.0%,pos 1
-Visage,FAITHFUL FOLLOWERS,0,0.0%,0.0,0.0%,0.0%,-75.0%,pos 1
-Tusk,TAG TEAM,12,0.0%,25.0,-7.1%,92.3%,+25.0%,pos 1
-Skywrath Mage,STAFF OF THE SCION,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
-Elder Titan,MOMENTUM,1,0.0%,100.0,0.0%,12.5%,+85.7%,pos 1
-Earth Spirit,RESONANCE,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
+Underlord,ABYSSAL HORDE,5,0.0%,40.0,0.0%,14.7%,-15.2%,pos 1
+Oracle,CLAIRVOYANT CURE,4,0.0%,0.0,0.0%,30.8%,-11.1%,pos 1
+Pangolier,DOUBLE JUMP,19,0.0%,36.8,0.0%,52.8%,+13.3%,pos 1
+Grimstroke,FINE ART,4,0.0%,0.0,0.0%,44.4%,-40.0%,pos 1
+Snapfire,FULL BORE,3,0.0%,0.0,0.0%,6.7%,-66.7%,pos 1
+Mars,BLOOD SPORT,14,0.0%,35.7,-14.3%,53.8%,-14.3%,pos 1
+Dawnbreaker,TRAILBLAZER,1,0.0%,0.0,0.0%,0.6%,-55.3%,pos 1
+Kez,SHADOWHAWK,246,-0.0%,42.7,-1.5%,17.4%,-4.2%,pos 1
+Morphling,EBB,8863,-0.0%,52.2,-0.8%,99.2%,+7.5%,pos 1
+Tidehunter,KRILL EATER,357,-0.1%,48.7,-2.0%,82.3%,-1.9%,pos 1
+Shadow Fiend,LASTING PRESENCE,596,-0.2%,48.2,-1.7%,95.7%,+11.1%,pos 1
+Sven,HEAVY PLATE,82,-0.2%,59.8,+1.0%,1.7%,+11.5%,pos 1
+Beastmaster,WILD HUNT,11,-0.4%,18.2,-14.3%,2.1%,-28.5%,pos 1
+Faceless Void,TIME ZONE,412,-0.5%,51.5,-2.4%,25.3%,+3.3%,pos 1
+Troll Warlord,BAD INFLUENCE,2381,-0.6%,50.4,-0.0%,85.2%,+8.4%,pos 1
+Ursa,BEAR DOWN,4800,-0.6%,51.3,-1.9%,74.4%,+2.3%,pos 1
+Razor,THUNDERHEAD,863,-0.7%,48.3,+0.2%,87.9%,-0.4%,pos 1
+Juggernaut,BLADEFORM,769,-0.8%,50.8,+3.0%,33.4%,+3.3%,pos 1
+Terrorblade,SOUL FRAGMENT,453,-0.8%,41.7,-1.4%,6.8%,-8.2%,pos 1
+Wraith King,BONE GUARD,603,-0.9%,47.4,+1.3%,56.4%,+6.0%,pos 1
+Weaver,SKITTERSTEP,751,-0.9%,48.5,-0.5%,87.0%,+7.4%,pos 1
+Chaos Knight,IRRATIONALITY,241,-1.1%,49.4,-0.8%,27.9%,+5.0%,pos 1
+Anti-Mage,MAGEBANE'S MIRROR,323,-1.2%,41.5,-2.3%,8.5%,-8.1%,pos 1
+Lifestealer,GORESTORM,273,-1.3%,54.6,+3.3%,1.9%,+1.8%,pos 1
+Medusa,UNDULATION,703,-1.3%,47.8,+0.7%,25.8%,-4.9%,pos 1
+Void Spirit,SANCTUARY,61,-1.4%,32.8,-2.5%,92.4%,-27.2%,pos 1
+Mirana,LEAPS AND BOUNDS,14,-1.6%,42.9,-14.3%,11.9%,-0.4%,pos 1
+Night Stalker,NIGHT REIGN,233,-1.6%,49.8,+5.0%,94.0%,-3.5%,pos 1
+Broodmother,FEEDING FRENZY,187,-1.9%,54.0,-2.6%,11.9%,-1.3%,pos 1
+Meepo,MORE MEEPO,115,-2.0%,59.1,-3.8%,27.3%,+0.8%,pos 1
+Ember Spirit,CHAIN GANG,13,-2.0%,38.5,-14.3%,5.6%,-6.3%,pos 1
+Luna,MOONSTORM,450,-2.2%,42.0,-1.7%,22.7%,-6.7%,pos 1
+Queen of Pain,BONDAGE,32,-2.4%,46.9,0.0%,54.2%,+6.1%,pos 1
+Death Prophet,MOURNING RITUAL,13,-2.9%,46.2,-14.3%,30.2%,+12.8%,pos 1
+Hoodwink,HIPSHOT,3,-3.6%,33.3,0.0%,12.5%,+4.8%,pos 1
+Muerta,OFRENDA,418,-4.1%,52.4,-4.1%,60.8%,+2.0%,pos 1
+Sniper,GHILLIE SUIT,201,-4.4%,50.7,+0.8%,75.6%,+4.6%,pos 1
+Viper,CAUSTIC BATH,8,-4.8%,37.5,-14.3%,20.5%,-14.1%,pos 1
+Visage,DEATH TOLL,13,-4.8%,69.2,-14.3%,25.0%,+69.2%,pos 1
+Lone Druid,BEAR NECESSITIES,44,-5.4%,50.0,+1.4%,33.1%,+5.1%,pos 1
+Jakiro,TWIN TERROR,83,-5.7%,51.8,+3.7%,76.9%,+35.8%,pos 1
+Windranger,KILLSHOT,109,-5.8%,37.6,-2.4%,57.7%,+6.4%,pos 1
+Axe,ONE MAN ARMY,30,-7.1%,33.3,0.0%,62.5%,-27.8%,pos 1
+Silencer,REVERBERATING SILENCE,21,-7.1%,28.6,0.0%,53.8%,+0.8%,pos 1
+Dark Willow,THROWING SHADE,11,-7.1%,9.1,-14.3%,78.6%,-24.2%,pos 1
+Dawnbreaker,STARSURGE,76,-7.5%,55.3,+9.5%,47.8%,+55.3%,pos 1
+Hoodwink,GO NUTS,21,-10.7%,28.6,0.0%,87.5%,-4.8%,pos 1
+Sand King,SANDSHROUD,16,-14.3%,50.0,-11.9%,88.9%,0.0%,pos 1
+Enchantress,SPELLBOUND,3,-14.3%,0.0,0.0%,10.7%,-84.0%,pos 1
+Brewmaster,DRUNKEN MASTER,2,-14.3%,0.0,0.0%,66.7%,0.0%,pos 1
+Underlord,DEMON'S REACH,29,-14.3%,55.2,-7.1%,85.3%,+15.2%,pos 1
+Primal Beast,PROVOKE THE BEAST,3,-14.3%,66.7,-14.3%,42.9%,+41.7%,pos 1
+Lion,ESSENCE EATER,15,+14.3%,6.7,0.0%,83.3%,-26.7%,pos 1
+Lich,FROSTBOUND,40,+14.3%,62.5,+12.5%,100.0%,+62.5%,pos 1
+Enchantress,OVERPROTECTIVE WISPS,25,+14.3%,84.0,+14.3%,89.3%,+84.0%,pos 1
+Batrider,ARSONIST,7,+14.3%,28.6,+14.3%,77.8%,-71.4%,pos 1
+Treant Protector,PRIMEVAL POWER,51,+14.3%,51.0,+9.5%,98.1%,+51.0%,pos 1
+Disruptor,THUNDERSTORM,21,+14.3%,14.3,0.0%,100.0%,+14.3%,pos 1
+Keeper of the Light,RECALL,7,+14.3%,28.6,0.0%,41.2%,+8.6%,pos 1
+Oracle,CLAIRVOYANT CURSE,9,+14.3%,11.1,0.0%,69.2%,+11.1%,pos 1
+Pangolier,THUNDERBOLT,17,+14.3%,23.5,0.0%,47.2%,-13.3%,pos 1
+Dawnbreaker,SOLAR CHARGED,82,+7.5%,48.8,-8.9%,51.6%,+48.8%,pos 1
+Warlock,CHAMPION OF GORROTH,30,+7.1%,80.0,+14.3%,58.8%,+70.5%,pos 1
+Ogre Magi,LEARNING CURVE,18,+7.1%,11.1,0.0%,56.3%,-24.6%,pos 1
+Windranger,TANGLED,80,+5.8%,31.3,+3.3%,42.3%,-6.4%,pos 1
+Legion Commander,STONEHALL PLATE,109,+5.7%,52.3,-7.1%,73.2%,+9.8%,pos 1
+Lone Druid,BEAR WITH ME,89,+5.4%,44.9,-4.8%,66.9%,-5.1%,pos 1
+Viper,POISON BURST,31,+4.8%,51.6,-14.3%,79.5%,+14.1%,pos 1
+Tiny,INSURMOUNTABLE,15219,+4.8%,51.7,-1.2%,96.5%,+9.0%,pos 1
+Lycan,ALPHA WOLVES,53,+4.1%,30.2,-5.7%,61.6%,+5.2%,pos 1
+Muerta,DANCE OF THE DEAD,270,+4.1%,50.4,-4.0%,39.2%,-2.0%,pos 1
+Huskar,INCENDIARY,214,+2.9%,44.9,+6.8%,53.4%,-1.7%,pos 1
+Phantom Assassin,METHODICAL,12461,+2.4%,47.1,-0.3%,89.9%,-0.7%,pos 1
+Gyrocopter,SECONDARY STRIKES,1380,+2.3%,50.8,+1.0%,61.0%,+1.8%,pos 1
+Ember Spirit,DOUBLE IMPACT,219,+2.0%,44.7,+1.4%,94.4%,+6.3%,pos 1
+Broodmother,NECROTIC WEBS,1382,+1.9%,55.3,-1.1%,88.1%,+1.3%,pos 1
+Spectre,TWIST THE KNIFE,1884,+1.6%,47.0,+1.0%,87.9%,+13.5%,pos 1
+Night Stalker,VOIDBRINGER,15,+1.6%,53.3,0.0%,6.0%,+3.5%,pos 1
+Clinkz,SUPPRESSIVE FIRE,653,+1.6%,51.5,-3.2%,56.2%,-0.0%,pos 1
+Bloodseeker,BLOODRUSH,422,+1.3%,46.0,0.0%,20.7%,-2.6%,pos 1
+Lifestealer,FLESHFEAST,14189,+1.3%,52.8,+0.4%,98.1%,-1.8%,pos 1
+Anti-Mage,MANA THIRST,3458,+1.2%,49.6,+0.3%,91.5%,+8.1%,pos 1
+Dragon Knight,FIRE DRAGON,5705,+1.0%,53.4,-1.9%,87.9%,+8.5%,pos 1
+Monkey King,WUKONG'S FAITHFUL,1459,+1.0%,54.1,-0.2%,39.9%,+7.5%,pos 1
+Drow Ranger,VANTAGE POINT,1092,+0.9%,44.0,+2.3%,37.8%,-5.1%,pos 1
+Terrorblade,CONDEMNED,6200,+0.8%,49.9,-0.5%,93.2%,+8.2%,pos 1
+Juggernaut,BLADESTORM,1530,+0.8%,47.5,-0.0%,66.6%,-3.3%,pos 1
+Razor,DYNAMO,119,+0.7%,48.7,-0.5%,12.1%,+0.4%,pos 1
+Ursa,GRUDGE BEARER,1648,+0.6%,49.0,+1.9%,25.6%,-2.3%,pos 1
+Troll Warlord,INSENSITIVE,412,+0.6%,42.0,+1.0%,14.8%,-8.4%,pos 1
+Faceless Void,CHRONOSPHERE,1214,+0.5%,48.2,-0.2%,74.7%,-3.3%,pos 1
+Pudge,FRESH MEAT,101,+0.4%,46.5,-1.0%,6.5%,+0.7%,pos 1
+Beastmaster,BEAST MODE,512,+0.4%,46.7,-1.8%,97.9%,+28.5%,pos 1
+Marci,FLEETING FURY,2614,+0.3%,50.5,-0.3%,91.3%,+13.0%,pos 1
+Sven,WRATH OF GOD,4772,+0.2%,48.3,-0.9%,98.3%,-11.5%,pos 1
+Templar Assassin,REFRACTOR,109,+0.1%,40.4,+9.5%,9.8%,-3.9%,pos 1
+Magnus,DIMINISHING RETURN,75,+0.1%,48.0,+9.5%,1.5%,-0.6%,pos 1
+Venomancer,PLAGUE CARRIER,1352,+0.0%,38.5,+0.7%,99.5%,-18.7%,pos 1
+Bane,SLEEPWALK,0,0.0%,0.0,0.0%,0.0%,-73.8%,pos 1
+Earthshaker,TECTONIC BUILDUP,2,0.0%,100.0,0.0%,1.5%,+52.3%,pos 1
+Puck,JOSTLING RIFT,5,0.0%,60.0,0.0%,100.0%,+60.0%,pos 1
+Sand King,DUST DEVIL,2,0.0%,50.0,0.0%,11.1%,0.0%,pos 1
+Storm Spirit,STATIC SLIDE,43,0.0%,30.2,0.0%,91.5%,+5.2%,pos 1
+Vengeful Spirit,SOUL STRIKE,77,0.0%,44.2,-3.6%,98.7%,-55.8%,pos 1
+Zeus,DIVINE RAMPAGE,1,0.0%,100.0,0.0%,3.2%,+76.7%,pos 1
+Kunkka,GROG BLOSSOM,1,0.0%,0.0,0.0%,10.0%,-22.2%,pos 1
+Lina,SLOW BURN,5,0.0%,40.0,0.0%,1.9%,-2.9%,pos 1
+Shadow Shaman,CHICKEN FINGERS,28,0.0%,25.0,+4.8%,96.6%,+25.0%,pos 1
+Witch Doctor,CLEFT DEATH,1,0.0%,100.0,0.0%,6.7%,+50.0%,pos 1
+Enigma,SPLITTING IMAGE,27,0.0%,48.1,0.0%,65.9%,+12.4%,pos 1
+Tinker,TRANSLOCATOR,19,0.0%,52.6,0.0%,67.9%,-2.9%,pos 1
+Dazzle,NOTHL BOON,6,0.0%,16.7,0.0%,0.8%,-41.3%,pos 1
+Clockwerk,HOOKUP,0,0.0%,0.0,0.0%,0.0%,-42.9%,pos 1
+Dark Seer,QUICK WIT,27,0.0%,29.6,+14.3%,96.4%,+29.6%,pos 1
+Omniknight,OMNIPRESENT,6,0.0%,33.3,0.0%,85.7%,+33.3%,pos 1
+Bounty Hunter,CUTPURSE,2,0.0%,50.0,0.0%,15.4%,+31.8%,pos 1
+Chen,CENTAUR CONVERT,14,0.0%,78.6,0.0%,87.5%,+78.6%,pos 1
+Chen,TROLL CONVERT,1,0.0%,0.0,0.0%,6.3%,-78.6%,pos 1
+Doom,DEVIL'S BARGAIN,49,0.0%,44.9,+4.8%,54.4%,+19.9%,pos 1
+Spirit Breaker,BULL'S HIT,7,0.0%,42.9,0.0%,41.2%,+42.9%,pos 1
+Outworld Devourer,OBSIDIAN DECIMATOR,64,0.0%,45.3,0.0%,86.5%,-14.7%,pos 1
+Brewmaster,ROLL OUT THE BARREL,1,0.0%,0.0,0.0%,33.3%,0.0%,pos 1
+Shadow Demon,SHADOW SERVANT,1,0.0%,0.0,0.0%,6.7%,-14.3%,pos 1
+Undying,ROTTING MITTS,33,0.0%,69.7,+7.1%,94.3%,+69.7%,pos 1
+Rubick,ARCANE ACCUMULATION,6,0.0%,16.7,0.0%,50.0%,+16.7%,pos 1
+Nyx Assassin,SCUTTLE,3,0.0%,0.0,0.0%,25.0%,-22.2%,pos 1
+Naga Siren,DELUGE,5,0.0%,60.0,0.0%,0.8%,+14.9%,pos 1
+Io,KRITZKRIEG,39,0.0%,56.4,+6.0%,95.1%,+56.4%,pos 1
+Visage,FAITHFUL FOLLOWERS,0,0.0%,0.0,0.0%,0.0%,-69.2%,pos 1
+Tusk,TAG TEAM,24,0.0%,25.0,-7.1%,96.0%,+25.0%,pos 1
+Skywrath Mage,STAFF OF THE SCION,1,0.0%,0.0,0.0%,16.7%,0.0%,pos 1
+Elder Titan,MOMENTUM,4,0.0%,75.0,0.0%,16.0%,+36.9%,pos 1
+Earth Spirit,RESONANCE,2,0.0%,0.0,0.0%,100.0%,0.0%,pos 1
 Earth Spirit,READY TO ROLL,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 1
-Phoenix,HOTSPOT,0,0.0%,0.0,0.0%,0.0%,-42.9%,pos 1
-Winter Wyvern,WINTERPROOF,0,0.0%,0.0,0.0%,0.0%,-37.5%,pos 1
-Grimstroke,INKSTIGATE,1,0.0%,0.0,0.0%,25.0%,0.0%,pos 1
-Snapfire,RICOCHET II,15,0.0%,66.7,-14.3%,93.8%,+66.7%,pos 1
-Mars,VICTORY FEAST,1,0.0%,100.0,0.0%,14.3%,+66.7%,pos 1
-Ringmaster,SIDESHOW SECRETS,1,0.0%,0.0,0.0%,25.0%,0.0%,pos 1
-Primal Beast,FEROCITY,3,0.0%,33.3,0.0%,60.0%,-66.7%,pos 1
-Venomancer,PATIENT ZERO,4,-0.0%,50.0,+14.3%,0.6%,+12.0%,pos 1
-Magnus,ETERNAL EMPOWERMENT,2022,-0.1%,50.0,-1.7%,98.1%,+9.0%,pos 1
-Marci,PICK-ME-UP,25,-0.2%,36.0,+14.3%,1.9%,-27.4%,pos 1
-Marci,BUDDY SYSTEM,131,-0.2%,63.4,+1.3%,10.1%,+27.4%,pos 1
-Dragon Knight,CORROSIVE DRAGON,26,-0.3%,50.0,+8.9%,0.6%,-5.5%,pos 1
-Pudge,ROTTEN CORE,1054,-0.4%,45.1,+2.8%,94.8%,-10.1%,pos 1
-Riki,EXTERMINATOR,924,-0.5%,49.2,-0.5%,96.3%,-0.8%,pos 1
-Abaddon,MEPHITIC SHROUD,717,-0.6%,53.0,-1.7%,92.4%,+0.5%,pos 1
-Slark,DARK REEF RENEGADE,482,-0.7%,52.1,+0.1%,12.8%,-0.4%,pos 1
-Dragon Knight,FROST DRAGON,89,-0.7%,52.8,-1.0%,2.2%,+2.8%,pos 1
-Nature's Prophet,SOOTHING SAPLINGS,34,-0.8%,55.9,+7.8%,1.1%,+1.8%,pos 1
-Alchemist,DIVIDENDS,73,-0.8%,45.2,-1.6%,7.9%,-11.0%,pos 1
-Drow Ranger,SIDESTEP,838,-0.9%,47.9,-1.8%,58.8%,+3.1%,pos 1
-Monkey King,SIMIAN STRIDE,1158,-1.0%,47.2,+1.5%,68.7%,-5.9%,pos 1
-Timbersaw,SHREDDER,20,-1.2%,50.0,-7.1%,71.4%,+25.0%,pos 1
-Slardar,BRINEGUARD,20,-1.2%,35.0,0.0%,14.9%,-22.9%,pos 1
-Phantom Lancer,LANCELOT,1041,-1.3%,43.4,-0.8%,83.9%,+0.4%,pos 1
-Bloodseeker,ARTERIAL SPRAY,1072,-1.3%,49.3,-1.1%,77.0%,+4.3%,pos 1
-Clinkz,ENGULFING STEP,161,-1.6%,50.9,-1.3%,60.8%,-2.0%,pos 1
-Doom,IMPENDING DOOM,3,-1.6%,33.3,0.0%,5.3%,-16.7%,pos 1
-Spectre,FORSAKEN,106,-1.6%,38.7,-4.2%,9.4%,-8.3%,pos 1
-Templar Assassin,HIDDEN REACH,35,-1.9%,42.9,-6.3%,5.6%,-7.1%,pos 1
-Lycan,PACK LEADER,5,-2.0%,20.0,-14.3%,10.4%,-12.4%,pos 1
-Lycan,SPIRIT WOLVES,9,-2.0%,11.1,0.0%,18.8%,-21.2%,pos 1
-Gyrocopter,AFTERBURNER,453,-2.3%,50.8,+0.7%,40.2%,+0.4%,pos 1
-Phantom Assassin,SWEET RELEASE,723,-2.4%,46.3,+0.5%,11.7%,-0.8%,pos 1
-Huskar,CAUTERIZE,83,-2.9%,44.6,-3.8%,48.0%,-9.9%,pos 1
-Bristleback,SEEING RED,178,-3.6%,38.2,+1.7%,34.1%,-10.6%,pos 1
-Arc Warden,POWER CAPTURE,15,-4.1%,33.3,-3.6%,23.8%,-10.4%,pos 1
-Tiny,CRASH LANDING,342,-4.8%,45.6,-1.1%,4.3%,-7.7%,pos 1
-Invoker,MIND OF TORNARUS,2,-4.8%,0.0,0.0%,10.5%,-29.4%,pos 1
-Techies,SPOON'S STASH,2,-4.8%,0.0,0.0%,22.2%,-20.0%,pos 1
-Necrophos,RAPID DECAY,36,-5.4%,44.4,+1.4%,52.9%,+16.3%,pos 1
-Legion Commander,SPOILS OF WAR,15,-5.7%,46.7,-7.1%,27.3%,-3.3%,pos 1
-Leshrac,CHRONOPTIC NOURISHMENT,29,-6.2%,41.4,+9.5%,34.5%,-18.6%,pos 1
-Warlock,BLACK GRIMOIRE,9,-7.1%,22.2,0.0%,52.9%,-52.8%,pos 1
-Ogre Magi,FAT CHANCE,9,-7.1%,55.6,0.0%,50.0%,+55.6%,pos 1
-Dark Willow,SHATTERING CROWN,2,-7.1%,50.0,-14.3%,28.6%,+30.0%,pos 1
-Techies,SQUEE'S SCOPE,5,-9.5%,20.0,0.0%,55.6%,+20.0%,pos 1
-Crystal Maiden,ARCANE OVERFLOW,3,-14.3%,33.3,0.0%,20.0%,+16.7%,pos 1
-Pugna,SIPHONING WARD,7,-14.3%,14.3,0.0%,100.0%,+14.3%,pos 1
-Ancient Apparition,EXPOSURE,1,-14.3%,0.0,0.0%,16.7%,-40.0%,pos 1
-Centaur Warrunner,COUNTER-STRIKE,1,-14.3%,0.0,0.0%,33.3%,-100.0%,pos 1
-Phoenix,DYING LIGHT,7,-14.3%,42.9,-7.1%,100.0%,+42.9%,pos 1
-Vengeful Spirit,SOUL STRIKE,30,+14.3%,53.3,+14.3%,93.8%,+3.3%,pos 2
-Ancient Apparition,EXPOSURE,16,+14.3%,56.3,0.0%,39.0%,+12.3%,pos 2
-Brewmaster,ROLL OUT THE BARREL,9,+14.3%,55.6,+14.3%,36.0%,+5.6%,pos 2
-Disruptor,THUNDERSTORM,7,+14.3%,42.9,+14.3%,87.5%,+42.9%,pos 2
-Phantom Assassin,SWEET RELEASE,9,+12.2%,44.4,0.0%,37.5%,+17.8%,pos 2
-Enigma,EVENT HORIZON,31,+9.5%,67.7,+3.6%,45.6%,+5.6%,pos 2
-Lich,GROWING COLD,1,+7.1%,0.0,0.0%,25.0%,0.0%,pos 2
-Wraith King,SPECTRAL BLADE,2,+7.1%,50.0,0.0%,33.3%,-25.0%,pos 2
-Dawnbreaker,SOLAR CHARGED,179,+5.0%,51.4,+3.5%,66.3%,+38.9%,pos 2
-Abaddon,THE QUICKENING,8,+4.8%,62.5,+14.3%,16.0%,+5.4%,pos 2
-Tiny,INSURMOUNTABLE,409,+4.1%,49.9,+7.5%,20.4%,+0.0%,pos 2
-Tidehunter,KRILL EATER,43,+3.7%,48.8,-2.4%,55.1%,+3.1%,pos 2
-Lion,ESSENCE EATER,4,+3.6%,25.0,0.0%,10.0%,-22.2%,pos 2
-Dark Willow,THROWING SHADE,45,+3.6%,44.4,+1.0%,90.0%,+24.4%,pos 2
-Beastmaster,BEAST MODE,162,+3.4%,53.1,-0.9%,88.5%,-4.1%,pos 2
-Bounty Hunter,THROUGH AND THROUGH,111,+3.3%,46.8,-2.2%,91.7%,+36.8%,pos 2
-Sand King,DUST DEVIL,28,+3.1%,39.3,-1.4%,15.2%,-6.2%,pos 2
-Alchemist,MIXOLOGIST,24,+3.0%,54.2,+7.1%,15.4%,+17.6%,pos 2
-Death Prophet,SPIRIT COLLECTOR,461,+2.4%,45.6,+0.2%,70.1%,-2.7%,pos 2
-Ogre Magi,FAT CHANCE,8,+2.4%,75.0,0.0%,20.0%,+18.8%,pos 2
-Ursa,BEAR DOWN,26,+2.4%,50.0,+7.1%,74.3%,-16.7%,pos 2
-Batrider,STOKED,130,+2.4%,44.6,-4.2%,66.7%,+3.1%,pos 2
-Invoker,AGENT OF GALLARON,4737,+2.3%,50.3,+0.4%,94.8%,+8.2%,pos 2
-Necrophos,PROFANE POTENCY,519,+2.2%,45.1,-1.9%,51.5%,-3.8%,pos 2
-Spirit Breaker,BULL RUSH,21,+2.1%,61.9,-7.1%,40.4%,+32.9%,pos 2
-Slark,DARK REEF RENEGADE,15,+2.0%,53.3,0.0%,21.1%,+6.9%,pos 2
-Lina,THERMAL RUNAWAY,662,+2.0%,41.1,+1.5%,87.7%,-10.5%,pos 2
-Bloodseeker,ARTERIAL SPRAY,30,+1.8%,43.3,+8.2%,93.8%,-6.7%,pos 2
-Arc Warden,POWER CAPTURE,488,+1.7%,47.3,+1.5%,64.7%,-3.0%,pos 2
-Lycan,PACK LEADER,63,+1.7%,57.1,+1.0%,50.0%,+11.2%,pos 2
-Drow Ranger,VANTAGE POINT,42,+1.2%,47.6,-1.9%,77.8%,+14.3%,pos 2
-Rubick,FRUGAL FILCH,132,+1.2%,41.7,+5.2%,36.0%,-4.3%,pos 2
-Monkey King,WUKONG'S FAITHFUL,550,+1.2%,54.5,-1.4%,27.0%,+8.0%,pos 2
-Morphling,FLOW,192,+0.9%,25.5,-2.0%,74.4%,-10.8%,pos 2
-Razor,DYNAMO,71,+0.8%,45.1,+6.3%,15.4%,-5.8%,pos 2
-Earth Spirit,RESONANCE,252,+0.8%,44.4,+2.4%,83.7%,-32.5%,pos 2
-Kez,FLUTTER,550,+0.7%,41.6,+1.4%,77.8%,+2.8%,pos 2
-Kunkka,HIGH TIDE,186,+0.6%,54.3,-6.7%,60.8%,-12.4%,pos 2
-Alchemist,SEED MONEY,104,+0.6%,36.5,-2.7%,66.7%,-17.6%,pos 2
-Jakiro,TWIN TERROR,198,+0.5%,46.0,+3.2%,88.4%,+19.0%,pos 2
-Night Stalker,VOIDBRINGER,14,+0.5%,35.7,0.0%,7.2%,-21.0%,pos 2
-Zeus,DIVINE RAMPAGE,184,+0.4%,49.5,-4.9%,29.3%,+0.8%,pos 2
-Queen of Pain,MASOCHIST,4175,+0.4%,48.8,-0.0%,84.4%,-4.2%,pos 2
-Puck,JOSTLING RIFT,3243,+0.3%,50.9,-0.9%,94.1%,+1.2%,pos 2
-Void Spirit,SANCTUARY,653,+0.3%,45.2,+0.3%,93.8%,-1.3%,pos 2
-Storm Spirit,SHOCK COLLAR,203,+0.2%,44.8,+0.6%,5.8%,-5.1%,pos 2
-Meepo,CODEPENDENT,306,+0.2%,61.4,+3.9%,57.1%,+10.1%,pos 2
-Earth Spirit,STEPPING STONE,36,+0.2%,41.7,+4.0%,12.0%,-35.3%,pos 2
-Earthshaker,TECTONIC BUILDUP,7,+0.1%,42.9,+14.3%,0.3%,-7.8%,pos 2
-Riki,EXTERMINATOR,181,+0.1%,47.5,-1.4%,76.4%,+13.6%,pos 2
-Axe,CALL OUT,4,0.0%,50.0,0.0%,18.2%,+16.7%,pos 2
-Bane,SLEEPWALK,5,0.0%,60.0,0.0%,11.6%,+31.1%,pos 2
-Juggernaut,BLADESTORM,6,0.0%,0.0,0.0%,85.7%,0.0%,pos 2
-Mirana,STARSTRUCK,235,0.0%,40.4,-0.9%,95.9%,+0.4%,pos 2
-Sven,HEAVY PLATE,2,0.0%,0.0,0.0%,33.3%,-25.0%,pos 2
-Witch Doctor,HEADHUNTER,7,0.0%,28.6,+7.1%,100.0%,+28.6%,pos 2
-Warlock,CHAMPION OF GORROTH,1,0.0%,0.0,0.0%,20.0%,-50.0%,pos 2
-Luna,MOONSHIELD,2,0.0%,0.0,0.0%,40.0%,-33.3%,pos 2
-Clockwerk,EXPANDED ARMATURE,9,0.0%,22.2,0.0%,75.0%,-44.4%,pos 2
-Lifestealer,GORESTORM,3,0.0%,33.3,0.0%,12.5%,-9.5%,pos 2
-Dark Seer,HEART OF BATTLE,3,0.0%,33.3,0.0%,8.8%,-5.4%,pos 2
-Omniknight,HEALING HAMMER,0,0.0%,0.0,0.0%,0.0%,-60.0%,pos 2
+Phoenix,HOTSPOT,0,0.0%,0.0,0.0%,0.0%,-33.3%,pos 1
+Winter Wyvern,WINTERPROOF,6,0.0%,33.3,0.0%,16.2%,+1.1%,pos 1
+Grimstroke,INKSTIGATE,5,0.0%,40.0,0.0%,55.6%,+40.0%,pos 1
+Snapfire,RICOCHET II,42,0.0%,66.7,-14.3%,93.3%,+66.7%,pos 1
+Mars,VICTORY FEAST,12,0.0%,50.0,0.0%,46.2%,+14.3%,pos 1
+Ringmaster,SIDESHOW SECRETS,1,0.0%,0.0,0.0%,14.3%,-16.7%,pos 1
+Primal Beast,FEROCITY,4,0.0%,25.0,0.0%,57.1%,-41.7%,pos 1
+Venomancer,PATIENT ZERO,7,-0.0%,57.1,+14.3%,0.5%,+18.7%,pos 1
+Magnus,ETERNAL EMPOWERMENT,5038,-0.1%,48.6,-1.7%,98.5%,+0.6%,pos 1
+Marci,PICK-ME-UP,40,-0.2%,37.5,+14.3%,1.4%,-24.0%,pos 1
+Marci,BUDDY SYSTEM,208,-0.2%,61.5,+1.3%,7.3%,+24.0%,pos 1
+Dragon Knight,CORROSIVE DRAGON,147,-0.3%,44.9,+8.9%,2.3%,-8.5%,pos 1
+Pudge,ROTTEN CORE,1454,-0.4%,45.9,+2.8%,93.5%,-0.7%,pos 1
+Riki,EXTERMINATOR,1906,-0.5%,49.6,-0.5%,96.1%,+3.5%,pos 1
+Abaddon,MEPHITIC SHROUD,1361,-0.6%,52.8,-1.7%,91.5%,-2.8%,pos 1
+Slark,DARK REEF RENEGADE,1040,-0.7%,51.8,+0.1%,10.2%,-0.9%,pos 1
+Dragon Knight,FROST DRAGON,635,-0.7%,52.4,-1.0%,9.8%,+7.5%,pos 1
+Nature's Prophet,SOOTHING SAPLINGS,67,-0.8%,53.7,+7.8%,0.6%,-0.3%,pos 1
+Alchemist,DIVIDENDS,130,-0.8%,46.2,-1.6%,8.3%,-10.9%,pos 1
+Drow Ranger,SIDESTEP,1795,-0.9%,49.0,-1.8%,62.2%,+5.1%,pos 1
+Monkey King,SIMIAN STRIDE,2202,-1.0%,46.6,+1.5%,60.1%,-7.5%,pos 1
+Timbersaw,SHREDDER,31,-1.2%,48.4,-7.1%,63.3%,+9.5%,pos 1
+Slardar,BRINEGUARD,28,-1.2%,35.7,0.0%,12.7%,-23.4%,pos 1
+Phantom Lancer,LANCELOT,1267,-1.3%,42.6,-0.8%,81.8%,-1.2%,pos 1
+Bloodseeker,ARTERIAL SPRAY,1615,-1.3%,48.6,-1.1%,79.3%,+2.6%,pos 1
+Clinkz,ENGULFING STEP,509,-1.6%,51.5,-1.3%,43.8%,+0.0%,pos 1
+Doom,IMPENDING DOOM,4,-1.6%,25.0,0.0%,4.4%,-19.9%,pos 1
+Spectre,FORSAKEN,260,-1.6%,33.5,-4.2%,12.1%,-13.5%,pos 1
+Templar Assassin,HIDDEN REACH,52,-1.9%,44.2,-6.3%,4.7%,+3.9%,pos 1
+Lycan,PACK LEADER,8,-2.0%,25.0,-14.3%,9.3%,-7.0%,pos 1
+Lycan,SPIRIT WOLVES,25,-2.0%,32.0,0.0%,29.1%,+7.0%,pos 1
+Gyrocopter,AFTERBURNER,884,-2.3%,49.0,+0.7%,39.0%,-1.8%,pos 1
+Phantom Assassin,SWEET RELEASE,1406,-2.4%,47.9,+0.5%,10.1%,+0.7%,pos 1
+Huskar,CAUTERIZE,187,-2.9%,46.5,-3.8%,46.6%,+1.7%,pos 1
+Bristleback,SEEING RED,296,-3.6%,40.2,+1.7%,34.4%,-10.1%,pos 1
+Arc Warden,POWER CAPTURE,29,-4.1%,34.5,-3.6%,26.9%,-11.1%,pos 1
+Tiny,CRASH LANDING,550,-4.8%,42.7,-1.1%,3.5%,-9.0%,pos 1
+Invoker,MIND OF TORNARUS,4,-4.8%,0.0,0.0%,11.4%,-32.3%,pos 1
+Techies,SPOON'S STASH,2,-4.8%,0.0,0.0%,16.7%,-14.3%,pos 1
+Necrophos,RAPID DECAY,79,-5.4%,46.8,+1.4%,50.0%,+13.9%,pos 1
+Legion Commander,SPOILS OF WAR,40,-5.7%,42.5,-7.1%,26.8%,-9.8%,pos 1
+Leshrac,CHRONOPTIC NOURISHMENT,57,-6.2%,45.6,+9.5%,33.5%,-3.1%,pos 1
+Warlock,BLACK GRIMOIRE,21,-7.1%,9.5,0.0%,41.2%,-70.5%,pos 1
+Ogre Magi,FAT CHANCE,14,-7.1%,35.7,0.0%,43.8%,+24.6%,pos 1
+Dark Willow,SHATTERING CROWN,3,-7.1%,33.3,-14.3%,21.4%,+24.2%,pos 1
+Techies,SQUEE'S SCOPE,7,-9.5%,14.3,0.0%,58.3%,+14.3%,pos 1
+Crystal Maiden,ARCANE OVERFLOW,6,-14.3%,16.7,0.0%,25.0%,-11.1%,pos 1
+Pugna,SIPHONING WARD,22,-14.3%,13.6,0.0%,100.0%,+13.6%,pos 1
+Ancient Apparition,EXPOSURE,4,-14.3%,0.0,0.0%,17.4%,-42.1%,pos 1
+Centaur Warrunner,COUNTER-STRIKE,2,-14.3%,50.0,0.0%,33.3%,0.0%,pos 1
+Phoenix,DYING LIGHT,15,-14.3%,33.3,-7.1%,100.0%,+33.3%,pos 1
+Vengeful Spirit,SOUL STRIKE,83,+14.3%,49.4,+14.3%,91.2%,+11.9%,pos 2
+Ancient Apparition,EXPOSURE,30,+14.3%,43.3,0.0%,36.1%,+1.8%,pos 2
+Brewmaster,ROLL OUT THE BARREL,11,+14.3%,54.5,+14.3%,23.9%,+11.7%,pos 2
+Disruptor,THUNDERSTORM,13,+14.3%,46.2,+14.3%,92.9%,+46.2%,pos 2
+Phantom Assassin,SWEET RELEASE,14,+12.2%,42.9,0.0%,31.1%,+23.5%,pos 2
+Enigma,EVENT HORIZON,50,+9.5%,74.0,+3.6%,38.5%,+14.0%,pos 2
+Lich,GROWING COLD,1,+7.1%,0.0,0.0%,16.7%,0.0%,pos 2
+Wraith King,SPECTRAL BLADE,5,+7.1%,20.0,0.0%,45.5%,-46.7%,pos 2
+Dawnbreaker,SOLAR CHARGED,348,+5.0%,49.1,+3.5%,70.4%,+10.7%,pos 2
+Abaddon,THE QUICKENING,12,+4.8%,41.7,+14.3%,12.5%,-6.0%,pos 2
+Tiny,INSURMOUNTABLE,817,+4.1%,49.4,+7.5%,21.0%,-0.9%,pos 2
+Tidehunter,KRILL EATER,129,+3.7%,50.4,-2.4%,72.5%,+5.5%,pos 2
+Lion,ESSENCE EATER,8,+3.6%,12.5,0.0%,7.2%,-39.0%,pos 2
+Dark Willow,THROWING SHADE,77,+3.6%,46.8,+1.0%,91.7%,+18.2%,pos 2
+Beastmaster,BEAST MODE,293,+3.4%,55.6,-0.9%,86.7%,+6.7%,pos 2
+Bounty Hunter,THROUGH AND THROUGH,199,+3.3%,45.2,-2.2%,92.6%,+32.7%,pos 2
+Sand King,DUST DEVIL,50,+3.1%,34.0,-1.4%,14.4%,-13.0%,pos 2
+Alchemist,MIXOLOGIST,41,+3.0%,53.7,+7.1%,14.6%,+16.9%,pos 2
+Death Prophet,SPIRIT COLLECTOR,1073,+2.4%,48.4,+0.2%,72.8%,+0.6%,pos 2
+Ogre Magi,FAT CHANCE,19,+2.4%,63.2,0.0%,17.9%,+18.3%,pos 2
+Ursa,BEAR DOWN,88,+2.4%,51.1,+7.1%,79.3%,-14.1%,pos 2
+Batrider,STOKED,268,+2.4%,49.3,-4.2%,72.0%,+5.0%,pos 2
+Invoker,AGENT OF GALLARON,10230,+2.3%,50.4,+0.4%,96.5%,+6.4%,pos 2
+Necrophos,PROFANE POTENCY,1216,+2.2%,47.9,-1.9%,56.8%,+3.1%,pos 2
+Spirit Breaker,BULL RUSH,80,+2.1%,60.0,-7.1%,66.7%,+27.5%,pos 2
+Slark,DARK REEF RENEGADE,25,+2.0%,56.0,0.0%,14.8%,+8.1%,pos 2
+Lina,THERMAL RUNAWAY,1636,+2.0%,42.7,+1.5%,91.1%,-7.3%,pos 2
+Bloodseeker,ARTERIAL SPRAY,69,+1.8%,49.3,+8.2%,94.5%,-0.7%,pos 2
+Arc Warden,POWER CAPTURE,869,+1.7%,48.3,+1.5%,68.1%,-0.1%,pos 2
+Lycan,PACK LEADER,103,+1.7%,55.3,+1.0%,52.3%,-19.7%,pos 2
+Drow Ranger,VANTAGE POINT,88,+1.2%,40.9,-1.9%,72.7%,-1.5%,pos 2
+Rubick,FRUGAL FILCH,312,+1.2%,47.4,+5.2%,35.7%,+0.8%,pos 2
+Monkey King,WUKONG'S FAITHFUL,1956,+1.2%,56.8,-1.4%,40.8%,+9.0%,pos 2
+Morphling,FLOW,257,+0.9%,28.8,-2.0%,64.4%,-8.5%,pos 2
+Razor,DYNAMO,133,+0.8%,47.4,+6.3%,15.0%,-4.9%,pos 2
+Earth Spirit,RESONANCE,450,+0.8%,46.9,+2.4%,81.2%,-19.8%,pos 2
+Kez,FLUTTER,1195,+0.7%,47.9,+1.4%,72.2%,+3.7%,pos 2
+Kunkka,HIGH TIDE,484,+0.6%,51.0,-6.7%,63.7%,-9.8%,pos 2
+Alchemist,SEED MONEY,196,+0.6%,36.7,-2.7%,69.8%,-16.9%,pos 2
+Jakiro,TWIN TERROR,304,+0.5%,44.4,+3.2%,86.6%,+23.1%,pos 2
+Night Stalker,VOIDBRINGER,26,+0.5%,38.5,0.0%,6.9%,-15.0%,pos 2
+Zeus,DIVINE RAMPAGE,361,+0.4%,47.4,-4.9%,28.5%,+1.0%,pos 2
+Queen of Pain,MASOCHIST,9600,+0.4%,49.0,-0.0%,85.6%,-2.0%,pos 2
+Puck,JOSTLING RIFT,7931,+0.3%,51.0,-0.9%,95.0%,-1.3%,pos 2
+Void Spirit,SANCTUARY,1212,+0.3%,47.8,+0.3%,93.7%,+3.9%,pos 2
+Storm Spirit,SHOCK COLLAR,495,+0.2%,47.5,+0.6%,6.4%,-1.6%,pos 2
+Meepo,CODEPENDENT,616,+0.2%,60.2,+3.9%,56.1%,+9.0%,pos 2
+Earth Spirit,STEPPING STONE,86,+0.2%,46.5,+4.0%,15.5%,-20.2%,pos 2
+Earthshaker,TECTONIC BUILDUP,20,+0.1%,35.0,+14.3%,0.4%,-15.5%,pos 2
+Riki,EXTERMINATOR,459,+0.1%,49.0,-1.4%,84.4%,+12.5%,pos 2
+Axe,CALL OUT,11,0.0%,45.5,0.0%,30.6%,+5.5%,pos 2
+Bane,SLEEPWALK,8,0.0%,37.5,0.0%,9.2%,+3.3%,pos 2
+Juggernaut,BLADESTORM,8,0.0%,12.5,0.0%,72.7%,+12.5%,pos 2
+Mirana,STARSTRUCK,396,0.0%,40.9,-0.9%,96.4%,-12.4%,pos 2
+Sven,HEAVY PLATE,3,0.0%,33.3,0.0%,27.3%,-29.2%,pos 2
+Witch Doctor,HEADHUNTER,14,0.0%,14.3,+7.1%,100.0%,+14.3%,pos 2
+Warlock,CHAMPION OF GORROTH,4,0.0%,0.0,0.0%,33.3%,-37.5%,pos 2
+Luna,MOONSHIELD,5,0.0%,20.0,0.0%,50.0%,0.0%,pos 2
+Clockwerk,EXPANDED ARMATURE,21,0.0%,28.6,0.0%,84.0%,-21.4%,pos 2
+Lifestealer,GORESTORM,3,0.0%,33.3,0.0%,9.1%,-6.7%,pos 2
+Dark Seer,HEART OF BATTLE,4,0.0%,50.0,0.0%,4.2%,+0.5%,pos 2
+Omniknight,HEALING HAMMER,0,0.0%,0.0,0.0%,0.0%,-40.0%,pos 2
 Chen,CENTAUR CONVERT,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 2
 Chen,TROLL CONVERT,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 2
-Lycan,SPIRIT WOLVES,2,0.0%,50.0,0.0%,1.6%,-7.1%,pos 2
-Chaos Knight,IRRATIONALITY,8,0.0%,25.0,0.0%,44.4%,+25.0%,pos 2
+Lycan,SPIRIT WOLVES,4,0.0%,75.0,0.0%,2.0%,+27.2%,pos 2
+Chaos Knight,IRRATIONALITY,15,0.0%,33.3,0.0%,46.9%,+33.3%,pos 2
 Treant Protector,SAPLING,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 2
-Undying,RIPPED,1,0.0%,0.0,0.0%,4.5%,-38.1%,pos 2
-Naga Siren,DELUGE,1,0.0%,0.0,0.0%,12.5%,-14.3%,pos 2
-Keeper of the Light,RECALL,2,0.0%,0.0,0.0%,0.5%,-49.4%,pos 2
-Visage,FAITHFUL FOLLOWERS,1,0.0%,100.0,0.0%,0.3%,+50.5%,pos 2
-Centaur Warrunner,HORSEPOWER,2,0.0%,50.0,0.0%,33.3%,0.0%,pos 2
-Skywrath Mage,STAFF OF THE SCION,6,0.0%,16.7,0.0%,10.7%,-29.3%,pos 2
-Elder Titan,MOMENTUM,1,0.0%,0.0,0.0%,20.0%,-75.0%,pos 2
-Terrorblade,CONDEMNED,10,0.0%,50.0,0.0%,100.0%,+50.0%,pos 2
-Oracle,CLAIRVOYANT CURSE,45,0.0%,44.4,+7.1%,97.8%,+44.4%,pos 2
-Snapfire,RICOCHET II,31,0.0%,29.0,-2.4%,70.5%,-9.4%,pos 2
-Ringmaster,CARNY CLASSICS,7,0.0%,14.3,0.0%,77.8%,-85.7%,pos 2
-Windranger,TANGLED,125,-0.0%,39.2,+1.0%,15.8%,-1.7%,pos 2
-Shadow Fiend,SHADOWMIRE,650,-0.1%,45.5,-2.1%,70.2%,+2.4%,pos 2
-Dazzle,POISON BLOOM,857,-0.2%,56.4,+0.0%,99.7%,-10.3%,pos 2
-Huskar,INCENDIARY,1624,-0.2%,51.2,-1.2%,43.4%,-3.5%,pos 2
-Nature's Prophet,SOOTHING SAPLINGS,88,-0.3%,45.5,-2.9%,6.5%,-7.6%,pos 2
-Sniper,SCATTERSHOT,922,-0.3%,50.8,+1.9%,45.7%,+1.9%,pos 2
-Marci,PICK-ME-UP,30,-0.3%,50.0,-7.1%,3.3%,-21.0%,pos 2
-Queen of Pain,BONDAGE,774,-0.4%,53.0,-0.1%,15.6%,+4.2%,pos 2
-Zeus,LIVEWIRE,444,-0.4%,48.6,+2.3%,70.7%,-0.8%,pos 2
-Legion Commander,SPOILS OF WAR,24,-0.5%,50.0,0.0%,21.6%,-1.7%,pos 2
-Marci,FLEETING FURY,861,-0.5%,47.7,-1.5%,93.4%,-23.2%,pos 2
-Winter Wyvern,WINTERPROOF,6,-0.6%,50.0,-14.3%,4.6%,+0.8%,pos 2
-Kunkka,GROG BLOSSOM,120,-0.6%,66.7,+4.8%,39.2%,+12.4%,pos 2
-Dragon Knight,FROST DRAGON,88,-0.7%,44.3,+1.2%,3.4%,-14.1%,pos 2
-Phoenix,HOTSPOT,9,-0.8%,55.6,-9.5%,1.8%,+3.7%,pos 2
-Razor,THUNDERHEAD,391,-0.8%,50.9,+0.6%,84.6%,+5.8%,pos 2
-Earth Spirit,READY TO ROLL,13,-0.9%,76.9,-4.8%,4.3%,+35.3%,pos 2
-Dragon Knight,CORROSIVE DRAGON,88,-1.1%,54.5,+2.8%,3.4%,+10.2%,pos 2
-Invoker,MIND OF TORNARUS,143,-1.1%,50.3,-6.4%,2.9%,+8.3%,pos 2
-Slardar,BRINEGUARD,123,-1.2%,53.7,-4.8%,13.5%,+2.3%,pos 2
-Invoker,SCHOLAR OF KORYX,119,-1.2%,42.0,-6.2%,2.4%,-8.3%,pos 2
-Grimstroke,INKSTIGATE,4,-1.2%,0.0,0.0%,12.1%,-55.2%,pos 2
-Lycan,ALPHA WOLVES,61,-1.7%,45.9,+1.6%,48.4%,-11.2%,pos 2
-Arc Warden,RUNED REPLICA,266,-1.7%,50.4,+2.0%,35.3%,+3.0%,pos 2
-Bloodseeker,BLOODRUSH,2,-1.8%,50.0,0.0%,6.3%,+6.7%,pos 2
-Lina,SLOW BURN,93,-2.0%,51.6,-1.0%,12.3%,+10.5%,pos 2
-Nyx Assassin,MANA BURN,7,-2.0%,42.9,-14.3%,12.5%,-8.2%,pos 2
-Spirit Breaker,BULL'S HIT,31,-2.1%,29.0,0.0%,59.6%,-32.9%,pos 2
-Necrophos,RAPID DECAY,489,-2.2%,48.9,-1.0%,48.5%,+3.8%,pos 2
-Anti-Mage,MANA THIRST,53,-2.3%,52.8,+5.1%,80.3%,-1.0%,pos 2
-Timbersaw,TWISTED CHAKRAM,316,-2.4%,45.6,-2.0%,77.1%,-10.8%,pos 2
-Ogre Magi,LEARNING CURVE,32,-2.4%,56.3,+8.6%,80.0%,-18.8%,pos 2
-Death Prophet,MOURNING RITUAL,197,-2.4%,48.2,+3.1%,29.9%,+2.7%,pos 2
-Venomancer,PATIENT ZERO,2,-2.9%,0.0,0.0%,5.7%,-36.4%,pos 2
-Sand King,SANDSHROUD,156,-3.1%,45.5,+3.6%,84.8%,+6.2%,pos 2
-Bounty Hunter,CUTPURSE,10,-3.3%,10.0,0.0%,8.3%,-36.8%,pos 2
-Beastmaster,WILD HUNT,21,-3.4%,57.1,-7.1%,11.5%,+4.1%,pos 2
-Lion,FIST OF DEATH,36,-3.6%,47.2,+4.8%,90.0%,+22.2%,pos 2
-Troll Warlord,BAD INFLUENCE,12,-3.6%,66.7,-4.8%,63.2%,+38.1%,pos 2
-Bristleback,SNOT ROCKET,94,-3.7%,52.1,-7.1%,54.7%,+7.3%,pos 2
-Tiny,CRASH LANDING,1596,-4.1%,49.9,+0.1%,79.6%,-0.0%,pos 2
-Shadow Shaman,MASSIVE SERPENT WARD,4,-4.8%,25.0,-4.8%,16.0%,-8.3%,pos 2
-Abaddon,MEPHITIC SHROUD,42,-4.8%,57.1,-5.0%,84.0%,-5.4%,pos 2
-Visage,DEATH TOLL,97,-5.7%,49.5,-1.9%,24.9%,-50.5%,pos 2
-Techies,SPOON'S STASH,11,-7.1%,63.6,-14.3%,40.7%,+54.5%,pos 2
-Shadow Shaman,CHICKEN FINGERS,21,-9.5%,33.3,-2.4%,84.0%,+8.3%,pos 2
-Medusa,UNDULATION,14,-9.5%,42.9,-3.6%,45.2%,+9.5%,pos 2
-Phantom Assassin,METHODICAL,15,-12.2%,26.7,-4.8%,62.5%,-17.8%,pos 2
-Axe,ONE MAN ARMY,18,-14.3%,33.3,0.0%,81.8%,-16.7%,pos 2
-Sven,WRATH OF GOD,4,-14.3%,25.0,-7.1%,66.7%,+25.0%,pos 2
-Faceless Void,TIME ZONE,17,-14.3%,23.5,-5.4%,89.5%,-26.5%,pos 2
-Enchantress,OVERPROTECTIVE WISPS,2,-14.3%,100.0,-14.3%,22.2%,+57.1%,pos 2
-Ancient Apparition,BONE CHILL,25,-14.3%,44.0,-14.3%,61.0%,-12.3%,pos 2
-Brewmaster,DRUNKEN MASTER,16,-14.3%,50.0,-14.3%,64.0%,-5.6%,pos 2
-Chaos Knight,FUNDAMENTAL FORGING,9,-14.3%,44.4,-14.3%,50.0%,+44.4%,pos 2
-Io,KRITZKRIEG,11,-14.3%,9.1,0.0%,100.0%,+9.1%,pos 2
-Enchantress,SPELLBOUND,7,+14.3%,42.9,0.0%,77.8%,-57.1%,pos 2
-Gyrocopter,AFTERBURNER,2,+14.3%,100.0,+14.3%,28.6%,+60.0%,pos 2
-Treant Protector,PRIMEVAL POWER,7,+14.3%,0.0,0.0%,100.0%,0.0%,pos 2
-Medusa,ENGORGED,2,+14.3%,50.0,0.0%,6.5%,+16.7%,pos 2
-Spectre,TWIST THE KNIFE,25,+9.5%,48.0,+7.1%,71.4%,+48.0%,pos 2
-Lich,FROSTBOUND,3,+7.1%,0.0,0.0%,75.0%,0.0%,pos 2
-Wraith King,BONE GUARD,4,+7.1%,75.0,+14.3%,66.7%,+25.0%,pos 2
-Visage,SEPULCHRE,292,+5.7%,53.8,+1.1%,74.9%,-46.2%,pos 2
-Tusk,DRINKING BUDDIES,3,+4.8%,33.3,0.0%,6.1%,-21.0%,pos 2
-Underlord,DEMON'S REACH,6,+4.8%,66.7,0.0%,37.5%,+26.7%,pos 2
-Templar Assassin,VOIDBLADES,266,+4.0%,40.6,-1.9%,61.0%,+12.7%,pos 2
-Bristleback,SEEING RED,78,+3.7%,44.9,-2.4%,45.3%,-7.3%,pos 2
-Troll Warlord,INSENSITIVE,7,+3.6%,28.6,0.0%,36.8%,-38.1%,pos 2
-Pugna,SIPHONING WARD,74,+3.5%,40.5,-2.1%,78.7%,-4.5%,pos 2
-Hoodwink,HIPSHOT,11,+3.3%,27.3,+7.1%,35.5%,+2.3%,pos 2
-Leshrac,MISANTHROPY,4392,+3.2%,53.8,-0.6%,93.4%,+2.0%,pos 2
-Clinkz,SUPPRESSIVE FIRE,161,+3.1%,59.0,+1.0%,42.5%,+6.7%,pos 2
-Venomancer,PLAGUE CARRIER,33,+2.9%,36.4,+5.7%,94.3%,+36.4%,pos 2
-Primal Beast,FEROCITY,497,+2.4%,49.7,-3.4%,78.6%,+5.3%,pos 2
-Doom,GLUTTONY,44,+2.4%,38.6,+1.4%,50.0%,+4.0%,pos 2
-Timbersaw,SHREDDER,94,+2.4%,56.4,+1.7%,22.9%,+10.8%,pos 2
-Anti-Mage,MAGEBANE'S MIRROR,13,+2.3%,53.8,+14.3%,19.7%,+1.0%,pos 2
-Dawnbreaker,TRAILBLAZER,8,+2.3%,12.5,0.0%,3.0%,-38.9%,pos 2
-Viper,POISON BURST,556,+2.2%,49.3,+0.2%,79.5%,+3.1%,pos 2
-Nyx Assassin,SCUTTLE,49,+2.0%,51.0,-1.4%,87.5%,+8.2%,pos 2
-Muerta,OFRENDA,34,+2.0%,17.6,+7.1%,33.3%,-17.6%,pos 2
-Broodmother,NECROTIC WEBS,778,+1.8%,50.8,+0.5%,74.3%,-6.1%,pos 2
-Dragon Knight,FIRE DRAGON,2397,+1.7%,58.4,-2.3%,93.2%,+14.1%,pos 2
-Silencer,REVERBERATING SILENCE,92,+1.7%,42.4,-2.9%,80.7%,+10.6%,pos 2
-Lone Druid,BEAR NECESSITIES,31,+1.6%,41.9,+4.8%,8.9%,-8.2%,pos 2
-Grimstroke,FINE ART,29,+1.2%,55.2,-1.9%,87.9%,+55.2%,pos 2
-Slardar,LEG DAY,789,+1.2%,51.3,+1.0%,86.5%,-2.3%,pos 2
-Pangolier,THUNDERBOLT,1786,+1.0%,47.1,-0.2%,79.6%,+2.9%,pos 2
-Marci,BUDDY SYSTEM,31,+0.8%,71.0,+3.1%,3.4%,+23.2%,pos 2
-Ember Spirit,DOUBLE IMPACT,7431,+0.8%,51.8,+0.2%,90.7%,-1.1%,pos 2
-Phoenix,DYING LIGHT,482,+0.8%,51.9,+0.3%,98.2%,-3.7%,pos 2
-Outworld Devourer,OVERWHELMING DEVOURER,245,+0.6%,50.6,-0.3%,21.4%,+2.1%,pos 2
-Mars,BLOOD SPORT,68,+0.6%,48.5,0.0%,64.2%,+3.8%,pos 2
-Winter Wyvern,RECURSIVE,124,+0.6%,49.2,-0.5%,95.4%,-0.8%,pos 2
-Magnus,ETERNAL EMPOWERMENT,752,+0.5%,50.1,+0.1%,43.1%,-0.3%,pos 2
-Legion Commander,STONEHALL PLATE,87,+0.5%,51.7,+3.6%,78.4%,+1.7%,pos 2
-Pudge,FRESH MEAT,158,+0.4%,51.9,-0.5%,23.5%,+6.4%,pos 2
-Tinker,TRANSLOCATOR,1704,+0.3%,52.6,-0.5%,94.5%,-2.0%,pos 2
-Sniper,GHILLIE SUIT,1096,+0.3%,48.9,-0.7%,54.3%,-1.9%,pos 2
-Nature's Prophet,IRONWOOD TREANT,1258,+0.3%,53.1,+0.4%,93.5%,+7.6%,pos 2
-Huskar,CAUTERIZE,2117,+0.2%,54.7,-1.0%,56.6%,+3.5%,pos 2
-Dazzle,NOTHL BOON,3,+0.2%,66.7,+14.3%,0.3%,+10.3%,pos 2
-Doom,IMPENDING DOOM,18,+0.2%,38.9,+14.3%,20.5%,+4.3%,pos 2
-Shadow Fiend,LASTING PRESENCE,276,+0.1%,43.1,+1.6%,29.8%,-2.4%,pos 2
-Windranger,KILLSHOT,667,+0.0%,40.9,+0.5%,84.2%,+1.7%,pos 2
-Bane,DREAM STALKER,38,0.0%,28.9,+7.1%,88.4%,-31.1%,pos 2
-Crystal Maiden,ARCANE OVERFLOW,7,0.0%,28.6,0.0%,77.8%,-21.4%,pos 2
-Juggernaut,BLADEFORM,1,0.0%,0.0,0.0%,14.3%,0.0%,pos 2
-Mirana,LEAPS AND BOUNDS,10,0.0%,40.0,0.0%,4.1%,-0.4%,pos 2
-Vengeful Spirit,AVENGING MISSILE,2,0.0%,50.0,0.0%,6.3%,-3.3%,pos 2
-Witch Doctor,CLEFT DEATH,0,0.0%,0.0,0.0%,0.0%,-28.6%,pos 2
-Faceless Void,CHRONOSPHERE,2,0.0%,50.0,0.0%,10.5%,+26.5%,pos 2
-Clockwerk,HOOKUP,3,0.0%,66.7,0.0%,25.0%,+44.4%,pos 2
-Lifestealer,FLESHFEAST,21,0.0%,42.9,0.0%,87.5%,+9.5%,pos 2
-Dark Seer,QUICK WIT,31,0.0%,38.7,-14.3%,91.2%,+5.4%,pos 2
-Omniknight,OMNIPRESENT,5,0.0%,60.0,0.0%,100.0%,+60.0%,pos 2
-Weaver,HIVEMIND,10,0.0%,60.0,0.0%,40.0%,0.0%,pos 2
+Undying,RIPPED,2,0.0%,0.0,0.0%,4.3%,-44.4%,pos 2
+Naga Siren,DELUGE,2,0.0%,50.0,0.0%,10.5%,+20.6%,pos 2
+Keeper of the Light,RECALL,5,0.0%,20.0,0.0%,0.4%,-31.9%,pos 2
+Visage,FAITHFUL FOLLOWERS,2,0.0%,50.0,0.0%,0.2%,-5.2%,pos 2
+Centaur Warrunner,HORSEPOWER,6,0.0%,33.3,0.0%,33.3%,-16.7%,pos 2
+Skywrath Mage,STAFF OF THE SCION,17,0.0%,35.3,0.0%,13.7%,-14.2%,pos 2
+Elder Titan,MOMENTUM,4,0.0%,25.0,0.0%,50.0%,-50.0%,pos 2
+Terrorblade,CONDEMNED,30,0.0%,23.3,0.0%,96.8%,+23.3%,pos 2
+Oracle,CLAIRVOYANT CURSE,72,0.0%,50.0,+7.1%,94.7%,+50.0%,pos 2
+Snapfire,RICOCHET II,62,0.0%,33.9,-2.4%,76.5%,+2.3%,pos 2
+Ringmaster,CARNY CLASSICS,10,0.0%,10.0,0.0%,83.3%,-90.0%,pos 2
+Windranger,TANGLED,244,-0.0%,35.2,+1.0%,16.5%,-6.1%,pos 2
+Shadow Fiend,SHADOWMIRE,1399,-0.1%,46.3,-2.1%,69.8%,+3.7%,pos 2
+Dazzle,POISON BLOOM,3044,-0.2%,55.4,+0.0%,99.1%,+10.9%,pos 2
+Huskar,INCENDIARY,4232,-0.2%,52.7,-1.2%,50.8%,-1.1%,pos 2
+Nature's Prophet,SOOTHING SAPLINGS,160,-0.3%,48.1,-2.9%,4.8%,-3.1%,pos 2
+Sniper,SCATTERSHOT,2116,-0.3%,48.8,+1.9%,41.9%,-0.8%,pos 2
+Marci,PICK-ME-UP,55,-0.3%,43.6,-7.1%,3.0%,-27.4%,pos 2
+Queen of Pain,BONDAGE,1619,-0.4%,51.0,-0.1%,14.4%,+2.0%,pos 2
+Zeus,LIVEWIRE,905,-0.4%,46.4,+2.3%,71.5%,-1.0%,pos 2
+Legion Commander,SPOILS OF WAR,49,-0.5%,46.9,0.0%,23.3%,+0.4%,pos 2
+Marci,FLEETING FURY,1698,-0.5%,47.9,-1.5%,93.2%,-23.1%,pos 2
+Winter Wyvern,WINTERPROOF,18,-0.6%,38.9,-14.3%,9.6%,-10.5%,pos 2
+Kunkka,GROG BLOSSOM,276,-0.6%,60.9,+4.8%,36.3%,+9.8%,pos 2
+Dragon Knight,FROST DRAGON,310,-0.7%,46.8,+1.2%,6.7%,-10.5%,pos 2
+Phoenix,HOTSPOT,21,-0.8%,28.6,-9.5%,2.2%,-23.2%,pos 2
+Razor,THUNDERHEAD,756,-0.8%,52.2,+0.6%,85.0%,+4.9%,pos 2
+Earth Spirit,READY TO ROLL,18,-0.9%,66.7,-4.8%,3.2%,+20.2%,pos 2
+Dragon Knight,CORROSIVE DRAGON,882,-1.1%,51.0,+2.8%,19.1%,-6.3%,pos 2
+Invoker,MIND OF TORNARUS,215,-1.1%,49.8,-6.4%,2.0%,+5.7%,pos 2
+Slardar,BRINEGUARD,214,-1.2%,56.1,-4.8%,11.4%,+3.4%,pos 2
+Invoker,SCHOLAR OF KORYX,159,-1.2%,44.0,-6.2%,1.5%,-6.4%,pos 2
+Grimstroke,INKSTIGATE,6,-1.2%,0.0,0.0%,9.0%,-57.4%,pos 2
+Lycan,ALPHA WOLVES,90,-1.7%,47.8,+1.6%,45.7%,-27.2%,pos 2
+Arc Warden,RUNED REPLICA,407,-1.7%,48.4,+2.0%,31.9%,+0.1%,pos 2
+Bloodseeker,BLOODRUSH,4,-1.8%,50.0,0.0%,5.5%,+0.7%,pos 2
+Lina,SLOW BURN,160,-2.0%,50.0,-1.0%,8.9%,+7.3%,pos 2
+Nyx Assassin,MANA BURN,13,-2.0%,30.8,-14.3%,13.8%,-18.6%,pos 2
+Spirit Breaker,BULL'S HIT,40,-2.1%,32.5,0.0%,33.3%,-27.5%,pos 2
+Necrophos,RAPID DECAY,923,-2.2%,44.9,-1.0%,43.2%,-3.1%,pos 2
+Anti-Mage,MANA THIRST,137,-2.3%,49.6,+5.1%,82.5%,-5.5%,pos 2
+Timbersaw,TWISTED CHAKRAM,616,-2.4%,45.5,-2.0%,76.4%,-13.0%,pos 2
+Ogre Magi,LEARNING CURVE,87,-2.4%,44.8,+8.6%,82.1%,-18.3%,pos 2
+Death Prophet,MOURNING RITUAL,400,-2.4%,47.8,+3.1%,27.2%,-0.6%,pos 2
+Venomancer,PATIENT ZERO,6,-2.9%,33.3,0.0%,7.5%,+2.3%,pos 2
+Sand King,SANDSHROUD,298,-3.1%,47.0,+3.6%,85.6%,+13.0%,pos 2
+Bounty Hunter,CUTPURSE,16,-3.3%,12.5,0.0%,7.4%,-32.7%,pos 2
+Beastmaster,WILD HUNT,45,-3.4%,48.9,-7.1%,13.3%,-6.7%,pos 2
+Lion,FIST OF DEATH,103,-3.6%,51.5,+4.8%,92.8%,+39.0%,pos 2
+Troll Warlord,BAD INFLUENCE,24,-3.6%,50.0,-4.8%,75.0%,+12.5%,pos 2
+Bristleback,SNOT ROCKET,163,-3.7%,52.1,-7.1%,52.4%,+10.3%,pos 2
+Tiny,CRASH LANDING,3070,-4.1%,50.4,+0.1%,79.0%,+0.9%,pos 2
+Shadow Shaman,MASSIVE SERPENT WARD,5,-4.8%,40.0,-4.8%,12.2%,+9.4%,pos 2
+Abaddon,MEPHITIC SHROUD,84,-4.8%,47.6,-5.0%,87.5%,+6.0%,pos 2
+Visage,DEATH TOLL,135,-5.7%,48.9,-1.9%,16.4%,-6.3%,pos 2
+Techies,SPOON'S STASH,14,-7.1%,50.0,-14.3%,28.6%,+35.7%,pos 2
+Shadow Shaman,CHICKEN FINGERS,36,-9.5%,30.6,-2.4%,87.8%,-9.4%,pos 2
+Medusa,UNDULATION,23,-9.5%,52.2,-3.6%,39.0%,+32.2%,pos 2
+Phantom Assassin,METHODICAL,31,-12.2%,19.4,-4.8%,68.9%,-23.5%,pos 2
+Axe,ONE MAN ARMY,25,-14.3%,40.0,0.0%,69.4%,-5.5%,pos 2
+Sven,WRATH OF GOD,8,-14.3%,62.5,-7.1%,72.7%,+29.2%,pos 2
+Faceless Void,TIME ZONE,96,-14.3%,50.0,-5.4%,90.6%,+20.0%,pos 2
+Enchantress,OVERPROTECTIVE WISPS,9,-14.3%,66.7,-14.3%,42.9%,+16.7%,pos 2
+Ancient Apparition,BONE CHILL,53,-14.3%,41.5,-14.3%,63.9%,-1.8%,pos 2
+Brewmaster,DRUNKEN MASTER,35,-14.3%,42.9,-14.3%,76.1%,-11.7%,pos 2
+Chaos Knight,FUNDAMENTAL FORGING,16,-14.3%,43.8,-14.3%,50.0%,+43.8%,pos 2
+Io,KRITZKRIEG,24,-14.3%,33.3,0.0%,100.0%,+33.3%,pos 2
+Enchantress,SPELLBOUND,12,+14.3%,50.0,0.0%,57.1%,-16.7%,pos 2
+Gyrocopter,AFTERBURNER,5,+14.3%,80.0,+14.3%,35.7%,+35.6%,pos 2
+Treant Protector,PRIMEVAL POWER,15,+14.3%,0.0,0.0%,100.0%,0.0%,pos 2
+Medusa,ENGORGED,5,+14.3%,20.0,0.0%,8.5%,-32.2%,pos 2
+Spectre,TWIST THE KNIFE,57,+9.5%,43.9,+7.1%,77.0%,+20.3%,pos 2
+Lich,FROSTBOUND,5,+7.1%,0.0,0.0%,83.3%,0.0%,pos 2
+Wraith King,BONE GUARD,6,+7.1%,66.7,+14.3%,54.5%,+46.7%,pos 2
+Visage,SEPULCHRE,685,+5.7%,55.2,+1.1%,83.3%,+6.3%,pos 2
+Tusk,DRINKING BUDDIES,7,+4.8%,28.6,0.0%,6.7%,-17.3%,pos 2
+Underlord,DEMON'S REACH,11,+4.8%,81.8,0.0%,36.7%,+39.7%,pos 2
+Templar Assassin,VOIDBLADES,506,+4.0%,43.3,-1.9%,61.6%,+15.5%,pos 2
+Bristleback,SEEING RED,148,+3.7%,41.9,-2.4%,47.6%,-10.3%,pos 2
+Troll Warlord,INSENSITIVE,8,+3.6%,37.5,0.0%,25.0%,-12.5%,pos 2
+Pugna,SIPHONING WARD,144,+3.5%,39.6,-2.1%,76.6%,+0.9%,pos 2
+Hoodwink,HIPSHOT,14,+3.3%,28.6,+7.1%,33.3%,+7.1%,pos 2
+Leshrac,MISANTHROPY,8801,+3.2%,52.1,-0.6%,94.9%,+3.1%,pos 2
+Clinkz,SUPPRESSIVE FIRE,343,+3.1%,53.1,+1.0%,45.2%,+3.1%,pos 2
+Venomancer,PLAGUE CARRIER,74,+2.9%,31.1,+5.7%,92.5%,-2.3%,pos 2
+Primal Beast,FEROCITY,922,+2.4%,52.3,-3.4%,76.7%,+3.3%,pos 2
+Doom,GLUTTONY,84,+2.4%,45.2,+1.4%,50.6%,+4.6%,pos 2
+Timbersaw,SHREDDER,190,+2.4%,58.4,+1.7%,23.6%,+13.0%,pos 2
+Anti-Mage,MAGEBANE'S MIRROR,29,+2.3%,55.2,+14.3%,17.5%,+5.5%,pos 2
+Dawnbreaker,TRAILBLAZER,13,+2.3%,38.5,0.0%,2.6%,-10.7%,pos 2
+Viper,POISON BURST,1139,+2.2%,50.4,+0.2%,82.1%,-1.8%,pos 2
+Nyx Assassin,SCUTTLE,81,+2.0%,49.4,-1.4%,86.2%,+18.6%,pos 2
+Muerta,OFRENDA,61,+2.0%,26.2,+7.1%,35.9%,-12.3%,pos 2
+Broodmother,NECROTIC WEBS,1261,+1.8%,49.6,+0.5%,71.8%,-5.9%,pos 2
+Dragon Knight,FIRE DRAGON,3414,+1.7%,57.3,-2.3%,74.1%,+10.5%,pos 2
+Silencer,REVERBERATING SILENCE,180,+1.7%,42.8,-2.9%,81.4%,+8.6%,pos 2
+Lone Druid,BEAR NECESSITIES,50,+1.6%,42.0,+4.8%,6.9%,-9.6%,pos 2
+Grimstroke,FINE ART,61,+1.2%,57.4,-1.9%,91.0%,+57.4%,pos 2
+Slardar,LEG DAY,1656,+1.2%,52.7,+1.0%,88.6%,-3.4%,pos 2
+Pangolier,THUNDERBOLT,4193,+1.0%,48.2,-0.2%,81.7%,+3.8%,pos 2
+Marci,BUDDY SYSTEM,69,+0.8%,71.0,+3.1%,3.8%,+27.4%,pos 2
+Ember Spirit,DOUBLE IMPACT,15960,+0.8%,50.9,+0.2%,92.8%,-1.3%,pos 2
+Phoenix,DYING LIGHT,946,+0.8%,51.8,+0.3%,97.8%,+23.2%,pos 2
+Outworld Devourer,OVERWHELMING DEVOURER,763,+0.6%,49.7,-0.3%,22.8%,+0.2%,pos 2
+Mars,BLOOD SPORT,187,+0.6%,49.2,0.0%,72.5%,+9.8%,pos 2
+Winter Wyvern,RECURSIVE,170,+0.6%,49.4,-0.5%,90.4%,+10.5%,pos 2
+Magnus,ETERNAL EMPOWERMENT,1982,+0.5%,50.9,+0.1%,56.2%,+0.5%,pos 2
+Legion Commander,STONEHALL PLATE,161,+0.5%,46.6,+3.6%,76.7%,-0.4%,pos 2
+Pudge,FRESH MEAT,326,+0.4%,49.4,-0.5%,27.0%,+2.7%,pos 2
+Tinker,TRANSLOCATOR,4015,+0.3%,51.5,-0.5%,93.9%,+2.3%,pos 2
+Sniper,GHILLIE SUIT,2936,+0.3%,49.6,-0.7%,58.1%,+0.8%,pos 2
+Nature's Prophet,IRONWOOD TREANT,3187,+0.3%,51.3,+0.4%,95.2%,+3.1%,pos 2
+Huskar,CAUTERIZE,4105,+0.2%,53.9,-1.0%,49.2%,+1.1%,pos 2
+Dazzle,NOTHL BOON,27,+0.2%,44.4,+14.3%,0.9%,-10.9%,pos 2
+Doom,IMPENDING DOOM,23,+0.2%,43.5,+14.3%,13.9%,+2.8%,pos 2
+Shadow Fiend,LASTING PRESENCE,606,+0.1%,42.6,+1.6%,30.2%,-3.7%,pos 2
+Windranger,KILLSHOT,1231,+0.0%,41.3,+0.5%,83.5%,+6.1%,pos 2
+Bane,DREAM STALKER,79,0.0%,34.2,+7.1%,90.8%,-3.3%,pos 2
+Crystal Maiden,ARCANE OVERFLOW,10,0.0%,20.0,0.0%,62.5%,-30.0%,pos 2
+Juggernaut,BLADEFORM,3,0.0%,0.0,0.0%,27.3%,-12.5%,pos 2
+Mirana,LEAPS AND BOUNDS,15,0.0%,53.3,0.0%,3.6%,+12.4%,pos 2
+Vengeful Spirit,AVENGING MISSILE,8,0.0%,37.5,0.0%,8.8%,-11.9%,pos 2
+Witch Doctor,CLEFT DEATH,0,0.0%,0.0,0.0%,0.0%,-14.3%,pos 2
+Faceless Void,CHRONOSPHERE,10,0.0%,30.0,0.0%,9.4%,-20.0%,pos 2
+Clockwerk,HOOKUP,4,0.0%,50.0,0.0%,16.0%,+21.4%,pos 2
+Lifestealer,FLESHFEAST,30,0.0%,40.0,0.0%,90.9%,+6.7%,pos 2
+Dark Seer,QUICK WIT,91,0.0%,49.5,-14.3%,95.8%,-0.5%,pos 2
+Omniknight,OMNIPRESENT,15,0.0%,40.0,0.0%,100.0%,+40.0%,pos 2
+Weaver,HIVEMIND,36,0.0%,33.3,0.0%,39.6%,-17.6%,pos 2
 Chen,HELLBEAR CONVERT,1,0.0%,0.0,0.0%,50.0%,0.0%,pos 2
 Chen,SATYR CONVERT,1,0.0%,0.0,0.0%,50.0%,0.0%,pos 2
-Shadow Demon,PROMULGATE,3,0.0%,33.3,0.0%,75.0%,+33.3%,pos 2
-Chaos Knight,CLOVEN CHAOS,1,0.0%,0.0,0.0%,5.6%,-44.4%,pos 2
-Undying,ROTTING MITTS,21,0.0%,38.1,0.0%,95.5%,+38.1%,pos 2
-Disruptor,KINETIC FENCE,1,0.0%,0.0,0.0%,12.5%,-42.9%,pos 2
-Keeper of the Light,SOLAR BIND,413,0.0%,49.4,-1.6%,99.5%,+49.4%,pos 2
-Io,MEDIGUN,0,0.0%,0.0,0.0%,0.0%,-9.1%,pos 2
-Centaur Warrunner,COUNTER-STRIKE,4,0.0%,50.0,0.0%,66.7%,0.0%,pos 2
-Skywrath Mage,SHIELD OF THE SCION,50,0.0%,46.0,-7.1%,89.3%,+29.3%,pos 2
-Elder Titan,DECONSTRUCTION,4,0.0%,75.0,0.0%,80.0%,+75.0%,pos 2
-Techies,SPLEEN'S SECRET SAUCE,11,0.0%,9.1,0.0%,40.7%,-54.5%,pos 2
-Terrorblade,SOUL FRAGMENT,0,0.0%,0.0,0.0%,0.0%,-50.0%,pos 2
-Oracle,CLAIRVOYANT CURE,1,0.0%,0.0,0.0%,2.2%,-44.4%,pos 2
-Snapfire,FULL BORE,13,0.0%,38.5,0.0%,29.5%,+9.4%,pos 2
-Ringmaster,SIDESHOW SECRETS,2,0.0%,100.0,0.0%,22.2%,+85.7%,pos 2
-Riki,CONTRACT KILLER,56,-0.1%,33.9,-4.3%,23.6%,-13.6%,pos 2
-Earthshaker,SLUGGER,2274,-0.1%,50.6,+0.1%,99.7%,+7.8%,pos 2
-Meepo,MORE MEEPO,230,-0.2%,51.3,+0.8%,42.9%,-10.1%,pos 2
-Storm Spirit,STATIC SLIDE,3325,-0.2%,50.0,-0.3%,94.2%,+5.1%,pos 2
-Void Spirit,CALL OF THE VOID,43,-0.3%,46.5,-1.4%,6.2%,+1.3%,pos 2
-Puck,CURVEBALL,203,-0.3%,49.8,+1.8%,5.9%,-1.2%,pos 2
-Tinker,REPAIR BOTS,99,-0.3%,54.5,0.0%,5.5%,+2.0%,pos 2
-Pudge,ROTTEN CORE,514,-0.4%,45.5,+0.4%,76.5%,-6.4%,pos 2
-Night Stalker,NIGHT REIGN,180,-0.5%,56.7,-3.9%,92.8%,+21.0%,pos 2
-Magnus,DIMINISHING RETURN,993,-0.5%,50.5,+1.7%,56.9%,+0.3%,pos 2
-Jakiro,ICE BREAKER,26,-0.5%,26.9,0.0%,11.6%,-19.0%,pos 2
-Mars,VICTORY FEAST,38,-0.6%,44.7,-4.8%,35.8%,-3.8%,pos 2
-Outworld Devourer,OBSIDIAN DECIMATOR,898,-0.6%,48.6,+0.1%,78.6%,-2.1%,pos 2
-Kez,SHADOWHAWK,157,-0.7%,38.9,-4.3%,22.2%,-2.8%,pos 2
-Ember Spirit,CHAIN GANG,762,-0.8%,52.9,+0.1%,9.3%,+1.1%,pos 2
-Morphling,EBB,66,-0.9%,36.4,+3.2%,25.6%,+10.8%,pos 2
-Pangolier,DOUBLE JUMP,459,-1.0%,44.2,-1.3%,20.4%,-2.9%,pos 2
-Phantom Lancer,DIVERGENCE,1,-1.1%,100.0,-14.3%,5.9%,+68.8%,pos 2
-Monkey King,SIMIAN STRIDE,1486,-1.2%,46.5,+0.1%,73.0%,-8.0%,pos 2
-Rubick,ARCANE ACCUMULATION,235,-1.2%,46.0,-2.1%,64.0%,+4.3%,pos 2
-Drow Ranger,SIDESTEP,12,-1.2%,33.3,-14.3%,22.2%,-14.3%,pos 2
-Lone Druid,BEAR WITH ME,317,-1.6%,50.2,+1.9%,91.1%,+8.2%,pos 2
-Silencer,IRREPRESSIBLE,22,-1.7%,31.8,-7.1%,19.3%,-10.6%,pos 2
-Templar Assassin,HIDDEN REACH,43,-1.7%,27.9,+1.5%,9.9%,-12.7%,pos 2
-Broodmother,FEEDING FRENZY,269,-1.8%,56.9,-2.0%,25.7%,+6.1%,pos 2
-Muerta,DANCE OF THE DEAD,68,-2.0%,35.3,-1.9%,66.7%,+17.6%,pos 2
-Slark,LEECHING LEASH,56,-2.0%,46.4,+4.3%,78.9%,-6.9%,pos 2
-Viper,CAUSTIC BATH,143,-2.2%,46.2,+4.4%,20.5%,-3.1%,pos 2
-Templar Assassin,REFRACTOR,127,-2.2%,37.0,-1.2%,29.1%,+9.1%,pos 2
-Batrider,ARSONIST,65,-2.4%,41.5,-2.1%,33.3%,-3.1%,pos 2
-Ursa,GRUDGE BEARER,9,-2.4%,66.7,0.0%,25.7%,+16.7%,pos 2
-Primal Beast,PROVOKE THE BEAST,135,-2.4%,44.4,+2.1%,21.4%,-5.3%,pos 2
-Doom,DEVIL'S BARGAIN,26,-2.5%,34.6,+7.1%,29.5%,-4.3%,pos 2
-Clinkz,ENGULFING STEP,218,-3.1%,52.3,-2.5%,57.5%,-6.7%,pos 2
-Leshrac,CHRONOPTIC NOURISHMENT,311,-3.2%,51.8,-4.7%,6.6%,-2.0%,pos 2
-Hoodwink,GO NUTS,20,-3.3%,25.0,-5.7%,64.5%,-2.3%,pos 2
-Pugna,REWARDS OF RUIN,20,-3.5%,45.0,+3.6%,21.3%,+4.5%,pos 2
-Alchemist,DIVIDENDS,28,-3.6%,53.6,-7.1%,17.9%,+17.0%,pos 2
-Dark Willow,SHATTERING CROWN,5,-3.6%,20.0,-7.1%,10.0%,-24.4%,pos 2
-Tidehunter,KRAKEN SWELL,35,-3.7%,45.7,-2.9%,44.9%,-3.1%,pos 2
-Medusa,VENOMOUS VOLLEY,15,-4.8%,33.3,-7.1%,48.4%,-16.7%,pos 2
-Tusk,TAG TEAM,46,-4.8%,54.3,-12.2%,93.9%,+21.0%,pos 2
-Underlord,ABYSSAL HORDE,10,-4.8%,40.0,+7.1%,62.5%,-26.7%,pos 2
-Techies,SQUEE'S SCOPE,5,-7.1%,40.0,0.0%,18.5%,+30.9%,pos 2
-Dawnbreaker,STARSURGE,83,-7.2%,48.2,+7.7%,30.7%,+35.7%,pos 2
-Spectre,FORSAKEN,10,-9.5%,0.0,0.0%,28.6%,-48.0%,pos 2
-Enigma,SPLITTING IMAGE,37,-9.5%,62.2,0.0%,54.4%,-5.6%,pos 2
-Phantom Lancer,LANCELOT,16,-13.2%,31.3,-6.0%,94.1%,-68.8%,pos 2
-Crystal Maiden,GLACIAL GUARD,2,-14.3%,50.0,-14.3%,22.2%,+21.4%,pos 2
-Warlock,BLACK GRIMOIRE,4,-14.3%,50.0,-14.3%,80.0%,+50.0%,pos 2
-Luna,MOONSTORM,3,-14.3%,33.3,0.0%,60.0%,+33.3%,pos 2
-Weaver,SKITTERSTEP,15,-14.3%,60.0,0.0%,60.0%,0.0%,pos 2
-Gyrocopter,SECONDARY STRIKES,5,-14.3%,40.0,0.0%,71.4%,-60.0%,pos 2
-Shadow Demon,SHADOW SERVANT,1,-14.3%,0.0,0.0%,25.0%,-33.3%,pos 2
-Naga Siren,RIP TIDE,7,-14.3%,14.3,-7.1%,87.5%,+14.3%,pos 2
-Bane,SLEEPWALK,1,+14.3%,0.0,0.0%,6.7%,-42.9%,pos 3
-Omniknight,OMNIPRESENT,41,+14.3%,48.8,+9.5%,93.2%,+15.4%,pos 3
-Shadow Demon,PROMULGATE,7,+14.3%,28.6,0.0%,100.0%,+28.6%,pos 3
-Oracle,CLAIRVOYANT CURSE,17,+14.3%,47.1,0.0%,100.0%,+47.1%,pos 3
-Invoker,AGENT OF GALLARON,37,+9.5%,24.3,+4.1%,74.0%,-9.0%,pos 3
-Zeus,LIVEWIRE,63,+8.6%,34.9,-7.1%,90.0%,+6.3%,pos 3
-Techies,SPLEEN'S SECRET SAUCE,8,+7.1%,25.0,0.0%,44.4%,-25.0%,pos 3
-Snapfire,FULL BORE,14,+7.1%,50.0,+7.1%,35.0%,0.0%,pos 3
-Bloodseeker,ARTERIAL SPRAY,48,+6.2%,41.7,-4.3%,73.8%,-28.9%,pos 3
-Spirit Breaker,BULL RUSH,145,+5.6%,53.1,+1.2%,51.4%,+15.1%,pos 3
-Sniper,GHILLIE SUIT,10,+4.8%,50.0,-14.3%,40.0%,-10.0%,pos 3
-Spectre,TWIST THE KNIFE,24,+4.8%,45.8,+7.1%,72.7%,+12.5%,pos 3
-Gyrocopter,SECONDARY STRIKES,9,+4.8%,66.7,0.0%,36.0%,+16.7%,pos 3
-Ember Spirit,DOUBLE IMPACT,96,+4.7%,37.5,-0.6%,81.4%,+1.1%,pos 3
-Weaver,HIVEMIND,47,+4.1%,44.7,+7.1%,25.0%,-3.5%,pos 3
-Underlord,DEMON'S REACH,311,+3.8%,42.8,-0.6%,35.7%,-7.2%,pos 3
-Shadow Shaman,CHICKEN FINGERS,31,+3.6%,25.8,-1.9%,93.9%,+25.8%,pos 3
-Meepo,CODEPENDENT,14,+3.6%,64.3,0.0%,30.4%,+8.0%,pos 3
-Void Spirit,CALL OF THE VOID,8,+3.6%,50.0,+14.3%,10.0%,+2.8%,pos 3
-Jakiro,TWIN TERROR,94,+3.2%,39.4,+2.4%,67.6%,-2.9%,pos 3
-Dragon Knight,FIRE DRAGON,1531,+3.2%,53.0,+0.0%,88.8%,+11.0%,pos 3
-Alchemist,DIVIDENDS,106,+2.9%,51.9,-4.8%,56.7%,-12.1%,pos 3
-Lion,ESSENCE EATER,7,+2.4%,42.9,-14.3%,53.8%,-7.1%,pos 3
-Magnus,ETERNAL EMPOWERMENT,2212,+2.2%,52.4,+0.7%,50.8%,+1.7%,pos 3
-Leshrac,MISANTHROPY,141,+2.2%,53.2,-3.2%,89.8%,+15.7%,pos 3
-Morphling,EBB,25,+2.1%,36.0,0.0%,32.9%,+6.6%,pos 3
-Night Stalker,NIGHT REIGN,5020,+2.1%,52.1,+0.5%,95.5%,+6.3%,pos 3
-Silencer,REVERBERATING SILENCE,112,+2.0%,47.3,-1.8%,93.3%,+9.8%,pos 3
-Broodmother,NECROTIC WEBS,764,+1.9%,48.0,-1.7%,87.6%,+11.0%,pos 3
-Earth Spirit,READY TO ROLL,14,+1.8%,42.9,0.0%,23.7%,-7.1%,pos 3
-Faceless Void,TIME ZONE,370,+1.6%,50.5,-2.4%,96.4%,+14.8%,pos 3
-Venomancer,PATIENT ZERO,50,+1.6%,30.0,-2.5%,28.9%,-15.5%,pos 3
-Viper,POISON BURST,325,+1.5%,48.6,+3.0%,76.5%,+0.6%,pos 3
-Undying,ROTTING MITTS,224,+1.4%,52.2,-1.6%,95.7%,-7.8%,pos 3
-Huskar,INCENDIARY,115,+1.3%,42.6,-2.4%,39.5%,-4.0%,pos 3
-Batrider,ARSONIST,47,+1.2%,36.2,-0.7%,47.0%,-7.2%,pos 3
-Necrophos,RAPID DECAY,426,+1.1%,50.7,+0.5%,67.6%,+7.1%,pos 3
-Centaur Warrunner,HORSEPOWER,427,+1.1%,47.1,+0.6%,62.6%,-0.4%,pos 3
-Bounty Hunter,CUTPURSE,18,+1.0%,16.7,-14.3%,10.8%,-21.6%,pos 3
-Death Prophet,MOURNING RITUAL,163,+0.9%,41.7,+3.8%,34.6%,-5.4%,pos 3
-Nature's Prophet,SOOTHING SAPLINGS,50,+0.9%,64.0,+11.9%,5.5%,+12.9%,pos 3
-Winter Wyvern,RECURSIVE,785,+0.5%,55.9,-0.2%,98.5%,+5.9%,pos 3
-Doom,DEVIL'S BARGAIN,1698,+0.5%,49.5,-1.6%,67.7%,-3.1%,pos 3
-Abaddon,MEPHITIC SHROUD,5095,+0.4%,54.2,-1.1%,92.8%,-2.9%,pos 3
-Riki,EXTERMINATOR,176,+0.3%,44.9,-4.5%,73.0%,-7.4%,pos 3
-Dazzle,POISON BLOOM,738,+0.3%,57.9,-1.5%,97.9%,+7.9%,pos 3
-Doom,IMPENDING DOOM,116,+0.2%,52.6,+5.2%,4.6%,+5.8%,pos 3
-Timbersaw,SHREDDER,1100,+0.2%,49.0,+1.3%,72.2%,+7.5%,pos 3
-Razor,THUNDERHEAD,625,+0.1%,45.9,-3.3%,83.6%,-1.2%,pos 3
-Windranger,TANGLED,126,+0.1%,45.2,-0.6%,23.1%,+2.5%,pos 3
-Wraith King,SPECTRAL BLADE,32,+0.0%,40.6,-2.4%,13.9%,-2.3%,pos 3
-Drow Ranger,SIDESTEP,4,0.0%,0.0,0.0%,80.0%,0.0%,pos 3
-Juggernaut,BLADEFORM,0,0.0%,0.0,0.0%,0.0%,-33.3%,pos 3
-Mirana,LEAPS AND BOUNDS,5,0.0%,60.0,0.0%,3.6%,+23.0%,pos 3
-Phantom Lancer,DIVERGENCE,2,0.0%,0.0,0.0%,10.5%,-52.9%,pos 3
-Puck,CURVEBALL,1,0.0%,100.0,0.0%,4.3%,+45.5%,pos 3
-Sven,WRATH OF GOD,20,0.0%,25.0,-3.6%,76.9%,+8.3%,pos 3
-Witch Doctor,HEADHUNTER,7,0.0%,28.6,-14.3%,100.0%,+28.6%,pos 3
-Lich,FROSTBOUND,2,0.0%,50.0,0.0%,66.7%,+50.0%,pos 3
-Warlock,CHAMPION OF GORROTH,2,0.0%,0.0,0.0%,20.0%,-25.0%,pos 3
-Luna,MOONSHIELD,7,0.0%,71.4,0.0%,77.8%,+21.4%,pos 3
-Clinkz,SUPPRESSIVE FIRE,6,0.0%,0.0,0.0%,23.1%,-40.0%,pos 3
-Enchantress,OVERPROTECTIVE WISPS,8,0.0%,50.0,0.0%,27.6%,+21.4%,pos 3
-Chen,CENTAUR CONVERT,0,0.0%,0.0,0.0%,0.0%,-100.0%,pos 3
-Chen,TROLL CONVERT,0,0.0%,0.0,0.0%,0.0%,-100.0%,pos 3
-Ancient Apparition,EXPOSURE,5,0.0%,80.0,0.0%,27.8%,+64.6%,pos 3
-Outworld Devourer,OVERWHELMING DEVOURER,7,0.0%,42.9,0.0%,16.7%,-2.9%,pos 3
+Shadow Demon,PROMULGATE,9,0.0%,33.3,0.0%,75.0%,+33.3%,pos 2
+Chaos Knight,CLOVEN CHAOS,1,0.0%,0.0,0.0%,3.1%,-43.8%,pos 2
+Undying,ROTTING MITTS,45,0.0%,44.4,0.0%,95.7%,+44.4%,pos 2
+Disruptor,KINETIC FENCE,1,0.0%,0.0,0.0%,7.1%,-46.2%,pos 2
+Keeper of the Light,SOLAR BIND,1417,0.0%,51.9,-1.6%,99.6%,+31.9%,pos 2
+Io,MEDIGUN,0,0.0%,0.0,0.0%,0.0%,-33.3%,pos 2
+Centaur Warrunner,COUNTER-STRIKE,12,0.0%,50.0,0.0%,66.7%,+16.7%,pos 2
+Skywrath Mage,SHIELD OF THE SCION,107,0.0%,49.5,-7.1%,86.3%,+14.2%,pos 2
+Elder Titan,DECONSTRUCTION,4,0.0%,75.0,0.0%,50.0%,+50.0%,pos 2
+Techies,SPLEEN'S SECRET SAUCE,28,0.0%,14.3,0.0%,57.1%,-42.9%,pos 2
+Terrorblade,SOUL FRAGMENT,1,0.0%,0.0,0.0%,3.2%,-23.3%,pos 2
+Oracle,CLAIRVOYANT CURE,4,0.0%,0.0,0.0%,5.3%,-50.0%,pos 2
+Snapfire,FULL BORE,19,0.0%,31.6,0.0%,23.5%,-2.3%,pos 2
+Ringmaster,SIDESHOW SECRETS,2,0.0%,100.0,0.0%,16.7%,+90.0%,pos 2
+Riki,CONTRACT KILLER,85,-0.1%,36.5,-4.3%,15.6%,-12.5%,pos 2
+Earthshaker,SLUGGER,4856,-0.1%,50.5,+0.1%,99.6%,+15.5%,pos 2
+Meepo,MORE MEEPO,482,-0.2%,51.2,+0.8%,43.9%,-9.0%,pos 2
+Storm Spirit,STATIC SLIDE,7259,-0.2%,49.1,-0.3%,93.6%,+1.6%,pos 2
+Void Spirit,CALL OF THE VOID,82,-0.3%,43.9,-1.4%,6.3%,-3.9%,pos 2
+Puck,CURVEBALL,419,-0.3%,52.3,+1.8%,5.0%,+1.3%,pos 2
+Tinker,REPAIR BOTS,260,-0.3%,49.2,0.0%,6.1%,-2.3%,pos 2
+Pudge,ROTTEN CORE,882,-0.4%,46.7,+0.4%,73.0%,-2.7%,pos 2
+Night Stalker,NIGHT REIGN,350,-0.5%,53.4,-3.9%,93.1%,+15.0%,pos 2
+Magnus,DIMINISHING RETURN,1546,-0.5%,50.5,+1.7%,43.8%,-0.5%,pos 2
+Jakiro,ICE BREAKER,47,-0.5%,21.3,0.0%,13.4%,-23.1%,pos 2
+Mars,VICTORY FEAST,71,-0.6%,39.4,-4.8%,27.5%,-9.8%,pos 2
+Outworld Devourer,OBSIDIAN DECIMATOR,2588,-0.6%,49.5,+0.1%,77.2%,-0.2%,pos 2
+Kez,SHADOWHAWK,459,-0.7%,44.2,-4.3%,27.8%,-3.7%,pos 2
+Ember Spirit,CHAIN GANG,1244,-0.8%,52.3,+0.1%,7.2%,+1.3%,pos 2
+Morphling,EBB,142,-0.9%,37.3,+3.2%,35.6%,+8.5%,pos 2
+Pangolier,DOUBLE JUMP,942,-1.0%,44.4,-1.3%,18.3%,-3.8%,pos 2
+Phantom Lancer,DIVERGENCE,4,-1.1%,50.0,-14.3%,19.0%,+14.7%,pos 2
+Monkey King,SIMIAN STRIDE,2840,-1.2%,47.8,+0.1%,59.2%,-9.0%,pos 2
+Rubick,ARCANE ACCUMULATION,562,-1.2%,46.6,-2.1%,64.3%,-0.8%,pos 2
+Drow Ranger,SIDESTEP,33,-1.2%,42.4,-14.3%,27.3%,+1.5%,pos 2
+Lone Druid,BEAR WITH ME,670,-1.6%,51.6,+1.9%,93.1%,+9.6%,pos 2
+Silencer,IRREPRESSIBLE,41,-1.7%,34.1,-7.1%,18.6%,-8.6%,pos 2
+Templar Assassin,HIDDEN REACH,54,-1.7%,27.8,+1.5%,6.6%,-15.5%,pos 2
+Broodmother,FEEDING FRENZY,495,-1.8%,55.6,-2.0%,28.2%,+5.9%,pos 2
+Muerta,DANCE OF THE DEAD,109,-2.0%,38.5,-1.9%,64.1%,+12.3%,pos 2
+Slark,LEECHING LEASH,144,-2.0%,47.9,+4.3%,85.2%,-8.1%,pos 2
+Viper,CAUSTIC BATH,249,-2.2%,52.2,+4.4%,17.9%,+1.8%,pos 2
+Templar Assassin,REFRACTOR,262,-2.2%,39.7,-1.2%,31.9%,+11.9%,pos 2
+Batrider,ARSONIST,104,-2.4%,44.2,-2.1%,28.0%,-5.0%,pos 2
+Ursa,GRUDGE BEARER,23,-2.4%,65.2,0.0%,20.7%,+14.1%,pos 2
+Primal Beast,PROVOKE THE BEAST,280,-2.4%,48.9,+2.1%,23.3%,-3.3%,pos 2
+Doom,DEVIL'S BARGAIN,59,-2.5%,40.7,+7.1%,35.5%,-4.6%,pos 2
+Clinkz,ENGULFING STEP,416,-3.1%,50.0,-2.5%,54.8%,-3.1%,pos 2
+Leshrac,CHRONOPTIC NOURISHMENT,474,-3.2%,48.9,-4.7%,5.1%,-3.1%,pos 2
+Hoodwink,GO NUTS,28,-3.3%,21.4,-5.7%,66.7%,-7.1%,pos 2
+Pugna,REWARDS OF RUIN,44,-3.5%,38.6,+3.6%,23.4%,-0.9%,pos 2
+Alchemist,DIVIDENDS,44,-3.6%,52.3,-7.1%,15.7%,+15.5%,pos 2
+Dark Willow,SHATTERING CROWN,7,-3.6%,28.6,-7.1%,8.3%,-18.2%,pos 2
+Tidehunter,KRAKEN SWELL,49,-3.7%,44.9,-2.9%,27.5%,-5.5%,pos 2
+Medusa,VENOMOUS VOLLEY,31,-4.8%,38.7,-7.1%,52.5%,+18.7%,pos 2
+Tusk,TAG TEAM,98,-4.8%,45.9,-12.2%,93.3%,+17.3%,pos 2
+Underlord,ABYSSAL HORDE,19,-4.8%,42.1,+7.1%,63.3%,-39.7%,pos 2
+Techies,SQUEE'S SCOPE,7,-7.1%,57.1,0.0%,14.3%,+42.9%,pos 2
+Dawnbreaker,STARSURGE,133,-7.2%,42.9,+7.7%,26.9%,-6.3%,pos 2
+Spectre,FORSAKEN,17,-9.5%,23.5,0.0%,23.0%,-20.3%,pos 2
+Enigma,SPLITTING IMAGE,80,-9.5%,60.0,0.0%,61.5%,-14.0%,pos 2
+Phantom Lancer,LANCELOT,17,-13.2%,35.3,-6.0%,81.0%,-14.7%,pos 2
+Crystal Maiden,GLACIAL GUARD,6,-14.3%,50.0,-14.3%,37.5%,+30.0%,pos 2
+Warlock,BLACK GRIMOIRE,8,-14.3%,37.5,-14.3%,66.7%,+37.5%,pos 2
+Luna,MOONSTORM,5,-14.3%,20.0,0.0%,50.0%,0.0%,pos 2
+Weaver,SKITTERSTEP,55,-14.3%,50.9,0.0%,60.4%,+17.6%,pos 2
+Gyrocopter,SECONDARY STRIKES,9,-14.3%,44.4,0.0%,64.3%,-35.6%,pos 2
+Shadow Demon,SHADOW SERVANT,3,-14.3%,0.0,0.0%,25.0%,-33.3%,pos 2
+Naga Siren,RIP TIDE,17,-14.3%,29.4,-7.1%,89.5%,-20.6%,pos 2
+Bane,SLEEPWALK,4,+14.3%,25.0,0.0%,10.0%,-30.6%,pos 3
+Omniknight,OMNIPRESENT,83,+14.3%,41.0,+9.5%,94.3%,-19.0%,pos 3
+Shadow Demon,PROMULGATE,21,+14.3%,28.6,0.0%,100.0%,+28.6%,pos 3
+Oracle,CLAIRVOYANT CURSE,29,+14.3%,44.8,0.0%,93.5%,+44.8%,pos 3
+Invoker,AGENT OF GALLARON,71,+9.5%,32.4,+4.1%,76.3%,-13.8%,pos 3
+Zeus,LIVEWIRE,120,+8.6%,35.8,-7.1%,88.2%,+10.8%,pos 3
+Techies,SPLEEN'S SECRET SAUCE,31,+7.1%,45.2,0.0%,47.7%,-21.5%,pos 3
+Snapfire,FULL BORE,42,+7.1%,35.7,+7.1%,38.5%,-12.0%,pos 3
+Bloodseeker,ARTERIAL SPRAY,89,+6.2%,42.7,-4.3%,77.4%,-30.4%,pos 3
+Spirit Breaker,BULL RUSH,334,+5.6%,45.2,+1.2%,58.6%,+2.4%,pos 3
+Sniper,GHILLIE SUIT,32,+4.8%,59.4,-14.3%,49.2%,+17.0%,pos 3
+Spectre,TWIST THE KNIFE,51,+4.8%,41.2,+7.1%,64.6%,+19.7%,pos 3
+Gyrocopter,SECONDARY STRIKES,23,+4.8%,43.5,0.0%,50.0%,-4.3%,pos 3
+Ember Spirit,DOUBLE IMPACT,385,+4.7%,45.2,-0.6%,84.8%,+1.7%,pos 3
+Weaver,HIVEMIND,194,+4.1%,39.2,+7.1%,39.7%,-8.6%,pos 3
+Underlord,DEMON'S REACH,631,+3.8%,47.2,-0.6%,34.7%,-1.6%,pos 3
+Shadow Shaman,CHICKEN FINGERS,63,+3.6%,25.4,-1.9%,92.6%,+5.4%,pos 3
+Meepo,CODEPENDENT,29,+3.6%,51.7,0.0%,29.3%,+13.2%,pos 3
+Void Spirit,CALL OF THE VOID,18,+3.6%,50.0,+14.3%,12.0%,+6.1%,pos 3
+Jakiro,TWIN TERROR,186,+3.2%,46.2,+2.4%,72.4%,+4.0%,pos 3
+Dragon Knight,FIRE DRAGON,2179,+3.2%,52.3,+0.0%,69.5%,+8.3%,pos 3
+Alchemist,DIVIDENDS,191,+2.9%,47.6,-4.8%,52.9%,-10.7%,pos 3
+Lion,ESSENCE EATER,23,+2.4%,34.8,-14.3%,63.9%,-3.7%,pos 3
+Magnus,ETERNAL EMPOWERMENT,6192,+2.2%,52.3,+0.7%,63.3%,+2.1%,pos 3
+Leshrac,MISANTHROPY,293,+2.2%,48.1,-3.2%,90.7%,+8.1%,pos 3
+Morphling,EBB,59,+2.1%,49.2,0.0%,42.1%,+14.6%,pos 3
+Night Stalker,NIGHT REIGN,12000,+2.1%,52.3,+0.5%,97.1%,+2.2%,pos 3
+Silencer,REVERBERATING SILENCE,182,+2.0%,44.5,-1.8%,87.1%,-7.3%,pos 3
+Broodmother,NECROTIC WEBS,1193,+1.9%,49.0,-1.7%,83.6%,+4.1%,pos 3
+Earth Spirit,READY TO ROLL,22,+1.8%,31.8,0.0%,18.3%,-17.0%,pos 3
+Faceless Void,TIME ZONE,3598,+1.6%,50.7,-2.4%,98.4%,+4.9%,pos 3
+Venomancer,PATIENT ZERO,78,+1.6%,29.5,-2.5%,23.3%,-13.7%,pos 3
+Viper,POISON BURST,600,+1.5%,48.0,+3.0%,75.2%,-2.0%,pos 3
+Undying,ROTTING MITTS,521,+1.4%,52.0,-1.6%,95.9%,+2.0%,pos 3
+Huskar,INCENDIARY,279,+1.3%,45.9,-2.4%,46.6%,-1.3%,pos 3
+Batrider,ARSONIST,84,+1.2%,41.7,-0.7%,43.8%,-2.8%,pos 3
+Necrophos,RAPID DECAY,907,+1.1%,48.1,+0.5%,66.8%,+0.5%,pos 3
+Centaur Warrunner,HORSEPOWER,952,+1.1%,48.6,+0.6%,67.8%,+0.2%,pos 3
+Bounty Hunter,CUTPURSE,29,+1.0%,27.6,-14.3%,9.5%,-12.8%,pos 3
+Death Prophet,MOURNING RITUAL,354,+0.9%,41.5,+3.8%,34.4%,-6.4%,pos 3
+Nature's Prophet,SOOTHING SAPLINGS,101,+0.9%,53.5,+11.9%,4.6%,+2.7%,pos 3
+Winter Wyvern,RECURSIVE,1032,+0.5%,53.4,-0.2%,87.5%,-1.7%,pos 3
+Doom,DEVIL'S BARGAIN,3029,+0.5%,48.2,-1.6%,65.0%,-1.1%,pos 3
+Abaddon,MEPHITIC SHROUD,10467,+0.4%,53.2,-1.1%,92.7%,-2.2%,pos 3
+Riki,EXTERMINATOR,381,+0.3%,46.2,-4.5%,77.9%,+0.8%,pos 3
+Dazzle,POISON BLOOM,2773,+0.3%,54.7,-1.5%,98.6%,+3.4%,pos 3
+Doom,IMPENDING DOOM,237,+0.2%,49.4,+5.2%,5.1%,+1.4%,pos 3
+Timbersaw,SHREDDER,1993,+0.2%,47.3,+1.3%,70.1%,+4.8%,pos 3
+Razor,THUNDERHEAD,1198,+0.1%,44.5,-3.3%,84.5%,-2.1%,pos 3
+Windranger,TANGLED,221,+0.1%,43.0,-0.6%,21.4%,+0.7%,pos 3
+Wraith King,SPECTRAL BLADE,67,+0.0%,40.3,-2.4%,15.5%,-5.0%,pos 3
+Drow Ranger,SIDESTEP,12,0.0%,25.0,0.0%,75.0%,+25.0%,pos 3
+Juggernaut,BLADEFORM,8,0.0%,37.5,0.0%,27.6%,+4.2%,pos 3
+Mirana,LEAPS AND BOUNDS,13,0.0%,46.2,0.0%,5.3%,+5.2%,pos 3
+Phantom Lancer,DIVERGENCE,5,0.0%,0.0,0.0%,20.0%,-50.0%,pos 3
+Puck,CURVEBALL,3,0.0%,100.0,0.0%,7.0%,+45.0%,pos 3
+Sven,WRATH OF GOD,42,0.0%,23.8,-3.6%,72.4%,+11.3%,pos 3
+Witch Doctor,HEADHUNTER,22,0.0%,18.2,-14.3%,100.0%,+18.2%,pos 3
+Lich,FROSTBOUND,3,0.0%,33.3,0.0%,75.0%,+33.3%,pos 3
+Warlock,CHAMPION OF GORROTH,3,0.0%,33.3,0.0%,14.3%,+16.7%,pos 3
+Luna,MOONSHIELD,15,0.0%,53.3,0.0%,68.2%,+10.5%,pos 3
+Clinkz,SUPPRESSIVE FIRE,18,0.0%,16.7,0.0%,22.8%,-26.0%,pos 3
+Enchantress,OVERPROTECTIVE WISPS,20,0.0%,45.0,0.0%,37.7%,+8.6%,pos 3
+Chen,CENTAUR CONVERT,1,0.0%,0.0,0.0%,25.0%,-100.0%,pos 3
+Chen,TROLL CONVERT,2,0.0%,50.0,0.0%,50.0%,+50.0%,pos 3
+Ancient Apparition,EXPOSURE,13,0.0%,61.5,0.0%,27.1%,+41.5%,pos 3
+Outworld Devourer,OVERWHELMING DEVOURER,20,0.0%,50.0,0.0%,21.5%,+13.0%,pos 3
 Shadow Demon,SHADOW SERVANT,0,0.0%,0.0,0.0%,0.0%,-28.6%,pos 3
-Treant Protector,SAPLING,1,0.0%,0.0,0.0%,7.1%,-46.2%,pos 3
-Keeper of the Light,RECALL,2,0.0%,50.0,0.0%,10.5%,+20.6%,pos 3
-Io,MEDIGUN,1,0.0%,0.0,0.0%,9.1%,-60.0%,pos 3
-Medusa,ENGORGED,2,0.0%,50.0,0.0%,3.8%,+7.1%,pos 3
-Medusa,UNDULATION,44,0.0%,56.8,+3.6%,83.0%,+14.0%,pos 3
-Tusk,TAG TEAM,53,0.0%,43.4,+0.0%,96.4%,+43.4%,pos 3
-Skywrath Mage,SHIELD OF THE SCION,6,0.0%,50.0,0.0%,85.7%,-50.0%,pos 3
-Oracle,CLAIRVOYANT CURE,0,0.0%,0.0,0.0%,0.0%,-47.1%,pos 3
-Hoodwink,GO NUTS,28,0.0%,35.7,-14.3%,87.5%,-14.3%,pos 3
-Ringmaster,SIDESHOW SECRETS,2,0.0%,50.0,0.0%,66.7%,-50.0%,pos 3
-Wraith King,BONE GUARD,198,-0.0%,42.9,-0.8%,86.1%,+2.3%,pos 3
-Windranger,KILLSHOT,419,-0.1%,42.7,+0.1%,76.9%,-2.5%,pos 3
-Razor,DYNAMO,123,-0.1%,47.2,0.0%,16.4%,+1.2%,pos 3
-Ursa,BEAR DOWN,53,-0.1%,41.5,+2.5%,64.6%,+3.6%,pos 3
-Earthshaker,TECTONIC BUILDUP,37,-0.2%,40.5,+7.1%,5.4%,-6.2%,pos 3
-Dazzle,NOTHL BOON,16,-0.3%,50.0,-14.3%,2.1%,-7.9%,pos 3
-Riki,CONTRACT KILLER,65,-0.3%,52.3,+9.5%,27.0%,+7.4%,pos 3
-Abaddon,THE QUICKENING,396,-0.4%,57.1,-0.2%,7.2%,+2.9%,pos 3
-Marci,PICK-ME-UP,70,-0.5%,48.6,-0.6%,4.9%,-9.6%,pos 3
-Winter Wyvern,WINTERPROOF,12,-0.5%,50.0,-9.5%,1.5%,-5.9%,pos 3
-Dawnbreaker,TRAILBLAZER,112,-0.7%,50.9,+2.4%,3.2%,+1.9%,pos 3
-Nature's Prophet,IRONWOOD TREANT,851,-0.9%,51.1,-0.7%,94.5%,-12.9%,pos 3
-Death Prophet,SPIRIT COLLECTOR,308,-0.9%,47.1,+4.5%,65.4%,+5.4%,pos 3
-Bounty Hunter,THROUGH AND THROUGH,149,-1.0%,38.3,+4.0%,89.2%,+21.6%,pos 3
-Centaur Warrunner,COUNTER-STRIKE,255,-1.1%,47.5,-1.7%,37.4%,+0.4%,pos 3
-Necrophos,PROFANE POTENCY,204,-1.1%,43.6,-0.1%,32.4%,-7.1%,pos 3
-Batrider,STOKED,53,-1.2%,43.4,+12.2%,53.0%,+7.2%,pos 3
-Slark,LEECHING LEASH,135,-1.2%,46.7,-1.4%,68.9%,+13.9%,pos 3
-Elder Titan,MOMENTUM,63,-1.3%,47.6,+2.9%,35.0%,-12.2%,pos 3
-Undying,RIPPED,10,-1.4%,60.0,0.0%,4.3%,+7.8%,pos 3
-Viper,CAUSTIC BATH,100,-1.5%,48.0,+1.2%,23.5%,-0.6%,pos 3
-Venomancer,PLAGUE CARRIER,123,-1.6%,45.5,-0.7%,71.1%,+15.5%,pos 3
-Faceless Void,CHRONOSPHERE,14,-1.6%,35.7,+7.1%,3.6%,-14.8%,pos 3
-Vengeful Spirit,SOUL STRIKE,267,-1.7%,55.1,-0.9%,94.3%,-1.2%,pos 3
-Broodmother,FEEDING FRENZY,108,-1.9%,37.0,-5.8%,12.4%,-11.0%,pos 3
-Queen of Pain,MASOCHIST,53,-2.0%,32.1,+2.9%,57.0%,-27.9%,pos 3
-Night Stalker,VOIDBRINGER,236,-2.1%,45.8,+0.2%,4.5%,-6.3%,pos 3
-Morphling,FLOW,51,-2.1%,29.4,+9.5%,67.1%,-6.6%,pos 3
-Leshrac,CHRONOPTIC NOURISHMENT,16,-2.2%,37.5,-4.8%,10.2%,-15.7%,pos 3
-Magnus,DIMINISHING RETURN,2144,-2.2%,50.7,-0.0%,49.2%,-1.7%,pos 3
-Invoker,SCHOLAR OF KORYX,4,-2.4%,25.0,-14.3%,8.0%,-8.3%,pos 3
-Dawnbreaker,STARSURGE,1390,-2.5%,49.0,+1.0%,39.3%,-1.9%,pos 3
-Primal Beast,PROVOKE THE BEAST,213,-3.0%,40.4,+5.2%,26.3%,-8.8%,pos 3
-Brewmaster,DRUNKEN MASTER,132,-3.5%,47.7,+0.4%,53.2%,+2.9%,pos 3
-Shadow Shaman,MASSIVE SERPENT WARD,2,-3.6%,0.0,0.0%,6.1%,-25.8%,pos 3
-Meepo,MORE MEEPO,32,-3.6%,56.3,+0.0%,69.6%,-8.0%,pos 3
-Void Spirit,SANCTUARY,72,-3.6%,47.2,-4.8%,90.0%,-2.8%,pos 3
-Underlord,ABYSSAL HORDE,560,-3.8%,50.0,-0.7%,64.3%,+7.2%,pos 3
-Weaver,SKITTERSTEP,141,-4.1%,48.2,-0.2%,75.0%,+3.5%,pos 3
-Tidehunter,KRAKEN SWELL,2715,-4.1%,53.5,-0.4%,41.1%,-1.4%,pos 3
-Crystal Maiden,ARCANE OVERFLOW,4,-4.8%,25.0,-14.3%,33.3%,+25.0%,pos 3
-Spectre,FORSAKEN,9,-4.8%,33.3,+7.1%,27.3%,-12.5%,pos 3
-Gyrocopter,AFTERBURNER,16,-4.8%,50.0,0.0%,64.0%,-16.7%,pos 3
-Spirit Breaker,BULL'S HIT,137,-5.6%,38.0,-2.5%,48.6%,-15.1%,pos 3
-Bloodseeker,BLOODRUSH,17,-6.2%,70.6,-14.3%,26.2%,+28.9%,pos 3
-Storm Spirit,SHOCK COLLAR,1,-7.1%,100.0,-14.3%,7.1%,+69.2%,pos 3
-Templar Assassin,HIDDEN REACH,3,-7.1%,33.3,-14.3%,33.3%,+33.3%,pos 3
-Techies,SPOON'S STASH,6,-7.1%,33.3,-14.3%,33.3%,-16.7%,pos 3
-Snapfire,RICOCHET II,26,-7.1%,50.0,-3.6%,65.0%,0.0%,pos 3
-Ogre Magi,LEARNING CURVE,53,-9.4%,41.5,-7.1%,64.6%,-3.3%,pos 3
-Shadow Fiend,LASTING PRESENCE,4,-14.3%,25.0,0.0%,40.0%,+25.0%,pos 3
-Lina,SLOW BURN,1,-14.3%,0.0,0.0%,25.0%,-33.3%,pos 3
-Pugna,REWARDS OF RUIN,5,-14.3%,40.0,0.0%,23.8%,+2.5%,pos 3
-Keeper of the Light,SOLAR BIND,17,-14.3%,29.4,0.0%,89.5%,-20.6%,pos 3
-Skywrath Mage,STAFF OF THE SCION,1,-14.3%,100.0,-14.3%,14.3%,+50.0%,pos 3
-Muerta,OFRENDA,11,-14.3%,54.5,0.0%,17.7%,+17.3%,pos 3
-Pugna,SIPHONING WARD,16,+14.3%,37.5,+2.9%,76.2%,-2.5%,pos 3
-Ancient Apparition,BONE CHILL,13,+14.3%,15.4,+3.6%,72.2%,-64.6%,pos 3
-Disruptor,THUNDERSTORM,8,+14.3%,37.5,+14.3%,100.0%,+37.5%,pos 3
-Muerta,DANCE OF THE DEAD,51,+14.3%,37.3,+10.7%,82.3%,-17.3%,pos 3
-Ogre Magi,FAT CHANCE,29,+9.4%,44.8,+7.1%,35.4%,+3.3%,pos 3
-Storm Spirit,STATIC SLIDE,13,+7.1%,30.8,+7.1%,92.9%,-69.2%,pos 3
-Grimstroke,INKSTIGATE,9,+7.1%,55.6,+14.3%,64.3%,+35.6%,pos 3
-Tiny,INSURMOUNTABLE,318,+6.9%,43.7,+7.7%,49.5%,-6.8%,pos 3
-Kunkka,GROG BLOSSOM,84,+5.7%,56.0,+1.0%,47.2%,+15.5%,pos 3
-Chaos Knight,IRRATIONALITY,65,+4.9%,43.1,+6.1%,23.3%,+14.0%,pos 3
-Crystal Maiden,GLACIAL GUARD,8,+4.8%,0.0,0.0%,66.7%,-25.0%,pos 3
-Phantom Assassin,SWEET RELEASE,9,+4.8%,33.3,0.0%,25.0%,+3.7%,pos 3
-Naga Siren,DELUGE,3,+4.8%,33.3,0.0%,20.0%,-8.3%,pos 3
-Tidehunter,KRILL EATER,3895,+4.1%,54.9,-0.0%,58.9%,+1.4%,pos 3
-Lycan,PACK LEADER,114,+4.0%,49.1,-0.6%,30.9%,+15.8%,pos 3
-Lifestealer,FLESHFEAST,111,+3.7%,42.3,-3.8%,90.2%,+25.7%,pos 3
-Tinker,REPAIR BOTS,36,+3.6%,47.2,+9.5%,46.8%,+3.3%,pos 3
-Nyx Assassin,SCUTTLE,32,+3.6%,53.1,-4.8%,69.6%,+31.7%,pos 3
-Brewmaster,ROLL OUT THE BARREL,116,+3.5%,44.8,+1.9%,46.8%,-2.9%,pos 3
-Dawnbreaker,SOLAR CHARGED,2039,+3.2%,50.4,+0.3%,57.6%,+1.4%,pos 3
-Primal Beast,FEROCITY,598,+3.0%,49.2,-1.5%,73.7%,+8.8%,pos 3
-Monkey King,WUKONG'S FAITHFUL,126,+2.8%,54.8,-1.4%,40.8%,-1.5%,pos 3
-Rubick,ARCANE ACCUMULATION,33,+2.4%,36.4,-11.9%,50.0%,-6.1%,pos 3
-Sand King,SANDSHROUD,894,+2.2%,41.9,-1.2%,90.5%,-5.9%,pos 3
-Kez,FLUTTER,189,+2.2%,41.3,-6.4%,75.6%,+3.6%,pos 3
-Dark Willow,THROWING SHADE,44,+2.1%,52.3,+3.2%,80.0%,+25.0%,pos 3
-Queen of Pain,BONDAGE,40,+2.0%,60.0,-0.5%,43.0%,+27.9%,pos 3
-Visage,SEPULCHRE,236,+1.9%,50.0,+4.0%,38.7%,-16.7%,pos 3
-Earth Spirit,STEPPING STONE,8,+1.8%,50.0,-2.4%,13.6%,+7.1%,pos 3
-Vengeful Spirit,AVENGING MISSILE,16,+1.7%,56.3,+8.6%,5.7%,+1.2%,pos 3
-Mars,BLOOD SPORT,1897,+1.6%,48.4,-0.6%,65.7%,-1.8%,pos 3
-Dark Seer,QUICK WIT,3343,+1.6%,53.5,-1.1%,94.7%,+7.7%,pos 3
-Enigma,SPLITTING IMAGE,624,+1.5%,55.3,+1.5%,63.5%,-2.0%,pos 3
-Elder Titan,DECONSTRUCTION,117,+1.3%,59.8,0.0%,65.0%,+12.2%,pos 3
-Slark,DARK REEF RENEGADE,61,+1.2%,32.8,+5.7%,31.1%,-13.9%,pos 3
-Lone Druid,BEAR WITH ME,108,+1.1%,52.8,+3.7%,86.4%,+23.4%,pos 3
-Bristleback,SNOT ROCKET,2082,+1.1%,47.7,-0.6%,77.2%,+8.0%,pos 3
-Clockwerk,EXPANDED ARMATURE,26,+1.0%,34.6,-9.5%,52.0%,-27.9%,pos 3
-Anti-Mage,MAGEBANE'S MIRROR,26,+1.0%,23.1,0.0%,25.0%,-23.1%,pos 3
-Beastmaster,BEAST MODE,2110,+0.9%,50.2,-0.3%,73.5%,-3.0%,pos 3
-Marci,FLEETING FURY,1290,+0.6%,50.4,-0.2%,91.2%,-7.8%,pos 3
-Legion Commander,STONEHALL PLATE,1795,+0.5%,49.7,-0.2%,70.1%,-1.9%,pos 3
-Slardar,LEG DAY,1769,+0.5%,49.7,+0.1%,85.7%,+1.9%,pos 3
-Terrorblade,SOUL FRAGMENT,76,+0.4%,40.8,-7.9%,11.5%,-4.8%,pos 3
-Pudge,FRESH MEAT,391,+0.3%,51.2,-0.2%,21.6%,+3.5%,pos 3
-Axe,CALL OUT,550,+0.2%,45.8,-0.4%,28.2%,-5.1%,pos 3
-Earthshaker,SLUGGER,642,+0.2%,46.7,-0.7%,94.6%,+6.2%,pos 3
-Ursa,GRUDGE BEARER,29,+0.1%,37.9,-3.8%,35.4%,-3.6%,pos 3
-Phoenix,DYING LIGHT,855,+0.1%,50.1,-2.1%,96.9%,+5.6%,pos 3
-Pangolier,DOUBLE JUMP,418,+0.0%,50.5,+1.5%,58.6%,+6.4%,pos 3
-Drow Ranger,VANTAGE POINT,1,0.0%,0.0,0.0%,20.0%,0.0%,pos 3
-Juggernaut,BLADESTORM,9,0.0%,33.3,+14.3%,100.0%,+33.3%,pos 3
-Mirana,STARSTRUCK,135,0.0%,37.0,+0.3%,96.4%,-23.0%,pos 3
-Shadow Fiend,SHADOWMIRE,6,0.0%,0.0,0.0%,60.0%,-25.0%,pos 3
-Puck,JOSTLING RIFT,22,0.0%,54.5,-14.3%,95.7%,-45.5%,pos 3
-Sven,HEAVY PLATE,6,0.0%,16.7,0.0%,23.1%,-8.3%,pos 3
-Lina,THERMAL RUNAWAY,3,0.0%,33.3,0.0%,75.0%,+33.3%,pos 3
-Witch Doctor,CLEFT DEATH,0,0.0%,0.0,0.0%,0.0%,-28.6%,pos 3
-Lich,GROWING COLD,1,0.0%,0.0,0.0%,33.3%,-50.0%,pos 3
-Templar Assassin,REFRACTOR,0,0.0%,0.0,0.0%,0.0%,-33.3%,pos 3
-Luna,MOONSTORM,2,0.0%,50.0,0.0%,22.2%,-21.4%,pos 3
-Clinkz,ENGULFING STEP,20,0.0%,40.0,+4.8%,76.9%,+40.0%,pos 3
-Enchantress,SPELLBOUND,21,0.0%,28.6,+9.5%,72.4%,-21.4%,pos 3
+Treant Protector,SAPLING,1,0.0%,0.0,0.0%,4.3%,-36.4%,pos 3
+Keeper of the Light,RECALL,14,0.0%,42.9,0.0%,16.3%,-3.0%,pos 3
+Io,MEDIGUN,3,0.0%,0.0,0.0%,20.0%,-58.3%,pos 3
+Medusa,ENGORGED,4,0.0%,50.0,0.0%,2.1%,+11.1%,pos 3
+Medusa,UNDULATION,172,0.0%,51.7,+3.6%,88.7%,+12.9%,pos 3
+Tusk,TAG TEAM,119,0.0%,40.3,+0.0%,94.4%,+11.8%,pos 3
+Skywrath Mage,SHIELD OF THE SCION,15,0.0%,53.3,0.0%,83.3%,-13.3%,pos 3
+Oracle,CLAIRVOYANT CURE,2,0.0%,0.0,0.0%,6.5%,-44.8%,pos 3
+Hoodwink,GO NUTS,45,0.0%,24.4,-14.3%,90.0%,-15.6%,pos 3
+Ringmaster,SIDESHOW SECRETS,3,0.0%,33.3,0.0%,27.3%,-29.2%,pos 3
+Wraith King,BONE GUARD,364,-0.0%,45.3,-0.8%,84.5%,+5.0%,pos 3
+Windranger,KILLSHOT,813,-0.1%,42.3,+0.1%,78.6%,-0.7%,pos 3
+Razor,DYNAMO,219,-0.1%,46.6,0.0%,15.5%,+2.1%,pos 3
+Ursa,BEAR DOWN,106,-0.1%,39.6,+2.5%,59.6%,+2.1%,pos 3
+Earthshaker,TECTONIC BUILDUP,67,-0.2%,47.8,+7.1%,4.0%,-1.2%,pos 3
+Dazzle,NOTHL BOON,39,-0.3%,51.3,-14.3%,1.4%,-3.4%,pos 3
+Riki,CONTRACT KILLER,108,-0.3%,45.4,+9.5%,22.1%,-0.8%,pos 3
+Abaddon,THE QUICKENING,822,-0.4%,55.5,-0.2%,7.3%,+2.2%,pos 3
+Marci,PICK-ME-UP,101,-0.5%,46.5,-0.6%,3.6%,-9.8%,pos 3
+Winter Wyvern,WINTERPROOF,147,-0.5%,55.1,-9.5%,12.5%,+1.7%,pos 3
+Dawnbreaker,TRAILBLAZER,198,-0.7%,51.0,+2.4%,2.9%,+1.7%,pos 3
+Nature's Prophet,IRONWOOD TREANT,2091,-0.9%,50.8,-0.7%,95.4%,-2.7%,pos 3
+Death Prophet,SPIRIT COLLECTOR,674,-0.9%,47.9,+4.5%,65.6%,+6.4%,pos 3
+Bounty Hunter,THROUGH AND THROUGH,277,-1.0%,40.4,+4.0%,90.5%,+12.8%,pos 3
+Centaur Warrunner,COUNTER-STRIKE,452,-1.1%,48.5,-1.7%,32.2%,-0.2%,pos 3
+Necrophos,PROFANE POTENCY,450,-1.1%,47.6,-0.1%,33.2%,-0.5%,pos 3
+Batrider,STOKED,108,-1.2%,44.4,+12.2%,56.3%,+2.8%,pos 3
+Slark,LEECHING LEASH,362,-1.2%,53.6,-1.4%,74.8%,+13.4%,pos 3
+Elder Titan,MOMENTUM,106,-1.3%,42.5,+2.9%,33.0%,-17.5%,pos 3
+Undying,RIPPED,22,-1.4%,50.0,0.0%,4.1%,-2.0%,pos 3
+Viper,CAUSTIC BATH,198,-1.5%,50.0,+1.2%,24.8%,+2.0%,pos 3
+Venomancer,PLAGUE CARRIER,257,-1.6%,43.2,-0.7%,76.7%,+13.7%,pos 3
+Faceless Void,CHRONOSPHERE,59,-1.6%,45.8,+7.1%,1.6%,-4.9%,pos 3
+Vengeful Spirit,SOUL STRIKE,576,-1.7%,54.9,-0.9%,94.1%,-6.3%,pos 3
+Broodmother,FEEDING FRENZY,234,-1.9%,44.9,-5.8%,16.4%,-4.1%,pos 3
+Queen of Pain,MASOCHIST,124,-2.0%,41.1,+2.9%,56.1%,-10.4%,pos 3
+Night Stalker,VOIDBRINGER,353,-2.1%,50.1,+0.2%,2.9%,-2.2%,pos 3
+Morphling,FLOW,81,-2.1%,34.6,+9.5%,57.9%,-14.6%,pos 3
+Leshrac,CHRONOPTIC NOURISHMENT,30,-2.2%,40.0,-4.8%,9.3%,-8.1%,pos 3
+Magnus,DIMINISHING RETURN,3587,-2.2%,50.2,-0.0%,36.7%,-2.1%,pos 3
+Invoker,SCHOLAR OF KORYX,9,-2.4%,33.3,-14.3%,9.7%,-12.8%,pos 3
+Dawnbreaker,STARSURGE,2165,-2.5%,49.3,+1.0%,31.4%,-1.7%,pos 3
+Primal Beast,PROVOKE THE BEAST,404,-3.0%,36.9,+5.2%,25.1%,-13.1%,pos 3
+Brewmaster,DRUNKEN MASTER,346,-3.5%,47.1,+0.4%,62.2%,+6.2%,pos 3
+Shadow Shaman,MASSIVE SERPENT WARD,5,-3.6%,20.0,0.0%,7.4%,-5.4%,pos 3
+Meepo,MORE MEEPO,70,-3.6%,38.6,+0.0%,70.7%,-13.2%,pos 3
+Void Spirit,SANCTUARY,132,-3.6%,43.9,-4.8%,88.0%,-6.1%,pos 3
+Underlord,ABYSSAL HORDE,1185,-3.8%,48.9,-0.7%,65.3%,+1.6%,pos 3
+Weaver,SKITTERSTEP,295,-4.1%,47.8,-0.2%,60.3%,+8.6%,pos 3
+Tidehunter,KRAKEN SWELL,4302,-4.1%,52.6,-0.4%,30.2%,-0.9%,pos 3
+Crystal Maiden,ARCANE OVERFLOW,5,-4.8%,20.0,-14.3%,17.9%,-10.4%,pos 3
+Spectre,FORSAKEN,28,-4.8%,21.4,+7.1%,35.4%,-19.7%,pos 3
+Gyrocopter,AFTERBURNER,23,-4.8%,47.8,0.0%,50.0%,+4.3%,pos 3
+Spirit Breaker,BULL'S HIT,236,-5.6%,42.8,-2.5%,41.4%,-2.4%,pos 3
+Bloodseeker,BLOODRUSH,26,-6.2%,73.1,-14.3%,22.6%,+30.4%,pos 3
+Storm Spirit,SHOCK COLLAR,8,-7.1%,62.5,-14.3%,22.9%,+32.9%,pos 3
+Templar Assassin,HIDDEN REACH,7,-7.1%,14.3,-14.3%,30.4%,-17.0%,pos 3
+Techies,SPOON'S STASH,16,-7.1%,25.0,-14.3%,24.6%,-41.7%,pos 3
+Snapfire,RICOCHET II,67,-7.1%,47.8,-3.6%,61.5%,+12.0%,pos 3
+Ogre Magi,LEARNING CURVE,107,-9.4%,44.9,-7.1%,61.1%,+5.2%,pos 3
+Shadow Fiend,LASTING PRESENCE,10,-14.3%,50.0,0.0%,40.0%,+30.0%,pos 3
+Lina,SLOW BURN,4,-14.3%,50.0,0.0%,25.0%,+16.7%,pos 3
+Pugna,REWARDS OF RUIN,12,-14.3%,33.3,0.0%,19.0%,-7.8%,pos 3
+Keeper of the Light,SOLAR BIND,72,-14.3%,45.8,0.0%,83.7%,+3.0%,pos 3
+Skywrath Mage,STAFF OF THE SCION,3,-14.3%,66.7,-14.3%,16.7%,+13.3%,pos 3
+Muerta,OFRENDA,27,-14.3%,40.7,0.0%,22.5%,+8.5%,pos 3
+Pugna,SIPHONING WARD,51,+14.3%,41.2,+2.9%,81.0%,+7.8%,pos 3
+Ancient Apparition,BONE CHILL,35,+14.3%,20.0,+3.6%,72.9%,-41.5%,pos 3
+Disruptor,THUNDERSTORM,21,+14.3%,33.3,+14.3%,100.0%,+33.3%,pos 3
+Muerta,DANCE OF THE DEAD,93,+14.3%,32.3,+10.7%,77.5%,-8.5%,pos 3
+Ogre Magi,FAT CHANCE,68,+9.4%,39.7,+7.1%,38.9%,-5.2%,pos 3
+Storm Spirit,STATIC SLIDE,27,+7.1%,29.6,+7.1%,77.1%,-32.9%,pos 3
+Grimstroke,INKSTIGATE,21,+7.1%,66.7,+14.3%,65.6%,+39.4%,pos 3
+Tiny,INSURMOUNTABLE,654,+6.9%,46.8,+7.7%,47.8%,-2.5%,pos 3
+Kunkka,GROG BLOSSOM,162,+5.7%,48.8,+1.0%,42.5%,-0.1%,pos 3
+Chaos Knight,IRRATIONALITY,130,+4.9%,46.9,+6.1%,26.6%,+10.9%,pos 3
+Crystal Maiden,GLACIAL GUARD,23,+4.8%,30.4,0.0%,82.1%,+10.4%,pos 3
+Phantom Assassin,SWEET RELEASE,25,+4.8%,48.0,0.0%,28.4%,+11.5%,pos 3
+Naga Siren,DELUGE,5,+4.8%,20.0,0.0%,13.9%,-15.5%,pos 3
+Tidehunter,KRILL EATER,9953,+4.1%,53.4,-0.0%,69.8%,+0.9%,pos 3
+Lycan,PACK LEADER,206,+4.0%,44.7,-0.6%,34.3%,+8.9%,pos 3
+Lifestealer,FLESHFEAST,179,+3.7%,46.9,-3.8%,92.3%,+26.9%,pos 3
+Tinker,REPAIR BOTS,94,+3.6%,41.5,+9.5%,48.5%,-5.5%,pos 3
+Nyx Assassin,SCUTTLE,64,+3.6%,48.4,-4.8%,68.8%,+20.9%,pos 3
+Brewmaster,ROLL OUT THE BARREL,210,+3.5%,41.0,+1.9%,37.8%,-6.2%,pos 3
+Dawnbreaker,SOLAR CHARGED,4523,+3.2%,50.7,+0.3%,65.7%,+1.3%,pos 3
+Primal Beast,FEROCITY,1208,+3.0%,50.0,-1.5%,74.9%,+13.1%,pos 3
+Monkey King,WUKONG'S FAITHFUL,387,+2.8%,52.7,-1.4%,51.7%,+0.6%,pos 3
+Rubick,ARCANE ACCUMULATION,84,+2.4%,46.4,-11.9%,50.9%,-1.7%,pos 3
+Sand King,SANDSHROUD,1840,+2.2%,42.7,-1.2%,92.9%,-0.9%,pos 3
+Kez,FLUTTER,400,+2.2%,44.8,-6.4%,74.3%,+4.2%,pos 3
+Dark Willow,THROWING SHADE,77,+2.1%,53.2,+3.2%,79.4%,+28.2%,pos 3
+Queen of Pain,BONDAGE,97,+2.0%,51.5,-0.5%,43.9%,+10.4%,pos 3
+Visage,SEPULCHRE,485,+1.9%,49.9,+4.0%,41.6%,+0.1%,pos 3
+Earth Spirit,STEPPING STONE,12,+1.8%,33.3,-2.4%,10.0%,-15.5%,pos 3
+Vengeful Spirit,AVENGING MISSILE,36,+1.7%,61.1,+8.6%,5.9%,+6.3%,pos 3
+Mars,BLOOD SPORT,4875,+1.6%,49.3,-0.6%,69.5%,-0.7%,pos 3
+Dark Seer,QUICK WIT,7663,+1.6%,52.6,-1.1%,94.9%,+2.6%,pos 3
+Enigma,SPLITTING IMAGE,1226,+1.5%,53.2,+1.5%,63.3%,-0.9%,pos 3
+Elder Titan,DECONSTRUCTION,215,+1.3%,60.0,0.0%,67.0%,+17.5%,pos 3
+Slark,DARK REEF RENEGADE,122,+1.2%,40.2,+5.7%,25.2%,-13.4%,pos 3
+Lone Druid,BEAR WITH ME,169,+1.1%,47.9,+3.7%,88.5%,+7.0%,pos 3
+Bristleback,SNOT ROCKET,3950,+1.1%,48.8,-0.6%,75.4%,+6.5%,pos 3
+Clockwerk,EXPANDED ARMATURE,56,+1.0%,39.3,-9.5%,56.6%,-25.8%,pos 3
+Anti-Mage,MAGEBANE'S MIRROR,48,+1.0%,31.3,0.0%,19.4%,-19.0%,pos 3
+Beastmaster,BEAST MODE,4239,+0.9%,50.0,-0.3%,72.4%,-4.4%,pos 3
+Marci,FLEETING FURY,2632,+0.6%,49.6,-0.2%,93.9%,-6.7%,pos 3
+Legion Commander,STONEHALL PLATE,3861,+0.5%,49.8,-0.2%,72.5%,-2.5%,pos 3
+Slardar,LEG DAY,3732,+0.5%,49.8,+0.1%,86.6%,-0.7%,pos 3
+Terrorblade,SOUL FRAGMENT,169,+0.4%,44.4,-7.9%,10.2%,-2.1%,pos 3
+Pudge,FRESH MEAT,760,+0.3%,52.1,-0.2%,23.1%,+2.8%,pos 3
+Axe,CALL OUT,1336,+0.2%,47.5,-0.4%,27.8%,-4.4%,pos 3
+Earthshaker,SLUGGER,1629,+0.2%,48.9,-0.7%,96.0%,+1.2%,pos 3
+Ursa,GRUDGE BEARER,72,+0.1%,37.5,-3.8%,40.4%,-2.1%,pos 3
+Phoenix,DYING LIGHT,1675,+0.1%,49.4,-2.1%,97.1%,+5.4%,pos 3
+Pangolier,DOUBLE JUMP,1022,+0.0%,48.5,+1.5%,58.5%,+2.0%,pos 3
+Drow Ranger,VANTAGE POINT,4,0.0%,0.0,0.0%,25.0%,-25.0%,pos 3
+Juggernaut,BLADESTORM,21,0.0%,33.3,+14.3%,72.4%,-4.2%,pos 3
+Mirana,STARSTRUCK,232,0.0%,40.9,+0.3%,94.7%,-5.2%,pos 3
+Shadow Fiend,SHADOWMIRE,15,0.0%,20.0,0.0%,60.0%,-30.0%,pos 3
+Puck,JOSTLING RIFT,40,0.0%,55.0,-14.3%,93.0%,-45.0%,pos 3
+Sven,HEAVY PLATE,16,0.0%,12.5,0.0%,27.6%,-11.3%,pos 3
+Lina,THERMAL RUNAWAY,12,0.0%,33.3,0.0%,75.0%,-16.7%,pos 3
+Witch Doctor,CLEFT DEATH,0,0.0%,0.0,0.0%,0.0%,-18.2%,pos 3
+Lich,GROWING COLD,1,0.0%,0.0,0.0%,25.0%,-33.3%,pos 3
+Templar Assassin,REFRACTOR,0,0.0%,0.0,0.0%,0.0%,-31.3%,pos 3
+Luna,MOONSTORM,7,0.0%,42.9,0.0%,31.8%,-10.5%,pos 3
+Clinkz,ENGULFING STEP,61,0.0%,42.6,+4.8%,77.2%,+26.0%,pos 3
+Enchantress,SPELLBOUND,33,0.0%,36.4,+9.5%,62.3%,-8.6%,pos 3
 Chen,HELLBEAR CONVERT,0,0.0%,0.0,0.0%,0.0%,-100.0%,pos 3
-Chen,SATYR CONVERT,1,0.0%,100.0,0.0%,100.0%,+100.0%,pos 3
-Outworld Devourer,OBSIDIAN DECIMATOR,35,0.0%,45.7,-6.7%,83.3%,+2.9%,pos 3
-Lycan,SPIRIT WOLVES,6,0.0%,33.3,0.0%,1.6%,-15.8%,pos 3
-Treant Protector,PRIMEVAL POWER,13,0.0%,46.2,+4.8%,92.9%,+46.2%,pos 3
-Disruptor,KINETIC FENCE,0,0.0%,0.0,0.0%,0.0%,-37.5%,pos 3
-Io,KRITZKRIEG,10,0.0%,60.0,+7.1%,90.9%,+60.0%,pos 3
-Visage,FAITHFUL FOLLOWERS,3,0.0%,66.7,0.0%,0.5%,+16.7%,pos 3
-Medusa,VENOMOUS VOLLEY,7,0.0%,42.9,0.0%,13.2%,-14.0%,pos 3
-Troll Warlord,INSENSITIVE,5,0.0%,60.0,0.0%,19.2%,-1.9%,pos 3
-Tusk,DRINKING BUDDIES,2,0.0%,0.0,0.0%,3.6%,-43.4%,pos 3
-Techies,SQUEE'S SCOPE,4,0.0%,50.0,0.0%,22.2%,+25.0%,pos 3
-Arc Warden,POWER CAPTURE,2,0.0%,0.0,0.0%,22.2%,-14.3%,pos 3
-Ringmaster,CARNY CLASSICS,1,0.0%,100.0,0.0%,33.3%,+50.0%,pos 3
-Hoodwink,HIPSHOT,4,-0.0%,50.0,0.0%,12.5%,+14.3%,pos 3
-Pangolier,THUNDERBOLT,295,-0.0%,44.1,+3.7%,41.4%,-6.4%,pos 3
-Phoenix,HOTSPOT,27,-0.1%,44.4,+4.8%,3.1%,-5.6%,pos 3
-Marci,BUDDY SYSTEM,55,-0.1%,58.2,+4.2%,3.9%,+9.6%,pos 3
-Timbersaw,TWISTED CHAKRAM,424,-0.2%,41.5,-0.4%,27.8%,-7.5%,pos 3
-Axe,ONE MAN ARMY,1397,-0.2%,50.9,+1.2%,71.8%,+5.1%,pos 3
-Pudge,ROTTEN CORE,1418,-0.3%,47.7,+0.3%,78.4%,-3.5%,pos 3
-Terrorblade,CONDEMNED,584,-0.4%,45.5,-1.4%,88.5%,+4.8%,pos 3
-Slardar,BRINEGUARD,295,-0.5%,47.8,+0.3%,14.3%,-1.9%,pos 3
-Legion Commander,SPOILS OF WAR,765,-0.5%,51.6,-0.7%,29.9%,+1.9%,pos 3
-Doom,GLUTTONY,694,-0.7%,46.8,-0.9%,27.7%,-5.8%,pos 3
-Chaos Knight,CLOVEN CHAOS,31,-0.8%,29.0,-6.1%,11.1%,-14.0%,pos 3
-Beastmaster,WILD HUNT,760,-0.9%,53.2,-2.2%,26.5%,+3.0%,pos 3
-Anti-Mage,MANA THIRST,78,-1.0%,46.2,+2.4%,75.0%,+23.1%,pos 3
-Clockwerk,HOOKUP,24,-1.0%,62.5,+10.7%,48.0%,+27.9%,pos 3
-Bristleback,SEEING RED,616,-1.1%,39.8,-1.7%,22.8%,-8.0%,pos 3
-Lone Druid,BEAR NECESSITIES,17,-1.1%,29.4,0.0%,13.6%,-23.4%,pos 3
-Alchemist,MIXOLOGIST,25,-1.2%,64.0,-14.3%,13.4%,+22.9%,pos 3
-Huskar,CAUTERIZE,176,-1.3%,46.6,+0.2%,60.5%,+4.0%,pos 3
-Dragon Knight,FROST DRAGON,138,-1.4%,42.0,-2.2%,8.0%,-11.5%,pos 3
-Enigma,EVENT HORIZON,358,-1.5%,57.3,+0.2%,36.5%,+2.0%,pos 3
-Dark Seer,HEART OF BATTLE,188,-1.6%,45.7,+3.4%,5.3%,-7.7%,pos 3
-Mars,VICTORY FEAST,990,-1.6%,50.2,+0.0%,34.3%,+1.8%,pos 3
-Alchemist,SEED MONEY,56,-1.7%,41.1,+4.1%,29.9%,-22.9%,pos 3
-Dragon Knight,CORROSIVE DRAGON,56,-1.8%,53.6,+4.0%,3.2%,+11.5%,pos 3
-Visage,DEATH TOLL,371,-1.9%,51.2,+0.2%,60.8%,-15.5%,pos 3
-Silencer,IRREPRESSIBLE,8,-2.0%,37.5,-7.1%,6.7%,-9.8%,pos 3
-Dark Willow,SHATTERING CROWN,11,-2.1%,27.3,-14.3%,20.0%,-25.0%,pos 3
-Kez,SHADOWHAWK,61,-2.2%,37.7,-6.5%,24.4%,-3.6%,pos 3
-Sand King,DUST DEVIL,94,-2.2%,47.9,+0.4%,9.5%,+5.9%,pos 3
-Lion,FIST OF DEATH,6,-2.4%,50.0,+7.1%,46.2%,+7.1%,pos 3
-Rubick,FRUGAL FILCH,33,-2.4%,42.4,-4.8%,50.0%,+6.1%,pos 3
-Monkey King,SIMIAN STRIDE,183,-2.8%,56.3,+2.1%,59.2%,+1.5%,pos 3
-Jakiro,ICE BREAKER,45,-3.2%,42.2,-4.8%,32.4%,+2.9%,pos 3
-Earth Spirit,RESONANCE,37,-3.6%,48.6,0.0%,62.7%,+5.8%,pos 3
-Tinker,TRANSLOCATOR,41,-3.6%,43.9,-7.1%,53.2%,-3.3%,pos 3
-Nyx Assassin,MANA BURN,14,-3.6%,21.4,0.0%,30.4%,-31.7%,pos 3
-Lifestealer,GORESTORM,12,-3.7%,16.7,0.0%,9.8%,-25.7%,pos 3
-Lycan,ALPHA WOLVES,249,-4.0%,46.6,+0.2%,67.5%,+13.3%,pos 3
-Chaos Knight,FUNDAMENTAL FORGING,183,-4.1%,38.3,-4.3%,65.6%,+9.2%,pos 3
-Ember Spirit,CHAIN GANG,22,-4.7%,36.4,+7.1%,18.6%,-1.1%,pos 3
-Sniper,SCATTERSHOT,15,-4.8%,60.0,0.0%,60.0%,+10.0%,pos 3
-Phantom Assassin,METHODICAL,27,-4.8%,29.6,+7.1%,75.0%,-3.7%,pos 3
-Naga Siren,RIP TIDE,12,-4.8%,41.7,+7.1%,80.0%,+8.3%,pos 3
-Kunkka,HIGH TIDE,94,-5.7%,40.4,-6.1%,52.8%,-15.5%,pos 3
-Tiny,CRASH LANDING,325,-6.9%,50.5,-0.9%,50.5%,+6.8%,pos 3
-Templar Assassin,VOIDBLADES,6,-7.1%,16.7,0.0%,66.7%,+16.7%,pos 3
-Invoker,MIND OF TORNARUS,9,-7.1%,33.3,-9.5%,18.0%,+9.0%,pos 3
-Grimstroke,FINE ART,5,-7.1%,20.0,0.0%,35.7%,-35.6%,pos 3
-Zeus,DIVINE RAMPAGE,7,-8.6%,28.6,-4.8%,10.0%,-6.3%,pos 3
-Bane,DREAM STALKER,14,-14.3%,42.9,-4.8%,93.3%,+42.9%,pos 3
-Phantom Lancer,LANCELOT,17,-14.3%,52.9,-4.8%,89.5%,+52.9%,pos 3
-Warlock,BLACK GRIMOIRE,8,-14.3%,25.0,0.0%,80.0%,+25.0%,pos 3
-Omniknight,HEALING HAMMER,3,-14.3%,33.3,0.0%,6.8%,-15.4%,pos 3
-Troll Warlord,BAD INFLUENCE,21,-14.3%,61.9,-10.7%,80.8%,+1.9%,pos 3
-Arc Warden,RUNED REPLICA,7,-14.3%,14.3,0.0%,77.8%,+14.3%,pos 3
-Drow Ranger,VANTAGE POINT,10,+14.3%,60.0,0.0%,83.3%,+60.0%,pos 4
-Necrophos,RAPID DECAY,13,+14.3%,46.2,+14.3%,59.1%,+1.7%,pos 4
-Lycan,PACK LEADER,3,+14.3%,66.7,+7.1%,42.9%,+66.7%,pos 4
-Underlord,DEMON'S REACH,5,+14.3%,80.0,+14.3%,50.0%,+40.0%,pos 4
-Outworld Devourer,OBSIDIAN DECIMATOR,19,+10.7%,31.6,+4.8%,95.0%,+31.6%,pos 4
-Beastmaster,WILD HUNT,8,+9.5%,62.5,+7.1%,33.3%,+25.0%,pos 4
-Chen,SATYR CONVERT,12,+9.5%,66.7,+14.3%,38.7%,+16.7%,pos 4
-Axe,CALL OUT,6,+7.1%,33.3,0.0%,18.2%,-3.7%,pos 4
-Spectre,TWIST THE KNIFE,6,+7.1%,16.7,0.0%,46.2%,+2.4%,pos 4
-Lone Druid,BEAR WITH ME,3,+7.1%,0.0,0.0%,75.0%,0.0%,pos 4
-Medusa,VENOMOUS VOLLEY,3,+7.1%,0.0,0.0%,25.0%,-28.6%,pos 4
-Legion Commander,SPOILS OF WAR,13,+7.1%,46.2,-3.6%,39.4%,+21.2%,pos 4
-Pangolier,THUNDERBOLT,18,+7.1%,38.9,0.0%,62.1%,+11.6%,pos 4
-Void Spirit,SANCTUARY,17,+6.6%,29.4,+4.8%,51.5%,-1.8%,pos 4
-Hoodwink,GO NUTS,458,+6.0%,45.6,-0.2%,49.4%,+4.3%,pos 4
-Invoker,AGENT OF GALLARON,200,+5.7%,39.0,+1.0%,56.5%,-9.7%,pos 4
-Ember Spirit,DOUBLE IMPACT,59,+5.6%,23.7,+3.6%,43.1%,-37.8%,pos 4
-Weaver,HIVEMIND,1333,+5.0%,54.8,-2.2%,62.6%,+3.4%,pos 4
-Phantom Assassin,METHODICAL,27,+4.8%,40.7,+10.7%,58.7%,+3.9%,pos 4
-Centaur Warrunner,COUNTER-STRIKE,24,+4.8%,66.7,0.0%,68.6%,+39.4%,pos 4
-Beastmaster,BEAST MODE,16,+4.8%,37.5,0.0%,66.7%,-25.0%,pos 4
-Viper,CAUSTIC BATH,9,+4.8%,33.3,0.0%,18.4%,-1.7%,pos 4
-Ursa,BEAR DOWN,13,+4.8%,53.8,+14.3%,65.0%,-3.3%,pos 4
-Sand King,SANDSHROUD,15,+3.6%,26.7,-4.8%,78.9%,+1.7%,pos 4
-Outworld Devourer,OVERWHELMING DEVOURER,1,+3.6%,0.0,0.0%,5.0%,-31.6%,pos 4
-Grimstroke,INKSTIGATE,261,+3.2%,50.2,-0.8%,44.8%,+1.3%,pos 4
-Crystal Maiden,GLACIAL GUARD,340,+2.9%,53.8,-1.5%,85.4%,+14.2%,pos 4
-Venomancer,PATIENT ZERO,203,+2.7%,57.6,-2.1%,52.5%,+19.0%,pos 4
-Tinker,TRANSLOCATOR,86,+2.4%,48.8,+4.8%,23.0%,-6.0%,pos 4
-Doom,IMPENDING DOOM,25,+2.4%,56.0,+4.8%,11.2%,+16.0%,pos 4
-Spirit Breaker,BULL RUSH,1619,+2.4%,54.3,+0.2%,71.7%,+4.3%,pos 4
-Huskar,INCENDIARY,70,+2.2%,30.0,-0.8%,70.7%,+5.9%,pos 4
-Timbersaw,TWISTED CHAKRAM,8,+2.0%,25.0,+14.3%,9.6%,-16.3%,pos 4
-Marci,PICK-ME-UP,2186,+2.0%,45.8,+1.1%,70.1%,+4.3%,pos 4
-Nyx Assassin,MANA BURN,137,+1.9%,48.9,+0.2%,18.6%,-0.8%,pos 4
-Techies,SPLEEN'S SECRET SAUCE,507,+1.6%,46.4,-2.4%,56.8%,-13.1%,pos 4
-Ogre Magi,FAT CHANCE,27,+1.4%,51.9,+3.6%,7.1%,+2.0%,pos 4
-Winter Wyvern,RECURSIVE,2208,+1.3%,53.8,+0.3%,94.3%,+0.1%,pos 4
-Faceless Void,CHRONOSPHERE,4,+1.3%,0.0,0.0%,1.9%,-48.8%,pos 4
-Snapfire,FULL BORE,395,+1.2%,53.7,+0.1%,86.1%,+2.1%,pos 4
-Slark,LEECHING LEASH,174,+1.2%,58.6,+1.4%,29.3%,+10.2%,pos 4
-Pudge,ROTTEN CORE,1270,+1.1%,46.9,+0.6%,55.9%,+1.0%,pos 4
-Shadow Demon,SHADOW SERVANT,63,+1.0%,57.1,+2.4%,13.9%,+6.0%,pos 4
-Mirana,STARSTRUCK,3228,+0.9%,52.5,-0.0%,97.4%,+6.0%,pos 4
-Batrider,STOKED,568,+0.8%,48.4,-0.7%,87.9%,+7.4%,pos 4
-Techies,SQUEE'S SCOPE,37,+0.8%,59.5,0.0%,4.1%,+16.1%,pos 4
-Windranger,KILLSHOT,1787,+0.8%,44.5,+0.8%,90.2%,+0.2%,pos 4
-Shadow Shaman,CHICKEN FINGERS,2221,+0.6%,52.8,+0.4%,97.9%,-0.4%,pos 4
-Leshrac,MISANTHROPY,1610,+0.6%,52.1,-0.1%,98.6%,+21.7%,pos 4
-Witch Doctor,CLEFT DEATH,21,+0.5%,42.9,-7.1%,7.6%,-4.6%,pos 4
-Io,KRITZKRIEG,531,+0.5%,50.8,+3.7%,93.2%,-0.4%,pos 4
-Skywrath Mage,STAFF OF THE SCION,140,+0.5%,45.0,+3.0%,21.7%,-3.5%,pos 4
-Bounty Hunter,THROUGH AND THROUGH,4226,+0.3%,52.9,+0.2%,94.8%,+1.6%,pos 4
-Muerta,DANCE OF THE DEAD,4607,+0.3%,49.9,-1.6%,98.0%,+17.7%,pos 4
-Monkey King,WUKONG'S FAITHFUL,19,+0.2%,42.1,+7.1%,5.1%,-0.0%,pos 4
-Warlock,BLACK GRIMOIRE,261,+0.1%,44.4,-2.6%,87.9%,-5.6%,pos 4
-Silencer,REVERBERATING SILENCE,1449,+0.1%,51.3,-2.7%,96.7%,+4.4%,pos 4
-Lich,FROSTBOUND,185,+0.1%,48.1,-1.1%,88.5%,+10.6%,pos 4
-Phoenix,DYING LIGHT,940,+0.0%,48.1,-0.1%,87.4%,-2.7%,pos 4
-Keeper of the Light,RECALL,41,+0.0%,48.8,+0.0%,32.0%,+9.7%,pos 4
-Bloodseeker,BLOODRUSH,3,0.0%,0.0,0.0%,60.0%,0.0%,pos 4
-Juggernaut,BLADESTORM,4,0.0%,75.0,0.0%,44.4%,+75.0%,pos 4
-Morphling,EBB,13,0.0%,30.8,0.0%,14.4%,-3.0%,pos 4
-Shadow Fiend,LASTING PRESENCE,6,0.0%,33.3,0.0%,17.6%,-13.1%,pos 4
-Puck,JOSTLING RIFT,31,0.0%,45.2,0.0%,93.9%,-4.8%,pos 4
-Razor,THUNDERHEAD,24,0.0%,25.0,-10.7%,85.7%,+25.0%,pos 4
-Sven,WRATH OF GOD,3,0.0%,33.3,0.0%,12.0%,-21.2%,pos 4
-Tidehunter,KRILL EATER,38,0.0%,50.0,-7.1%,46.3%,+9.1%,pos 4
-Wraith King,SPECTRAL BLADE,1,0.0%,100.0,0.0%,7.7%,+75.0%,pos 4
-Pugna,REWARDS OF RUIN,20,0.0%,40.0,0.0%,5.0%,-11.2%,pos 4
-Dragon Knight,CORROSIVE DRAGON,2,0.0%,100.0,0.0%,4.1%,+87.5%,pos 4
-Chen,HELLBEAR CONVERT,4,0.0%,50.0,0.0%,12.9%,-21.4%,pos 4
-Chaos Knight,IRRATIONALITY,9,0.0%,44.4,0.0%,15.5%,-12.1%,pos 4
-Keeper of the Light,SOLAR BIND,87,0.0%,39.1,-5.7%,68.0%,-9.7%,pos 4
-Medusa,ENGORGED,2,0.0%,0.0,0.0%,16.7%,-28.6%,pos 4
-Bristleback,SEEING RED,7,0.0%,28.6,0.0%,8.9%,-13.1%,pos 4
-Mars,VICTORY FEAST,16,0.0%,62.5,0.0%,26.2%,+26.9%,pos 4
-Lion,ESSENCE EATER,1111,-0.0%,53.2,+0.8%,67.6%,+3.6%,pos 4
-Visage,DEATH TOLL,83,-0.1%,50.6,-1.2%,70.3%,+50.6%,pos 4
-Sniper,SCATTERSHOT,189,-0.1%,41.3,-4.1%,94.0%,+16.3%,pos 4
-Rubick,ARCANE ACCUMULATION,1590,-0.1%,49.3,-0.3%,51.8%,+1.4%,pos 4
-Clockwerk,EXPANDED ARMATURE,1168,-0.1%,49.4,-0.9%,94.7%,-12.1%,pos 4
-Muerta,OFRENDA,96,-0.3%,32.3,-4.1%,2.0%,-17.7%,pos 4
-Bounty Hunter,CUTPURSE,232,-0.3%,51.3,+0.6%,5.2%,-1.6%,pos 4
-Doom,DEVIL'S BARGAIN,40,-0.5%,40.0,-4.8%,17.9%,-16.0%,pos 4
-Bane,DREAM STALKER,141,-0.5%,48.2,0.0%,63.8%,-1.8%,pos 4
-Io,MEDIGUN,39,-0.5%,51.3,+10.7%,6.8%,+0.4%,pos 4
-Witch Doctor,HEADHUNTER,255,-0.5%,47.5,+0.9%,92.4%,+4.6%,pos 4
-Leshrac,CHRONOPTIC NOURISHMENT,23,-0.6%,30.4,0.0%,1.4%,-21.7%,pos 4
-Magnus,DIMINISHING RETURN,655,-0.6%,52.4,+2.3%,92.9%,-5.6%,pos 4
-Riki,CONTRACT KILLER,925,-0.7%,48.5,+1.6%,59.4%,+0.5%,pos 4
-Earthshaker,SLUGGER,902,-0.8%,51.8,-1.6%,84.0%,-4.0%,pos 4
-Batrider,ARSONIST,78,-0.8%,41.0,-3.6%,12.1%,-7.4%,pos 4
-Earth Spirit,RESONANCE,121,-0.9%,36.4,+2.8%,20.8%,-13.6%,pos 4
-Shadow Demon,PROMULGATE,389,-1.0%,51.2,-1.4%,86.1%,-6.0%,pos 4
-Death Prophet,SPIRIT COLLECTOR,22,-1.0%,45.5,-7.1%,41.5%,+0.3%,pos 4
-Invoker,MIND OF TORNARUS,74,-1.1%,47.3,-2.4%,20.9%,+8.3%,pos 4
-Queen of Pain,BONDAGE,39,-1.2%,41.0,-10.7%,36.8%,+5.2%,pos 4
-Jakiro,TWIN TERROR,139,-1.3%,46.0,+1.1%,7.6%,-4.5%,pos 4
-Nature's Prophet,SOOTHING SAPLINGS,156,-1.3%,51.3,+0.3%,13.0%,+0.9%,pos 4
-Marci,FLEETING FURY,867,-1.4%,45.6,-1.9%,27.8%,+4.0%,pos 4
-Alchemist,DIVIDENDS,539,-1.4%,55.3,-2.1%,83.4%,+16.8%,pos 4
-Dawnbreaker,STARSURGE,85,-1.5%,43.5,+1.0%,34.3%,-5.9%,pos 4
-Nyx Assassin,SCUTTLE,598,-1.9%,49.7,-1.7%,81.4%,+0.8%,pos 4
-Doom,GLUTTONY,159,-2.0%,47.2,-4.5%,71.0%,-8.8%,pos 4
-Terrorblade,CONDEMNED,91,-2.0%,38.5,+0.4%,96.8%,+5.1%,pos 4
-Huskar,CAUTERIZE,29,-2.2%,24.1,-4.8%,29.3%,-5.9%,pos 4
-Techies,SPOON'S STASH,348,-2.3%,43.4,+1.0%,39.0%,-16.1%,pos 4
-Omniknight,OMNIPRESENT,35,-2.4%,45.7,+2.4%,60.3%,+2.2%,pos 4
-Tinker,REPAIR BOTS,288,-2.4%,54.9,+3.1%,77.0%,+6.0%,pos 4
-Venomancer,PLAGUE CARRIER,184,-2.7%,38.6,-0.8%,47.5%,-19.0%,pos 4
-Undying,ROTTING MITTS,231,-3.1%,50.2,+3.7%,79.9%,-3.2%,pos 4
-Anti-Mage,MANA THIRST,16,-3.6%,43.8,0.0%,36.4%,-9.8%,pos 4
-Sand King,DUST DEVIL,4,-3.6%,25.0,0.0%,21.1%,-1.7%,pos 4
-Elder Titan,MOMENTUM,21,-3.6%,47.6,-7.1%,15.9%,-3.7%,pos 4
-Invoker,SCHOLAR OF KORYX,80,-4.6%,48.8,+5.0%,22.6%,+9.7%,pos 4
-Phantom Assassin,SWEET RELEASE,19,-4.8%,36.8,0.0%,41.3%,-3.9%,pos 4
-Slardar,LEG DAY,63,-4.8%,61.9,+6.3%,85.1%,-1.7%,pos 4
-Ursa,GRUDGE BEARER,7,-4.8%,57.1,-7.1%,35.0%,+3.3%,pos 4
-Enigma,SPLITTING IMAGE,39,-4.9%,51.3,-2.4%,35.1%,+8.2%,pos 4
-Ringmaster,SIDESHOW SECRETS,399,-5.4%,46.6,+2.7%,33.2%,-5.2%,pos 4
-Gyrocopter,SECONDARY STRIKES,70,-5.7%,45.7,+0.4%,51.1%,-14.0%,pos 4
-Hoodwink,HIPSHOT,469,-6.0%,41.4,-0.4%,50.6%,-4.3%,pos 4
-Chaos Knight,FUNDAMENTAL FORGING,26,-6.7%,46.2,-9.5%,44.8%,-10.4%,pos 4
-Dragon Knight,FROST DRAGON,8,-7.1%,12.5,0.0%,16.3%,-87.5%,pos 4
-Brewmaster,DRUNKEN MASTER,8,-7.1%,25.0,0.0%,50.0%,0.0%,pos 4
-Troll Warlord,BAD INFLUENCE,13,-7.1%,30.8,-14.3%,86.7%,+30.8%,pos 4
-Arc Warden,RUNED REPLICA,34,-7.1%,41.2,-0.0%,69.4%,+1.2%,pos 4
-Clinkz,ENGULFING STEP,75,-8.2%,38.7,+3.0%,57.7%,-6.8%,pos 4
-Templar Assassin,VOIDBLADES,12,-9.5%,33.3,-9.5%,22.6%,+33.3%,pos 4
-Chen,TROLL CONVERT,8,-9.5%,62.5,+14.3%,25.8%,+12.5%,pos 4
-Kez,FLUTTER,25,-10.7%,32.0,-9.5%,80.6%,-1.3%,pos 4
-Luna,MOONSTORM,5,-14.3%,40.0,0.0%,62.5%,+6.7%,pos 4
-Lycan,ALPHA WOLVES,4,-14.3%,50.0,-14.3%,57.1%,+50.0%,pos 4
-Sven,HEAVY PLATE,22,+14.3%,54.5,0.0%,88.0%,+21.2%,pos 4
-Dark Seer,QUICK WIT,25,+14.3%,48.0,+11.4%,67.6%,-2.0%,pos 4
-Meepo,MORE MEEPO,9,+14.3%,22.2,0.0%,90.0%,+22.2%,pos 4
-Primal Beast,FEROCITY,28,+11.4%,35.7,+3.6%,66.7%,-7.1%,pos 4
-Kunkka,HIGH TIDE,6,+9.5%,16.7,+7.1%,25.0%,-22.2%,pos 4
-Lifestealer,FLESHFEAST,15,+9.5%,13.3,0.0%,68.2%,-15.2%,pos 4
-Clinkz,SUPPRESSIVE FIRE,55,+8.2%,45.5,+7.1%,42.3%,+6.8%,pos 4
-Dragon Knight,FIRE DRAGON,39,+7.1%,41.0,-9.5%,79.6%,-59.0%,pos 4
-Brewmaster,ROLL OUT THE BARREL,8,+7.1%,25.0,+4.8%,50.0%,0.0%,pos 4
-Lone Druid,BEAR NECESSITIES,1,+7.1%,0.0,0.0%,25.0%,0.0%,pos 4
-Troll Warlord,INSENSITIVE,2,+7.1%,0.0,0.0%,13.3%,-30.8%,pos 4
-Arc Warden,POWER CAPTURE,15,+7.1%,40.0,-7.1%,30.6%,-1.2%,pos 4
-Chaos Knight,CLOVEN CHAOS,23,+6.7%,56.5,+1.2%,39.7%,+12.1%,pos 4
-Dawnbreaker,SOLAR CHARGED,91,+6.4%,49.5,+3.0%,36.7%,+7.8%,pos 4
-Lina,SLOW BURN,40,+6.0%,42.5,+14.3%,54.8%,+15.2%,pos 4
-Gyrocopter,AFTERBURNER,67,+5.7%,59.7,+3.6%,48.9%,+14.0%,pos 4
-Ringmaster,CARNY CLASSICS,803,+5.4%,51.8,-0.7%,66.8%,+5.2%,pos 4
-Enigma,EVENT HORIZON,72,+4.9%,43.1,-1.9%,64.9%,-8.2%,pos 4
-Naga Siren,RIP TIDE,14,+4.8%,42.9,-14.3%,56.0%,-2.6%,pos 4
-Slardar,BRINEGUARD,11,+4.8%,63.6,+14.3%,14.9%,+1.7%,pos 4
-Templar Assassin,REFRACTOR,4,+4.8%,0.0,0.0%,7.5%,-33.3%,pos 4
-Templar Assassin,HIDDEN REACH,37,+4.8%,29.7,+14.3%,69.8%,+29.7%,pos 4
-Anti-Mage,MAGEBANE'S MIRROR,28,+3.6%,53.6,0.0%,63.6%,+9.8%,pos 4
-Storm Spirit,SHOCK COLLAR,5,+3.6%,40.0,+14.3%,29.4%,+23.3%,pos 4
-Elder Titan,DECONSTRUCTION,111,+3.6%,51.4,-1.6%,84.1%,+3.7%,pos 4
-Undying,RIPPED,58,+3.1%,53.4,+3.0%,20.1%,+3.2%,pos 4
-Primal Beast,PROVOKE THE BEAST,14,+2.9%,42.9,+14.3%,33.3%,+7.1%,pos 4
-Treant Protector,PRIMEVAL POWER,43,+2.6%,41.9,-1.4%,50.0%,-9.3%,pos 4
-Oracle,CLAIRVOYANT CURSE,68,+2.4%,48.5,-2.9%,44.2%,+4.3%,pos 4
-Omniknight,HEALING HAMMER,23,+2.4%,43.5,-9.5%,39.7%,-2.2%,pos 4
-Ancient Apparition,EXPOSURE,282,+2.3%,54.3,+3.1%,52.5%,+3.3%,pos 4
-Broodmother,NECROTIC WEBS,46,+2.1%,41.3,-7.9%,93.9%,+8.0%,pos 4
-Terrorblade,SOUL FRAGMENT,3,+2.0%,33.3,0.0%,3.2%,-5.1%,pos 4
-Night Stalker,NIGHT REIGN,518,+2.0%,52.1,-3.1%,97.9%,-2.4%,pos 4
-Dark Willow,THROWING SHADE,924,+1.8%,51.9,-0.8%,39.0%,+0.7%,pos 4
-Vengeful Spirit,AVENGING MISSILE,106,+1.4%,55.7,-0.8%,48.0%,+9.6%,pos 4
-Earth Spirit,READY TO ROLL,428,+1.3%,47.4,-2.4%,73.4%,+11.1%,pos 4
-Nature's Prophet,IRONWOOD TREANT,1047,+1.3%,50.3,-1.6%,87.0%,-0.9%,pos 4
-Jakiro,ICE BREAKER,1689,+1.3%,50.5,+0.1%,92.4%,+4.5%,pos 4
-Queen of Pain,MASOCHIST,67,+1.2%,35.8,+1.2%,63.2%,-5.2%,pos 4
-Alchemist,SEED MONEY,81,+1.2%,39.5,+3.1%,12.5%,-15.8%,pos 4
-Death Prophet,MOURNING RITUAL,31,+1.0%,45.2,+14.3%,58.5%,-0.3%,pos 4
-Disruptor,KINETIC FENCE,32,+1.0%,53.1,-7.1%,10.5%,-2.8%,pos 4
-Enchantress,SPELLBOUND,101,+0.8%,44.6,+2.6%,68.2%,-2.3%,pos 4
-Abaddon,MEPHITIC SHROUD,606,+0.8%,58.4,-0.3%,85.1%,-3.8%,pos 4
-Earthshaker,TECTONIC BUILDUP,172,+0.8%,55.8,+1.0%,16.0%,+4.0%,pos 4
-Riki,EXTERMINATOR,633,+0.7%,48.0,+1.1%,40.6%,-0.5%,pos 4
-Magnus,ETERNAL EMPOWERMENT,50,+0.6%,58.0,+7.1%,7.1%,+5.6%,pos 4
-Tusk,TAG TEAM,1110,+0.5%,51.5,+0.7%,97.5%,+23.9%,pos 4
-Tiny,INSURMOUNTABLE,46,+0.5%,32.6,-7.1%,10.1%,-22.0%,pos 4
-Zeus,LIVEWIRE,5200,+0.5%,53.2,+0.2%,91.7%,+0.8%,pos 4
-Bane,SLEEPWALK,80,+0.5%,50.0,+0.2%,36.2%,+1.8%,pos 4
-Dazzle,POISON BLOOM,437,+0.3%,49.2,-1.7%,79.9%,-1.7%,pos 4
-Alchemist,MIXOLOGIST,26,+0.2%,38.5,-14.3%,4.0%,-16.8%,pos 4
-Clockwerk,HOOKUP,65,+0.1%,61.5,+0.8%,5.3%,+12.1%,pos 4
-Rubick,FRUGAL FILCH,1479,+0.1%,47.9,-1.0%,48.2%,-1.4%,pos 4
-Sniper,GHILLIE SUIT,12,+0.1%,25.0,+7.1%,6.0%,-16.3%,pos 4
-Visage,SEPULCHRE,35,+0.1%,25.7,0.0%,29.7%,+25.7%,pos 4
-Lion,FIST OF DEATH,532,+0.0%,49.6,+0.0%,32.4%,-3.6%,pos 4
-Bloodseeker,ARTERIAL SPRAY,2,0.0%,0.0,0.0%,40.0%,0.0%,pos 4
-Drow Ranger,SIDESTEP,2,0.0%,0.0,0.0%,16.7%,-60.0%,pos 4
-Juggernaut,BLADEFORM,5,0.0%,0.0,0.0%,55.6%,-75.0%,pos 4
-Morphling,FLOW,77,0.0%,33.8,+4.0%,85.6%,+3.0%,pos 4
-Shadow Fiend,SHADOWMIRE,28,0.0%,46.4,-9.5%,82.4%,+13.1%,pos 4
-Puck,CURVEBALL,2,0.0%,50.0,0.0%,6.1%,+4.8%,pos 4
-Razor,DYNAMO,4,0.0%,0.0,0.0%,14.3%,-25.0%,pos 4
-Tidehunter,KRAKEN SWELL,44,0.0%,40.9,+4.8%,53.7%,-9.1%,pos 4
-Wraith King,BONE GUARD,12,0.0%,25.0,0.0%,92.3%,-75.0%,pos 4
-Pugna,SIPHONING WARD,383,0.0%,51.2,+0.8%,95.0%,+11.2%,pos 4
-Luna,MOONSHIELD,3,0.0%,33.3,0.0%,37.5%,-6.7%,pos 4
-Chen,CENTAUR CONVERT,7,0.0%,71.4,0.0%,22.6%,+21.4%,pos 4
-Lycan,SPIRIT WOLVES,0,0.0%,0.0,0.0%,0.0%,-66.7%,pos 4
-Meepo,CODEPENDENT,1,0.0%,0.0,0.0%,10.0%,-22.2%,pos 4
-Visage,FAITHFUL FOLLOWERS,0,0.0%,0.0,0.0%,0.0%,-50.6%,pos 4
-Bristleback,SNOT ROCKET,72,0.0%,41.7,+7.1%,91.1%,+13.1%,pos 4
-Underlord,ABYSSAL HORDE,5,0.0%,40.0,0.0%,50.0%,-40.0%,pos 4
-Mars,BLOOD SPORT,45,0.0%,35.6,-3.6%,73.8%,-26.9%,pos 4
-Phoenix,HOTSPOT,136,-0.0%,50.7,-2.2%,12.6%,+2.7%,pos 4
-Lich,GROWING COLD,24,-0.1%,37.5,-14.3%,11.5%,-10.6%,pos 4
-Silencer,IRREPRESSIBLE,49,-0.1%,46.9,+0.4%,3.3%,-4.4%,pos 4
-Warlock,CHAMPION OF GORROTH,36,-0.1%,50.0,0.0%,12.1%,+5.6%,pos 4
-Monkey King,SIMIAN STRIDE,356,-0.2%,42.1,+0.2%,94.9%,+0.0%,pos 4
-Dazzle,NOTHL BOON,110,-0.3%,50.9,+2.1%,20.1%,+1.7%,pos 4
-Earth Spirit,STEPPING STONE,34,-0.4%,50.0,+9.5%,5.8%,+13.6%,pos 4
-Skywrath Mage,SHIELD OF THE SCION,505,-0.5%,48.5,+1.5%,78.3%,+3.5%,pos 4
-Zeus,DIVINE RAMPAGE,468,-0.5%,52.4,+0.7%,8.3%,-0.8%,pos 4
-Tiny,CRASH LANDING,410,-0.5%,54.6,+0.3%,89.9%,+22.0%,pos 4
-Tusk,DRINKING BUDDIES,29,-0.5%,27.6,0.0%,2.5%,-23.9%,pos 4
-Marci,BUDDY SYSTEM,65,-0.6%,41.5,+0.4%,2.1%,-4.3%,pos 4
-Shadow Shaman,MASSIVE SERPENT WARD,47,-0.6%,53.2,-2.9%,2.1%,+0.4%,pos 4
-Windranger,TANGLED,194,-0.8%,44.3,-1.5%,9.8%,-0.2%,pos 4
-Abaddon,THE QUICKENING,106,-0.8%,62.3,-0.2%,14.9%,+3.8%,pos 4
-Enchantress,OVERPROTECTIVE WISPS,47,-0.8%,46.8,-3.6%,31.8%,+2.3%,pos 4
-Mirana,LEAPS AND BOUNDS,86,-0.9%,46.5,-7.7%,2.6%,-6.0%,pos 4
-Disruptor,THUNDERSTORM,272,-1.0%,55.9,-4.8%,89.5%,+2.8%,pos 4
-Pudge,FRESH MEAT,1002,-1.1%,45.8,-0.1%,44.1%,-1.0%,pos 4
-Slark,DARK REEF RENEGADE,419,-1.2%,48.4,+2.7%,70.7%,-10.2%,pos 4
-Snapfire,RICOCHET II,64,-1.2%,51.6,-4.6%,13.9%,-2.1%,pos 4
-Faceless Void,TIME ZONE,211,-1.3%,48.8,+1.7%,98.1%,+48.8%,pos 4
-Winter Wyvern,WINTERPROOF,134,-1.3%,53.7,-1.2%,5.7%,-0.1%,pos 4
-Ogre Magi,LEARNING CURVE,355,-1.4%,49.9,-2.8%,92.9%,-2.0%,pos 4
-Vengeful Spirit,SOUL STRIKE,115,-1.4%,46.1,-2.9%,52.0%,-9.6%,pos 4
-Dark Willow,SHATTERING CROWN,1448,-1.8%,51.2,-0.3%,61.0%,-0.7%,pos 4
-Night Stalker,VOIDBRINGER,11,-2.0%,54.5,-14.3%,2.1%,+2.4%,pos 4
-Timbersaw,SHREDDER,75,-2.0%,41.3,+9.0%,90.4%,+16.3%,pos 4
-Broodmother,FEEDING FRENZY,3,-2.1%,33.3,0.0%,6.1%,-8.0%,pos 4
-Ancient Apparition,BONE CHILL,255,-2.3%,51.0,+1.3%,47.5%,-3.3%,pos 4
-Spirit Breaker,BULL'S HIT,640,-2.4%,50.0,+1.6%,28.3%,-4.3%,pos 4
-Oracle,CLAIRVOYANT CURE,86,-2.4%,44.2,0.0%,55.8%,-4.3%,pos 4
-Treant Protector,SAPLING,43,-2.6%,51.2,-9.5%,50.0%,+9.3%,pos 4
-Crystal Maiden,ARCANE OVERFLOW,58,-2.9%,39.7,+10.0%,14.6%,-14.2%,pos 4
-Grimstroke,FINE ART,321,-3.2%,48.9,-1.2%,55.2%,-1.3%,pos 4
-Phantom Lancer,LANCELOT,3,-3.6%,0.0,0.0%,42.9%,0.0%,pos 4
-Storm Spirit,STATIC SLIDE,12,-3.6%,16.7,+4.8%,70.6%,-23.3%,pos 4
-Kez,SHADOWHAWK,6,-3.6%,33.3,0.0%,19.4%,+1.3%,pos 4
-Naga Siren,DELUGE,11,-4.8%,45.5,-14.3%,44.0%,+2.6%,pos 4
-Centaur Warrunner,HORSEPOWER,11,-4.8%,27.3,0.0%,31.4%,-39.4%,pos 4
-Viper,POISON BURST,40,-4.8%,35.0,+6.0%,81.6%,+1.7%,pos 4
-Dawnbreaker,TRAILBLAZER,72,-4.9%,41.7,+7.8%,29.0%,-7.8%,pos 4
-Weaver,SKITTERSTEP,796,-5.0%,51.4,-0.1%,37.4%,-3.4%,pos 4
-Ember Spirit,CHAIN GANG,78,-5.6%,61.5,+1.4%,56.9%,+37.8%,pos 4
-Lina,THERMAL RUNAWAY,33,-6.0%,27.3,-4.8%,45.2%,-15.2%,pos 4
-Void Spirit,CALL OF THE VOID,16,-6.6%,31.3,-5.7%,48.5%,+1.8%,pos 4
-Axe,ONE MAN ARMY,27,-7.1%,37.0,+14.3%,81.8%,+3.7%,pos 4
-Spectre,FORSAKEN,7,-7.1%,14.3,0.0%,53.8%,-2.4%,pos 4
-Medusa,UNDULATION,7,-7.1%,28.6,0.0%,58.3%,+28.6%,pos 4
-Legion Commander,STONEHALL PLATE,20,-7.1%,25.0,-3.6%,60.6%,-21.2%,pos 4
-Pangolier,DOUBLE JUMP,11,-7.1%,27.3,-7.1%,37.9%,-11.6%,pos 4
-Kunkka,GROG BLOSSOM,18,-9.5%,38.9,-14.3%,75.0%,+22.2%,pos 4
-Lifestealer,GORESTORM,7,-9.5%,28.6,+14.3%,31.8%,+15.2%,pos 4
-Phantom Lancer,DIVERGENCE,4,-10.7%,0.0,0.0%,57.1%,0.0%,pos 4
-Necrophos,PROFANE POTENCY,9,-14.3%,44.4,-14.3%,40.9%,-1.7%,pos 4
-Dark Seer,HEART OF BATTLE,12,-14.3%,50.0,-14.3%,32.4%,+2.0%,pos 4
-Drow Ranger,VANTAGE POINT,13,+14.3%,46.2,0.0%,56.5%,+6.2%,pos 5
-Brewmaster,DRUNKEN MASTER,2,+14.3%,50.0,0.0%,33.3%,0.0%,pos 5
-Meepo,MORE MEEPO,5,+14.3%,80.0,0.0%,45.5%,+30.0%,pos 5
-Timbersaw,SHREDDER,48,+14.3%,47.9,+6.1%,92.3%,+22.9%,pos 5
-Pangolier,DOUBLE JUMP,4,+14.3%,25.0,+14.3%,30.8%,+2.8%,pos 5
-Mars,VICTORY FEAST,5,+14.3%,40.0,0.0%,33.3%,+40.0%,pos 5
-Tidehunter,KRILL EATER,35,+12.2%,34.3,0.0%,63.6%,-15.7%,pos 5
-Death Prophet,SPIRIT COLLECTOR,34,+10.1%,29.4,+2.4%,42.0%,-15.3%,pos 5
-Clinkz,ENGULFING STEP,23,+8.6%,47.8,+4.8%,65.7%,+14.5%,pos 5
-Juggernaut,BLADESTORM,11,+7.1%,45.5,0.0%,84.6%,-4.5%,pos 5
-Razor,THUNDERHEAD,23,+7.1%,43.5,+14.3%,74.2%,-6.5%,pos 5
-Ursa,GRUDGE BEARER,9,+7.1%,66.7,-14.3%,30.0%,+19.0%,pos 5
-Chaos Knight,IRRATIONALITY,16,+6.7%,68.8,+10.2%,30.2%,+35.4%,pos 5
-Hoodwink,GO NUTS,109,+5.8%,45.0,+0.8%,48.4%,+1.0%,pos 5
-Clinkz,SUPPRESSIVE FIRE,12,+5.7%,33.3,+7.1%,34.3%,-14.5%,pos 5
-Troll Warlord,INSENSITIVE,12,+5.7%,25.0,0.0%,25.0%,+5.6%,pos 5
-Spirit Breaker,BULL RUSH,242,+5.7%,54.1,+3.4%,72.2%,+10.0%,pos 5
-Faceless Void,CHRONOSPHERE,13,+5.4%,23.1,0.0%,12.5%,-29.7%,pos 5
-Storm Spirit,SHOCK COLLAR,4,+4.8%,0.0,0.0%,26.7%,-18.2%,pos 5
-Treant Protector,PRIMEVAL POWER,148,+4.3%,54.7,+3.0%,36.0%,+6.8%,pos 5
-Alchemist,SEED MONEY,105,+3.9%,39.0,-0.1%,18.8%,-12.8%,pos 5
-Anti-Mage,MANA THIRST,31,+3.7%,22.6,0.0%,64.6%,-0.9%,pos 5
-Lina,THERMAL RUNAWAY,12,+3.6%,41.7,-14.3%,38.7%,+10.1%,pos 5
-Terrorblade,SOUL FRAGMENT,5,+3.6%,40.0,+14.3%,7.4%,-1.3%,pos 5
-Winter Wyvern,RECURSIVE,3908,+3.3%,54.6,-0.6%,90.8%,-3.3%,pos 5
-Phantom Assassin,METHODICAL,104,+3.2%,29.8,+3.3%,88.9%,+6.7%,pos 5
-Weaver,HIVEMIND,427,+3.1%,48.7,+1.5%,64.6%,+2.6%,pos 5
-Wraith King,SPECTRAL BLADE,4,+2.9%,0.0,0.0%,15.4%,-72.7%,pos 5
-Invoker,AGENT OF GALLARON,54,+2.8%,42.6,+1.4%,54.0%,-10.0%,pos 5
-Doom,GLUTTONY,78,+2.5%,48.7,+5.2%,79.6%,+28.7%,pos 5
-Omniknight,OMNIPRESENT,132,+2.3%,57.6,-6.1%,65.3%,+10.4%,pos 5
-Kez,FLUTTER,28,+2.0%,25.0,-4.8%,96.6%,+25.0%,pos 5
-Nature's Prophet,IRONWOOD TREANT,577,+2.0%,47.7,+1.8%,88.4%,-8.9%,pos 5
-Dark Willow,THROWING SHADE,323,+1.9%,48.9,-5.1%,35.5%,-5.9%,pos 5
-Bounty Hunter,CUTPURSE,53,+1.8%,43.4,-7.7%,8.4%,-5.0%,pos 5
-Dazzle,POISON BLOOM,1190,+1.6%,52.5,-0.6%,73.3%,-3.2%,pos 5
-Earthshaker,TECTONIC BUILDUP,21,+1.5%,33.3,0.0%,17.5%,-17.2%,pos 5
-Huskar,INCENDIARY,79,+1.4%,34.2,+1.8%,73.8%,+5.6%,pos 5
-Abaddon,MEPHITIC SHROUD,2187,+1.3%,56.0,-0.1%,86.5%,+1.9%,pos 5
-Ancient Apparition,EXPOSURE,724,+1.2%,53.7,+1.2%,48.5%,+1.2%,pos 5
-Dragon Knight,FROST DRAGON,15,+1.1%,53.3,0.0%,15.8%,+20.9%,pos 5
-Bristleback,SNOT ROCKET,106,+1.0%,39.6,-3.0%,95.5%,+19.6%,pos 5
-Skywrath Mage,STAFF OF THE SCION,31,+1.0%,29.0,+3.6%,22.3%,-11.7%,pos 5
-Pudge,ROTTEN CORE,794,+0.9%,44.1,+0.9%,53.4%,-0.2%,pos 5
-Disruptor,THUNDERSTORM,1328,+0.8%,52.1,+0.0%,87.7%,+6.4%,pos 5
-Mirana,STARSTRUCK,2186,+0.7%,54.0,+0.7%,99.0%,+4.0%,pos 5
-Marci,PICK-ME-UP,1368,+0.7%,43.9,+0.5%,63.4%,+7.1%,pos 5
-Rubick,FRUGAL FILCH,290,+0.6%,40.7,-2.9%,42.2%,-7.4%,pos 5
-Jakiro,ICE BREAKER,7879,+0.6%,52.2,-0.3%,95.4%,+4.4%,pos 5
-Muerta,OFRENDA,30,+0.5%,16.7,0.0%,3.5%,-31.4%,pos 5
-Enchantress,OVERPROTECTIVE WISPS,123,+0.5%,38.2,-0.1%,28.3%,-2.8%,pos 5
-Undying,ROTTING MITTS,1437,+0.4%,52.1,-0.0%,87.8%,+4.6%,pos 5
-Tusk,TAG TEAM,806,+0.3%,49.8,-1.5%,96.4%,+6.4%,pos 5
-Chaos Knight,CLOVEN CHAOS,18,+0.2%,33.3,+7.1%,34.0%,-35.4%,pos 5
-Marci,FLEETING FURY,675,+0.2%,43.1,-0.9%,31.3%,+6.3%,pos 5
-Shadow Shaman,CHICKEN FINGERS,2096,+0.2%,51.7,+0.6%,97.1%,+23.1%,pos 5
-Phoenix,DYING LIGHT,909,+0.1%,47.4,-0.6%,84.1%,+0.3%,pos 5
-Snapfire,FULL BORE,192,+0.1%,47.4,-5.1%,80.7%,+3.9%,pos 5
-Axe,ONE MAN ARMY,6,0.0%,66.7,0.0%,30.0%,+16.7%,pos 5
-Bloodseeker,ARTERIAL SPRAY,28,0.0%,25.0,-7.1%,90.3%,+25.0%,pos 5
-Shadow Fiend,LASTING PRESENCE,14,0.0%,28.6,0.0%,40.0%,-4.8%,pos 5
-Sand King,DUST DEVIL,2,0.0%,50.0,0.0%,33.3%,0.0%,pos 5
-Sniper,GHILLIE SUIT,6,0.0%,33.3,+14.3%,7.7%,-8.3%,pos 5
-Beastmaster,WILD HUNT,2,0.0%,50.0,0.0%,15.4%,+40.9%,pos 5
-Luna,MOONSHIELD,22,0.0%,40.9,-1.4%,88.0%,+40.9%,pos 5
-Leshrac,CHRONOPTIC NOURISHMENT,12,0.0%,16.7,0.0%,2.6%,-34.0%,pos 5
-Outworld Devourer,OBSIDIAN DECIMATOR,1,0.0%,0.0,0.0%,20.0%,-25.0%,pos 5
-Lycan,PACK LEADER,0,0.0%,0.0,0.0%,0.0%,0.0%,pos 5
-Lycan,ALPHA WOLVES,2,0.0%,0.0,0.0%,66.7%,0.0%,pos 5
-Lone Druid,BEAR NECESSITIES,2,0.0%,0.0,0.0%,16.7%,-30.0%,pos 5
-Earth Spirit,STEPPING STONE,1,0.0%,100.0,0.0%,2.1%,+64.3%,pos 5
-Underlord,ABYSSAL HORDE,1,0.0%,0.0,0.0%,50.0%,0.0%,pos 5
-Primal Beast,PROVOKE THE BEAST,2,0.0%,0.0,0.0%,20.0%,-50.0%,pos 5
-Shadow Fiend,SHADOWMIRE,21,-0.0%,33.3,-11.4%,60.0%,+4.8%,pos 5
-Warlock,CHAMPION OF GORROTH,291,-0.1%,46.7,-1.1%,5.4%,-3.5%,pos 5
-Snapfire,RICOCHET II,46,-0.1%,43.5,+2.4%,19.3%,-3.9%,pos 5
-Phoenix,HOTSPOT,172,-0.1%,47.1,-2.1%,15.9%,-0.3%,pos 5
-Shadow Shaman,MASSIVE SERPENT WARD,63,-0.2%,28.6,-5.4%,2.9%,-23.1%,pos 5
-Dragon Knight,CORROSIVE DRAGON,6,-0.2%,50.0,+7.1%,6.3%,+17.6%,pos 5
-Enigma,SPLITTING IMAGE,40,-0.2%,57.5,+4.3%,51.3%,+23.3%,pos 5
-Silencer,REVERBERATING SILENCE,3105,-0.3%,51.2,-0.2%,97.8%,+5.5%,pos 5
-Visage,DEATH TOLL,54,-0.4%,44.4,+3.1%,77.1%,+44.4%,pos 5
-Pugna,REWARDS OF RUIN,16,-0.5%,50.0,+2.4%,3.4%,-3.5%,pos 5
-Io,MEDIGUN,86,-0.6%,46.5,+6.6%,4.1%,-5.3%,pos 5
-Zeus,DIVINE RAMPAGE,213,-0.6%,51.2,-2.8%,5.3%,-0.8%,pos 5
-Magnus,ETERNAL EMPOWERMENT,81,-0.7%,33.3,-2.7%,19.9%,-18.8%,pos 5
-Mirana,LEAPS AND BOUNDS,22,-0.7%,50.0,-11.9%,1.0%,-4.0%,pos 5
-Batrider,ARSONIST,30,-0.8%,33.3,-2.4%,12.7%,-10.1%,pos 5
-Nyx Assassin,MANA BURN,31,-0.9%,51.6,-9.5%,21.7%,+7.9%,pos 5
-Marci,BUDDY SYSTEM,114,-0.9%,36.8,-0.3%,5.3%,-7.1%,pos 5
-Dragon Knight,FIRE DRAGON,74,-0.9%,32.4,+2.9%,77.9%,-20.9%,pos 5
-Witch Doctor,HEADHUNTER,605,-1.0%,48.1,+0.1%,89.8%,+9.0%,pos 5
-Invoker,MIND OF TORNARUS,19,-1.0%,52.6,-0.0%,19.0%,+19.3%,pos 5
-Clockwerk,HOOKUP,43,-1.2%,55.8,-1.2%,3.1%,+3.5%,pos 5
-Chen,TROLL CONVERT,17,-1.2%,35.3,-5.7%,6.3%,-28.7%,pos 5
-Doom,IMPENDING DOOM,5,-1.2%,20.0,0.0%,5.1%,-28.7%,pos 5
-Abaddon,THE QUICKENING,340,-1.3%,54.1,+1.7%,13.5%,-1.9%,pos 5
-Huskar,CAUTERIZE,28,-1.4%,28.6,-1.2%,26.2%,-5.6%,pos 5
-Earthshaker,SLUGGER,99,-1.5%,50.5,-2.4%,82.5%,+17.2%,pos 5
-Dazzle,NOTHL BOON,434,-1.6%,55.8,-0.3%,26.7%,+3.2%,pos 5
-Lifestealer,GORESTORM,6,-1.8%,16.7,0.0%,3.7%,-17.3%,pos 5
-Bounty Hunter,THROUGH AND THROUGH,577,-1.8%,48.4,+2.3%,91.6%,+5.0%,pos 5
-Dark Willow,SHATTERING CROWN,586,-1.9%,54.8,+1.3%,64.5%,+5.9%,pos 5
-Nature's Prophet,SOOTHING SAPLINGS,76,-2.0%,56.6,+6.0%,11.6%,+8.9%,pos 5
-Templar Assassin,HIDDEN REACH,48,-2.1%,37.5,+9.5%,75.0%,+14.4%,pos 5
-Lion,FIST OF DEATH,347,-2.4%,49.0,-2.4%,26.0%,+0.3%,pos 5
-Wraith King,BONE GUARD,22,-2.9%,72.7,+4.8%,84.6%,+72.7%,pos 5
-Slark,DARK REEF RENEGADE,151,-2.9%,50.3,-0.7%,56.6%,+11.5%,pos 5
-Phantom Assassin,SWEET RELEASE,13,-3.2%,23.1,0.0%,11.1%,-6.7%,pos 5
-Winter Wyvern,WINTERPROOF,396,-3.3%,57.8,-0.9%,9.2%,+3.3%,pos 5
-Queen of Pain,MASOCHIST,25,-3.6%,36.0,-4.8%,71.4%,-4.0%,pos 5
-Monkey King,SIMIAN STRIDE,75,-3.6%,28.0,0.0%,89.3%,-27.6%,pos 5
-Tiny,CRASH LANDING,99,-3.7%,48.5,-1.4%,41.1%,+13.3%,pos 5
-Dawnbreaker,STARSURGE,59,-4.0%,52.5,+2.4%,33.9%,-16.1%,pos 5
-Chen,HELLBEAR CONVERT,26,-4.4%,23.1,-2.6%,9.7%,-40.9%,pos 5
-Gyrocopter,SECONDARY STRIKES,100,-4.5%,44.0,-2.0%,57.5%,-0.6%,pos 5
-Faceless Void,TIME ZONE,91,-5.4%,52.7,-1.0%,87.5%,+29.7%,pos 5
-Spirit Breaker,BULL'S HIT,93,-5.7%,44.1,-5.7%,27.8%,-10.0%,pos 5
-Night Stalker,VOIDBRINGER,7,-5.7%,57.1,-7.1%,4.8%,+5.7%,pos 5
-Arc Warden,POWER CAPTURE,11,-5.7%,45.5,-7.1%,28.2%,-1.0%,pos 5
-Spectre,TWIST THE KNIFE,25,-6.7%,36.0,0.0%,54.3%,+7.4%,pos 5
-Ringmaster,SIDESHOW SECRETS,309,-7.1%,44.0,+1.4%,26.5%,-6.5%,pos 5
-Dark Seer,QUICK WIT,8,-7.1%,25.0,0.0%,66.7%,0.0%,pos 5
-Broodmother,FEEDING FRENZY,3,-7.1%,0.0,0.0%,9.4%,-27.6%,pos 5
-Legion Commander,STONEHALL PLATE,4,-7.1%,50.0,-14.3%,40.0%,+16.7%,pos 5
-Naga Siren,RIP TIDE,18,-7.3%,44.4,+8.6%,45.0%,+17.2%,pos 5
-Death Prophet,MOURNING RITUAL,47,-10.1%,44.7,+3.8%,58.0%,+15.3%,pos 5
-Tidehunter,KRAKEN SWELL,20,-12.2%,50.0,0.0%,36.4%,+15.7%,pos 5
-Puck,JOSTLING RIFT,7,-14.3%,28.6,0.0%,87.5%,+28.6%,pos 5
-Kunkka,GROG BLOSSOM,12,-14.3%,66.7,0.0%,92.3%,+66.7%,pos 5
-Beastmaster,BEAST MODE,11,-14.3%,9.1,0.0%,84.6%,-40.9%,pos 5
-Centaur Warrunner,COUNTER-STRIKE,7,-14.3%,42.9,-14.3%,77.8%,-7.1%,pos 5
-Ember Spirit,DOUBLE IMPACT,12,-14.3%,41.7,-3.6%,38.7%,+10.1%,pos 5
-Void Spirit,CALL OF THE VOID,9,-14.3%,55.6,-14.3%,52.9%,+43.1%,pos 5
-Necrophos,PROFANE POTENCY,3,+14.3%,33.3,+14.3%,42.9%,-16.7%,pos 5
-Lone Druid,BEAR WITH ME,10,+14.3%,30.0,0.0%,83.3%,+30.0%,pos 5
-Centaur Warrunner,HORSEPOWER,2,+14.3%,50.0,0.0%,22.2%,+7.1%,pos 5
-Ember Spirit,CHAIN GANG,19,+14.3%,31.6,0.0%,61.3%,-10.1%,pos 5
-Void Spirit,SANCTUARY,8,+14.3%,12.5,0.0%,47.1%,-43.1%,pos 5
-Medusa,ENGORGED,18,+12.7%,83.3,+14.3%,39.1%,+63.3%,pos 5
-Keeper of the Light,SOLAR BIND,36,+11.1%,30.6,+2.0%,49.3%,-20.8%,pos 5
-Earth Spirit,RESONANCE,14,+9.5%,35.7,+14.3%,29.2%,-64.3%,pos 5
-Naga Siren,DELUGE,22,+7.3%,27.3,+7.1%,55.0%,-17.2%,pos 5
-Juggernaut,BLADEFORM,2,+7.1%,50.0,0.0%,15.4%,+4.5%,pos 5
-Broodmother,NECROTIC WEBS,29,+7.1%,27.6,-7.1%,90.6%,+27.6%,pos 5
-Ringmaster,CARNY CLASSICS,858,+7.1%,50.5,-0.9%,73.5%,+6.5%,pos 5
-Spectre,FORSAKEN,21,+6.7%,28.6,+3.6%,45.7%,-7.4%,pos 5
-Slardar,BRINEGUARD,4,+5.7%,25.0,+7.1%,17.4%,-17.1%,pos 5
-Night Stalker,NIGHT REIGN,138,+5.7%,51.4,-11.9%,95.2%,-5.7%,pos 5
-Arc Warden,RUNED REPLICA,28,+5.7%,46.4,+4.8%,71.8%,+1.0%,pos 5
-Phantom Lancer,DIVERGENCE,16,+5.4%,43.8,+14.3%,40.0%,+31.3%,pos 5
-Techies,SPLEEN'S SECRET SAUCE,260,+5.3%,44.2,+1.6%,56.0%,-5.8%,pos 5
-Gyrocopter,AFTERBURNER,74,+4.5%,44.6,+2.0%,42.5%,+0.6%,pos 5
-Dawnbreaker,SOLAR CHARGED,48,+4.0%,52.1,+5.7%,27.6%,-16.6%,pos 5
-Tiny,INSURMOUNTABLE,142,+3.7%,35.2,-10.2%,58.9%,-13.3%,pos 5
-Chen,CENTAUR CONVERT,100,+3.6%,64.0,+1.0%,37.2%,+40.9%,pos 5
-Queen of Pain,BONDAGE,10,+3.6%,40.0,-14.3%,28.6%,+4.0%,pos 5
-Monkey King,WUKONG'S FAITHFUL,9,+3.6%,55.6,0.0%,10.7%,+27.6%,pos 5
-Vengeful Spirit,AVENGING MISSILE,82,+3.2%,45.1,+2.6%,46.3%,+10.4%,pos 5
-Keeper of the Light,RECALL,37,+3.2%,51.4,0.0%,50.7%,+20.8%,pos 5
-Slark,LEECHING LEASH,116,+2.9%,38.8,-1.0%,43.4%,-11.5%,pos 5
-Viper,POISON BURST,63,+2.9%,42.9,+2.4%,91.3%,+26.2%,pos 5
-Morphling,FLOW,38,+2.6%,39.5,+10.2%,32.8%,+16.4%,pos 5
-Lion,ESSENCE EATER,990,+2.4%,48.7,-2.7%,74.0%,-0.3%,pos 5
-Templar Assassin,VOIDBLADES,13,+2.1%,23.1,0.0%,20.3%,-14.4%,pos 5
-Chen,SATYR CONVERT,126,+2.0%,47.6,+2.9%,46.8%,+24.5%,pos 5
-Oracle,CLAIRVOYANT CURSE,183,+2.0%,51.9,-3.4%,22.1%,+0.2%,pos 5
-Shadow Demon,SHADOW SERVANT,61,+1.8%,47.5,+4.8%,13.7%,+0.9%,pos 5
-Lifestealer,FLESHFEAST,156,+1.8%,34.0,-5.6%,96.3%,+17.3%,pos 5
-Venomancer,PATIENT ZERO,348,+1.6%,52.0,+1.7%,51.5%,+5.4%,pos 5
-Bane,SLEEPWALK,195,+1.5%,46.7,+3.5%,32.4%,-3.6%,pos 5
-Sven,WRATH OF GOD,48,+1.3%,37.5,-14.3%,36.1%,-14.3%,pos 5
-Elder Titan,DECONSTRUCTION,446,+1.3%,55.4,+1.3%,92.0%,+1.5%,pos 5
-Clockwerk,EXPANDED ARMATURE,1358,+1.2%,52.4,+0.2%,96.9%,-3.5%,pos 5
-Crystal Maiden,GLACIAL GUARD,3001,+1.1%,51.3,+0.0%,89.0%,+4.5%,pos 5
-Witch Doctor,CLEFT DEATH,69,+1.0%,39.1,0.0%,10.2%,-9.0%,pos 5
-Tinker,TRANSLOCATOR,23,+0.9%,52.2,-2.9%,5.1%,+2.3%,pos 5
-Nyx Assassin,SCUTTLE,112,+0.9%,43.8,-4.0%,78.3%,-7.9%,pos 5
-Batrider,STOKED,207,+0.8%,43.5,-2.0%,87.3%,+10.1%,pos 5
-Riki,EXTERMINATOR,106,+0.7%,32.1,+3.8%,51.7%,-3.3%,pos 5
-Magnus,DIMINISHING RETURN,326,+0.7%,52.1,+0.9%,80.1%,+18.8%,pos 5
-Zeus,LIVEWIRE,3828,+0.6%,52.0,-0.6%,94.7%,+0.8%,pos 5
-Io,KRITZKRIEG,1996,+0.6%,51.9,-0.2%,95.9%,+5.3%,pos 5
-Pugna,SIPHONING WARD,454,+0.5%,53.5,+1.3%,96.6%,+3.5%,pos 5
-Visage,SEPULCHRE,16,+0.4%,50.0,-3.6%,22.9%,+50.0%,pos 5
-Silencer,IRREPRESSIBLE,70,+0.3%,45.7,+4.8%,2.2%,-5.5%,pos 5
-Enigma,EVENT HORIZON,38,+0.2%,34.2,-1.2%,48.7%,-23.3%,pos 5
-Grimstroke,INKSTIGATE,201,+0.2%,47.3,-0.5%,60.0%,+7.7%,pos 5
-Ogre Magi,FAT CHANCE,58,+0.2%,41.4,-6.2%,3.7%,-7.3%,pos 5
-Windranger,KILLSHOT,484,+0.2%,45.2,-1.3%,86.9%,-1.3%,pos 5
-Lich,FROSTBOUND,932,+0.1%,49.2,+0.2%,88.6%,+9.2%,pos 5
-Warlock,BLACK GRIMOIRE,5142,+0.1%,50.2,-0.6%,94.6%,+3.5%,pos 5
-Axe,CALL OUT,14,0.0%,50.0,0.0%,70.0%,-16.7%,pos 5
-Bloodseeker,BLOODRUSH,3,0.0%,0.0,0.0%,9.7%,-25.0%,pos 5
-Puck,CURVEBALL,1,0.0%,0.0,0.0%,12.5%,-28.6%,pos 5
-Kunkka,HIGH TIDE,1,0.0%,0.0,0.0%,7.7%,-66.7%,pos 5
-Sniper,SCATTERSHOT,72,0.0%,41.7,+8.6%,92.3%,+8.3%,pos 5
-Templar Assassin,REFRACTOR,3,0.0%,33.3,0.0%,4.7%,+10.3%,pos 5
-Luna,MOONSTORM,3,0.0%,0.0,0.0%,12.0%,-40.9%,pos 5
-Leshrac,MISANTHROPY,456,0.0%,50.7,+2.8%,97.4%,+34.0%,pos 5
-Outworld Devourer,OVERWHELMING DEVOURER,4,0.0%,25.0,0.0%,80.0%,+25.0%,pos 5
-Lycan,SPIRIT WOLVES,1,0.0%,0.0,0.0%,33.3%,0.0%,pos 5
-Brewmaster,ROLL OUT THE BARREL,4,0.0%,50.0,0.0%,66.7%,0.0%,pos 5
-Visage,FAITHFUL FOLLOWERS,0,0.0%,0.0,0.0%,0.0%,-50.0%,pos 5
-Underlord,DEMON'S REACH,1,0.0%,0.0,0.0%,50.0%,0.0%,pos 5
-Mars,BLOOD SPORT,10,0.0%,0.0,0.0%,66.7%,-40.0%,pos 5
-Primal Beast,FEROCITY,8,0.0%,50.0,0.0%,80.0%,+50.0%,pos 5
-Dawnbreaker,TRAILBLAZER,67,-0.0%,68.7,-1.4%,38.5%,+16.6%,pos 5
-Alchemist,MIXOLOGIST,27,-0.1%,51.9,-14.3%,4.8%,+12.8%,pos 5
-Lich,GROWING COLD,120,-0.1%,40.0,+3.2%,11.4%,-9.2%,pos 5
-Windranger,TANGLED,73,-0.2%,46.6,-4.2%,13.1%,+1.3%,pos 5
-Ogre Magi,LEARNING CURVE,1520,-0.2%,48.7,+0.6%,96.3%,+7.3%,pos 5
-Grimstroke,FINE ART,134,-0.2%,39.6,-2.7%,40.0%,-7.7%,pos 5
-Tusk,DRINKING BUDDIES,30,-0.3%,43.3,-14.3%,3.6%,-6.4%,pos 5
-Undying,RIPPED,200,-0.4%,47.5,-1.1%,12.2%,-4.6%,pos 5
-Enchantress,SPELLBOUND,312,-0.5%,41.0,+2.5%,71.7%,+2.8%,pos 5
-Muerta,DANCE OF THE DEAD,816,-0.5%,48.0,-0.6%,96.5%,+31.4%,pos 5
-Jakiro,TWIN TERROR,381,-0.6%,47.8,-3.2%,4.6%,-4.4%,pos 5
-Rubick,ARCANE ACCUMULATION,397,-0.6%,48.1,+3.5%,57.8%,+7.4%,pos 5
-Riki,CONTRACT KILLER,99,-0.7%,35.4,-2.3%,48.3%,+3.3%,pos 5
-Techies,SQUEE'S SCOPE,22,-0.8%,50.0,+10.7%,4.7%,+11.5%,pos 5
-Disruptor,KINETIC FENCE,186,-0.8%,45.7,+1.2%,12.3%,-6.4%,pos 5
-Pudge,FRESH MEAT,694,-0.9%,44.2,-2.0%,46.6%,+0.2%,pos 5
-Tinker,REPAIR BOTS,427,-0.9%,49.9,+1.1%,94.9%,-2.3%,pos 5
-Skywrath Mage,SHIELD OF THE SCION,108,-1.0%,40.7,+2.0%,77.7%,+11.7%,pos 5
-Bristleback,SEEING RED,5,-1.0%,20.0,-7.1%,4.5%,-19.6%,pos 5
-Crystal Maiden,ARCANE OVERFLOW,370,-1.1%,46.8,-0.5%,11.0%,-4.5%,pos 5
-Ancient Apparition,BONE CHILL,769,-1.2%,52.5,+0.1%,51.5%,-1.2%,pos 5
-Doom,DEVIL'S BARGAIN,15,-1.2%,33.3,-14.3%,15.3%,-15.4%,pos 5
-Elder Titan,MOMENTUM,39,-1.3%,53.8,-4.8%,8.0%,-1.5%,pos 5
-Sven,HEAVY PLATE,85,-1.3%,51.8,+3.3%,63.9%,+14.3%,pos 5
-Bane,DREAM STALKER,406,-1.5%,50.2,+1.5%,67.6%,+3.6%,pos 5
-Venomancer,PLAGUE CARRIER,328,-1.6%,46.6,-0.2%,48.5%,-5.4%,pos 5
-Medusa,VENOMOUS VOLLEY,10,-1.6%,20.0,0.0%,21.7%,-63.3%,pos 5
-Invoker,SCHOLAR OF KORYX,27,-1.8%,33.3,-1.4%,27.0%,-19.3%,pos 5
-Shadow Demon,PROMULGATE,384,-1.8%,46.6,+0.8%,86.3%,-0.9%,pos 5
-Oracle,CLAIRVOYANT CURE,644,-2.0%,51.7,+1.7%,77.9%,-0.2%,pos 5
-Kez,SHADOWHAWK,1,-2.0%,0.0,0.0%,3.4%,-25.0%,pos 5
-Omniknight,HEALING HAMMER,70,-2.3%,47.1,-7.1%,34.7%,-10.4%,pos 5
-Morphling,EBB,78,-2.6%,23.1,+2.5%,67.2%,-16.4%,pos 5
-Viper,CAUSTIC BATH,6,-2.9%,16.7,0.0%,8.7%,-26.2%,pos 5
-Weaver,SKITTERSTEP,234,-3.1%,46.2,-2.6%,35.4%,-2.6%,pos 5
-Vengeful Spirit,SOUL STRIKE,95,-3.2%,34.7,+0.5%,53.7%,-10.4%,pos 5
-Lina,SLOW BURN,19,-3.6%,31.6,-9.5%,61.3%,-10.1%,pos 5
-Terrorblade,CONDEMNED,63,-3.6%,41.3,+2.4%,92.6%,+1.3%,pos 5
-Anti-Mage,MAGEBANE'S MIRROR,17,-3.7%,23.5,-7.1%,35.4%,+0.9%,pos 5
-Alchemist,DIVIDENDS,427,-3.9%,51.5,-2.2%,76.4%,+12.5%,pos 5
-Treant Protector,SAPLING,263,-4.3%,47.9,-0.6%,64.0%,-6.8%,pos 5
-Techies,SPOON'S STASH,182,-4.5%,38.5,+2.8%,39.2%,-11.5%,pos 5
-Storm Spirit,STATIC SLIDE,11,-4.8%,18.2,+7.1%,73.3%,+18.2%,pos 5
-Phantom Lancer,LANCELOT,24,-5.4%,12.5,-1.4%,60.0%,-31.3%,pos 5
-Slardar,LEG DAY,19,-5.7%,42.1,+7.1%,82.6%,+17.1%,pos 5
-Troll Warlord,BAD INFLUENCE,36,-5.7%,19.4,+4.8%,75.0%,-5.6%,pos 5
-Hoodwink,HIPSHOT,116,-5.8%,44.0,-3.3%,51.6%,-1.0%,pos 5
-Chaos Knight,FUNDAMENTAL FORGING,19,-6.9%,52.6,-3.6%,35.8%,+19.3%,pos 5
-Razor,DYNAMO,8,-7.1%,50.0,0.0%,25.8%,+6.5%,pos 5
-Dark Seer,HEART OF BATTLE,4,-7.1%,25.0,-14.3%,33.3%,0.0%,pos 5
-Ursa,BEAR DOWN,21,-7.1%,47.6,0.0%,70.0%,-19.0%,pos 5
-Legion Commander,SPOILS OF WAR,6,-7.1%,33.3,-14.3%,60.0%,-16.7%,pos 5
-Earth Spirit,READY TO ROLL,33,-9.5%,42.4,0.0%,68.8%,-57.6%,pos 5
-Medusa,UNDULATION,18,-11.1%,38.9,-4.1%,39.1%,-44.4%,pos 5
-Drow Ranger,SIDESTEP,10,-14.3%,40.0,-14.3%,43.5%,-6.2%,pos 5
-Sand King,SANDSHROUD,4,-14.3%,50.0,-7.1%,66.7%,0.0%,pos 5
-Necrophos,RAPID DECAY,4,-14.3%,50.0,0.0%,57.1%,+16.7%,pos 5
-Meepo,CODEPENDENT,6,-14.3%,50.0,0.0%,54.5%,-30.0%,pos 5
-Timbersaw,TWISTED CHAKRAM,4,-14.3%,25.0,0.0%,7.7%,-22.9%,pos 5
-Pangolier,THUNDERBOLT,9,-14.3%,22.2,-7.1%,69.2%,-2.8%,pos 5
+Chen,SATYR CONVERT,1,0.0%,100.0,0.0%,25.0%,+100.0%,pos 3
+Outworld Devourer,OBSIDIAN DECIMATOR,73,0.0%,37.0,-6.7%,78.5%,-13.0%,pos 3
+Lycan,SPIRIT WOLVES,14,0.0%,35.7,0.0%,2.3%,-10.1%,pos 3
+Treant Protector,PRIMEVAL POWER,22,0.0%,36.4,+4.8%,95.7%,+36.4%,pos 3
+Disruptor,KINETIC FENCE,0,0.0%,0.0,0.0%,0.0%,-33.3%,pos 3
+Io,KRITZKRIEG,12,0.0%,58.3,+7.1%,80.0%,+58.3%,pos 3
+Visage,FAITHFUL FOLLOWERS,4,0.0%,50.0,0.0%,0.3%,+0.2%,pos 3
+Medusa,VENOMOUS VOLLEY,18,0.0%,38.9,0.0%,9.3%,-12.9%,pos 3
+Troll Warlord,INSENSITIVE,7,0.0%,42.9,0.0%,14.3%,-11.9%,pos 3
+Tusk,DRINKING BUDDIES,7,0.0%,28.6,0.0%,5.6%,-11.8%,pos 3
+Techies,SQUEE'S SCOPE,18,0.0%,66.7,0.0%,27.7%,+41.7%,pos 3
+Arc Warden,POWER CAPTURE,5,0.0%,0.0,0.0%,31.3%,-18.2%,pos 3
+Ringmaster,CARNY CLASSICS,8,0.0%,62.5,0.0%,72.7%,+29.2%,pos 3
+Hoodwink,HIPSHOT,5,-0.0%,40.0,0.0%,10.0%,+15.6%,pos 3
+Pangolier,THUNDERBOLT,725,-0.0%,46.5,+3.7%,41.5%,-2.0%,pos 3
+Phoenix,HOTSPOT,50,-0.1%,44.0,+4.8%,2.9%,-5.4%,pos 3
+Marci,BUDDY SYSTEM,71,-0.1%,56.3,+4.2%,2.5%,+9.8%,pos 3
+Timbersaw,TWISTED CHAKRAM,851,-0.2%,42.5,-0.4%,29.9%,-4.8%,pos 3
+Axe,ONE MAN ARMY,3468,-0.2%,51.9,+1.2%,72.2%,+4.4%,pos 3
+Pudge,ROTTEN CORE,2525,-0.3%,49.3,+0.3%,76.9%,-2.8%,pos 3
+Terrorblade,CONDEMNED,1491,-0.4%,46.5,-1.4%,89.8%,+2.1%,pos 3
+Slardar,BRINEGUARD,577,-0.5%,50.4,+0.3%,13.4%,+0.7%,pos 3
+Legion Commander,SPOILS OF WAR,1466,-0.5%,52.3,-0.7%,27.5%,+2.5%,pos 3
+Doom,GLUTTONY,1394,-0.7%,47.9,-0.9%,29.9%,-1.4%,pos 3
+Chaos Knight,CLOVEN CHAOS,50,-0.8%,36.0,-6.1%,10.2%,-10.9%,pos 3
+Beastmaster,WILD HUNT,1615,-0.9%,54.4,-2.2%,27.6%,+4.4%,pos 3
+Anti-Mage,MANA THIRST,199,-1.0%,50.3,+2.4%,80.6%,+19.0%,pos 3
+Clockwerk,HOOKUP,43,-1.0%,65.1,+10.7%,43.4%,+25.8%,pos 3
+Bristleback,SEEING RED,1289,-1.1%,42.3,-1.7%,24.6%,-6.5%,pos 3
+Lone Druid,BEAR NECESSITIES,22,-1.1%,40.9,0.0%,11.5%,-7.0%,pos 3
+Alchemist,MIXOLOGIST,36,-1.2%,58.3,-14.3%,10.0%,+18.8%,pos 3
+Huskar,CAUTERIZE,320,-1.3%,47.2,+0.2%,53.4%,+1.3%,pos 3
+Dragon Knight,FROST DRAGON,523,-1.4%,44.0,-2.2%,16.7%,-8.3%,pos 3
+Enigma,EVENT HORIZON,710,-1.5%,54.1,+0.2%,36.7%,+0.9%,pos 3
+Dark Seer,HEART OF BATTLE,408,-1.6%,50.0,+3.4%,5.1%,-2.6%,pos 3
+Mars,VICTORY FEAST,2142,-1.6%,50.0,+0.0%,30.5%,+0.7%,pos 3
+Alchemist,SEED MONEY,134,-1.7%,39.6,+4.1%,37.1%,-18.8%,pos 3
+Dragon Knight,CORROSIVE DRAGON,434,-1.8%,50.2,+4.0%,13.8%,+6.3%,pos 3
+Visage,DEATH TOLL,677,-1.9%,49.8,+0.2%,58.1%,-0.2%,pos 3
+Silencer,IRREPRESSIBLE,27,-2.0%,51.9,-7.1%,12.9%,+7.3%,pos 3
+Dark Willow,SHATTERING CROWN,20,-2.1%,25.0,-14.3%,20.6%,-28.2%,pos 3
+Kez,SHADOWHAWK,138,-2.2%,40.6,-6.5%,25.7%,-4.2%,pos 3
+Sand King,DUST DEVIL,140,-2.2%,43.6,+0.4%,7.1%,+0.9%,pos 3
+Lion,FIST OF DEATH,13,-2.4%,38.5,+7.1%,36.1%,+3.7%,pos 3
+Rubick,FRUGAL FILCH,81,-2.4%,48.1,-4.8%,49.1%,+1.7%,pos 3
+Monkey King,SIMIAN STRIDE,361,-2.8%,52.1,+2.1%,48.3%,-0.6%,pos 3
+Jakiro,ICE BREAKER,71,-3.2%,42.3,-4.8%,27.6%,-4.0%,pos 3
+Earth Spirit,RESONANCE,86,-3.6%,48.8,0.0%,71.7%,+17.0%,pos 3
+Tinker,TRANSLOCATOR,100,-3.6%,47.0,-7.1%,51.5%,+5.5%,pos 3
+Nyx Assassin,MANA BURN,29,-3.6%,27.6,0.0%,31.2%,-20.9%,pos 3
+Lifestealer,GORESTORM,15,-3.7%,20.0,0.0%,7.7%,-26.9%,pos 3
+Lycan,ALPHA WOLVES,380,-4.0%,45.8,+0.2%,63.3%,+10.1%,pos 3
+Chaos Knight,FUNDAMENTAL FORGING,308,-4.1%,42.2,-4.3%,63.1%,+6.2%,pos 3
+Ember Spirit,CHAIN GANG,69,-4.7%,43.5,+7.1%,15.2%,-1.7%,pos 3
+Sniper,SCATTERSHOT,33,-4.8%,42.4,0.0%,50.8%,-17.0%,pos 3
+Phantom Assassin,METHODICAL,63,-4.8%,36.5,+7.1%,71.6%,-11.5%,pos 3
+Naga Siren,RIP TIDE,31,-4.8%,35.5,+7.1%,86.1%,+15.5%,pos 3
+Kunkka,HIGH TIDE,219,-5.7%,48.9,-6.1%,57.5%,+0.1%,pos 3
+Tiny,CRASH LANDING,714,-6.9%,49.3,-0.9%,52.2%,+2.5%,pos 3
+Templar Assassin,VOIDBLADES,16,-7.1%,31.3,0.0%,69.6%,+31.3%,pos 3
+Invoker,MIND OF TORNARUS,13,-7.1%,46.2,-9.5%,14.0%,+13.8%,pos 3
+Grimstroke,FINE ART,11,-7.1%,27.3,0.0%,34.4%,-39.4%,pos 3
+Zeus,DIVINE RAMPAGE,16,-8.6%,25.0,-4.8%,11.8%,-10.8%,pos 3
+Bane,DREAM STALKER,36,-14.3%,55.6,-4.8%,90.0%,+30.6%,pos 3
+Phantom Lancer,LANCELOT,20,-14.3%,50.0,-4.8%,80.0%,+50.0%,pos 3
+Warlock,BLACK GRIMOIRE,18,-14.3%,16.7,0.0%,85.7%,-16.7%,pos 3
+Omniknight,HEALING HAMMER,5,-14.3%,60.0,0.0%,5.7%,+19.0%,pos 3
+Troll Warlord,BAD INFLUENCE,42,-14.3%,54.8,-10.7%,85.7%,+11.9%,pos 3
+Arc Warden,RUNED REPLICA,11,-14.3%,18.2,0.0%,68.8%,+18.2%,pos 3
+Drow Ranger,VANTAGE POINT,11,+14.3%,54.5,0.0%,57.9%,+54.5%,pos 4
+Necrophos,RAPID DECAY,27,+14.3%,40.7,+14.3%,55.1%,-0.2%,pos 4
+Lycan,PACK LEADER,5,+14.3%,60.0,+7.1%,29.4%,+60.0%,pos 4
+Underlord,DEMON'S REACH,18,+14.3%,83.3,+14.3%,58.1%,+29.5%,pos 4
+Outworld Devourer,OBSIDIAN DECIMATOR,38,+10.7%,28.9,+4.8%,86.4%,+12.3%,pos 4
+Beastmaster,WILD HUNT,24,+9.5%,62.5,+7.1%,45.3%,+38.4%,pos 4
+Chen,SATYR CONVERT,21,+9.5%,61.9,+14.3%,45.7%,+6.3%,pos 4
+Axe,CALL OUT,25,+7.1%,40.0,0.0%,29.4%,+3.3%,pos 4
+Spectre,TWIST THE KNIFE,16,+7.1%,18.8,0.0%,39.0%,-5.2%,pos 4
+Lone Druid,BEAR WITH ME,15,+7.1%,20.0,0.0%,93.8%,+20.0%,pos 4
+Medusa,VENOMOUS VOLLEY,14,+7.1%,35.7,0.0%,35.9%,+35.7%,pos 4
+Legion Commander,SPOILS OF WAR,27,+7.1%,37.0,-3.6%,41.5%,+13.4%,pos 4
+Pangolier,THUNDERBOLT,39,+7.1%,25.6,0.0%,50.6%,-5.9%,pos 4
+Void Spirit,SANCTUARY,31,+6.6%,32.3,+4.8%,47.7%,-6.0%,pos 4
+Hoodwink,GO NUTS,944,+6.0%,48.0,-0.2%,60.0%,+6.1%,pos 4
+Invoker,AGENT OF GALLARON,470,+5.7%,41.7,+1.0%,63.7%,-7.2%,pos 4
+Ember Spirit,DOUBLE IMPACT,128,+5.6%,26.6,+3.6%,42.7%,-26.9%,pos 4
+Weaver,HIVEMIND,8278,+5.0%,49.9,-2.2%,84.0%,-0.8%,pos 4
+Phantom Assassin,METHODICAL,54,+4.8%,29.6,+10.7%,55.7%,-2.9%,pos 4
+Centaur Warrunner,COUNTER-STRIKE,55,+4.8%,65.5,0.0%,77.5%,+34.2%,pos 4
+Beastmaster,BEAST MODE,29,+4.8%,24.1,0.0%,54.7%,-38.4%,pos 4
+Viper,CAUSTIC BATH,25,+4.8%,40.0,0.0%,21.4%,-0.2%,pos 4
+Ursa,BEAR DOWN,34,+4.8%,50.0,+14.3%,75.6%,+4.5%,pos 4
+Sand King,SANDSHROUD,33,+3.6%,30.3,-4.8%,86.8%,-9.7%,pos 4
+Outworld Devourer,OVERWHELMING DEVOURER,6,+3.6%,16.7,0.0%,13.6%,-12.3%,pos 4
+Grimstroke,INKSTIGATE,469,+3.2%,47.3,-0.8%,43.0%,-1.0%,pos 4
+Crystal Maiden,GLACIAL GUARD,640,+2.9%,52.8,-1.5%,84.5%,+10.9%,pos 4
+Venomancer,PATIENT ZERO,377,+2.7%,50.9,-2.1%,54.8%,+9.8%,pos 4
+Tinker,TRANSLOCATOR,187,+2.4%,48.7,+4.8%,10.8%,-7.4%,pos 4
+Doom,IMPENDING DOOM,41,+2.4%,46.3,+4.8%,7.9%,+6.1%,pos 4
+Spirit Breaker,BULL RUSH,4090,+2.4%,53.7,+0.2%,79.7%,+4.1%,pos 4
+Huskar,INCENDIARY,198,+2.2%,38.9,-0.8%,74.7%,+12.0%,pos 4
+Timbersaw,TWISTED CHAKRAM,25,+2.0%,28.0,+14.3%,15.4%,-16.5%,pos 4
+Marci,PICK-ME-UP,3703,+2.0%,46.2,+1.1%,68.5%,+5.3%,pos 4
+Nyx Assassin,MANA BURN,241,+1.9%,46.1,+0.2%,19.4%,-3.1%,pos 4
+Techies,SPLEEN'S SECRET SAUCE,1243,+1.6%,43.8,-2.4%,66.5%,-19.6%,pos 4
+Ogre Magi,FAT CHANCE,63,+1.4%,36.5,+3.6%,8.4%,-13.7%,pos 4
+Winter Wyvern,RECURSIVE,3797,+1.3%,53.7,+0.3%,91.9%,-0.2%,pos 4
+Faceless Void,CHRONOSPHERE,14,+1.3%,28.6,0.0%,1.1%,-24.2%,pos 4
+Snapfire,FULL BORE,840,+1.2%,50.5,+0.1%,83.1%,+3.7%,pos 4
+Slark,LEECHING LEASH,353,+1.2%,51.3,+1.4%,32.1%,+3.0%,pos 4
+Pudge,ROTTEN CORE,2702,+1.1%,47.4,+0.6%,53.7%,-0.5%,pos 4
+Shadow Demon,SHADOW SERVANT,139,+1.0%,55.4,+2.4%,14.0%,+5.9%,pos 4
+Mirana,STARSTRUCK,5837,+0.9%,52.4,-0.0%,97.5%,+5.7%,pos 4
+Batrider,STOKED,993,+0.8%,46.6,-0.7%,88.6%,-2.6%,pos 4
+Techies,SQUEE'S SCOPE,82,+0.8%,63.4,0.0%,4.4%,+20.9%,pos 4
+Windranger,KILLSHOT,3197,+0.8%,45.5,+0.8%,90.7%,+0.7%,pos 4
+Shadow Shaman,CHICKEN FINGERS,4875,+0.6%,53.6,+0.4%,98.0%,+0.1%,pos 4
+Leshrac,MISANTHROPY,3735,+0.6%,52.3,-0.1%,98.8%,+20.4%,pos 4
+Witch Doctor,CLEFT DEATH,43,+0.5%,34.9,-7.1%,6.4%,-13.0%,pos 4
+Io,KRITZKRIEG,826,+0.5%,50.0,+3.7%,92.9%,+2.4%,pos 4
+Skywrath Mage,STAFF OF THE SCION,267,+0.5%,49.1,+3.0%,19.9%,+0.6%,pos 4
+Bounty Hunter,THROUGH AND THROUGH,8811,+0.3%,53.8,+0.2%,94.9%,-0.1%,pos 4
+Muerta,DANCE OF THE DEAD,8909,+0.3%,49.4,-1.6%,98.0%,+20.9%,pos 4
+Monkey King,WUKONG'S FAITHFUL,63,+0.2%,27.0,+7.1%,10.3%,-14.3%,pos 4
+Warlock,BLACK GRIMOIRE,600,+0.1%,45.7,-2.6%,88.4%,-2.4%,pos 4
+Silencer,REVERBERATING SILENCE,3037,+0.1%,50.8,-2.7%,97.1%,+12.8%,pos 4
+Lich,FROSTBOUND,304,+0.1%,44.7,-1.1%,88.9%,0.0%,pos 4
+Phoenix,DYING LIGHT,1895,+0.0%,49.0,-0.1%,88.1%,-1.2%,pos 4
+Keeper of the Light,RECALL,302,+0.0%,52.0,+0.0%,46.2%,+6.1%,pos 4
+Bloodseeker,BLOODRUSH,7,0.0%,14.3,0.0%,53.8%,+14.3%,pos 4
+Juggernaut,BLADESTORM,12,0.0%,33.3,0.0%,63.2%,+19.0%,pos 4
+Morphling,EBB,19,0.0%,31.6,0.0%,13.4%,-7.4%,pos 4
+Shadow Fiend,LASTING PRESENCE,15,0.0%,13.3,0.0%,20.3%,-35.8%,pos 4
+Puck,JOSTLING RIFT,82,0.0%,42.7,0.0%,93.2%,-24.0%,pos 4
+Razor,THUNDERHEAD,54,0.0%,35.2,-10.7%,83.1%,+17.0%,pos 4
+Sven,WRATH OF GOD,8,0.0%,25.0,0.0%,14.5%,-23.9%,pos 4
+Tidehunter,KRILL EATER,112,0.0%,36.6,-7.1%,58.9%,-16.0%,pos 4
+Wraith King,SPECTRAL BLADE,5,0.0%,60.0,0.0%,19.2%,+26.7%,pos 4
+Pugna,REWARDS OF RUIN,46,0.0%,37.0,0.0%,6.0%,-12.6%,pos 4
+Dragon Knight,CORROSIVE DRAGON,9,0.0%,66.7,0.0%,10.8%,+29.2%,pos 4
+Chen,HELLBEAR CONVERT,6,0.0%,66.7,0.0%,13.0%,+11.1%,pos 4
+Chaos Knight,IRRATIONALITY,12,0.0%,33.3,0.0%,10.2%,-22.0%,pos 4
+Keeper of the Light,SOLAR BIND,351,0.0%,45.9,-5.7%,53.8%,-6.1%,pos 4
+Medusa,ENGORGED,2,0.0%,0.0,0.0%,5.1%,-35.7%,pos 4
+Bristleback,SEEING RED,16,0.0%,31.3,0.0%,8.6%,-12.5%,pos 4
+Mars,VICTORY FEAST,52,0.0%,63.5,0.0%,35.4%,+28.7%,pos 4
+Lion,ESSENCE EATER,2621,-0.0%,52.5,+0.8%,71.6%,+1.3%,pos 4
+Visage,DEATH TOLL,181,-0.1%,42.5,-1.2%,70.7%,+42.5%,pos 4
+Sniper,SCATTERSHOT,377,-0.1%,41.9,-4.1%,91.7%,+18.4%,pos 4
+Rubick,ARCANE ACCUMULATION,3783,-0.1%,51.0,-0.3%,52.0%,+2.3%,pos 4
+Clockwerk,EXPANDED ARMATURE,2218,-0.1%,49.9,-0.9%,94.5%,-9.0%,pos 4
+Muerta,OFRENDA,183,-0.3%,28.4,-4.1%,2.0%,-20.9%,pos 4
+Bounty Hunter,CUTPURSE,473,-0.3%,53.9,+0.6%,5.1%,+0.1%,pos 4
+Doom,DEVIL'S BARGAIN,72,-0.5%,40.3,-4.8%,13.9%,-11.1%,pos 4
+Bane,DREAM STALKER,327,-0.5%,51.7,0.0%,55.3%,-4.0%,pos 4
+Io,MEDIGUN,63,-0.5%,47.6,+10.7%,7.1%,-2.4%,pos 4
+Witch Doctor,HEADHUNTER,627,-0.5%,47.8,+0.9%,93.6%,+13.0%,pos 4
+Leshrac,CHRONOPTIC NOURISHMENT,47,-0.6%,31.9,0.0%,1.2%,-20.4%,pos 4
+Magnus,DIMINISHING RETURN,1413,-0.6%,52.5,+2.3%,89.7%,+4.0%,pos 4
+Riki,CONTRACT KILLER,1537,-0.7%,49.1,+1.6%,58.9%,+0.8%,pos 4
+Earthshaker,SLUGGER,2480,-0.8%,52.9,-1.6%,86.1%,-2.6%,pos 4
+Batrider,ARSONIST,128,-0.8%,49.2,-3.6%,11.4%,+2.6%,pos 4
+Earth Spirit,RESONANCE,260,-0.9%,40.0,+2.8%,25.5%,-12.5%,pos 4
+Shadow Demon,PROMULGATE,853,-1.0%,49.5,-1.4%,86.0%,-5.9%,pos 4
+Death Prophet,SPIRIT COLLECTOR,55,-1.0%,36.4,-7.1%,48.2%,-6.0%,pos 4
+Invoker,MIND OF TORNARUS,137,-1.1%,48.9,-2.4%,18.6%,+7.2%,pos 4
+Queen of Pain,BONDAGE,113,-1.2%,51.3,-10.7%,40.2%,+19.8%,pos 4
+Jakiro,TWIN TERROR,252,-1.3%,50.4,+1.1%,7.2%,+0.5%,pos 4
+Nature's Prophet,SOOTHING SAPLINGS,282,-1.3%,49.6,+0.3%,11.2%,+1.5%,pos 4
+Marci,FLEETING FURY,1612,-1.4%,45.7,-1.9%,29.8%,+4.9%,pos 4
+Alchemist,DIVIDENDS,973,-1.4%,52.3,-2.1%,81.4%,+12.8%,pos 4
+Dawnbreaker,STARSURGE,140,-1.5%,48.6,+1.0%,30.0%,+5.6%,pos 4
+Nyx Assassin,SCUTTLE,1000,-1.9%,49.2,-1.7%,80.6%,+3.1%,pos 4
+Doom,GLUTTONY,405,-2.0%,51.4,-4.5%,78.2%,+11.1%,pos 4
+Terrorblade,CONDEMNED,182,-2.0%,33.5,+0.4%,97.3%,+13.5%,pos 4
+Huskar,CAUTERIZE,67,-2.2%,26.9,-4.8%,25.3%,-12.0%,pos 4
+Techies,SPOON'S STASH,543,-2.3%,42.5,+1.0%,29.1%,-20.9%,pos 4
+Omniknight,OMNIPRESENT,66,-2.4%,37.9,+2.4%,66.0%,-18.0%,pos 4
+Tinker,REPAIR BOTS,1538,-2.4%,56.1,+3.1%,89.2%,+7.4%,pos 4
+Venomancer,PLAGUE CARRIER,311,-2.7%,41.2,-0.8%,45.2%,-9.8%,pos 4
+Undying,ROTTING MITTS,483,-3.1%,50.1,+3.7%,81.9%,-0.4%,pos 4
+Anti-Mage,MANA THIRST,40,-3.6%,25.0,0.0%,47.1%,-17.2%,pos 4
+Sand King,DUST DEVIL,5,-3.6%,40.0,0.0%,13.2%,+9.7%,pos 4
+Elder Titan,MOMENTUM,44,-3.6%,47.7,-7.1%,13.8%,-7.3%,pos 4
+Invoker,SCHOLAR OF KORYX,131,-4.6%,48.1,+5.0%,17.8%,+6.4%,pos 4
+Phantom Assassin,SWEET RELEASE,43,-4.8%,32.6,0.0%,44.3%,+2.9%,pos 4
+Slardar,LEG DAY,116,-4.8%,56.9,+6.3%,85.9%,+20.1%,pos 4
+Ursa,GRUDGE BEARER,11,-4.8%,45.5,-7.1%,24.4%,-4.5%,pos 4
+Enigma,SPLITTING IMAGE,73,-4.9%,43.8,-2.4%,33.3%,-2.1%,pos 4
+Ringmaster,SIDESHOW SECRETS,559,-5.4%,46.2,+2.7%,23.0%,-6.3%,pos 4
+Gyrocopter,SECONDARY STRIKES,181,-5.7%,51.9,+0.4%,50.4%,+0.2%,pos 4
+Hoodwink,HIPSHOT,630,-6.0%,41.9,-0.4%,40.0%,-6.1%,pos 4
+Chaos Knight,FUNDAMENTAL FORGING,56,-6.7%,55.4,-9.5%,47.5%,+22.0%,pos 4
+Dragon Knight,FROST DRAGON,24,-7.1%,37.5,0.0%,28.9%,-29.2%,pos 4
+Brewmaster,DRUNKEN MASTER,21,-7.1%,33.3,0.0%,43.8%,+18.5%,pos 4
+Troll Warlord,BAD INFLUENCE,21,-7.1%,33.3,-14.3%,84.0%,+8.3%,pos 4
+Arc Warden,RUNED REPLICA,64,-7.1%,43.8,-0.0%,71.1%,+1.4%,pos 4
+Clinkz,ENGULFING STEP,193,-8.2%,49.2,+3.0%,60.3%,+4.3%,pos 4
+Templar Assassin,VOIDBLADES,19,-9.5%,26.3,-9.5%,15.7%,-7.7%,pos 4
+Chen,TROLL CONVERT,9,-9.5%,55.6,+14.3%,19.6%,-11.1%,pos 4
+Kez,FLUTTER,66,-10.7%,28.8,-9.5%,79.5%,+17.0%,pos 4
+Luna,MOONSTORM,11,-14.3%,36.4,0.0%,52.4%,+16.4%,pos 4
+Lycan,ALPHA WOLVES,10,-14.3%,50.0,-14.3%,58.8%,+50.0%,pos 4
+Sven,HEAVY PLATE,47,+14.3%,48.9,0.0%,85.5%,+23.9%,pos 4
+Dark Seer,QUICK WIT,57,+14.3%,50.9,+11.4%,64.8%,+8.9%,pos 4
+Meepo,MORE MEEPO,28,+14.3%,21.4,0.0%,84.8%,+1.4%,pos 4
+Primal Beast,FEROCITY,66,+11.4%,39.4,+3.6%,64.7%,+0.5%,pos 4
+Kunkka,HIGH TIDE,10,+9.5%,20.0,+7.1%,19.2%,-11.0%,pos 4
+Lifestealer,FLESHFEAST,30,+9.5%,10.0,0.0%,65.2%,-40.0%,pos 4
+Clinkz,SUPPRESSIVE FIRE,127,+8.2%,44.9,+7.1%,39.7%,-4.3%,pos 4
+Dragon Knight,FIRE DRAGON,50,+7.1%,42.0,-9.5%,60.2%,-24.7%,pos 4
+Brewmaster,ROLL OUT THE BARREL,27,+7.1%,14.8,+4.8%,56.3%,-18.5%,pos 4
+Lone Druid,BEAR NECESSITIES,1,+7.1%,0.0,0.0%,6.3%,-20.0%,pos 4
+Troll Warlord,INSENSITIVE,4,+7.1%,25.0,0.0%,16.0%,-8.3%,pos 4
+Arc Warden,POWER CAPTURE,26,+7.1%,42.3,-7.1%,28.9%,-1.4%,pos 4
+Chaos Knight,CLOVEN CHAOS,50,+6.7%,54.0,+1.2%,42.4%,+20.7%,pos 4
+Dawnbreaker,SOLAR CHARGED,191,+6.4%,53.9,+3.0%,41.0%,+11.0%,pos 4
+Lina,SLOW BURN,84,+6.0%,40.5,+14.3%,55.3%,+8.1%,pos 4
+Gyrocopter,AFTERBURNER,178,+5.7%,51.7,+3.6%,49.6%,-0.2%,pos 4
+Ringmaster,CARNY CLASSICS,1875,+5.4%,52.4,-0.7%,77.0%,+6.3%,pos 4
+Enigma,EVENT HORIZON,146,+4.9%,45.9,-1.9%,66.7%,+2.1%,pos 4
+Naga Siren,RIP TIDE,28,+4.8%,21.4,-14.3%,57.1%,-26.2%,pos 4
+Slardar,BRINEGUARD,19,+4.8%,36.8,+14.3%,14.1%,-20.1%,pos 4
+Templar Assassin,REFRACTOR,8,+4.8%,25.0,0.0%,6.6%,-9.0%,pos 4
+Templar Assassin,HIDDEN REACH,94,+4.8%,34.0,+14.3%,77.7%,+9.0%,pos 4
+Anti-Mage,MAGEBANE'S MIRROR,45,+3.6%,42.2,0.0%,52.9%,+17.2%,pos 4
+Storm Spirit,SHOCK COLLAR,8,+3.6%,37.5,+14.3%,20.5%,+11.7%,pos 4
+Elder Titan,DECONSTRUCTION,276,+3.6%,55.1,-1.6%,86.3%,+7.3%,pos 4
+Undying,RIPPED,107,+3.1%,50.5,+3.0%,18.1%,+0.4%,pos 4
+Primal Beast,PROVOKE THE BEAST,36,+2.9%,38.9,+14.3%,35.3%,-0.5%,pos 4
+Treant Protector,PRIMEVAL POWER,87,+2.6%,37.9,-1.4%,50.3%,-8.6%,pos 4
+Oracle,CLAIRVOYANT CURSE,134,+2.4%,49.3,-2.9%,42.5%,+1.2%,pos 4
+Omniknight,HEALING HAMMER,34,+2.4%,55.9,-9.5%,34.0%,+18.0%,pos 4
+Ancient Apparition,EXPOSURE,738,+2.3%,51.8,+3.1%,46.6%,+1.5%,pos 4
+Broodmother,NECROTIC WEBS,78,+2.1%,30.8,-7.9%,91.8%,+2.2%,pos 4
+Terrorblade,SOUL FRAGMENT,5,+2.0%,20.0,0.0%,2.7%,-13.5%,pos 4
+Night Stalker,NIGHT REIGN,2509,+2.0%,53.2,-3.1%,99.1%,+9.7%,pos 4
+Dark Willow,THROWING SHADE,2107,+1.8%,51.9,-0.8%,45.4%,+1.0%,pos 4
+Vengeful Spirit,AVENGING MISSILE,220,+1.4%,56.8,-0.8%,48.7%,+8.5%,pos 4
+Earth Spirit,READY TO ROLL,698,+1.3%,47.0,-2.4%,68.5%,+7.0%,pos 4
+Nature's Prophet,IRONWOOD TREANT,2229,+1.3%,48.2,-1.6%,88.8%,-1.5%,pos 4
+Jakiro,ICE BREAKER,3232,+1.3%,49.9,+0.1%,92.8%,-0.5%,pos 4
+Queen of Pain,MASOCHIST,168,+1.2%,31.5,+1.2%,59.8%,-19.8%,pos 4
+Alchemist,SEED MONEY,172,+1.2%,39.5,+3.1%,14.4%,-12.8%,pos 4
+Death Prophet,MOURNING RITUAL,59,+1.0%,42.4,+14.3%,51.8%,+6.0%,pos 4
+Disruptor,KINETIC FENCE,64,+1.0%,60.9,-7.1%,9.5%,+7.6%,pos 4
+Enchantress,SPELLBOUND,197,+0.8%,49.2,+2.6%,64.8%,+4.4%,pos 4
+Abaddon,MEPHITIC SHROUD,1155,+0.8%,54.0,-0.3%,83.6%,-0.8%,pos 4
+Earthshaker,TECTONIC BUILDUP,402,+0.8%,55.5,+1.0%,13.9%,+2.6%,pos 4
+Riki,EXTERMINATOR,1073,+0.7%,48.4,+1.1%,41.1%,-0.8%,pos 4
+Magnus,ETERNAL EMPOWERMENT,163,+0.6%,48.5,+7.1%,10.3%,-4.0%,pos 4
+Tusk,TAG TEAM,2969,+0.5%,50.7,+0.7%,95.3%,+4.5%,pos 4
+Tiny,INSURMOUNTABLE,100,+0.5%,37.0,-7.1%,10.1%,-15.1%,pos 4
+Zeus,LIVEWIRE,10236,+0.5%,52.4,+0.2%,92.0%,+2.8%,pos 4
+Bane,SLEEPWALK,264,+0.5%,55.7,+0.2%,44.7%,+4.0%,pos 4
+Dazzle,POISON BLOOM,1097,+0.3%,51.2,-1.7%,83.2%,+0.1%,pos 4
+Alchemist,MIXOLOGIST,51,+0.2%,51.0,-14.3%,4.3%,+11.4%,pos 4
+Clockwerk,HOOKUP,129,+0.1%,58.9,+0.8%,5.5%,+9.0%,pos 4
+Rubick,FRUGAL FILCH,3498,+0.1%,48.6,-1.0%,48.0%,-2.3%,pos 4
+Sniper,GHILLIE SUIT,34,+0.1%,23.5,+7.1%,8.3%,-18.4%,pos 4
+Visage,SEPULCHRE,73,+0.1%,30.1,0.0%,28.5%,+30.1%,pos 4
+Lion,FIST OF DEATH,1042,+0.0%,51.2,+0.0%,28.4%,-1.3%,pos 4
+Bloodseeker,ARTERIAL SPRAY,6,0.0%,0.0,0.0%,46.2%,-14.3%,pos 4
+Drow Ranger,SIDESTEP,8,0.0%,0.0,0.0%,42.1%,-54.5%,pos 4
+Juggernaut,BLADEFORM,7,0.0%,14.3,0.0%,36.8%,-19.0%,pos 4
+Morphling,FLOW,123,0.0%,39.0,+4.0%,86.6%,+7.4%,pos 4
+Shadow Fiend,SHADOWMIRE,59,0.0%,49.2,-9.5%,79.7%,+35.8%,pos 4
+Puck,CURVEBALL,6,0.0%,66.7,0.0%,6.8%,+24.0%,pos 4
+Razor,DYNAMO,11,0.0%,18.2,0.0%,16.9%,-17.0%,pos 4
+Tidehunter,KRAKEN SWELL,78,0.0%,52.6,+4.8%,41.1%,+16.0%,pos 4
+Wraith King,BONE GUARD,21,0.0%,33.3,0.0%,80.8%,-26.7%,pos 4
+Pugna,SIPHONING WARD,725,0.0%,49.5,+0.8%,94.0%,+12.6%,pos 4
+Luna,MOONSHIELD,10,0.0%,20.0,0.0%,47.6%,-16.4%,pos 4
+Chen,CENTAUR CONVERT,10,0.0%,60.0,0.0%,21.7%,-6.7%,pos 4
+Lycan,SPIRIT WOLVES,2,0.0%,0.0,0.0%,11.8%,-60.0%,pos 4
+Meepo,CODEPENDENT,5,0.0%,20.0,0.0%,15.2%,-1.4%,pos 4
+Visage,FAITHFUL FOLLOWERS,2,0.0%,0.0,0.0%,0.8%,-42.5%,pos 4
+Bristleback,SNOT ROCKET,169,0.0%,43.8,+7.1%,91.4%,+12.5%,pos 4
+Underlord,ABYSSAL HORDE,13,0.0%,53.8,0.0%,41.9%,-29.5%,pos 4
+Mars,BLOOD SPORT,95,0.0%,34.7,-3.6%,64.6%,-28.7%,pos 4
+Phoenix,HOTSPOT,255,-0.0%,50.2,-2.2%,11.9%,+1.2%,pos 4
+Lich,GROWING COLD,38,-0.1%,44.7,-14.3%,11.1%,0.0%,pos 4
+Silencer,IRREPRESSIBLE,92,-0.1%,38.0,+0.4%,2.9%,-12.8%,pos 4
+Warlock,CHAMPION OF GORROTH,79,-0.1%,48.1,0.0%,11.6%,+2.4%,pos 4
+Monkey King,SIMIAN STRIDE,550,-0.2%,41.3,+0.2%,89.7%,+14.3%,pos 4
+Dazzle,NOTHL BOON,221,-0.3%,51.1,+2.1%,16.8%,-0.1%,pos 4
+Earth Spirit,STEPPING STONE,61,-0.4%,52.5,+9.5%,6.0%,+12.5%,pos 4
+Skywrath Mage,SHIELD OF THE SCION,1076,-0.5%,48.4,+1.5%,80.1%,-0.6%,pos 4
+Zeus,DIVINE RAMPAGE,885,-0.5%,49.6,+0.7%,8.0%,-2.8%,pos 4
+Tiny,CRASH LANDING,893,-0.5%,52.1,+0.3%,89.9%,+15.1%,pos 4
+Tusk,DRINKING BUDDIES,145,-0.5%,46.2,0.0%,4.7%,-4.5%,pos 4
+Marci,BUDDY SYSTEM,93,-0.6%,40.9,+0.4%,1.7%,-5.3%,pos 4
+Shadow Shaman,MASSIVE SERPENT WARD,101,-0.6%,53.5,-2.9%,2.0%,-0.1%,pos 4
+Windranger,TANGLED,328,-0.8%,44.8,-1.5%,9.3%,-0.7%,pos 4
+Abaddon,THE QUICKENING,226,-0.8%,54.9,-0.2%,16.4%,+0.8%,pos 4
+Enchantress,OVERPROTECTIVE WISPS,107,-0.8%,44.9,-3.6%,35.2%,-4.4%,pos 4
+Mirana,LEAPS AND BOUNDS,150,-0.9%,46.7,-7.7%,2.5%,-5.7%,pos 4
+Disruptor,THUNDERSTORM,608,-1.0%,53.3,-4.8%,90.5%,-7.6%,pos 4
+Pudge,FRESH MEAT,2329,-1.1%,47.9,-0.1%,46.3%,+0.5%,pos 4
+Slark,DARK REEF RENEGADE,746,-1.2%,48.3,+2.7%,67.9%,-3.0%,pos 4
+Snapfire,RICOCHET II,171,-1.2%,46.8,-4.6%,16.9%,-3.7%,pos 4
+Faceless Void,TIME ZONE,1223,-1.3%,52.8,+1.7%,98.9%,+24.2%,pos 4
+Winter Wyvern,WINTERPROOF,336,-1.3%,53.9,-1.2%,8.1%,+0.2%,pos 4
+Ogre Magi,LEARNING CURVE,683,-1.4%,50.2,-2.8%,91.6%,+13.7%,pos 4
+Vengeful Spirit,SOUL STRIKE,232,-1.4%,48.3,-2.9%,51.3%,-8.5%,pos 4
+Dark Willow,SHATTERING CROWN,2537,-1.8%,50.9,-0.3%,54.6%,-1.0%,pos 4
+Night Stalker,VOIDBRINGER,23,-2.0%,43.5,-14.3%,0.9%,-9.7%,pos 4
+Timbersaw,SHREDDER,137,-2.0%,44.5,+9.0%,84.6%,+16.5%,pos 4
+Broodmother,FEEDING FRENZY,7,-2.1%,28.6,0.0%,8.2%,-2.2%,pos 4
+Ancient Apparition,BONE CHILL,844,-2.3%,50.2,+1.3%,53.4%,-1.5%,pos 4
+Spirit Breaker,BULL'S HIT,1039,-2.4%,49.7,+1.6%,20.3%,-4.1%,pos 4
+Oracle,CLAIRVOYANT CURE,181,-2.4%,48.1,0.0%,57.5%,-1.2%,pos 4
+Treant Protector,SAPLING,86,-2.6%,46.5,-9.5%,49.7%,+8.6%,pos 4
+Crystal Maiden,ARCANE OVERFLOW,117,-2.9%,41.9,+10.0%,15.5%,-10.9%,pos 4
+Grimstroke,FINE ART,621,-3.2%,48.3,-1.2%,57.0%,+1.0%,pos 4
+Phantom Lancer,LANCELOT,5,-3.6%,20.0,0.0%,41.7%,+20.0%,pos 4
+Storm Spirit,STATIC SLIDE,31,-3.6%,25.8,+4.8%,79.5%,-11.7%,pos 4
+Kez,SHADOWHAWK,17,-3.6%,11.8,0.0%,20.5%,-17.0%,pos 4
+Naga Siren,DELUGE,21,-4.8%,47.6,-14.3%,42.9%,+26.2%,pos 4
+Centaur Warrunner,HORSEPOWER,16,-4.8%,31.3,0.0%,22.5%,-34.2%,pos 4
+Viper,POISON BURST,92,-4.8%,40.2,+6.0%,78.6%,+0.2%,pos 4
+Dawnbreaker,TRAILBLAZER,135,-4.9%,43.0,+7.8%,29.0%,-11.0%,pos 4
+Weaver,SKITTERSTEP,1575,-5.0%,50.7,-0.1%,16.0%,+0.8%,pos 4
+Ember Spirit,CHAIN GANG,172,-5.6%,53.5,+1.4%,57.3%,+26.9%,pos 4
+Lina,THERMAL RUNAWAY,68,-6.0%,32.4,-4.8%,44.7%,-8.1%,pos 4
+Void Spirit,CALL OF THE VOID,34,-6.6%,38.2,-5.7%,52.3%,+6.0%,pos 4
+Axe,ONE MAN ARMY,60,-7.1%,36.7,+14.3%,70.6%,-3.3%,pos 4
+Spectre,FORSAKEN,25,-7.1%,24.0,0.0%,61.0%,+5.2%,pos 4
+Medusa,UNDULATION,23,-7.1%,26.1,0.0%,59.0%,+26.1%,pos 4
+Legion Commander,STONEHALL PLATE,38,-7.1%,23.7,-3.6%,58.5%,-13.4%,pos 4
+Pangolier,DOUBLE JUMP,38,-7.1%,31.6,-7.1%,49.4%,+5.9%,pos 4
+Kunkka,GROG BLOSSOM,42,-9.5%,31.0,-14.3%,80.8%,+11.0%,pos 4
+Lifestealer,GORESTORM,16,-9.5%,50.0,+14.3%,34.8%,+40.0%,pos 4
+Phantom Lancer,DIVERGENCE,7,-10.7%,0.0,0.0%,58.3%,-20.0%,pos 4
+Necrophos,PROFANE POTENCY,22,-14.3%,40.9,-14.3%,44.9%,+0.2%,pos 4
+Dark Seer,HEART OF BATTLE,31,-14.3%,41.9,-14.3%,35.2%,-8.9%,pos 4
+Drow Ranger,VANTAGE POINT,30,+14.3%,23.3,0.0%,56.6%,-24.5%,pos 5
+Brewmaster,DRUNKEN MASTER,8,+14.3%,62.5,0.0%,50.0%,+25.0%,pos 5
+Meepo,MORE MEEPO,10,+14.3%,40.0,0.0%,40.0%,-6.7%,pos 5
+Timbersaw,SHREDDER,106,+14.3%,41.5,+6.1%,96.4%,+16.5%,pos 5
+Pangolier,DOUBLE JUMP,9,+14.3%,33.3,+14.3%,40.9%,+17.9%,pos 5
+Mars,VICTORY FEAST,9,+14.3%,33.3,0.0%,29.0%,+19.7%,pos 5
+Tidehunter,KRILL EATER,88,+12.2%,43.2,0.0%,73.3%,-13.1%,pos 5
+Death Prophet,SPIRIT COLLECTOR,66,+10.1%,37.9,+2.4%,42.9%,-8.7%,pos 5
+Clinkz,ENGULFING STEP,64,+8.6%,39.1,+4.8%,68.8%,+4.6%,pos 5
+Juggernaut,BLADESTORM,26,+7.1%,42.3,0.0%,66.7%,+26.9%,pos 5
+Razor,THUNDERHEAD,59,+7.1%,55.9,+14.3%,77.6%,-2.9%,pos 5
+Ursa,GRUDGE BEARER,28,+7.1%,35.7,-14.3%,27.2%,-4.3%,pos 5
+Chaos Knight,IRRATIONALITY,45,+6.7%,73.3,+10.2%,39.8%,+32.6%,pos 5
+Hoodwink,GO NUTS,232,+5.8%,40.5,+0.8%,55.0%,-2.6%,pos 5
+Clinkz,SUPPRESSIVE FIRE,29,+5.7%,34.5,+7.1%,31.2%,-4.6%,pos 5
+Troll Warlord,INSENSITIVE,26,+5.7%,11.5,0.0%,33.3%,-5.8%,pos 5
+Spirit Breaker,BULL RUSH,603,+5.7%,49.6,+3.4%,79.6%,+1.8%,pos 5
+Faceless Void,CHRONOSPHERE,38,+5.4%,28.9,0.0%,8.6%,-24.9%,pos 5
+Storm Spirit,SHOCK COLLAR,6,+4.8%,0.0,0.0%,25.0%,-38.9%,pos 5
+Treant Protector,PRIMEVAL POWER,320,+4.3%,48.1,+3.0%,34.7%,-1.5%,pos 5
+Alchemist,SEED MONEY,206,+3.9%,38.8,-0.1%,16.3%,-14.7%,pos 5
+Anti-Mage,MANA THIRST,62,+3.7%,29.0,0.0%,64.6%,+8.4%,pos 5
+Lina,THERMAL RUNAWAY,28,+3.6%,50.0,-14.3%,49.1%,+22.4%,pos 5
+Terrorblade,SOUL FRAGMENT,16,+3.6%,50.0,+14.3%,9.5%,+13.8%,pos 5
+Winter Wyvern,RECURSIVE,6834,+3.3%,53.5,-0.6%,90.6%,-2.4%,pos 5
+Phantom Assassin,METHODICAL,199,+3.2%,31.2,+3.3%,84.0%,-3.1%,pos 5
+Weaver,HIVEMIND,2592,+3.1%,46.8,+1.5%,82.8%,-2.0%,pos 5
+Wraith King,SPECTRAL BLADE,10,+2.9%,30.0,0.0%,11.1%,-33.8%,pos 5
+Invoker,AGENT OF GALLARON,122,+2.8%,40.2,+1.4%,57.3%,-20.3%,pos 5
+Doom,GLUTTONY,193,+2.5%,52.3,+5.2%,83.9%,+32.3%,pos 5
+Omniknight,OMNIPRESENT,219,+2.3%,54.8,-6.1%,61.0%,+8.4%,pos 5
+Kez,FLUTTER,55,+2.0%,29.1,-4.8%,84.6%,-0.9%,pos 5
+Nature's Prophet,IRONWOOD TREANT,1320,+2.0%,44.8,+1.8%,89.7%,-6.1%,pos 5
+Dark Willow,THROWING SHADE,768,+1.9%,52.7,-5.1%,41.2%,+0.9%,pos 5
+Bounty Hunter,CUTPURSE,126,+1.8%,45.2,-7.7%,8.9%,-2.2%,pos 5
+Dazzle,POISON BLOOM,2596,+1.6%,52.3,-0.6%,71.9%,-3.5%,pos 5
+Earthshaker,TECTONIC BUILDUP,50,+1.5%,52.0,0.0%,16.0%,+1.6%,pos 5
+Huskar,INCENDIARY,211,+1.4%,39.8,+1.8%,77.6%,+13.6%,pos 5
+Abaddon,MEPHITIC SHROUD,4192,+1.3%,54.4,-0.1%,84.1%,+2.1%,pos 5
+Ancient Apparition,EXPOSURE,1973,+1.2%,53.8,+1.2%,42.0%,+0.8%,pos 5
+Dragon Knight,FROST DRAGON,44,+1.1%,38.6,0.0%,26.7%,+7.9%,pos 5
+Bristleback,SNOT ROCKET,195,+1.0%,41.0,-3.0%,94.2%,+24.4%,pos 5
+Skywrath Mage,STAFF OF THE SCION,68,+1.0%,35.3,+3.6%,19.7%,-9.5%,pos 5
+Pudge,ROTTEN CORE,1692,+0.9%,45.5,+0.9%,51.9%,-0.8%,pos 5
+Disruptor,THUNDERSTORM,3319,+0.8%,52.4,+0.0%,89.6%,+1.6%,pos 5
+Mirana,STARSTRUCK,4227,+0.7%,52.9,+0.7%,98.4%,+5.9%,pos 5
+Marci,PICK-ME-UP,2390,+0.7%,42.3,+0.5%,61.9%,+2.9%,pos 5
+Rubick,FRUGAL FILCH,708,+0.6%,43.1,-2.9%,43.1%,-6.2%,pos 5
+Jakiro,ICE BREAKER,15853,+0.6%,51.4,-0.3%,95.7%,+2.3%,pos 5
+Muerta,OFRENDA,69,+0.5%,24.6,0.0%,4.4%,-22.2%,pos 5
+Enchantress,OVERPROTECTIVE WISPS,255,+0.5%,41.6,-0.1%,33.0%,-0.7%,pos 5
+Undying,ROTTING MITTS,2799,+0.4%,51.2,-0.0%,86.1%,+3.2%,pos 5
+Tusk,TAG TEAM,2672,+0.3%,51.6,-1.5%,96.4%,+8.1%,pos 5
+Chaos Knight,CLOVEN CHAOS,27,+0.2%,40.7,+7.1%,23.9%,-32.6%,pos 5
+Marci,FLEETING FURY,1298,+0.2%,44.5,-0.9%,33.6%,+5.1%,pos 5
+Shadow Shaman,CHICKEN FINGERS,4582,+0.2%,52.0,+0.6%,97.4%,+13.8%,pos 5
+Phoenix,DYING LIGHT,1815,+0.1%,49.8,-0.6%,85.1%,+1.2%,pos 5
+Snapfire,FULL BORE,440,+0.1%,51.1,-5.1%,76.0%,+1.5%,pos 5
+Axe,ONE MAN ARMY,17,0.0%,35.3,0.0%,32.7%,-19.0%,pos 5
+Bloodseeker,ARTERIAL SPRAY,43,0.0%,25.6,-7.1%,91.5%,+25.6%,pos 5
+Shadow Fiend,LASTING PRESENCE,27,0.0%,29.6,0.0%,41.5%,-1.9%,pos 5
+Sand King,DUST DEVIL,2,0.0%,50.0,0.0%,18.2%,+5.6%,pos 5
+Sniper,GHILLIE SUIT,30,0.0%,26.7,+14.3%,15.5%,-14.8%,pos 5
+Beastmaster,WILD HUNT,11,0.0%,36.4,0.0%,40.7%,+23.9%,pos 5
+Luna,MOONSHIELD,52,0.0%,46.2,-1.4%,82.5%,+9.8%,pos 5
+Leshrac,CHRONOPTIC NOURISHMENT,30,0.0%,20.0,0.0%,3.0%,-27.8%,pos 5
+Outworld Devourer,OBSIDIAN DECIMATOR,8,0.0%,37.5,0.0%,44.4%,+7.5%,pos 5
+Lycan,PACK LEADER,0,0.0%,0.0,0.0%,0.0%,-16.7%,pos 5
+Lycan,ALPHA WOLVES,6,0.0%,16.7,0.0%,85.7%,+16.7%,pos 5
+Lone Druid,BEAR NECESSITIES,2,0.0%,0.0,0.0%,8.3%,-18.2%,pos 5
+Earth Spirit,STEPPING STONE,2,0.0%,50.0,0.0%,2.3%,+8.6%,pos 5
+Underlord,ABYSSAL HORDE,4,0.0%,25.0,0.0%,50.0%,+25.0%,pos 5
+Primal Beast,PROVOKE THE BEAST,7,0.0%,14.3,0.0%,31.8%,-25.7%,pos 5
+Shadow Fiend,SHADOWMIRE,38,-0.0%,31.6,-11.4%,58.5%,+1.9%,pos 5
+Warlock,CHAMPION OF GORROTH,668,-0.1%,48.5,-1.1%,5.6%,-1.6%,pos 5
+Snapfire,RICOCHET II,139,-0.1%,49.6,+2.4%,24.0%,-1.5%,pos 5
+Phoenix,HOTSPOT,319,-0.1%,48.6,-2.1%,14.9%,-1.2%,pos 5
+Shadow Shaman,MASSIVE SERPENT WARD,123,-0.2%,38.2,-5.4%,2.6%,-13.8%,pos 5
+Dragon Knight,CORROSIVE DRAGON,13,-0.2%,30.8,+7.1%,7.9%,-7.9%,pos 5
+Enigma,SPLITTING IMAGE,121,-0.2%,56.2,+4.3%,53.8%,+9.1%,pos 5
+Silencer,REVERBERATING SILENCE,8218,-0.3%,51.1,-0.2%,97.8%,+4.0%,pos 5
+Visage,DEATH TOLL,117,-0.4%,42.7,+3.1%,75.0%,+42.7%,pos 5
+Pugna,REWARDS OF RUIN,27,-0.5%,40.7,+2.4%,3.1%,-11.3%,pos 5
+Io,MEDIGUN,128,-0.6%,47.7,+6.6%,3.6%,-4.8%,pos 5
+Zeus,DIVINE RAMPAGE,421,-0.6%,50.4,-2.8%,5.5%,-1.4%,pos 5
+Magnus,ETERNAL EMPOWERMENT,192,-0.7%,38.5,-2.7%,22.5%,-12.0%,pos 5
+Mirana,LEAPS AND BOUNDS,68,-0.7%,47.1,-11.9%,1.6%,-5.9%,pos 5
+Batrider,ARSONIST,53,-0.8%,32.1,-2.4%,12.3%,-14.1%,pos 5
+Nyx Assassin,MANA BURN,69,-0.9%,44.9,-9.5%,27.0%,-1.1%,pos 5
+Marci,BUDDY SYSTEM,170,-0.9%,39.4,-0.3%,4.4%,-5.1%,pos 5
+Dragon Knight,FIRE DRAGON,108,-0.9%,33.3,+2.9%,65.5%,-5.3%,pos 5
+Witch Doctor,HEADHUNTER,1473,-1.0%,48.6,+0.1%,89.8%,+5.5%,pos 5
+Invoker,MIND OF TORNARUS,43,-1.0%,60.5,-0.0%,20.2%,+20.9%,pos 5
+Clockwerk,HOOKUP,71,-1.2%,50.7,-1.2%,2.3%,-1.4%,pos 5
+Chen,TROLL CONVERT,40,-1.2%,42.5,-5.7%,6.9%,-13.5%,pos 5
+Doom,IMPENDING DOOM,10,-1.2%,20.0,0.0%,4.3%,-32.3%,pos 5
+Abaddon,THE QUICKENING,795,-1.3%,52.3,+1.7%,15.9%,-2.1%,pos 5
+Huskar,CAUTERIZE,61,-1.4%,26.2,-1.2%,22.4%,-13.6%,pos 5
+Earthshaker,SLUGGER,262,-1.5%,50.4,-2.4%,84.0%,-1.6%,pos 5
+Dazzle,NOTHL BOON,1015,-1.6%,55.8,-0.3%,28.1%,+3.5%,pos 5
+Lifestealer,GORESTORM,10,-1.8%,30.0,0.0%,3.8%,-3.2%,pos 5
+Bounty Hunter,THROUGH AND THROUGH,1283,-1.8%,47.5,+2.3%,91.1%,+2.2%,pos 5
+Dark Willow,SHATTERING CROWN,1095,-1.9%,51.9,+1.3%,58.8%,-0.9%,pos 5
+Nature's Prophet,SOOTHING SAPLINGS,151,-2.0%,51.0,+6.0%,10.3%,+6.1%,pos 5
+Templar Assassin,HIDDEN REACH,92,-2.1%,30.4,+9.5%,72.4%,+16.1%,pos 5
+Lion,FIST OF DEATH,768,-2.4%,49.3,-2.4%,23.4%,-1.2%,pos 5
+Wraith King,BONE GUARD,80,-2.9%,63.7,+4.8%,88.9%,+33.8%,pos 5
+Slark,DARK REEF RENEGADE,296,-2.9%,54.4,-0.7%,53.7%,+18.3%,pos 5
+Phantom Assassin,SWEET RELEASE,38,-3.2%,34.2,0.0%,16.0%,+3.1%,pos 5
+Winter Wyvern,WINTERPROOF,707,-3.3%,55.9,-0.9%,9.4%,+2.4%,pos 5
+Queen of Pain,MASOCHIST,52,-3.6%,38.5,-4.8%,59.8%,-21.5%,pos 5
+Monkey King,SIMIAN STRIDE,157,-3.6%,31.8,0.0%,80.9%,-3.3%,pos 5
+Tiny,CRASH LANDING,203,-3.7%,49.8,-1.4%,40.9%,+17.3%,pos 5
+Dawnbreaker,STARSURGE,98,-4.0%,50.0,+2.4%,31.5%,-5.4%,pos 5
+Chen,HELLBEAR CONVERT,76,-4.4%,35.5,-2.6%,13.1%,-20.5%,pos 5
+Gyrocopter,SECONDARY STRIKES,245,-4.5%,48.6,-2.0%,60.6%,+2.7%,pos 5
+Faceless Void,TIME ZONE,403,-5.4%,53.8,-1.0%,91.4%,+24.9%,pos 5
+Spirit Breaker,BULL'S HIT,155,-5.7%,47.7,-5.7%,20.4%,-1.8%,pos 5
+Night Stalker,VOIDBRINGER,12,-5.7%,58.3,-7.1%,2.0%,+8.4%,pos 5
+Arc Warden,POWER CAPTURE,16,-5.7%,43.8,-7.1%,27.6%,-3.9%,pos 5
+Spectre,TWIST THE KNIFE,39,-6.7%,46.2,0.0%,45.9%,+20.1%,pos 5
+Ringmaster,SIDESHOW SECRETS,436,-7.1%,43.6,+1.4%,16.9%,-7.1%,pos 5
+Dark Seer,QUICK WIT,14,-7.1%,42.9,0.0%,60.9%,-12.7%,pos 5
+Broodmother,FEEDING FRENZY,5,-7.1%,0.0,0.0%,10.9%,-26.8%,pos 5
+Legion Commander,STONEHALL PLATE,14,-7.1%,28.6,-14.3%,48.3%,+1.9%,pos 5
+Naga Siren,RIP TIDE,37,-7.3%,35.1,+8.6%,38.9%,-6.2%,pos 5
+Death Prophet,MOURNING RITUAL,88,-10.1%,46.6,+3.8%,57.1%,+8.7%,pos 5
+Tidehunter,KRAKEN SWELL,32,-12.2%,56.3,0.0%,26.7%,+13.1%,pos 5
+Puck,JOSTLING RIFT,21,-14.3%,33.3,0.0%,87.5%,0.0%,pos 5
+Kunkka,GROG BLOSSOM,28,-14.3%,46.4,0.0%,87.5%,+46.4%,pos 5
+Beastmaster,BEAST MODE,16,-14.3%,12.5,0.0%,59.3%,-23.9%,pos 5
+Centaur Warrunner,COUNTER-STRIKE,15,-14.3%,53.3,-14.3%,62.5%,-2.2%,pos 5
+Ember Spirit,DOUBLE IMPACT,35,-14.3%,25.7,-3.6%,43.8%,-12.1%,pos 5
+Void Spirit,CALL OF THE VOID,24,-14.3%,54.2,-14.3%,46.2%,+25.6%,pos 5
+Necrophos,PROFANE POTENCY,9,+14.3%,22.2,+14.3%,60.0%,-11.1%,pos 5
+Lone Druid,BEAR WITH ME,22,+14.3%,18.2,0.0%,91.7%,+18.2%,pos 5
+Centaur Warrunner,HORSEPOWER,9,+14.3%,55.6,0.0%,37.5%,+2.2%,pos 5
+Ember Spirit,CHAIN GANG,45,+14.3%,37.8,0.0%,56.3%,+12.1%,pos 5
+Void Spirit,SANCTUARY,28,+14.3%,28.6,0.0%,53.8%,-25.6%,pos 5
+Medusa,ENGORGED,31,+12.7%,87.1,+14.3%,31.0%,+65.2%,pos 5
+Keeper of the Light,SOLAR BIND,174,+11.1%,32.8,+2.0%,56.5%,-17.2%,pos 5
+Earth Spirit,RESONANCE,29,+9.5%,41.4,+14.3%,33.3%,-8.6%,pos 5
+Naga Siren,DELUGE,58,+7.3%,41.4,+7.1%,61.1%,+6.2%,pos 5
+Juggernaut,BLADEFORM,13,+7.1%,15.4,0.0%,33.3%,-26.9%,pos 5
+Broodmother,NECROTIC WEBS,41,+7.1%,26.8,-7.1%,89.1%,+26.8%,pos 5
+Ringmaster,CARNY CLASSICS,2143,+7.1%,50.7,-0.9%,83.1%,+7.1%,pos 5
+Spectre,FORSAKEN,46,+6.7%,26.1,+3.6%,54.1%,-20.1%,pos 5
+Slardar,BRINEGUARD,8,+5.7%,37.5,+7.1%,17.4%,+0.7%,pos 5
+Night Stalker,NIGHT REIGN,591,+5.7%,49.9,-11.9%,98.0%,-8.4%,pos 5
+Arc Warden,RUNED REPLICA,42,+5.7%,47.6,+4.8%,72.4%,+3.9%,pos 5
+Phantom Lancer,DIVERGENCE,43,+5.4%,65.1,+14.3%,56.6%,+50.0%,pos 5
+Techies,SPLEEN'S SECRET SAUCE,652,+5.3%,43.7,+1.6%,67.8%,-12.4%,pos 5
+Gyrocopter,AFTERBURNER,159,+4.5%,45.9,+2.0%,39.4%,-2.7%,pos 5
+Dawnbreaker,SOLAR CHARGED,92,+4.0%,54.3,+5.7%,29.6%,+4.3%,pos 5
+Tiny,INSURMOUNTABLE,293,+3.7%,32.4,-10.2%,59.1%,-17.3%,pos 5
+Chen,CENTAUR CONVERT,150,+3.6%,56.0,+1.0%,25.9%,+20.5%,pos 5
+Queen of Pain,BONDAGE,35,+3.6%,60.0,-14.3%,40.2%,+21.5%,pos 5
+Monkey King,WUKONG'S FAITHFUL,37,+3.6%,35.1,0.0%,19.1%,+3.3%,pos 5
+Vengeful Spirit,AVENGING MISSILE,195,+3.2%,42.6,+2.6%,50.0%,+2.6%,pos 5
+Keeper of the Light,RECALL,134,+3.2%,50.0,0.0%,43.5%,+17.2%,pos 5
+Slark,LEECHING LEASH,255,+2.9%,36.1,-1.0%,46.3%,-18.3%,pos 5
+Viper,POISON BURST,135,+2.9%,49.6,+2.4%,87.7%,+12.8%,pos 5
+Morphling,FLOW,55,+2.6%,45.5,+10.2%,20.8%,+19.1%,pos 5
+Lion,ESSENCE EATER,2508,+2.4%,50.6,-2.7%,76.6%,+1.2%,pos 5
+Templar Assassin,VOIDBLADES,28,+2.1%,21.4,0.0%,22.0%,-9.0%,pos 5
+Chen,SATYR CONVERT,313,+2.0%,46.0,+2.9%,54.1%,+10.5%,pos 5
+Oracle,CLAIRVOYANT CURSE,352,+2.0%,51.1,-3.4%,19.5%,-2.0%,pos 5
+Shadow Demon,SHADOW SERVANT,126,+1.8%,46.0,+4.8%,13.7%,-3.1%,pos 5
+Lifestealer,FLESHFEAST,250,+1.8%,33.2,-5.6%,96.2%,+3.2%,pos 5
+Venomancer,PATIENT ZERO,710,+1.6%,52.0,+1.7%,54.4%,+5.8%,pos 5
+Bane,SLEEPWALK,685,+1.5%,50.5,+3.5%,41.6%,-2.9%,pos 5
+Sven,WRATH OF GOD,99,+1.3%,39.4,-14.3%,37.4%,-19.6%,pos 5
+Elder Titan,DECONSTRUCTION,1043,+1.3%,55.3,+1.3%,93.0%,+0.2%,pos 5
+Clockwerk,EXPANDED ARMATURE,2955,+1.2%,52.1,+0.2%,97.7%,+1.4%,pos 5
+Crystal Maiden,GLACIAL GUARD,5913,+1.1%,51.6,+0.0%,91.0%,+7.1%,pos 5
+Witch Doctor,CLEFT DEATH,167,+1.0%,43.1,0.0%,10.2%,-5.5%,pos 5
+Tinker,TRANSLOCATOR,75,+0.9%,40.0,-2.9%,3.2%,-11.9%,pos 5
+Nyx Assassin,SCUTTLE,187,+0.9%,46.0,-4.0%,73.0%,+1.1%,pos 5
+Batrider,STOKED,379,+0.8%,46.2,-2.0%,87.7%,+14.1%,pos 5
+Riki,EXTERMINATOR,188,+0.7%,35.1,+3.8%,50.3%,-2.0%,pos 5
+Magnus,DIMINISHING RETURN,663,+0.7%,50.5,+0.9%,77.5%,+12.0%,pos 5
+Zeus,LIVEWIRE,7286,+0.6%,51.8,-0.6%,94.5%,+1.4%,pos 5
+Io,KRITZKRIEG,3432,+0.6%,52.5,-0.2%,96.4%,+4.8%,pos 5
+Pugna,SIPHONING WARD,842,+0.5%,52.0,+1.3%,96.9%,+11.3%,pos 5
+Visage,SEPULCHRE,39,+0.4%,38.5,-3.6%,25.0%,+38.5%,pos 5
+Silencer,IRREPRESSIBLE,189,+0.3%,47.1,+4.8%,2.2%,-4.0%,pos 5
+Enigma,EVENT HORIZON,104,+0.2%,47.1,-1.2%,46.2%,-9.1%,pos 5
+Grimstroke,INKSTIGATE,413,+0.2%,44.6,-0.5%,63.1%,+1.0%,pos 5
+Ogre Magi,FAT CHANCE,121,+0.2%,40.5,-6.2%,3.8%,-9.6%,pos 5
+Windranger,KILLSHOT,900,+0.2%,46.2,-1.3%,87.4%,+3.1%,pos 5
+Lich,FROSTBOUND,1670,+0.1%,50.4,+0.2%,89.3%,+10.6%,pos 5
+Warlock,BLACK GRIMOIRE,11228,+0.1%,50.1,-0.6%,94.4%,+1.6%,pos 5
+Axe,CALL OUT,35,0.0%,54.3,0.0%,67.3%,+19.0%,pos 5
+Bloodseeker,BLOODRUSH,4,0.0%,0.0,0.0%,8.5%,-25.6%,pos 5
+Puck,CURVEBALL,3,0.0%,33.3,0.0%,12.5%,0.0%,pos 5
+Kunkka,HIGH TIDE,4,0.0%,0.0,0.0%,12.5%,-46.4%,pos 5
+Sniper,SCATTERSHOT,164,0.0%,41.5,+8.6%,84.5%,+14.8%,pos 5
+Templar Assassin,REFRACTOR,7,0.0%,14.3,0.0%,5.5%,-16.1%,pos 5
+Luna,MOONSTORM,11,0.0%,36.4,0.0%,17.5%,-9.8%,pos 5
+Leshrac,MISANTHROPY,975,0.0%,47.8,+2.8%,97.0%,+27.8%,pos 5
+Outworld Devourer,OVERWHELMING DEVOURER,10,0.0%,30.0,0.0%,55.6%,-7.5%,pos 5
+Lycan,SPIRIT WOLVES,1,0.0%,0.0,0.0%,14.3%,-16.7%,pos 5
+Brewmaster,ROLL OUT THE BARREL,8,0.0%,37.5,0.0%,50.0%,-25.0%,pos 5
+Visage,FAITHFUL FOLLOWERS,0,0.0%,0.0,0.0%,0.0%,-42.7%,pos 5
+Underlord,DEMON'S REACH,4,0.0%,0.0,0.0%,50.0%,-25.0%,pos 5
+Mars,BLOOD SPORT,22,0.0%,13.6,0.0%,71.0%,-19.7%,pos 5
+Primal Beast,FEROCITY,15,0.0%,40.0,0.0%,68.2%,+25.7%,pos 5
+Dawnbreaker,TRAILBLAZER,121,-0.0%,55.4,-1.4%,38.9%,+5.4%,pos 5
+Alchemist,MIXOLOGIST,51,-0.1%,47.1,-14.3%,4.0%,+8.2%,pos 5
+Lich,GROWING COLD,201,-0.1%,39.8,+3.2%,10.7%,-10.6%,pos 5
+Windranger,TANGLED,130,-0.2%,43.1,-4.2%,12.6%,-3.1%,pos 5
+Ogre Magi,LEARNING CURVE,3076,-0.2%,50.1,+0.6%,96.2%,+9.6%,pos 5
+Grimstroke,FINE ART,241,-0.2%,43.6,-2.7%,36.9%,-1.0%,pos 5
+Tusk,DRINKING BUDDIES,101,-0.3%,43.6,-14.3%,3.6%,-8.1%,pos 5
+Undying,RIPPED,450,-0.4%,48.0,-1.1%,13.9%,-3.2%,pos 5
+Enchantress,SPELLBOUND,518,-0.5%,42.3,+2.5%,67.0%,+0.7%,pos 5
+Muerta,DANCE OF THE DEAD,1516,-0.5%,46.8,-0.6%,95.6%,+22.2%,pos 5
+Jakiro,TWIN TERROR,712,-0.6%,49.2,-3.2%,4.3%,-2.3%,pos 5
+Rubick,ARCANE ACCUMULATION,935,-0.6%,49.3,+3.5%,56.9%,+6.2%,pos 5
+Riki,CONTRACT KILLER,186,-0.7%,37.1,-2.3%,49.7%,+2.0%,pos 5
+Techies,SQUEE'S SCOPE,41,-0.8%,56.1,+10.7%,4.3%,+15.2%,pos 5
+Disruptor,KINETIC FENCE,384,-0.8%,50.8,+1.2%,10.4%,-1.6%,pos 5
+Pudge,FRESH MEAT,1565,-0.9%,46.3,-2.0%,48.1%,+0.8%,pos 5
+Tinker,REPAIR BOTS,2239,-0.9%,51.9,+1.1%,96.8%,+11.9%,pos 5
+Skywrath Mage,SHIELD OF THE SCION,277,-1.0%,44.8,+2.0%,80.3%,+9.5%,pos 5
+Bristleback,SEEING RED,12,-1.0%,16.7,-7.1%,5.8%,-24.4%,pos 5
+Crystal Maiden,ARCANE OVERFLOW,586,-1.1%,44.5,-0.5%,9.0%,-7.1%,pos 5
+Ancient Apparition,BONE CHILL,2725,-1.2%,53.0,+0.1%,58.0%,-0.8%,pos 5
+Doom,DEVIL'S BARGAIN,27,-1.2%,44.4,-14.3%,11.7%,+24.4%,pos 5
+Elder Titan,MOMENTUM,78,-1.3%,55.1,-4.8%,7.0%,-0.2%,pos 5
+Sven,HEAVY PLATE,166,-1.3%,59.0,+3.3%,62.6%,+19.6%,pos 5
+Bane,DREAM STALKER,963,-1.5%,53.4,+1.5%,58.4%,+2.9%,pos 5
+Venomancer,PLAGUE CARRIER,595,-1.6%,46.2,-0.2%,45.6%,-5.8%,pos 5
+Medusa,VENOMOUS VOLLEY,32,-1.6%,21.9,0.0%,32.0%,-65.2%,pos 5
+Invoker,SCHOLAR OF KORYX,48,-1.8%,39.6,-1.4%,22.5%,-20.9%,pos 5
+Shadow Demon,PROMULGATE,793,-1.8%,49.2,+0.8%,86.3%,+3.1%,pos 5
+Oracle,CLAIRVOYANT CURE,1456,-2.0%,53.1,+1.7%,80.5%,+2.0%,pos 5
+Kez,SHADOWHAWK,10,-2.0%,30.0,0.0%,15.4%,+0.9%,pos 5
+Omniknight,HEALING HAMMER,140,-2.3%,46.4,-7.1%,39.0%,-8.4%,pos 5
+Morphling,EBB,209,-2.6%,26.3,+2.5%,79.2%,-19.1%,pos 5
+Viper,CAUSTIC BATH,19,-2.9%,36.8,0.0%,12.3%,-12.8%,pos 5
+Weaver,SKITTERSTEP,537,-3.1%,48.8,-2.6%,17.2%,+2.0%,pos 5
+Vengeful Spirit,SOUL STRIKE,195,-3.2%,40.0,+0.5%,50.0%,-2.6%,pos 5
+Lina,SLOW BURN,29,-3.6%,27.6,-9.5%,50.9%,-22.4%,pos 5
+Terrorblade,CONDEMNED,152,-3.6%,36.2,+2.4%,90.5%,-13.8%,pos 5
+Anti-Mage,MAGEBANE'S MIRROR,34,-3.7%,20.6,-7.1%,35.4%,-8.4%,pos 5
+Alchemist,DIVIDENDS,1009,-3.9%,53.5,-2.2%,79.7%,+14.7%,pos 5
+Treant Protector,SAPLING,601,-4.3%,49.6,-0.6%,65.3%,+1.5%,pos 5
+Techies,SPOON'S STASH,269,-4.5%,40.9,+2.8%,28.0%,-15.2%,pos 5
+Storm Spirit,STATIC SLIDE,18,-4.8%,38.9,+7.1%,75.0%,+38.9%,pos 5
+Phantom Lancer,LANCELOT,33,-5.4%,15.2,-1.4%,43.4%,-50.0%,pos 5
+Slardar,LEG DAY,38,-5.7%,36.8,+7.1%,82.6%,-0.7%,pos 5
+Troll Warlord,BAD INFLUENCE,52,-5.7%,17.3,+4.8%,66.7%,+5.8%,pos 5
+Hoodwink,HIPSHOT,190,-5.8%,43.2,-3.3%,45.0%,+2.6%,pos 5
+Chaos Knight,FUNDAMENTAL FORGING,41,-6.9%,51.2,-3.6%,36.3%,-22.1%,pos 5
+Razor,DYNAMO,17,-7.1%,58.8,0.0%,22.4%,+2.9%,pos 5
+Dark Seer,HEART OF BATTLE,9,-7.1%,55.6,-14.3%,39.1%,+12.7%,pos 5
+Ursa,BEAR DOWN,75,-7.1%,40.0,0.0%,72.8%,+4.3%,pos 5
+Legion Commander,SPOILS OF WAR,15,-7.1%,26.7,-14.3%,51.7%,-1.9%,pos 5
+Earth Spirit,READY TO ROLL,56,-9.5%,48.2,0.0%,64.4%,+6.8%,pos 5
+Medusa,UNDULATION,37,-11.1%,56.8,-4.1%,37.0%,+34.9%,pos 5
+Drow Ranger,SIDESTEP,23,-14.3%,47.8,-14.3%,43.4%,+24.5%,pos 5
+Sand King,SANDSHROUD,9,-14.3%,44.4,-7.1%,81.8%,-5.6%,pos 5
+Necrophos,RAPID DECAY,6,-14.3%,33.3,0.0%,40.0%,+11.1%,pos 5
+Meepo,CODEPENDENT,15,-14.3%,46.7,0.0%,60.0%,+6.7%,pos 5
+Timbersaw,TWISTED CHAKRAM,4,-14.3%,25.0,0.0%,3.6%,-16.5%,pos 5
+Pangolier,THUNDERBOLT,13,-14.3%,15.4,-7.1%,59.1%,-17.9%,pos 5
