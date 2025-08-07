@@ -1,58 +1,177 @@
-import subprocess
+"""
+Основной скрипт для запуска Dota 2 Data Scraper
+"""
+
 import argparse
 import sys
+import logging
+from typing import Optional
 
-# Проверка используемого Python-интерпретатора
-print(f"Используется Python: {sys.executable}")
+from modules.scrapers.hero_scraper import HeroScraper
+from modules.scrapers.facet_scraper import FacetScraper
+from modules.core.data_manager import DataManager
+from modules.core.config_processor import ConfigProcessor
 
-# Проверка установки Selenium в текущем окружении
-try:
-    import selenium
-    print(f"Selenium установлен, версия: {selenium.__version__}")
-except ImportError:
-    print("❌ Selenium не найден. Установите его с помощью 'pip install selenium'.")
-    sys.exit(1)
+# Настройка логирования
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+logger = logging.getLogger(__name__)
 
-def run_script(script_name):
-    """Функция для запуска указанного скрипта с использованием текущего интерпретатора Python."""
-    python_executable = sys.executable  # Используем текущий интерпретатор из виртуального окружения
+
+def check_dependencies():
+    """Проверка зависимостей"""
     try:
-        result = subprocess.run(
-            [python_executable, "-m", script_name],
-            text=True,
-            stdout=subprocess.PIPE,  # Подавляем вывод в консоль
-            stderr=subprocess.PIPE  # Перехватываем ошибки
+        import selenium
+
+        logger.info(f"Selenium установлен, версия: {selenium.__version__}")
+        return True
+    except ImportError:
+        logger.error(
+            "❌ Selenium не найден. Установите его с помощью 'pip install selenium'."
         )
-        if result.returncode == 0:
-            print(f"✅ {script_name} выполнен успешно.")
+        return False
+
+
+def run_heroes_scraping() -> bool:
+    """Запуск скрапинга героев"""
+    try:
+        logger.info("Запуск скрапинга героев...")
+        scraper = HeroScraper()
+        data_manager = DataManager()
+
+        # Сбор данных
+        heroes_df = scraper.scrape_heroes_data()
+
+        if not heroes_df.empty:
+            # Сохранение данных
+            success = data_manager.save_dataframe(heroes_df, "heroes_data.csv")
+            if success:
+                logger.info("✅ Скрапинг героев завершен успешно")
+                return True
+            else:
+                logger.error("❌ Ошибка при сохранении данных героев")
+                return False
         else:
-            print(f"❌ Ошибка при выполнении {script_name}:\n{result.stderr}")
+            logger.error("❌ Не удалось собрать данные героев")
+            return False
+
     except Exception as e:
-        print(f"❌ Ошибка при запуске {script_name}: {e}")
+        logger.error(f"❌ Ошибка при скрапинге героев: {e}")
+        return False
 
-# Настройка аргументов командной строки
-parser = argparse.ArgumentParser(description="Запуск скриптов обработки данных")
-parser.add_argument("--scraper", action="store_true", help="Запуск run_scraper.py")
-parser.add_argument("--facets", action="store_true", help="Запуск run_facet_scraper.py")
-parser.add_argument("--config", action="store_true", help="Запуск run_config_processor.py")
 
-args = parser.parse_args()
+def run_facets_scraping() -> bool:
+    """Запуск скрапинга фасетов"""
+    try:
+        logger.info("Запуск скрапинга фасетов...")
+        scraper = FacetScraper()
+        data_manager = DataManager()
 
-# Определяем, какой скрипт запускать
-if args.scraper:
-    run_script("scripts.run_scraper")
-elif args.facets:
-    run_script("scripts.run_facet_scraper")
-elif args.config:
-    run_script("scripts.run_config_processor")
-else:
-    print("Запуск всех скриптов по порядку...")
-    scripts = [
-        "scripts.run_scraper",
-        "scripts.run_facet_scraper",
-        "scripts.run_config_processor",
-    ]
-    for script in scripts:
-        run_script(script)
+        # Сбор данных
+        facets_df = scraper.scrape_facets_data()
 
-print("Все процессы завершены.")
+        if not facets_df.empty:
+            # Сохранение данных
+            success = data_manager.save_dataframe(facets_df, "facets_data.csv")
+            if success:
+                logger.info("✅ Скрапинг фасетов завершен успешно")
+                return True
+            else:
+                logger.error("❌ Ошибка при сохранении данных фасетов")
+                return False
+        else:
+            logger.error("❌ Не удалось собрать данные фасетов")
+            return False
+
+    except Exception as e:
+        logger.error(f"❌ Ошибка при скрапинге фасетов: {e}")
+        return False
+
+
+def run_config_processing() -> bool:
+    """Запуск обработки конфигураций"""
+    try:
+        logger.info("Запуск обработки конфигураций...")
+        processor = ConfigProcessor()
+
+        # Обработка данных
+        success = processor.process_all_data()
+        if success:
+            logger.info("✅ Обработка конфигураций завершена успешно")
+            return True
+        else:
+            logger.error("❌ Ошибка при обработке конфигураций")
+            return False
+
+    except Exception as e:
+        logger.error(f"❌ Ошибка при обработке конфигураций: {e}")
+        return False
+
+
+def main():
+    """Основная функция"""
+    # Проверка зависимостей
+    if not check_dependencies():
+        sys.exit(1)
+
+    # Настройка аргументов командной строки
+    parser = argparse.ArgumentParser(description="Dota 2 Data Scraper")
+    parser.add_argument("--heroes", action="store_true", help="Запуск скрапинга героев")
+    parser.add_argument(
+        "--facets", action="store_true", help="Запуск скрапинга фасетов"
+    )
+    parser.add_argument(
+        "--config", action="store_true", help="Запуск обработки конфигураций"
+    )
+    parser.add_argument("--all", action="store_true", help="Запуск всех процессов")
+
+    args = parser.parse_args()
+
+    success_count = 0
+    total_count = 0
+
+    # Определяем, какие процессы запускать
+    if args.heroes:
+        total_count += 1
+        if run_heroes_scraping():
+            success_count += 1
+    elif args.facets:
+        total_count += 1
+        if run_facets_scraping():
+            success_count += 1
+    elif args.config:
+        total_count += 1
+        if run_config_processing():
+            success_count += 1
+    elif args.all or not any([args.heroes, args.facets, args.config]):
+        # Запуск всех процессов
+        logger.info("Запуск всех процессов...")
+
+        total_count += 1
+        if run_heroes_scraping():
+            success_count += 1
+
+        total_count += 1
+        if run_facets_scraping():
+            success_count += 1
+
+        total_count += 1
+        if run_config_processing():
+            success_count += 1
+
+    # Итоговый отчет
+    logger.info(f"Все процессы завершены. Успешно: {success_count}/{total_count}")
+
+    if success_count == total_count:
+        logger.info("✅ Все процессы выполнены успешно!")
+        return 0
+    else:
+        logger.error(
+            f"❌ {total_count - success_count} процессов завершились с ошибками"
+        )
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())

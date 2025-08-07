@@ -3,6 +3,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
 import time
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def select_period_8_days(driver):
@@ -16,7 +19,7 @@ def select_period_8_days(driver):
         bool: True если период успешно выбран, False в противном случае
     """
     try:
-        print("Выбираем период '8 days'...")
+        logger.info("Выбираем период '8 days'...")
 
         # Ждем появления селектора периода (4-й селектор с опциями периода)
         wait = WebDriverWait(driver, 10)
@@ -40,10 +43,10 @@ def select_period_8_days(driver):
         select = Select(period_select)
         select.select_by_value("8")
 
-        print("Период '8 days' выбран")
+        logger.info("Период '8 days' выбран")
         time.sleep(2)  # Даем время на обновление данных
         return True
 
     except Exception as e:
-        print(f"Ошибка при выборе периода: {e}")
+        logger.error(f"Ошибка при выборе периода: {e}")
         return False
