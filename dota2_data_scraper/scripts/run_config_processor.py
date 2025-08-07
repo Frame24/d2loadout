@@ -96,7 +96,7 @@ config = {
             df_final_facets, "Facet Matches>50", data_type="facet"
         ).build_config(matches_threshold=50, wr_threshold=51),
         # Регулярные конфигурации
-        HeroConfigProcessor(df_final, "Win Rate", data_type="regular").build_config(
+        HeroConfigProcessor(df_final, "WR", data_type="regular").build_config(
             matches_threshold=200, wr_threshold=51
         ),
         HeroConfigProcessor(df_final, "D2PT", data_type="regular").build_config(

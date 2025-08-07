@@ -56,7 +56,10 @@ class HeroConfigProcessor:
         filtered_df = self.df[
             (self.df["Role"] == position_str)
             & (self.df["Matches"] > matches_threshold)
-            & (self.df["Win Rate"] > wr_threshold)
+            & (
+                self.df["Win Rate" if "Win Rate" in self.df.columns else "WR"]
+                > wr_threshold
+            )
         ]
 
         # Дополнительные фильтры

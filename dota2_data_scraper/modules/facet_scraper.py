@@ -8,7 +8,10 @@ import logging
 from selenium.webdriver.common.by import By
 
 # Настройка логирования
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
 
 def fetch_facet_data(hero_url):
     """
@@ -24,7 +27,7 @@ def fetch_facet_data(hero_url):
         return None
 
     # Регулярное выражение для извлечения объекта facetData
-    pattern = r'facetData:\s*({.*?})\s*\}\s*,'
+    pattern = r"facetData:\s*({.*?})\s*\}\s*,"
     match = re.findall(pattern, html_text, re.DOTALL)
 
     if not match:
@@ -44,6 +47,7 @@ def fetch_facet_data(hero_url):
     except Exception as e:
         logging.error(f"Ошибка при обработке JS: {e}")
         return None
+
 
 def process_facet_data(facet_data):
     """
@@ -73,12 +77,11 @@ def process_facet_data(facet_data):
         all_facets_df = pd.concat([all_facets_df, facets_df], ignore_index=True)
 
     # Перенумерация facet_number
-    all_facets_df["facet_number"] = (
-        all_facets_df.groupby(["key", "id"]).cumcount() + 1
-    )
+    all_facets_df["facet_number"] = all_facets_df.groupby(["key", "id"]).cumcount() + 1
 
     logging.info("Обработка завершена.")
     return all_facets_df
+
 
 def get_d2pt_page_table_facets(driver):
     """
@@ -88,12 +91,19 @@ def get_d2pt_page_table_facets(driver):
     time.sleep(0.2)
 
     # Извлекаем строки таблицы с сайта
-    category_name_elements = driver.find_elements(By.CSS_SELECTOR, ".flex.bg-d2pt-gray-3.gap-1")
-    category_name_elements += driver.find_elements(By.CSS_SELECTOR, ".flex.bg-d2pt-gray-4.gap-1")
+    category_name_elements = driver.find_elements(
+        By.CSS_SELECTOR, ".flex.bg-d2pt-gray-3.gap-1"
+    )
+    category_name_elements += driver.find_elements(
+        By.CSS_SELECTOR, ".flex.bg-d2pt-gray-4.gap-1"
+    )
 
     hero_rows = [item.text.split("\n") for item in category_name_elements]
     hero_columns = [
-        item for item in driver.find_element(By.CSS_SELECTOR, ".flex.gap-1.font-medium.text-sm.mb-1").text.split("\n")
+        item
+        for item in driver.find_element(
+            By.CSS_SELECTOR, ".flex.gap-1.font-medium.text-sm.mb-1"
+        ).text.split("\n")
         if item != "Trend"
     ]
 
@@ -101,17 +111,64 @@ def get_d2pt_page_table_facets(driver):
     df_heroes_table = pd.DataFrame(data=hero_rows, columns=hero_columns)
     df_heroes_table = df_heroes_table.convert_dtypes()
     df_heroes_table = df_heroes_table.round(1)
-    
+
     logging.info("Извлечение таблицы завершено.")
     return df_heroes_table
+
 
 def click_position(driver, position_xpath):
     """
     Нажимает на вкладку с указанной позицией на сайте.
     """
     logging.info(f"Клик по вкладке: {position_xpath}")
-    driver.find_element(By.XPATH, position_xpath).click()
+
+    # Обработка диалогового окна перед кликом
+    try:
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
+        from selenium.webdriver.common.by import By
+
+        # Ждем появления диалогового окна
+        wait = WebDriverWait(driver, 3)
+
+        # Пытаемся найти и закрыть диалоговое окно
+        dialog_overlay = wait.until(
+            EC.presence_of_element_located((By.CLASS_NAME, "fc-dialog-overlay"))
+        )
+        logging.info("Найдено диалоговое окно, пытаемся закрыть...")
+
+        # Ищем кнопку закрытия или принятия
+        try:
+            # Пытаемся найти кнопку "Accept" или "OK"
+            accept_button = driver.find_element(
+                By.XPATH,
+                "//button[contains(text(), 'Accept') or contains(text(), 'OK') or contains(text(), 'Got it')]",
+            )
+            accept_button.click()
+            logging.info("Диалоговое окно закрыто")
+        except:
+            # Если не нашли кнопку, пытаемся кликнуть по overlay
+            driver.execute_script("arguments[0].click();", dialog_overlay)
+            logging.info("Диалоговое окно закрыто через JavaScript")
+
+        time.sleep(1)  # Даем время на закрытие диалога
+
+    except Exception as e:
+        logging.info(f"Диалоговое окно не найдено или уже закрыто: {e}")
+
+    # Ждем появления элемента и кликаем по нему
+    wait = WebDriverWait(driver, 10)
+    element = wait.until(EC.element_to_be_clickable((By.XPATH, position_xpath)))
+
+    # Пытаемся кликнуть разными способами
+    try:
+        element.click()
+    except:
+        # Если обычный клик не работает, используем JavaScript
+        driver.execute_script("arguments[0].click();", element)
+
     time.sleep(0.5)
+
 
 def collect_position_data(driver, role, xpath):
     """
@@ -121,6 +178,7 @@ def collect_position_data(driver, role, xpath):
     df = get_d2pt_page_table_facets(driver)
     df["Role"] = role
     return df
+
 
 def scrape_facet_data(driver):
     """
@@ -133,13 +191,17 @@ def scrape_facet_data(driver):
         "pos 2": "//div[contains(text(), 'Mid')]",
         "pos 3": "//div[contains(text(), 'Off')]",
         "pos 4": "//div[contains(text(), 'Pos 4')]",
-        "pos 5": "//div[contains(text(), 'Pos 5')]"
+        "pos 5": "//div[contains(text(), 'Pos 5')]",
     }
 
-    dfs = [collect_position_data(driver, role, xpath) for role, xpath in positions.items()]
+    dfs = [
+        collect_position_data(driver, role, xpath) for role, xpath in positions.items()
+    ]
     df_full_facets = pd.concat(dfs, axis=0)
     # Очистка данных
-    df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(lambda x: x.replace("%", ""))
+    df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(
+        lambda x: x.replace("%", "")
+    )
     df_full_facets = df_full_facets.convert_dtypes()
 
     logging.info("Сбор данных Facets завершен.")
