@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 from modules.scraper import get_d2pt_page_table
 from modules.config_manager import get_chrome_driver
+from modules.period_selector import select_period_8_days
 from scripts.cleanup import save_to_csv
 import time
 
@@ -47,6 +48,9 @@ try:
 
 except Exception as e:
     print(f"Диалоговое окно не найдено или уже закрыто: {e}")
+
+# Выбор периода "8 days"
+select_period_8_days(driver)
 
 # Список позиций и соответствующие XPATH для парсинга
 positions = {

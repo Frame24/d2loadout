@@ -1,331 +1,584 @@
 Hero,D2PT Rating,Matches,WR,Most Played Build WR,Role
-Ursa,3107,296,58.8,52.8,pos 1
-Juggernaut,3045,116,57.8,50.3,pos 1
-Luna,3042,209,55.0,50.1,pos 1
-Slark,3039,179,54.2,53.1,pos 1
-Terrorblade,3036,280,54.6,49.5,pos 1
-Juggernaut,3031,192,55.2,51.3,pos 1
-Weaver,3031,135,55.6,53.8,pos 1
-Ursa,3030,183,54.1,50.6,pos 1
-Abaddon,3030,77,58.4,58.5,pos 1
-Muerta,3029,64,59.4,42.5,pos 1
-Nature's Prophet,3025,283,51.2,56.3,pos 1
-Anti-Mage,3024,217,51.6,50.2,pos 1
-Gyrocopter,3021,121,54.5,47.3,pos 1
-Lifestealer,3018,149,53.7,56.2,pos 1
-Lifestealer,3013,124,51.6,49.9,pos 1
-Monkey King,3011,131,50.4,46.7,pos 1
-Faceless Void,3010,209,50.2,51.8,pos 1
-Templar Assassin,3003,207,50.2,51.7,pos 1
-Phantom Lancer,3000,170,51.2,49.0,pos 1
-Drow Ranger,2985,178,48.9,49.6,pos 1
-Medusa,2984,330,49.7,49.8,pos 1
-Sven,2980,277,48.0,49.4,pos 1
-Queen of Pain,2979,70,45.7,44.5,pos 1
-Luna,2967,57,36.8,45.7,pos 1
-Templar Assassin,2965,59,37.3,49.5,pos 1
-Spectre,2965,136,44.9,55.8,pos 1
-Gyrocopter,2964,129,43.4,51.0,pos 1
-Shadow Fiend,2962,390,49.2,51.8,pos 1
-Morphling,2938,313,43.8,46.3,pos 1
-Bloodseeker,0,25,40.0,50.3,pos 1
-Drow Ranger,0,42,54.8,47.3,pos 1
-Phantom Lancer,0,24,50.0,45.6,pos 1
-Pudge,0,20,60.0,60.9,pos 1
-Razor,0,44,50.0,52.8,pos 1
-Tiny,0,33,42.4,50.4,pos 1
-Vengeful Spirit,0,29,55.2,49.8,pos 1
-Lina,0,23,52.2,50.2,pos 1
-Riki,0,34,38.2,44.5,pos 1
-Sniper,0,22,36.4,42.4,pos 1
-Wraith King,0,33,42.4,45.7,pos 1
-Wraith King,0,20,50.0,54.4,pos 1
-Phantom Assassin,0,45,40.0,42.0,pos 1
-Phantom Assassin,0,33,30.3,41.5,pos 1
-Clinkz,0,29,41.4,50.0,pos 1
-Clinkz,0,26,38.5,49.3,pos 1
-Doom,0,50,38.0,43.3,pos 1
-Alchemist,0,39,41.0,51.7,pos 1
-Chaos Knight,0,49,65.3,54.2,pos 1
-Troll Warlord,0,21,28.6,51.6,pos 1
-Troll Warlord,0,22,50.0,50.0,pos 1
-Monkey King,0,49,46.9,36.0,pos 1
-Marci,0,52,50.0,53.6,pos 1
-Kez,0,40,65.0,48.4,pos 1
-Leshrac,3106,299,57.9,56.5,pos 2
-Earthshaker,3035,80,60.0,54.9,pos 2
-Outworld Destroyer,3035,122,57.4,50.1,pos 2
-Batrider,3025,64,59.4,51.3,pos 2
-Queen of Pain,3023,377,50.9,57.0,pos 2
-Sniper,3019,66,56.1,44.2,pos 2
-Marci,3016,65,56.9,56.4,pos 2
-Storm Spirit,3015,392,49.2,49.6,pos 2
-Tinker,3007,107,52.3,46.5,pos 2
-Outworld Destroyer,3007,59,52.5,51.5,pos 2
-Void Spirit,3005,156,50.6,50.0,pos 2
-Shadow Fiend,3004,317,49.8,49.3,pos 2
-Necrophos,3004,73,50.7,46.7,pos 2
-Tiny,3003,118,49.2,48.9,pos 2
-Pangolier,3003,54,51.9,48.4,pos 2
-Huskar,3001,90,51.1,53.1,pos 2
-Kunkka,2995,88,50.0,43.1,pos 2
-Ember Spirit,2994,60,50.0,48.7,pos 2
-Magnus,2993,73,49.3,49.9,pos 2
-Sniper,2992,124,51.6,45.4,pos 2
-Invoker,2991,53,45.3,56.3,pos 2
-Puck,2990,244,50.8,49.7,pos 2
-Monkey King,2990,90,47.8,50.6,pos 2
-Necrophos,2989,146,49.3,47.7,pos 2
-Nature's Prophet,2984,134,45.5,55.5,pos 2
-Queen of Pain,2979,145,47.6,51.7,pos 2
-Huskar,2979,68,42.6,52.2,pos 2
-Ember Spirit,2979,308,48.1,57.6,pos 2
-Zeus,2976,79,44.3,49.8,pos 2
-Puck,2970,247,49.0,52.1,pos 2
-Invoker,2959,228,44.7,51.5,pos 2
-Earthshaker,0,40,50.0,55.7,pos 2
-Shadow Fiend,0,37,37.8,47.5,pos 2
-Pudge,0,46,71.7,57.6,pos 2
-Pudge,0,47,59.6,55.2,pos 2
-Storm Spirit,0,35,45.7,48.7,pos 2
-Windranger,0,48,54.2,48.0,pos 2
-Zeus,0,40,45.0,42.0,pos 2
-Lina,0,53,34.0,44.3,pos 2
-Lina,0,36,41.7,54.8,pos 2
-Lion,0,20,30.0,26.4,pos 2
-Slardar,0,38,55.3,60.1,pos 2
-Death Prophet,0,47,42.6,48.3,pos 2
-Templar Assassin,0,26,34.6,45.0,pos 2
-Viper,0,23,52.2,55.1,pos 2
-Dragon Knight,0,46,58.7,49.0,pos 2
-Broodmother,0,23,65.2,53.1,pos 2
-Bounty Hunter,0,27,63.0,53.6,pos 2
-Alchemist,0,20,55.0,44.4,pos 2
-Invoker,0,50,60.0,53.5,pos 2
-Lone Druid,0,39,48.7,58.5,pos 2
-Meepo,0,51,64.7,62.3,pos 2
-Rubick,0,50,50.0,47.7,pos 2
-Rubick,0,37,35.1,50.2,pos 2
-Keeper of the Light,0,37,67.6,57.0,pos 2
-Magnus,0,23,34.8,43.2,pos 2
-Timbersaw,0,42,57.1,52.0,pos 2
-Earth Spirit,0,32,65.6,55.5,pos 2
-Phoenix,0,40,37.5,56.0,pos 2
-Monkey King,0,32,37.5,47.9,pos 2
-Pangolier,0,21,38.1,41.7,pos 2
-Void Spirit,0,24,41.7,36.9,pos 2
-Dawnbreaker,0,30,66.7,51.9,pos 2
-Primal Beast,0,39,35.9,55.5,pos 2
-Kez,0,54,53.7,49.3,pos 2
-Vengeful Spirit,3043,161,56.5,50.7,pos 3
-Pudge,3037,119,58.0,65.1,pos 3
-Dawnbreaker,3037,526,51.7,55.3,pos 3
-Magnus,3034,82,58.5,49.8,pos 3
-Abaddon,3030,109,56.0,50.5,pos 3
-Axe,3026,154,53.2,49.6,pos 3
-Mars,3023,81,58.0,49.9,pos 3
-Pudge,3022,81,56.8,57.2,pos 3
-Primal Beast,3017,83,53.0,50.7,pos 3
-Slardar,3015,137,54.0,52.7,pos 3
-Beastmaster,3014,60,58.3,45.5,pos 3
-Undying,3012,153,51.6,52.9,pos 3
-Magnus,3012,175,51.4,48.9,pos 3
-Marci,3011,71,52.1,55.1,pos 3
-Queen of Pain,3009,136,51.5,50.8,pos 3
-Legion Commander,3009,297,50.5,51.7,pos 3
-Razor,3007,63,55.6,49.5,pos 3
-Timbersaw,3007,164,53.0,53.0,pos 3
-Earthshaker,3005,109,48.6,54.1,pos 3
-Nature's Prophet,3003,74,54.1,57.2,pos 3
-Earthshaker,3001,82,50.0,47.5,pos 3
-Centaur Warrunner,3001,100,48.0,48.8,pos 3
-Phoenix,2993,57,43.9,49.1,pos 3
-Axe,2990,477,50.5,53.1,pos 3
-Legion Commander,2989,112,49.1,57.2,pos 3
-Doom,2988,52,44.2,43.1,pos 3
-Night Stalker,2987,112,47.3,46.7,pos 3
-Dark Seer,2983,57,40.4,47.4,pos 3
-Tidehunter,2981,124,45.2,48.5,pos 3
-Doom,2980,72,43.1,44.4,pos 3
-Kunkka,2979,80,46.3,47.5,pos 3
-Beastmaster,2974,107,44.9,46.6,pos 3
-Wraith King,2967,69,37.7,45.8,pos 3
-Underlord,2966,59,35.6,49.4,pos 3
-Timbersaw,2961,95,41.1,52.3,pos 3
-Mars,2945,292,44.5,46.3,pos 3
-Sand King,0,32,56.3,45.0,pos 3
-Sand King,0,28,42.9,35.5,pos 3
-Tiny,0,36,36.1,44.6,pos 3
-Windranger,0,45,55.6,46.2,pos 3
-Slardar,0,20,40.0,51.4,pos 3
-Tidehunter,0,31,32.3,50.2,pos 3
-Enigma,0,34,58.8,58.2,pos 3
-Necrophos,0,35,34.3,46.7,pos 3
-Necrophos,0,27,59.3,43.2,pos 3
-Venomancer,0,22,59.1,48.7,pos 3
-Death Prophet,0,35,48.6,37.4,pos 3
-Dazzle,0,21,23.8,47.8,pos 3
-Leshrac,0,20,55.0,49.4,pos 3
-Dark Seer,0,33,54.5,50.7,pos 3
-Weaver,0,20,60.0,55.1,pos 3
-Batrider,0,37,48.6,46.2,pos 3
-Spirit Breaker,0,40,60.0,46.8,pos 3
-Lycan,0,51,49.0,49.2,pos 3
-Brewmaster,0,40,70.0,50.0,pos 3
-Chaos Knight,0,32,43.8,44.8,pos 3
-Ogre Magi,0,28,50.0,42.2,pos 3
-Centaur Warrunner,0,51,47.1,42.3,pos 3
-Bristleback,0,35,51.4,49.5,pos 3
-Bristleback,0,27,29.6,42.7,pos 3
-Underlord,0,40,42.5,47.6,pos 3
-Pangolier,0,41,46.3,45.5,pos 3
-Void Spirit,0,25,64.0,54.5,pos 3
-Dawnbreaker,0,39,56.4,52.2,pos 3
-Dawnbreaker,0,47,63.8,55.2,pos 3
-Primal Beast,0,21,42.9,42.5,pos 3
-Silencer,3065,166,59.0,58.3,pos 4
-Pugna,3043,116,58.6,54.1,pos 4
-Ogre Magi,3037,61,67.2,51.7,pos 4
-Nyx Assassin,3030,98,59.2,54.5,pos 4
-Bounty Hunter,3029,132,56.1,65.5,pos 4
-Magnus,3027,75,58.7,52.0,pos 4
-Windranger,3025,181,53.0,49.6,pos 4
-Lion,3025,55,63.6,51.8,pos 4
-Invoker,3021,65,61.5,58.4,pos 4
-Lion,3015,210,52.9,52.8,pos 4
-Spirit Breaker,3015,317,50.2,58.8,pos 4
-Snapfire,3015,97,54.6,53.3,pos 4
-Clockwerk,3013,135,49.6,50.0,pos 4
-Rubick,3010,196,52.0,50.9,pos 4
-Earthshaker,3007,109,53.2,50.3,pos 4
-Shadow Shaman,3007,226,49.1,54.0,pos 4
-Shadow Shaman,3003,84,50.0,54.6,pos 4
-Rubick,3001,241,50.6,53.4,pos 4
-Undying,2993,60,48.3,52.8,pos 4
-Hoodwink,2993,69,52.2,49.7,pos 4
-Ringmaster,2993,55,47.3,51.7,pos 4
-Weaver,2991,127,48.0,50.6,pos 4
-Pudge,2990,125,48.8,56.4,pos 4
-Tiny,2989,127,49.6,48.3,pos 4
-Queen of Pain,2987,73,45.2,50.1,pos 4
-Disruptor,2985,76,48.7,52.4,pos 4
-Dark Willow,2977,119,47.1,50.4,pos 4
-Skywrath Mage,2976,202,47.0,46.9,pos 4
-Earthshaker,2974,128,46.1,53.7,pos 4
-Tusk,2974,165,46.7,48.5,pos 4
-Pudge,2973,226,46.5,55.6,pos 4
-Techies,2973,63,39.7,49.7,pos 4
-Venomancer,2971,72,38.9,54.6,pos 4
-Zeus,2969,109,42.2,61.1,pos 4
-Nature's Prophet,2959,205,46.8,53.6,pos 4
-Axe,0,48,43.8,47.2,pos 4
-Bane,0,40,67.5,50.9,pos 4
-Crystal Maiden,0,21,71.4,37.0,pos 4
-Mirana,0,50,60.0,51.9,pos 4
-Vengeful Spirit,0,30,63.3,52.6,pos 4
-Vengeful Spirit,0,29,44.8,53.3,pos 4
-Zeus,0,25,40.0,41.8,pos 4
-Witch Doctor,0,43,44.2,40.3,pos 4
-Witch Doctor,0,37,48.6,54.6,pos 4
-Lich,0,33,39.4,62.3,pos 4
-Tinker,0,26,50.0,52.3,pos 4
-Sniper,0,25,48.0,51.8,pos 4
-Venomancer,0,20,65.0,61.1,pos 4
-Dazzle,0,24,41.7,62.5,pos 4
-Dazzle,0,23,34.8,59.3,pos 4
-Leshrac,0,45,53.3,54.1,pos 4
-Bounty Hunter,0,31,48.4,57.4,pos 4
-Weaver,0,32,43.8,47.1,pos 4
-Jakiro,0,35,40.0,44.9,pos 4
-Batrider,0,38,52.6,41.7,pos 4
-Ancient Apparition,0,27,37.0,46.8,pos 4
-Invoker,0,20,40.0,52.9,pos 4
-Shadow Demon,0,34,50.0,53.1,pos 4
-Nyx Assassin,0,43,72.1,59.8,pos 4
-Skywrath Mage,0,31,48.4,41.3,pos 4
-Earth Spirit,0,23,39.1,50.4,pos 4
-Earth Spirit,0,45,42.2,44.6,pos 4
-Phoenix,0,51,62.7,50.8,pos 4
-Phoenix,0,20,50.0,46.4,pos 4
-Oracle,0,24,58.3,55.1,pos 4
-Winter Wyvern,0,26,38.5,48.9,pos 4
-Dark Willow,0,51,58.8,50.4,pos 4
-Grimstroke,0,26,57.7,64.5,pos 4
-Hoodwink,0,37,45.9,51.7,pos 4
-Snapfire,0,23,43.5,39.9,pos 4
-Dawnbreaker,0,30,73.3,51.0,pos 4
-Dawnbreaker,0,27,48.1,51.8,pos 4
-Marci,0,46,58.7,44.6,pos 4
-Marci,0,28,46.4,43.6,pos 4
-Muerta,0,33,48.5,48.0,pos 4
-Crystal Maiden,3041,222,55.4,48.0,pos 5
-Witch Doctor,3040,129,58.9,52.5,pos 5
-Oracle,3036,104,59.6,52.8,pos 5
-Silencer,3034,398,52.0,53.9,pos 5
-Lich,3031,112,57.1,50.1,pos 5
-Nature's Prophet,3025,119,54.6,48.9,pos 5
-Bane,3017,90,55.6,53.9,pos 5
-Lion,3014,298,51.7,49.0,pos 5
-Lich,3011,67,55.2,53.6,pos 5
-Warlock,3011,116,53.4,49.3,pos 5
-Ogre Magi,3011,160,51.2,48.8,pos 5
-Weaver,3009,52,55.8,49.2,pos 5
-Zeus,3006,68,51.5,57.3,pos 5
-Venomancer,3006,76,51.3,59.8,pos 5
-Snapfire,3006,76,51.3,45.9,pos 5
-Disruptor,3004,302,50.0,51.2,pos 5
-Skywrath Mage,3003,76,51.3,47.2,pos 5
-Abaddon,3003,76,53.9,59.6,pos 5
-Ringmaster,3001,80,51.2,54.2,pos 5
-Shadow Shaman,2999,100,52.0,53.3,pos 5
-Ancient Apparition,2999,99,49.5,50.2,pos 5
-Rubick,2999,77,49.4,46.7,pos 5
-Lion,2997,67,50.7,37.1,pos 5
-Tusk,2993,128,46.9,51.5,pos 5
-Pudge,2991,193,49.7,47.7,pos 5
-Undying,2989,152,50.0,51.5,pos 5
-Pugna,2988,182,48.4,55.6,pos 5
-Dazzle,2987,76,44.7,58.3,pos 5
-Clockwerk,2985,162,49.4,52.9,pos 5
-Disruptor,2977,54,38.9,45.9,pos 5
-Jakiro,2975,106,43.4,46.9,pos 5
-Witch Doctor,2972,112,44.6,47.2,pos 5
-Rubick,2969,69,37.7,47.1,pos 5
-Ancient Apparition,2967,94,42.6,45.1,pos 5
-Dark Willow,2964,77,39.0,53.1,pos 5
-Pudge,2963,79,36.7,53.5,pos 5
-Shadow Shaman,2943,286,44.8,53.9,pos 5
-Axe,0,39,48.7,44.5,pos 5
-Crystal Maiden,0,34,55.9,58.0,pos 5
-Earthshaker,0,22,54.5,48.5,pos 5
-Mirana,0,28,53.6,52.2,pos 5
-Vengeful Spirit,0,36,55.6,54.4,pos 5
-Vengeful Spirit,0,30,40.0,43.7,pos 5
-Windranger,0,47,53.2,42.0,pos 5
-Tinker,0,30,43.3,46.9,pos 5
-Warlock,0,38,52.6,59.2,pos 5
-Queen of Pain,0,33,57.6,49.0,pos 5
-Venomancer,0,40,35.0,59.9,pos 5
-Dazzle,0,55,61.8,51.5,pos 5
-Enchantress,0,25,44.0,53.7,pos 5
-Bounty Hunter,0,36,63.9,63.2,pos 5
-Jakiro,0,39,53.8,52.4,pos 5
-Spirit Breaker,0,43,65.1,49.7,pos 5
-Alchemist,0,23,56.5,51.0,pos 5
-Silencer,0,40,47.5,58.2,pos 5
-Shadow Demon,0,34,44.1,53.1,pos 5
-Treant Protector,0,24,58.3,54.2,pos 5
-Treant Protector,0,34,47.1,48.4,pos 5
-Ogre Magi,0,20,70.0,50.4,pos 5
-Undying,0,40,37.5,49.4,pos 5
-Io,0,23,30.4,50.0,pos 5
-Magnus,0,34,47.1,53.1,pos 5
-Skywrath Mage,0,20,60.0,49.0,pos 5
-Techies,0,25,28.0,41.1,pos 5
-Phoenix,0,41,46.3,53.9,pos 5
-Oracle,0,24,50.0,55.4,pos 5
-Winter Wyvern,0,50,40.0,53.0,pos 5
-Dark Willow,0,39,51.3,52.1,pos 5
-Grimstroke,0,42,52.4,37.8,pos 5
-Hoodwink,0,20,50.0,47.8,pos 5
-Marci,0,45,48.9,47.8,pos 5
+Nature's Prophet,3319,1221,56.8,56.3,pos 1
+Ursa,3202,1164,54.4,52.8,pos 1
+Shadow Fiend,3127,1995,52.2,51.8,pos 1
+Abaddon,3114,330,58.2,58.5,pos 1
+Chaos Knight,3075,243,57.6,54.2,pos 1
+Faceless Void,3073,651,52.4,51.8,pos 1
+Lifestealer,3057,612,52.3,56.2,pos 1
+Weaver,3056,510,52.7,53.8,pos 1
+Slark,3056,684,51.8,53.1,pos 1
+Juggernaut,3054,836,52.4,51.3,pos 1
+Meepo,3054,94,67.0,64.5,pos 1
+Templar Assassin,3053,1156,51.4,51.7,pos 1
+Kez,3042,210,56.2,48.4,pos 1
+Spectre,3040,611,51.7,55.8,pos 1
+Mirana,3020,68,52.9,55.5,pos 1
+Shadow Fiend,3018,77,55.8,50.8,pos 1
+Pudge,3018,68,58.8,60.9,pos 1
+Pudge,3018,66,57.6,54.8,pos 1
+Drow Ranger,3011,159,52.2,47.3,pos 1
+Razor,3009,171,51.5,52.8,pos 1
+Weaver,3009,53,56.6,57.1,pos 1
+Troll Warlord,3007,83,51.8,51.6,pos 1
+Wraith King,3006,85,51.8,54.4,pos 1
+Dawnbreaker,3006,50,52.0,58.3,pos 1
+Ursa,3003,864,50.1,50.6,pos 1
+Troll Warlord,3002,84,50.0,50.0,pos 1
+Clinkz,3000,112,50.0,50.0,pos 1
+Terrorblade,2999,61,50.8,43.0,pos 1
+Gyrocopter,2998,488,50.8,51.0,pos 1
+Medusa,2998,1253,49.8,49.8,pos 1
+Vengeful Spirit,2995,153,49.0,49.8,pos 1
+Lifestealer,2995,441,49.7,49.9,pos 1
+Tiny,2993,134,48.5,50.4,pos 1
+Monkey King,2993,213,47.9,36.0,pos 1
+Marci,2993,208,49.0,53.6,pos 1
+Juggernaut,2992,525,49.7,50.3,pos 1
+Dazzle,2991,54,44.4,47.4,pos 1
+Dragon Knight,2988,75,48.0,47.7,pos 1
+Bloodseeker,2986,140,47.9,50.3,pos 1
+Lina,2984,121,48.8,50.2,pos 1
+Sven,2979,1252,49.5,49.4,pos 1
+Clinkz,2979,109,46.8,49.3,pos 1
+Sniper,2977,69,46.4,42.4,pos 1
+Muerta,2977,262,49.2,42.5,pos 1
+Luna,2976,724,49.3,50.1,pos 1
+Phantom Lancer,2971,65,38.5,45.6,pos 1
+Abaddon,2971,67,40.3,45.5,pos 1
+Riki,2969,94,42.6,44.5,pos 1
+Dragon Knight,2967,58,36.2,42.1,pos 1
+Drow Ranger,2966,829,49.9,49.6,pos 1
+Wraith King,2961,154,43.5,45.7,pos 1
+Templar Assassin,2958,257,47.5,49.5,pos 1
+Phantom Lancer,2956,580,48.4,49.0,pos 1
+Luna,2949,258,46.1,45.7,pos 1
+Alchemist,2947,138,42.0,51.7,pos 1
+Phantom Assassin,2946,147,42.9,42.0,pos 1
+Phantom Assassin,2932,129,34.9,41.5,pos 1
+Anti-Mage,2931,929,48.9,50.2,pos 1
+Gyrocopter,2931,470,46.8,47.3,pos 1
+Terrorblade,2925,1240,49.4,49.5,pos 1
+Doom,2909,281,42.7,43.3,pos 1
+Monkey King,2891,585,46.0,46.7,pos 1
+Queen of Pain,2875,312,41.7,44.5,pos 1
+Morphling,2825,1178,46.3,46.3,pos 1
+Anti-Mage,0,38,39.5,42.5,pos 1
+Bloodseeker,0,24,37.5,34.3,pos 1
+Mirana,0,26,50.0,44.4,pos 1
+Razor,0,38,47.4,46.9,pos 1
+Sven,0,27,44.4,58.6,pos 1
+Windranger,0,29,48.3,32.3,pos 1
+Kunkka,0,32,25.0,42.1,pos 1
+Necrophos,0,38,57.9,40.4,pos 1
+Nature's Prophet,0,27,48.1,52.2,pos 1
+Broodmother,0,26,65.4,65.2,pos 1
+Broodmother,0,33,45.5,46.9,pos 1
+Batrider,0,37,62.2,54.4,pos 1
+Doom,0,38,34.2,38.8,pos 1
+Lone Druid,0,39,59.0,64.6,pos 1
+Chaos Knight,0,30,53.3,46.6,pos 1
+Naga Siren,0,45,44.4,49.4,pos 1
+Slark,0,49,49.0,43.0,pos 1
+Medusa,0,28,39.3,38.9,pos 1
+Medusa,0,46,39.1,55.6,pos 1
+Magnus,0,32,34.4,20.8,pos 1
+Ember Spirit,0,26,50.0,51.7,pos 1
+Hoodwink,0,41,31.7,38.1,pos 1
+Void Spirit,0,39,35.9,42.7,pos 1
+Queen of Pain,3215,1958,53.1,57.0,pos 2
+Leshrac,3171,1193,53.8,56.5,pos 2
+Nature's Prophet,3132,533,55.9,55.5,pos 2
+Earthshaker,3120,304,59.2,54.9,pos 2
+Pudge,3092,201,62.2,57.6,pos 2
+Puck,3078,1014,52.9,52.1,pos 2
+Meepo,3062,208,59.1,62.3,pos 2
+Keeper of the Light,3053,172,57.6,57.0,pos 2
+Marci,3042,291,54.3,56.4,pos 2
+Meepo,3039,71,64.8,69.0,pos 2
+Slardar,3034,147,57.1,60.1,pos 2
+Primal Beast,3033,151,55.0,55.5,pos 2
+Timbersaw,3030,154,54.5,52.0,pos 2
+Invoker,3029,239,53.1,56.3,pos 2
+Invoker,3029,920,50.9,51.5,pos 2
+Earth Spirit,3029,100,57.0,55.5,pos 2
+Dazzle,3028,79,60.8,56.0,pos 2
+Invoker,3026,217,53.9,53.5,pos 2
+Dawnbreaker,3026,135,55.6,51.9,pos 2
+Lone Druid,3020,132,53.0,58.5,pos 2
+Pudge,3018,167,53.3,55.2,pos 2
+Undying,3018,65,58.5,56.2,pos 2
+Arc Warden,3018,85,54.1,54.8,pos 2
+Monkey King,3016,490,51.0,50.6,pos 2
+Earthshaker,3014,179,50.8,55.7,pos 2
+Anti-Mage,3013,76,56.6,55.6,pos 2
+Necrophos,3013,336,51.2,46.7,pos 2
+Magnus,3013,331,52.0,49.9,pos 2
+Viper,3012,114,52.6,55.1,pos 2
+Batrider,3010,263,50.2,51.3,pos 2
+Phoenix,3009,164,51.2,56.0,pos 2
+Void Spirit,3003,672,50.3,50.0,pos 2
+Beastmaster,3001,84,50.0,50.0,pos 2
+Broodmother,2999,90,51.1,53.1,pos 2
+Arc Warden,2999,54,48.1,49.5,pos 2
+Kez,2999,181,48.1,49.3,pos 2
+Muerta,2994,50,48.0,50.0,pos 2
+Vengeful Spirit,2993,89,48.3,42.4,pos 2
+Dragon Knight,2993,175,49.7,49.0,pos 2
+Huskar,2993,276,50.0,52.2,pos 2
+Puck,2990,1073,50.3,49.7,pos 2
+Lina,2989,111,47.7,54.8,pos 2
+Bounty Hunter,2989,99,49.5,53.6,pos 2
+Storm Spirit,2988,175,48.6,48.7,pos 2
+Shadow Fiend,2986,143,46.9,47.5,pos 2
+Void Spirit,2986,75,45.3,36.9,pos 2
+Clinkz,2985,64,42.2,44.9,pos 2
+Outworld Destroyer,2985,219,48.9,51.5,pos 2
+Mars,2985,67,46.3,42.2,pos 2
+Death Prophet,2982,206,49.0,48.3,pos 2
+Templar Assassin,2982,52,40.4,42.9,pos 2
+Magnus,2982,79,45.6,43.2,pos 2
+Legion Commander,2982,60,43.3,44.7,pos 2
+Huskar,2978,413,49.4,53.1,pos 2
+Pangolier,2978,81,43.2,41.7,pos 2
+Templar Assassin,2977,120,44.2,45.0,pos 2
+Outworld Destroyer,2977,519,49.1,50.1,pos 2
+Pangolier,2974,231,47.2,48.4,pos 2
+Rubick,2973,176,46.6,50.2,pos 2
+Razor,2969,81,43.2,44.4,pos 2
+Storm Spirit,2969,1631,49.4,49.6,pos 2
+Alchemist,2968,86,40.7,44.4,pos 2
+Monkey King,2968,112,43.8,47.9,pos 2
+Tiny,2967,479,48.2,48.9,pos 2
+Ember Spirit,2967,288,48.3,48.7,pos 2
+Ember Spirit,2960,1297,49.8,57.6,pos 2
+Windranger,2959,201,46.3,48.0,pos 2
+Zeus,2959,277,46.6,49.8,pos 2
+Necrophos,2959,556,48.4,47.7,pos 2
+Queen of Pain,2959,550,49.1,51.7,pos 2
+Rubick,2958,173,45.1,47.7,pos 2
+Zeus,2948,109,39.4,42.0,pos 2
+Shadow Fiend,2946,1297,49.3,49.3,pos 2
+Lion,2938,103,35.9,26.4,pos 2
+Sniper,2932,285,43.9,44.2,pos 2
+Tinker,2930,423,46.3,46.5,pos 2
+Lina,2906,284,41.5,44.3,pos 2
+Sniper,2890,500,45.4,45.4,pos 2
+Kunkka,2868,412,44.2,43.1,pos 2
+Axe,0,40,45.0,60.0,pos 2
+Mirana,0,30,50.0,48.8,pos 2
+Morphling,0,35,25.7,35.5,pos 2
+Sand King,0,39,46.2,47.9,pos 2
+Tiny,0,20,55.0,46.7,pos 2
+Windranger,0,45,44.4,48.5,pos 2
+Kunkka,0,37,51.4,53.5,pos 2
+Tidehunter,0,26,50.0,48.9,pos 2
+Riki,0,42,50.0,49.3,pos 2
+Tinker,0,29,58.6,65.0,pos 2
+Death Prophet,0,37,59.5,46.4,pos 2
+Pugna,0,41,36.6,34.4,pos 2
+Pugna,0,25,44.0,36.2,pos 2
+Viper,0,48,33.3,40.6,pos 2
+Dragon Knight,0,49,46.9,47.0,pos 2
+Leshrac,0,32,46.9,44.9,pos 2
+Nature's Prophet,0,31,51.6,55.6,pos 2
+Clinkz,0,26,38.5,48.9,pos 2
+Omniknight,0,24,50.0,47.2,pos 2
+Enchantress,0,20,50.0,-,pos 2
+Night Stalker,0,28,53.6,62.1,pos 2
+Broodmother,0,37,51.4,62.1,pos 2
+Weaver,0,36,36.1,30.3,pos 2
+Jakiro,0,39,33.3,40.3,pos 2
+Batrider,0,26,30.8,32.7,pos 2
+Spectre,0,22,45.5,41.0,pos 2
+Doom,0,29,41.4,43.6,pos 2
+Ursa,0,34,61.8,55.9,pos 2
+Spirit Breaker,0,21,52.4,39.3,pos 2
+Silencer,0,27,37.0,38.3,pos 2
+Silencer,0,21,23.8,28.9,pos 2
+Brewmaster,0,20,60.0,51.5,pos 2
+Ogre Magi,0,30,40.0,46.7,pos 2
+Ogre Magi,0,41,43.9,46.0,pos 2
+Nyx Assassin,0,27,33.3,35.5,pos 2
+Nyx Assassin,0,46,43.5,45.2,pos 2
+Visage,0,21,61.9,58.6,pos 2
+Slark,0,36,33.3,44.4,pos 2
+Timbersaw,0,40,62.5,54.0,pos 2
+Tusk,0,31,29.0,31.5,pos 2
+Skywrath Mage,0,36,66.7,55.6,pos 2
+Skywrath Mage,0,33,45.5,45.0,pos 2
+Legion Commander,0,37,64.9,67.7,pos 2
+Techies,0,34,38.2,34.9,pos 2
+Oracle,0,31,41.9,55.3,pos 2
+Dark Willow,0,35,45.7,50.9,pos 2
+Hoodwink,0,34,50.0,44.4,pos 2
+Snapfire,0,39,61.5,57.4,pos 2
+Mars,0,33,51.5,50.0,pos 2
+Primal Beast,0,26,53.8,40.0,pos 2
+Kez,0,20,45.0,53.8,pos 2
+Dawnbreaker,3440,2318,54.9,55.3,pos 3
+Axe,3204,2297,52.5,53.1,pos 3
+Vengeful Spirit,3128,592,55.2,50.7,pos 3
+Pudge,3125,477,56.6,65.1,pos 3
+Legion Commander,3122,467,57.0,57.2,pos 3
+Undying,3080,771,52.5,52.9,pos 3
+Legion Commander,3075,1127,52.3,51.7,pos 3
+Slardar,3072,501,53.7,52.7,pos 3
+Marci,3069,336,54.5,55.1,pos 3
+Dawnbreaker,3065,173,59.5,52.2,pos 3
+Pudge,3053,360,54.2,57.2,pos 3
+Brewmaster,3046,191,54.5,50.0,pos 3
+Enigma,3038,116,56.9,58.2,pos 3
+Dawnbreaker,3036,171,56.1,55.2,pos 3
+Earthshaker,3033,442,51.6,54.1,pos 3
+Venomancer,3026,120,55.0,48.7,pos 3
+Nature's Prophet,3025,302,53.3,57.2,pos 3
+Timbersaw,3023,679,51.3,53.0,pos 3
+Terrorblade,3022,57,59.6,55.3,pos 3
+Axe,3020,581,50.4,49.6,pos 3
+Abaddon,3020,408,51.0,50.5,pos 3
+Razor,3019,53,58.5,48.9,pos 3
+Dark Seer,3017,156,52.6,50.7,pos 3
+Tusk,3015,63,57.1,53.5,pos 3
+Mars,3014,339,51.6,49.9,pos 3
+Magnus,3013,725,50.1,48.9,pos 3
+Dragon Knight,3007,59,54.2,52.4,pos 3
+Weaver,3007,81,53.1,55.1,pos 3
+Visage,3005,55,54.5,57.7,pos 3
+Batrider,3002,126,50.8,46.2,pos 3
+Slardar,3001,98,52.0,51.4,pos 3
+Rubick,3001,50,52.0,54.3,pos 3
+Razor,2998,256,50.0,49.5,pos 3
+Phoenix,2997,221,48.9,49.1,pos 3
+Sand King,2996,73,49.3,45.0,pos 3
+Omniknight,2996,92,48.9,49.1,pos 3
+Snapfire,2996,51,47.1,49.1,pos 3
+Viper,2994,71,47.9,43.2,pos 3
+Leshrac,2994,105,49.5,49.4,pos 3
+Bristleback,2994,125,48.0,49.5,pos 3
+Sand King,2993,70,45.7,35.5,pos 3
+Windranger,2993,176,49.4,46.2,pos 3
+Abaddon,2993,60,48.3,54.0,pos 3
+Nyx Assassin,2992,53,47.2,44.1,pos 3
+Lycan,2991,231,49.4,49.2,pos 3
+Ogre Magi,2991,51,45.1,41.7,pos 3
+Void Spirit,2989,97,49.5,54.5,pos 3
+Riki,2986,62,43.5,44.3,pos 3
+Necrophos,2986,153,46.4,46.7,pos 3
+Dragon Knight,2985,55,41.8,43.6,pos 3
+Death Prophet,2982,56,42.9,37.8,pos 3
+Dazzle,2981,119,47.1,47.8,pos 3
+Spirit Breaker,2980,101,48.5,46.8,pos 3
+Tidehunter,2979,175,48.0,50.2,pos 3
+Enigma,2979,70,41.4,43.3,pos 3
+Beastmaster,2979,276,48.9,45.5,pos 3
+Queen of Pain,2977,585,48.9,50.8,pos 3
+Primal Beast,2977,368,48.1,50.7,pos 3
+Tidehunter,2975,460,48.5,48.5,pos 3
+Underlord,2975,161,47.2,47.6,pos 3
+Monkey King,2975,58,41.4,47.9,pos 3
+Primal Beast,2973,69,40.6,42.5,pos 3
+Necrophos,2971,130,44.6,43.2,pos 3
+Ogre Magi,2967,102,44.1,42.2,pos 3
+Pangolier,2967,92,43.5,47.2,pos 3
+Bristleback,2966,112,42.0,42.7,pos 3
+Chaos Knight,2963,107,43.9,44.8,pos 3
+Doom,2962,61,34.4,45.0,pos 3
+Centaur Warrunner,2962,514,48.6,48.8,pos 3
+Magnus,2960,370,47.6,49.8,pos 3
+Earthshaker,2953,332,46.7,47.5,pos 3
+Pangolier,2947,202,45.0,45.5,pos 3
+Wraith King,2946,339,46.3,45.8,pos 3
+Underlord,2943,215,44.2,49.4,pos 3
+Centaur Warrunner,2942,196,42.3,42.3,pos 3
+Tiny,2934,180,41.1,44.6,pos 3
+Doom,2931,342,45.9,44.4,pos 3
+Dark Seer,2928,241,43.6,47.4,pos 3
+Night Stalker,2924,483,46.8,46.7,pos 3
+Doom,2923,283,43.5,43.1,pos 3
+Death Prophet,2921,143,37.1,37.4,pos 3
+Beastmaster,2914,398,44.5,46.6,pos 3
+Kunkka,2895,344,44.8,47.5,pos 3
+Timbersaw,2880,431,43.4,52.3,pos 3
+Mars,2801,1259,46.5,46.3,pos 3
+Anti-Mage,0,32,43.8,44.3,pos 3
+Zeus,0,24,50.0,33.3,pos 3
+Kunkka,0,47,51.1,44.7,pos 3
+Queen of Pain,0,36,41.7,41.0,pos 3
+Venomancer,0,37,62.2,60.0,pos 3
+Faceless Void,0,23,34.8,26.3,pos 3
+Wraith King,0,40,52.5,46.7,pos 3
+Pugna,0,33,60.6,61.5,pos 3
+Viper,0,33,42.4,44.1,pos 3
+Clockwerk,0,44,47.7,42.9,pos 3
+Enchantress,0,31,54.8,51.3,pos 3
+Huskar,0,44,50.0,52.9,pos 3
+Huskar,0,35,54.3,54.8,pos 3
+Night Stalker,0,22,45.5,36.8,pos 3
+Broodmother,0,35,42.9,41.0,pos 3
+Broodmother,0,34,38.2,50.0,pos 3
+Bounty Hunter,0,24,37.5,40.0,pos 3
+Weaver,0,27,37.0,47.6,pos 3
+Jakiro,0,23,47.8,53.8,pos 3
+Batrider,0,47,34.0,47.6,pos 3
+Ursa,0,22,59.1,52.9,pos 3
+Alchemist,0,22,54.5,54.8,pos 3
+Lycan,0,41,53.7,47.4,pos 3
+Brewmaster,0,42,45.2,40.2,pos 3
+Chaos Knight,0,32,40.6,43.1,pos 3
+Rubick,0,28,50.0,47.1,pos 3
+Nyx Assassin,0,27,59.3,44.0,pos 3
+Visage,0,28,53.6,44.4,pos 3
+Slark,0,37,43.2,47.3,pos 3
+Medusa,0,37,43.2,46.7,pos 3
+Elder Titan,0,25,72.0,74.1,pos 3
+Elder Titan,0,36,63.9,68.2,pos 3
+Ember Spirit,0,34,61.8,61.8,pos 3
+Earth Spirit,0,40,40.0,47.3,pos 3
+Snapfire,0,33,57.6,45.5,pos 3
+Kez,0,38,52.6,40.7,pos 3
+Silencer,3195,756,56.3,58.3,pos 4
+Lion,3109,851,53.8,52.8,pos 4
+Pugna,3090,479,53.9,54.1,pos 4
+Invoker,3088,229,60.7,58.4,pos 4
+Snapfire,3086,402,55.5,53.3,pos 4
+Spirit Breaker,3083,1095,51.9,58.8,pos 4
+Earthshaker,3060,530,53.6,50.3,pos 4
+Nyx Assassin,3060,124,63.7,59.8,pos 4
+Nature's Prophet,3054,898,52.3,53.6,pos 4
+Bane,3053,153,58.2,50.9,pos 4
+Bounty Hunter,3051,482,53.1,65.5,pos 4
+Magnus,3045,338,54.4,52.0,pos 4
+Leshrac,3042,209,56.0,54.1,pos 4
+Rubick,3035,795,51.7,50.9,pos 4
+Oracle,3025,103,56.3,55.1,pos 4
+Vengeful Spirit,3022,157,54.1,52.6,pos 4
+Ringmaster,3022,241,52.7,51.7,pos 4
+Phoenix,3021,266,50.8,50.8,pos 4
+Dazzle,3020,96,56.3,59.3,pos 4
+Witch Doctor,3018,148,54.1,54.6,pos 4
+Dazzle,3018,122,54.1,62.5,pos 4
+Shadow Shaman,3017,1074,50.2,54.0,pos 4
+Ogre Magi,3017,289,52.6,51.7,pos 4
+Alchemist,3016,64,54.7,61.8,pos 4
+Hoodwink,3016,272,52.6,49.7,pos 4
+Tinker,3015,91,54.9,52.3,pos 4
+Hoodwink,3015,159,52.2,51.7,pos 4
+Sniper,3013,99,52.5,51.8,pos 4
+Earth Spirit,3013,72,54.2,50.4,pos 4
+Bounty Hunter,3010,87,52.9,57.4,pos 4
+Skywrath Mage,3010,547,51.2,46.9,pos 4
+Undying,3009,61,52.5,59.0,pos 4
+Winter Wyvern,3009,73,53.4,54.9,pos 4
+Jakiro,3008,102,52.0,49.7,pos 4
+Dawnbreaker,3007,130,53.1,51.0,pos 4
+Weaver,3006,114,50.9,47.1,pos 4
+Ancient Apparition,3006,117,50.4,50.0,pos 4
+Grimstroke,3006,74,52.7,64.5,pos 4
+Silencer,3005,71,50.7,55.1,pos 4
+Batrider,3002,57,49.1,58.0,pos 4
+Undying,3002,324,51.2,52.8,pos 4
+Shadow Shaman,3001,333,49.8,54.6,pos 4
+Winter Wyvern,2996,87,49.4,48.9,pos 4
+Vengeful Spirit,2995,132,49.2,53.3,pos 4
+Clockwerk,2995,592,49.5,50.0,pos 4
+Dawnbreaker,2995,85,48.2,51.8,pos 4
+Disruptor,2994,325,50.8,52.4,pos 4
+Nyx Assassin,2994,369,50.1,54.5,pos 4
+Earth Spirit,2994,142,50.0,44.6,pos 4
+Phoenix,2994,99,47.5,46.4,pos 4
+Warlock,2993,62,46.8,45.5,pos 4
+Venomancer,2993,360,50.6,54.6,pos 4
+Lich,2992,75,46.7,51.4,pos 4
+Gyrocopter,2990,60,46.7,48.2,pos 4
+Shadow Demon,2990,125,48.0,53.1,pos 4
+Techies,2989,63,47.6,45.1,pos 4
+Dark Willow,2989,184,49.5,50.4,pos 4
+Venomancer,2987,132,48.5,61.1,pos 4
+Riki,2986,78,47.4,42.7,pos 4
+Lion,2985,226,49.1,51.8,pos 4
+Witch Doctor,2983,187,48.1,40.3,pos 4
+Abaddon,2983,83,47.0,54.7,pos 4
+Ember Spirit,2983,61,44.3,49.5,pos 4
+Grimstroke,2982,65,43.1,50.0,pos 4
+Mirana,2980,219,47.9,51.9,pos 4
+Crystal Maiden,2979,108,46.3,37.0,pos 4
+Earthshaker,2978,575,49.6,53.7,pos 4
+Ancient Apparition,2978,118,44.9,46.8,pos 4
+Jakiro,2977,133,45.1,44.9,pos 4
+Disruptor,2977,61,39.3,43.8,pos 4
+Monkey King,2975,63,41.3,45.8,pos 4
+Queen of Pain,2974,339,48.4,50.1,pos 4
+Tusk,2974,50,36.0,41.2,pos 4
+Invoker,2973,55,41.8,45.5,pos 4
+Pudge,2972,565,49.4,56.4,pos 4
+Pudge,2971,983,49.4,55.6,pos 4
+Tiny,2968,506,49.2,48.3,pos 4
+Lich,2968,157,45.9,62.3,pos 4
+Gyrocopter,2968,53,35.8,43.4,pos 4
+Axe,2965,223,46.6,47.2,pos 4
+Muerta,2964,140,44.3,48.0,pos 4
+Axe,2962,58,34.5,36.3,pos 4
+Invoker,2962,81,38.3,52.9,pos 4
+Marci,2961,100,41.0,43.6,pos 4
+Dark Willow,2956,573,48.3,50.4,pos 4
+Skywrath Mage,2955,86,39.5,41.3,pos 4
+Snapfire,2954,72,37.5,39.9,pos 4
+Tusk,2953,644,48.9,48.5,pos 4
+Techies,2950,234,44.9,49.7,pos 4
+Batrider,2946,217,45.2,41.7,pos 4
+Marci,2944,195,44.1,44.6,pos 4
+Windranger,2931,732,48.4,49.6,pos 4
+Zeus,2930,130,36.9,41.8,pos 4
+Weaver,2930,552,46.7,50.6,pos 4
+Rubick,2925,1041,49.2,53.4,pos 4
+Zeus,2918,527,45.7,61.1,pos 4
+Bane,0,34,52.9,54.0,pos 4
+Crystal Maiden,0,24,37.5,57.7,pos 4
+Mirana,0,24,50.0,36.1,pos 4
+Lina,0,22,36.4,34.3,pos 4
+Riki,0,43,48.8,49.4,pos 4
+Enigma,0,32,46.9,43.3,pos 4
+Sniper,0,28,39.3,39.4,pos 4
+Warlock,0,47,44.7,48.4,pos 4
+Queen of Pain,0,49,46.9,55.7,pos 4
+Faceless Void,0,28,50.0,50.0,pos 4
+Pugna,0,40,45.0,51.6,pos 4
+Nature's Prophet,0,28,39.3,28.6,pos 4
+Clinkz,0,24,41.7,49.1,pos 4
+Enchantress,0,38,63.2,61.8,pos 4
+Night Stalker,0,38,55.3,56.7,pos 4
+Doom,0,43,51.2,41.4,pos 4
+Spirit Breaker,0,43,46.5,50.7,pos 4
+Alchemist,0,30,43.3,42.9,pos 4
+Shadow Demon,0,28,57.1,57.9,pos 4
+Chaos Knight,0,33,48.5,45.5,pos 4
+Treant Protector,0,37,51.4,55.9,pos 4
+Treant Protector,0,33,51.5,52.2,pos 4
+Ogre Magi,0,38,44.7,39.4,pos 4
+Keeper of the Light,0,47,48.9,50.0,pos 4
+Io,0,34,38.2,42.6,pos 4
+Visage,0,41,61.0,58.3,pos 4
+Slark,0,26,46.2,34.2,pos 4
+Slark,0,47,44.7,48.5,pos 4
+Magnus,0,20,40.0,47.1,pos 4
+Timbersaw,0,25,20.0,33.3,pos 4
+Elder Titan,0,28,50.0,57.1,pos 4
+Elder Titan,0,26,61.5,56.3,pos 4
+Oracle,0,36,41.7,48.9,pos 4
+Mars,0,33,51.5,44.7,pos 4
+Dawnbreaker,0,46,41.3,49.4,pos 4
+Silencer,3273,1770,54.1,53.9,pos 5
+Dazzle,3167,543,58.0,58.3,pos 5
+Pugna,3119,552,55.6,55.6,pos 5
+Clockwerk,3088,701,54.4,52.9,pos 5
+Oracle,3085,460,55.2,52.8,pos 5
+Witch Doctor,3075,413,54.7,52.5,pos 5
+Venomancer,3073,347,55.3,59.8,pos 5
+Bane,3062,386,53.9,53.9,pos 5
+Ringmaster,3040,294,54.4,54.2,pos 5
+Abaddon,3038,336,53.6,59.6,pos 5
+Ogre Magi,3032,681,51.5,48.8,pos 5
+Shadow Demon,3029,155,55.5,53.1,pos 5
+Warlock,3027,206,53.9,59.2,pos 5
+Lich,3026,262,53.4,53.6,pos 5
+Dazzle,3023,219,53.9,51.5,pos 5
+Huskar,3022,50,60.0,54.8,pos 5
+Warlock,3019,464,51.7,49.3,pos 5
+Vengeful Spirit,3018,145,53.8,54.4,pos 5
+Spirit Breaker,3016,201,53.2,49.7,pos 5
+Grimstroke,3015,133,54.1,37.8,pos 5
+Bane,3014,49,57.1,42.0,pos 5
+Dawnbreaker,3014,78,53.8,45.9,pos 5
+Skywrath Mage,3012,228,50.4,47.2,pos 5
+Earthshaker,3011,84,53.6,50.0,pos 5
+Bounty Hunter,3011,127,53.5,63.2,pos 5
+Disruptor,3011,1163,50.0,51.2,pos 5
+Hoodwink,3010,63,52.4,47.8,pos 5
+Dawnbreaker,3010,58,56.9,59.1,pos 5
+Alchemist,3009,96,52.1,51.0,pos 5
+Ogre Magi,3009,86,53.5,50.4,pos 5
+Winter Wyvern,3007,128,52.3,53.4,pos 5
+Batrider,3006,88,52.3,51.5,pos 5
+Invoker,3005,67,55.2,54.8,pos 5
+Nyx Assassin,3004,75,49.3,44.7,pos 5
+Dark Willow,3003,136,50.7,52.1,pos 5
+Lion,3002,277,49.8,37.1,pos 5
+Elder Titan,3002,63,52.4,55.2,pos 5
+Winter Wyvern,3002,218,50.0,53.0,pos 5
+Leshrac,3001,108,50.0,51.9,pos 5
+Snapfire,3001,63,49.2,46.5,pos 5
+Venomancer,3000,167,49.1,59.9,pos 5
+Enchantress,3000,69,50.7,53.7,pos 5
+Phoenix,3000,172,50.0,53.9,pos 5
+Zeus,2998,64,50.0,48.0,pos 5
+Oracle,2998,113,49.6,55.4,pos 5
+Tiny,2996,106,48.1,51.2,pos 5
+Mirana,2995,123,47.2,52.2,pos 5
+Shadow Shaman,2995,446,50.2,53.3,pos 5
+Treant Protector,2995,74,48.6,54.2,pos 5
+Undying,2995,827,50.4,51.5,pos 5
+Hoodwink,2993,96,47.9,49.4,pos 5
+Marci,2992,74,47.3,43.4,pos 5
+Weaver,2991,213,49.8,49.2,pos 5
+Silencer,2990,143,49.7,58.2,pos 5
+Rubick,2990,339,48.7,46.7,pos 5
+Windranger,2989,212,48.6,42.0,pos 5
+Earthshaker,2988,86,46.5,48.5,pos 5
+Grimstroke,2987,68,47.1,51.5,pos 5
+Jakiro,2986,192,50.0,52.4,pos 5
+Magnus,2986,183,48.1,53.1,pos 5
+Phoenix,2986,75,46.7,42.4,pos 5
+Crystal Maiden,2985,95,47.4,58.0,pos 5
+Snapfire,2985,239,48.1,45.9,pos 5
+Nature's Prophet,2984,535,49.7,48.9,pos 5
+Queen of Pain,2983,138,48.6,49.0,pos 5
+Chen,2981,54,44.4,45.6,pos 5
+Zeus,2980,309,48.9,57.3,pos 5
+Lich,2976,532,49.1,50.1,pos 5
+Treant Protector,2975,154,45.5,48.4,pos 5
+Io,2973,143,45.5,50.0,pos 5
+Naga Siren,2972,59,37.3,40.9,pos 5
+Ancient Apparition,2969,417,48.0,50.2,pos 5
+Undying,2969,151,45.0,49.4,pos 5
+Vengeful Spirit,2968,108,42.6,43.7,pos 5
+Dark Willow,2968,286,47.6,53.1,pos 5
+Marci,2967,227,46.7,47.8,pos 5
+Tinker,2961,118,42.4,46.9,pos 5
+Axe,2957,176,43.8,44.5,pos 5
+Jakiro,2953,441,47.4,46.9,pos 5
+Lion,2949,1267,49.3,49.0,pos 5
+Techies,2946,133,40.6,41.1,pos 5
+Disruptor,2943,177,42.4,45.9,pos 5
+Rubick,2940,269,44.6,47.1,pos 5
+Pudge,2935,425,45.6,53.5,pos 5
+Witch Doctor,2930,376,46.3,47.2,pos 5
+Ancient Apparition,2928,349,45.0,45.1,pos 5
+Tusk,2928,556,47.8,51.5,pos 5
+Crystal Maiden,2902,751,47.1,48.0,pos 5
+Shadow Shaman,2883,1348,48.1,53.9,pos 5
+Pudge,2866,740,46.9,47.7,pos 5
+Axe,0,37,54.1,55.4,pos 5
+Sniper,0,35,42.9,46.0,pos 5
+Omniknight,0,33,48.5,41.7,pos 5
+Omniknight,0,40,52.5,46.2,pos 5
+Enchantress,0,32,40.6,38.3,pos 5
+Bounty Hunter,0,38,44.7,35.9,pos 5
+Weaver,0,41,39.0,43.5,pos 5
+Batrider,0,31,51.6,49.1,pos 5
+Doom,0,35,48.6,50.8,pos 5
+Gyrocopter,0,28,50.0,41.0,pos 5
+Gyrocopter,0,35,45.7,43.8,pos 5
+Invoker,0,25,44.0,50.0,pos 5
+Invoker,0,25,56.0,55.8,pos 5
+Shadow Demon,0,43,51.2,58.9,pos 5
+Disruptor,0,39,35.9,44.3,pos 5
+Nyx Assassin,0,33,33.3,34.6,pos 5
+Keeper of the Light,0,26,42.3,48.6,pos 5
+Io,0,44,61.4,51.7,pos 5
+Tusk,0,26,34.6,37.0,pos 5
+Skywrath Mage,0,48,50.0,49.0,pos 5
+Techies,0,49,65.3,54.2,pos 5
+Earth Spirit,0,49,51.0,37.2,pos 5
+Dawnbreaker,0,31,54.8,62.5,pos 5
+Muerta,0,41,51.2,42.4,pos 5

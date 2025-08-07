@@ -4,6 +4,8 @@ from scripts.cleanup import save_to_csv
 from modules.facet_scraper import fetch_facet_data, process_facet_data
 from modules.config_manager import get_chrome_driver
 from scripts.cleanup import save_to_csv
+from modules.period_selector import select_period_8_days
+import time
 
 # URL страницы с фасетами
 url = "https://dota2protracker.com/facets"
@@ -11,6 +13,9 @@ url = "https://dota2protracker.com/facets"
 driver = get_chrome_driver()
 driver.implicitly_wait(2)
 driver.get(url)
+
+# Выбор периода "8 days"
+select_period_8_days(driver)
 
 df_full_facets = scrape_facet_data(driver)
 
