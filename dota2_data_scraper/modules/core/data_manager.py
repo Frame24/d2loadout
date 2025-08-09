@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class DataManager:
     """Менеджер для работы с данными"""
 
-    def __init__(self, output_dir: str = "."):
+    def __init__(self, output_dir: str = "configs"):
         """
         Инициализация менеджера данных
 
@@ -35,6 +35,7 @@ class DataManager:
             True если сохранение успешно, False в противном случае
         """
         try:
+            os.makedirs(self.output_dir, exist_ok=True)
             filepath = os.path.join(self.output_dir, filename)
             df.to_csv(filepath, index=False)
             self.logger.info(f"Данные сохранены в {filepath}")

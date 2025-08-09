@@ -25,7 +25,8 @@ class TestDataScraper(unittest.TestCase):
         """Тест проверки существования и валидности данных героев"""
         # Проверяем существование файла
         self.assertTrue(
-            os.path.exists("heroes_data.csv"), "Файл heroes_data.csv не существует"
+            os.path.exists(os.path.join("configs", "heroes_data.csv")),
+            "Файл heroes_data.csv не существует",
         )
 
         # Загружаем данные
@@ -67,7 +68,7 @@ class TestDataScraper(unittest.TestCase):
 
     def test_facet_numbers_correct(self):
         """Тест проверки корректности номеров фасетов (в processed_heroes.csv)"""
-        if not os.path.exists("processed_heroes.csv"):
+        if not os.path.exists(os.path.join("configs", "processed_heroes.csv")):
             self.skipTest("Файл processed_heroes.csv не существует")
 
         df = self.data_manager.load_dataframe("processed_heroes.csv")
