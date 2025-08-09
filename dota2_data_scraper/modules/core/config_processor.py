@@ -13,6 +13,8 @@ import os
 from .data_manager import DataManager
 from ..utils.steam_manager import SteamManager
 from ..utils.facet_api_parser import FacetAPIParser
+from ..config.hero_config import HeroConfigProcessor
+from ..config.layout_optimizer import LayoutOptimizer, ScreenDimensions
 
 logger = logging.getLogger(__name__)
 
@@ -51,14 +53,21 @@ class ConfigProcessor:
             # Сохранение обработанных данных
             self.data_manager.save_dataframe(processed_heroes, "processed_heroes.csv")
 
-            # Создание конфигураций
+            # Создание стандартных конфигураций
             config = self._create_configs(processed_heroes)
 
-            # Сохранение конфигурации
+            # Применяем оптимизированное расположение к основным конфигурациям
+            self._apply_optimized_layout_to_configs(config)
+
+            # Сохранение стандартной конфигурации
             config_success = self._save_config(config)
             if not config_success:
-                self.logger.error("Ошибка при сохранении конфигурации")
+                self.logger.error("Ошибка при сохранении стандартной конфигурации")
                 return False
+
+            self.logger.info(
+                "✅ Применено оптимизированное расположение Classic Optimized"
+            )
 
             # Копируем конфигурацию в Steam
             config_file_path = os.path.join("configs", "hero_configs.json")
@@ -366,6 +375,56 @@ class ConfigProcessor:
             )
 
         return mapped_ids.fillna(0)
+
+    def _apply_optimized_layout_to_configs(self, config: Dict) -> None:
+        """
+        Применяет оптимизированное расположение Classic Optimized к существующим конфигурациям
+
+        Args:
+            config: Конфигурация с категориями для обновления
+        """
+        try:
+            from ..config.layout_optimizer import LayoutOptimizer
+
+            # Получаем оптимизированное расположение
+            optimizer = LayoutOptimizer()
+            layouts = optimizer.calculate_optimal_layouts()
+            classic_layout = layouts["classic_optimized"]
+
+            # Применяем к каждой конфигурации
+            for cfg in config.get("configs", []):
+                self._update_config_layout(cfg, classic_layout)
+
+            self.logger.info(
+                "Применено оптимизированное расположение ко всем конфигурациям"
+            )
+
+        except Exception as e:
+            self.logger.error(
+                f"Ошибка при применении оптимизированного расположения: {e}"
+            )
+
+    def _update_config_layout(self, config: Dict, layout_template) -> None:
+        """
+        Обновляет расположение категорий в конфигурации согласно шаблону
+
+        Args:
+            config: Конфигурация для обновления
+            layout_template: Шаблон расположения элементов
+        """
+        # Создаем маппинг шаблона по именам категорий
+        layout_map = {cat.name: cat for cat in layout_template}
+
+        # Обновляем существующие категории
+        for category in config.get("categories", []):
+            cat_name = category.get("category_name", "")
+
+            if cat_name in layout_map:
+                template = layout_map[cat_name]
+                category["x_position"] = template.x
+                category["y_position"] = template.y
+                category["width"] = template.width
+                category["height"] = template.height
 
     def _create_configs(self, heroes_df: pd.DataFrame) -> Dict:
         """
