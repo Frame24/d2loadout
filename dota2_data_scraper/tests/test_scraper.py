@@ -122,12 +122,12 @@ class TestDataScraper(unittest.TestCase):
 
     def test_config_generation(self):
         """Тест проверки генерации конфигураций"""
-        if not os.path.exists("hero_configs.json"):
+        if not os.path.exists(os.path.join("configs", "hero_configs.json")):
             self.skipTest("Файл hero_configs.json не существует")
 
         import json
 
-        with open("hero_configs.json", "r") as f:
+        with open(os.path.join("configs", "hero_configs.json"), "r") as f:
             config = json.load(f)
 
         # Проверяем структуру конфигурации

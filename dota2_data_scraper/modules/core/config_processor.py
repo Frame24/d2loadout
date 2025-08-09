@@ -8,6 +8,7 @@ import logging
 import re
 import requests
 from typing import Dict, List, Optional
+import os
 
 from .data_manager import DataManager
 from ..utils.steam_manager import SteamManager
@@ -60,7 +61,7 @@ class ConfigProcessor:
                 return False
 
             # Копируем конфигурацию в Steam
-            config_file_path = "hero_configs.json"
+            config_file_path = os.path.join("configs", "hero_configs.json")
             steam_success = self.steam_manager.copy_config_to_steam(config_file_path)
             if steam_success:
                 self.logger.info("✅ Конфигурация скопирована в Steam")
@@ -547,10 +548,13 @@ class ConfigProcessor:
             True если сохранение успешно, False в противном случае
         """
         try:
-            with open("hero_configs.json", "w") as config_file:
+            # Гарантируем наличие директории configs/
+            os.makedirs("configs", exist_ok=True)
+            target_path = os.path.join("configs", "hero_configs.json")
+            with open(target_path, "w") as config_file:
                 json.dump(config, config_file, indent=4, default=str)
 
-            self.logger.info("Конфигурация сохранена в hero_configs.json")
+            self.logger.info(f"Конфигурация сохранена в {target_path}")
             return True
 
         except Exception as e:
