@@ -8,7 +8,6 @@ import logging
 from typing import Optional
 
 from modules.scrapers.hero_scraper import HeroScraper
-from modules.scrapers.facet_scraper import FacetScraper
 from modules.core.data_manager import DataManager
 from modules.core.config_processor import ConfigProcessor
 
@@ -34,9 +33,9 @@ def check_dependencies():
 
 
 def run_heroes_scraping() -> bool:
-    """Запуск скрапинга героев"""
+    """Запуск скрапинга героев (теперь включает все данные)"""
     try:
-        logger.info("Запуск скрапинга героев...")
+        logger.info("Запуск полного скрапинга данных...")
         scraper = HeroScraper()
         data_manager = DataManager()
 
@@ -47,45 +46,17 @@ def run_heroes_scraping() -> bool:
             # Сохранение данных
             success = data_manager.save_dataframe(heroes_df, "heroes_data.csv")
             if success:
-                logger.info("✅ Скрапинг героев завершен успешно")
+                logger.info("✅ Скрапинг данных завершен успешно")
                 return True
             else:
-                logger.error("❌ Ошибка при сохранении данных героев")
+                logger.error("❌ Ошибка при сохранении данных")
                 return False
         else:
-            logger.error("❌ Не удалось собрать данные героев")
+            logger.error("❌ Не удалось собрать данные")
             return False
 
     except Exception as e:
-        logger.error(f"❌ Ошибка при скрапинге героев: {e}")
-        return False
-
-
-def run_facets_scraping() -> bool:
-    """Запуск скрапинга фасетов"""
-    try:
-        logger.info("Запуск скрапинга фасетов...")
-        scraper = FacetScraper()
-        data_manager = DataManager()
-
-        # Сбор данных
-        facets_df = scraper.scrape_facets_data()
-
-        if not facets_df.empty:
-            # Сохранение данных
-            success = data_manager.save_dataframe(facets_df, "facets_data.csv")
-            if success:
-                logger.info("✅ Скрапинг фасетов завершен успешно")
-                return True
-            else:
-                logger.error("❌ Ошибка при сохранении данных фасетов")
-                return False
-        else:
-            logger.error("❌ Не удалось собрать данные фасетов")
-            return False
-
-    except Exception as e:
-        logger.error(f"❌ Ошибка при скрапинге фасетов: {e}")
+        logger.error(f"❌ Ошибка при скрапинге: {e}")
         return False
 
 
@@ -117,9 +88,8 @@ def main():
 
     # Настройка аргументов командной строки
     parser = argparse.ArgumentParser(description="Dota 2 Data Scraper")
-    parser.add_argument("--heroes", action="store_true", help="Запуск скрапинга героев")
     parser.add_argument(
-        "--facets", action="store_true", help="Запуск скрапинга фасетов"
+        "--scrape", action="store_true", help="Запуск скрапинга всех данных"
     )
     parser.add_argument(
         "--config", action="store_true", help="Запуск обработки конфигураций"
@@ -132,28 +102,20 @@ def main():
     total_count = 0
 
     # Определяем, какие процессы запускать
-    if args.heroes:
+    if args.scrape:
         total_count += 1
         if run_heroes_scraping():
-            success_count += 1
-    elif args.facets:
-        total_count += 1
-        if run_facets_scraping():
             success_count += 1
     elif args.config:
         total_count += 1
         if run_config_processing():
             success_count += 1
-    elif args.all or not any([args.heroes, args.facets, args.config]):
+    elif args.all or not any([args.scrape, args.config]):
         # Запуск всех процессов
         logger.info("Запуск всех процессов...")
 
         total_count += 1
         if run_heroes_scraping():
-            success_count += 1
-
-        total_count += 1
-        if run_facets_scraping():
             success_count += 1
 
         total_count += 1

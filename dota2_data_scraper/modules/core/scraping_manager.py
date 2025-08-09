@@ -49,11 +49,10 @@ class ScrapingManager:
         """Создание настроек Chrome"""
         chrome_options = Options()
 
-        # Создаем уникальную временную директорию для профиля Chrome
-        temp_dir = os.path.join(
-            tempfile.gettempdir(), f"chrome_profile_{uuid.uuid4().hex[:8]}"
-        )
-        chrome_options.add_argument(f"--user-data-dir={temp_dir}")
+        # Используем уникальный порт для каждого экземпляра
+        import random
+
+        port = random.randint(9000, 9999)
 
         # Базовые опции для стабильной работы
         if self.headless:
@@ -66,7 +65,9 @@ class ScrapingManager:
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-logging")
         chrome_options.add_argument("--log-level=3")
-        chrome_options.add_argument("--remote-debugging-port=0")
+        chrome_options.add_argument(f"--remote-debugging-port={port}")
+        chrome_options.add_argument("--disable-web-security")
+        chrome_options.add_argument("--disable-features=VizDisplayCompositor")
         chrome_options.add_argument("--no-first-run")
         chrome_options.add_argument("--no-default-browser-check")
 
@@ -123,6 +124,17 @@ class ScrapingManager:
             self.logger.info("Страница успешно загружена")
         except Exception as e:
             self.logger.error(f"Ошибка при загрузке страницы: {e}")
+            raise
+
+    def navigate_to_page_basic(self, url: str) -> None:
+        """Базовый переход без специфичных действий (для сторонних сайтов)"""
+        try:
+            self.logger.info(f"Базовый переход на страницу: {url}")
+            self.driver.get(url)
+            self.driver.implicitly_wait(10)
+            self.logger.info("Страница успешно загружена (basic)")
+        except Exception as e:
+            self.logger.error(f"Ошибка при базовой загрузке страницы: {e}")
             raise
 
     def click_element_safely(self, xpath: str, timeout: int = 10) -> bool:

@@ -1,0 +1,246 @@
+﻿Hero,facet_number,facet_name,roles_present,matches_total,wr_weighted
+Abaddon,1,,"pos 1, pos 3, pos 4, pos 5",841,54.67
+Abaddon,2,,"pos 1, pos 3, pos 5",527,47.62
+Alchemist,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",420,50.96
+Alchemist,2,,"pos 1, pos 4, pos 5",79,49.36
+Ancient Apparition,1,,"pos 4, pos 5",526,48.31
+Ancient Apparition,2,,"pos 4, pos 5",466,43.97
+Anti-Mage,1,,"pos 1, pos 2, pos 3",1053,50.79
+Anti-Mage,2,,pos 1,38,39.5
+Arc Warden,1,,pos 2,69,52.2
+Arc Warden,2,,pos 2,53,45.3
+Axe,1,,"pos 2, pos 3, pos 4, pos 5",2585,50.79
+Axe,2,,"pos 3, pos 4, pos 5",850,48.34
+Bane,1,,"pos 4, pos 5",584,54.96
+Bane,2,,"pos 4, pos 5",95,48.42
+Batrider,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",573,49.73
+Batrider,2,,"pos 2, pos 3, pos 4, pos 5",318,42.45
+Beastmaster,1,,"pos 2, pos 3",326,49.69
+Beastmaster,2,,pos 3,430,47.9
+Bloodseeker,1,,pos 1,125,48.0
+Bloodseeker,2,,pos 1,30,43.3
+Bounty Hunter,1,,"pos 2, pos 3, pos 4, pos 5",782,53.99
+Bounty Hunter,2,,"pos 4, pos 5",123,52.82
+Brewmaster,1,,pos 3,201,58.7
+Brewmaster,2,,pos 3,34,38.2
+Bristleback,1,,pos 3,129,50.4
+Bristleback,2,,pos 3,115,41.7
+Broodmother,1,,"pos 1, pos 2, pos 3",154,55.82
+Broodmother,2,,"pos 1, pos 2, pos 3",104,53.87
+Centaur Warrunner,1,,pos 3,510,49.4
+Centaur Warrunner,2,,pos 3,207,43.0
+Chaos Knight,1,,"pos 1, pos 3, pos 4",367,53.67
+Chaos Knight,2,,"pos 1, pos 3",67,50.77
+Chen,1,,pos 5,57,47.4
+Clinkz,1,,"pos 1, pos 2, pos 4",202,49.03
+Clinkz,2,,"pos 1, pos 2",134,46.98
+Clockwerk,1,,"pos 3, pos 4, pos 5",1360,51.35
+Crystal Maiden,1,,"pos 4, pos 5",212,48.59
+Crystal Maiden,2,,"pos 4, pos 5",878,49.16
+Dark Seer,1,,pos 3,166,53.0
+Dark Seer,2,,pos 3,247,46.2
+Dark Willow,1,,"pos 2, pos 4, pos 5",359,50.11
+Dark Willow,2,,"pos 4, pos 5",889,49.07
+Dawnbreaker,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",2689,54.19
+Dawnbreaker,2,,"pos 3, pos 4, pos 5",357,55.48
+Dawnbreaker,3,,"pos 3, pos 4, pos 5",245,54.27
+Dazzle,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",862,53.14
+Dazzle,2,,"pos 4, pos 5",324,51.86
+Death Prophet,1,,"pos 2, pos 3",280,48.59
+Death Prophet,2,,"pos 2, pos 3",187,47.55
+Disruptor,1,,"pos 4, pos 5",1557,50.09
+Disruptor,2,,"pos 4, pos 5",243,41.95
+Disruptor,3,,pos 5,36,27.8
+Doom,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",409,44.52
+Doom,2,,"pos 1, pos 3",308,43.88
+Doom,3,,pos 3,352,44.9
+Dragon Knight,1,,"pos 1, pos 2, pos 3",204,55.4
+Dragon Knight,2,,"pos 1, pos 2, pos 3",284,45.77
+Drow Ranger,1,,pos 1,831,50.9
+Drow Ranger,2,,pos 1,173,48.0
+Earth Spirit,1,,"pos 2, pos 3, pos 4, pos 5",283,50.89
+Earth Spirit,2,,"pos 3, pos 4",170,48.8
+Earthshaker,1,,"pos 2, pos 3, pos 4, pos 5",1417,54.87
+Earthshaker,2,,"pos 2, pos 3, pos 4, pos 5",1182,48.97
+Elder Titan,1,,"pos 3, pos 4, pos 5",125,54.42
+Elder Titan,2,,"pos 3, pos 4, pos 5",89,64.05
+Ember Spirit,1,,"pos 2, pos 3, pos 4, pos 5",1469,50.29
+Ember Spirit,2,,pos 2,265,47.5
+Enchantress,1,,"pos 2, pos 3, pos 4, pos 5",158,51.91
+Enchantress,2,,pos 5,31,38.7
+Enigma,1,,"pos 3, pos 4",149,61.11
+Enigma,2,,pos 3,66,47.0
+Faceless Void,1,,"pos 1, pos 3, pos 4, pos 5",779,51.69
+Grimstroke,1,,"pos 4, pos 5",247,51.81
+Grimstroke,2,,"pos 4, pos 5",116,41.37
+Gyrocopter,1,,"pos 1, pos 4, pos 5",584,49.83
+Gyrocopter,2,,"pos 1, pos 4, pos 5",558,46.78
+Hoodwink,1,,"pos 1, pos 2, pos 4, pos 5",463,49.22
+Hoodwink,2,,"pos 2, pos 4, pos 5",265,49.8
+Huskar,1,,"pos 2, pos 3, pos 5",382,50.78
+Huskar,2,,"pos 2, pos 3",450,48.43
+Invoker,1,,"pos 2, pos 4, pos 5",547,57.79
+Invoker,2,,"pos 2, pos 4, pos 5",286,52.13
+Invoker,3,,"pos 2, pos 4, pos 5",1038,48.42
+Io,1,,"pos 4, pos 5",163,42.3
+Io,2,,pos 5,42,57.1
+Jakiro,1,,"pos 2, pos 3, pos 4, pos 5",373,47.72
+Jakiro,2,,"pos 4, pos 5",593,46.06
+Juggernaut,1,,pos 1,870,52.3
+Juggernaut,2,,pos 1,585,50.9
+Keeper of the Light,1,,"pos 2, pos 4, pos 5",250,56.02
+Kez,1,,"pos 1, pos 2, pos 3",455,51.41
+Kunkka,1,,"pos 1, pos 2, pos 3",817,45.18
+Kunkka,2,,"pos 2, pos 3",84,48.8
+Legion Commander,1,,"pos 2, pos 3",1220,51.81
+Legion Commander,2,,"pos 2, pos 3",521,54.91
+Leshrac,1,,"pos 2, pos 3, pos 4, pos 5",1658,53.29
+Leshrac,2,,pos 2,31,41.9
+Lich,1,,"pos 4, pos 5",327,52.62
+Lich,2,,"pos 4, pos 5",702,49.15
+Lifestealer,1,,pos 1,617,54.3
+Lifestealer,2,,pos 1,503,50.3
+Lina,1,,"pos 1, pos 2",241,48.55
+Lina,2,,pos 2,258,43.4
+Lion,1,,"pos 2, pos 4, pos 5",1267,51.01
+Lion,2,,"pos 4, pos 5",1499,49.0
+Lone Druid,1,,"pos 1, pos 2",184,50.0
+Luna,1,,pos 1,769,49.5
+Luna,2,,pos 1,253,44.3
+Lycan,1,,"pos 2, pos 3",260,51.93
+Lycan,2,,pos 3,32,50.0
+Magnus,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1680,49.75
+Magnus,2,,"pos 2, pos 3",457,47.07
+Marci,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1293,52.05
+Marci,2,,"pos 4, pos 5",176,42.05
+Mars,1,,"pos 2, pos 3, pos 4, pos 5",485,48.47
+Mars,2,,"pos 2, pos 3",1303,45.48
+Medusa,1,,"pos 1, pos 3",1412,50.64
+Medusa,2,,pos 1,26,34.6
+Medusa,3,,pos 1,41,29.3
+Meepo,1,,"pos 1, pos 2",175,63.41
+Meepo,2,,pos 2,217,50.7
+Mirana,1,,"pos 1, pos 2, pos 4, pos 5",449,49.01
+Mirana,2,,"pos 1, pos 4",49,53.04
+Monkey King,1,,"pos 1, pos 2, pos 3, pos 4",459,46.2
+Monkey King,2,,"pos 1, pos 2, pos 3",1125,48.07
+Morphling,1,,"pos 1, pos 2",1222,45.55
+Muerta,1,,"pos 1, pos 2, pos 4, pos 5",496,49.39
+Muerta,2,,pos 4,22,40.9
+Naga Siren,1,,"pos 1, pos 5",99,40.38
+Nature's Prophet,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",3568,52.88
+Nature's Prophet,2,,"pos 1, pos 2, pos 4, pos 5",134,45.55
+Necrophos,1,,"pos 1, pos 2, pos 3",539,51.96
+Necrophos,2,,"pos 2, pos 3",687,48.29
+Night Stalker,1,,"pos 2, pos 3, pos 4",560,48.43
+Nyx Assassin,1,,"pos 2, pos 3, pos 4, pos 5",305,54.77
+Nyx Assassin,2,,"pos 2, pos 3, pos 4, pos 5",499,48.68
+Ogre Magi,1,,"pos 2, pos 3, pos 4, pos 5",464,49.98
+Ogre Magi,2,,"pos 2, pos 3, pos 4, pos 5",862,48.16
+Omniknight,1,,"pos 2, pos 3, pos 5",153,47.73
+Omniknight,2,,pos 5,48,52.1
+Oracle,1,,"pos 2, pos 4, pos 5",662,54.68
+Oracle,2,,"pos 4, pos 5",169,48.55
+Outworld Destroyer,1,,pos 2,544,50.0
+Outworld Destroyer,2,,pos 2,239,49.4
+Pangolier,1,,"pos 2, pos 3",270,47.81
+Pangolier,2,,"pos 2, pos 3",325,44.66
+Phantom Assassin,1,,pos 1,137,39.4
+Phantom Assassin,2,,pos 1,172,39.0
+Phantom Lancer,1,,pos 1,67,46.3
+Phantom Lancer,2,,pos 1,663,49.5
+Phoenix,1,,"pos 2, pos 3, pos 4, pos 5",843,51.27
+Phoenix,2,,"pos 4, pos 5",175,46.29
+Primal Beast,1,,"pos 2, pos 3",242,48.79
+Primal Beast,2,,"pos 2, pos 3",399,48.58
+Puck,1,,pos 2,1071,54.3
+Puck,2,,pos 2,1073,48.6
+Pudge,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1750,52.5
+Pudge,2,,"pos 1, pos 2, pos 3, pos 4, pos 5",2370,49.58
+Pugna,1,,"pos 2, pos 3, pos 4, pos 5",1227,53.15
+Pugna,2,,"pos 2, pos 4, pos 5",91,42.84
+Queen of Pain,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",3006,50.28
+Queen of Pain,2,,"pos 2, pos 3, pos 4",970,48.72
+Razor,1,,"pos 1, pos 2, pos 3",322,52.47
+Razor,2,,"pos 1, pos 3",286,47.2
+Riki,1,,"pos 1, pos 2, pos 3, pos 4",283,47.35
+Riki,2,,pos 4,45,48.9
+Ringmaster,1,,"pos 4, pos 5",546,52.54
+Rubick,1,,"pos 2, pos 3, pos 4, pos 5",1424,51.26
+Rubick,2,,"pos 2, pos 3, pos 4, pos 5",1550,48.27
+Sand King,1,,"pos 2, pos 3",132,47.72
+Sand King,2,,"pos 2, pos 3",107,43.0
+Shadow Demon,1,,"pos 4, pos 5",273,54.58
+Shadow Demon,2,,"pos 4, pos 5",76,55.24
+Shadow Fiend,1,,"pos 1, pos 2",1406,50.65
+Shadow Fiend,2,,"pos 1, pos 2",2037,49.4
+Shadow Shaman,1,,"pos 4, pos 5",750,49.87
+Shadow Shaman,2,,"pos 4, pos 5",2385,48.46
+Silencer,1,,"pos 2, pos 4, pos 5",2645,55.1
+Silencer,2,,"pos 2, pos 4, pos 5",227,47.09
+Skywrath Mage,1,,"pos 2, pos 4, pos 5",737,49.83
+Skywrath Mage,2,,"pos 2, pos 4, pos 5",472,44.92
+Slardar,1,,"pos 2, pos 3",701,52.9
+Slardar,2,,"pos 2, pos 3",129,50.39
+Slark,1,,"pos 1, pos 2, pos 3, pos 4",831,51.49
+Slark,2,,"pos 1, pos 4",94,46.79
+Snapfire,1,,"pos 2, pos 3, pos 4, pos 5",727,51.57
+Snapfire,2,,"pos 2, pos 3, pos 4, pos 5",231,52.84
+Sniper,1,,"pos 1, pos 2, pos 4, pos 5",699,48.92
+Sniper,2,,"pos 2, pos 4",326,43.6
+Spectre,1,,pos 1,607,51.7
+Spirit Breaker,1,,"pos 2, pos 3, pos 4, pos 5",1480,52.35
+Spirit Breaker,2,,pos 4,45,44.4
+Storm Spirit,1,,pos 2,168,50.0
+Storm Spirit,2,,pos 2,1653,48.6
+Sven,1,,pos 1,1294,48.0
+Sven,2,,pos 1,23,39.1
+Techies,1,,"pos 2, pos 3, pos 4, pos 5",196,49.98
+Techies,2,,"pos 4, pos 5",376,46.04
+Templar Assassin,1,,"pos 1, pos 2",1164,50.89
+Templar Assassin,2,,"pos 1, pos 2",372,43.82
+Terrorblade,1,,"pos 1, pos 3",114,44.75
+Terrorblade,2,,pos 1,1295,49.6
+Tidehunter,1,,"pos 2, pos 3",191,49.76
+Tidehunter,2,,pos 3,456,49.3
+Timbersaw,1,,"pos 1, pos 2, pos 3, pos 4",922,51.1
+Timbersaw,2,,"pos 2, pos 3",470,43.58
+Tinker,1,,"pos 2, pos 4, pos 5",680,49.6
+Tinker,2,,pos 2,29,58.6
+Tiny,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1389,49.75
+Treant Protector,1,,"pos 4, pos 5",104,52.87
+Treant Protector,2,,"pos 4, pos 5",202,47.02
+Troll Warlord,1,,pos 1,82,43.9
+Troll Warlord,2,,pos 1,99,46.5
+Tusk,1,,"pos 2, pos 3, pos 4, pos 5",1314,48.94
+Tusk,2,,"pos 4, pos 5",72,36.12
+Underlord,1,,pos 3,194,47.4
+Underlord,2,,pos 3,225,43.1
+Undying,1,,"pos 2, pos 3, pos 4, pos 5",1653,51.34
+Undying,2,,"pos 4, pos 5",443,48.06
+Ursa,1,,"pos 1, pos 2, pos 3",1251,55.48
+Ursa,2,,pos 1,865,50.3
+Vengeful Spirit,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1177,54.2
+Vengeful Spirit,2,,"pos 4, pos 5",252,48.78
+Venomancer,1,,"pos 3, pos 4, pos 5",844,53.21
+Venomancer,2,,"pos 3, pos 4, pos 5",347,52.74
+Viper,1,,"pos 2, pos 3",195,48.71
+Viper,2,,"pos 2, pos 3",98,36.74
+Visage,1,,"pos 3, pos 4, pos 5",120,51.68
+Visage,2,,pos 3,30,46.7
+Void Spirit,1,,"pos 1, pos 2, pos 3",240,47.53
+Void Spirit,2,,"pos 2, pos 3",733,50.29
+Warlock,1,,"pos 4, pos 5",266,53.42
+Warlock,2,,"pos 4, pos 5",514,48.84
+Weaver,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1020,51.0
+Weaver,2,,"pos 1, pos 3, pos 4, pos 5",656,45.87
+Windranger,1,,"pos 1, pos 2, pos 3, pos 4, pos 5",1411,47.93
+Windranger,2,,"pos 2, pos 3, pos 4",83,49.38
+Winter Wyvern,1,,"pos 4, pos 5",237,54.02
+Winter Wyvern,2,,"pos 4, pos 5",285,50.56
+Witch Doctor,1,,"pos 4, pos 5",622,52.12
+Witch Doctor,2,,"pos 4, pos 5",605,46.8
+Wraith King,1,,"pos 1, pos 3",433,46.67
+Wraith King,2,,"pos 1, pos 3",188,47.84
+Zeus,1,,"pos 2, pos 3, pos 4, pos 5",788,46.82
+Zeus,2,,"pos 2, pos 4, pos 5",719,45.63

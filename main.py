@@ -3,10 +3,14 @@
 import sys
 
 # Определяем, использовать ли print вместо display
-if hasattr(sys, 'frozen'):  # Если код выполняется в собранном файле
+if hasattr(sys, "frozen"):  # Если код выполняется в собранном файле
+
     def display(*args, **kwargs):
         print(*args, **kwargs)
+
+
 import warnings
+
 warnings.filterwarnings("ignore")
 print("d2loadout update started")
 import json
@@ -22,6 +26,7 @@ from bs4 import BeautifulSoup
 import time
 import ast
 import html_to_json
+
 chrome_options = webdriver.ChromeOptions()
 
 chrome_options.add_argument("user-agent=" + UserAgent().random)
@@ -38,11 +43,11 @@ chrome_options.add_experimental_option("useAutomationExtension", False)
 chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 chrome_options.add_experimental_option("detach", True)
 
-chrome_options.add_argument('headless')
-chrome_options.add_argument('window-size=1920x1080')
+chrome_options.add_argument("headless")
+chrome_options.add_argument("window-size=1920x1080")
 chrome_options.add_argument("disable-gpu")
 
-chrome_options.page_load_strategy = 'eager'
+chrome_options.page_load_strategy = "eager"
 
 
 os.environ["PATH"] += r"C:\Program Files (x86)\Chromedriver.exe"
@@ -57,6 +62,7 @@ import pandas as pd
 from selenium.webdriver.common.by import By
 import time
 
+
 def get_d2pt_page_table(driver):
     # Даем время на загрузку контента
     time.sleep(0.2)
@@ -65,10 +71,10 @@ def get_d2pt_page_table(driver):
     page_source = driver.page_source
 
     # Парсим HTML с помощью BeautifulSoup
-    soup = BeautifulSoup(page_source, 'html.parser')
+    soup = BeautifulSoup(page_source, "html.parser")
 
     # Ищем строки таблицы по их CSS-классу
-    table_rows = soup.find_all('div', class_='grid', style=True)
+    table_rows = soup.find_all("div", class_="grid", style=True)
 
     # Список для хранения данных
     data = []
@@ -76,7 +82,7 @@ def get_d2pt_page_table(driver):
 
     for index, row in enumerate(table_rows):
         # Проверяем, чтобы строка не была заголовком
-        cols = row.find_all('div', recursive=False)
+        cols = row.find_all("div", recursive=False)
 
         if index == 0:
             # Считаем первую строку заголовком
@@ -88,15 +94,15 @@ def get_d2pt_page_table(driver):
         row_data = []
         for col in cols:
             # Проверяем наличие изображений для извлечения роли
-            img = col.find('img', alt=True)
+            img = col.find("img", alt=True)
             if img:
-                row_data.append(img['alt'])
+                row_data.append(img["alt"])
                 continue
 
             # Обрабатываем содержимое внутри span
-            spans = col.find_all('span')
+            spans = col.find_all("span")
             if spans:
-                span_text = ' '.join([span.get_text(strip=True) for span in spans])
+                span_text = " ".join([span.get_text(strip=True) for span in spans])
                 row_data.append(span_text if span_text else None)
                 continue
 
@@ -111,37 +117,42 @@ def get_d2pt_page_table(driver):
     df_heroes_table = pd.DataFrame(data, columns=headers)
 
     # Убираем лишние строки или обрабатываем некорректные данные
-    df_heroes_table = df_heroes_table.dropna(how='all')
+    df_heroes_table = df_heroes_table.dropna(how="all")
 
     # Очистка данных в процентах и диапазонах
     def clean_data(value):
         if isinstance(value, str):
-            if '%' in value:
+            if "%" in value:
                 try:
-                    return float(value.replace('%', ''))
+                    return float(value.replace("%", ""))
                 except ValueError:
                     return value  # Вернуть исходное значение, если не удалось преобразовать
-            elif '(' in value and ')' in value:
+            elif "(" in value and ")" in value:
                 try:
-                    main_value, range_values = value.split('(')
+                    main_value, range_values = value.split("(")
                     main_value = main_value.strip()
-                    range_values = range_values.replace(')', '').split('-')
+                    range_values = range_values.replace(")", "").split("-")
                     return {
-                        'main': int(main_value),
-                        'range_min': int(range_values[0]),
-                        'range_max': int(range_values[1])
+                        "main": int(main_value),
+                        "range_min": int(range_values[0]),
+                        "range_max": int(range_values[1]),
                     }
                 except ValueError:
-                    return value  # Вернуть исходное значение, если формат не соответствует
+                    return (
+                        value  # Вернуть исходное значение, если формат не соответствует
+                    )
         return value
 
     # Применяем очистку данных ко всем ячейкам
     df_heroes_table = df_heroes_table.map(clean_data)
 
     # Обработка типов данных для чисел
-    df_heroes_table = df_heroes_table.apply(lambda x: x.convert_dtypes() if x.name != 2 else x)
+    df_heroes_table = df_heroes_table.apply(
+        lambda x: x.convert_dtypes() if x.name != 2 else x
+    )
 
     return df_heroes_table
+
 
 # Пример использования:
 # driver = ...  # Selenium WebDriver
@@ -181,7 +192,7 @@ import re
 # Пример HTML-кода (замени на свой)
 html_text = hero_req.text
 # Регулярное выражение для извлечения объекта facetData
-pattern = r'facetData:\s*({.*?})\s*\}\s*,'
+pattern = r"facetData:\s*({.*?})\s*\}\s*,"
 constdata = re.findall(pattern, html_text, re.DOTALL)[0]
 
 constdata
@@ -204,7 +215,7 @@ result = js2py.eval_js(js_code)
 if result:
     # Преобразуем JSON-строку в Python-словарь
     facet_data = json.loads(result)
-    
+
     # Инициализируем пустой DataFrame
     all_facets_df = pd.DataFrame()
 
@@ -216,26 +227,25 @@ if result:
         for facet in facets:
             if not facet.get("deprecated", False):  # Пропускаем deprecated
                 facets_data.append(facet)
-        
+
         facets_df = pd.DataFrame(facets_data)
-        
+
         # Добавляем информацию о ключе, id и localized_name в DataFrame
         facets_df["key"] = key  # Ключ из facetData
         facets_df["id"] = value.get("id")
         facets_df["localized_name"] = value.get("localized_name")
-        
+
         # Объединяем текущий DataFrame с общим
         all_facets_df = pd.concat([all_facets_df, facets_df], ignore_index=True)
-    
+
     # Перенумерация facet_number
-    all_facets_df["facet_number"] = (
-        all_facets_df.groupby(["key", "id"]).cumcount() + 1
-    )
-    
+    all_facets_df["facet_number"] = all_facets_df.groupby(["key", "id"]).cumcount() + 1
+
     # Выводим общий DataFrame
     display(all_facets_df)
 else:
     print("Данные не найдены или невалидны.")
+
 
 def get_d2pt_page_table_facets(driver):
     time.sleep(0.2)
@@ -247,15 +257,21 @@ def get_d2pt_page_table_facets(driver):
         By.CSS_SELECTOR, ".flex.bg-d2pt-gray-4.gap-1"
     )
     hero_rows = [item.text.split("\n") for item in category_name_elements]
-    hero_columns = [item for item in driver.find_element(
-        By.CSS_SELECTOR, ".flex.gap-1.font-medium.text-sm.mb-1"
-    ).text.split("\n") if item != "Trend"]
-        
+    hero_columns = [
+        item
+        for item in driver.find_element(
+            By.CSS_SELECTOR, ".flex.gap-1.font-medium.text-sm.mb-1"
+        ).text.split("\n")
+        if item != "Trend"
+    ]
+
     # Dataframe dtype converts
     df_heroes_table = pd.DataFrame(data=hero_rows, columns=hero_columns)
     df_heroes_table = df_heroes_table.convert_dtypes()
     df_heroes_table = df_heroes_table.round(1)
     return df_heroes_table
+
+
 print("checking facets...")
 print("fetching facets info for pos 1")
 driver.find_element(By.XPATH, "//div[contains(text(), 'Carry')]").click()
@@ -282,16 +298,16 @@ driver.find_element(By.XPATH, "//div[contains(text(), 'Pos 5')]").click()
 df_5 = get_d2pt_page_table_facets(driver)
 df_5["Role"] = "pos 5"
 
-df_full_facets = pd.concat([df_1,df_2,df_3,df_4,df_5], axis=0)
+df_full_facets = pd.concat([df_1, df_2, df_3, df_4, df_5], axis=0)
 
-df_full_facets = df_full_facets.rename({
-    "Hero": "hero",
-    "Facet": "facet",
-    "Matches": "Matches",
-    "Win Rate": "Win Rate"
-}, axis=1)[["hero", "facet", "Matches", "Win Rate", "Role"]]
+df_full_facets = df_full_facets.rename(
+    {"Hero": "hero", "Facet": "facet", "Matches": "Matches", "Win Rate": "Win Rate"},
+    axis=1,
+)[["hero", "facet", "Matches", "Win Rate", "Role"]]
 
-df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(lambda x: x.replace("%", ""))
+df_full_facets["Win Rate"] = df_full_facets["Win Rate"].apply(
+    lambda x: x.replace("%", "")
+)
 df_full_facets = df_full_facets.convert_dtypes()
 
 df_full_facets
@@ -631,8 +647,12 @@ class HeroConfigProcessor:
             "config_name": self.name,
             "categories": categories,
         }
+
+
 # Оставляем только уникальные значения в правом DataFrame
-all_facets_df_unique = all_facets_df.drop_duplicates(subset=["localized_name"], keep="first")
+all_facets_df_unique = all_facets_df.drop_duplicates(
+    subset=["localized_name"], keep="first"
+)
 
 # Выполняем объединение
 df_final = pd.merge(
@@ -640,7 +660,7 @@ df_final = pd.merge(
     all_facets_df_unique[["id", "localized_name"]],  # Оставляем только нужные столбцы
     left_on=["Hero"],  # Соответствие по названию фасета и герою
     right_on=["localized_name"],  # Название фасета и героя
-    how="left"  # Оставляем все строки из df_full
+    how="left",  # Оставляем все строки из df_full
 )
 
 # Переименовываем столбец "id" в "hero_id"
@@ -651,14 +671,18 @@ cols = ["hero_id"] + [col for col in df_final.columns if col != "hero_id"]
 df_final = df_final[cols]
 
 # Заменить hero_id на 76 для строк, где Hero = "Outworld Destroyer"
-df_final.loc[df_final['Hero'] == "Outworld Destroyer", 'hero_id'] = 76
+df_final.loc[df_final["Hero"] == "Outworld Destroyer", "hero_id"] = 76
 
 # Разделяем столбец Expert
-df_final["Expert Win Rate"] = df_final["Expert"].str.extract(r"(\d+\.\d+)%").astype(float)
+df_final["Expert Win Rate"] = (
+    df_final["Expert"].str.extract(r"(\d+\.\d+)%").astype(float)
+)
 df_final["Expert Matches"] = df_final["Expert"].str.extract(r"\((\d+)\)").astype(int)
 
 # Разделяем столбец WR 9500+ MMR
-df_final["9500 Win Rate"] = df_final["WR 9500+ MMR"].str.extract(r"(\d+\.\d+)%").astype(float)
+df_final["9500 Win Rate"] = (
+    df_final["WR 9500+ MMR"].str.extract(r"(\d+\.\d+)%").astype(float)
+)
 df_final["9500 Matches"] = df_final["WR 9500+ MMR"].str.extract(r" (\d+) ").astype(int)
 
 # Удаляем старые столбцы (если нужно)
@@ -674,10 +698,12 @@ all_facets_df["name_upper"] = all_facets_df["name"].str.upper()  # В верхн
 # Выполняем объединение (merge) двух DataFrame по колонкам с названиями фасетов
 df_final_facets = pd.merge(
     df_full_facets,
-    all_facets_df[["facet_number", "id", "name_upper", "localized_name"]],  # Оставляем только нужные столбцы
+    all_facets_df[
+        ["facet_number", "id", "name_upper", "localized_name"]
+    ],  # Оставляем только нужные столбцы
     left_on=["facet_upper", "hero"],  # Соответствие по названию фасета и герою
     right_on=["name_upper", "localized_name"],  # Название фасета и героя
-    how="left"  # Оставляем все строки из df_full_facets
+    how="left",  # Оставляем все строки из df_full_facets
 )
 
 # Удаляем временные колонки с верхним регистром (если они не нужны)
@@ -691,7 +717,9 @@ cols = ["hero_id"] + [col for col in df_final_facets.columns if col != "hero_id"
 df_final_facets = df_final_facets[cols]
 
 # Итоговые столбцы
-df_final_facets = df_final_facets[["hero_id", "hero", "facet", "Matches", "Win Rate", "Role", "facet_number"]]
+df_final_facets = df_final_facets[
+    ["hero_id", "hero", "facet", "Matches", "Win Rate", "Role", "facet_number"]
+]
 
 # Результат
 display(df_final_facets)
@@ -700,21 +728,34 @@ config = {
     "version": 3,
     "configs": [
         # Фасеты
-        HeroConfigProcessor(df_final_facets, "Facet Matches>200", data_type="facet").build_config(matches_threshold=200, wr_threshold=51),
-        HeroConfigProcessor(df_final_facets, "Facet Matches>50", data_type="facet").build_config(matches_threshold=50, wr_threshold=51),
-        
+        HeroConfigProcessor(
+            df_final_facets, "Facet Matches>200", data_type="facet"
+        ).build_config(matches_threshold=200, wr_threshold=51),
+        HeroConfigProcessor(
+            df_final_facets, "Facet Matches>50", data_type="facet"
+        ).build_config(matches_threshold=50, wr_threshold=51),
         # Регулярные конфиги
-        HeroConfigProcessor(df_final, "Win Rate", data_type="regular").build_config(matches_threshold=200, wr_threshold=51),
-        HeroConfigProcessor(df_final, "D2PT", data_type="regular").build_config(matches_threshold=200, wr_threshold=0, sort_by="D2PT Rating"),
-        
-        # Эксперты
-        HeroConfigProcessor(df_final, "Expert Win Rate", data_type="regular").build_config(
-            expert_matches_threshold=50, expert_wr_threshold=51, sort_by="Expert Win Rate"
+        HeroConfigProcessor(df_final, "Win Rate", data_type="regular").build_config(
+            matches_threshold=200, wr_threshold=51
         ),
-        
+        HeroConfigProcessor(df_final, "D2PT", data_type="regular").build_config(
+            matches_threshold=200, wr_threshold=0, sort_by="D2PT Rating"
+        ),
+        # Эксперты
+        HeroConfigProcessor(
+            df_final, "Expert Win Rate", data_type="regular"
+        ).build_config(
+            expert_matches_threshold=50,
+            expert_wr_threshold=51,
+            sort_by="Expert Win Rate",
+        ),
         # 9500 MMR
-        HeroConfigProcessor(df_final, "9500 Win Rate", data_type="regular").build_config(
-            mmr_9500_matches_threshold=100, mmr_9500_wr_threshold=51, sort_by="9500 Win Rate"
+        HeroConfigProcessor(
+            df_final, "9500 Win Rate", data_type="regular"
+        ).build_config(
+            mmr_9500_matches_threshold=100,
+            mmr_9500_wr_threshold=51,
+            sort_by="9500 Win Rate",
         ),
     ],
 }
@@ -722,16 +763,19 @@ config = {
 import threading
 
 
-threading.Thread(target=lambda: driver.quit() if driver.service.process else None).start()
+threading.Thread(
+    target=lambda: driver.quit() if driver.service.process else None
+).start()
 ## Find Steam
 import os
 import winreg
 import win32api
 
-def read_reg(ep, p = r"", k = ''):
+
+def read_reg(ep, p=r"", k=""):
     try:
         key = winreg.OpenKeyEx(ep, p)
-        value = winreg.QueryValueEx(key,k)
+        value = winreg.QueryValueEx(key, k)
         if key:
             winreg.CloseKey(key)
         return value[0]
@@ -739,26 +783,49 @@ def read_reg(ep, p = r"", k = ''):
         return None
     return None
 
-Path1 = "{}\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk".format(os.getenv('APPDATA'))
+
+Path1 = "{}\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk".format(
+    os.getenv("APPDATA")
+)
 if os.path.exists(Path1):
     import sys
-    import win32com.client 
+    import win32com.client
 
     shell = win32com.client.Dispatch("WScript.Shell")
     shortcut = shell.CreateShortCut(Path1)
     Path1Res = shortcut.Targetpath
 else:
     Path1Res = False
-Path2 = str(read_reg(ep = winreg.HKEY_LOCAL_MACHINE, p = r"SOFTWARE\Wow6432Node\Valve\Steam", k = 'InstallPath'))+r"\steam.exe"
-Path3 = str(read_reg(ep = winreg.HKEY_LOCAL_MACHINE, p = r"SOFTWARE\Valve\Steam", k = 'InstallPath'))+r"\steam.exe"
+Path2 = (
+    str(
+        read_reg(
+            ep=winreg.HKEY_LOCAL_MACHINE,
+            p=r"SOFTWARE\Wow6432Node\Valve\Steam",
+            k="InstallPath",
+        )
+    )
+    + r"\steam.exe"
+)
+Path3 = (
+    str(
+        read_reg(
+            ep=winreg.HKEY_LOCAL_MACHINE, p=r"SOFTWARE\Valve\Steam", k="InstallPath"
+        )
+    )
+    + r"\steam.exe"
+)
 if not os.path.exists(Path2):
     Path2 = None
 if not os.path.exists(Path3):
     Path3 = None
-PossiblePaths = [r"X:\Steam\steam.exe", r"X:\Program Files\Steam\steam.exe", r"X:\Program Files (x86)\Steam\steam.exe"]
+PossiblePaths = [
+    r"X:\Steam\steam.exe",
+    r"X:\Program Files\Steam\steam.exe",
+    r"X:\Program Files (x86)\Steam\steam.exe",
+]
 ValidHardPaths = []
-for Drive in win32api.GetLogicalDriveStrings().split('\000')[:-1]:
-    Drive = Drive.replace(':\\', '')
+for Drive in win32api.GetLogicalDriveStrings().split("\000")[:-1]:
+    Drive = Drive.replace(":\\", "")
     for path in PossiblePaths:
         path = path.replace("X", Drive)
         if os.path.exists(path):
@@ -769,7 +836,9 @@ ValidHardPaths
 steam_dir = os.path.dirname(os.path.realpath(ValidHardPaths[0]))
 steam_dir = os.path.join(steam_dir, "userdata")
 steam_dir
-dirs_to_check = [os.path.join(steam_dir, id, "570", "remote", "cfg") for id in os.listdir(steam_dir)]
+dirs_to_check = [
+    os.path.join(steam_dir, id, "570", "remote", "cfg") for id in os.listdir(steam_dir)
+]
 cfg_dirs = [dir for dir in dirs_to_check if os.path.isdir(dir)]
 cfg_dirs
 from datetime import datetime
@@ -802,13 +871,14 @@ for dir in cfg_dirs:
 import getpass
 import os
 import sys
+
 USER_NAME = getpass.getuser()
 from win32com.client import Dispatch
 
-bat_path = rf'C:\Users\{USER_NAME}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\{os.path.basename(sys.executable)}.lnk'
+bat_path = rf"C:\Users\{USER_NAME}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\{os.path.basename(sys.executable)}.lnk"
 target = sys.executable
 
-shell = Dispatch('WScript.Shell')
+shell = Dispatch("WScript.Shell")
 shortcut = shell.CreateShortCut(bat_path)
 shortcut.Targetpath = target
 shortcut.save()
