@@ -76,6 +76,112 @@ class HeroScraper:
                 logger.error("Не удалось собрать данные о героях")
                 return pd.DataFrame()
 
+    def scrape_heroes_no_facets(
+        self, url: str = "https://dota2protracker.com/meta"
+    ) -> pd.DataFrame:
+        """
+        Сбор данных о героях без разделения по фасетам (группировка фасетов)
+
+        Args:
+            url: URL страницы с данными
+
+        Returns:
+            DataFrame с данными о героях без фасетов
+        """
+        logger.info("Начало сбора данных о героях без фасетов...")
+
+        with ScrapingManager(headless=self.headless) as manager:
+            manager.navigate_to_page(url)
+
+            # Сначала собираем данные с фасетами
+            dfs_with_facets = []
+            for position, xpath in self.positions.items():
+                logger.info(f"Сбор данных с фасетами для {position}")
+
+                if manager.click_element_safely(xpath):
+                    df = self._extract_table_data(manager.driver)
+                    df["Role"] = position
+                    dfs_with_facets.append(df)
+
+            # После pos 5 включаем группировку фасетов
+            logger.info("Переключение на группировку фасетов...")
+
+            # Ищем кнопку переключения группировки фасетов
+            # Попробуем разные селекторы
+            possible_selectors = [
+                'button[role="switch"][aria-checked="false"]',
+                'button[role="switch"]',
+                '[role="switch"]',
+                "button.svelte-9e5jyr",
+                ".svelte-9e5jyr",
+            ]
+
+            facet_toggle = None
+            for selector in possible_selectors:
+                try:
+                    elements = manager.driver.find_elements("css selector", selector)
+                    logger.info(
+                        f"Найдено {len(elements)} элементов с селектором: {selector}"
+                    )
+
+                    for element in elements:
+                        # Проверяем, что это кнопка переключения фасетов
+                        if element.get_attribute("role") == "switch":
+                            facet_toggle = element
+                            logger.info(f"✅ Найдена кнопка переключения: {selector}")
+                            break
+
+                    if facet_toggle:
+                        break
+
+                except Exception as e:
+                    logger.debug(f"Селектор {selector} не сработал: {e}")
+                    continue
+
+            if facet_toggle:
+                try:
+                    # Проверяем текущее состояние
+                    is_checked = facet_toggle.get_attribute("aria-checked") == "true"
+                    logger.info(
+                        f"Текущее состояние группировки фасетов: {'включена' if is_checked else 'отключена'}"
+                    )
+
+                    # Если группировка еще не включена, включаем
+                    if not is_checked:
+                        manager.driver.execute_script(
+                            "arguments[0].click();", facet_toggle
+                        )
+                        logger.info("✅ Группировка фасетов включена")
+                        time.sleep(3)  # Ждем обновления данных
+                    else:
+                        logger.info("Группировка фасетов уже была включена")
+
+                except Exception as e:
+                    logger.warning(f"Ошибка при переключении группировки фасетов: {e}")
+                    return pd.DataFrame()
+            else:
+                logger.warning("Не удалось найти кнопку группировки фасетов")
+                return pd.DataFrame()
+
+            # Теперь собираем данные без фасетов
+            dfs_no_facets = []
+            for position, xpath in self.positions.items():
+                logger.info(f"Сбор данных без фасетов для {position}")
+
+                if manager.click_element_safely(xpath):
+                    df = self._extract_table_data(manager.driver)
+                    df["Role"] = position
+                    df["Facet"] = "No Facet"  # Указываем что это данные без фасетов
+                    dfs_no_facets.append(df)
+
+            if dfs_no_facets:
+                df_no_facets = pd.concat(dfs_no_facets, axis=0, ignore_index=True)
+                logger.info("Сбор данных о героях без фасетов завершен")
+                return df_no_facets
+            else:
+                logger.error("Не удалось собрать данные о героях без фасетов")
+                return pd.DataFrame()
+
     def _ensure_facet_names_and_numbers(self, df: pd.DataFrame) -> pd.DataFrame:
         """
         Гарантирует наличие колонки 'Facet' (имя фасета). Если имя отсутствует,

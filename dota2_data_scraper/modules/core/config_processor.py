@@ -44,6 +44,14 @@ class ConfigProcessor:
                 self.logger.error("Не удалось загрузить данные героев")
                 return False
 
+            # Загрузка данных без фасетов (если есть)
+            heroes_no_facets_df = self.data_manager.load_dataframe(
+                "heroes_no_facets.csv"
+            )
+            has_no_facets_data = (
+                heroes_no_facets_df is not None and not heroes_no_facets_df.empty
+            )
+
             # Обработка данных героев
             processed_heroes = self._process_heroes_data(heroes_df)
             if processed_heroes.empty:
@@ -55,6 +63,14 @@ class ConfigProcessor:
 
             # Создание стандартных конфигураций
             config = self._create_configs(processed_heroes)
+
+            # Если есть данные без фасетов, добавляем конфигурацию для них
+            if has_no_facets_data:
+                processed_no_facets = self._process_heroes_data(heroes_no_facets_df)
+                no_facets_config = self._create_no_facets_config(processed_no_facets)
+                if no_facets_config:
+                    config["configs"].append(no_facets_config)
+                    self.logger.info("✅ Добавлена конфигурация без фасетов")
 
             # Применяем оптимизированное расположение к основным конфигурациям
             self._apply_optimized_layout_to_configs(config)
@@ -449,6 +465,17 @@ class ConfigProcessor:
                     self._create_facet_config(
                         heroes_df, "D2PT", "D2PT Rating", 100, rating_above_average=True
                     ),
+                    # Новые конфигурации с 50+ матчей
+                    self._create_facet_config(
+                        heroes_df, "Win rate 50+", "WR", 50, wr_threshold=51
+                    ),
+                    self._create_facet_config(
+                        heroes_df,
+                        "D2PT 50+",
+                        "D2PT Rating",
+                        50,
+                        rating_above_average=True,
+                    ),
                 ],
             }
 
@@ -461,6 +488,82 @@ class ConfigProcessor:
         except Exception as e:
             self.logger.error(f"Ошибка при создании конфигураций: {e}")
             return {}
+
+    def _create_no_facets_config(self, heroes_df: pd.DataFrame) -> Optional[Dict]:
+        """
+        Создание конфигурации для героев без фасетов (100+ матчей, сортировка по D2PT)
+
+        Args:
+            heroes_df: DataFrame с данными героев без фасетов
+
+        Returns:
+            Конфигурация или None в случае ошибки
+        """
+        try:
+            self.logger.info("Создание конфигурации без фасетов...")
+
+            # Фильтруем героев с 100+ матчей
+            filtered_df = heroes_df[heroes_df["Matches"] >= 100].copy()
+
+            if filtered_df.empty:
+                self.logger.warning(
+                    "Нет героев с 100+ матчами для конфигурации без фасетов"
+                )
+                return None
+
+            # Сортируем по D2PT Rating по убыванию
+            if "D2PT Rating" in filtered_df.columns:
+                filtered_df = filtered_df.sort_values("D2PT Rating", ascending=False)
+            else:
+                self.logger.warning(
+                    "Колонка D2PT Rating не найдена, сортировка по умолчанию"
+                )
+
+            # Создаем категории по позициям (без фасетов)
+            categories = []
+            positions = ["pos 1", "pos 2", "pos 3", "pos 4", "pos 5"]
+
+            # Создаем фиктивный процессор для расчета позиций
+            # processor = HeroConfigProcessor()
+
+            for i, position in enumerate(positions):
+                pos_heroes = filtered_df[filtered_df["Role"] == position]
+
+                if not pos_heroes.empty:
+                    # Берем топ-20 героев для каждой позиции
+                    top_heroes = pos_heroes.head(20)
+                    hero_ids = top_heroes["hero_id"].dropna().astype(int).tolist()
+
+                    if hero_ids:
+                        # Простые расчеты позиций для конфигурации без фасетов
+                        # Размещаем 5 позиций в ряд
+                        x = i * 240  # Ширина + отступ
+                        y = 20  # Отступ сверху
+                        width = 220
+                        height = 400
+
+                        categories.append(
+                            {
+                                "category_name": f"POS {i + 1} Top D2PT",
+                                "x_position": x,
+                                "y_position": y,
+                                "width": width,
+                                "height": height,
+                                "hero_ids": hero_ids,
+                            }
+                        )
+
+            if not categories:
+                self.logger.warning(
+                    "Не удалось создать категории для конфигурации без фасетов"
+                )
+                return None
+
+            return {"config_name": "D2PT No Facets", "categories": categories}
+
+        except Exception as e:
+            self.logger.error(f"Ошибка при создании конфигурации без фасетов: {e}")
+            return None
 
     def _create_facet_config(
         self,

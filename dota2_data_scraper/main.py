@@ -60,6 +60,36 @@ def run_heroes_scraping() -> bool:
         return False
 
 
+def run_heroes_no_facets_scraping() -> bool:
+    """Запуск скрапинга героев без фасетов (группировка фасетов)"""
+    try:
+        logger.info("Запуск скрапинга данных без фасетов...")
+        scraper = HeroScraper(headless=getattr(run_heroes_scraping, "_headless", True))
+        data_manager = DataManager()
+
+        # Сбор данных без фасетов
+        heroes_no_facets_df = scraper.scrape_heroes_no_facets()
+
+        if not heroes_no_facets_df.empty:
+            # Сохранение данных без фасетов
+            success = data_manager.save_dataframe(
+                heroes_no_facets_df, "heroes_no_facets.csv"
+            )
+            if success:
+                logger.info("✅ Скрапинг данных без фасетов завершен успешно")
+                return True
+            else:
+                logger.error("❌ Ошибка при сохранении данных без фасетов")
+                return False
+        else:
+            logger.error("❌ Не удалось собрать данные без фасетов")
+            return False
+
+    except Exception as e:
+        logger.error(f"❌ Ошибка при скрапинге без фасетов: {e}")
+        return False
+
+
 def run_config_processing() -> bool:
     """Запуск обработки конфигураций"""
     try:
@@ -92,6 +122,11 @@ def main():
         "--scrape", action="store_true", help="Запуск скрапинга всех данных"
     )
     parser.add_argument(
+        "--scrape-no-facets",
+        action="store_true",
+        help="Запуск скрапинга данных без фасетов (группировка)",
+    )
+    parser.add_argument(
         "--config", action="store_true", help="Запуск обработки конфигураций"
     )
     parser.add_argument("--all", action="store_true", help="Запуск всех процессов")
@@ -114,16 +149,24 @@ def main():
         total_count += 1
         if run_heroes_scraping():
             success_count += 1
+    elif args.scrape_no_facets:
+        total_count += 1
+        if run_heroes_no_facets_scraping():
+            success_count += 1
     elif args.config:
         total_count += 1
         if run_config_processing():
             success_count += 1
-    elif args.all or not any([args.scrape, args.config]):
+    elif args.all or not any([args.scrape, args.scrape_no_facets, args.config]):
         # Запуск всех процессов
         logger.info("Запуск всех процессов...")
 
         total_count += 1
         if run_heroes_scraping():
+            success_count += 1
+
+        total_count += 1
+        if run_heroes_no_facets_scraping():
             success_count += 1
 
         total_count += 1
