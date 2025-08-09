@@ -36,7 +36,7 @@ def run_heroes_scraping() -> bool:
     """Запуск скрапинга героев (теперь включает все данные)"""
     try:
         logger.info("Запуск полного скрапинга данных...")
-        scraper = HeroScraper()
+        scraper = HeroScraper(headless=getattr(run_heroes_scraping, "_headless", True))
         data_manager = DataManager()
 
         # Сбор данных
@@ -95,8 +95,16 @@ def main():
         "--config", action="store_true", help="Запуск обработки конфигураций"
     )
     parser.add_argument("--all", action="store_true", help="Запуск всех процессов")
+    parser.add_argument(
+        "--no-headless",
+        action="store_true",
+        help="Запускать браузер Chrome в видимом режиме (без headless)",
+    )
 
     args = parser.parse_args()
+
+    # Протаскиваем настройку headless для скрапинга
+    setattr(run_heroes_scraping, "_headless", not args.no_headless)
 
     success_count = 0
     total_count = 0

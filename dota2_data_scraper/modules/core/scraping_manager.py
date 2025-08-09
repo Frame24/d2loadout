@@ -36,6 +36,13 @@ class ScrapingManager:
         self.headless = headless
         self.driver: Optional[Chrome] = None
         self.logger = self._setup_logging()
+        # Регистрируем аварийное закрытие драйвера на случай внезапного завершения процесса
+        try:
+            import atexit
+
+            atexit.register(self._cleanup_at_exit)
+        except Exception:
+            pass
 
     def _setup_logging(self) -> logging.Logger:
         """Настройка логирования"""
@@ -70,11 +77,13 @@ class ScrapingManager:
         chrome_options.add_argument("--disable-features=VizDisplayCompositor")
         chrome_options.add_argument("--no-first-run")
         chrome_options.add_argument("--no-default-browser-check")
+        chrome_options.add_argument("--incognito")
 
         # Экспериментальные опции
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         chrome_options.add_experimental_option("useAutomationExtension", False)
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+        chrome_options.add_experimental_option("detach", False)
 
         chrome_options.page_load_strategy = "eager"
 
@@ -84,19 +93,6 @@ class ScrapingManager:
         """Запуск Chrome драйвера"""
         try:
             self.logger.info("Запуск Chrome драйвера...")
-
-            # Принудительно завершаем все процессы Chrome перед запуском
-            try:
-                import subprocess
-
-                subprocess.run(
-                    ["taskkill", "/f", "/im", "chrome.exe"],
-                    capture_output=True,
-                    check=False,
-                )
-                time.sleep(2)  # Даем время на завершение процессов
-            except Exception:
-                pass
 
             chrome_options = self._create_chrome_options()
             service = Service(ChromeDriverManager().install())
@@ -163,11 +159,29 @@ class ScrapingManager:
         """Закрытие драйвера"""
         if self.driver:
             try:
+                # Закрываем все окна, если ещё открыты
+                try:
+                    handles = list(getattr(self.driver, "window_handles", []) or [])
+                    for handle in handles:
+                        try:
+                            self.driver.switch_to.window(handle)
+                            self.driver.close()
+                        except Exception:
+                            pass
+                except Exception:
+                    pass
+                # Финальный quit на сессию
                 self.driver.quit()
                 self.logger.info("Драйвер закрыт")
             except Exception as e:
                 self.logger.error(f"Ошибка при закрытии драйвера: {e}")
             finally:
+                # Пытаемся остановить сервис, если доступен
+                try:
+                    if getattr(self.driver, "service", None):
+                        self.driver.service.stop()
+                except Exception:
+                    pass
                 self.driver = None
 
     def __enter__(self):
@@ -178,3 +192,10 @@ class ScrapingManager:
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Контекстный менеджер - выход"""
         self.close_driver()
+
+    def _cleanup_at_exit(self) -> None:
+        """Хук завершения процесса для гарантированного закрытия драйвера"""
+        try:
+            self.close_driver()
+        except Exception:
+            pass

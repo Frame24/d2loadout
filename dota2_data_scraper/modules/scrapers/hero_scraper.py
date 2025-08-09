@@ -17,7 +17,8 @@ logger = logging.getLogger(__name__)
 class HeroScraper:
     """Скрапер для сбора данных о героях"""
 
-    def __init__(self):
+    def __init__(self, headless: bool = True):
+        self.headless = headless
         self.positions = {
             "pos 1": "//div[contains(text(), 'Carry')]",
             "pos 2": "//div[contains(text(), 'Mid')]",
@@ -41,7 +42,7 @@ class HeroScraper:
         """
         logger.info("Начало сбора данных о героях...")
 
-        with ScrapingManager() as manager:
+        with ScrapingManager(headless=self.headless) as manager:
             manager.navigate_to_page(url)
 
             dfs = []
