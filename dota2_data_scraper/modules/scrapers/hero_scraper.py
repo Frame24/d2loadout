@@ -20,22 +20,31 @@ class HeroScraper:
     def __init__(self, headless: bool = True):
         self.headless = headless
         self.positions = {
-            "pos 1": "//div[contains(text(), 'Carry')]",
-            "pos 2": "//div[contains(text(), 'Mid')]",
-            "pos 3": "//div[contains(text(), 'Off')]",
-            "pos 4": "//div[contains(text(), 'Pos 4')]",
-            "pos 5": "//div[contains(text(), 'Pos 5')]",
+            "Carry (pos 1)": "//div[contains(text(), 'Carry')]",
+            "Mid (pos 2)": "//div[contains(text(), 'Mid')]",
+            "Offlaner (pos 3)": "//div[contains(text(), 'Off')]",
+            "Support (pos 4)": "//div[contains(text(), 'Pos 4')]",
+            "Hard Support (pos 5)": "//div[contains(text(), 'Pos 5')]",
+        }
+        # Маппинг для коротких названий в данных
+        self.role_mapping = {
+            "Carry (pos 1)": "pos 1",
+            "Mid (pos 2)": "pos 2",
+            "Offlaner (pos 3)": "pos 3",
+            "Support (pos 4)": "pos 4",
+            "Hard Support (pos 5)": "pos 5",
         }
         self.facet_parser = FacetAPIParser()
 
     def scrape_heroes_data(
-        self, url: str = "https://dota2protracker.com/meta"
+        self, url: str = "https://dota2protracker.com/meta", show_progress: bool = False
     ) -> pd.DataFrame:
         """
         Сбор данных о героях
 
         Args:
             url: URL страницы с данными
+            show_progress: Показывать прогресс парсинга позиций
 
         Returns:
             DataFrame с данными о героях
@@ -48,14 +57,17 @@ class HeroScraper:
             dfs = []
 
             # Проход по всем позициям и сбор данных
-            for position, xpath in self.positions.items():
+            positions_list = list(self.positions.items())
+            for i, (position, xpath) in enumerate(positions_list, 1):
+                if show_progress:
+                    print(f"   📍 Позиция {i}/5: {position}")
                 logger.info(f"Сбор данных для {position}")
 
                 # Кликаем по позиции
                 if manager.click_element_safely(xpath):
                     # Получаем данные таблицы
                     df = self._extract_table_data(manager.driver)
-                    df["Role"] = position
+                    df["Role"] = self.role_mapping[position]
                     dfs.append(df)
                 else:
                     logger.error(f"Не удалось кликнуть по позиции {position}")
@@ -100,7 +112,7 @@ class HeroScraper:
 
                 if manager.click_element_safely(xpath):
                     df = self._extract_table_data(manager.driver)
-                    df["Role"] = position
+                    df["Role"] = self.role_mapping[position]
                     dfs_with_facets.append(df)
 
             # После pos 5 включаем группировку фасетов
@@ -170,7 +182,7 @@ class HeroScraper:
 
                 if manager.click_element_safely(xpath):
                     df = self._extract_table_data(manager.driver)
-                    df["Role"] = position
+                    df["Role"] = self.role_mapping[position]
                     df["Facet"] = "No Facet"  # Указываем что это данные без фасетов
                     dfs_no_facets.append(df)
 
@@ -181,6 +193,142 @@ class HeroScraper:
             else:
                 logger.error("Не удалось собрать данные о героях без фасетов")
                 return pd.DataFrame()
+
+    def scrape_both_data_types(
+        self, url: str = "https://dota2protracker.com/meta", show_progress: bool = False
+    ) -> tuple[pd.DataFrame, pd.DataFrame]:
+        """
+        Эффективный сбор обоих типов данных за один проход браузера
+
+        Args:
+            url: URL страницы с данными
+            show_progress: Показывать прогресс парсинга позиций
+
+        Returns:
+            tuple: (DataFrame с фасетами, DataFrame без фасетов)
+        """
+        logger.info("Начало эффективного сбора данных (оба типа)...")
+
+        with ScrapingManager(headless=self.headless) as manager:
+            manager.navigate_to_page(url)
+
+            # Сначала собираем данные с фасетами
+            logger.info("Сбор данных с фасетами...")
+            dfs_with_facets = []
+
+            positions_list = list(self.positions.items())
+            for i, (position, xpath) in enumerate(positions_list, 1):
+                if show_progress:
+                    print(f"   📍 Позиция {i}/5: {position}")
+                logger.info(f"Сбор данных с фасетами для {position}")
+
+                if manager.click_element_safely(xpath):
+                    df = self._extract_table_data(manager.driver)
+                    df["Role"] = self.role_mapping[position]
+                    dfs_with_facets.append(df)
+                else:
+                    logger.error(f"Не удалось кликнуть по позиции {position}")
+
+            # Обрабатываем данные с фасетами
+            df_with_facets = pd.DataFrame()
+            if dfs_with_facets:
+                df_with_facets = pd.concat(dfs_with_facets, axis=0, ignore_index=True)
+                df_with_facets = self._ensure_facet_names_and_numbers(df_with_facets)
+
+                # В heroes_data.csv оставляем только имя фасета, номер не сохраняем
+                if "facet_number" in df_with_facets.columns:
+                    df_with_facets = df_with_facets.drop(columns=["facet_number"])
+
+                logger.info("Сбор данных с фасетами завершен")
+            else:
+                logger.error("Не удалось собрать данные с фасетами")
+
+            # Теперь переключаемся на группировку фасетов и собираем данные без фасетов
+            logger.info("Переключение на группировку фасетов...")
+
+            # Ищем кнопку переключения группировки фасетов
+            possible_selectors = [
+                'button[role="switch"][aria-checked="false"]',
+                'button[role="switch"]',
+                '[role="switch"]',
+                "button.svelte-9e5jyr",
+                ".svelte-9e5jyr",
+            ]
+
+            facet_toggle = None
+            for selector in possible_selectors:
+                try:
+                    elements = manager.driver.find_elements("css selector", selector)
+                    logger.info(
+                        f"Найдено {len(elements)} элементов с селектором: {selector}"
+                    )
+
+                    for element in elements:
+                        if element.get_attribute("role") == "switch":
+                            facet_toggle = element
+                            logger.info(f"✅ Найдена кнопка переключения: {selector}")
+                            break
+
+                    if facet_toggle:
+                        break
+
+                except Exception as e:
+                    logger.debug(f"Селектор {selector} не сработал: {e}")
+                    continue
+
+            df_no_facets = pd.DataFrame()
+            if facet_toggle:
+                try:
+                    # Проверяем текущее состояние
+                    is_checked = facet_toggle.get_attribute("aria-checked") == "true"
+                    logger.info(
+                        f"Текущее состояние группировки фасетов: {'включена' if is_checked else 'отключена'}"
+                    )
+
+                    # Если группировка еще не включена, включаем
+                    if not is_checked:
+                        manager.driver.execute_script(
+                            "arguments[0].click();", facet_toggle
+                        )
+                        logger.info("✅ Группировка фасетов включена")
+                        time.sleep(3)  # Ждем обновления данных
+                    else:
+                        logger.info("Группировка фасетов уже была включена")
+
+                        # Собираем данные без фасетов
+                    logger.info("Сбор данных без фасетов...")
+                    if show_progress:
+                        print("   🔄 Переключились на группировку фасетов")
+                    dfs_no_facets = []
+
+                    for i, (position, xpath) in enumerate(positions_list, 1):
+                        if show_progress:
+                            print(f"   📍 Позиция {i}/5: {position} (без фасетов)")
+                        logger.info(f"Сбор данных без фасетов для {position}")
+
+                        if manager.click_element_safely(xpath):
+                            df = self._extract_table_data(manager.driver)
+                            df["Role"] = self.role_mapping[position]
+                            df["Facet"] = (
+                                "No Facet"  # Указываем что это данные без фасетов
+                            )
+                            dfs_no_facets.append(df)
+
+                    if dfs_no_facets:
+                        df_no_facets = pd.concat(
+                            dfs_no_facets, axis=0, ignore_index=True
+                        )
+                        logger.info("Сбор данных без фасетов завершен")
+                    else:
+                        logger.error("Не удалось собрать данные без фасетов")
+
+                except Exception as e:
+                    logger.warning(f"Ошибка при переключении группировки фасетов: {e}")
+            else:
+                logger.warning("Не удалось найти кнопку группировки фасетов")
+
+            logger.info("Эффективный сбор данных завершен")
+            return df_with_facets, df_no_facets
 
     def _ensure_facet_names_and_numbers(self, df: pd.DataFrame) -> pd.DataFrame:
         """

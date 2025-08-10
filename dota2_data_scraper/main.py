@@ -11,11 +11,57 @@ from modules.scrapers.hero_scraper import HeroScraper
 from modules.core.data_manager import DataManager
 from modules.core.config_processor import ConfigProcessor
 
-# Настройка логирования
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-)
+
+def setup_logging(quiet_mode: bool = False):
+    """Настройка логирования в зависимости от режима"""
+    if quiet_mode:
+        # Тихий режим - только критические ошибки и пользовательские сообщения
+        logging.basicConfig(
+            level=logging.CRITICAL,
+            format="%(message)s",
+            handlers=[logging.StreamHandler()],
+            force=True,
+        )
+        # Отключаем логи всех модулей
+        logging.getLogger("selenium").setLevel(logging.CRITICAL)
+        logging.getLogger("urllib3").setLevel(logging.CRITICAL)
+        logging.getLogger("WDM").setLevel(logging.CRITICAL)
+        logging.getLogger("webdriver_manager").setLevel(logging.CRITICAL)
+        logging.getLogger("modules").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.scrapers").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.core").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.utils").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.scrapers.hero_scraper").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.core.scraping_manager").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.core.data_manager").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.utils.facet_api_parser").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.utils.dialog_handler").setLevel(logging.CRITICAL)
+        logging.getLogger("modules.utils.period_selector").setLevel(logging.CRITICAL)
+        # Отключаем корневой логгер для всех модулей
+        logging.getLogger().setLevel(logging.CRITICAL)
+    else:
+        # Обычный режим
+        logging.basicConfig(
+            level=logging.INFO,
+            format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+            force=True,
+        )
+
+
+# Временная настройка логирования (будет переопределена в main)
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
+
+# Глобальная переменная для режима
+QUIET_MODE = False
+
+
+def user_print(message: str):
+    """Печать сообщений для пользователя в любом режиме"""
+    if QUIET_MODE:
+        print(message)
+    else:
+        logger.info(message)
 
 
 def check_dependencies():
@@ -32,36 +78,87 @@ def check_dependencies():
         return False
 
 
-def run_heroes_scraping() -> bool:
-    """Запуск скрапинга героев (теперь включает все данные)"""
+def run_full_scraping() -> tuple[bool, bool]:
+    """
+    Запуск полного скрапинга данных - собирает оба типа данных за один проход
+
+    Returns:
+        tuple: (успех_с_фасетами, успех_без_фасетов)
+    """
     try:
-        logger.info("Запуск полного скрапинга данных...")
+        user_print("🚀 Начинаем сбор данных с dota2protracker.com...")
+        scraper = HeroScraper(headless=getattr(run_full_scraping, "_headless", True))
+        data_manager = DataManager()
+
+        # Эффективный сбор обоих типов данных за один проход
+        user_print("📊 Собираем статистику героев...")
+        heroes_df, heroes_no_facets_df = scraper.scrape_both_data_types(
+            show_progress=QUIET_MODE
+        )
+
+        # Сохранение данных с фасетами
+        success_with_facets = False
+        if not heroes_df.empty:
+            success_with_facets = data_manager.save_dataframe(
+                heroes_df, "heroes_data.csv"
+            )
+            if success_with_facets:
+                user_print("✅ Данные с фасетами сохранены")
+            else:
+                user_print("❌ Ошибка при сохранении данных с фасетами")
+        else:
+            user_print("❌ Не удалось собрать данные с фасетами")
+
+        # Сохранение данных без фасетов
+        success_no_facets = False
+        if not heroes_no_facets_df.empty:
+            success_no_facets = data_manager.save_dataframe(
+                heroes_no_facets_df, "heroes_no_facets.csv"
+            )
+            if success_no_facets:
+                user_print("✅ Данные без фасетов сохранены")
+            else:
+                user_print("❌ Ошибка при сохранении данных без фасетов")
+        else:
+            user_print("❌ Не удалось собрать данные без фасетов")
+
+        return success_with_facets, success_no_facets
+
+    except Exception as e:
+        user_print(f"❌ Ошибка при сборе данных: {e}")
+        return False, False
+
+
+def run_heroes_scraping() -> bool:
+    """Запуск скрапинга героев с фасетами"""
+    try:
+        user_print("🚀 Начинаем сбор данных с фасетами...")
         scraper = HeroScraper(headless=getattr(run_heroes_scraping, "_headless", True))
         data_manager = DataManager()
 
         # Сбор данных
-        heroes_df = scraper.scrape_heroes_data()
+        heroes_df = scraper.scrape_heroes_data(show_progress=QUIET_MODE)
 
         if not heroes_df.empty:
             # Сохранение данных
             success = data_manager.save_dataframe(heroes_df, "heroes_data.csv")
             if success:
-                logger.info("✅ Скрапинг данных завершен успешно")
+                logger.info("✅ Скрапинг данных с фасетами завершен успешно")
                 return True
             else:
-                logger.error("❌ Ошибка при сохранении данных")
+                logger.error("❌ Ошибка при сохранении данных с фасетами")
                 return False
         else:
-            logger.error("❌ Не удалось собрать данные")
+            logger.error("❌ Не удалось собрать данные с фасетами")
             return False
 
     except Exception as e:
-        logger.error(f"❌ Ошибка при скрапинге: {e}")
+        logger.error(f"❌ Ошибка при скрапинге с фасетами: {e}")
         return False
 
 
 def run_heroes_no_facets_scraping() -> bool:
-    """Запуск скрапинга героев без фасетов (группировка фасетов)"""
+    """Запуск скрапинга героев без фасетов"""
     try:
         logger.info("Запуск скрапинга данных без фасетов...")
         scraper = HeroScraper(headless=getattr(run_heroes_scraping, "_headless", True))
@@ -93,53 +190,95 @@ def run_heroes_no_facets_scraping() -> bool:
 def run_config_processing() -> bool:
     """Запуск обработки конфигураций"""
     try:
-        logger.info("Запуск обработки конфигураций...")
+        user_print("⚙️ Обрабатываем данные и создаем конфигурации...")
         processor = ConfigProcessor()
 
         # Обработка данных
         success = processor.process_all_data()
         if success:
-            logger.info("✅ Обработка конфигураций завершена успешно")
+            user_print("✅ Конфигурации созданы и скопированы в Steam")
             return True
         else:
-            logger.error("❌ Ошибка при обработке конфигураций")
+            user_print("❌ Ошибка при обработке конфигураций")
             return False
 
     except Exception as e:
-        logger.error(f"❌ Ошибка при обработке конфигураций: {e}")
+        user_print(f"❌ Ошибка при обработке конфигураций: {e}")
         return False
 
 
 def main():
     """Основная функция"""
+    global QUIET_MODE
+
+    # Предварительная настройка для парсинга аргументов
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("--quiet", action="store_true")
+    args, _ = parser.parse_known_args()
+
+    # Настройка логирования
+    QUIET_MODE = args.quiet
+    setup_logging(QUIET_MODE)
+
     # Проверка зависимостей
     if not check_dependencies():
         sys.exit(1)
 
     # Настройка аргументов командной строки
-    parser = argparse.ArgumentParser(description="Dota 2 Data Scraper")
+    parser = argparse.ArgumentParser(
+        description="Dota 2 Data Scraper - автоматизированный сбор данных о героях с dota2protracker.com",
+        epilog="""
+Примеры использования:
+  run_d2loadout.bat                 # 🚀 Автоматическая установка и запуск
+  python main.py --quiet            # Тихий режим - минимум логов
+  python main.py                    # Полный процесс с подробными логами
+  python main.py --scrape-all       # Только оптимизированный скрапинг
+  python main.py --config           # Только обработка конфигураций
+  python main.py --no-headless      # Видимый режим браузера для отладки
+        """,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
     parser.add_argument(
-        "--scrape", action="store_true", help="Запуск скрапинга всех данных"
+        "--scrape",
+        action="store_true",
+        help="Скрапинг только данных с фасетами (отдельная сессия браузера)",
     )
     parser.add_argument(
         "--scrape-no-facets",
         action="store_true",
-        help="Запуск скрапинга данных без фасетов (группировка)",
+        help="Скрапинг только данных без фасетов (отдельная сессия браузера)",
     )
     parser.add_argument(
-        "--config", action="store_true", help="Запуск обработки конфигураций"
+        "--scrape-all",
+        action="store_true",
+        help="🚀 ОПТИМИЗИРОВАННЫЙ скрапинг - оба типа данных за один проход браузера",
     )
-    parser.add_argument("--all", action="store_true", help="Запуск всех процессов")
+    parser.add_argument(
+        "--config",
+        action="store_true",
+        help="Обработка CSV данных и создание конфигураций для Dota 2",
+    )
+    parser.add_argument(
+        "--all",
+        action="store_true",
+        help="Полный процесс: оптимизированный скрапинг + обработка конфигураций",
+    )
     parser.add_argument(
         "--no-headless",
         action="store_true",
-        help="Запускать браузер Chrome в видимом режиме (без headless)",
+        help="Показывать браузер Chrome (полезно для отладки)",
+    )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="Тихий режим - минимум логов для пользователей",
     )
 
     args = parser.parse_args()
 
     # Протаскиваем настройку headless для скрапинга
     setattr(run_heroes_scraping, "_headless", not args.no_headless)
+    setattr(run_full_scraping, "_headless", not args.no_headless)
 
     success_count = 0
     total_count = 0
@@ -153,36 +292,60 @@ def main():
         total_count += 1
         if run_heroes_no_facets_scraping():
             success_count += 1
+    elif args.scrape_all:
+        # Оптимизированный скрапинг - оба типа данных за один проход
+        if not QUIET_MODE:
+            logger.info("Запуск оптимизированного скрапинга...")
+        total_count += 2  # Считаем как 2 процесса
+        success_with_facets, success_no_facets = run_full_scraping()
+        if success_with_facets:
+            success_count += 1
+        if success_no_facets:
+            success_count += 1
     elif args.config:
         total_count += 1
         if run_config_processing():
             success_count += 1
-    elif args.all or not any([args.scrape, args.scrape_no_facets, args.config]):
-        # Запуск всех процессов
-        logger.info("Запуск всех процессов...")
+    elif args.all or not any(
+        [args.scrape, args.scrape_no_facets, args.scrape_all, args.config]
+    ):
+        # Запуск всех процессов с оптимизацией
+        if not QUIET_MODE:
+            logger.info("Запуск всех процессов (оптимизированный)...")
 
-        total_count += 1
-        if run_heroes_scraping():
+        # Оптимизированный скрапинг
+        total_count += 2  # Скрапинг считаем как 2 процесса
+        success_with_facets, success_no_facets = run_full_scraping()
+        if success_with_facets:
+            success_count += 1
+        if success_no_facets:
             success_count += 1
 
-        total_count += 1
-        if run_heroes_no_facets_scraping():
-            success_count += 1
-
+        # Обработка конфигураций
         total_count += 1
         if run_config_processing():
             success_count += 1
 
     # Итоговый отчет
-    logger.info(f"Все процессы завершены. Успешно: {success_count}/{total_count}")
+    if QUIET_MODE:
+        if success_count == total_count:
+            user_print("🎉 Готово! Конфигурации обновлены в Dota 2")
+        else:
+            user_print(
+                f"⚠️ Завершено с ошибками: {total_count - success_count} из {total_count}"
+            )
+    else:
+        logger.info(f"Все процессы завершены. Успешно: {success_count}/{total_count}")
 
     if success_count == total_count:
-        logger.info("✅ Все процессы выполнены успешно!")
+        if not QUIET_MODE:
+            logger.info("✅ Все процессы выполнены успешно!")
         return 0
     else:
-        logger.error(
-            f"❌ {total_count - success_count} процессов завершились с ошибками"
-        )
+        if not QUIET_MODE:
+            logger.error(
+                f"❌ {total_count - success_count} процессов завершились с ошибками"
+            )
         return 1
 
 
