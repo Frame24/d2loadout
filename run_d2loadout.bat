@@ -1,101 +1,100 @@
 @echo off
-chcp 65001 >nul
 setlocal enabledelayedexpansion
 
 :: Заголовок
-echo ╔══════════════════════════════════════════════════════════════╗
-echo ║                    Dota 2 Loadout Generator                  ║
-echo ║           Автоматический сбор данных и создание              ║
-echo ║              конфигураций для Dota 2                        ║
-echo ╚══════════════════════════════════════════════════════════════╝
+echo ================================================================
+echo                   Dota 2 Loadout Generator
+echo           Автоматический сбор данных и создание
+echo              конфигураций для Dota 2
+echo ================================================================
 echo.
-
-:: Проверка наличия Python
-echo 🔍 Проверяем наличие Python...
-python --version >nul 2>&1
-if errorlevel 1 (
-    echo ❌ Python не найден!
-    echo.
-    echo 📥 Пожалуйста, установите Python 3.8+ с официального сайта:
-    echo    https://www.python.org/downloads/
-    echo.
-    echo 💡 При установке обязательно отметьте "Add Python to PATH"
-    echo.
-    pause
-    exit /b 1
-) else (
-    for /f "tokens=2" %%i in ('python --version 2^>^&1') do set PYTHON_VERSION=%%i
-    echo ✅ Python !PYTHON_VERSION! найден
-)
 
 :: Переход в корневую директорию проекта (если bat файл запущен из подпапки)
 if exist "..\requirements.txt" (
     cd ..
 )
 
+:: Проверка наличия Python
+echo Проверяем наличие Python...
+python --version >nul 2>&1
+if errorlevel 1 (
+    echo ОШИБКА: Python не найден!
+    echo.
+    echo Пожалуйста, установите Python 3.8+ с официального сайта:
+    echo    https://www.python.org/downloads/
+    echo.
+    echo При установке обязательно отметьте "Add Python to PATH"
+    echo.
+    pause
+    exit /b 1
+) else (
+    for /f "tokens=2" %%i in ('python --version 2^>^&1') do set PYTHON_VERSION=%%i
+    echo OK: Python !PYTHON_VERSION! найден
+)
+
 :: Проверка наличия виртуального окружения
 echo.
-echo 🔍 Проверяем виртуальное окружение...
+echo Проверяем виртуальное окружение...
 if not exist ".venv" (
-    echo 📦 Создаем виртуальное окружение...
+    echo Создаем виртуальное окружение...
     python -m venv .venv
     if errorlevel 1 (
-        echo ❌ Ошибка создания виртуального окружения
+        echo ОШИБКА: Ошибка создания виртуального окружения
         pause
         exit /b 1
     )
-    echo ✅ Виртуальное окружение создано
+    echo OK: Виртуальное окружение создано
 ) else (
-    echo ✅ Виртуальное окружение найдено
+    echo OK: Виртуальное окружение найдено
 )
 
 :: Активация виртуального окружения
 echo.
-echo 🔧 Активируем виртуальное окружение...
+echo Активируем виртуальное окружение...
 call .venv\Scripts\activate.bat
 if errorlevel 1 (
-    echo ❌ Ошибка активации виртуального окружения
+    echo ОШИБКА: Ошибка активации виртуального окружения
     pause
     exit /b 1
 )
 
 :: Проверка и установка зависимостей
 echo.
-echo 📦 Проверяем зависимости...
+echo Проверяем зависимости...
 python -c "import selenium" >nul 2>&1
 if errorlevel 1 (
-    echo 📥 Устанавливаем необходимые библиотеки...
+    echo Устанавливаем необходимые библиотеки...
     python -m pip install --upgrade pip >nul 2>&1
     python -m pip install -r requirements.txt
     if errorlevel 1 (
-        echo ❌ Ошибка установки зависимостей
+        echo ОШИБКА: Ошибка установки зависимостей
         pause
         exit /b 1
     )
-    echo ✅ Зависимости установлены
+    echo OK: Зависимости установлены
 ) else (
-    echo ✅ Все зависимости уже установлены
+    echo OK: Все зависимости уже установлены
 )
 
 :: Проверка наличия Chrome
 echo.
-echo 🌐 Проверяем наличие Google Chrome...
+echo Проверяем наличие Google Chrome...
 where chrome >nul 2>&1
 if errorlevel 1 (
     :: Проверяем стандартные пути установки Chrome
     if exist "%ProgramFiles%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
+        echo OK: Google Chrome найден
     ) else if exist "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
+        echo OK: Google Chrome найден
     ) else if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
+        echo OK: Google Chrome найден
     ) else (
-        echo ⚠️ Google Chrome не найден
-        echo 📥 Пожалуйста, установите Google Chrome с официального сайта:
+        echo ВНИМАНИЕ: Google Chrome не найден
+        echo Пожалуйста, установите Google Chrome с официального сайта:
         echo    https://www.google.com/chrome/
         echo.
-        echo 💡 Chrome необходим для автоматического сбора данных
-        echo 💡 Вы также можете продолжить - ChromeDriver загрузится автоматически
+        echo Chrome необходим для автоматического сбора данных
+        echo Вы также можете продолжить - ChromeDriver загрузится автоматически
         echo.
         set /p choice="Продолжить без Chrome? (y/n): "
         if /i "!choice!" neq "y" (
@@ -104,14 +103,14 @@ if errorlevel 1 (
         )
     )
 ) else (
-    echo ✅ Google Chrome найден
+    echo OK: Google Chrome найден
 )
 
 :: Запуск основного скрипта
 echo.
-echo ═══════════════════════════════════════════════════════════════
-echo 🚀 Запускаем сбор данных...
-echo ═══════════════════════════════════════════════════════════════
+echo ================================================================
+echo Запускаем сбор данных...
+echo ================================================================
 echo.
 
 :: Запуск в тихом режиме
@@ -120,14 +119,14 @@ python dota2_data_scraper\main.py --quiet
 :: Проверка результата
 if errorlevel 1 (
     echo.
-    echo ❌ Процесс завершился с ошибками
-    echo 💡 Для диагностики запустите: python dota2_data_scraper\main.py --no-headless
+    echo ОШИБКА: Процесс завершился с ошибками
+    echo Для диагностики запустите: python dota2_data_scraper\main.py --no-headless
     echo.
 ) else (
     echo.
-    echo ═══════════════════════════════════════════════════════════════
-    echo 🎮 Запустите Dota 2 и проверьте новые конфигурации героев!
-    echo ═══════════════════════════════════════════════════════════════
+    echo ================================================================
+    echo Запустите Dota 2 и проверьте новые конфигурации героев!
+    echo ================================================================
 )
 
 echo.
