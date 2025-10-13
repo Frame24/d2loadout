@@ -19,56 +19,44 @@ class FacetAPIParser:
         self.logger = logging.getLogger(__name__)
         self.hero_facets_cache: Dict[str, Dict[str, int]] = {}
 
-    def get_hero_facets_mapping(self) -> Dict[str, Dict[str, int]]:
+    def get_hero_facets_mapping(
+        self, debug_dotabuff: bool = False, manager=None
+    ) -> Dict[str, Dict[str, int]]:
+        # Всегда используем только Dotabuff
+        self.logger.info("Получение фасетов через Dotabuff...")
         try:
-            self.logger.info("Получение фасетов из Dotabuff repo-*.js...")
-            # 0) ENV override
-            env_repo = os.environ.get("DOTABUFF_REPO_JS_URL")
-            if env_repo:
+            mapping = self._try_dotabuff_facets(manager)
+            if mapping:
                 self.logger.info(
-                    f"Использую DOTABUFF_REPO_JS_URL из окружения: {env_repo}"
+                    f"✅ Получены фасеты через Dotabuff для {len(mapping)} героев"
                 )
-                js_text = self._fetch_url(env_repo, referer="https://www.dotabuff.com/")
-            else:
-                try:
-                    repo_js_url = self._discover_dotabuff_repo_js_http()
-                    js_text = self._fetch_url(
-                        repo_js_url, referer="https://www.dotabuff.com/"
-                    )
-                except Exception as e_http:
-                    self.logger.warning(
-                        f"HTTP-доступ к repo js не удался ({e_http}). Пробуем через Selenium..."
-                    )
-                    repo_js_url, js_text = self._fetch_repo_js_via_selenium()
-
-            facets = self._extract_facets_from_repo(js_text)
-            if not facets:
-                self.logger.error("Не удалось извлечь facets из repo js")
-                # Переходим на фолбек через D2PT facetData
-                raise RuntimeError("Empty facets from repo js")
-            hero_id_to_name = self._load_d2pt_hero_id_to_name()
-            mapping = self._build_mapping(facets, hero_id_to_name)
-            self.hero_facets_cache = mapping
-            self.logger.info(f"✅ Получены фасеты для {len(mapping)} героев (Dotabuff)")
-            return mapping
-        except Exception as e:
-            self.logger.warning(f"Dotabuff недоступен, фолбек на D2PT facetData: {e}")
-            try:
-                mapping = self._build_mapping_from_d2pt_facets()
-                if mapping:
-                    self.hero_facets_cache = mapping
-                    self.logger.info(
-                        f"✅ Получены фасеты для {len(mapping)} героев (D2PT facetData)"
-                    )
-                else:
-                    self.logger.error("Не удалось получить фасеты через D2PT facetData")
+                self.hero_facets_cache = mapping
                 return mapping
-            except Exception as e2:
-                self.logger.error(f"Ошибка фолбека через D2PT facetData: {e2}")
-                return {}
+            else:
+                raise RuntimeError("Dotabuff не вернул данные")
+        except Exception as e:
+            self.logger.error(f"Ошибка при получении фасетов через Dotabuff: {e}")
+            raise
 
     def _discover_dotabuff_repo_js_http(self) -> str:
-        # Пробуем главную, а не страницу героя
+        # Пробуем сначала страницу героя (более надежно)
+        hero_urls = [
+            "https://www.dotabuff.com/heroes/juggernaut",
+            "https://www.dotabuff.com/heroes/anti-mage", 
+            "https://www.dotabuff.com/heroes/pudge"
+        ]
+
+        for hero_url in hero_urls:
+            try:
+                html = self._fetch_url(hero_url, referer="https://www.dotabuff.com/")
+                repo_url = self._extract_repo_js_url_from_html(html)
+                if repo_url:
+                    return repo_url
+            except Exception as e:
+                self.logger.debug(f"Не удалось получить repo с {hero_url}: {e}")
+                continue
+
+        # Фолбек на главную
         root_url = "https://www.dotabuff.com/"
         html = self._fetch_url(root_url, referer="https://www.dotabuff.com/")
         return self._extract_repo_js_url_from_html(html)
@@ -79,72 +67,115 @@ class FacetAPIParser:
             src = script["src"]
             if src.startswith("/static/repo-") and src.endswith(".js"):
                 return f"https://www.dotabuff.com{src}"
-        m = re.search(r"<script[^>]+src=\"(/static/repo-[^\"]+\.js)\"", html)
-        if m:
-            return f"https://www.dotabuff.com{m.group(1)}"
+
+        # Более широкая регулярка для поиска repo-*.js
+        patterns = [
+            r'<script[^>]+src=["\'](/static/repo-[^"\']+\.js)["\']',
+            r'src=["\'](/static/repo-[^"\']+\.js)["\']',
+            r'"/static/repo-[^"]+\.js"',
+            r"'/static/repo-[^']+\.js'",
+            r'/static/repo-[a-zA-Z0-9_-]+\.js'
+        ]
+
+        for pattern in patterns:
+            matches = re.findall(pattern, html)
+            for match in matches:
+                if isinstance(match, tuple):
+                    match = match[0]
+                if match.startswith('/static/repo-') and match.endswith('.js'):
+                    return f"https://www.dotabuff.com{match}"
+
         raise RuntimeError("Не удалось найти ссылку на repo-*.js на главной Dotabuff")
 
     def _fetch_repo_js_via_selenium(self) -> Tuple[str, str]:
         with ScrapingManager(headless=True) as manager:
-            # 1) идем на главную
-            root_url = "https://www.dotabuff.com/"
-            manager.navigate_to_page_basic(root_url)
-            # 2) пробуем получить список скриптов через JS
+            # 1) идем на страницу героя (более надежно)
+            hero_urls = [
+                "https://www.dotabuff.com/heroes/juggernaut",
+                "https://www.dotabuff.com/heroes/anti-mage",
+                "https://www.dotabuff.com/heroes/pudge"
+            ]
+
             repo_js_url = None
-            try:
-                scripts: List[str] = manager.driver.execute_script(
-                    "return Array.from(document.scripts).map(s=>s.src).filter(Boolean);"
-                )
-                for s in scripts:
-                    if "/static/repo-" in s and s.endswith(".js"):
-                        repo_js_url = (
-                            s
-                            if s.startswith("http")
-                            else f"https://www.dotabuff.com{s}"
+            for hero_url in hero_urls:
+                try:
+                    self.logger.debug(f"Переходим на {hero_url}")
+                    manager.navigate_to_page_basic(hero_url)
+
+                    # Ждем загрузки всех ресурсов
+                    import time
+                    time.sleep(3)
+
+                    # 2) Получаем ВСЕ загруженные ресурсы и ищем repo файлы
+                    try:
+                        # Все ресурсы
+                        all_resources = manager.driver.execute_script("""
+                            return performance.getEntriesByType('resource')
+                                .map(r => r.name)
+                                .filter(name => name.includes('/static/') && name.endsWith('.js'));
+                        """)
+
+                        self.logger.debug(f"Найдено {len(all_resources)} JS файлов в /static/")
+                        for resource in all_resources:
+                            self.logger.debug(f"  - {resource}")
+
+                        # Ищем repo файлы
+                        repo_resources = [r for r in all_resources if '/static/repo-' in r]
+                        if repo_resources:
+                            repo_js_url = repo_resources[0]
+                            self.logger.debug(f"Найден repo через Performance API: {repo_js_url}")
+                            break
+                    except Exception as e:
+                        self.logger.debug(f"Performance API не сработал: {e}")
+
+                    # 3) Альтернативно - через список скриптов
+                    try:
+                        scripts = manager.driver.execute_script(
+                            "return Array.from(document.scripts).map(s=>s.src).filter(Boolean);"
                         )
-                        break
-            except Exception:
-                pass
-            # 3) если не нашли — через Performance API
-            if not repo_js_url:
-                try:
-                    resources: List[dict] = manager.driver.execute_script(
-                        "return performance.getEntriesByType('resource').map(r=>r.name);"
-                    )
-                    for name in resources:
-                        if "/static/repo-" in name and name.endswith(".js"):
-                            repo_js_url = name
+                        self.logger.debug(f"Найдено {len(scripts)} скриптов")
+                        for s in scripts:
+                            self.logger.debug(f"  - {s}")
+                            if "/static/repo-" in s and s.endswith(".js"):
+                                repo_js_url = s if s.startswith("http") else f"https://www.dotabuff.com{s}"
+                                self.logger.debug(f"Найден repo через scripts: {repo_js_url}")
+                                break
+                        if repo_js_url:
                             break
-                except Exception:
-                    pass
-            if not repo_js_url:
-                # 4) последняя попытка — открыть страницу героя и повторить
-                hero_url = "https://www.dotabuff.com/heroes/natures-prophet"
-                manager.navigate_to_page_basic(hero_url)
-                try:
-                    scripts: List[str] = manager.driver.execute_script(
-                        "return Array.from(document.scripts).map(s=>s.src).filter(Boolean);"
-                    )
-                    for s in scripts:
-                        if "/static/repo-" in s and s.endswith(".js"):
-                            repo_js_url = (
-                                s
-                                if s.startswith("http")
-                                else f"https://www.dotabuff.com{s}"
-                            )
+                    except Exception as e:
+                        self.logger.debug(f"Scripts API не сработал: {e}")
+
+                    # 4) Пробуем найти в HTML страницы
+                    try:
+                        page_source = manager.get_page_source()
+                        import re
+                        repo_matches = re.findall(r'/static/repo-[^"\']+\.js', page_source)
+                        if repo_matches:
+                            repo_js_url = f"https://www.dotabuff.com{repo_matches[0]}"
+                            self.logger.debug(f"Найден repo в HTML: {repo_js_url}")
                             break
-                except Exception:
-                    pass
+                    except Exception as e:
+                        self.logger.debug(f"HTML поиск не сработал: {e}")
+
+                except Exception as e:
+                    self.logger.debug(f"Ошибка на {hero_url}: {e}")
+                    continue
+
             if not repo_js_url:
                 raise RuntimeError("Не удалось найти repo-*.js через Selenium")
-            # 5) загружаем сам файл и читаем innerText
+
+            # 4) Загружаем содержимое repo файла
+            self.logger.debug(f"Загружаем содержимое {repo_js_url}")
             manager.navigate_to_page_basic(repo_js_url)
+
             try:
                 js_text = manager.driver.execute_script(
                     "return document.body.innerText || document.body.textContent || '';"
                 )
             except Exception:
                 js_text = manager.get_page_source()
+
+            self.logger.debug(f"Получено {len(js_text)} символов из repo файла")
             return repo_js_url, js_text
 
     def _fetch_url(
@@ -163,37 +194,32 @@ class FacetAPIParser:
         return resp.text
 
     def _extract_facets_from_repo(self, js_text: str) -> List[dict]:
-        m = re.search(r"const\s+f\s*=\s*JSON\.parse\(`(\[.*?\])`\)", js_text, re.DOTALL)
-        if not m:
-            return []
-        import json
+        # Более гибкие паттерны для поиска JSON с фасетами
+        patterns = [
+            r"const\s+f\s*=\s*JSON\.parse\(`(\[.*?\])`\)",
+            r"JSON\.parse\(`(\[.*?\])`\)",
+            r"const\s+\w+\s*=\s*(\[.*?\])",
+            r"facets?\s*:\s*(\[.*?\])",
+            r"f\s*=\s*(\[.*?\])"
+        ]
 
-        raw = m.group(1)
-        facets = json.loads(raw)
-        valid = [x for x in facets if not x.get("deprecated")]
-        return valid
+        for pattern in patterns:
+            matches = re.findall(pattern, js_text, re.DOTALL)
+            for match in matches:
+                try:
+                    import json
+                    facets = json.loads(match)
+                    if isinstance(facets, list) and len(facets) > 0:
+                        valid = [x for x in facets if not x.get("deprecated")]
+                        if valid:
+                            self.logger.debug(f"Найдено {len(valid)} фасетов через паттерн: {pattern[:50]}...")
+                            return valid
+                except (json.JSONDecodeError, TypeError) as e:
+                    self.logger.debug(f"Ошибка парсинга JSON для паттерна {pattern[:30]}: {e}")
+                    continue
 
-    def _load_d2pt_hero_id_to_name(self) -> Dict[int, str]:
-        # https://dota2protracker.com/api/heroes/list -> [{displayName, hero_id}, ...]
-        url = "https://dota2protracker.com/api/heroes/list"
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
-            "Accept": "application/json",
-        }
-        try:
-            r = requests.get(url, headers=headers, timeout=10)
-            r.raise_for_status()
-            data = r.json()
-            mapping: Dict[int, str] = {}
-            for it in data:
-                hid = it.get("hero_id")
-                name = it.get("displayName")
-                if isinstance(hid, int) and isinstance(name, str):
-                    mapping[hid] = name
-            return mapping
-        except Exception as e:
-            self.logger.warning(f"Не удалось загрузить hero_id→name из D2PT: {e}")
-            return {}
+        self.logger.warning("Не удалось найти валидные фасеты в JS")
+        return []
 
     def _build_mapping(
         self, facets: List[dict], hero_id_to_name: Dict[int, str]
@@ -319,22 +345,6 @@ class FacetAPIParser:
                 break
         return " ".join(picked) if picked else None
 
-    def _load_d2pt_hero_display_names(self) -> List[str]:
-        """Загружает displayName героев из D2PT API"""
-        url = "https://dota2protracker.com/api/heroes/list"
-        try:
-            r = requests.get(url, timeout=10)
-            r.raise_for_status()
-            data = r.json()
-            names: List[str] = []
-            for it in data:
-                name = it.get("displayName")
-                if isinstance(name, str) and name:
-                    names.append(name)
-            return names
-        except Exception:
-            return []
-
     def _try_parse_js_object(self, js_obj_text: str) -> Optional[dict]:
         """Пытается распарсить JS-объект в dict: сначала json5, затем грубая нормализация"""
         # Попытка через json5, если установлен
@@ -353,7 +363,7 @@ class FacetAPIParser:
             # Добавляем кавычки вокруг ключей простого вида
             s = re.sub(
                 r"(?P<pre>[{,\s])(?P<key>[A-Za-z0-9_]+)\s*:",
-                r"\g<pre>" "\g<key>" ":",
+                r"\g<pre>\"\g<key>\":",
                 s,
             )
             # Одинарные кавычки -> двойные
@@ -364,56 +374,13 @@ class FacetAPIParser:
         except Exception:
             return None
 
-    def _parse_facetdata_from_hero_page(self, hero_name: str) -> List[dict]:
-        """Возвращает список фасетов (dict) для героя из hero page (facetData)"""
-        url = f"https://dota2protracker.com/hero/{quote(hero_name)}"
-        try:
-            html = self._fetch_url(url, referer="https://dota2protracker.com/")
-            # Ищем JS-объект facetData: {...}}
-            m = re.search(r"facetData:\s*({.*?})\s*\}\s*,", html, re.DOTALL)
-            if not m:
-                return []
-            js_obj_text = m.group(1)
-            data = self._try_parse_js_object(js_obj_text)
-            if isinstance(data, dict):
-                # Структура: ключ -> {id, localized_name, facets: [...]}
-                # Собираем список фасетов (не deprecated)
-                collected: List[dict] = []
-                for _, value in data.items():
-                    for fac in (
-                        value.get("facets", []) if isinstance(value, dict) else []
-                    ):
-                        if not fac.get("deprecated"):
-                            collected.append(fac)
-                return collected
-            # Фолбек: извлечение через regex имен фасетов из блока facets:[...]
-            collected: List[dict] = []
-            for facets_block in re.findall(
-                r"facets\s*:\s*\[(.*?)\]", js_obj_text, re.DOTALL
-            ):
-                # Находим отдельные объекты фасетов и вытаскиваем name и deprecated
-                for obj_txt in re.findall(r"\{(.*?)\}", facets_block, re.DOTALL):
-                    # deprecated
-                    dep_m = re.search(r"deprecated\s*:\s*(true|false)", obj_txt)
-                    is_dep = dep_m and dep_m.group(1) == "true"
-                    if is_dep:
-                        continue
-                    name_m = re.search(r"name\s*:\s*['\"]([^'\"]+)['\"]", obj_txt)
-                    if name_m:
-                        collected.append({"name": name_m.group(1)})
-            return collected
-        except Exception:
-            return []
-
     def get_name_to_order_for_hero(self, hero_name: str) -> Dict[str, int]:
-        """Возвращает маппинг имя фасета -> порядковый номер для конкретного героя.
-        Пытается использовать кеш/общий маппинг, затем парсит страницу героя при необходимости.
-        """
+        """Возвращает маппинг имя фасета -> порядковый номер для конкретного героя."""
         # Если общий кеш уже есть и в нем есть нужный герой
         if self.hero_facets_cache and hero_name in self.hero_facets_cache:
             return self.hero_facets_cache.get(hero_name, {})
 
-        # Пробуем получить общий маппинг (может сработать в этот раз)
+        # Пробуем получить общий маппинг
         try:
             mapping = self.get_hero_facets_mapping()
             if mapping and hero_name in mapping:
@@ -421,60 +388,45 @@ class FacetAPIParser:
         except Exception:
             pass
 
-        # Парсим только страницу конкретного героя
-        facets = self._parse_facetdata_from_hero_page(hero_name)
-        if not facets:
-            return {}
-        # Упорядочиваем как есть (или по hero_variant/id если присутствуют)
-        try:
-            facets.sort(
-                key=lambda x: (x.get("hero_variant", 9999), x.get("id", 999999))
-            )
-        except Exception:
-            pass
-        name_to_order: Dict[str, int] = {}
-        order = 1
-        for fac in facets:
-            fname = fac.get("name")
-            if isinstance(fname, str) and fname.strip() and fname not in name_to_order:
-                name_to_order[fname] = order
-                order += 1
-        # Кладем в кеш частично
-        if name_to_order:
-            self.hero_facets_cache[hero_name] = name_to_order
-        return name_to_order
+        return {}
 
-    def _build_mapping_from_d2pt_facets(self) -> Dict[str, Dict[str, int]]:
-        """Строит маппинг name->order по facetData со страниц героев D2PT"""
-        result: Dict[str, Dict[str, int]] = {}
-        # Список имен героев (displayName)
-        names = self._load_d2pt_hero_display_names()
-        if not names:
-            return result
-        for hero_name in names:
-            facets = self._parse_facetdata_from_hero_page(hero_name)
-            if not facets:
+    def _build_mapping_from_facets(
+        self, facets: List[dict]
+    ) -> Dict[str, Dict[str, int]]:
+        """Строит маппинг напрямую из фасетов Dotabuff"""
+        # Группируем по hero_id, сортируем по hero_variant и id, нумеруем 1..n
+        by_hero: Dict[int, List[dict]] = {}
+        for f in facets:
+            hid = f.get("hero_id")
+            if not isinstance(hid, int):
                 continue
-            # Сортировать по hero_variant и id при наличии, иначе по порядку появления
-            try:
-                facets.sort(
-                    key=lambda x: (x.get("hero_variant", 9999), x.get("id", 999999))
-                )
-            except Exception:
-                pass
+            by_hero.setdefault(hid, []).append(f)
+
+        result: Dict[str, Dict[str, int]] = {}
+        for hid, lst in by_hero.items():
+            lst.sort(key=lambda x: (x.get("hero_variant", 9999), x.get("id", 999999)))
+
+            # Получаем имя героя из slug
+            hero_name = None
+            if lst:
+                slug = lst[0].get("slug", "")
+                hero_name = self._name_from_slug(slug)
+
+            if not hero_name:
+                hero_name = f"Hero {hid}"
+
             name_to_order: Dict[str, int] = {}
             order = 1
-            for fac in facets:
-                fname = fac.get("name")
-                if not isinstance(fname, str) or not fname.strip():
+            for fac in lst:
+                name = fac.get("name")
+                if not isinstance(name, str) or not name.strip():
                     # фолбек по описанию
                     alias = self._alias_from_description(fac.get("description"))
-                    fname = alias or f"Facet {order}"
-                if fname not in name_to_order:
-                    name_to_order[fname] = order
+                    name = alias or f"Facet {order}"
+                if name not in name_to_order:
+                    name_to_order[name] = order
                     order += 1
-            if name_to_order:
-                result[hero_name] = name_to_order
+            result[hero_name] = name_to_order
         return result
 
     def get_facet_number_for_hero(self, hero_name: str, facet_name: str) -> int:
@@ -490,3 +442,73 @@ class FacetAPIParser:
             ):
                 return num
         return 1
+
+    def _try_dotabuff_facets(self, manager=None) -> Dict[str, Dict[str, int]]:
+        """Получение фасетов через Dotabuff - только одна страница Nature's Prophet"""
+        from ..core.scraping_manager import ScrapingManager
+
+        if manager is None:
+            self.logger.info("Запуск Selenium для Dotabuff...")
+            with ScrapingManager(headless=False) as manager:
+                return self._try_dotabuff_facets(manager)
+        else:
+            # Используем переданный manager
+            # Прямо идем на страницу Nature's Prophet
+            hero_url = "https://www.dotabuff.com/heroes/natures-prophet"
+            self.logger.info(f"Переход на страницу героя: {hero_url}")
+            manager.navigate_to_page_basic(hero_url)
+
+            # Ждем загрузки страницы и всех ресурсов
+            import time
+
+            time.sleep(5)
+
+            # Проверяем, прошли ли мы Cloudflare challenge
+            if (
+                "Just a moment" in manager.driver.title
+                or "Checking your browser" in manager.get_page_source()
+            ):
+                self.logger.info("Обнаружен Cloudflare challenge, ждем...")
+                time.sleep(10)
+
+                if "Just a moment" in manager.driver.title:
+                    raise RuntimeError("Не удалось пройти Cloudflare challenge")
+
+            # Получаем все загруженные ресурсы через JavaScript
+            self.logger.info("Поиск repo скрипта...")
+            all_resources = manager.driver.execute_script(
+                """
+                return performance.getEntriesByType('resource')
+                    .map(r => r.name)
+                    .filter(name => name.includes('/static/') && name.endsWith('.js'));
+            """
+            )
+
+            self.logger.info(f"Найдено {len(all_resources)} JS файлов в /static/")
+
+            # Ищем repo файлы
+            repo_resources = [r for r in all_resources if "/static/repo-" in r]
+            if not repo_resources:
+                raise RuntimeError("Repo скрипт не найден в Network запросах")
+
+            repo_js_url = repo_resources[0]
+            self.logger.info(f"Найден repo скрипт: {repo_js_url}")
+
+            # Загружаем содержимое repo скрипта
+            self.logger.info(f"Загружаем содержимое: {repo_js_url}")
+            manager.navigate_to_page_basic(repo_js_url)
+
+            # Получаем содержимое JS файла
+            js_content = manager.get_page_source()
+            self.logger.info(f"Получен JS контент размером {len(js_content)} символов")
+
+            # Парсим фасеты из JS
+            facets = self._extract_facets_from_repo(js_content)
+            if not facets:
+                raise RuntimeError("Не удалось извлечь фасеты из JS")
+
+            self.logger.info(f"Найдено {len(facets)} фасетов в JS")
+
+            # Строим маппинг напрямую из фасетов
+            mapping = self._build_mapping_from_facets(facets)
+            return mapping

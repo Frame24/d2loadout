@@ -56,10 +56,15 @@ class ScrapingManager:
         """Создание настроек Chrome"""
         chrome_options = Options()
 
-        # Используем уникальный порт для каждого экземпляра
+        # Используем уникальный порт и профиль для каждого экземпляра
         import random
+        import tempfile
+        import uuid
 
         port = random.randint(9000, 9999)
+        unique_profile = os.path.join(
+            tempfile.gettempdir(), f"chrome_profile_{uuid.uuid4().hex[:8]}"
+        )
 
         # Базовые опции для стабильной работы
         if self.headless:
@@ -78,6 +83,7 @@ class ScrapingManager:
         chrome_options.add_argument("--no-first-run")
         chrome_options.add_argument("--no-default-browser-check")
         chrome_options.add_argument("--incognito")
+        chrome_options.add_argument(f"--user-data-dir={unique_profile}")
 
         # Экспериментальные опции
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
@@ -136,6 +142,7 @@ class ScrapingManager:
     def click_element_safely(self, xpath: str, timeout: int = 10) -> bool:
         """Безопасный клик по элементу"""
         try:
+            self.logger.debug(f"Ожидание кликабельности: {xpath}, timeout={timeout}s")
             wait = WebDriverWait(self.driver, timeout)
             element = wait.until(EC.element_to_be_clickable((By.XPATH, xpath)))
 
@@ -145,10 +152,18 @@ class ScrapingManager:
                 # Если обычный клик не работает, используем JavaScript
                 self.driver.execute_script("arguments[0].click();", element)
 
+            self.logger.debug("Клик выполнен, ожидаем обновление контента...")
             time.sleep(2)  # Даем время на загрузку данных
             return True
         except Exception as e:
-            self.logger.error(f"Ошибка при клике по элементу {xpath}: {e}")
+            # Сохраняем часть HTML для диагностики
+            try:
+                html_snippet = (self.driver.page_source or "")[:2000]
+            except Exception:
+                html_snippet = "<no page source>"
+            self.logger.error(
+                f"Ошибка при клике по элементу {xpath}: {e}. Фрагмент страницы: {html_snippet}"
+            )
             return False
 
     def get_page_source(self) -> str:

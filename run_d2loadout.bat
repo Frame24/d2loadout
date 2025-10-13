@@ -114,14 +114,14 @@ echo 🚀 Запускаем сбор данных...
 echo ═══════════════════════════════════════════════════════════════
 echo.
 
-:: Запуск в тихом режиме
-python main.py --quiet
+:: Запуск с логами в headless режиме
+python main.py
 
 :: Проверка результата
 if errorlevel 1 (
     echo.
     echo ❌ Процесс завершился с ошибками
-    echo 💡 Для диагностики запустите: python main.py --no-headless
+    echo 💡 Для диагностики запустите: python main.py --no-headless --debug
     echo.
 ) else (
     echo.

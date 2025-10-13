@@ -17,8 +17,9 @@ logger = logging.getLogger(__name__)
 class HeroScraper:
     """Скрапер для сбора данных о героях"""
 
-    def __init__(self, headless: bool = True):
+    def __init__(self, headless: bool = True, debug_dotabuff: bool = False):
         self.headless = headless
+        self.debug_dotabuff = debug_dotabuff
         self.positions = {
             "Carry (pos 1)": "//div[contains(text(), 'Carry')]",
             "Mid (pos 2)": "//div[contains(text(), 'Mid')]",
@@ -60,7 +61,7 @@ class HeroScraper:
             positions_list = list(self.positions.items())
             for i, (position, xpath) in enumerate(positions_list, 1):
                 if show_progress:
-                    print(f"   📍 Позиция {i}/5: {position}")
+                    print(f"   Позиция {i}/5: {position}")
                 logger.info(f"Сбор данных для {position}")
 
                 # Кликаем по позиции
@@ -219,11 +220,14 @@ class HeroScraper:
             positions_list = list(self.positions.items())
             for i, (position, xpath) in enumerate(positions_list, 1):
                 if show_progress:
-                    print(f"   📍 Позиция {i}/5: {position}")
+                    print(f"   Позиция {i}/5: {position}")
                 logger.info(f"Сбор данных с фасетами для {position}")
+                start_click = time.time()
 
                 if manager.click_element_safely(xpath):
+                    logger.debug(f"Клик по {position} занял {time.time() - start_click:.2f}s")
                     df = self._extract_table_data(manager.driver)
+                    logger.debug(f"Извлечено строк: {len(df)} для {position}")
                     df["Role"] = self.role_mapping[position]
                     dfs_with_facets.append(df)
                 else:
@@ -291,6 +295,7 @@ class HeroScraper:
                             "arguments[0].click();", facet_toggle
                         )
                         logger.info("✅ Группировка фасетов включена")
+                        logger.debug("Ожидание обновления данных после переключения...")
                         time.sleep(3)  # Ждем обновления данных
                     else:
                         logger.info("Группировка фасетов уже была включена")
@@ -298,16 +303,19 @@ class HeroScraper:
                         # Собираем данные без фасетов
                     logger.info("Сбор данных без фасетов...")
                     if show_progress:
-                        print("   🔄 Переключились на группировку фасетов")
+                        print("   Переключились на группировку фасетов")
                     dfs_no_facets = []
 
                     for i, (position, xpath) in enumerate(positions_list, 1):
                         if show_progress:
-                            print(f"   📍 Позиция {i}/5: {position} (без фасетов)")
+                            print(f"   Позиция {i}/5: {position} (без фасетов)")
                         logger.info(f"Сбор данных без фасетов для {position}")
+                        start_click2 = time.time()
 
                         if manager.click_element_safely(xpath):
+                            logger.debug(f"Клик по {position} (no facets) занял {time.time() - start_click2:.2f}s")
                             df = self._extract_table_data(manager.driver)
+                            logger.debug(f"Извлечено строк (no facets): {len(df)} для {position}")
                             df["Role"] = self.role_mapping[position]
                             df["Facet"] = (
                                 "No Facet"  # Указываем что это данные без фасетов
@@ -339,8 +347,10 @@ class HeroScraper:
         logger.info("Обеспечение корректных имен и номеров фасетов...")
 
         # Получаем маппинг: hero_name -> {facet_name: order}
-        facets_mapping = self.facet_parser.get_hero_facets_mapping()
-        logger.info(f"Получен маппинг фасетов для {len(facets_mapping)} героев")
+        mapping = self.facet_parser.get_hero_facets_mapping(
+            debug_dotabuff=self.debug_dotabuff, manager=None
+        )
+        logger.info(f"Получен маппинг фасетов для {len(mapping)} героев")
 
         facet_names: list[str] = []
         facet_numbers: list[int] = []
@@ -395,7 +405,7 @@ class HeroScraper:
             # Если name отсутствует или выглядит как номер, пробуем заменить на настоящее имя
             if not is_valid_facet_name(name):
                 if isinstance(hero_name, str):
-                    name_to_order = facets_mapping.get(hero_name, {})
+                    name_to_order = mapping.get(hero_name, {})
                     if not name_to_order:
                         # Получим маппинг только для этого героя
                         name_to_order = self.facet_parser.get_name_to_order_for_hero(
