@@ -52,8 +52,13 @@ class ConfigProcessor:
                 heroes_no_facets_df is not None and not heroes_no_facets_df.empty
             )
 
+            # Загружаем маппинг фасетов один раз для всех обработок
+            parser = FacetAPIParser()
+            mapping = parser.get_hero_facets_mapping()
+            self.logger.info(f"Маппинг фасетов загружен для {len(mapping)} героев (будет использован для всех обработок)")
+
             # Обработка данных героев
-            processed_heroes = self._process_heroes_data(heroes_df)
+            processed_heroes = self._process_heroes_data(heroes_df, mapping)
             if processed_heroes.empty:
                 self.logger.error("Ошибка при обработке данных героев")
                 return False
@@ -66,7 +71,7 @@ class ConfigProcessor:
 
             # Если есть данные без фасетов, добавляем конфигурацию для них
             if has_no_facets_data:
-                processed_no_facets = self._process_heroes_data(heroes_no_facets_df)
+                processed_no_facets = self._process_heroes_data(heroes_no_facets_df, mapping)
                 no_facets_config = self._create_no_facets_config(processed_no_facets)
                 if no_facets_config:
                     config["configs"].append(no_facets_config)
@@ -102,12 +107,13 @@ class ConfigProcessor:
             self.logger.error(f"Ошибка при обработке данных: {e}")
             return False
 
-    def _process_heroes_data(self, heroes_df: pd.DataFrame) -> pd.DataFrame:
+    def _process_heroes_data(self, heroes_df: pd.DataFrame, mapping: Optional[Dict[str, Dict[str, int]]] = None) -> pd.DataFrame:
         """
         Обработка данных героев
 
         Args:
             heroes_df: DataFrame с данными героев
+            mapping: Предзагруженный маппинг фасетов (если None, загрузится автоматически)
 
         Returns:
             Обработанный DataFrame
@@ -118,11 +124,10 @@ class ConfigProcessor:
             # Добавление hero_id на основе имени героя
             heroes_df["hero_id"] = self._map_hero_names_to_ids(heroes_df["Hero"])
 
-            # Загружаем маппинг фасетов один раз
-            parser = FacetAPIParser()
-            mapping = (
-                parser.get_hero_facets_mapping(headless=True)
-            )  # {hero_name: {facet_name: order}}
+            # Используем переданный маппинг или загружаем новый (с кешированием)
+            if mapping is None:
+                parser = FacetAPIParser()
+                mapping = parser.get_hero_facets_mapping()  # {hero_name: {facet_name: order}}
 
             # Заполняем facet_name из исходных данных, если есть колонка 'Facet'
             if "Facet" in heroes_df.columns:

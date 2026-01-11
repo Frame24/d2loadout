@@ -348,7 +348,7 @@ class HeroScraper:
 
         # Получаем маппинг: hero_name -> {facet_name: order}
         mapping = self.facet_parser.get_hero_facets_mapping(
-            debug_dotabuff=self.debug_dotabuff, manager=None, headless=self.headless
+            debug_dotabuff=self.debug_dotabuff, manager=None
         )
         logger.info(f"Получен маппинг фасетов для {len(mapping)} героев")
 

@@ -90,14 +90,8 @@ pytest -m "not slow"
 
 ### Запуск теста с сохранением данных одной позиции:
 ```bash
-.\venv\Scripts\activate
-pytest test/d2loadoutIntegration/test_actual_data_validation.py::TestActualDataValidation::test_scraped_data_contains_real_heroes -v -s
-```
-
-### Запуск теста для всех позиций:
-```bash
-.\venv\Scripts\activate
-pytest test/d2loadoutIntegration/test_all_positions_comparison.py -v -s
+venv\Scripts\activate
+pytest test/d2loadoutIntegration/test_actual_data_validation.py::TestActualDataValidation::test_scraped_data_comprehensive -v -s
 ```
 
 ### Сравнение с сайтом:
@@ -119,7 +113,7 @@ pytest test/d2loadoutIntegration/test_all_positions_comparison.py -v -s
 
 ### Проверка соответствия фасетов и номеров:
 ```bash
-.\venv\Scripts\activate
+venv\Scripts\activate
 pytest test/d2loadoutIntegration/test_facet_number_validation.py -v -s
 ```
 

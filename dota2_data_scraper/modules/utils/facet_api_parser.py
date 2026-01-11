@@ -15,22 +15,37 @@ from urllib.parse import quote
 
 
 class FacetAPIParser:
+    # Общий кеш для всех экземпляров класса
+    _shared_cache: Dict[str, Dict[str, int]] = {}
+    
     def __init__(self):
         self.logger = logging.getLogger(__name__)
-        self.hero_facets_cache: Dict[str, Dict[str, int]] = {}
+        # Используем общий кеш для всех экземпляров
+        self.hero_facets_cache = FacetAPIParser._shared_cache
 
     def get_hero_facets_mapping(
-        self, debug_dotabuff: bool = False, manager=None, headless: bool = True
+        self, debug_dotabuff: bool = False, manager=None
     ) -> Dict[str, Dict[str, int]]:
+        # Проверяем общий кеш перед загрузкой из Dotabuff
+        if FacetAPIParser._shared_cache and len(FacetAPIParser._shared_cache) > 0:
+            self.logger.info(
+                f"✅ Используем кешированный маппинг фасетов для {len(FacetAPIParser._shared_cache)} героев"
+            )
+            # Обновляем локальную ссылку на кеш
+            self.hero_facets_cache = FacetAPIParser._shared_cache
+            return FacetAPIParser._shared_cache
+        
         # Всегда используем только Dotabuff
         self.logger.info("Получение фасетов через Dotabuff...")
         try:
-            mapping = self._try_dotabuff_facets(manager, headless=headless)
+            mapping = self._try_dotabuff_facets(manager)
             if mapping:
                 self.logger.info(
                     f"✅ Получены фасеты через Dotabuff для {len(mapping)} героев"
                 )
-                self.hero_facets_cache = mapping
+                # Сохраняем в общий кеш
+                FacetAPIParser._shared_cache = mapping
+                self.hero_facets_cache = FacetAPIParser._shared_cache
                 return mapping
             else:
                 raise RuntimeError("Dotabuff не вернул данные")
@@ -382,7 +397,7 @@ class FacetAPIParser:
 
         # Пробуем получить общий маппинг
         try:
-            mapping = self.get_hero_facets_mapping(headless=True)
+            mapping = self.get_hero_facets_mapping()
             if mapping and hero_name in mapping:
                 return mapping.get(hero_name, {})
         except Exception:
@@ -431,7 +446,7 @@ class FacetAPIParser:
 
     def get_facet_number_for_hero(self, hero_name: str, facet_name: str) -> int:
         if not self.hero_facets_cache:
-            self.hero_facets_cache = self.get_hero_facets_mapping(headless=True)
+            self.hero_facets_cache = self.get_hero_facets_mapping()
         hero_facets = self.hero_facets_cache.get(hero_name, {})
         if facet_name in hero_facets:
             return hero_facets[facet_name]
@@ -443,14 +458,15 @@ class FacetAPIParser:
                 return num
         return 1
 
-    def _try_dotabuff_facets(self, manager=None, headless: bool = True) -> Dict[str, Dict[str, int]]:
+    def _try_dotabuff_facets(self, manager=None) -> Dict[str, Dict[str, int]]:
         """Получение фасетов через Dotabuff - только одна страница Nature's Prophet"""
         from ..core.scraping_manager import ScrapingManager
 
         if manager is None:
             self.logger.info("Запуск Selenium для Dotabuff...")
-            with ScrapingManager(headless=headless) as manager:
-                return self._try_dotabuff_facets(manager, headless=headless)
+            # Используем minimize_window=True для скрытия окна (headless не работает с Dotabuff)
+            with ScrapingManager(headless=False, minimize_window=True) as manager:
+                return self._try_dotabuff_facets(manager)
         else:
             # Используем переданный manager
             # Прямо идем на страницу Nature's Prophet

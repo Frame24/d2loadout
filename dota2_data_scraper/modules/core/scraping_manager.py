@@ -26,14 +26,16 @@ class ScrapingManager:
     Основной класс для управления процессом скрапинга
     """
 
-    def __init__(self, headless: bool = True):
+    def __init__(self, headless: bool = True, minimize_window: bool = False):
         """
         Инициализация менеджера скрапинга
 
         Args:
             headless: Запускать браузер в headless режиме
+            minimize_window: Минимизировать окно браузера (работает только если headless=False)
         """
         self.headless = headless
+        self.minimize_window = minimize_window
         self.driver: Optional[Chrome] = None
         self.logger = self._setup_logging()
         # Регистрируем аварийное закрытие драйвера на случай внезапного завершения процесса
@@ -69,6 +71,10 @@ class ScrapingManager:
         # Базовые опции для стабильной работы
         if self.headless:
             chrome_options.add_argument("--headless")
+        else:
+            # Если не headless, но нужно скрыть окно - перемещаем за пределы экрана
+            if self.minimize_window:
+                chrome_options.add_argument("--window-position=-32000,-32000")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
@@ -104,6 +110,30 @@ class ScrapingManager:
             service = Service(ChromeDriverManager().install())
             self.driver = Chrome(service=service, options=chrome_options)
             self.driver.implicitly_wait(3)
+            
+            # Дополнительные способы скрытия окна (если не headless)
+            if not self.headless and self.minimize_window:
+                try:
+                    # Ждем немного, чтобы окно появилось
+                    import time
+                    time.sleep(0.5)
+                    
+                    # Используем только Selenium API - он работает с конкретным окном драйвера
+                    # Это минимизирует ТОЛЬКО окно нашего драйвера, не трогая другие окна Chrome
+                    try:
+                        # Selenium 4+ поддерживает minimize_window для текущего окна драйвера
+                        self.driver.minimize_window()
+                        self.logger.debug("Окно драйвера минимизировано через Selenium API")
+                    except AttributeError:
+                        # Если метод не поддерживается (старая версия Selenium), 
+                        # перемещаем окно за пределы экрана через аргумент Chrome
+                        # (это уже сделано в _create_chrome_options через --window-position)
+                        self.logger.debug("minimize_window не поддерживается, используется --window-position")
+                    except Exception as e:
+                        self.logger.debug(f"Не удалось минимизировать окно через Selenium: {e}")
+                except Exception as e:
+                    self.logger.debug(f"Не удалось скрыть окно: {e}")
+            
             self.logger.info("Chrome драйвер успешно запущен")
             return self.driver
         except Exception as e:
