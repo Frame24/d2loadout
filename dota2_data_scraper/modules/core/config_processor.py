@@ -121,7 +121,7 @@ class ConfigProcessor:
             # Загружаем маппинг фасетов один раз
             parser = FacetAPIParser()
             mapping = (
-                parser.get_hero_facets_mapping()
+                parser.get_hero_facets_mapping(headless=True)
             )  # {hero_name: {facet_name: order}}
 
             # Заполняем facet_name из исходных данных, если есть колонка 'Facet'

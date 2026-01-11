@@ -348,7 +348,7 @@ class HeroScraper:
 
         # Получаем маппинг: hero_name -> {facet_name: order}
         mapping = self.facet_parser.get_hero_facets_mapping(
-            debug_dotabuff=self.debug_dotabuff, manager=None
+            debug_dotabuff=self.debug_dotabuff, manager=None, headless=self.headless
         )
         logger.info(f"Получен маппинг фасетов для {len(mapping)} героев")
 
@@ -421,7 +421,7 @@ class HeroScraper:
             # 3) Вычисляем номер фасета по имени, если это возможно
             number: int | None = None
             if isinstance(hero_name, str) and isinstance(name, str):
-                name_to_order = facets_mapping.get(hero_name, {})
+                name_to_order = mapping.get(hero_name, {})
                 number = name_to_order.get(name)
                 # Если не нашли в общей карте — пробуем получить маппинг только для этого героя
                 if number is None:

@@ -20,12 +20,12 @@ class FacetAPIParser:
         self.hero_facets_cache: Dict[str, Dict[str, int]] = {}
 
     def get_hero_facets_mapping(
-        self, debug_dotabuff: bool = False, manager=None
+        self, debug_dotabuff: bool = False, manager=None, headless: bool = True
     ) -> Dict[str, Dict[str, int]]:
         # Всегда используем только Dotabuff
         self.logger.info("Получение фасетов через Dotabuff...")
         try:
-            mapping = self._try_dotabuff_facets(manager)
+            mapping = self._try_dotabuff_facets(manager, headless=headless)
             if mapping:
                 self.logger.info(
                     f"✅ Получены фасеты через Dotabuff для {len(mapping)} героев"
@@ -382,7 +382,7 @@ class FacetAPIParser:
 
         # Пробуем получить общий маппинг
         try:
-            mapping = self.get_hero_facets_mapping()
+            mapping = self.get_hero_facets_mapping(headless=True)
             if mapping and hero_name in mapping:
                 return mapping.get(hero_name, {})
         except Exception:
@@ -431,7 +431,7 @@ class FacetAPIParser:
 
     def get_facet_number_for_hero(self, hero_name: str, facet_name: str) -> int:
         if not self.hero_facets_cache:
-            self.hero_facets_cache = self.get_hero_facets_mapping()
+            self.hero_facets_cache = self.get_hero_facets_mapping(headless=True)
         hero_facets = self.hero_facets_cache.get(hero_name, {})
         if facet_name in hero_facets:
             return hero_facets[facet_name]
@@ -443,14 +443,14 @@ class FacetAPIParser:
                 return num
         return 1
 
-    def _try_dotabuff_facets(self, manager=None) -> Dict[str, Dict[str, int]]:
+    def _try_dotabuff_facets(self, manager=None, headless: bool = True) -> Dict[str, Dict[str, int]]:
         """Получение фасетов через Dotabuff - только одна страница Nature's Prophet"""
         from ..core.scraping_manager import ScrapingManager
 
         if manager is None:
             self.logger.info("Запуск Selenium для Dotabuff...")
-            with ScrapingManager(headless=False) as manager:
-                return self._try_dotabuff_facets(manager)
+            with ScrapingManager(headless=headless) as manager:
+                return self._try_dotabuff_facets(manager, headless=headless)
         else:
             # Используем переданный manager
             # Прямо идем на страницу Nature's Prophet
