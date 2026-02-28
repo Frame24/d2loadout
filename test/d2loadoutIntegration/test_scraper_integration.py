@@ -28,18 +28,24 @@ class TestScraperIntegration:
         assert len(page_source) > 0, "Страница не загрузилась"
         assert "dota2protracker" in page_source.lower() or len(page_source) > 1000, "Неверная страница"
         
-        # 2. Проверка элементов таблицы
+        # 2. Проверка элементов таблицы (новая вёрстка: grid-cols-14 или старая: grid + style)
         soup = BeautifulSoup(page_source, "html.parser")
-        table_rows = soup.find_all("div", class_="grid", style=True)
+        def has_grid(c):
+            if not c:
+                return False
+            return "grid" in (c if isinstance(c, str) else c)
+        table_rows = soup.find_all("div", class_=has_grid, style=True)
+        if not table_rows:
+            table_rows = soup.find_all("div", class_=lambda c: c and "grid" in c and "grid-cols-14" in c)
         assert len(table_rows) > 0, "Не найдены элементы таблицы с классом 'grid'"
         
-        # 3. Проверка кнопок позиций
+        # 3. Проверка кнопок позиций (новая вёрстка: button с img alt)
         positions = ["Carry", "Mid", "Off", "Pos 4", "Pos 5"]
         found_positions = [pos for pos in positions if pos.lower() in page_source.lower()]
         assert len(found_positions) > 0, f"Не найдены кнопки позиций. Найдено: {found_positions}"
         
-        # 4. Проверка клика по позиции и извлечения данных
-        xpath = "//div[contains(text(), 'Carry')]"
+        # 4. Проверка клика по позиции и извлечения данных (XPath под новую вёрстку)
+        xpath = "//button[.//img[@alt='Carry']]"
         result = browser_manager.click_element_safely(xpath, timeout=15)
         assert result is True, f"Не удалось кликнуть по кнопке позиции {xpath}"
         
@@ -54,7 +60,11 @@ class TestScraperIntegration:
         # 6. Проверка структуры таблицы
         page_source_after = browser_manager.get_page_source()
         soup_after = BeautifulSoup(page_source_after, "html.parser")
-        table_rows_after = soup_after.find_all("div", class_="grid", style=True)
+        table_rows_after = soup_after.find_all("div", class_=has_grid, style=True)
+        if not table_rows_after:
+            tbody = soup_after.find("div", class_=lambda c: c and "tbody" in c)
+            if tbody:
+                table_rows_after = tbody.find_all("div", class_=lambda c: c and "grid" in c and "grid-cols-14" in c)
         assert len(table_rows_after) > 1, "Не найдено достаточно строк таблицы"
         
         if table_rows_after:
@@ -101,8 +111,8 @@ class TestScraperIntegration:
         has_period_selector = len(select_elements) > 0 or len(option_elements) > 0
         assert has_period_selector, "Селектор периода не найден на странице"
         
-        # Проверка DataFrame
-        xpath = "//div[contains(text(), 'Carry')]"
+        # Проверка DataFrame (XPath под новую вёрстку)
+        xpath = "//button[.//img[@alt='Carry']]"
         if browser_manager.click_element_safely(xpath, timeout=15):
             df = scraper._extract_table_data(browser_manager.driver)
             

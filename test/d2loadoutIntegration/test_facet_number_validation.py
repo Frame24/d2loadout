@@ -1,6 +1,7 @@
 """
 Тесты проверки соответствия фасетов и их номеров
-Проверяют что facet_number правильно вычисляется и соответствует именам фасетов
+Проверяют что facet_number правильно вычисляется и соответствует именам фасетов.
+Вывод: позиция (pos 4), название фасета, номер фасета; первые 10 строк как результат теста.
 """
 
 import pytest
@@ -11,6 +12,24 @@ from datetime import datetime
 pytestmark = pytest.mark.slow
 
 TEST_OUTPUT_DIR = "test_output"
+PREVIEW_ROWS = 10
+
+
+def _print_first_rows(df: pd.DataFrame, position: str, rows: int = PREVIEW_ROWS):
+    """Печатает первые N строк: позиция (№), герой, фасет, номер фасета."""
+    if df.empty or "Hero" not in df.columns or "Facet" not in df.columns:
+        return
+    has_num = "facet_number" in df.columns
+    print(f"\n--- Первые {rows} строк (позиция: {position}) ---")
+    print(f"{'№':<4} {'Hero':<25} {'Facet':<30} {'facet_number' if has_num else ''}")
+    print("-" * (4 + 25 + 30 + (15 if has_num else 0)))
+    subset = df.head(rows)
+    for i, (_, row) in enumerate(subset.iterrows(), 1):
+        hero = str(row.get("Hero", ""))[:24]
+        facet = str(row.get("Facet", ""))[:29]
+        num = row.get("facet_number", "") if has_num else ""
+        print(f"{i:<4} {hero:<25} {facet:<30} {num}")
+    print("---\n")
 
 
 def save_facet_number_table(df: pd.DataFrame, position: str):
@@ -132,3 +151,19 @@ class TestFacetNumberValidation:
         assert "Hero" in df_with_numbers.columns
         assert "Facet" in df_with_numbers.columns
         assert "facet_number" in df_with_numbers.columns
+
+    def test_pos4_first_rows_feedback(self, pos4_data):
+        """
+        Позиция pos 4: проверка колонок Hero, Facet, facet_number и вывод первых 10 строк
+        как результат теста (позиция №, название фасета, номер фасета).
+        """
+        df = pos4_data
+        if df.empty:
+            pytest.skip("Не удалось загрузить данные pos 4")
+        assert "Hero" in df.columns, "Нет колонки Hero"
+        assert "Facet" in df.columns, "Нет колонки Facet"
+        assert "facet_number" in df.columns, "Нет колонки facet_number"
+        facet_numbers = df["facet_number"].dropna()
+        assert len(facet_numbers) > 0, "Номера фасетов не вычислены"
+        assert (facet_numbers >= 1).all(), "Номера фасетов должны быть >= 1"
+        _print_first_rows(df, "pos 4", PREVIEW_ROWS)

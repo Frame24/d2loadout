@@ -44,6 +44,9 @@ def scraper(dotabuff_mapping):
     return scraper
 
 
+POS4_XPATH = "//button[.//img[@alt='Pos 4']]"
+
+
 @pytest.fixture(scope="class")
 def carry_data(browser_manager, scraper):
     """Данные позиции Carry - загружаются один раз для класса"""
@@ -59,4 +62,15 @@ def carry_data(browser_manager, scraper):
         df_with_numbers = scraper._ensure_facet_names_and_numbers(df)
         return df_with_numbers
     
+    return pd.DataFrame()
+
+
+@pytest.fixture(scope="class")
+def pos4_data(browser_manager, scraper):
+    """Данные позиции Pos 4 для тестов с выводом герой/фасет/номер."""
+    if browser_manager.click_element_safely(POS4_XPATH, timeout=15):
+        df = scraper._extract_table_data(browser_manager.driver)
+        df["Role"] = "pos 4"
+        df_with_numbers = scraper._ensure_facet_names_and_numbers(df)
+        return df_with_numbers
     return pd.DataFrame()

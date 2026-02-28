@@ -2,6 +2,9 @@
 Модуль для обработки диалоговых окон на сайте
 """
 
+from typing import Any
+
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -20,10 +23,7 @@ def handle_dialog_overlay(driver, timeout: int = 5):
         timeout: Время ожидания появления диалога
     """
     try:
-        # Ждем появления диалогового окна
-        wait = WebDriverWait(driver, timeout)
-
-        # Пытаемся найти и закрыть диалоговое окно
+        wait = WebDriverWait[Any](driver, min(timeout, 3))
         dialog_overlay = wait.until(
             EC.presence_of_element_located((By.CLASS_NAME, "fc-dialog-overlay"))
         )

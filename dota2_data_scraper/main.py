@@ -73,6 +73,29 @@ def user_print(message: str):
         logger.info(message)
 
 
+def _print_preview_first_rows(
+    df, role: str = "pos 4", rows: int = 10
+):
+    """Печатает первые N строк по позиции: №, Hero, Facet, facet_number."""
+    if df.empty or "Hero" not in df.columns or "Facet" not in df.columns:
+        return
+    if "Role" not in df.columns:
+        subset = df.head(rows)
+    else:
+        subset = df[df["Role"] == role].head(rows)
+    if subset.empty:
+        return
+    has_num = "facet_number" in df.columns
+    user_print(f"Первые {len(subset)} строк (позиция: {role}):")
+    user_print(f"{'№':<4} {'Hero':<25} {'Facet':<30} {'facet_number' if has_num else ''}")
+    user_print("-" * (4 + 25 + 30 + (15 if has_num else 0)))
+    for i, (_, row) in enumerate(subset.iterrows(), 1):
+        hero = str(row.get("Hero", ""))[:24]
+        facet = str(row.get("Facet", ""))[:29]
+        num = row.get("facet_number", "") if has_num else ""
+        user_print(f"{i:<4} {hero:<25} {facet:<30} {num}")
+
+
 def check_dependencies():
     """Проверка зависимостей"""
     try:
@@ -108,11 +131,15 @@ def run_full_scraping() -> tuple[bool, bool]:
             show_progress=QUIET_MODE
         )
 
-        # Сохранение данных с фасетами
+        if not heroes_df.empty:
+            _print_preview_first_rows(heroes_df, role="pos 4", rows=10)
+
+        # Сохранение данных с фасетами (в CSV номер фасета не сохраняем)
         success_with_facets = False
         if not heroes_df.empty:
+            to_save = heroes_df.drop(columns=["facet_number"], errors="ignore")
             success_with_facets = data_manager.save_dataframe(
-                heroes_df, "heroes_data.csv"
+                to_save, "heroes_data.csv"
             )
             if success_with_facets:
                 user_print("OK - Данные с фасетами сохранены")
@@ -155,8 +182,9 @@ def run_heroes_scraping() -> bool:
         heroes_df = scraper.scrape_heroes_data(show_progress=QUIET_MODE)
 
         if not heroes_df.empty:
-            # Сохранение данных
-            success = data_manager.save_dataframe(heroes_df, "heroes_data.csv")
+            _print_preview_first_rows(heroes_df, role="pos 4", rows=10)
+            to_save = heroes_df.drop(columns=["facet_number"], errors="ignore")
+            success = data_manager.save_dataframe(to_save, "heroes_data.csv")
             if success:
                 logger.info("✅ Скрапинг данных с фасетами завершен успешно")
                 return True
@@ -252,7 +280,7 @@ def main():
         description="Dota 2 Data Scraper - автоматизированный сбор данных о героях с dota2protracker.com",
         epilog="""
 Примеры использования:
-  run_d2loadout.bat                 # 🚀 Автоматическая установка и запуск
+  run_d2loadout.bat                 # Автоматическая установка и запуск
   python main.py --quiet            # Тихий режим - минимум логов
   python main.py                    # Полный процесс с подробными логами
   python main.py --scrape-all       # Только оптимизированный скрапинг
@@ -274,7 +302,7 @@ def main():
     parser.add_argument(
         "--scrape-all",
         action="store_true",
-        help="🚀 ОПТИМИЗИРОВАННЫЙ скрапинг - оба типа данных за один проход браузера",
+        help="ОПТИМИЗИРОВАННЫЙ скрапинг - оба типа данных за один проход браузера",
     )
     parser.add_argument(
         "--config",

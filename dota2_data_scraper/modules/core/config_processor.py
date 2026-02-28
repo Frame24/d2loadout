@@ -72,9 +72,8 @@ class ConfigProcessor:
             # Если есть данные без фасетов, добавляем конфигурацию для них
             if has_no_facets_data:
                 processed_no_facets = self._process_heroes_data(heroes_no_facets_df, mapping)
-                # Используем расширенный порог для конфигурации без фасетов
-                _, extended_threshold = self._calculate_dynamic_match_thresholds(processed_no_facets)
-                no_facets_config = self._create_no_facets_config(processed_no_facets, extended_threshold)
+                base_threshold, _, _ = self._calculate_dynamic_match_thresholds(processed_no_facets)
+                no_facets_config = self._create_no_facets_config(processed_no_facets, base_threshold, max_heroes_per_position=30)
                 if no_facets_config:
                     config["configs"].append(no_facets_config)
                     self.logger.info("✅ Добавлена конфигурация без фасетов")
@@ -449,43 +448,35 @@ class ConfigProcessor:
                 category["width"] = template.width
                 category["height"] = template.height
 
-    def _calculate_dynamic_match_thresholds(self, heroes_df: pd.DataFrame) -> tuple[int, int]:
+    def _calculate_dynamic_match_thresholds(self, heroes_df: pd.DataFrame) -> tuple[int, int, int]:
         """
-        Вычисление динамических порогов матчей на основе процентилей датасета
-        
-        Args:
-            heroes_df: DataFrame с данными героев
-            
+        Вычисление динамических порогов матчей на основе процентилей датасета.
+
+        Базовый порог входа: max(100, 30-й процентиль). Обычный/расширенный — для имён конфигов.
+
         Returns:
-            Кортеж (обычный_порог, расширенный_порог)
+            Кортеж (базовый_порог, обычный_порог, расширенный_порог)
         """
         if "Matches" not in heroes_df.columns:
             self.logger.warning("Колонка Matches не найдена, используем значения по умолчанию")
-            return (50, 100)
-        
+            return (100, 50, 100)
+
         matches = heroes_df["Matches"].dropna()
         if matches.empty:
             self.logger.warning("Нет данных о матчах, используем значения по умолчанию")
-            return (50, 100)
-        
-        # Вычисляем процентили
-        # Используем процентили, которые адаптируются к распределению данных
-        # Для "обычного" используем 60-й процентиль (примерно 400-500 матчей в текущем датасете)
-        # Для "расширенного" используем 75-й процентиль (примерно 800-1000 матчей)
-        # Для нового патча (меньше данных) эти процентили дадут меньшие значения (50-100)
+            return (100, 50, 100)
+
+        base_threshold = max(100, int(matches.quantile(0.30)))
         basic_threshold = int(matches.quantile(0.60))
         extended_threshold = int(matches.quantile(0.75))
-        
-        # Убеждаемся, что расширенный порог больше обычного
         if extended_threshold <= basic_threshold:
             extended_threshold = basic_threshold + 1
-        
+
         self.logger.info(
-            f"📊 Динамические пороги матчей: обычный={basic_threshold}, расширенный={extended_threshold} "
-            f"(60-й процентиль: {basic_threshold}, 75-й процентиль: {extended_threshold})"
+            f"📊 Пороги матчей: базовый=max(100,p30)={base_threshold}, "
+            f"обычный={basic_threshold}, расширенный={extended_threshold}"
         )
-        
-        return (basic_threshold, extended_threshold)
+        return (base_threshold, basic_threshold, extended_threshold)
 
     def _create_configs(self, heroes_df: pd.DataFrame) -> Dict:
         """
@@ -500,40 +491,23 @@ class ConfigProcessor:
         try:
             self.logger.info("Создание конфигураций...")
 
-            # Вычисляем динамические пороги на основе распределения матчей
-            basic_threshold, extended_threshold = self._calculate_dynamic_match_thresholds(heroes_df)
+            base_threshold, basic_threshold, extended_threshold = self._calculate_dynamic_match_thresholds(heroes_df)
 
             config = {
                 "version": 3,
                 "configs": [
-                    # Конфигурации с расширенным порогом (больше матчей, более надежные данные)
                     self._create_facet_config(
-                        heroes_df, 
-                        f"Win rate {extended_threshold}+", 
-                        "WR", 
-                        extended_threshold, 
-                        wr_threshold=51
-                    ),
-                    self._create_facet_config(
-                        heroes_df, 
-                        f"D2PT {extended_threshold}+", 
-                        "D2PT Rating", 
-                        extended_threshold, 
-                        rating_above_average=True
-                    ),
-                    # Конфигурации с обычным порогом (больше данных, но менее строгий фильтр)
-                    self._create_facet_config(
-                        heroes_df, 
-                        f"Win rate {basic_threshold}+", 
-                        "WR", 
-                        basic_threshold, 
-                        wr_threshold=51
+                        heroes_df,
+                        f"Win rate {base_threshold}+",
+                        "WR",
+                        base_threshold,
+                        wr_threshold=51,
                     ),
                     self._create_facet_config(
                         heroes_df,
-                        f"D2PT {basic_threshold}+",
+                        f"D2PT {base_threshold}+",
                         "D2PT Rating",
-                        basic_threshold,
+                        base_threshold,
                         rating_above_average=True,
                     ),
                 ],
@@ -549,21 +523,17 @@ class ConfigProcessor:
             self.logger.error(f"Ошибка при создании конфигураций: {e}")
             return {}
 
-    def _create_no_facets_config(self, heroes_df: pd.DataFrame, min_matches: int = 100) -> Optional[Dict]:
+    def _create_no_facets_config(
+        self, heroes_df: pd.DataFrame, min_matches: int = 100, max_heroes_per_position: int = 30
+    ) -> Optional[Dict]:
         """
-        Создание конфигурации для героев без фасетов (с динамическим порогом матчей, сортировка по D2PT)
-
-        Args:
-            heroes_df: DataFrame с данными героев без фасетов
-            min_matches: Минимальное количество матчей (по умолчанию 100, но рекомендуется использовать динамический порог)
-
-        Returns:
-            Конфигурация или None в случае ошибки
+        Создание конфигурации для героев без фасетов.
+        Порог матчей: min_matches (обычно max(100, 30-й процентиль)).
+        Не более max_heroes_per_position героев на позицию.
         """
         try:
             self.logger.info(f"Создание конфигурации без фасетов (порог: {min_matches}+ матчей)...")
 
-            # Фильтруем героев с достаточным количеством матчей
             filtered_df = heroes_df[heroes_df["Matches"] >= min_matches].copy()
 
             if filtered_df.empty:
@@ -572,7 +542,6 @@ class ConfigProcessor:
                 )
                 return None
 
-            # Сортируем по D2PT Rating по убыванию
             if "D2PT Rating" in filtered_df.columns:
                 filtered_df = filtered_df.sort_values("D2PT Rating", ascending=False)
             else:
@@ -580,19 +549,14 @@ class ConfigProcessor:
                     "Колонка D2PT Rating не найдена, сортировка по умолчанию"
                 )
 
-            # Создаем категории по позициям (без фасетов)
             categories = []
             positions = ["pos 1", "pos 2", "pos 3", "pos 4", "pos 5"]
-
-            # Создаем фиктивный процессор для расчета позиций
-            # processor = HeroConfigProcessor()
 
             for i, position in enumerate(positions):
                 pos_heroes = filtered_df[filtered_df["Role"] == position]
 
                 if not pos_heroes.empty:
-                    # Берем топ-20 героев для каждой позиции
-                    top_heroes = pos_heroes.head(20)
+                    top_heroes = pos_heroes.head(max_heroes_per_position)
                     hero_ids = top_heroes["hero_id"].dropna().astype(int).tolist()
 
                     if hero_ids:
@@ -634,20 +598,14 @@ class ConfigProcessor:
         min_matches: int,
         wr_threshold: Optional[int] = None,
         rating_above_average: Optional[bool] = None,
+        max_heroes_per_position: int = 30,
     ) -> Dict:
         """
-        Создание конфигурации по фасетам
+        Создание конфигурации по фасетам.
 
-        Args:
-            heroes_df: DataFrame с данными героев
-            config_name: Название конфигурации
-            sort_field: Поле для сортировки
-            min_matches: Минимальное количество матчей
-            wr_threshold: Порог WR для фильтрации (для Win rate)
-            rating_above_average: Флаг для фильтрации D2PT (True для выше среднего)
-
-        Returns:
-            Конфигурация по фасетам или None
+        Фильтр по матчам: min_matches (обычно max(100, 30-й процентиль)).
+        Для каждой позиции не более max_heroes_per_position записей: при превышении
+        берутся топ по sort_field, что эквивалентно повышению порога матчей по позиции.
         """
         try:
             if "facet_number" not in heroes_df.columns:
@@ -658,22 +616,18 @@ class ConfigProcessor:
 
             self.logger.info(f"Создание конфигурации '{config_name}'...")
 
-            # Фильтруем данные с достаточным количеством матчей
             facets_data = heroes_df[heroes_df["Matches"] >= min_matches].copy()
 
             if facets_data.empty:
                 self.logger.warning(f"Нет данных фасетов с >= {min_matches} матчей")
                 return None
 
-            # Применяем дополнительные фильтры, если они указаны
             if wr_threshold is not None:
                 facets_data = facets_data[facets_data["WR"] >= wr_threshold]
                 self.logger.info(f"Применено фильтр WR >= {wr_threshold}")
 
             if rating_above_average is not None:
-                # Вычисляем средний D2PT для всех героев (не только отфильтрованных)
                 all_d2pt_values = heroes_df["D2PT Rating"]
-                # Исключаем нулевые и NaN значения
                 non_zero_d2pt = all_d2pt_values[
                     (all_d2pt_values > 0) & (all_d2pt_values.notna())
                 ]
@@ -692,19 +646,26 @@ class ConfigProcessor:
                         "Нет ненулевых значений D2PT Rating для вычисления среднего"
                     )
 
-            # Проверяем, остались ли данные после применения всех фильтров
             if facets_data.empty:
                 self.logger.warning(
                     f"После применения всех фильтров не осталось данных для '{config_name}'"
                 )
                 return None
 
-            # Создаем конфигурацию фасетов
             categories = []
 
-            # Группируем по позициям и номерам фасетов
             for position in range(1, 6):
-                pos_data = facets_data[facets_data["Role"] == f"pos {position}"]
+                pos_data = facets_data[facets_data["Role"] == f"pos {position}"].copy()
+
+                if len(pos_data) > max_heroes_per_position:
+                    pos_data = (
+                        pos_data.sort_values(sort_field, ascending=False)
+                        .head(max_heroes_per_position)
+                        .copy()
+                    )
+                    self.logger.debug(
+                        f"Позиция {position}: ограничено до {max_heroes_per_position} (было больше)"
+                    )
 
                 for facet_num in [1, 2, 3]:
                     if facet_num <= 2:

@@ -37,7 +37,8 @@ def select_period_8_days(driver):
                 break
 
         if not period_select:
-            raise Exception("Селектор периода не найден")
+            logger.info("Селектор периода (8 days) не найден на странице — продолжаем без смены периода")
+            return False
 
         # Находим опцию "8 days" и выбираем её
         select = Select(period_select)

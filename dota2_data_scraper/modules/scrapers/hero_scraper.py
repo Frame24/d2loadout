@@ -21,11 +21,11 @@ class HeroScraper:
         self.headless = headless
         self.debug_dotabuff = debug_dotabuff
         self.positions = {
-            "Carry (pos 1)": "//div[contains(text(), 'Carry')]",
-            "Mid (pos 2)": "//div[contains(text(), 'Mid')]",
-            "Offlaner (pos 3)": "//div[contains(text(), 'Off')]",
-            "Support (pos 4)": "//div[contains(text(), 'Pos 4')]",
-            "Hard Support (pos 5)": "//div[contains(text(), 'Pos 5')]",
+            "Carry (pos 1)": "//button[.//img[@alt='Carry']]",
+            "Mid (pos 2)": "//button[.//img[@alt='Mid']]",
+            "Offlaner (pos 3)": "//button[.//img[@alt='Off']]",
+            "Support (pos 4)": "//button[.//img[@alt='Pos 4']]",
+            "Hard Support (pos 5)": "//button[.//img[@alt='Pos 5']]",
         }
         # Маппинг для коротких названий в данных
         self.role_mapping = {
@@ -78,10 +78,6 @@ class HeroScraper:
 
                 # Обеспечиваем наличие имени фасета и корректного номера фасета
                 df_full = self._ensure_facet_names_and_numbers(df_full)
-
-                # В heroes_data.csv оставляем только имя фасета, номер не сохраняем
-                if "facet_number" in df_full.columns:
-                    df_full = df_full.drop(columns=["facet_number"])
 
                 logger.info("Сбор данных о героях завершен")
                 return df_full
@@ -238,10 +234,6 @@ class HeroScraper:
             if dfs_with_facets:
                 df_with_facets = pd.concat(dfs_with_facets, axis=0, ignore_index=True)
                 df_with_facets = self._ensure_facet_names_and_numbers(df_with_facets)
-
-                # В heroes_data.csv оставляем только имя фасета, номер не сохраняем
-                if "facet_number" in df_with_facets.columns:
-                    df_with_facets = df_with_facets.drop(columns=["facet_number"])
 
                 logger.info("Сбор данных с фасетами завершен")
             else:
@@ -459,82 +451,140 @@ class HeroScraper:
 
     def _extract_table_data(self, driver) -> pd.DataFrame:
         """
-        Извлечение данных из таблицы
-
-        Args:
-            driver: WebDriver instance
-
-        Returns:
-            DataFrame с данными таблицы
+        Извлечение данных из таблицы (поддержка новой вёрстки dota2protracker: thead/tbody, grid-cols-14).
         """
         time.sleep(0.2)
-
-        # Получаем HTML страницы
         page_source = driver.page_source
-
-        # Парсим HTML с помощью BeautifulSoup
         soup = BeautifulSoup(page_source, "html.parser")
 
-        # Ищем строки таблицы по их CSS-классу
-        table_rows = soup.find_all("div", class_="grid", style=True)
+        def has_grid_row(cls):
+            if not cls:
+                return False
+            if isinstance(cls, str):
+                return "grid" in cls and "grid-cols-14" in cls
+            return "grid" in cls and "grid-cols-14" in cls
 
-        # Список для хранения данных
+        thead = soup.find("div", class_=lambda c: c and "thead" in c)
+        tbody = soup.find("div", class_=lambda c: c and "tbody" in c)
+        if not tbody:
+            table_rows = soup.find_all("div", class_=has_grid_row, style=True)
+        else:
+            table_rows = list(tbody.find_all("div", class_=has_grid_row))
+
+        if not table_rows:
+            table_rows = soup.find_all("div", class_=has_grid_row, style=True)
+
+        legacy_rows = False
+        if not table_rows:
+            table_rows = soup.find_all("div", class_="grid", style=True)
+            legacy_rows = bool(table_rows)
+
         data = []
         headers = []
         facet_col_index = -1
         hero_col_index = -1
+        facet_column_in_dom = False
 
-        for index, row in enumerate(table_rows):
-            # Проверяем, чтобы строка не была заголовком
-            cols = row.find_all("div", recursive=False)
-
-            if index == 0:
-                # Считаем первую строку заголовком
-                for col in cols:
-                    header_text = col.get_text(strip=True)
-                    headers.append(header_text if header_text else None)
+        if thead:
+            header_cols = thead.find_all("div", recursive=False)
+            for col in header_cols:
+                btn = col.find("button")
+                header_text = (btn.get_text(strip=True) if btn else col.get_text(strip=True)) or None
+                headers.append(header_text)
+            facet_column_in_dom = "Facet" in headers
+            try:
+                hero_col_index = headers.index("Hero")
+            except ValueError:
+                hero_col_index = -1
+            if hero_col_index != -1 and not facet_column_in_dom:
+                headers.insert(hero_col_index + 1, "Facet")
+                facet_col_index = hero_col_index + 1
+            else:
                 try:
                     facet_col_index = headers.index("Facet")
                 except ValueError:
                     facet_col_index = -1
+            start_row = 0
+        else:
+            start_row = 0
+            if table_rows:
+                first_row = table_rows[0]
+                header_cols = first_row.find_all("div", recursive=False)
+                for col in header_cols:
+                    headers.append(col.get_text(strip=True) or None)
+                facet_column_in_dom = "Facet" in headers
                 try:
                     hero_col_index = headers.index("Hero")
                 except ValueError:
                     hero_col_index = -1
-                # Если 'Facet' не объявлен в заголовках, добавим его сразу после 'Hero'
-                if hero_col_index != -1 and "Facet" not in headers:
+                if hero_col_index != -1 and not facet_column_in_dom:
                     headers.insert(hero_col_index + 1, "Facet")
-                    # Обновим индексы после вставки
                     facet_col_index = hero_col_index + 1
-                continue
+                else:
+                    try:
+                        facet_col_index = headers.index("Facet")
+                    except ValueError:
+                        facet_col_index = -1
+                start_row = 1
 
+        for row in table_rows[start_row:]:
+            cols = row.find_all("div", recursive=False)
             row_data = []
             for col_idx, col in enumerate(cols):
-                # Если это колонка героя — извлекаем имя героя и имя фасета из tooltip
                 if hero_col_index != -1 and col_idx == hero_col_index:
-                    # Имя героя (alt у img или текст)
                     hero_name = None
                     hero_img = col.find("img", alt=True)
                     if hero_img and isinstance(hero_img.get("alt"), str):
                         hero_name = hero_img.get("alt").strip()
                     if not hero_name:
+                        span = col.find("span", class_=lambda c: c != "group" if c else True)
+                        if span:
+                            hero_name = span.get_text(strip=True)
+                    if not hero_name:
                         hero_name = col.get_text(strip=True) or None
                     row_data.append(hero_name if hero_name else None)
 
-                    # Имя фасета — внутри блока tooltip (класс font-bold)
-                    facet_name = None
-                    try:
-                        for d in col.find_all("div", class_=True):
-                            classes = d.get("class", [])
-                            if isinstance(classes, list) and "font-bold" in classes:
-                                text_val = d.get_text(strip=True)
-                                if text_val:
-                                    facet_name = text_val
-                                    break
-                    except Exception:
+                    if not facet_column_in_dom:
                         facet_name = None
+                        group_div = col.find("div", class_=lambda c: c and "group" in c)
+                        if group_div:
+                            bold_in_group = group_div.find(
+                                "div", class_=lambda c: c and "font-bold" in c
+                            )
+                            if bold_in_group:
+                                facet_name = bold_in_group.get_text(strip=True)
+                            if not facet_name:
+                                truncate = group_div.find(
+                                    "div", class_=lambda c: c and "truncate" in c
+                                )
+                                if truncate:
+                                    facet_name = truncate.get_text(strip=True)
+                            if not facet_name:
+                                facet_name = group_div.get_text(strip=True)
+                        if not facet_name:
+                            for d in col.find_all("div", class_=True):
+                                if "font-bold" in (d.get("class") or []):
+                                    t = d.get_text(strip=True)
+                                    if t and t != (hero_name or ""):
+                                        facet_name = t
+                                        break
+                        if not facet_name:
+                            tip = col.find(attrs={"data-tip": True})
+                            if tip and isinstance(tip.get("data-tip"), str):
+                                facet_name = tip.get("data-tip").strip()
+                        if not facet_name:
+                            title_el = col.find(attrs={"title": True})
+                            if title_el and isinstance(title_el.get("title"), str):
+                                facet_name = title_el.get("title").strip()
+                        row_data.append(facet_name if facet_name else None)
+                    continue
+
+                if facet_column_in_dom and facet_col_index != -1 and col_idx == facet_col_index:
+                    facet_name = None
+                    bold_el = col.find("div", class_=lambda c: c and "font-bold" in c)
+                    if bold_el:
+                        facet_name = bold_el.get_text(strip=True)
                     if not facet_name:
-                        # Фолбек: любые элементы с атрибутами title/data-tip/aria-label
                         tip_el = col.find(attrs={"data-tip": True})
                         if tip_el and isinstance(tip_el.get("data-tip"), str):
                             facet_name = tip_el.get("data-tip").strip()
@@ -543,76 +593,34 @@ class HeroScraper:
                         if title_el and isinstance(title_el.get("title"), str):
                             facet_name = title_el.get("title").strip()
                     if not facet_name:
-                        aria_el = col.find(attrs={"aria-label": True})
-                        if aria_el and isinstance(aria_el.get("aria-label"), str):
-                            facet_name = aria_el.get("aria-label").strip()
-                    if not facet_name:
-                        span_text = " ".join(
-                            [s.get_text(strip=True) for s in col.find_all("span")]
-                        )
-                        facet_name = (
-                            span_text if span_text else col.get_text(strip=True) or None
-                        )
-
-                    # Вставляем имя фасета сразу после имени героя
-                    row_data.append(facet_name if facet_name else None)
+                        facet_name = col.get_text(strip=True) or None
+                    row_data.append(facet_name)
                     continue
 
-                # Специальная обработка колонки Facet: пытаемся достать имя фасета
-                if facet_col_index != -1 and col_idx == facet_col_index:
-                    facet_name = None
-                    # Приоритет: data-tip -> title -> aria-label -> текст
-                    tip_el = col.find(attrs={"data-tip": True})
-                    if tip_el and isinstance(tip_el.get("data-tip"), str):
-                        facet_name = tip_el.get("data-tip").strip()
-                    if not facet_name:
-                        title_el = col.find(attrs={"title": True})
-                        if title_el and isinstance(title_el.get("title"), str):
-                            facet_name = title_el.get("title").strip()
-                    if not facet_name:
-                        aria_el = col.find(attrs={"aria-label": True})
-                        if aria_el and isinstance(aria_el.get("aria-label"), str):
-                            facet_name = aria_el.get("aria-label").strip()
-                    if not facet_name:
-                        # Падает в текстовое содержимое (могут быть вложенные span)
-                        span_text = " ".join(
-                            [s.get_text(strip=True) for s in col.find_all("span")]
-                        )
-                        facet_name = (
-                            span_text if span_text else col.get_text(strip=True) or None
-                        )
-                    row_data.append(facet_name if facet_name else None)
-                    continue
-
-                # Проверяем наличие изображений для извлечения роли/имени
                 img = col.find("img", alt=True)
                 if img:
-                    row_data.append(img["alt"])
+                    row_data.append(img.get("alt", ""))
                     continue
-
-                # Обрабатываем содержимое внутри span
                 spans = col.find_all("span")
                 if spans:
-                    span_text = " ".join([span.get_text(strip=True) for span in spans])
-                    row_data.append(span_text if span_text else None)
+                    row_data.append(" ".join(s.get_text(strip=True) for s in spans) or None)
                     continue
+                row_data.append(col.get_text(strip=True) or None)
 
-                # Извлекаем текст и убираем пустые значения
-                text = col.get_text(strip=True)
-                row_data.append(text if text else None)
+            if row_data and len(row_data) >= len(headers) - 1:
+                if len(row_data) < len(headers):
+                    row_data.extend([None] * (len(headers) - len(row_data)))
+                data.append(row_data[: len(headers)])
 
-            if row_data:  # Только если данные не пусты
-                data.append(row_data)
-
-        # Преобразуем список в DataFrame
-        df_heroes_table = pd.DataFrame(data, columns=headers)
-
-        # Убираем лишние строки или обрабатываем некорректные данные
+        if not headers:
+            return pd.DataFrame()
+        num_cols = len(headers)
+        if data:
+            df_heroes_table = pd.DataFrame([r[:num_cols] for r in data], columns=headers[:num_cols])
+        else:
+            df_heroes_table = pd.DataFrame(columns=headers)
         df_heroes_table = df_heroes_table.dropna(how="all")
-
-        # Очистка данных в процентах и диапазонах
         df_heroes_table = self._clean_data(df_heroes_table)
-
         return df_heroes_table
 
     def _clean_data(self, df: pd.DataFrame) -> pd.DataFrame:
