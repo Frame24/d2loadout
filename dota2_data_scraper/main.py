@@ -8,12 +8,31 @@ import logging
 from typing import Optional
 
 from modules.scrapers.hero_scraper import HeroScraper
+from modules.scrapers.hero_stats_api import fetch_heroes_stats_safe
 from modules.core.data_manager import DataManager
 from modules.core.config_processor import ConfigProcessor
+
+LEGACY_SELENIUM_WARNING = (
+    "DEPRECATED: сбор через Selenium/фасеты устарел; используйте API (запуск без "
+    "--scrape / --scrape-all)."
+)
+
+
+def _try_reconfigure_stdio_utf8() -> None:
+    """Чтобы русский текст в логах не превращался в кракозябры в консоли Windows."""
+    if sys.platform != "win32":
+        return
+    for stream in (sys.stdout, sys.stderr):
+        if stream is not None and hasattr(stream, "reconfigure"):
+            try:
+                stream.reconfigure(encoding="utf-8")
+            except (OSError, ValueError, AttributeError):
+                pass
 
 
 def setup_logging(quiet_mode: bool = False, debug_mode: bool = False):
     """Настройка логирования в зависимости от режима"""
+    _try_reconfigure_stdio_utf8()
     if debug_mode:
         logging.basicConfig(
             level=logging.DEBUG,
@@ -76,8 +95,8 @@ def user_print(message: str):
 def _print_preview_first_rows(
     df, role: str = "pos 4", rows: int = 10
 ):
-    """Печатает первые N строк по позиции: №, Hero, Facet, facet_number."""
-    if df.empty or "Hero" not in df.columns or "Facet" not in df.columns:
+    """Печатает первые N строк по позиции (Hero, Role, Matches, WR, D2PT)."""
+    if df.empty or "Hero" not in df.columns:
         return
     if "Role" not in df.columns:
         subset = df.head(rows)
@@ -85,19 +104,27 @@ def _print_preview_first_rows(
         subset = df[df["Role"] == role].head(rows)
     if subset.empty:
         return
-    has_num = "facet_number" in df.columns
     user_print(f"Первые {len(subset)} строк (позиция: {role}):")
-    user_print(f"{'№':<4} {'Hero':<25} {'Facet':<30} {'facet_number' if has_num else ''}")
-    user_print("-" * (4 + 25 + 30 + (15 if has_num else 0)))
+    cols = ["Hero"]
+    if "Matches" in subset.columns:
+        cols.append("Matches")
+    if "WR" in subset.columns:
+        cols.append("WR")
+    if "D2PT Rating" in subset.columns:
+        cols.append("D2PT Rating")
+    header = f"{'№':<4} " + " ".join(f"{c:<14}" for c in cols)
+    user_print(header)
+    user_print("-" * len(header))
     for i, (_, row) in enumerate(subset.iterrows(), 1):
-        hero = str(row.get("Hero", ""))[:24]
-        facet = str(row.get("Facet", ""))[:29]
-        num = row.get("facet_number", "") if has_num else ""
-        user_print(f"{i:<4} {hero:<25} {facet:<30} {num}")
+        parts = [f"{i:<4}"]
+        for c in cols:
+            v = row.get(c, "")
+            parts.append(f"{str(v)[:13]:<14}")
+        user_print(" ".join(parts))
 
 
-def check_dependencies():
-    """Проверка зависимостей"""
+def check_selenium_installed() -> bool:
+    """Нужен только для legacy-скрапинга с браузером."""
     try:
         import selenium
 
@@ -105,20 +132,32 @@ def check_dependencies():
         return True
     except ImportError:
         logger.error(
-            "❌ Selenium не найден. Установите его с помощью 'pip install selenium'."
+            "❌ Selenium не найден. Установите: pip install selenium "
+            "(требуется только для --scrape / --scrape-all)."
         )
         return False
 
 
+def check_core_dependencies() -> bool:
+    """Минимальные зависимости для API-пайплайна."""
+    try:
+        import pandas  # noqa: F401
+    except ImportError:
+        logger.error("❌ Не установлен pandas. Выполните: pip install -r requirements.txt")
+        return False
+    return True
+
+
 def run_full_scraping() -> tuple[bool, bool]:
     """
-    Запуск полного скрапинга данных - собирает оба типа данных за один проход
+    Deprecated: Selenium — два CSV (фасеты + без фасетов) за один проход браузера.
 
     Returns:
         tuple: (успех_с_фасетами, успех_без_фасетов)
     """
     try:
-        user_print("Запуск сбора данных с dota2protracker.com...")
+        user_print(LEGACY_SELENIUM_WARNING)
+        user_print("Запуск сбора данных с dota2protracker.com (legacy Selenium)...")
         scraper = HeroScraper(
             headless=getattr(run_full_scraping, "_headless", True),
             debug_dotabuff=getattr(run_full_scraping, "_debug_dotabuff", False),
@@ -168,10 +207,34 @@ def run_full_scraping() -> tuple[bool, bool]:
         return False, False
 
 
-def run_heroes_scraping() -> bool:
-    """Запуск скрапинга героев с фасетами"""
+def run_api_scraping() -> bool:
+    """Сбор heroes_data.csv через API dota2protracker (без браузера)."""
     try:
-        user_print("Запуск сбора данных с фасетами...")
+        user_print("Сбор статистики через D2PT API (heroes/stats)...")
+        data_manager = DataManager()
+        heroes_df, err = fetch_heroes_stats_safe()
+        if err:
+            user_print(f"ERROR - {err}")
+            return False
+        if heroes_df.empty:
+            user_print("ERROR - API не вернул данных")
+            return False
+        _print_preview_first_rows(heroes_df, role="pos 4", rows=10)
+        if data_manager.save_dataframe(heroes_df, "heroes_data.csv"):
+            user_print("OK - heroes_data.csv сохранён (API)")
+            return True
+        user_print("ERROR - не удалось сохранить heroes_data.csv")
+        return False
+    except Exception as e:
+        user_print(f"ERROR - сбор через API: {e}")
+        return False
+
+
+def run_heroes_scraping() -> bool:
+    """Deprecated: скрапинг героев с фасетами (Selenium)."""
+    try:
+        user_print(LEGACY_SELENIUM_WARNING)
+        user_print("Запуск сбора данных с фасетами (legacy)...")
         scraper = HeroScraper(
             headless=getattr(run_heroes_scraping, "_headless", True),
             debug_dotabuff=getattr(run_heroes_scraping, "_debug_dotabuff", False),
@@ -201,9 +264,10 @@ def run_heroes_scraping() -> bool:
 
 
 def run_heroes_no_facets_scraping() -> bool:
-    """Запуск скрапинга героев без фасетов"""
+    """Deprecated: скрапинг без фасетов (Selenium)."""
     try:
-        logger.info("Запуск скрапинга данных без фасетов...")
+        user_print(LEGACY_SELENIUM_WARNING)
+        logger.info("Запуск скрапинга данных без фасетов (legacy)...")
         scraper = HeroScraper(
             headless=getattr(run_heroes_scraping, "_headless", True),
             debug_dotabuff=getattr(run_heroes_scraping, "_debug_dotabuff", False),
@@ -255,54 +319,35 @@ def run_config_processing() -> bool:
 
 def main():
     """Основная функция"""
-    global QUIET_MODE
+    global QUIET_MODE, DEBUG_MODE
 
-    # Предварительная настройка для парсинга аргументов
-    parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument("--quiet", action="store_true")
-    args, _ = parser.parse_known_args()
-
-    # Настройка логирования
-    QUIET_MODE = args.quiet
-    global DEBUG_MODE
-    DEBUG_MODE = getattr(args, "debug", False)
-    # Если включен дебаг — тихий режим игнорируем
-    if DEBUG_MODE:
-        QUIET_MODE = False
-    setup_logging(QUIET_MODE, DEBUG_MODE)
-
-    # Проверка зависимостей
-    if not check_dependencies():
-        sys.exit(1)
-
-    # Настройка аргументов командной строки
     parser = argparse.ArgumentParser(
-        description="Dota 2 Data Scraper - автоматизированный сбор данных о героях с dota2protracker.com",
+        description="Dota 2 Data Scraper - сбор данных с dota2protracker.com",
         epilog="""
 Примеры использования:
-  run_d2loadout.bat                 # Автоматическая установка и запуск
-  python main.py --quiet            # Тихий режим - минимум логов
-  python main.py                    # Полный процесс с подробными логами
-  python main.py --scrape-all       # Только оптимизированный скрапинг
-  python main.py --config           # Только обработка конфигураций
-  python main.py --no-headless      # Видимый режим браузера для отладки
+  run_d2loadout.bat                 # API + конфиги (без Chrome)
+  python main.py --quiet            # Тихий режим
+  python main.py                    # API + конфиги с логами
+  python main.py --config           # Только обработка CSV → hero_configs.json
+  python main.py --scrape-all       # DEPRECATED: Selenium, два CSV
+  python main.py --no-headless      # Только для legacy --scrape*
         """,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "--scrape",
         action="store_true",
-        help="Скрапинг только данных с фасетами (отдельная сессия браузера)",
+        help="DEPRECATED: только данные с фасетами (Selenium + Chrome)",
     )
     parser.add_argument(
         "--scrape-no-facets",
         action="store_true",
-        help="Скрапинг только данных без фасетов (отдельная сессия браузера)",
+        help="DEPRECATED: только данные без фасетов (Selenium)",
     )
     parser.add_argument(
         "--scrape-all",
         action="store_true",
-        help="ОПТИМИЗИРОВАННЫЙ скрапинг - оба типа данных за один проход браузера",
+        help="DEPRECATED: Selenium — heroes_data + heroes_no_facets за один проход",
     )
     parser.add_argument(
         "--config",
@@ -312,7 +357,7 @@ def main():
     parser.add_argument(
         "--all",
         action="store_true",
-        help="Полный процесс: оптимизированный скрапинг + обработка конфигураций",
+        help="Полный процесс: API + обработка конфигураций (как запуск без флагов)",
     )
     parser.add_argument(
         "--no-headless",
@@ -332,10 +377,26 @@ def main():
     parser.add_argument(
         "--debug-dotabuff",
         action="store_true",
-        help="DEBUG: Попытка получения фасетов через Dotabuff с Selenium",
+        help="DEPRECATED: фасеты через Dotabuff (Selenium)",
     )
 
     args = parser.parse_args()
+
+    QUIET_MODE = args.quiet
+    DEBUG_MODE = args.debug
+    if DEBUG_MODE:
+        QUIET_MODE = False
+    setup_logging(QUIET_MODE, DEBUG_MODE)
+
+    needs_selenium = (
+        args.scrape or args.scrape_no_facets or args.scrape_all
+    )
+    if needs_selenium:
+        if not check_selenium_installed():
+            sys.exit(1)
+    else:
+        if not check_core_dependencies():
+            sys.exit(1)
 
     # Протаскиваем настройки для скрапинга
     setattr(run_heroes_scraping, "_headless", not args.no_headless)
@@ -356,10 +417,9 @@ def main():
         if run_heroes_no_facets_scraping():
             success_count += 1
     elif args.scrape_all:
-        # Оптимизированный скрапинг - оба типа данных за один проход
         if not QUIET_MODE:
-            logger.info("Запуск оптимизированного скрапинга...")
-        total_count += 2  # Считаем как 2 процесса
+            logger.info("Запуск legacy-скрапинга (Selenium)...")
+        total_count += 2
         success_with_facets, success_no_facets = run_full_scraping()
         if success_with_facets:
             success_count += 1
@@ -372,22 +432,20 @@ def main():
     elif args.all or not any(
         [args.scrape, args.scrape_no_facets, args.scrape_all, args.config]
     ):
-        # Запуск всех процессов с оптимизацией
         if not QUIET_MODE:
-            logger.info("Запуск всех процессов (оптимизированный)...")
+            logger.info("Запуск полного процесса (D2PT API + конфиги)...")
 
-        # Оптимизированный скрапинг
-        total_count += 2  # Скрапинг считаем как 2 процесса
-        success_with_facets, success_no_facets = run_full_scraping()
-        if success_with_facets:
-            success_count += 1
-        if success_no_facets:
-            success_count += 1
-
-        # Обработка конфигураций
         total_count += 1
-        if run_config_processing():
+        if run_api_scraping():
             success_count += 1
+            total_count += 1
+            if run_config_processing():
+                success_count += 1
+        else:
+            user_print(
+                "Пропуск создания конфигов: сначала нужны свежие данные с API "
+                "(проверьте сеть или попробуйте позже)."
+            )
 
     # Итоговый отчет
     if QUIET_MODE:

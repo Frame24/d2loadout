@@ -1,135 +1,94 @@
 @echo off
-chcp 65001 >nul
+REM Use ASCII-only in this file: UTF-8/Cyrillic breaks cmd.exe parsing when run from PowerShell.
 setlocal enabledelayedexpansion
 
-:: Заголовок
-echo ╔══════════════════════════════════════════════════════════════╗
-echo ║                    Dota 2 Loadout Generator                  ║
-echo ║           Автоматический сбор данных и создание              ║
-echo ║              конфигураций для Dota 2                        ║
-echo ╚══════════════════════════════════════════════════════════════╝
+echo ================================================================
+echo   Dota 2 Loadout Generator
+echo   Fetch D2PT data and build hero grid configs
+echo ================================================================
 echo.
 
-:: Проверка наличия Python
-echo 🔍 Проверяем наличие Python...
+echo Checking Python...
 python --version >nul 2>&1
 if errorlevel 1 (
-    echo ❌ Python не найден!
-    echo.
-    echo 📥 Пожалуйста, установите Python 3.8+ с официального сайта:
-    echo    https://www.python.org/downloads/
-    echo.
-    echo 💡 При установке обязательно отметьте "Add Python to PATH"
-    echo.
+    echo ERROR: Python not found. Install 3.8+ from https://www.python.org/downloads/
+    echo Enable "Add Python to PATH" during install.
     pause
     exit /b 1
 ) else (
     for /f "tokens=2" %%i in ('python --version 2^>^&1') do set PYTHON_VERSION=%%i
-    echo ✅ Python !PYTHON_VERSION! найден
+    echo OK Python !PYTHON_VERSION!
 )
 
-:: Переход в корневую директорию проекта (если bat файл запущен из подпапки)
 if exist "..\requirements.txt" (
     cd ..
 )
 
-:: Проверка наличия виртуального окружения
 echo.
-echo 🔍 Проверяем виртуальное окружение...
+echo Checking venv...
 if not exist "venv" (
-    echo 📦 Создаем виртуальное окружение...
+    echo Creating venv...
     python -m venv venv
     if errorlevel 1 (
-        echo ❌ Ошибка создания виртуального окружения
+        echo ERROR: venv creation failed
         pause
         exit /b 1
     )
-    echo ✅ Виртуальное окружение создано
+    echo OK venv created
 ) else (
-    echo ✅ Виртуальное окружение найдено
+    echo OK venv exists
 )
 
-:: Активация виртуального окружения
 echo.
-echo 🔧 Активируем виртуальное окружение...
+echo Activating venv...
 call venv\Scripts\activate.bat
 if errorlevel 1 (
-    echo ❌ Ошибка активации виртуального окружения
+    echo ERROR: activate.bat failed
     pause
     exit /b 1
 )
 
-:: Проверка и установка зависимостей
 echo.
-echo 📦 Проверяем зависимости...
+echo Checking dependencies...
 python -c "import selenium" >nul 2>&1
 if errorlevel 1 (
-    echo 📥 Устанавливаем необходимые библиотеки...
+    echo Installing requirements...
     python -m pip install --upgrade pip >nul 2>&1
     python -m pip install -r requirements.txt
     if errorlevel 1 (
-        echo ❌ Ошибка установки зависимостей
+        echo ERROR: pip install failed
         pause
         exit /b 1
     )
-    echo ✅ Зависимости установлены
+    echo OK dependencies installed
 ) else (
-    echo ✅ Все зависимости уже установлены
+    echo OK dependencies present
 )
 
-:: Проверка наличия Chrome
 echo.
-echo 🌐 Проверяем наличие Google Chrome...
-where chrome >nul 2>&1
-if errorlevel 1 (
-    :: Проверяем стандартные пути установки Chrome
-    if exist "%ProgramFiles%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
-    ) else if exist "%ProgramFiles(x86)%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
-    ) else if exist "%LocalAppData%\Google\Chrome\Application\chrome.exe" (
-        echo ✅ Google Chrome найден
-    ) else (
-        echo ⚠️ Google Chrome не найден
-        echo 📥 Пожалуйста, установите Google Chrome с официального сайта:
-        echo    https://www.google.com/chrome/
-        echo.
-        echo 💡 Chrome необходим для автоматического сбора данных
-        echo 💡 Вы также можете продолжить - ChromeDriver загрузится автоматически
-        echo.
-        set /p choice="Продолжить без Chrome? (y/n): "
-        if /i "!choice!" neq "y" (
-            pause
-            exit /b 1
-        )
-    )
-) else (
-    echo ✅ Google Chrome найден
-)
+echo Note: Chrome is only needed for legacy: python main.py --scrape-all
 
-:: Запуск основного скрипта
 echo.
-echo ═══════════════════════════════════════════════════════════════
-echo 🚀 Запускаем сбор данных...
-echo ═══════════════════════════════════════════════════════════════
+echo ================================================================
+echo   Running main.py - D2PT API + configs
+echo ================================================================
 echo.
 
-:: Запуск с логами в headless режиме
+set PYTHONUTF8=1
+set PYTHONIOENCODING=utf-8
+
 python main.py
 
-:: Проверка результата
 if errorlevel 1 (
     echo.
-    echo ❌ Процесс завершился с ошибками
-    echo 💡 Для диагностики запустите: python main.py --no-headless --debug
+    echo ERROR: main.py exited with errors
+    echo Legacy scrape hint: python main.py --no-headless --debug --scrape-all
     echo.
 ) else (
     echo.
-    echo ═══════════════════════════════════════════════════════════════
-    echo 🎮 Запустите Dota 2 и проверьте новые конфигурации героев!
-    echo ═══════════════════════════════════════════════════════════════
+    echo OK: open Dota 2 and check hero loadout configs
+    echo.
 )
 
-echo.
-echo Нажмите любую клавишу для выхода...
-pause >nul 
+echo Press any key to exit...
+pause >nul

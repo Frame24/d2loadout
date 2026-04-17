@@ -1,5 +1,8 @@
 """
-Скрапер для сбора данных о героях Dota 2
+Скрапер для сбора данных о героях Dota 2 (legacy Selenium).
+
+Основной пайплайн использует modules.scrapers.hero_stats_api (HTTP API).
+Парсинг таблицы meta и фасетов оставлен для явных флагов --scrape* (deprecated).
 """
 
 import pandas as pd

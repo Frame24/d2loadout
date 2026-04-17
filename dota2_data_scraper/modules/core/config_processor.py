@@ -44,18 +44,16 @@ class ConfigProcessor:
                 self.logger.error("Не удалось загрузить данные героев")
                 return False
 
-            # Загрузка данных без фасетов (если есть)
-            heroes_no_facets_df = self.data_manager.load_dataframe(
-                "heroes_no_facets.csv"
-            )
-            has_no_facets_data = (
-                heroes_no_facets_df is not None and not heroes_no_facets_df.empty
-            )
+            # heroes_no_facets.csv больше не используется: в hero_configs.json только 2 пресета
+            # (WR и D2PT) из heroes_data.csv. Удалите старый CSV из configs/, если он ещё лежит.
 
-            # Загружаем маппинг фасетов один раз для всех обработок
-            parser = FacetAPIParser()
-            mapping = parser.get_hero_facets_mapping()
-            self.logger.info(f"Маппинг фасетов загружен для {len(mapping)} героев (будет использован для всех обработок)")
+            mapping = None
+            if not self._heroes_without_game_facets(heroes_df):
+                parser = FacetAPIParser()
+                mapping = parser.get_hero_facets_mapping()
+                self.logger.info(
+                    f"Маппинг фасетов загружен для {len(mapping)} героев (legacy CSV)"
+                )
 
             # Обработка данных героев
             processed_heroes = self._process_heroes_data(heroes_df, mapping)
@@ -66,17 +64,8 @@ class ConfigProcessor:
             # Сохранение обработанных данных
             self.data_manager.save_dataframe(processed_heroes, "processed_heroes.csv")
 
-            # Создание стандартных конфигураций
+            # Ровно два конфига: WR (плоско по позициям) и D2PT (плоско по позициям).
             config = self._create_configs(processed_heroes)
-
-            # Если есть данные без фасетов, добавляем конфигурацию для них
-            if has_no_facets_data:
-                processed_no_facets = self._process_heroes_data(heroes_no_facets_df, mapping)
-                base_threshold, _, _ = self._calculate_dynamic_match_thresholds(processed_no_facets)
-                no_facets_config = self._create_no_facets_config(processed_no_facets, base_threshold, max_heroes_per_position=30)
-                if no_facets_config:
-                    config["configs"].append(no_facets_config)
-                    self.logger.info("✅ Добавлена конфигурация без фасетов")
 
             # Применяем оптимизированное расположение к основным конфигурациям
             self._apply_optimized_layout_to_configs(config)
@@ -108,6 +97,17 @@ class ConfigProcessor:
             self.logger.error(f"Ошибка при обработке данных: {e}")
             return False
 
+    @staticmethod
+    def _heroes_without_game_facets(heroes_df: pd.DataFrame) -> bool:
+        """True если в данных нет игровых фасетов (только агрегат / No Facet)."""
+        if heroes_df.empty or "Facet" not in heroes_df.columns:
+            return True
+        s = heroes_df["Facet"]
+        for v in s.dropna():
+            if isinstance(v, str) and v.strip() and v.strip().lower() != "no facet":
+                return False
+        return True
+
     def _process_heroes_data(self, heroes_df: pd.DataFrame, mapping: Optional[Dict[str, Dict[str, int]]] = None) -> pd.DataFrame:
         """
         Обработка данных героев
@@ -122,8 +122,32 @@ class ConfigProcessor:
         try:
             self.logger.info("Обработка данных героев...")
 
-            # Добавление hero_id на основе имени героя
-            heroes_df["hero_id"] = self._map_hero_names_to_ids(heroes_df["Hero"])
+            # hero_id: если в CSV/API уже есть (stats API отдаёт hero_id), берём его;
+            # иначе или при битом значении — маппинг имён через /api/heroes/list.
+            heroes_df["hero_id"] = self._hero_ids_with_api_preference(heroes_df)
+
+            if self._heroes_without_game_facets(heroes_df):
+                heroes_df = heroes_df.copy()
+                heroes_df["facet_name"] = "No Facet"
+                heroes_df["facet_number"] = 1
+                if "Expert" in heroes_df.columns:
+                    heroes_df["Expert_WR"] = (
+                        heroes_df["Expert"].astype(str).str.extract(r"(\d+\.?\d*)")
+                    )
+                    heroes_df["Expert_WR"] = pd.to_numeric(
+                        heroes_df["Expert_WR"], errors="coerce"
+                    )
+                cols = list(heroes_df.columns)
+                new_cols = []
+                for pref in ["hero_id", "Hero", "facet_name", "facet_number"]:
+                    if pref in cols and pref not in new_cols:
+                        new_cols.append(pref)
+                new_cols += [c for c in cols if c not in new_cols]
+                processed_df = heroes_df[new_cols].copy()
+                self.logger.info(
+                    f"Обработано {len(processed_df)} записей (без маппинга фасетов)"
+                )
+                return processed_df
 
             # Используем переданный маппинг или загружаем новый (с кешированием)
             if mapping is None:
@@ -375,6 +399,26 @@ class ConfigProcessor:
             "Kez": 145,
         }
 
+    def _hero_ids_with_api_preference(self, heroes_df: pd.DataFrame) -> pd.Series:
+        """
+        Строит серию hero_id: числовой id из данных (D2PT stats) имеет приоритет над
+        сопоставлением по имени (displayName из heroes/list может расходиться с hero_name).
+        """
+        name_mapped = self._map_hero_names_to_ids(heroes_df["Hero"])
+        if "hero_id" not in heroes_df.columns:
+            return name_mapped
+        api_raw = pd.to_numeric(heroes_df["hero_id"], errors="coerce")
+        out = name_mapped.copy()
+        valid = api_raw.notna() & (api_raw > 0)
+        if valid.any():
+            out.loc[valid] = api_raw.loc[valid].astype(int)
+            n = int(valid.sum())
+            self.logger.info(
+                "hero_id из данных (API/CSV) для %s строк, остальные — по имени из heroes/list",
+                n,
+            )
+        return out
+
     def _map_hero_names_to_ids(self, hero_names: pd.Series) -> pd.Series:
         """
         Маппинг имен героев к их ID с использованием API
@@ -496,18 +540,20 @@ class ConfigProcessor:
             config = {
                 "version": 3,
                 "configs": [
-                    self._create_facet_config(
+                    self._create_flat_position_config(
                         heroes_df,
                         f"Win rate {base_threshold}+",
                         "WR",
                         base_threshold,
+                        category_label="WR",
                         wr_threshold=51,
                     ),
-                    self._create_facet_config(
+                    self._create_flat_position_config(
                         heroes_df,
                         f"D2PT {base_threshold}+",
                         "D2PT Rating",
                         base_threshold,
+                        category_label="D2PT",
                         rating_above_average=True,
                     ),
                 ],
@@ -523,11 +569,123 @@ class ConfigProcessor:
             self.logger.error(f"Ошибка при создании конфигураций: {e}")
             return {}
 
+    def _create_flat_position_config(
+        self,
+        heroes_df: pd.DataFrame,
+        config_name: str,
+        sort_field: str,
+        min_matches: int,
+        *,
+        category_label: str,
+        wr_threshold: Optional[float] = None,
+        rating_above_average: Optional[bool] = None,
+        max_heroes_per_position: int = 30,
+    ) -> Optional[Dict]:
+        """
+        Одна категория на позицию (pos 1..5), без сетки фасетов.
+        Раскладка как у legacy _create_no_facets_config.
+        """
+        try:
+            if sort_field not in heroes_df.columns:
+                self.logger.warning(
+                    f"Колонка {sort_field!r} отсутствует, пропускаем '{config_name}'"
+                )
+                return None
+            if "WR" not in heroes_df.columns:
+                self.logger.warning("Колонка WR отсутствует")
+                return None
+
+            self.logger.info(f"Создание плоской конфигурации '{config_name}'...")
+
+            ranked = heroes_df[heroes_df["Matches"] >= min_matches].copy()
+
+            if ranked.empty:
+                self.logger.warning(
+                    f"Нет героев с >= {min_matches} матчами для '{config_name}'"
+                )
+                return None
+
+            if wr_threshold is not None:
+                ranked = ranked[ranked["WR"] >= wr_threshold]
+                self.logger.info(f"Применён фильтр WR >= {wr_threshold}")
+
+            if rating_above_average is not None:
+                if "D2PT Rating" not in heroes_df.columns:
+                    self.logger.warning("Колонка D2PT Rating отсутствует")
+                    return None
+                all_d2pt_values = heroes_df["D2PT Rating"]
+                non_zero_d2pt = all_d2pt_values[
+                    (all_d2pt_values > 0) & (all_d2pt_values.notna())
+                ]
+                if not non_zero_d2pt.empty:
+                    avg_d2pt = non_zero_d2pt.mean()
+                    ranked = (
+                        ranked[ranked["D2PT Rating"] >= avg_d2pt]
+                        if rating_above_average
+                        else ranked[ranked["D2PT Rating"] < avg_d2pt]
+                    )
+                    self.logger.info(
+                        f"Применён фильтр D2PT {'выше' if rating_above_average else 'ниже'} среднего ({avg_d2pt:.1f})"
+                    )
+                else:
+                    self.logger.warning(
+                        "Нет ненулевых значений D2PT Rating для вычисления среднего"
+                    )
+
+            if ranked.empty:
+                self.logger.warning(
+                    f"После фильтров не осталось данных для '{config_name}'"
+                )
+                return None
+
+            categories = []
+            positions = ["pos 1", "pos 2", "pos 3", "pos 4", "pos 5"]
+
+            for i, position in enumerate(positions):
+                pos_heroes = ranked[ranked["Role"] == position].copy()
+                if len(pos_heroes) > max_heroes_per_position:
+                    pos_heroes = (
+                        pos_heroes.sort_values(sort_field, ascending=False)
+                        .head(max_heroes_per_position)
+                        .copy()
+                    )
+                if not pos_heroes.empty:
+                    pos_heroes = pos_heroes.sort_values(sort_field, ascending=False)
+                    hero_ids = pos_heroes["hero_id"].dropna().astype(int).tolist()
+                    if hero_ids:
+                        x = i * 240
+                        y = 20
+                        width = 220
+                        height = 400
+                        categories.append(
+                            {
+                                "category_name": f"POS {i + 1} Top {category_label}",
+                                "x_position": x,
+                                "y_position": y,
+                                "width": width,
+                                "height": height,
+                                "hero_ids": hero_ids,
+                            }
+                        )
+
+            if not categories:
+                self.logger.warning(
+                    f"Не удалось создать категории для '{config_name}'"
+                )
+                return None
+
+            return {"config_name": config_name, "categories": categories}
+
+        except Exception as e:
+            self.logger.error(f"Ошибка при создании плоской конфигурации: {e}")
+            return None
+
     def _create_no_facets_config(
         self, heroes_df: pd.DataFrame, min_matches: int = 100, max_heroes_per_position: int = 30
     ) -> Optional[Dict]:
         """
-        Создание конфигурации для героев без фасетов.
+        Deprecated: дополнительная конфигурация из heroes_no_facets.csv (legacy Selenium).
+
         Порог матчей: min_matches (обычно max(100, 30-й процентиль)).
         Не более max_heroes_per_position героев на позицию.
         """
@@ -601,7 +759,10 @@ class ConfigProcessor:
         max_heroes_per_position: int = 30,
     ) -> Dict:
         """
-        Создание конфигурации по фасетам.
+        Deprecated: сетка лодаутов POS x Facet (1 / 2 / 3+).
+
+        Игровые фасеты в Dota 2 убраны; основной пайплайн использует
+        _create_flat_position_config. Метод оставлен для совместимости.
 
         Фильтр по матчам: min_matches (обычно max(100, 30-й процентиль)).
         Для каждой позиции не более max_heroes_per_position записей: при превышении
