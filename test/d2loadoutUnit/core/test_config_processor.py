@@ -146,3 +146,42 @@ class TestConfigProcessor:
             min_matches=100
         )
         assert config is None
+
+    def test_d2pt_wr_same_heroes_sorted_by_wr(self, processor):
+        """d2pt&wr: тот же топ-N по D2PT, что и у D2PT, но порядок по WR."""
+        df = pd.DataFrame(
+            {
+                "Hero": ["h1", "h2", "h3", "h4", "h5"],
+                "Role": ["pos 1"] * 5,
+                "Matches": [500] * 5,
+                "WR": [50.0, 55.0, 48.0, 52.0, 51.0],
+                "D2PT Rating": [10.0, 9.0, 8.0, 7.0, 6.0],
+                "hero_id": [1, 2, 3, 4, 5],
+            }
+        )
+        base = 100
+        d2pt = processor._create_flat_position_config(
+            df,
+            "D2PT",
+            "D2PT Rating",
+            base,
+            category_label="D2PT",
+            rating_above_average=True,
+            max_heroes_per_position=2,
+        )
+        combo = processor._create_flat_position_config(
+            df,
+            "d2pt&wr",
+            "D2PT Rating",
+            base,
+            category_label="d2pt&wr",
+            rating_above_average=True,
+            max_heroes_per_position=2,
+            final_sort_field="WR",
+        )
+        assert d2pt is not None and combo is not None
+        ids_d2pt = d2pt["categories"][0]["hero_ids"]
+        ids_combo = combo["categories"][0]["hero_ids"]
+        assert ids_d2pt == [1, 2]
+        assert ids_combo == [2, 1]
+        assert set(ids_d2pt) == set(ids_combo)

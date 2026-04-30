@@ -18,6 +18,13 @@ from ..config.layout_optimizer import LayoutOptimizer, ScreenDimensions
 
 logger = logging.getLogger(__name__)
 
+# Порог «значимого» объёма матчей на роли: перцентиль считаем только по героям с Matches строго выше этого значения.
+_ROLE_PCTL_SHARE = 0.0025
+_ROLE_PCTL_MIN_MATCHES = 100
+# WR-пресет: порог матчей = max(100, q-й перцентиль выборки по роли).
+_WR_MATCH_PCTL_Q = 0.15
+_WR_MATCH_MIN_AFTER_PCTL = 100
+
 
 class ConfigProcessor:
     """Класс для обработки и создания конфигураций героев"""
@@ -522,6 +529,86 @@ class ConfigProcessor:
         )
         return (base_threshold, basic_threshold, extended_threshold)
 
+    @staticmethod
+    def _role_matches_inclusion_cutoff(matches_sum: int) -> int:
+        """Нижняя граница отсечки: max(100, 0.25% от суммы матчей на роли). Перцентиль — только у героев с Matches > этого числа."""
+        return max(
+            _ROLE_PCTL_MIN_MATCHES,
+            int(matches_sum * _ROLE_PCTL_SHARE),
+        )
+
+    @staticmethod
+    def _wr_match_percentile_threshold_for_role(
+        role_df: pd.DataFrame, q: float
+    ) -> tuple[int, Dict[str, object]]:
+        """
+        Порог матчей для WR: q-й перцентиль Matches среди героев роли с
+        Matches > max(100, 0.0025 * сумма_матчей_на_роли).
+        Если таких нет — перцентиль по всем героям роли (fallback).
+        """
+        meta: Dict[str, object] = {
+            "matches_sum": 0,
+            "inclusion_cutoff": None,
+            "heroes_in_percentile_sample": 0,
+            "percentile_fallback_all_role": False,
+        }
+        m = role_df["Matches"].dropna()
+        if m.empty:
+            return _WR_MATCH_MIN_AFTER_PCTL, meta
+        matches_sum = int(m.sum())
+        meta["matches_sum"] = matches_sum
+        cutoff = ConfigProcessor._role_matches_inclusion_cutoff(matches_sum)
+        meta["inclusion_cutoff"] = cutoff
+        eligible = m[m > cutoff]
+        if eligible.empty:
+            sample = m
+            meta["percentile_fallback_all_role"] = True
+        else:
+            sample = eligible
+        meta["heroes_in_percentile_sample"] = int(len(sample))
+        thr = max(_WR_MATCH_MIN_AFTER_PCTL, int(sample.quantile(q)))
+        return thr, meta
+
+    @staticmethod
+    def summarize_role_matches_and_percentiles(
+        heroes_df: pd.DataFrame, q: float = _WR_MATCH_PCTL_Q,
+    ) -> List[Dict[str, object]]:
+        """
+        По каждой роли: сумма матчей, отсечка для выборки перцентиля и итоговый порог q.
+        """
+        rows: List[Dict[str, object]] = []
+        for role in ["pos 1", "pos 2", "pos 3", "pos 4", "pos 5"]:
+            rd = heroes_df[heroes_df["Role"] == role]
+            m = rd["Matches"].dropna()
+            if m.empty:
+                rows.append(
+                    {
+                        "role": role,
+                        "heroes": 0,
+                        "matches_sum": 0,
+                        "inclusion_cutoff": None,
+                        "heroes_in_percentile_sample": 0,
+                        "percentile_fallback_all_role": False,
+                        "pctl_q": q,
+                        "pctl_value": None,
+                    }
+                )
+                continue
+            thr, meta = ConfigProcessor._wr_match_percentile_threshold_for_role(rd, q)
+            rows.append(
+                {
+                    "role": role,
+                    "heroes": int(len(m)),
+                    "matches_sum": meta["matches_sum"],
+                    "inclusion_cutoff": meta["inclusion_cutoff"],
+                    "heroes_in_percentile_sample": meta["heroes_in_percentile_sample"],
+                    "percentile_fallback_all_role": meta["percentile_fallback_all_role"],
+                    "pctl_q": q,
+                    "pctl_value": thr,
+                }
+            )
+        return rows
+
     def _create_configs(self, heroes_df: pd.DataFrame) -> Dict:
         """
         Создание конфигураций
@@ -536,17 +623,41 @@ class ConfigProcessor:
             self.logger.info("Создание конфигураций...")
 
             base_threshold, basic_threshold, extended_threshold = self._calculate_dynamic_match_thresholds(heroes_df)
+            role_stats = self.summarize_role_matches_and_percentiles(
+                heroes_df, q=_WR_MATCH_PCTL_Q
+            )
+            for s in role_stats:
+                q_pct = int(round(float(s["pctl_q"]) * 100))
+                fb = (
+                    " (перцентиль по всем героям роли)"
+                    if s.get("percentile_fallback_all_role")
+                    else ""
+                )
+                self.logger.info(
+                    "Роль %s: героев=%s, сумма_матчей=%s, отсечка перцентиля Matches>%s, "
+                    "в выборке %s героев, %s-й перцентиль -> порог >= %s%s",
+                    s["role"],
+                    s["heroes"],
+                    s["matches_sum"],
+                    s["inclusion_cutoff"],
+                    s["heroes_in_percentile_sample"],
+                    q_pct,
+                    s["pctl_value"],
+                    fb,
+                )
 
             config = {
                 "version": 3,
                 "configs": [
                     self._create_flat_position_config(
                         heroes_df,
-                        f"Win rate {base_threshold}+",
+                        "Win rate (max(100, p15) per role)",
                         "WR",
-                        base_threshold,
+                        0,
                         category_label="WR",
                         wr_threshold=51,
+                        max_heroes_per_position=None,
+                        match_percentile_per_role=_WR_MATCH_PCTL_Q,
                     ),
                     self._create_flat_position_config(
                         heroes_df,
@@ -555,6 +666,15 @@ class ConfigProcessor:
                         base_threshold,
                         category_label="D2PT",
                         rating_above_average=True,
+                    ),
+                    self._create_flat_position_config(
+                        heroes_df,
+                        "d2pt&wr",
+                        "D2PT Rating",
+                        base_threshold,
+                        category_label="d2pt&wr",
+                        rating_above_average=True,
+                        final_sort_field="WR",
                     ),
                 ],
             }
@@ -579,11 +699,17 @@ class ConfigProcessor:
         category_label: str,
         wr_threshold: Optional[float] = None,
         rating_above_average: Optional[bool] = None,
-        max_heroes_per_position: int = 30,
+        max_heroes_per_position: Optional[int] = 30,
+        match_percentile_per_role: Optional[float] = None,
+        final_sort_field: Optional[str] = None,
     ) -> Optional[Dict]:
         """
         Одна категория на позицию (pos 1..5), без сетки фасетов.
-        Раскладка как у legacy _create_no_facets_config.
+        max_heroes_per_position=None — без обрезки топ-N (все герои, прошедшие фильтры).
+        match_percentile_per_role — если задан (сейчас 0.15 для WR), порог матчей считается
+        отдельно по каждой роли по распределению Matches только для этой роли; min_matches не используется.
+        final_sort_field — если задан, после отбора топ-N по sort_field порядок hero_ids задаётся этой колонкой
+        (например WR при том же составе, что и D2PT).
         """
         try:
             if sort_field not in heroes_df.columns:
@@ -594,8 +720,69 @@ class ConfigProcessor:
             if "WR" not in heroes_df.columns:
                 self.logger.warning("Колонка WR отсутствует")
                 return None
+            if "Role" not in heroes_df.columns:
+                self.logger.warning("Колонка Role отсутствует")
+                return None
+            if final_sort_field is not None and final_sort_field not in heroes_df.columns:
+                self.logger.warning(
+                    f"Колонка {final_sort_field!r} отсутствует для final_sort, пропускаем '{config_name}'"
+                )
+                return None
 
             self.logger.info(f"Создание плоской конфигурации '{config_name}'...")
+
+            if match_percentile_per_role is not None:
+                if rating_above_average is not None:
+                    self.logger.warning(
+                        "match_percentile_per_role вместе с D2PT-фильтром не сочетается, используйте обычный min_matches"
+                    )
+                    return None
+                q = match_percentile_per_role
+                categories = []
+                positions = ["pos 1", "pos 2", "pos 3", "pos 4", "pos 5"]
+                for i, position in enumerate(positions):
+                    role_df = heroes_df[heroes_df["Role"] == position]
+                    if role_df.empty:
+                        continue
+                    mcol = role_df["Matches"].dropna()
+                    if mcol.empty:
+                        continue
+                    thr, meta = self._wr_match_percentile_threshold_for_role(role_df, q)
+                    if meta.get("percentile_fallback_all_role"):
+                        self.logger.warning(
+                            "Роль %s: нет героев с Matches > отсечки %s, перцентиль по всей роли",
+                            position,
+                            meta.get("inclusion_cutoff"),
+                        )
+                    pos_heroes = role_df[role_df["Matches"] >= thr].copy()
+                    if wr_threshold is not None:
+                        pos_heroes = pos_heroes[pos_heroes["WR"] >= wr_threshold]
+                    if pos_heroes.empty:
+                        continue
+                    pos_heroes = pos_heroes.sort_values(sort_field, ascending=False)
+                    hero_ids = pos_heroes["hero_id"].dropna().astype(int).tolist()
+                    if not hero_ids:
+                        continue
+                    x = i * 240
+                    y = 20
+                    width = 220
+                    height = 400
+                    categories.append(
+                        {
+                            "category_name": f"POS {i + 1} Top {category_label}",
+                            "x_position": x,
+                            "y_position": y,
+                            "width": width,
+                            "height": height,
+                            "hero_ids": hero_ids,
+                        }
+                    )
+                if not categories:
+                    self.logger.warning(
+                        f"Не удалось создать категории для '{config_name}'"
+                    )
+                    return None
+                return {"config_name": config_name, "categories": categories}
 
             ranked = heroes_df[heroes_df["Matches"] >= min_matches].copy()
 
@@ -643,14 +830,22 @@ class ConfigProcessor:
 
             for i, position in enumerate(positions):
                 pos_heroes = ranked[ranked["Role"] == position].copy()
-                if len(pos_heroes) > max_heroes_per_position:
+                if (
+                    max_heroes_per_position is not None
+                    and len(pos_heroes) > max_heroes_per_position
+                ):
                     pos_heroes = (
                         pos_heroes.sort_values(sort_field, ascending=False)
                         .head(max_heroes_per_position)
                         .copy()
                     )
                 if not pos_heroes.empty:
-                    pos_heroes = pos_heroes.sort_values(sort_field, ascending=False)
+                    order_col = (
+                        final_sort_field
+                        if final_sort_field is not None
+                        else sort_field
+                    )
+                    pos_heroes = pos_heroes.sort_values(order_col, ascending=False)
                     hero_ids = pos_heroes["hero_id"].dropna().astype(int).tolist()
                     if hero_ids:
                         x = i * 240
