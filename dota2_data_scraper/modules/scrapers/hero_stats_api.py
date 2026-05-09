@@ -90,8 +90,8 @@ def _fetch_position_json(
     *,
     mmr: int = 7000,
     order_by: str = "matches",
-    min_matches: int = 1,
-    period: str = "patch",
+    min_matches: int = 20,
+    period: str = "8",
     legacy: bool = False,
     timeout: float = 45.0,
 ) -> List[dict[str, Any]]:
@@ -119,8 +119,8 @@ def fetch_heroes_stats_dataframe(
     *,
     mmr: int = 7000,
     order_by: str = "matches",
-    min_matches: int = 1,
-    period: str = "patch",
+    min_matches: int = 20,
+    period: str = "8",
     legacy: bool = False,
     timeout: float = 45.0,
 ) -> pd.DataFrame:
@@ -128,6 +128,10 @@ def fetch_heroes_stats_dataframe(
     Загружает статистику для позиций pos 1 … pos 5 и возвращает один DataFrame.
 
     Колонки: Hero, Role, Matches, WR, D2PT Rating, Facet (No Facet).
+
+    По умолчанию фильтры совпадают с D2PT Meta view:
+    - period="8" (последние 8 дней)
+    - min_matches=20
     """
     opener = _d2pt_opener_with_cookies()
     warm_timeout = min(timeout, 30.0)

@@ -1,632 +1,407 @@
 hero_id,Hero,facet_name,facet_number,Role,Matches,WR,D2PT Rating,Facet
-1.0,Anti-Mage,No Facet,1,pos 1,4109,49.20905329763933,2665.0,No Facet
-2.0,Axe,No Facet,1,pos 1,27,25.925925925925927,0.0,No Facet
-4.0,Bloodseeker,No Facet,1,pos 1,1497,52.57181028724115,3070.0,No Facet
-5.0,Crystal Maiden,No Facet,1,pos 1,20,40.0,0.0,No Facet
-6.0,Drow Ranger,No Facet,1,pos 1,5044,52.557494052339415,3258.0,No Facet
-7.0,Earthshaker,No Facet,1,pos 1,26,26.923076923076923,0.0,No Facet
-8.0,Juggernaut,No Facet,1,pos 1,5701,50.67532011927732,2903.0,No Facet
-9.0,Mirana,No Facet,1,pos 1,275,42.18181818181818,2903.0,No Facet
-10.0,Morphling,No Facet,1,pos 1,3626,47.84886927744071,2541.0,No Facet
-11.0,Shadow Fiend,No Facet,1,pos 1,4200,49.40476190476191,2725.0,No Facet
-12.0,Phantom Lancer,No Facet,1,pos 1,5492,54.879825200291336,3716.0,No Facet
-13.0,Puck,No Facet,1,pos 1,18,50.0,0.0,No Facet
-14.0,Pudge,No Facet,1,pos 1,384,44.79166666666666,2910.0,No Facet
-15.0,Razor,No Facet,1,pos 1,680,46.76470588235294,2871.0,No Facet
-16.0,Sand King,No Facet,1,pos 1,14,50.0,0.0,No Facet
-17.0,Storm Spirit,No Facet,1,pos 1,112,48.21428571428572,2981.0,No Facet
-18.0,Sven,No Facet,1,pos 1,1699,50.5591524426133,2980.0,No Facet
-19.0,Tiny,No Facet,1,pos 1,2797,50.05362888809439,2876.0,No Facet
-20.0,Vengeful Spirit,No Facet,1,pos 1,411,49.148418491484186,2962.0,No Facet
-21.0,Windranger,No Facet,1,pos 1,836,50.0,2939.0,No Facet
-22.0,Zeus,No Facet,1,pos 1,92,38.04347826086956,2947.0,No Facet
-23.0,Kunkka,No Facet,1,pos 1,63,52.38095238095238,2998.0,No Facet
-25.0,Lina,No Facet,1,pos 1,242,45.04132231404959,2925.0,No Facet
-26.0,Lion,No Facet,1,pos 1,73,35.61643835616438,2955.0,No Facet
-27.0,Shadow Shaman,No Facet,1,pos 1,7,28.571428571428573,0.0,No Facet
-28.0,Slardar,No Facet,1,pos 1,60,55.0,3009.0,No Facet
-29.0,Tidehunter,No Facet,1,pos 1,84,60.71428571428572,3031.0,No Facet
-30.0,Witch Doctor,No Facet,1,pos 1,3,0.0,0.0,No Facet
-31.0,Lich,No Facet,1,pos 1,4,25.0,0.0,No Facet
-32.0,Riki,No Facet,1,pos 1,850,50.0,2957.0,No Facet
-33.0,Enigma,No Facet,1,pos 1,15,40.0,0.0,No Facet
-34.0,Tinker,No Facet,1,pos 1,50,36.0,2969.0,No Facet
-35.0,Sniper,No Facet,1,pos 1,873,48.91179839633448,2900.0,No Facet
-36.0,Necrophos,No Facet,1,pos 1,432,49.53703703703704,2977.0,No Facet
-37.0,Warlock,No Facet,1,pos 1,9,22.22222222222222,0.0,No Facet
-38.0,Beastmaster,No Facet,1,pos 1,1557,50.80282594733462,2982.0,No Facet
-39.0,Queen of Pain,No Facet,1,pos 1,206,42.71844660194175,2927.0,No Facet
-40.0,Venomancer,No Facet,1,pos 1,99,38.38383838383838,2959.0,No Facet
-41.0,Faceless Void,No Facet,1,pos 1,5768,50.086685159500696,2696.0,No Facet
-42.0,Wraith King,No Facet,1,pos 1,2589,50.7531865585168,2934.0,No Facet
-43.0,Death Prophet,No Facet,1,pos 1,50,48.0,2989.0,No Facet
-44.0,Phantom Assassin,No Facet,1,pos 1,5767,47.70244494537888,2264.0,No Facet
-45.0,Pugna,No Facet,1,pos 1,3,0.0,0.0,No Facet
-46.0,Templar Assassin,No Facet,1,pos 1,3311,43.672606463304135,1976.0,No Facet
-47.0,Viper,No Facet,1,pos 1,163,49.079754601227,2998.0,No Facet
-48.0,Luna,No Facet,1,pos 1,7004,49.67161621930325,2617.0,No Facet
-49.0,Dragon Knight,No Facet,1,pos 1,557,44.88330341113106,2852.0,No Facet
-50.0,Dazzle,No Facet,1,pos 1,3,33.333333333333336,0.0,No Facet
-51.0,Clockwerk,No Facet,1,pos 1,2,50.0,0.0,No Facet
-52.0,Leshrac,No Facet,1,pos 1,78,50.0,2993.0,No Facet
-53.0,Nature's Prophet,No Facet,1,pos 1,629,47.05882352941177,2902.0,No Facet
-54.0,Lifestealer,No Facet,1,pos 1,8322,51.87454938716655,3166.0,No Facet
-55.0,Dark Seer,No Facet,1,pos 1,7,42.85714285714285,0.0,No Facet
-56.0,Clinkz,No Facet,1,pos 1,2455,52.91242362525458,3176.0,No Facet
-57.0,Omniknight,No Facet,1,pos 1,23,56.52173913043478,0.0,No Facet
-58.0,Enchantress,No Facet,1,pos 1,14,64.28571428571429,0.0,No Facet
-59.0,Huskar,No Facet,1,pos 1,285,51.2280701754386,3006.0,No Facet
-60.0,Night Stalker,No Facet,1,pos 1,83,43.373493975903614,2978.0,No Facet
-61.0,Broodmother,No Facet,1,pos 1,331,51.96374622356496,3006.0,No Facet
-62.0,Bounty Hunter,No Facet,1,pos 1,13,38.46153846153846,0.0,No Facet
-63.0,Weaver,No Facet,1,pos 1,3573,47.91491743632802,2541.0,No Facet
-64.0,Jakiro,No Facet,1,pos 1,18,16.666666666666668,0.0,No Facet
-65.0,Batrider,No Facet,1,pos 1,33,42.42424242424242,0.0,No Facet
-66.0,Chen,No Facet,1,pos 1,3,33.333333333333336,0.0,No Facet
-67.0,Spectre,No Facet,1,pos 1,3070,51.33550488599349,3064.0,No Facet
-68.0,Ancient Apparition,No Facet,1,pos 1,12,16.666666666666668,0.0,No Facet
-69.0,Doom,No Facet,1,pos 1,450,44.22222222222222,2847.0,No Facet
-70.0,Ursa,No Facet,1,pos 1,4819,48.7860551981739,2614.0,No Facet
-71.0,Spirit Breaker,No Facet,1,pos 1,12,8.333333333333334,0.0,No Facet
-72.0,Gyrocopter,No Facet,1,pos 1,1811,42.90447266703479,2384.0,No Facet
-73.0,Alchemist,No Facet,1,pos 1,7788,50.77041602465332,2879.0,No Facet
-74.0,Invoker,No Facet,1,pos 1,59,35.59322033898305,2962.0,No Facet
-75.0,Silencer,No Facet,1,pos 1,26,38.46153846153846,0.0,No Facet
-76.0,Outworld Destroyer,No Facet,1,pos 1,61,42.62295081967213,2978.0,No Facet
-77.0,Lycan,No Facet,1,pos 1,28,50.0,0.0,No Facet
-78.0,Brewmaster,No Facet,1,pos 1,3,33.333333333333336,0.0,No Facet
-79.0,Shadow Demon,No Facet,1,pos 1,2,0.0,0.0,No Facet
-80.0,Lone Druid,No Facet,1,pos 1,976,55.32786885245902,3164.0,No Facet
-81.0,Chaos Knight,No Facet,1,pos 1,765,50.45751633986928,2984.0,No Facet
-82.0,Meepo,No Facet,1,pos 1,752,49.20212765957447,2968.0,No Facet
-83.0,Treant Protector,No Facet,1,pos 1,9,44.44444444444444,0.0,No Facet
-84.0,Ogre Magi,No Facet,1,pos 1,19,31.57894736842105,0.0,No Facet
-85.0,Undying,No Facet,1,pos 1,10,50.0,0.0,No Facet
-86.0,Rubick,No Facet,1,pos 1,25,28.0,0.0,No Facet
-88.0,Nyx Assassin,No Facet,1,pos 1,8,37.5,0.0,No Facet
-89.0,Naga Siren,No Facet,1,pos 1,1239,53.188054882970135,3086.0,No Facet
-90.0,Keeper of the Light,No Facet,1,pos 1,18,50.0,0.0,No Facet
-91.0,Io,No Facet,1,pos 1,83,56.62650602409639,3019.0,No Facet
-92.0,Visage,No Facet,1,pos 1,17,52.94117647058823,0.0,No Facet
-93.0,Slark,No Facet,1,pos 1,10015,53.09036445332002,3592.0,No Facet
-94.0,Medusa,No Facet,1,pos 1,2030,50.78817733990148,2955.0,No Facet
-95.0,Troll Warlord,No Facet,1,pos 1,760,44.73684210526316,2814.0,No Facet
-96.0,Centaur Warrunner,No Facet,1,pos 1,6,0.0,0.0,No Facet
-97.0,Magnus,No Facet,1,pos 1,120,43.333333333333336,2964.0,No Facet
-98.0,Timbersaw,No Facet,1,pos 1,32,43.75,0.0,No Facet
-99.0,Bristleback,No Facet,1,pos 1,401,50.37406483790524,2966.0,No Facet
-100.0,Tusk,No Facet,1,pos 1,16,43.75,0.0,No Facet
-101.0,Skywrath Mage,No Facet,1,pos 1,2,50.0,0.0,No Facet
-102.0,Abaddon,No Facet,1,pos 1,196,46.93877551020408,2948.0,No Facet
-103.0,Elder Titan,No Facet,1,pos 1,23,43.47826086956522,0.0,No Facet
-104.0,Legion Commander,No Facet,1,pos 1,145,44.82758620689656,2962.0,No Facet
-105.0,Techies,No Facet,1,pos 1,8,25.0,0.0,No Facet
-106.0,Ember Spirit,No Facet,1,pos 1,103,44.66019417475728,2972.0,No Facet
-107.0,Earth Spirit,No Facet,1,pos 1,4,25.0,0.0,No Facet
-108.0,Underlord,No Facet,1,pos 1,6,16.666666666666668,0.0,No Facet
-109.0,Terrorblade,No Facet,1,pos 1,3168,51.98863636363637,3076.0,No Facet
-110.0,Phoenix,No Facet,1,pos 1,18,22.22222222222222,0.0,No Facet
-111.0,Oracle,No Facet,1,pos 1,3,0.0,0.0,No Facet
-112.0,Winter Wyvern,No Facet,1,pos 1,24,41.66666666666666,0.0,No Facet
-113.0,Arc Warden,No Facet,1,pos 1,136,48.52941176470589,2972.0,No Facet
-114.0,Monkey King,No Facet,1,pos 1,6232,47.99422336328627,2313.0,No Facet
-119.0,Dark Willow,No Facet,1,pos 1,14,42.85714285714285,0.0,No Facet
-120.0,Pangolier,No Facet,1,pos 1,66,43.93939393939394,2983.0,No Facet
-121.0,Grimstroke,No Facet,1,pos 1,3,66.66666666666667,0.0,No Facet
-123.0,Hoodwink,No Facet,1,pos 1,47,51.06382978723404,0.0,No Facet
-126.0,Void Spirit,No Facet,1,pos 1,260,49.23076923076923,2975.0,No Facet
-128.0,Snapfire,No Facet,1,pos 1,22,36.36363636363637,0.0,No Facet
-129.0,Mars,No Facet,1,pos 1,25,36.0,0.0,No Facet
-131.0,Ringmaster,No Facet,1,pos 1,2,50.0,0.0,No Facet
-135.0,Dawnbreaker,No Facet,1,pos 1,64,53.125,3011.0,No Facet
-136.0,Marci,No Facet,1,pos 1,223,43.946188340807176,2944.0,No Facet
-137.0,Primal Beast,No Facet,1,pos 1,5,20.0,0.0,No Facet
-138.0,Muerta,No Facet,1,pos 1,4371,49.07343857240906,2637.0,No Facet
-145.0,Kez,No Facet,1,pos 1,2491,49.33761541549578,2828.0,No Facet
-155.0,Largo,No Facet,1,pos 1,9,44.44444444444444,0.0,No Facet
-1.0,Anti-Mage,No Facet,1,pos 2,259,44.4015444015444,2922.0,No Facet
-2.0,Axe,No Facet,1,pos 2,164,45.1219512195122,2970.0,No Facet
-3.0,Bane,No Facet,1,pos 2,88,50.0,2996.0,No Facet
-4.0,Bloodseeker,No Facet,1,pos 2,183,55.19125683060109,3027.0,No Facet
-5.0,Crystal Maiden,No Facet,1,pos 2,82,43.90243902439025,2969.0,No Facet
-6.0,Drow Ranger,No Facet,1,pos 2,90,48.888888888888886,3002.0,No Facet
-7.0,Earthshaker,No Facet,1,pos 2,1799,53.41856586992774,3160.0,No Facet
-8.0,Juggernaut,No Facet,1,pos 2,29,41.37931034482759,0.0,No Facet
-9.0,Mirana,No Facet,1,pos 2,328,42.68292682926829,2873.0,No Facet
-10.0,Morphling,No Facet,1,pos 2,118,37.28813559322034,2929.0,No Facet
-11.0,Shadow Fiend,No Facet,1,pos 2,3286,46.34814363968351,2375.0,No Facet
-12.0,Phantom Lancer,No Facet,1,pos 2,13,38.46153846153846,0.0,No Facet
-13.0,Puck,No Facet,1,pos 2,4589,49.444323382000434,2747.0,No Facet
-14.0,Pudge,No Facet,1,pos 2,1446,50.27662517289073,2953.0,No Facet
-15.0,Razor,No Facet,1,pos 2,447,43.62416107382551,2876.0,No Facet
-16.0,Sand King,No Facet,1,pos 2,1992,47.28915662650602,2700.0,No Facet
-17.0,Storm Spirit,No Facet,1,pos 2,5649,47.76066560453177,2243.0,No Facet
-18.0,Sven,No Facet,1,pos 2,22,54.54545454545455,0.0,No Facet
-19.0,Tiny,No Facet,1,pos 2,1412,47.096317280453256,2752.0,No Facet
-20.0,Vengeful Spirit,No Facet,1,pos 2,182,54.3956043956044,3014.0,No Facet
-21.0,Windranger,No Facet,1,pos 2,1278,50.23474178403756,2950.0,No Facet
-22.0,Zeus,No Facet,1,pos 2,2340,47.00854700854701,2564.0,No Facet
-23.0,Kunkka,No Facet,1,pos 2,1086,47.14548802946593,2852.0,No Facet
-25.0,Lina,No Facet,1,pos 2,4762,48.86602267954641,2622.0,No Facet
-26.0,Lion,No Facet,1,pos 2,1250,49.44,2903.0,No Facet
-27.0,Shadow Shaman,No Facet,1,pos 2,50,50.0,3000.0,No Facet
-28.0,Slardar,No Facet,1,pos 2,1116,51.88172043010753,3049.0,No Facet
-29.0,Tidehunter,No Facet,1,pos 2,192,49.47916666666666,2990.0,No Facet
-30.0,Witch Doctor,No Facet,1,pos 2,25,48.0,0.0,No Facet
-31.0,Lich,No Facet,1,pos 2,34,52.94117647058823,0.0,No Facet
-32.0,Riki,No Facet,1,pos 2,566,55.30035335689046,3096.0,No Facet
-33.0,Enigma,No Facet,1,pos 2,182,53.84615384615385,3015.0,No Facet
-34.0,Tinker,No Facet,1,pos 2,2464,47.68668831168832,2662.0,No Facet
-35.0,Sniper,No Facet,1,pos 2,4194,48.42632331902718,2548.0,No Facet
-36.0,Necrophos,No Facet,1,pos 2,4314,50.74177097821048,2924.0,No Facet
-37.0,Warlock,No Facet,1,pos 2,17,23.529411764705884,0.0,No Facet
-38.0,Beastmaster,No Facet,1,pos 2,1970,49.13705583756345,2870.0,No Facet
-39.0,Queen of Pain,No Facet,1,pos 2,10824,50.17553584626755,2608.0,No Facet
-40.0,Venomancer,No Facet,1,pos 2,96,39.583333333333336,2960.0,No Facet
-41.0,Faceless Void,No Facet,1,pos 2,93,53.763440860215056,3014.0,No Facet
-42.0,Wraith King,No Facet,1,pos 2,51,39.21568627450981,2973.0,No Facet
-43.0,Death Prophet,No Facet,1,pos 2,1562,48.46350832266325,2835.0,No Facet
-44.0,Phantom Assassin,No Facet,1,pos 2,67,41.791044776119406,2984.0,No Facet
-45.0,Pugna,No Facet,1,pos 2,369,51.21951219512195,3010.0,No Facet
-46.0,Templar Assassin,No Facet,1,pos 2,559,45.796064400715565,2863.0,No Facet
-47.0,Viper,No Facet,1,pos 2,2165,49.19168591224018,2831.0,No Facet
-48.0,Luna,No Facet,1,pos 2,66,40.90909090909091,2976.0,No Facet
-49.0,Dragon Knight,No Facet,1,pos 2,550,54.0,3065.0,No Facet
-50.0,Dazzle,No Facet,1,pos 2,42,38.095238095238095,0.0,No Facet
-51.0,Clockwerk,No Facet,1,pos 2,34,58.8235294117647,0.0,No Facet
-52.0,Leshrac,No Facet,1,pos 2,2673,49.08342686120464,2752.0,No Facet
-53.0,Nature's Prophet,No Facet,1,pos 2,800,45.5,2835.0,No Facet
-54.0,Lifestealer,No Facet,1,pos 2,19,31.57894736842105,0.0,No Facet
-55.0,Dark Seer,No Facet,1,pos 2,80,56.25,3014.0,No Facet
-56.0,Clinkz,No Facet,1,pos 2,365,48.76712328767123,2958.0,No Facet
-57.0,Omniknight,No Facet,1,pos 2,38,39.47368421052632,0.0,No Facet
-58.0,Enchantress,No Facet,1,pos 2,127,51.181102362204726,2999.0,No Facet
-59.0,Huskar,No Facet,1,pos 2,3484,52.69804822043628,3183.0,No Facet
-60.0,Night Stalker,No Facet,1,pos 2,246,48.78048780487805,2978.0,No Facet
-61.0,Broodmother,No Facet,1,pos 2,781,51.600512163892446,3023.0,No Facet
-62.0,Bounty Hunter,No Facet,1,pos 2,76,39.47368421052632,2966.0,No Facet
-63.0,Weaver,No Facet,1,pos 2,205,46.34146341463415,2959.0,No Facet
-64.0,Jakiro,No Facet,1,pos 2,116,46.55172413793103,2974.0,No Facet
-65.0,Batrider,No Facet,1,pos 2,1525,55.08196721311475,3245.0,No Facet
-67.0,Spectre,No Facet,1,pos 2,25,32.0,0.0,No Facet
-68.0,Ancient Apparition,No Facet,1,pos 2,105,35.23809523809524,2925.0,No Facet
-69.0,Doom,No Facet,1,pos 2,307,47.88273615635179,2958.0,No Facet
-70.0,Ursa,No Facet,1,pos 2,139,48.92086330935252,2977.0,No Facet
-71.0,Spirit Breaker,No Facet,1,pos 2,349,44.12607449856733,2913.0,No Facet
-72.0,Gyrocopter,No Facet,1,pos 2,27,25.925925925925927,0.0,No Facet
-73.0,Alchemist,No Facet,1,pos 2,1084,50.0,2952.0,No Facet
-74.0,Invoker,No Facet,1,pos 2,9915,54.37216338880484,4147.0,No Facet
-75.0,Silencer,No Facet,1,pos 2,313,46.96485623003195,2945.0,No Facet
-76.0,Outworld Destroyer,No Facet,1,pos 2,2425,49.56701030927835,2849.0,No Facet
-77.0,Lycan,No Facet,1,pos 2,149,56.375838926174495,3027.0,No Facet
-78.0,Brewmaster,No Facet,1,pos 2,113,50.4424778761062,2991.0,No Facet
-79.0,Shadow Demon,No Facet,1,pos 2,28,25.0,0.0,No Facet
-80.0,Lone Druid,No Facet,1,pos 2,1283,56.11847233047545,3220.0,No Facet
-81.0,Chaos Knight,No Facet,1,pos 2,46,39.130434782608695,0.0,No Facet
-82.0,Meepo,No Facet,1,pos 2,1572,48.91857506361323,2868.0,No Facet
-83.0,Treant Protector,No Facet,1,pos 2,3,33.333333333333336,0.0,No Facet
-84.0,Ogre Magi,No Facet,1,pos 2,325,50.46153846153846,2983.0,No Facet
-85.0,Undying,No Facet,1,pos 2,85,37.64705882352941,2957.0,No Facet
-86.0,Rubick,No Facet,1,pos 2,2185,48.60411899313501,2769.0,No Facet
-87.0,Disruptor,No Facet,1,pos 2,24,37.5,0.0,No Facet
-88.0,Nyx Assassin,No Facet,1,pos 2,473,47.56871035940804,2923.0,No Facet
-89.0,Naga Siren,No Facet,1,pos 2,14,71.42857142857143,0.0,No Facet
-90.0,Keeper of the Light,No Facet,1,pos 2,3473,55.94586812553988,3607.0,No Facet
-91.0,Io,No Facet,1,pos 2,257,49.41634241245136,2979.0,No Facet
-92.0,Visage,No Facet,1,pos 2,527,54.64895635673624,3073.0,No Facet
-93.0,Slark,No Facet,1,pos 2,450,47.77777777777778,2931.0,No Facet
-94.0,Medusa,No Facet,1,pos 2,42,42.85714285714285,0.0,No Facet
-95.0,Troll Warlord,No Facet,1,pos 2,20,50.0,0.0,No Facet
-96.0,Centaur Warrunner,No Facet,1,pos 2,27,44.44444444444444,0.0,No Facet
-97.0,Magnus,No Facet,1,pos 2,1332,49.92492492492492,2970.0,No Facet
-98.0,Timbersaw,No Facet,1,pos 2,382,40.575916230366495,2836.0,No Facet
-99.0,Bristleback,No Facet,1,pos 2,153,51.63398692810458,3005.0,No Facet
-100.0,Tusk,No Facet,1,pos 2,315,48.57142857142857,2946.0,No Facet
-101.0,Skywrath Mage,No Facet,1,pos 2,944,46.92796610169491,2817.0,No Facet
-102.0,Abaddon,No Facet,1,pos 2,11,18.181818181818183,0.0,No Facet
-103.0,Elder Titan,No Facet,1,pos 2,30,53.333333333333336,0.0,No Facet
-104.0,Legion Commander,No Facet,1,pos 2,328,48.170731707317074,2963.0,No Facet
-105.0,Techies,No Facet,1,pos 2,253,48.22134387351779,2964.0,No Facet
-106.0,Ember Spirit,No Facet,1,pos 2,6963,50.05026569007612,2662.0,No Facet
-107.0,Earth Spirit,No Facet,1,pos 2,934,56.10278372591007,3202.0,No Facet
-108.0,Underlord,No Facet,1,pos 2,43,32.55813953488372,0.0,No Facet
-109.0,Terrorblade,No Facet,1,pos 2,5,60.0,0.0,No Facet
-110.0,Phoenix,No Facet,1,pos 2,1119,55.40661304736372,3178.0,No Facet
-111.0,Oracle,No Facet,1,pos 2,65,33.84615384615385,2960.0,No Facet
-112.0,Winter Wyvern,No Facet,1,pos 2,284,50.352112676056336,2993.0,No Facet
-113.0,Arc Warden,No Facet,1,pos 2,1556,49.03598971722365,2830.0,No Facet
-114.0,Monkey King,No Facet,1,pos 2,2168,52.35239852398524,3142.0,No Facet
-119.0,Dark Willow,No Facet,1,pos 2,117,42.73504273504273,2950.0,No Facet
-120.0,Pangolier,No Facet,1,pos 2,6083,49.991780371527206,2771.0,No Facet
-121.0,Grimstroke,No Facet,1,pos 2,67,43.28358208955224,2980.0,No Facet
-123.0,Hoodwink,No Facet,1,pos 2,146,47.945205479452056,2976.0,No Facet
-126.0,Void Spirit,No Facet,1,pos 2,6811,47.58478931140802,1981.0,No Facet
-128.0,Snapfire,No Facet,1,pos 2,325,53.84615384615385,3039.0,No Facet
-129.0,Mars,No Facet,1,pos 2,337,43.916913946587535,2910.0,No Facet
-131.0,Ringmaster,No Facet,1,pos 2,23,30.43478260869565,0.0,No Facet
-135.0,Dawnbreaker,No Facet,1,pos 2,524,50.38167938931298,2984.0,No Facet
-136.0,Marci,No Facet,1,pos 2,787,51.84243964421855,3026.0,No Facet
-137.0,Primal Beast,No Facet,1,pos 2,1164,56.44329896907217,3235.0,No Facet
-138.0,Muerta,No Facet,1,pos 2,285,50.526315789473685,2981.0,No Facet
-145.0,Kez,No Facet,1,pos 2,1421,50.87966220971147,2983.0,No Facet
-155.0,Largo,No Facet,1,pos 2,93,43.01075268817204,2967.0,No Facet
-1.0,Anti-Mage,No Facet,1,pos 3,110,38.18181818181818,2946.0,No Facet
-2.0,Axe,No Facet,1,pos 3,7213,50.10397892693747,2664.0,No Facet
-3.0,Bane,No Facet,1,pos 3,28,39.285714285714285,0.0,No Facet
-4.0,Bloodseeker,No Facet,1,pos 3,213,52.11267605633803,3006.0,No Facet
-5.0,Crystal Maiden,No Facet,1,pos 3,48,43.75,0.0,No Facet
-6.0,Drow Ranger,No Facet,1,pos 3,22,45.45454545454545,0.0,No Facet
-7.0,Earthshaker,No Facet,1,pos 3,1895,50.50131926121372,2963.0,No Facet
-8.0,Juggernaut,No Facet,1,pos 3,41,19.51219512195122,0.0,No Facet
-9.0,Mirana,No Facet,1,pos 3,190,51.578947368421055,3002.0,No Facet
-10.0,Morphling,No Facet,1,pos 3,14,35.714285714285715,0.0,No Facet
-11.0,Shadow Fiend,No Facet,1,pos 3,112,39.285714285714285,2943.0,No Facet
-12.0,Phantom Lancer,No Facet,1,pos 3,29,62.06896551724138,0.0,No Facet
-13.0,Puck,No Facet,1,pos 3,39,46.15384615384615,0.0,No Facet
-14.0,Pudge,No Facet,1,pos 3,3732,52.38478027867095,3194.0,No Facet
-15.0,Razor,No Facet,1,pos 3,2129,49.22498825739784,2849.0,No Facet
-16.0,Sand King,No Facet,1,pos 3,2534,46.01420678768745,2475.0,No Facet
-17.0,Storm Spirit,No Facet,1,pos 3,35,25.714285714285715,0.0,No Facet
-18.0,Sven,No Facet,1,pos 3,51,33.333333333333336,2957.0,No Facet
-19.0,Tiny,No Facet,1,pos 3,1029,45.09232264334305,2745.0,No Facet
-20.0,Vengeful Spirit,No Facet,1,pos 3,791,50.821744627054365,2994.0,No Facet
-21.0,Windranger,No Facet,1,pos 3,1073,52.93569431500466,3034.0,No Facet
-22.0,Zeus,No Facet,1,pos 3,144,45.138888888888886,2958.0,No Facet
-23.0,Kunkka,No Facet,1,pos 3,1433,51.7794836008374,3022.0,No Facet
-25.0,Lina,No Facet,1,pos 3,52,40.38461538461539,2971.0,No Facet
-26.0,Lion,No Facet,1,pos 3,151,54.3046357615894,3018.0,No Facet
-27.0,Shadow Shaman,No Facet,1,pos 3,22,40.90909090909091,0.0,No Facet
-28.0,Slardar,No Facet,1,pos 3,4851,49.94846423417852,2784.0,No Facet
-29.0,Tidehunter,No Facet,1,pos 3,11387,51.28655484324229,3032.0,No Facet
-30.0,Witch Doctor,No Facet,1,pos 3,29,58.62068965517241,0.0,No Facet
-31.0,Lich,No Facet,1,pos 3,22,40.90909090909091,0.0,No Facet
-32.0,Riki,No Facet,1,pos 3,499,52.50501002004008,3052.0,No Facet
-33.0,Enigma,No Facet,1,pos 3,1087,54.7378104875805,3156.0,No Facet
-34.0,Tinker,No Facet,1,pos 3,86,29.069767441860463,2922.0,No Facet
-35.0,Sniper,No Facet,1,pos 3,91,38.46153846153846,2965.0,No Facet
-36.0,Necrophos,No Facet,1,pos 3,2597,51.36696187909126,3068.0,No Facet
-37.0,Warlock,No Facet,1,pos 3,9,22.22222222222222,0.0,No Facet
-38.0,Beastmaster,No Facet,1,pos 3,3841,51.75735485550638,3092.0,No Facet
-39.0,Queen of Pain,No Facet,1,pos 3,607,49.09390444810544,2938.0,No Facet
-40.0,Venomancer,No Facet,1,pos 3,564,43.08510638297872,2829.0,No Facet
-41.0,Faceless Void,No Facet,1,pos 3,354,50.56497175141243,2986.0,No Facet
-42.0,Wraith King,No Facet,1,pos 3,1897,49.182920400632575,2836.0,No Facet
-43.0,Death Prophet,No Facet,1,pos 3,1796,49.61024498886415,2895.0,No Facet
-44.0,Phantom Assassin,No Facet,1,pos 3,26,46.15384615384615,0.0,No Facet
-45.0,Pugna,No Facet,1,pos 3,80,50.0,2991.0,No Facet
-46.0,Templar Assassin,No Facet,1,pos 3,17,35.294117647058826,0.0,No Facet
-47.0,Viper,No Facet,1,pos 3,1337,45.40014958863127,2694.0,No Facet
-48.0,Luna,No Facet,1,pos 3,33,48.48484848484848,0.0,No Facet
-49.0,Dragon Knight,No Facet,1,pos 3,482,48.96265560165975,2948.0,No Facet
-50.0,Dazzle,No Facet,1,pos 3,39,38.46153846153846,0.0,No Facet
-51.0,Clockwerk,No Facet,1,pos 3,263,53.61216730038023,3032.0,No Facet
-52.0,Leshrac,No Facet,1,pos 3,202,57.92079207920792,3062.0,No Facet
-53.0,Nature's Prophet,No Facet,1,pos 3,336,45.833333333333336,2929.0,No Facet
-54.0,Lifestealer,No Facet,1,pos 3,96,39.583333333333336,2959.0,No Facet
-55.0,Dark Seer,No Facet,1,pos 3,1259,49.88085782366958,2923.0,No Facet
-56.0,Clinkz,No Facet,1,pos 3,32,46.875,0.0,No Facet
-57.0,Omniknight,No Facet,1,pos 3,685,50.21897810218978,2958.0,No Facet
-58.0,Enchantress,No Facet,1,pos 3,244,54.09836065573771,3038.0,No Facet
-59.0,Huskar,No Facet,1,pos 3,670,49.25373134328358,2943.0,No Facet
-60.0,Night Stalker,No Facet,1,pos 3,5874,52.46850527749404,3272.0,No Facet
-61.0,Broodmother,No Facet,1,pos 3,356,47.47191011235955,2950.0,No Facet
-62.0,Bounty Hunter,No Facet,1,pos 3,96,42.708333333333336,2966.0,No Facet
-63.0,Weaver,No Facet,1,pos 3,452,50.0,2973.0,No Facet
-64.0,Jakiro,No Facet,1,pos 3,64,37.5,2960.0,No Facet
-65.0,Batrider,No Facet,1,pos 3,3035,55.22240527182866,3496.0,No Facet
-66.0,Chen,No Facet,1,pos 3,5,20.0,0.0,No Facet
-67.0,Spectre,No Facet,1,pos 3,44,43.18181818181818,0.0,No Facet
-68.0,Ancient Apparition,No Facet,1,pos 3,13,53.84615384615385,0.0,No Facet
-69.0,Doom,No Facet,1,pos 3,5622,48.3991462113127,2411.0,No Facet
-70.0,Ursa,No Facet,1,pos 3,219,48.401826484018265,2972.0,No Facet
-71.0,Spirit Breaker,No Facet,1,pos 3,1464,46.37978142076503,2712.0,No Facet
-72.0,Gyrocopter,No Facet,1,pos 3,20,35.0,0.0,No Facet
-73.0,Alchemist,No Facet,1,pos 3,1478,46.88768606224628,2750.0,No Facet
-74.0,Invoker,No Facet,1,pos 3,158,56.32911392405063,3024.0,No Facet
-75.0,Silencer,No Facet,1,pos 3,63,53.96825396825397,3009.0,No Facet
-76.0,Outworld Destroyer,No Facet,1,pos 3,62,48.38709677419355,3004.0,No Facet
-77.0,Lycan,No Facet,1,pos 3,665,50.37593984962406,2991.0,No Facet
-78.0,Brewmaster,No Facet,1,pos 3,1360,49.63235294117647,2888.0,No Facet
-79.0,Shadow Demon,No Facet,1,pos 3,11,54.54545454545455,0.0,No Facet
-80.0,Lone Druid,No Facet,1,pos 3,415,50.8433734939759,3007.0,No Facet
-81.0,Chaos Knight,No Facet,1,pos 3,760,47.23684210526316,2892.0,No Facet
-82.0,Meepo,No Facet,1,pos 3,175,46.285714285714285,2966.0,No Facet
-83.0,Treant Protector,No Facet,1,pos 3,71,47.88732394366197,2988.0,No Facet
-84.0,Ogre Magi,No Facet,1,pos 3,603,46.766169154228855,2906.0,No Facet
-85.0,Undying,No Facet,1,pos 3,1224,51.55228758169935,3008.0,No Facet
-86.0,Rubick,No Facet,1,pos 3,284,48.23943661971831,2977.0,No Facet
-87.0,Disruptor,No Facet,1,pos 3,8,62.5,0.0,No Facet
-88.0,Nyx Assassin,No Facet,1,pos 3,371,47.43935309973046,2955.0,No Facet
-89.0,Naga Siren,No Facet,1,pos 3,29,48.27586206896552,0.0,No Facet
-90.0,Keeper of the Light,No Facet,1,pos 3,158,47.46835443037975,2983.0,No Facet
-91.0,Io,No Facet,1,pos 3,103,46.601941747572816,2976.0,No Facet
-92.0,Visage,No Facet,1,pos 3,773,58.47347994825356,3234.0,No Facet
-93.0,Slark,No Facet,1,pos 3,482,54.77178423236514,3082.0,No Facet
-94.0,Medusa,No Facet,1,pos 3,33,45.45454545454545,0.0,No Facet
-95.0,Troll Warlord,No Facet,1,pos 3,35,45.71428571428572,0.0,No Facet
-96.0,Centaur Warrunner,No Facet,1,pos 3,2363,47.270418958950486,2636.0,No Facet
-97.0,Magnus,No Facet,1,pos 3,3659,50.39628313746925,2913.0,No Facet
-98.0,Timbersaw,No Facet,1,pos 3,2299,44.06263592866463,2353.0,No Facet
-99.0,Bristleback,No Facet,1,pos 3,4215,45.836298932384345,2100.0,No Facet
-100.0,Tusk,No Facet,1,pos 3,433,49.19168591224018,2946.0,No Facet
-101.0,Skywrath Mage,No Facet,1,pos 3,66,42.42424242424242,2975.0,No Facet
-102.0,Abaddon,No Facet,1,pos 3,320,51.5625,3006.0,No Facet
-103.0,Elder Titan,No Facet,1,pos 3,211,50.23696682464455,2989.0,No Facet
-104.0,Legion Commander,No Facet,1,pos 3,6233,52.02952029520295,3152.0,No Facet
-105.0,Techies,No Facet,1,pos 3,116,50.86206896551724,2996.0,No Facet
-106.0,Ember Spirit,No Facet,1,pos 3,190,44.21052631578947,2937.0,No Facet
-107.0,Earth Spirit,No Facet,1,pos 3,376,50.797872340425535,2994.0,No Facet
-108.0,Underlord,No Facet,1,pos 3,3407,49.63310830642794,2732.0,No Facet
-109.0,Terrorblade,No Facet,1,pos 3,35,57.142857142857146,0.0,No Facet
-110.0,Phoenix,No Facet,1,pos 3,1971,54.43937087772704,3251.0,No Facet
-111.0,Oracle,No Facet,1,pos 3,8,0.0,0.0,No Facet
-112.0,Winter Wyvern,No Facet,1,pos 3,797,56.33626097867001,3156.0,No Facet
-113.0,Arc Warden,No Facet,1,pos 3,18,27.77777777777778,0.0,No Facet
-114.0,Monkey King,No Facet,1,pos 3,414,51.932367149758456,3019.0,No Facet
-119.0,Dark Willow,No Facet,1,pos 3,49,48.97959183673469,0.0,No Facet
-120.0,Pangolier,No Facet,1,pos 3,4429,49.288778505305935,2707.0,No Facet
-121.0,Grimstroke,No Facet,1,pos 3,24,62.5,0.0,No Facet
-123.0,Hoodwink,No Facet,1,pos 3,109,43.11926605504587,2967.0,No Facet
-126.0,Void Spirit,No Facet,1,pos 3,965,51.29533678756477,3015.0,No Facet
-128.0,Snapfire,No Facet,1,pos 3,261,49.42528735632184,2988.0,No Facet
-129.0,Mars,No Facet,1,pos 3,7078,45.365922576999154,1522.0,No Facet
-131.0,Ringmaster,No Facet,1,pos 3,8,50.0,0.0,No Facet
-135.0,Dawnbreaker,No Facet,1,pos 3,6508,53.04240934234788,3430.0,No Facet
-136.0,Marci,No Facet,1,pos 3,535,51.77570093457944,3010.0,No Facet
-137.0,Primal Beast,No Facet,1,pos 3,2661,52.649379932356254,3196.0,No Facet
-138.0,Muerta,No Facet,1,pos 3,42,45.23809523809524,0.0,No Facet
-145.0,Kez,No Facet,1,pos 3,239,46.44351464435147,2950.0,No Facet
-155.0,Largo,No Facet,1,pos 3,612,48.36601307189542,2920.0,No Facet
-1.0,Anti-Mage,No Facet,1,pos 4,23,30.43478260869565,0.0,No Facet
-2.0,Axe,No Facet,1,pos 4,294,49.31972789115646,2969.0,No Facet
-3.0,Bane,No Facet,1,pos 4,823,52.004860267314704,3012.0,No Facet
-4.0,Bloodseeker,No Facet,1,pos 4,25,36.0,0.0,No Facet
-5.0,Crystal Maiden,No Facet,1,pos 4,1173,51.23614663256607,3002.0,No Facet
-6.0,Drow Ranger,No Facet,1,pos 4,6,33.333333333333336,0.0,No Facet
-7.0,Earthshaker,No Facet,1,pos 4,3117,51.267244145011226,3021.0,No Facet
-8.0,Juggernaut,No Facet,1,pos 4,5,20.0,0.0,No Facet
-9.0,Mirana,No Facet,1,pos 4,2374,49.74726200505476,2862.0,No Facet
-11.0,Shadow Fiend,No Facet,1,pos 4,61,32.78688524590164,2959.0,No Facet
-12.0,Phantom Lancer,No Facet,1,pos 4,6,0.0,0.0,No Facet
-13.0,Puck,No Facet,1,pos 4,39,51.282051282051285,0.0,No Facet
-14.0,Pudge,No Facet,1,pos 4,7842,48.89058913542464,2271.0,No Facet
-15.0,Razor,No Facet,1,pos 4,105,46.66666666666666,2981.0,No Facet
-16.0,Sand King,No Facet,1,pos 4,46,47.82608695652174,0.0,No Facet
-17.0,Storm Spirit,No Facet,1,pos 4,25,32.0,0.0,No Facet
-18.0,Sven,No Facet,1,pos 4,15,33.333333333333336,0.0,No Facet
-19.0,Tiny,No Facet,1,pos 4,2361,47.39517153748412,2649.0,No Facet
-20.0,Vengeful Spirit,No Facet,1,pos 4,1033,55.46950629235237,3157.0,No Facet
-21.0,Windranger,No Facet,1,pos 4,1829,48.223072717331874,2782.0,No Facet
-22.0,Zeus,No Facet,1,pos 4,5211,52.25484551909423,3149.0,No Facet
-23.0,Kunkka,No Facet,1,pos 4,115,46.08695652173913,2979.0,No Facet
-25.0,Lina,No Facet,1,pos 4,753,45.0199203187251,2808.0,No Facet
-26.0,Lion,No Facet,1,pos 4,5301,48.8398415393322,2532.0,No Facet
-27.0,Shadow Shaman,No Facet,1,pos 4,3157,52.04307887234717,3127.0,No Facet
-28.0,Slardar,No Facet,1,pos 4,102,42.15686274509804,2958.0,No Facet
-29.0,Tidehunter,No Facet,1,pos 4,159,47.16981132075472,2975.0,No Facet
-30.0,Witch Doctor,No Facet,1,pos 4,1585,47.3186119873817,2744.0,No Facet
-31.0,Lich,No Facet,1,pos 4,1748,50.97254004576659,2988.0,No Facet
-32.0,Riki,No Facet,1,pos 4,341,51.61290322580645,3002.0,No Facet
-33.0,Enigma,No Facet,1,pos 4,279,54.83870967741935,3031.0,No Facet
-34.0,Tinker,No Facet,1,pos 4,135,34.81481481481482,2905.0,No Facet
-35.0,Sniper,No Facet,1,pos 4,493,44.82758620689656,2866.0,No Facet
-36.0,Necrophos,No Facet,1,pos 4,45,42.22222222222222,0.0,No Facet
-37.0,Warlock,No Facet,1,pos 4,705,43.97163120567376,2815.0,No Facet
-38.0,Beastmaster,No Facet,1,pos 4,66,48.48484848484848,2993.0,No Facet
-39.0,Queen of Pain,No Facet,1,pos 4,946,49.04862579281184,2886.0,No Facet
-40.0,Venomancer,No Facet,1,pos 4,3447,44.79257325210328,2189.0,No Facet
-41.0,Faceless Void,No Facet,1,pos 4,90,53.333333333333336,3006.0,No Facet
-42.0,Wraith King,No Facet,1,pos 4,24,33.333333333333336,0.0,No Facet
-43.0,Death Prophet,No Facet,1,pos 4,200,49.5,2977.0,No Facet
-44.0,Phantom Assassin,No Facet,1,pos 4,20,15.0,0.0,No Facet
-45.0,Pugna,No Facet,1,pos 4,795,50.06289308176101,2983.0,No Facet
-46.0,Templar Assassin,No Facet,1,pos 4,6,33.333333333333336,0.0,No Facet
-47.0,Viper,No Facet,1,pos 4,180,45.0,2945.0,No Facet
-48.0,Luna,No Facet,1,pos 4,41,39.02439024390244,0.0,No Facet
-49.0,Dragon Knight,No Facet,1,pos 4,15,26.666666666666668,0.0,No Facet
-50.0,Dazzle,No Facet,1,pos 4,387,50.90439276485788,3006.0,No Facet
-51.0,Clockwerk,No Facet,1,pos 4,960,48.75,2898.0,No Facet
-52.0,Leshrac,No Facet,1,pos 4,257,49.02723735408561,2977.0,No Facet
-53.0,Nature's Prophet,No Facet,1,pos 4,1265,44.03162055335969,2639.0,No Facet
-54.0,Lifestealer,No Facet,1,pos 4,8,50.0,0.0,No Facet
-55.0,Dark Seer,No Facet,1,pos 4,36,36.11111111111112,0.0,No Facet
-56.0,Clinkz,No Facet,1,pos 4,59,32.20338983050848,2953.0,No Facet
-57.0,Omniknight,No Facet,1,pos 4,245,55.10204081632653,3039.0,No Facet
-58.0,Enchantress,No Facet,1,pos 4,360,44.44444444444444,2894.0,No Facet
-59.0,Huskar,No Facet,1,pos 4,194,44.329896907216494,2950.0,No Facet
-60.0,Night Stalker,No Facet,1,pos 4,114,42.10526315789474,2958.0,No Facet
-61.0,Broodmother,No Facet,1,pos 4,6,16.666666666666668,0.0,No Facet
-62.0,Bounty Hunter,No Facet,1,pos 4,2764,54.30535455861071,3369.0,No Facet
-63.0,Weaver,No Facet,1,pos 4,1659,47.13682941531043,2715.0,No Facet
-64.0,Jakiro,No Facet,1,pos 4,1335,46.96629213483146,2784.0,No Facet
-65.0,Batrider,No Facet,1,pos 4,907,48.51157662624036,2914.0,No Facet
-66.0,Chen,No Facet,1,pos 4,100,44.0,2976.0,No Facet
-67.0,Spectre,No Facet,1,pos 4,4,50.0,0.0,No Facet
-68.0,Ancient Apparition,No Facet,1,pos 4,918,45.20697167755991,2770.0,No Facet
-69.0,Doom,No Facet,1,pos 4,376,47.87234042553192,2964.0,No Facet
-70.0,Ursa,No Facet,1,pos 4,49,34.69387755102041,0.0,No Facet
-71.0,Spirit Breaker,No Facet,1,pos 4,9068,51.78650198500221,3179.0,No Facet
-72.0,Gyrocopter,No Facet,1,pos 4,286,45.10489510489511,2922.0,No Facet
-73.0,Alchemist,No Facet,1,pos 4,1024,46.97265625,2798.0,No Facet
-74.0,Invoker,No Facet,1,pos 4,3057,51.94635263330062,3152.0,No Facet
-75.0,Silencer,No Facet,1,pos 4,1871,47.62159273115981,2712.0,No Facet
-76.0,Outworld Destroyer,No Facet,1,pos 4,47,51.06382978723404,0.0,No Facet
-77.0,Lycan,No Facet,1,pos 4,8,50.0,0.0,No Facet
-78.0,Brewmaster,No Facet,1,pos 4,99,44.44444444444444,2965.0,No Facet
-79.0,Shadow Demon,No Facet,1,pos 4,1116,43.10035842293907,2610.0,No Facet
-80.0,Lone Druid,No Facet,1,pos 4,72,45.833333333333336,2977.0,No Facet
-81.0,Chaos Knight,No Facet,1,pos 4,95,44.21052631578947,2971.0,No Facet
-82.0,Meepo,No Facet,1,pos 4,15,53.333333333333336,0.0,No Facet
-83.0,Treant Protector,No Facet,1,pos 4,507,54.63510848126233,3067.0,No Facet
-84.0,Ogre Magi,No Facet,1,pos 4,1473,49.966055668703326,2894.0,No Facet
-85.0,Undying,No Facet,1,pos 4,1462,50.47879616963064,2933.0,No Facet
-86.0,Rubick,No Facet,1,pos 4,11927,52.31826947262513,3463.0,No Facet
-87.0,Disruptor,No Facet,1,pos 4,1311,49.65675057208238,2936.0,No Facet
-88.0,Nyx Assassin,No Facet,1,pos 4,3491,53.88140933829848,3408.0,No Facet
-89.0,Naga Siren,No Facet,1,pos 4,27,51.851851851851855,0.0,No Facet
-90.0,Keeper of the Light,No Facet,1,pos 4,1211,50.94962840627581,2993.0,No Facet
-91.0,Io,No Facet,1,pos 4,840,49.523809523809526,2951.0,No Facet
-92.0,Visage,No Facet,1,pos 4,273,54.21245421245421,3035.0,No Facet
-93.0,Slark,No Facet,1,pos 4,408,47.30392156862745,2934.0,No Facet
-94.0,Medusa,No Facet,1,pos 4,4,0.0,0.0,No Facet
-95.0,Troll Warlord,No Facet,1,pos 4,6,33.333333333333336,0.0,No Facet
-96.0,Centaur Warrunner,No Facet,1,pos 4,38,36.8421052631579,0.0,No Facet
-97.0,Magnus,No Facet,1,pos 4,1438,50.06954102920723,2938.0,No Facet
-98.0,Timbersaw,No Facet,1,pos 4,53,33.9622641509434,2976.0,No Facet
-99.0,Bristleback,No Facet,1,pos 4,47,31.91489361702128,0.0,No Facet
-100.0,Tusk,No Facet,1,pos 4,3830,49.60835509138381,2757.0,No Facet
-101.0,Skywrath Mage,No Facet,1,pos 4,4128,47.650193798449614,2420.0,No Facet
-102.0,Abaddon,No Facet,1,pos 4,324,52.77777777777778,3019.0,No Facet
-103.0,Elder Titan,No Facet,1,pos 4,264,58.71212121212121,3076.0,No Facet
-104.0,Legion Commander,No Facet,1,pos 4,103,45.63106796116505,2978.0,No Facet
-105.0,Techies,No Facet,1,pos 4,4070,53.71007371007371,3442.0,No Facet
-106.0,Ember Spirit,No Facet,1,pos 4,99,42.42424242424242,2966.0,No Facet
-107.0,Earth Spirit,No Facet,1,pos 4,2161,52.01295696436835,3053.0,No Facet
-108.0,Underlord,No Facet,1,pos 4,71,38.0281690140845,2964.0,No Facet
-109.0,Terrorblade,No Facet,1,pos 4,38,31.57894736842105,0.0,No Facet
-110.0,Phoenix,No Facet,1,pos 4,3057,53.15668956493294,3248.0,No Facet
-111.0,Oracle,No Facet,1,pos 4,449,46.102449888641424,2899.0,No Facet
-112.0,Winter Wyvern,No Facet,1,pos 4,1572,53.30788804071247,3150.0,No Facet
-113.0,Arc Warden,No Facet,1,pos 4,56,51.785714285714285,3003.0,No Facet
-114.0,Monkey King,No Facet,1,pos 4,455,41.31868131868132,2801.0,No Facet
-119.0,Dark Willow,No Facet,1,pos 4,2068,49.806576402321085,2851.0,No Facet
-120.0,Pangolier,No Facet,1,pos 4,147,38.095238095238095,2920.0,No Facet
-121.0,Grimstroke,No Facet,1,pos 4,1706,53.45838218053928,3169.0,No Facet
-123.0,Hoodwink,No Facet,1,pos 4,4235,50.035419126328215,2724.0,No Facet
-126.0,Void Spirit,No Facet,1,pos 4,220,48.63636363636363,2978.0,No Facet
-128.0,Snapfire,No Facet,1,pos 4,2182,47.34188817598533,2667.0,No Facet
-129.0,Mars,No Facet,1,pos 4,185,43.24324324324324,2928.0,No Facet
-131.0,Ringmaster,No Facet,1,pos 4,1786,48.76819708846585,2853.0,No Facet
-135.0,Dawnbreaker,No Facet,1,pos 4,338,49.11242603550296,2981.0,No Facet
-136.0,Marci,No Facet,1,pos 4,889,45.556805399325086,2806.0,No Facet
-137.0,Primal Beast,No Facet,1,pos 4,101,46.53465346534654,2985.0,No Facet
-138.0,Muerta,No Facet,1,pos 4,515,46.601941747572816,2886.0,No Facet
-145.0,Kez,No Facet,1,pos 4,28,32.142857142857146,0.0,No Facet
-155.0,Largo,No Facet,1,pos 4,370,51.891891891891895,2997.0,No Facet
-1.0,Anti-Mage,No Facet,1,pos 5,51,41.1764705882353,2990.0,No Facet
-2.0,Axe,No Facet,1,pos 5,201,43.28358208955224,2948.0,No Facet
-3.0,Bane,No Facet,1,pos 5,1574,50.44472681067344,2929.0,No Facet
-4.0,Bloodseeker,No Facet,1,pos 5,14,35.714285714285715,0.0,No Facet
-5.0,Crystal Maiden,No Facet,1,pos 5,5560,49.53237410071942,2576.0,No Facet
-6.0,Drow Ranger,No Facet,1,pos 5,23,43.47826086956522,0.0,No Facet
-7.0,Earthshaker,No Facet,1,pos 5,563,50.62166962699823,2977.0,No Facet
-8.0,Juggernaut,No Facet,1,pos 5,32,37.5,0.0,No Facet
-9.0,Mirana,No Facet,1,pos 5,988,53.74493927125506,3094.0,No Facet
-10.0,Morphling,No Facet,1,pos 5,19,21.05263157894737,0.0,No Facet
-11.0,Shadow Fiend,No Facet,1,pos 5,67,32.83582089552239,2956.0,No Facet
-12.0,Phantom Lancer,No Facet,1,pos 5,27,40.74074074074074,0.0,No Facet
-13.0,Puck,No Facet,1,pos 5,24,37.5,0.0,No Facet
-14.0,Pudge,No Facet,1,pos 5,5879,49.63429154618132,2637.0,No Facet
-15.0,Razor,No Facet,1,pos 5,46,52.17391304347826,0.0,No Facet
-16.0,Sand King,No Facet,1,pos 5,14,64.28571428571429,0.0,No Facet
-17.0,Storm Spirit,No Facet,1,pos 5,21,61.90476190476191,0.0,No Facet
-18.0,Sven,No Facet,1,pos 5,24,41.66666666666666,0.0,No Facet
-19.0,Tiny,No Facet,1,pos 5,498,40.36144578313253,2781.0,No Facet
-20.0,Vengeful Spirit,No Facet,1,pos 5,1253,52.274541101356746,3011.0,No Facet
-21.0,Windranger,No Facet,1,pos 5,648,50.46296296296296,3004.0,No Facet
-22.0,Zeus,No Facet,1,pos 5,2301,51.93394176445024,3067.0,No Facet
-23.0,Kunkka,No Facet,1,pos 5,53,43.39622641509434,2988.0,No Facet
-25.0,Lina,No Facet,1,pos 5,399,50.87719298245614,2987.0,No Facet
-26.0,Lion,No Facet,1,pos 5,8668,48.43101061375173,2110.0,No Facet
-27.0,Shadow Shaman,No Facet,1,pos 5,6569,52.13883391688233,3236.0,No Facet
-28.0,Slardar,No Facet,1,pos 5,30,43.333333333333336,0.0,No Facet
-29.0,Tidehunter,No Facet,1,pos 5,106,41.50943396226416,2961.0,No Facet
-30.0,Witch Doctor,No Facet,1,pos 5,4207,50.24958402662229,2838.0,No Facet
-31.0,Lich,No Facet,1,pos 5,5955,50.22670025188917,2791.0,No Facet
-32.0,Riki,No Facet,1,pos 5,122,40.16393442622951,2939.0,No Facet
-33.0,Enigma,No Facet,1,pos 5,198,49.494949494949495,2989.0,No Facet
-34.0,Tinker,No Facet,1,pos 5,122,45.90163934426229,2978.0,No Facet
-35.0,Sniper,No Facet,1,pos 5,218,39.90825688073394,2903.0,No Facet
-36.0,Necrophos,No Facet,1,pos 5,43,39.53488372093023,0.0,No Facet
-37.0,Warlock,No Facet,1,pos 5,4511,48.76967412990468,2541.0,No Facet
-38.0,Beastmaster,No Facet,1,pos 5,41,41.46341463414634,0.0,No Facet
-39.0,Queen of Pain,No Facet,1,pos 5,287,49.47735191637631,2977.0,No Facet
-40.0,Venomancer,No Facet,1,pos 5,5290,48.77126654064272,2467.0,No Facet
-41.0,Faceless Void,No Facet,1,pos 5,90,38.888888888888886,2963.0,No Facet
-42.0,Wraith King,No Facet,1,pos 5,24,20.83333333333333,0.0,No Facet
-43.0,Death Prophet,No Facet,1,pos 5,190,47.36842105263158,2956.0,No Facet
-44.0,Phantom Assassin,No Facet,1,pos 5,44,18.181818181818183,0.0,No Facet
-45.0,Pugna,No Facet,1,pos 5,927,50.5933117583603,2952.0,No Facet
-46.0,Templar Assassin,No Facet,1,pos 5,12,16.666666666666668,0.0,No Facet
-47.0,Viper,No Facet,1,pos 5,202,48.51485148514851,2960.0,No Facet
-48.0,Luna,No Facet,1,pos 5,32,21.875,0.0,No Facet
-49.0,Dragon Knight,No Facet,1,pos 5,7,57.142857142857146,0.0,No Facet
-50.0,Dazzle,No Facet,1,pos 5,1887,53.15315315315316,3125.0,No Facet
-51.0,Clockwerk,No Facet,1,pos 5,916,50.43668122270742,2965.0,No Facet
-52.0,Leshrac,No Facet,1,pos 5,124,42.74193548387097,2954.0,No Facet
-53.0,Nature's Prophet,No Facet,1,pos 5,697,41.89383070301291,2758.0,No Facet
-54.0,Lifestealer,No Facet,1,pos 5,45,35.55555555555556,0.0,No Facet
-55.0,Dark Seer,No Facet,1,pos 5,10,60.0,0.0,No Facet
-56.0,Clinkz,No Facet,1,pos 5,43,44.18604651162791,0.0,No Facet
-57.0,Omniknight,No Facet,1,pos 5,817,54.34516523867809,3077.0,No Facet
-58.0,Enchantress,No Facet,1,pos 5,812,52.58620689655172,3066.0,No Facet
-59.0,Huskar,No Facet,1,pos 5,234,41.452991452991455,2922.0,No Facet
-60.0,Night Stalker,No Facet,1,pos 5,34,38.23529411764706,0.0,No Facet
-61.0,Broodmother,No Facet,1,pos 5,3,66.66666666666667,0.0,No Facet
-62.0,Bounty Hunter,No Facet,1,pos 5,564,51.77304964539008,3015.0,No Facet
-63.0,Weaver,No Facet,1,pos 5,701,44.79315263908702,2837.0,No Facet
-64.0,Jakiro,No Facet,1,pos 5,4330,46.327944572748265,2194.0,No Facet
-65.0,Batrider,No Facet,1,pos 5,601,53.577371048252914,3043.0,No Facet
-66.0,Chen,No Facet,1,pos 5,540,50.74074074074074,2987.0,No Facet
-67.0,Spectre,No Facet,1,pos 5,35,28.571428571428573,0.0,No Facet
-68.0,Ancient Apparition,No Facet,1,pos 5,2764,48.480463096960925,2702.0,No Facet
-69.0,Doom,No Facet,1,pos 5,166,47.59036144578313,2973.0,No Facet
-70.0,Ursa,No Facet,1,pos 5,41,39.02439024390244,0.0,No Facet
-71.0,Spirit Breaker,No Facet,1,pos 5,1672,50.35885167464115,2969.0,No Facet
-72.0,Gyrocopter,No Facet,1,pos 5,145,50.3448275862069,2993.0,No Facet
-73.0,Alchemist,No Facet,1,pos 5,898,47.99554565701559,2867.0,No Facet
-74.0,Invoker,No Facet,1,pos 5,952,52.83613445378151,3062.0,No Facet
-75.0,Silencer,No Facet,1,pos 5,3666,50.845608292416806,2929.0,No Facet
-76.0,Outworld Destroyer,No Facet,1,pos 5,25,28.0,0.0,No Facet
-77.0,Lycan,No Facet,1,pos 5,7,57.142857142857146,0.0,No Facet
-78.0,Brewmaster,No Facet,1,pos 5,52,51.92307692307692,3001.0,No Facet
-79.0,Shadow Demon,No Facet,1,pos 5,1660,48.55421686746988,2846.0,No Facet
-80.0,Lone Druid,No Facet,1,pos 5,53,45.283018867924525,2990.0,No Facet
-81.0,Chaos Knight,No Facet,1,pos 5,35,48.57142857142857,0.0,No Facet
-82.0,Meepo,No Facet,1,pos 5,11,45.45454545454545,0.0,No Facet
-83.0,Treant Protector,No Facet,1,pos 5,2097,53.88650453028136,3201.0,No Facet
-84.0,Ogre Magi,No Facet,1,pos 5,2879,49.14901007294199,2709.0,No Facet
-85.0,Undying,No Facet,1,pos 5,2815,51.29662522202487,3010.0,No Facet
-86.0,Rubick,No Facet,1,pos 5,4904,53.22185970636215,3372.0,No Facet
-87.0,Disruptor,No Facet,1,pos 5,5959,50.88102030542037,2970.0,No Facet
-88.0,Nyx Assassin,No Facet,1,pos 5,725,54.3448275862069,3094.0,No Facet
-89.0,Naga Siren,No Facet,1,pos 5,39,38.46153846153846,0.0,No Facet
-90.0,Keeper of the Light,No Facet,1,pos 5,491,50.5091649694501,2993.0,No Facet
-91.0,Io,No Facet,1,pos 5,2017,51.61130391670798,3053.0,No Facet
-92.0,Visage,No Facet,1,pos 5,164,53.65853658536585,3030.0,No Facet
-93.0,Slark,No Facet,1,pos 5,289,43.25259515570934,2901.0,No Facet
-94.0,Medusa,No Facet,1,pos 5,15,60.0,0.0,No Facet
-95.0,Troll Warlord,No Facet,1,pos 5,5,40.0,0.0,No Facet
-96.0,Centaur Warrunner,No Facet,1,pos 5,23,47.82608695652174,0.0,No Facet
-97.0,Magnus,No Facet,1,pos 5,878,46.9248291571754,2871.0,No Facet
-98.0,Timbersaw,No Facet,1,pos 5,19,31.57894736842105,0.0,No Facet
-99.0,Bristleback,No Facet,1,pos 5,10,10.0,0.0,No Facet
-100.0,Tusk,No Facet,1,pos 5,3379,50.51790470553418,2927.0,No Facet
-101.0,Skywrath Mage,No Facet,1,pos 5,1865,46.38069705093834,2637.0,No Facet
-102.0,Abaddon,No Facet,1,pos 5,1006,48.5089463220676,2877.0,No Facet
-103.0,Elder Titan,No Facet,1,pos 5,380,56.578947368421055,3064.0,No Facet
-104.0,Legion Commander,No Facet,1,pos 5,50,46.0,2989.0,No Facet
-105.0,Techies,No Facet,1,pos 5,2632,52.01367781155015,3071.0,No Facet
-106.0,Ember Spirit,No Facet,1,pos 5,53,49.0566037735849,2994.0,No Facet
-107.0,Earth Spirit,No Facet,1,pos 5,472,54.44915254237288,3064.0,No Facet
-108.0,Underlord,No Facet,1,pos 5,45,40.0,0.0,No Facet
-109.0,Terrorblade,No Facet,1,pos 5,19,26.31578947368421,0.0,No Facet
-110.0,Phoenix,No Facet,1,pos 5,2909,51.80474389824682,3095.0,No Facet
-111.0,Oracle,No Facet,1,pos 5,2464,51.86688311688312,3044.0,No Facet
-112.0,Winter Wyvern,No Facet,1,pos 5,2376,52.44107744107744,3031.0,No Facet
-113.0,Arc Warden,No Facet,1,pos 5,28,35.714285714285715,0.0,No Facet
-114.0,Monkey King,No Facet,1,pos 5,159,38.9937106918239,2914.0,No Facet
-119.0,Dark Willow,No Facet,1,pos 5,1380,48.84057971014493,2862.0,No Facet
-120.0,Pangolier,No Facet,1,pos 5,38,23.68421052631579,0.0,No Facet
-121.0,Grimstroke,No Facet,1,pos 5,2001,50.774612693653175,2955.0,No Facet
-123.0,Hoodwink,No Facet,1,pos 5,1974,50.60790273556231,2941.0,No Facet
-126.0,Void Spirit,No Facet,1,pos 5,106,43.39622641509434,2967.0,No Facet
-128.0,Snapfire,No Facet,1,pos 5,1749,48.94225271583762,2830.0,No Facet
-129.0,Mars,No Facet,1,pos 5,68,58.8235294117647,3022.0,No Facet
-131.0,Ringmaster,No Facet,1,pos 5,2766,49.276934201012295,2743.0,No Facet
-135.0,Dawnbreaker,No Facet,1,pos 5,243,54.32098765432099,3029.0,No Facet
-136.0,Marci,No Facet,1,pos 5,899,43.71523915461624,2731.0,No Facet
-137.0,Primal Beast,No Facet,1,pos 5,32,50.0,0.0,No Facet
-138.0,Muerta,No Facet,1,pos 5,230,45.65217391304348,2941.0,No Facet
-145.0,Kez,No Facet,1,pos 5,33,30.303030303030305,0.0,No Facet
-155.0,Largo,No Facet,1,pos 5,483,54.24430641821946,3058.0,No Facet
+1,Anti-Mage,No Facet,1,pos 1,1111,47.16471647164717,2846.0,No Facet
+4,Bloodseeker,No Facet,1,pos 1,340,54.11764705882353,3051.0,No Facet
+6,Drow Ranger,No Facet,1,pos 1,1790,54.41340782122905,3264.0,No Facet
+8,Juggernaut,No Facet,1,pos 1,1610,50.43478260869565,3003.0,No Facet
+9,Mirana,No Facet,1,pos 1,94,47.87234042553192,2994.0,No Facet
+10,Morphling,No Facet,1,pos 1,696,47.270114942528735,2911.0,No Facet
+11,Shadow Fiend,No Facet,1,pos 1,804,49.004975124378106,2947.0,No Facet
+12,Phantom Lancer,No Facet,1,pos 1,1561,51.31326073030109,3034.0,No Facet
+14,Pudge,No Facet,1,pos 1,80,36.25,2958.0,No Facet
+15,Razor,No Facet,1,pos 1,127,50.39370078740158,3006.0,No Facet
+17,Storm Spirit,No Facet,1,pos 1,25,40.0,0.0,No Facet
+18,Sven,No Facet,1,pos 1,412,46.35922330097088,2928.0,No Facet
+19,Tiny,No Facet,1,pos 1,1421,46.02392681210415,2756.0,No Facet
+20,Vengeful Spirit,No Facet,1,pos 1,183,50.81967213114754,3006.0,No Facet
+21,Windranger,No Facet,1,pos 1,446,49.10313901345292,2971.0,No Facet
+22,Zeus,No Facet,1,pos 1,23,43.47826086956522,0.0,No Facet
+25,Lina,No Facet,1,pos 1,70,45.71428571428572,2990.0,No Facet
+26,Lion,No Facet,1,pos 1,20,35.0,0.0,No Facet
+32,Riki,No Facet,1,pos 1,231,48.05194805194805,2981.0,No Facet
+35,Sniper,No Facet,1,pos 1,248,52.82258064516129,3020.0,No Facet
+36,Necrophos,No Facet,1,pos 1,197,53.2994923857868,3022.0,No Facet
+38,Beastmaster,No Facet,1,pos 1,166,46.3855421686747,2972.0,No Facet
+39,Queen of Pain,No Facet,1,pos 1,93,41.935483870967744,2970.0,No Facet
+41,Faceless Void,No Facet,1,pos 1,2840,52.53521126760563,3237.0,No Facet
+42,Wraith King,No Facet,1,pos 1,389,51.670951156812336,3016.0,No Facet
+44,Phantom Assassin,No Facet,1,pos 1,1320,48.03030303030303,2869.0,No Facet
+46,Templar Assassin,No Facet,1,pos 1,556,47.12230215827338,2936.0,No Facet
+47,Viper,No Facet,1,pos 1,43,55.81395348837209,0.0,No Facet
+48,Luna,No Facet,1,pos 1,1659,51.59734779987944,3066.0,No Facet
+49,Dragon Knight,No Facet,1,pos 1,60,41.66666666666666,2979.0,No Facet
+53,Nature's Prophet,No Facet,1,pos 1,250,36.0,2859.0,No Facet
+54,Lifestealer,No Facet,1,pos 1,1739,54.16906267970098,3231.0,No Facet
+56,Clinkz,No Facet,1,pos 1,526,53.42205323193917,3065.0,No Facet
+59,Huskar,No Facet,1,pos 1,91,48.35164835164835,2995.0,No Facet
+61,Broodmother,No Facet,1,pos 1,101,51.48514851485149,3002.0,No Facet
+63,Weaver,No Facet,1,pos 1,577,49.22010398613518,2965.0,No Facet
+67,Spectre,No Facet,1,pos 1,790,53.79746835443038,3109.0,No Facet
+69,Doom,No Facet,1,pos 1,59,42.3728813559322,2982.0,No Facet
+70,Ursa,No Facet,1,pos 1,1168,49.48630136986301,2946.0,No Facet
+72,Gyrocopter,No Facet,1,pos 1,329,43.76899696048632,2913.0,No Facet
+73,Alchemist,No Facet,1,pos 1,972,45.88477366255144,2812.0,No Facet
+80,Lone Druid,No Facet,1,pos 1,701,48.78744650499287,2953.0,No Facet
+81,Chaos Knight,No Facet,1,pos 1,149,51.006711409395976,3003.0,No Facet
+82,Meepo,No Facet,1,pos 1,74,47.2972972972973,2991.0,No Facet
+89,Naga Siren,No Facet,1,pos 1,215,59.53488372093023,3074.0,No Facet
+91,Io,No Facet,1,pos 1,33,75.75757575757575,0.0,No Facet
+93,Slark,No Facet,1,pos 1,2049,51.634943875061005,3090.0,No Facet
+94,Medusa,No Facet,1,pos 1,470,50.85106382978724,3012.0,No Facet
+95,Troll Warlord,No Facet,1,pos 1,202,42.07920792079208,2931.0,No Facet
+97,Magnus,No Facet,1,pos 1,79,48.10126582278481,2993.0,No Facet
+99,Bristleback,No Facet,1,pos 1,63,52.38095238095238,3006.0,No Facet
+102,Abaddon,No Facet,1,pos 1,43,53.48837209302326,0.0,No Facet
+104,Legion Commander,No Facet,1,pos 1,36,52.77777777777778,0.0,No Facet
+109,Terrorblade,No Facet,1,pos 1,939,51.01171458998935,3032.0,No Facet
+113,Arc Warden,No Facet,1,pos 1,49,46.93877551020408,0.0,No Facet
+114,Monkey King,No Facet,1,pos 1,1320,49.16666666666666,2923.0,No Facet
+126,Void Spirit,No Facet,1,pos 1,50,46.0,2991.0,No Facet
+135,Dawnbreaker,No Facet,1,pos 1,30,46.66666666666666,0.0,No Facet
+136,Marci,No Facet,1,pos 1,44,59.09090909090909,0.0,No Facet
+138,Muerta,No Facet,1,pos 1,1061,48.91611687087653,2938.0,No Facet
+145,Kez,No Facet,1,pos 1,1056,45.92803030303031,2813.0,No Facet
+1,Anti-Mage,No Facet,1,pos 2,54,53.7037037037037,3008.0,No Facet
+2,Axe,No Facet,1,pos 2,55,47.27272727272727,2993.0,No Facet
+3,Bane,No Facet,1,pos 2,29,55.172413793103445,0.0,No Facet
+4,Bloodseeker,No Facet,1,pos 2,37,56.75675675675676,0.0,No Facet
+6,Drow Ranger,No Facet,1,pos 2,43,53.48837209302326,0.0,No Facet
+7,Earthshaker,No Facet,1,pos 2,405,52.83950617283951,3045.0,No Facet
+9,Mirana,No Facet,1,pos 2,75,46.66666666666666,2989.0,No Facet
+10,Morphling,No Facet,1,pos 2,20,30.0,0.0,No Facet
+11,Shadow Fiend,No Facet,1,pos 2,840,48.69047619047619,2939.0,No Facet
+13,Puck,No Facet,1,pos 2,1160,52.75862068965517,3114.0,No Facet
+14,Pudge,No Facet,1,pos 2,361,53.18559556786703,3042.0,No Facet
+15,Razor,No Facet,1,pos 2,85,37.64705882352941,2953.0,No Facet
+16,Sand King,No Facet,1,pos 2,301,41.86046511627907,2893.0,No Facet
+17,Storm Spirit,No Facet,1,pos 2,1516,48.87862796833773,2902.0,No Facet
+19,Tiny,No Facet,1,pos 2,394,44.16243654822335,2902.0,No Facet
+20,Vengeful Spirit,No Facet,1,pos 2,43,37.2093023255814,0.0,No Facet
+21,Windranger,No Facet,1,pos 2,353,50.991501416430594,3008.0,No Facet
+22,Zeus,No Facet,1,pos 2,646,44.58204334365325,2849.0,No Facet
+23,Kunkka,No Facet,1,pos 2,348,50.57471264367816,3001.0,No Facet
+25,Lina,No Facet,1,pos 2,1239,49.95964487489911,2973.0,No Facet
+26,Lion,No Facet,1,pos 2,514,52.33463035019455,3047.0,No Facet
+28,Slardar,No Facet,1,pos 2,244,54.91803278688525,3046.0,No Facet
+29,Tidehunter,No Facet,1,pos 2,45,55.55555555555556,0.0,No Facet
+32,Riki,No Facet,1,pos 2,158,51.265822784810126,3001.0,No Facet
+33,Enigma,No Facet,1,pos 2,22,59.09090909090909,0.0,No Facet
+34,Tinker,No Facet,1,pos 2,674,50.89020771513353,3008.0,No Facet
+35,Sniper,No Facet,1,pos 2,1117,53.35720680393912,3129.0,No Facet
+36,Necrophos,No Facet,1,pos 2,1187,48.9469250210615,2936.0,No Facet
+38,Beastmaster,No Facet,1,pos 2,368,43.75,2896.0,No Facet
+39,Queen of Pain,No Facet,1,pos 2,2821,46.93371144984048,2604.0,No Facet
+41,Faceless Void,No Facet,1,pos 2,24,45.833333333333336,0.0,No Facet
+43,Death Prophet,No Facet,1,pos 2,357,47.05882352941177,2955.0,No Facet
+45,Pugna,No Facet,1,pos 2,65,44.61538461538461,2982.0,No Facet
+46,Templar Assassin,No Facet,1,pos 2,93,50.53763440860215,3000.0,No Facet
+47,Viper,No Facet,1,pos 2,567,50.44091710758377,3000.0,No Facet
+48,Luna,No Facet,1,pos 2,27,25.925925925925927,0.0,No Facet
+49,Dragon Knight,No Facet,1,pos 2,105,47.61904761904762,2988.0,No Facet
+52,Leshrac,No Facet,1,pos 2,359,46.239554317548745,2936.0,No Facet
+53,Nature's Prophet,No Facet,1,pos 2,221,47.05882352941177,2966.0,No Facet
+56,Clinkz,No Facet,1,pos 2,107,47.66355140186916,2990.0,No Facet
+57,Omniknight,No Facet,1,pos 2,21,47.61904761904762,0.0,No Facet
+58,Enchantress,No Facet,1,pos 2,30,43.333333333333336,0.0,No Facet
+59,Huskar,No Facet,1,pos 2,893,51.73572228443449,3047.0,No Facet
+60,Night Stalker,No Facet,1,pos 2,68,61.76470588235294,3030.0,No Facet
+61,Broodmother,No Facet,1,pos 2,188,50.53191489361702,3004.0,No Facet
+63,Weaver,No Facet,1,pos 2,35,45.71428571428572,0.0,No Facet
+64,Jakiro,No Facet,1,pos 2,20,40.0,0.0,No Facet
+65,Batrider,No Facet,1,pos 2,220,44.09090909090909,2947.0,No Facet
+68,Ancient Apparition,No Facet,1,pos 2,22,45.45454545454545,0.0,No Facet
+69,Doom,No Facet,1,pos 2,42,47.61904761904762,0.0,No Facet
+70,Ursa,No Facet,1,pos 2,36,36.11111111111112,0.0,No Facet
+71,Spirit Breaker,No Facet,1,pos 2,56,50.0,2998.0,No Facet
+73,Alchemist,No Facet,1,pos 2,229,43.66812227074236,2940.0,No Facet
+74,Invoker,No Facet,1,pos 2,2753,55.321467490010896,3518.0,No Facet
+75,Silencer,No Facet,1,pos 2,85,42.35294117647059,2976.0,No Facet
+76,Outworld Destroyer,No Facet,1,pos 2,530,52.075471698113205,3035.0,No Facet
+77,Lycan,No Facet,1,pos 2,87,52.87356321839081,3004.0,No Facet
+78,Brewmaster,No Facet,1,pos 2,44,52.27272727272727,0.0,No Facet
+80,Lone Druid,No Facet,1,pos 2,217,50.69124423963134,3006.0,No Facet
+82,Meepo,No Facet,1,pos 2,197,49.746192893401016,2992.0,No Facet
+84,Ogre Magi,No Facet,1,pos 2,65,49.23076923076923,2998.0,No Facet
+85,Undying,No Facet,1,pos 2,38,44.73684210526316,0.0,No Facet
+86,Rubick,No Facet,1,pos 2,564,49.11347517730496,2976.0,No Facet
+88,Nyx Assassin,No Facet,1,pos 2,108,48.14814814814815,2991.0,No Facet
+90,Keeper of the Light,No Facet,1,pos 2,821,56.27283800243605,3189.0,No Facet
+91,Io,No Facet,1,pos 2,160,52.5,3014.0,No Facet
+92,Visage,No Facet,1,pos 2,151,61.58940397350993,3065.0,No Facet
+93,Slark,No Facet,1,pos 2,103,43.68932038834952,2971.0,No Facet
+97,Magnus,No Facet,1,pos 2,386,53.10880829015544,3043.0,No Facet
+98,Timbersaw,No Facet,1,pos 2,81,37.03703703703704,2955.0,No Facet
+99,Bristleback,No Facet,1,pos 2,61,47.540983606557376,2991.0,No Facet
+100,Tusk,No Facet,1,pos 2,78,46.15384615384615,2983.0,No Facet
+101,Skywrath Mage,No Facet,1,pos 2,245,46.93877551020408,2963.0,No Facet
+104,Legion Commander,No Facet,1,pos 2,85,51.76470588235294,3006.0,No Facet
+105,Techies,No Facet,1,pos 2,84,47.61904761904762,2991.0,No Facet
+106,Ember Spirit,No Facet,1,pos 2,1955,49.82097186700767,2941.0,No Facet
+107,Earth Spirit,No Facet,1,pos 2,297,57.57575757575758,3075.0,No Facet
+108,Underlord,No Facet,1,pos 2,34,32.35294117647059,0.0,No Facet
+110,Phoenix,No Facet,1,pos 2,263,52.09125475285171,3012.0,No Facet
+112,Winter Wyvern,No Facet,1,pos 2,61,55.73770491803279,3012.0,No Facet
+113,Arc Warden,No Facet,1,pos 2,352,48.29545454545455,2968.0,No Facet
+114,Monkey King,No Facet,1,pos 2,510,49.01960784313726,2972.0,No Facet
+119,Dark Willow,No Facet,1,pos 2,22,54.54545454545455,0.0,No Facet
+120,Pangolier,No Facet,1,pos 2,1443,48.51004851004851,2883.0,No Facet
+121,Grimstroke,No Facet,1,pos 2,20,55.0,0.0,No Facet
+123,Hoodwink,No Facet,1,pos 2,50,38.0,2975.0,No Facet
+126,Void Spirit,No Facet,1,pos 2,1532,49.347258485639685,2916.0,No Facet
+128,Snapfire,No Facet,1,pos 2,290,53.44827586206897,3028.0,No Facet
+129,Mars,No Facet,1,pos 2,83,51.80722891566265,3008.0,No Facet
+135,Dawnbreaker,No Facet,1,pos 2,163,49.079754601227,2989.0,No Facet
+136,Marci,No Facet,1,pos 2,182,59.34065934065934,3064.0,No Facet
+137,Primal Beast,No Facet,1,pos 2,293,46.07508532423208,2941.0,No Facet
+138,Muerta,No Facet,1,pos 2,56,48.21428571428572,2997.0,No Facet
+145,Kez,No Facet,1,pos 2,422,53.55450236966825,3060.0,No Facet
+155,Largo,No Facet,1,pos 2,36,36.11111111111112,0.0,No Facet
+2,Axe,No Facet,1,pos 3,2161,52.47570569180935,3179.0,No Facet
+4,Bloodseeker,No Facet,1,pos 3,44,56.81818181818182,0.0,No Facet
+7,Earthshaker,No Facet,1,pos 3,494,53.84615384615385,3062.0,No Facet
+9,Mirana,No Facet,1,pos 3,42,38.095238095238095,0.0,No Facet
+11,Shadow Fiend,No Facet,1,pos 3,34,35.294117647058826,0.0,No Facet
+14,Pudge,No Facet,1,pos 3,913,51.1500547645126,3038.0,No Facet
+15,Razor,No Facet,1,pos 3,441,50.34013605442177,2997.0,No Facet
+16,Sand King,No Facet,1,pos 3,401,47.63092269326683,2955.0,No Facet
+19,Tiny,No Facet,1,pos 3,241,41.07883817427386,2914.0,No Facet
+20,Vengeful Spirit,No Facet,1,pos 3,224,47.32142857142857,2968.0,No Facet
+21,Windranger,No Facet,1,pos 3,384,50.78125,3005.0,No Facet
+22,Zeus,No Facet,1,pos 3,32,37.5,0.0,No Facet
+23,Kunkka,No Facet,1,pos 3,484,51.446280991735534,3023.0,No Facet
+26,Lion,No Facet,1,pos 3,45,46.66666666666666,0.0,No Facet
+28,Slardar,No Facet,1,pos 3,1367,49.8902706656913,2970.0,No Facet
+29,Tidehunter,No Facet,1,pos 3,2051,49.00048756704047,2894.0,No Facet
+32,Riki,No Facet,1,pos 3,108,48.14814814814815,2991.0,No Facet
+33,Enigma,No Facet,1,pos 3,260,53.46153846153846,3030.0,No Facet
+35,Sniper,No Facet,1,pos 3,23,34.78260869565217,0.0,No Facet
+36,Necrophos,No Facet,1,pos 3,739,51.82679296346414,3039.0,No Facet
+38,Beastmaster,No Facet,1,pos 3,774,47.02842377260982,2893.0,No Facet
+39,Queen of Pain,No Facet,1,pos 3,214,47.19626168224299,2977.0,No Facet
+40,Venomancer,No Facet,1,pos 3,92,35.869565217391305,2948.0,No Facet
+41,Faceless Void,No Facet,1,pos 3,92,48.91304347826087,2994.0,No Facet
+42,Wraith King,No Facet,1,pos 3,351,52.136752136752136,3022.0,No Facet
+43,Death Prophet,No Facet,1,pos 3,398,51.005025125628144,3010.0,No Facet
+45,Pugna,No Facet,1,pos 3,20,40.0,0.0,No Facet
+47,Viper,No Facet,1,pos 3,343,51.02040816326531,3004.0,No Facet
+49,Dragon Knight,No Facet,1,pos 3,114,49.12280701754386,2995.0,No Facet
+51,Clockwerk,No Facet,1,pos 3,44,36.36363636363637,0.0,No Facet
+52,Leshrac,No Facet,1,pos 3,24,41.66666666666666,0.0,No Facet
+53,Nature's Prophet,No Facet,1,pos 3,148,38.51351351351352,2924.0,No Facet
+55,Dark Seer,No Facet,1,pos 3,449,51.67037861915368,3020.0,No Facet
+57,Omniknight,No Facet,1,pos 3,186,49.46236559139785,2987.0,No Facet
+58,Enchantress,No Facet,1,pos 3,60,56.66666666666666,3016.0,No Facet
+59,Huskar,No Facet,1,pos 3,158,49.36708860759494,2991.0,No Facet
+60,Night Stalker,No Facet,1,pos 3,1495,54.11371237458194,3218.0,No Facet
+61,Broodmother,No Facet,1,pos 3,53,45.283018867924525,2987.0,No Facet
+62,Bounty Hunter,No Facet,1,pos 3,25,48.0,0.0,No Facet
+63,Weaver,No Facet,1,pos 3,105,43.80952380952381,2977.0,No Facet
+65,Batrider,No Facet,1,pos 3,381,47.76902887139108,2961.0,No Facet
+69,Doom,No Facet,1,pos 3,1094,52.55941499085923,3083.0,No Facet
+70,Ursa,No Facet,1,pos 3,60,51.66666666666666,3001.0,No Facet
+71,Spirit Breaker,No Facet,1,pos 3,260,45.38461538461539,2953.0,No Facet
+73,Alchemist,No Facet,1,pos 3,340,47.05882352941177,2951.0,No Facet
+74,Invoker,No Facet,1,pos 3,46,56.52173913043478,0.0,No Facet
+75,Silencer,No Facet,1,pos 3,22,81.81818181818181,0.0,No Facet
+77,Lycan,No Facet,1,pos 3,332,50.60240963855421,3010.0,No Facet
+78,Brewmaster,No Facet,1,pos 3,342,52.046783625731,3025.0,No Facet
+80,Lone Druid,No Facet,1,pos 3,146,48.63013698630137,2988.0,No Facet
+81,Chaos Knight,No Facet,1,pos 3,134,50.74626865671642,3004.0,No Facet
+83,Treant Protector,No Facet,1,pos 3,23,43.47826086956522,0.0,No Facet
+84,Ogre Magi,No Facet,1,pos 3,134,51.492537313432834,3001.0,No Facet
+85,Undying,No Facet,1,pos 3,302,47.01986754966888,2958.0,No Facet
+86,Rubick,No Facet,1,pos 3,67,43.28358208955224,2982.0,No Facet
+88,Nyx Assassin,No Facet,1,pos 3,85,54.11764705882353,3010.0,No Facet
+90,Keeper of the Light,No Facet,1,pos 3,38,47.36842105263158,0.0,No Facet
+91,Io,No Facet,1,pos 3,46,43.47826086956522,0.0,No Facet
+92,Visage,No Facet,1,pos 3,184,51.630434782608695,3012.0,No Facet
+93,Slark,No Facet,1,pos 3,100,53.0,3010.0,No Facet
+96,Centaur Warrunner,No Facet,1,pos 3,678,47.05014749262537,2900.0,No Facet
+97,Magnus,No Facet,1,pos 3,1074,51.86219739292365,3063.0,No Facet
+98,Timbersaw,No Facet,1,pos 3,598,47.491638795986624,2927.0,No Facet
+99,Bristleback,No Facet,1,pos 3,941,41.976620616365565,2676.0,No Facet
+100,Tusk,No Facet,1,pos 3,110,50.90909090909091,3001.0,No Facet
+101,Skywrath Mage,No Facet,1,pos 3,26,42.30769230769231,0.0,No Facet
+102,Abaddon,No Facet,1,pos 3,109,48.62385321100918,2991.0,No Facet
+103,Elder Titan,No Facet,1,pos 3,90,61.11111111111112,3038.0,No Facet
+104,Legion Commander,No Facet,1,pos 3,1513,53.13945803040317,3144.0,No Facet
+105,Techies,No Facet,1,pos 3,27,51.851851851851855,0.0,No Facet
+106,Ember Spirit,No Facet,1,pos 3,48,43.75,0.0,No Facet
+107,Earth Spirit,No Facet,1,pos 3,107,59.81308411214953,3040.0,No Facet
+108,Underlord,No Facet,1,pos 3,1270,48.66141732283464,2894.0,No Facet
+110,Phoenix,No Facet,1,pos 3,568,47.88732394366197,2933.0,No Facet
+112,Winter Wyvern,No Facet,1,pos 3,154,63.63636363636363,3081.0,No Facet
+114,Monkey King,No Facet,1,pos 3,106,47.16981132075472,2984.0,No Facet
+120,Pangolier,No Facet,1,pos 3,1135,46.43171806167401,2821.0,No Facet
+123,Hoodwink,No Facet,1,pos 3,39,46.15384615384615,0.0,No Facet
+126,Void Spirit,No Facet,1,pos 3,213,49.29577464788732,2989.0,No Facet
+128,Snapfire,No Facet,1,pos 3,165,55.15151515151515,3029.0,No Facet
+129,Mars,No Facet,1,pos 3,1671,45.42190305206463,2662.0,No Facet
+135,Dawnbreaker,No Facet,1,pos 3,2497,53.9847817380857,3330.0,No Facet
+136,Marci,No Facet,1,pos 3,108,47.22222222222222,2987.0,No Facet
+137,Primal Beast,No Facet,1,pos 3,639,51.79968701095461,3035.0,No Facet
+145,Kez,No Facet,1,pos 3,71,43.66197183098591,2980.0,No Facet
+155,Largo,No Facet,1,pos 3,180,52.77777777777778,3020.0,No Facet
+2,Axe,No Facet,1,pos 4,113,48.67256637168141,2994.0,No Facet
+3,Bane,No Facet,1,pos 4,181,48.06629834254144,2984.0,No Facet
+5,Crystal Maiden,No Facet,1,pos 4,311,49.19614147909968,2976.0,No Facet
+7,Earthshaker,No Facet,1,pos 4,829,50.78407720144753,3006.0,No Facet
+9,Mirana,No Facet,1,pos 4,552,47.28260869565217,2923.0,No Facet
+14,Pudge,No Facet,1,pos 4,2065,50.2179176755448,2979.0,No Facet
+19,Tiny,No Facet,1,pos 4,390,46.92307692307692,2945.0,No Facet
+20,Vengeful Spirit,No Facet,1,pos 4,296,57.0945945945946,3071.0,No Facet
+21,Windranger,No Facet,1,pos 4,811,47.71886559802713,2899.0,No Facet
+22,Zeus,No Facet,1,pos 4,1528,52.29057591623037,3116.0,No Facet
+23,Kunkka,No Facet,1,pos 4,30,53.333333333333336,0.0,No Facet
+25,Lina,No Facet,1,pos 4,202,42.57425742574257,2933.0,No Facet
+26,Lion,No Facet,1,pos 4,1502,49.53395472703063,2936.0,No Facet
+27,Shadow Shaman,No Facet,1,pos 4,723,48.82434301521438,2945.0,No Facet
+28,Slardar,No Facet,1,pos 4,20,45.0,0.0,No Facet
+29,Tidehunter,No Facet,1,pos 4,35,54.285714285714285,0.0,No Facet
+30,Witch Doctor,No Facet,1,pos 4,373,47.98927613941019,2961.0,No Facet
+31,Lich,No Facet,1,pos 4,374,55.61497326203209,3077.0,No Facet
+32,Riki,No Facet,1,pos 4,78,48.71794871794872,2996.0,No Facet
+33,Enigma,No Facet,1,pos 4,73,50.68493150684932,3001.0,No Facet
+34,Tinker,No Facet,1,pos 4,27,40.74074074074074,0.0,No Facet
+35,Sniper,No Facet,1,pos 4,123,40.65040650406504,2951.0,No Facet
+37,Warlock,No Facet,1,pos 4,128,42.96875,2964.0,No Facet
+39,Queen of Pain,No Facet,1,pos 4,256,46.484375,2963.0,No Facet
+40,Venomancer,No Facet,1,pos 4,544,46.875,2912.0,No Facet
+41,Faceless Void,No Facet,1,pos 4,30,66.66666666666667,0.0,No Facet
+43,Death Prophet,No Facet,1,pos 4,29,34.48275862068966,0.0,No Facet
+45,Pugna,No Facet,1,pos 4,179,50.83798882681564,3004.0,No Facet
+47,Viper,No Facet,1,pos 4,44,45.45454545454545,0.0,No Facet
+50,Dazzle,No Facet,1,pos 4,100,54.0,3018.0,No Facet
+51,Clockwerk,No Facet,1,pos 4,341,51.02639296187683,3004.0,No Facet
+52,Leshrac,No Facet,1,pos 4,29,51.72413793103448,0.0,No Facet
+53,Nature's Prophet,No Facet,1,pos 4,363,41.04683195592286,2871.0,No Facet
+57,Omniknight,No Facet,1,pos 4,67,43.28358208955224,2984.0,No Facet
+58,Enchantress,No Facet,1,pos 4,125,54.4,3021.0,No Facet
+59,Huskar,No Facet,1,pos 4,33,51.51515151515152,0.0,No Facet
+62,Bounty Hunter,No Facet,1,pos 4,786,54.58015267175573,3125.0,No Facet
+63,Weaver,No Facet,1,pos 4,347,46.97406340057637,2957.0,No Facet
+64,Jakiro,No Facet,1,pos 4,233,47.63948497854077,2983.0,No Facet
+65,Batrider,No Facet,1,pos 4,194,39.175257731958766,2909.0,No Facet
+68,Ancient Apparition,No Facet,1,pos 4,204,47.05882352941177,2974.0,No Facet
+69,Doom,No Facet,1,pos 4,60,56.66666666666666,3017.0,No Facet
+71,Spirit Breaker,No Facet,1,pos 4,1906,55.08919202518363,3339.0,No Facet
+72,Gyrocopter,No Facet,1,pos 4,56,57.142857142857146,3012.0,No Facet
+73,Alchemist,No Facet,1,pos 4,201,42.78606965174129,2932.0,No Facet
+74,Invoker,No Facet,1,pos 4,824,50.970873786407765,3008.0,No Facet
+75,Silencer,No Facet,1,pos 4,516,48.06201550387597,2949.0,No Facet
+78,Brewmaster,No Facet,1,pos 4,24,62.5,0.0,No Facet
+79,Shadow Demon,No Facet,1,pos 4,222,41.891891891891895,2921.0,No Facet
+80,Lone Druid,No Facet,1,pos 4,22,45.45454545454545,0.0,No Facet
+83,Treant Protector,No Facet,1,pos 4,107,51.401869158878505,3005.0,No Facet
+84,Ogre Magi,No Facet,1,pos 4,343,49.27113702623907,2997.0,No Facet
+85,Undying,No Facet,1,pos 4,365,55.06849315068493,3061.0,No Facet
+86,Rubick,No Facet,1,pos 4,3155,52.48811410459588,3253.0,No Facet
+87,Disruptor,No Facet,1,pos 4,283,49.82332155477032,2992.0,No Facet
+88,Nyx Assassin,No Facet,1,pos 4,707,52.05091937765205,3043.0,No Facet
+90,Keeper of the Light,No Facet,1,pos 4,240,47.91666666666666,2972.0,No Facet
+91,Io,No Facet,1,pos 4,177,54.80225988700565,3028.0,No Facet
+92,Visage,No Facet,1,pos 4,77,54.54545454545455,3009.0,No Facet
+93,Slark,No Facet,1,pos 4,88,50.0,2998.0,No Facet
+97,Magnus,No Facet,1,pos 4,364,51.64835164835165,3008.0,No Facet
+100,Tusk,No Facet,1,pos 4,824,46.237864077669904,2854.0,No Facet
+101,Skywrath Mage,No Facet,1,pos 4,1055,47.677725118483416,2875.0,No Facet
+102,Abaddon,No Facet,1,pos 4,83,49.397590361445786,2994.0,No Facet
+103,Elder Titan,No Facet,1,pos 4,76,46.05263157894737,2983.0,No Facet
+104,Legion Commander,No Facet,1,pos 4,25,40.0,0.0,No Facet
+105,Techies,No Facet,1,pos 4,1197,48.78863826232247,2915.0,No Facet
+106,Ember Spirit,No Facet,1,pos 4,28,57.142857142857146,0.0,No Facet
+107,Earth Spirit,No Facet,1,pos 4,543,52.48618784530387,3044.0,No Facet
+110,Phoenix,No Facet,1,pos 4,760,49.3421052631579,2959.0,No Facet
+111,Oracle,No Facet,1,pos 4,94,42.5531914893617,2974.0,No Facet
+112,Winter Wyvern,No Facet,1,pos 4,352,53.69318181818182,3044.0,No Facet
+114,Monkey King,No Facet,1,pos 4,129,39.53488372093023,2944.0,No Facet
+119,Dark Willow,No Facet,1,pos 4,468,51.282051282051285,3007.0,No Facet
+120,Pangolier,No Facet,1,pos 4,40,32.5,0.0,No Facet
+121,Grimstroke,No Facet,1,pos 4,494,49.797570850202426,2988.0,No Facet
+123,Hoodwink,No Facet,1,pos 4,1444,51.86980609418283,3101.0,No Facet
+126,Void Spirit,No Facet,1,pos 4,58,44.82758620689656,2987.0,No Facet
+128,Snapfire,No Facet,1,pos 4,821,49.81729598051157,2987.0,No Facet
+129,Mars,No Facet,1,pos 4,59,30.508474576271187,2955.0,No Facet
+131,Ringmaster,No Facet,1,pos 4,437,51.02974828375286,3013.0,No Facet
+135,Dawnbreaker,No Facet,1,pos 4,105,44.76190476190476,2976.0,No Facet
+136,Marci,No Facet,1,pos 4,131,44.27480916030535,2965.0,No Facet
+137,Primal Beast,No Facet,1,pos 4,22,36.36363636363637,0.0,No Facet
+138,Muerta,No Facet,1,pos 4,144,45.138888888888886,2968.0,No Facet
+155,Largo,No Facet,1,pos 4,137,51.824817518248175,3010.0,No Facet
+2,Axe,No Facet,1,pos 5,63,52.38095238095238,3003.0,No Facet
+3,Bane,No Facet,1,pos 5,429,54.07925407925408,3068.0,No Facet
+5,Crystal Maiden,No Facet,1,pos 5,1340,47.3134328358209,2832.0,No Facet
+7,Earthshaker,No Facet,1,pos 5,134,45.52238805970149,2971.0,No Facet
+9,Mirana,No Facet,1,pos 5,269,57.24907063197026,3075.0,No Facet
+14,Pudge,No Facet,1,pos 5,1486,48.58681022880215,2874.0,No Facet
+19,Tiny,No Facet,1,pos 5,96,39.583333333333336,2956.0,No Facet
+20,Vengeful Spirit,No Facet,1,pos 5,295,52.20338983050848,3026.0,No Facet
+21,Windranger,No Facet,1,pos 5,284,42.95774647887324,2916.0,No Facet
+22,Zeus,No Facet,1,pos 5,760,53.68421052631579,3093.0,No Facet
+25,Lina,No Facet,1,pos 5,106,47.16981132075472,2982.0,No Facet
+26,Lion,No Facet,1,pos 5,2180,48.11926605504587,2803.0,No Facet
+27,Shadow Shaman,No Facet,1,pos 5,1489,51.84687709872398,3082.0,No Facet
+30,Witch Doctor,No Facet,1,pos 5,1136,48.063380281690144,2889.0,No Facet
+31,Lich,No Facet,1,pos 5,1347,52.48700816629548,3101.0,No Facet
+32,Riki,No Facet,1,pos 5,22,40.90909090909091,0.0,No Facet
+33,Enigma,No Facet,1,pos 5,42,61.90476190476191,0.0,No Facet
+35,Sniper,No Facet,1,pos 5,56,35.714285714285715,2966.0,No Facet
+37,Warlock,No Facet,1,pos 5,863,46.929316338354575,2865.0,No Facet
+38,Beastmaster,No Facet,1,pos 5,22,45.45454545454545,0.0,No Facet
+39,Queen of Pain,No Facet,1,pos 5,120,39.16666666666666,2946.0,No Facet
+40,Venomancer,No Facet,1,pos 5,877,46.40820980615735,2850.0,No Facet
+41,Faceless Void,No Facet,1,pos 5,31,48.38709677419355,0.0,No Facet
+43,Death Prophet,No Facet,1,pos 5,38,39.47368421052632,0.0,No Facet
+45,Pugna,No Facet,1,pos 5,219,54.7945205479452,3039.0,No Facet
+47,Viper,No Facet,1,pos 5,47,44.680851063829785,0.0,No Facet
+50,Dazzle,No Facet,1,pos 5,421,49.4061757719715,2981.0,No Facet
+51,Clockwerk,No Facet,1,pos 5,375,51.73333333333333,3018.0,No Facet
+52,Leshrac,No Facet,1,pos 5,25,48.0,0.0,No Facet
+53,Nature's Prophet,No Facet,1,pos 5,252,46.03174603174603,2963.0,No Facet
+57,Omniknight,No Facet,1,pos 5,211,52.13270142180095,3009.0,No Facet
+58,Enchantress,No Facet,1,pos 5,259,52.12355212355212,3012.0,No Facet
+59,Huskar,No Facet,1,pos 5,52,50.0,3003.0,No Facet
+62,Bounty Hunter,No Facet,1,pos 5,152,51.31578947368421,3005.0,No Facet
+63,Weaver,No Facet,1,pos 5,135,44.44444444444444,2966.0,No Facet
+64,Jakiro,No Facet,1,pos 5,808,44.67821782178218,2813.0,No Facet
+65,Batrider,No Facet,1,pos 5,121,36.36363636363637,2935.0,No Facet
+66,Chen,No Facet,1,pos 5,93,51.61290322580645,3010.0,No Facet
+68,Ancient Apparition,No Facet,1,pos 5,635,49.76377952755905,2980.0,No Facet
+69,Doom,No Facet,1,pos 5,45,46.66666666666666,0.0,No Facet
+71,Spirit Breaker,No Facet,1,pos 5,347,46.39769452449568,2942.0,No Facet
+72,Gyrocopter,No Facet,1,pos 5,35,37.142857142857146,0.0,No Facet
+73,Alchemist,No Facet,1,pos 5,203,43.34975369458128,2943.0,No Facet
+74,Invoker,No Facet,1,pos 5,336,55.95238095238095,3071.0,No Facet
+75,Silencer,No Facet,1,pos 5,1223,51.02207686017989,3027.0,No Facet
+79,Shadow Demon,No Facet,1,pos 5,321,46.10591900311527,2946.0,No Facet
+83,Treant Protector,No Facet,1,pos 5,515,56.6990291262136,3116.0,No Facet
+84,Ogre Magi,No Facet,1,pos 5,712,50.42134831460674,2990.0,No Facet
+85,Undying,No Facet,1,pos 5,786,54.07124681933842,3111.0,No Facet
+86,Rubick,No Facet,1,pos 5,1409,54.22285308729595,3210.0,No Facet
+87,Disruptor,No Facet,1,pos 5,1428,50.14005602240896,2982.0,No Facet
+88,Nyx Assassin,No Facet,1,pos 5,180,50.0,2997.0,No Facet
+90,Keeper of the Light,No Facet,1,pos 5,107,53.271028037383175,3012.0,No Facet
+91,Io,No Facet,1,pos 5,471,52.016985138004245,3029.0,No Facet
+92,Visage,No Facet,1,pos 5,38,36.8421052631579,0.0,No Facet
+93,Slark,No Facet,1,pos 5,73,43.83561643835616,2984.0,No Facet
+97,Magnus,No Facet,1,pos 5,237,48.52320675105485,2980.0,No Facet
+100,Tusk,No Facet,1,pos 5,798,52.13032581453634,3053.0,No Facet
+101,Skywrath Mage,No Facet,1,pos 5,485,49.27835051546392,2980.0,No Facet
+102,Abaddon,No Facet,1,pos 5,235,54.04255319148936,3036.0,No Facet
+103,Elder Titan,No Facet,1,pos 5,126,57.142857142857146,3035.0,No Facet
+105,Techies,No Facet,1,pos 5,737,49.66078697421981,2967.0,No Facet
+107,Earth Spirit,No Facet,1,pos 5,115,40.869565217391305,2953.0,No Facet
+110,Phoenix,No Facet,1,pos 5,634,50.1577287066246,2986.0,No Facet
+111,Oracle,No Facet,1,pos 5,662,53.32326283987916,3070.0,No Facet
+112,Winter Wyvern,No Facet,1,pos 5,654,51.22324159021407,3030.0,No Facet
+114,Monkey King,No Facet,1,pos 5,37,40.54054054054054,0.0,No Facet
+119,Dark Willow,No Facet,1,pos 5,358,48.04469273743017,2962.0,No Facet
+121,Grimstroke,No Facet,1,pos 5,665,52.63157894736842,3050.0,No Facet
+123,Hoodwink,No Facet,1,pos 5,714,49.85994397759104,2988.0,No Facet
+126,Void Spirit,No Facet,1,pos 5,20,45.0,0.0,No Facet
+128,Snapfire,No Facet,1,pos 5,690,54.05797101449275,3099.0,No Facet
+129,Mars,No Facet,1,pos 5,20,40.0,0.0,No Facet
+131,Ringmaster,No Facet,1,pos 5,722,50.554016620498615,2996.0,No Facet
+135,Dawnbreaker,No Facet,1,pos 5,88,54.54545454545455,3013.0,No Facet
+136,Marci,No Facet,1,pos 5,176,43.18181818181818,2944.0,No Facet
+138,Muerta,No Facet,1,pos 5,50,38.0,2973.0,No Facet
+155,Largo,No Facet,1,pos 5,126,52.38095238095238,3009.0,No Facet

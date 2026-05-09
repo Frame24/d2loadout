@@ -21,3 +21,6 @@ test_output/
 # OS
 .DS_Store
 Thumbs.db
+
+# Debug exports (generated)
+configs/steam_exports/

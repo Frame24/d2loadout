@@ -207,12 +207,17 @@ def run_full_scraping() -> tuple[bool, bool]:
         return False, False
 
 
-def run_api_scraping() -> bool:
+def run_api_scraping(*, period: str, min_matches: int, mmr: int) -> bool:
     """Сбор heroes_data.csv через API dota2protracker (без браузера)."""
     try:
-        user_print("Сбор статистики через D2PT API (heroes/stats)...")
+        user_print(
+            f"Сбор статистики через D2PT API (heroes/stats)... "
+            f"(period={period}, min_matches={min_matches}, mmr={mmr})"
+        )
         data_manager = DataManager()
-        heroes_df, err = fetch_heroes_stats_safe()
+        heroes_df, err = fetch_heroes_stats_safe(
+            period=period, min_matches=min_matches, mmr=mmr
+        )
         if err:
             user_print(f"ERROR - {err}")
             return False
@@ -379,6 +384,26 @@ def main():
         action="store_true",
         help="DEPRECATED: фасеты через Dotabuff (Selenium)",
     )
+    parser.add_argument(
+        "--period",
+        default="auto",
+        help=(
+            "D2PT period для /api/heroes/stats (например: 8, patch). "
+            "auto = выбирается по дате последнего Dota патча. По умолчанию: auto"
+        ),
+    )
+    parser.add_argument(
+        "--min-matches",
+        type=int,
+        default=20,
+        help="Минимум матчей (min_matches) для /api/heroes/stats. По умолчанию: 20",
+    )
+    parser.add_argument(
+        "--mmr",
+        type=int,
+        default=7000,
+        help="MMR фильтр для /api/heroes/stats. По умолчанию: 7000",
+    )
 
     args = parser.parse_args()
 
@@ -435,8 +460,27 @@ def main():
         if not QUIET_MODE:
             logger.info("Запуск полного процесса (D2PT API + конфиги)...")
 
+        # auto-period: patch, если последний патч моложе 8 дней, иначе 8 days
+        period = args.period
+        if isinstance(period, str) and period.lower() == "auto":
+            try:
+                from modules.utils.patch_period import choose_d2pt_period
+
+                chosen, latest, age_days = choose_d2pt_period(threshold_days=8)
+                period = chosen
+                if latest is not None and age_days is not None:
+                    user_print(
+                        f"Auto period: последний патч {latest.patch_number} "
+                        f"({age_days} дн. назад) -> period={period}"
+                    )
+                else:
+                    user_print(f"Auto period: не удалось определить патч -> period={period}")
+            except Exception as e:
+                user_print(f"Auto period: ошибка определения патча ({e}) -> period=8")
+                period = "8"
+
         total_count += 1
-        if run_api_scraping():
+        if run_api_scraping(period=period, min_matches=args.min_matches, mmr=args.mmr):
             success_count += 1
             total_count += 1
             if run_config_processing():

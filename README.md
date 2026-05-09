@@ -42,6 +42,15 @@ python dota2_data_scraper/main.py --quiet
 # Полные логи для диагностики
 python dota2_data_scraper/main.py
 
+# Параметры D2PT фильтров
+# period=auto — выбирается по дате последнего Dota патча:
+# - если патчу < 8 дней -> period=patch
+# - иначе -> period=8 (8 days)
+python dota2_data_scraper/main.py --period auto --min-matches 20 --mmr 7000
+
+# Можно задать period вручную
+python dota2_data_scraper/main.py --period 8 --min-matches 20 --mmr 7000
+
 # Только скрапинг данных
 python dota2_data_scraper/main.py --scrape-all
 

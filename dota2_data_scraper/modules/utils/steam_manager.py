@@ -23,6 +23,83 @@ class SteamManager:
         self.steam_path = None
         self.config_dirs = []
 
+    @staticmethod
+    def _extract_userdata_id(config_dir: str) -> Optional[str]:
+        """
+        Пытается извлечь Steam userdata id из пути вида:
+          <steam_path>\\userdata\\<id>\\570\\remote\\cfg
+        """
+        try:
+            norm = os.path.normpath(config_dir)
+            parts = norm.split(os.sep)
+            # Ищем сегмент "userdata" и берем следующий как id
+            for i, p in enumerate(parts):
+                if p.lower() == "userdata" and i + 1 < len(parts):
+                    candidate = parts[i + 1]
+                    return candidate if candidate else None
+        except Exception:
+            return None
+        return None
+
+    @staticmethod
+    def _project_export_dir() -> str:
+        # Дублируем в папку проекта, рядом с configs/
+        return os.path.join("configs", "steam_exports")
+
+    def _export_to_project(
+        self,
+        *,
+        source_config_file_path: str,
+        config_dir: str,
+        steam_target_file: str,
+    ) -> None:
+        """
+        Дублирует конфиг в папку проекта для диагностики.
+
+        Пишем две копии:
+        - latest: configs/steam_exports/<userdata>/hero_grid_config.json
+        - snapshot: configs/steam_exports/<userdata>/old_grid/hero_grid_config_<timestamp>.json
+        """
+        try:
+            userdata_id = self._extract_userdata_id(config_dir) or "unknown_userdata"
+            export_root = os.path.join(self._project_export_dir(), userdata_id)
+            os.makedirs(export_root, exist_ok=True)
+
+            # latest
+            latest_path = os.path.join(export_root, "hero_grid_config.json")
+            shutil.copy2(source_config_file_path, latest_path)
+
+            # snapshot
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            export_old = os.path.join(export_root, "old_grid")
+            os.makedirs(export_old, exist_ok=True)
+            snapshot_path = os.path.join(export_old, f"hero_grid_config_{ts}.json")
+            shutil.copy2(source_config_file_path, snapshot_path)
+
+            # диагностический файл: что и куда копировали
+            meta_path = os.path.join(export_root, "last_copy.json")
+            with open(meta_path, "w", encoding="utf-8") as f:
+                json.dump(
+                    {
+                        "timestamp": ts,
+                        "source_config_file_path": os.path.abspath(source_config_file_path),
+                        "steam_target_file": os.path.abspath(steam_target_file),
+                        "steam_config_dir": os.path.abspath(config_dir),
+                        "userdata_id": userdata_id,
+                    },
+                    f,
+                    indent=2,
+                    ensure_ascii=False,
+                )
+
+            logger.info(
+                "Экспорт в проект: %s (latest) + %s (snapshot)",
+                latest_path,
+                snapshot_path,
+            )
+        except Exception as e:
+            logger.warning("Не удалось экспортировать конфиг в проект: %s", e)
+
     def find_steam_path(self) -> Optional[str]:
         """
         Поиск пути к Steam
@@ -200,6 +277,13 @@ class SteamManager:
                     shutil.copy2(config_file_path, target_file)
                     success_count += 1
                     logger.info(f"Конфигурация скопирована в: {config_dir}")
+
+                    # Дублируем для диагностики в папку проекта
+                    self._export_to_project(
+                        source_config_file_path=config_file_path,
+                        config_dir=config_dir,
+                        steam_target_file=target_file,
+                    )
 
                 except Exception as e:
                     logger.warning(f"Не удалось скопировать в {config_dir}: {e}")
