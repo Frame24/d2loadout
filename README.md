@@ -15,7 +15,7 @@
 - **Python 3.8+** с [официального сайта](https://www.python.org/downloads/)
     - При установке обязательно отметьте "Add Python to PATH"
 
-Зависимости (pandas, numpy, requests, pywin32) ставятся из `requirements.txt` автоматически.
+Зависимости (pandas, numpy, requests) ставятся из `requirements.txt` автоматически.
 
 ## Возможности
 

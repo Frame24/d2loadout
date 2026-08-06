@@ -148,7 +148,7 @@ class TestConfigProcessor:
         assert config is None
 
     def test_d2pt_wr_same_heroes_sorted_by_wr(self, processor):
-        """d2pt&wr: тот же топ-N по D2PT, что и у D2PT, но порядок по WR."""
+        """D2PT&WR: тот же топ-N по D2PT, что и у D2PT, но порядок по WR."""
         df = pd.DataFrame(
             {
                 "Hero": ["h1", "h2", "h3", "h4", "h5"],
@@ -162,7 +162,7 @@ class TestConfigProcessor:
         base = 100
         d2pt = processor._create_flat_position_config(
             df,
-            "D2PT",
+            f"D2PT {base}+",
             "D2PT Rating",
             base,
             category_label="D2PT",
@@ -171,10 +171,10 @@ class TestConfigProcessor:
         )
         combo = processor._create_flat_position_config(
             df,
-            "d2pt&wr",
+            f"D2PT&WR {base}+",
             "D2PT Rating",
             base,
-            category_label="d2pt&wr",
+            category_label="D2PT&WR",
             rating_above_average=True,
             max_heroes_per_position=2,
             final_sort_field="WR",

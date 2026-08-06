@@ -6,14 +6,36 @@ import os
 import json
 import shutil
 import logging
+import string
 import winreg
-import win32api
-import win32com.client
 from datetime import datetime
 from typing import List, Optional
 
 
 logger = logging.getLogger(__name__)
+
+
+def _registry_install_path(key_path: str) -> Optional[str]:
+    """Читает InstallPath Steam из HKLM без pywin32."""
+    try:
+        key = winreg.OpenKeyEx(winreg.HKEY_LOCAL_MACHINE, key_path)
+        try:
+            install_path = winreg.QueryValueEx(key, "InstallPath")[0]
+        finally:
+            winreg.CloseKey(key)
+        if install_path and os.path.isdir(install_path):
+            return install_path
+    except OSError:
+        pass
+    return None
+
+
+def _iter_drive_roots():
+    """Корни существующих дисков (C:\\, D:\\, ...)."""
+    for letter in string.ascii_uppercase:
+        root = f"{letter}:\\"
+        if os.path.exists(root):
+            yield root
 
 
 class SteamManager:
@@ -102,7 +124,7 @@ class SteamManager:
 
     def find_steam_path(self) -> Optional[str]:
         """
-        Поиск пути к Steam
+        Поиск пути к Steam (stdlib only: winreg + обход дисков).
 
         Returns:
             Путь к Steam или None если не найден
@@ -110,55 +132,37 @@ class SteamManager:
         try:
             logger.info("Поиск Steam директории...")
 
-            # Метод 1: Через ярлык в Start Menu
-            path1 = f"{os.getenv('APPDATA')}\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk"
-            if os.path.exists(path1):
-                shell = win32com.client.Dispatch("WScript.Shell")
-                shortcut = shell.CreateShortCut(path1)
-                steam_path = os.path.dirname(shortcut.Targetpath)
-                if os.path.exists(steam_path):
-                    logger.info(f"Steam найден через ярлык: {steam_path}")
+            for key_path, label in (
+                (r"SOFTWARE\Wow6432Node\Valve\Steam", "реестр WOW64"),
+                (r"SOFTWARE\Valve\Steam", "реестр"),
+            ):
+                install_path = _registry_install_path(key_path)
+                if install_path:
+                    logger.info(f"Steam найден через {label}: {install_path}")
+                    return install_path
+
+            # Типичные пути без перебора всех дисков
+            env_candidates = [
+                os.path.join(os.environ.get("ProgramFiles(x86)", r"C:\Program Files (x86)"), "Steam"),
+                os.path.join(os.environ.get("ProgramFiles", r"C:\Program Files"), "Steam"),
+                r"C:\Steam",
+                r"D:\Steam",
+            ]
+            for steam_path in env_candidates:
+                if os.path.isfile(os.path.join(steam_path, "steam.exe")):
+                    logger.info(f"Steam найден по стандартному пути: {steam_path}")
                     return steam_path
 
-            # Метод 2: Через реестр (WOW6432Node)
-            try:
-                key = winreg.OpenKeyEx(
-                    winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Wow6432Node\Valve\Steam"
-                )
-                install_path = winreg.QueryValueEx(key, "InstallPath")[0]
-                winreg.CloseKey(key)
-                if os.path.exists(install_path):
-                    logger.info(f"Steam найден через реестр (WOW64): {install_path}")
-                    return install_path
-            except Exception:
-                pass
-
-            # Метод 3: Через реестр (обычный)
-            try:
-                key = winreg.OpenKeyEx(
-                    winreg.HKEY_LOCAL_MACHINE, r"SOFTWARE\Valve\Steam"
-                )
-                install_path = winreg.QueryValueEx(key, "InstallPath")[0]
-                winreg.CloseKey(key)
-                if os.path.exists(install_path):
-                    logger.info(f"Steam найден через реестр: {install_path}")
-                    return install_path
-            except Exception:
-                pass
-
-            # Метод 4: Поиск по стандартным путям
-            possible_paths = [
-                r"Steam\steam.exe",
-                r"Program Files\Steam\steam.exe",
-                r"Program Files (x86)\Steam\steam.exe",
+            relative_exe = [
+                os.path.join("Steam", "steam.exe"),
+                os.path.join("Program Files", "Steam", "steam.exe"),
+                os.path.join("Program Files (x86)", "Steam", "steam.exe"),
             ]
-
-            for drive in win32api.GetLogicalDriveStrings().split("\000")[:-1]:
-                drive = drive.replace(":\\", "")
-                for path in possible_paths:
-                    full_path = f"{drive}:\\{path}"
-                    if os.path.exists(full_path):
-                        steam_path = os.path.dirname(full_path)
+            for root in _iter_drive_roots():
+                for rel in relative_exe:
+                    full_exe = os.path.join(root, rel)
+                    if os.path.isfile(full_exe):
+                        steam_path = os.path.dirname(full_exe)
                         logger.info(f"Steam найден по стандартному пути: {steam_path}")
                         return steam_path
 
