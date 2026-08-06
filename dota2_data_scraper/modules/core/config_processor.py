@@ -12,8 +12,6 @@ import os
 
 from .data_manager import DataManager
 from ..utils.steam_manager import SteamManager
-from ..utils.facet_api_parser import FacetAPIParser
-from ..config.hero_config import HeroConfigProcessor
 from ..config.layout_optimizer import LayoutOptimizer, ScreenDimensions
 
 logger = logging.getLogger(__name__)
@@ -54,16 +52,15 @@ class ConfigProcessor:
             # heroes_no_facets.csv больше не используется: в hero_configs.json только 2 пресета
             # (WR и D2PT) из heroes_data.csv. Удалите старый CSV из configs/, если он ещё лежит.
 
-            mapping = None
             if not self._heroes_without_game_facets(heroes_df):
-                parser = FacetAPIParser()
-                mapping = parser.get_hero_facets_mapping()
-                self.logger.info(
-                    f"Маппинг фасетов загружен для {len(mapping)} героев (legacy CSV)"
+                self.logger.error(
+                    "В heroes_data.csv есть игровые фасеты. "
+                    "Lite-сборка поддерживает только API-данные с Facet='No Facet'."
                 )
+                return False
 
             # Обработка данных героев
-            processed_heroes = self._process_heroes_data(heroes_df, mapping)
+            processed_heroes = self._process_heroes_data(heroes_df)
             if processed_heroes.empty:
                 self.logger.error("Ошибка при обработке данных героев")
                 return False
@@ -115,13 +112,12 @@ class ConfigProcessor:
                 return False
         return True
 
-    def _process_heroes_data(self, heroes_df: pd.DataFrame, mapping: Optional[Dict[str, Dict[str, int]]] = None) -> pd.DataFrame:
+    def _process_heroes_data(self, heroes_df: pd.DataFrame) -> pd.DataFrame:
         """
-        Обработка данных героев
+        Обработка данных героев (только API-путь без игровых фасетов).
 
         Args:
             heroes_df: DataFrame с данными героев
-            mapping: Предзагруженный маппинг фасетов (если None, загрузится автоматически)
 
         Returns:
             Обработанный DataFrame
@@ -129,93 +125,19 @@ class ConfigProcessor:
         try:
             self.logger.info("Обработка данных героев...")
 
+            if not self._heroes_without_game_facets(heroes_df):
+                self.logger.error(
+                    "Обработка игровых фасетов не поддерживается в lite-сборке"
+                )
+                return pd.DataFrame()
+
             # hero_id: если в CSV/API уже есть (stats API отдаёт hero_id), берём его;
             # иначе или при битом значении — маппинг имён через /api/heroes/list.
             heroes_df["hero_id"] = self._hero_ids_with_api_preference(heroes_df)
 
-            if self._heroes_without_game_facets(heroes_df):
-                heroes_df = heroes_df.copy()
-                heroes_df["facet_name"] = "No Facet"
-                heroes_df["facet_number"] = 1
-                if "Expert" in heroes_df.columns:
-                    heroes_df["Expert_WR"] = (
-                        heroes_df["Expert"].astype(str).str.extract(r"(\d+\.?\d*)")
-                    )
-                    heroes_df["Expert_WR"] = pd.to_numeric(
-                        heroes_df["Expert_WR"], errors="coerce"
-                    )
-                cols = list(heroes_df.columns)
-                new_cols = []
-                for pref in ["hero_id", "Hero", "facet_name", "facet_number"]:
-                    if pref in cols and pref not in new_cols:
-                        new_cols.append(pref)
-                new_cols += [c for c in cols if c not in new_cols]
-                processed_df = heroes_df[new_cols].copy()
-                self.logger.info(
-                    f"Обработано {len(processed_df)} записей (без маппинга фасетов)"
-                )
-                return processed_df
-
-            # Используем переданный маппинг или загружаем новый (с кешированием)
-            if mapping is None:
-                parser = FacetAPIParser()
-                mapping = parser.get_hero_facets_mapping()  # {hero_name: {facet_name: order}}
-
-            # Заполняем facet_name из исходных данных, если есть колонка 'Facet'
-            if "Facet" in heroes_df.columns:
-                heroes_df["facet_name"] = heroes_df["Facet"].where(
-                    heroes_df["Facet"].notna(), None
-                )
-            else:
-                heroes_df["facet_name"] = None
-
-            # Вычисляем fallback-порядок появления фасетов для каждого (Hero, Role)
-            try:
-                heroes_df["_fallback_order"] = (
-                    heroes_df.groupby(["Hero", "Role"]).cumcount() + 1
-                )
-            except Exception:
-                heroes_df["_fallback_order"] = 1
-
-            # Определяем facet_number строго по facet_name; фолбек — fallback_order
-            resolved_numbers: List[Optional[int]] = []
-            resolved_names: List[Optional[str]] = []
-            for _, row in heroes_df.iterrows():
-                hero = row.get("Hero")
-                name = row.get("facet_name")
-                fallback_order = row.get("_fallback_order")
-
-                # Если имени нет, попробуем восстановить по fallback_order через инверсию маппинга
-                if not isinstance(name, str) and isinstance(hero, str):
-                    name_to_order = mapping.get(hero, {})
-                    order_to_name = {v: k for k, v in name_to_order.items()}
-                    if isinstance(fallback_order, (int, float)):
-                        candidate = order_to_name.get(int(fallback_order))
-                        if isinstance(candidate, str):
-                            name = candidate
-
-                # Находим номер по имени в маппинге
-                num = None
-                if isinstance(hero, str) and isinstance(name, str):
-                    name_to_order = mapping.get(hero, {})
-                    num = name_to_order.get(name)
-
-                # Фолбек на порядковый номер внутри героя и роли
-                if num is None:
-                    num = int(fallback_order) if pd.notna(fallback_order) else 1
-                resolved_numbers.append(int(num))
-                resolved_names.append(
-                    name if isinstance(name, str) else f"Facet {int(num)}"
-                )
-
-            heroes_df["facet_name"] = resolved_names
-            heroes_df["facet_number"] = resolved_numbers
-
-            # Убираем служебную колонку
-            if "_fallback_order" in heroes_df.columns:
-                heroes_df = heroes_df.drop(columns=["_fallback_order"])
-
-            # Разбиваем Expert на отдельные поля если нужно
+            heroes_df = heroes_df.copy()
+            heroes_df["facet_name"] = "No Facet"
+            heroes_df["facet_number"] = 1
             if "Expert" in heroes_df.columns:
                 heroes_df["Expert_WR"] = (
                     heroes_df["Expert"].astype(str).str.extract(r"(\d+\.?\d*)")
@@ -223,18 +145,16 @@ class ConfigProcessor:
                 heroes_df["Expert_WR"] = pd.to_numeric(
                     heroes_df["Expert_WR"], errors="coerce"
                 )
-
-            # Перемещаем hero_id в начало и facet_name перед facet_number
             cols = list(heroes_df.columns)
             new_cols = []
             for pref in ["hero_id", "Hero", "facet_name", "facet_number"]:
                 if pref in cols and pref not in new_cols:
                     new_cols.append(pref)
             new_cols += [c for c in cols if c not in new_cols]
-
             processed_df = heroes_df[new_cols].copy()
-
-            self.logger.info(f"Обработано {len(processed_df)} записей героев")
+            self.logger.info(
+                f"Обработано {len(processed_df)} записей (без маппинга фасетов)"
+            )
             return processed_df
 
         except Exception as e:

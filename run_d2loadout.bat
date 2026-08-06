@@ -50,7 +50,7 @@ if errorlevel 1 (
 
 echo.
 echo Checking dependencies...
-python -c "import selenium" >nul 2>&1
+python -c "import pandas, requests" >nul 2>&1
 if errorlevel 1 (
     echo Installing requirements...
     python -m pip install --upgrade pip >nul 2>&1
@@ -66,9 +66,6 @@ if errorlevel 1 (
 )
 
 echo.
-echo Note: Chrome is only needed for legacy: python main.py --scrape-all
-
-echo.
 echo ================================================================
 echo   Running main.py - D2PT API + configs
 echo ================================================================
@@ -82,7 +79,6 @@ python main.py
 if errorlevel 1 (
     echo.
     echo ERROR: main.py exited with errors
-    echo Legacy scrape hint: python main.py --no-headless --debug --scrape-all
     echo.
 ) else (
     echo.

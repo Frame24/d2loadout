@@ -1,21 +1,14 @@
 """
-Основной скрипт для запуска Dota 2 Data Scraper
+Основной скрипт для запуска Dota 2 Data Scraper (API + конфиги).
 """
 
 import argparse
 import sys
 import logging
-from typing import Optional
 
-from modules.scrapers.hero_scraper import HeroScraper
 from modules.scrapers.hero_stats_api import fetch_heroes_stats_safe
 from modules.core.data_manager import DataManager
 from modules.core.config_processor import ConfigProcessor
-
-LEGACY_SELENIUM_WARNING = (
-    "DEPRECATED: сбор через Selenium/фасеты устарел; используйте API (запуск без "
-    "--scrape / --scrape-all)."
-)
 
 
 def _try_reconfigure_stdio_utf8() -> None:
@@ -42,32 +35,20 @@ def setup_logging(quiet_mode: bool = False, debug_mode: bool = False):
         )
         return
     if quiet_mode:
-        # Тихий режим - только критические ошибки и пользовательские сообщения
         logging.basicConfig(
             level=logging.CRITICAL,
             format="%(message)s",
             handlers=[logging.StreamHandler()],
             force=True,
         )
-        # Отключаем логи всех модулей
-        logging.getLogger("selenium").setLevel(logging.CRITICAL)
         logging.getLogger("urllib3").setLevel(logging.CRITICAL)
-        logging.getLogger("WDM").setLevel(logging.CRITICAL)
-        logging.getLogger("webdriver_manager").setLevel(logging.CRITICAL)
         logging.getLogger("modules").setLevel(logging.CRITICAL)
         logging.getLogger("modules.scrapers").setLevel(logging.CRITICAL)
         logging.getLogger("modules.core").setLevel(logging.CRITICAL)
         logging.getLogger("modules.utils").setLevel(logging.CRITICAL)
-        logging.getLogger("modules.scrapers.hero_scraper").setLevel(logging.CRITICAL)
-        logging.getLogger("modules.core.scraping_manager").setLevel(logging.CRITICAL)
         logging.getLogger("modules.core.data_manager").setLevel(logging.CRITICAL)
-        logging.getLogger("modules.utils.facet_api_parser").setLevel(logging.CRITICAL)
-        logging.getLogger("modules.utils.dialog_handler").setLevel(logging.CRITICAL)
-        logging.getLogger("modules.utils.period_selector").setLevel(logging.CRITICAL)
-        # Отключаем корневой логгер для всех модулей
         logging.getLogger().setLevel(logging.CRITICAL)
     else:
-        # Обычный режим
         logging.basicConfig(
             level=logging.INFO,
             format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -75,11 +56,9 @@ def setup_logging(quiet_mode: bool = False, debug_mode: bool = False):
         )
 
 
-# Временная настройка логирования (будет переопределена в main)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Глобальная переменная для режима
 QUIET_MODE = False
 DEBUG_MODE = False
 
@@ -92,9 +71,7 @@ def user_print(message: str):
         logger.info(message)
 
 
-def _print_preview_first_rows(
-    df, role: str = "pos 4", rows: int = 10
-):
+def _print_preview_first_rows(df, role: str = "pos 4", rows: int = 10):
     """Печатает первые N строк по позиции (Hero, Role, Matches, WR, D2PT)."""
     if df.empty or "Hero" not in df.columns:
         return
@@ -123,88 +100,18 @@ def _print_preview_first_rows(
         user_print(" ".join(parts))
 
 
-def check_selenium_installed() -> bool:
-    """Нужен только для legacy-скрапинга с браузером."""
-    try:
-        import selenium
-
-        logger.info(f"Selenium установлен, версия: {selenium.__version__}")
-        return True
-    except ImportError:
-        logger.error(
-            "❌ Selenium не найден. Установите: pip install selenium "
-            "(требуется только для --scrape / --scrape-all)."
-        )
-        return False
-
-
 def check_core_dependencies() -> bool:
     """Минимальные зависимости для API-пайплайна."""
     try:
         import pandas  # noqa: F401
-    except ImportError:
-        logger.error("❌ Не установлен pandas. Выполните: pip install -r requirements.txt")
+        import requests  # noqa: F401
+    except ImportError as e:
+        logger.error(
+            f"❌ Не установлена зависимость ({e.name}). "
+            "Выполните: pip install -r requirements.txt"
+        )
         return False
     return True
-
-
-def run_full_scraping() -> tuple[bool, bool]:
-    """
-    Deprecated: Selenium — два CSV (фасеты + без фасетов) за один проход браузера.
-
-    Returns:
-        tuple: (успех_с_фасетами, успех_без_фасетов)
-    """
-    try:
-        user_print(LEGACY_SELENIUM_WARNING)
-        user_print("Запуск сбора данных с dota2protracker.com (legacy Selenium)...")
-        scraper = HeroScraper(
-            headless=getattr(run_full_scraping, "_headless", True),
-            debug_dotabuff=getattr(run_full_scraping, "_debug_dotabuff", False),
-        )
-        data_manager = DataManager()
-
-        # Эффективный сбор обоих типов данных за один проход
-        user_print("Собираем статистику героев...")
-        heroes_df, heroes_no_facets_df = scraper.scrape_both_data_types(
-            show_progress=QUIET_MODE
-        )
-
-        if not heroes_df.empty:
-            _print_preview_first_rows(heroes_df, role="pos 4", rows=10)
-
-        # Сохранение данных с фасетами (в CSV номер фасета не сохраняем)
-        success_with_facets = False
-        if not heroes_df.empty:
-            to_save = heroes_df.drop(columns=["facet_number"], errors="ignore")
-            success_with_facets = data_manager.save_dataframe(
-                to_save, "heroes_data.csv"
-            )
-            if success_with_facets:
-                user_print("OK - Данные с фасетами сохранены")
-            else:
-                user_print("ERROR - Ошибка при сохранении данных с фасетами")
-        else:
-            user_print("ERROR - Не удалось собрать данные с фасетами")
-
-        # Сохранение данных без фасетов
-        success_no_facets = False
-        if not heroes_no_facets_df.empty:
-            success_no_facets = data_manager.save_dataframe(
-                heroes_no_facets_df, "heroes_no_facets.csv"
-            )
-            if success_no_facets:
-                user_print("OK - Данные без фасетов сохранены")
-            else:
-                user_print("ERROR - Ошибка при сохранении данных без фасетов")
-        else:
-            user_print("ERROR - Не удалось собрать данные без фасетов")
-
-        return success_with_facets, success_no_facets
-
-    except Exception as e:
-        user_print(f"ERROR - Ошибка при сборе данных: {e}")
-        return False, False
 
 
 def run_api_scraping(*, period: str, min_matches: int, mmr: int) -> bool:
@@ -235,80 +142,12 @@ def run_api_scraping(*, period: str, min_matches: int, mmr: int) -> bool:
         return False
 
 
-def run_heroes_scraping() -> bool:
-    """Deprecated: скрапинг героев с фасетами (Selenium)."""
-    try:
-        user_print(LEGACY_SELENIUM_WARNING)
-        user_print("Запуск сбора данных с фасетами (legacy)...")
-        scraper = HeroScraper(
-            headless=getattr(run_heroes_scraping, "_headless", True),
-            debug_dotabuff=getattr(run_heroes_scraping, "_debug_dotabuff", False),
-        )
-        data_manager = DataManager()
-
-        # Сбор данных
-        heroes_df = scraper.scrape_heroes_data(show_progress=QUIET_MODE)
-
-        if not heroes_df.empty:
-            _print_preview_first_rows(heroes_df, role="pos 4", rows=10)
-            to_save = heroes_df.drop(columns=["facet_number"], errors="ignore")
-            success = data_manager.save_dataframe(to_save, "heroes_data.csv")
-            if success:
-                logger.info("✅ Скрапинг данных с фасетами завершен успешно")
-                return True
-            else:
-                logger.error("❌ Ошибка при сохранении данных с фасетами")
-                return False
-        else:
-            logger.error("❌ Не удалось собрать данные с фасетами")
-            return False
-
-    except Exception as e:
-        logger.error(f"❌ Ошибка при скрапинге с фасетами: {e}")
-        return False
-
-
-def run_heroes_no_facets_scraping() -> bool:
-    """Deprecated: скрапинг без фасетов (Selenium)."""
-    try:
-        user_print(LEGACY_SELENIUM_WARNING)
-        logger.info("Запуск скрапинга данных без фасетов (legacy)...")
-        scraper = HeroScraper(
-            headless=getattr(run_heroes_scraping, "_headless", True),
-            debug_dotabuff=getattr(run_heroes_scraping, "_debug_dotabuff", False),
-        )
-        data_manager = DataManager()
-
-        # Сбор данных без фасетов
-        heroes_no_facets_df = scraper.scrape_heroes_no_facets()
-
-        if not heroes_no_facets_df.empty:
-            # Сохранение данных без фасетов
-            success = data_manager.save_dataframe(
-                heroes_no_facets_df, "heroes_no_facets.csv"
-            )
-            if success:
-                logger.info("✅ Скрапинг данных без фасетов завершен успешно")
-                return True
-            else:
-                logger.error("❌ Ошибка при сохранении данных без фасетов")
-                return False
-        else:
-            logger.error("❌ Не удалось собрать данные без фасетов")
-            return False
-
-    except Exception as e:
-        logger.error(f"❌ Ошибка при скрапинге без фасетов: {e}")
-        return False
-
-
 def run_config_processing() -> bool:
     """Запуск обработки конфигураций"""
     try:
         user_print("Обрабатываем данные и создаем конфигурации...")
         processor = ConfigProcessor()
 
-        # Обработка данных
         success = processor.process_all_data()
         if success:
             user_print("OK - Конфигурации созданы и скопированы в Steam")
@@ -327,32 +166,15 @@ def main():
     global QUIET_MODE, DEBUG_MODE
 
     parser = argparse.ArgumentParser(
-        description="Dota 2 Data Scraper - сбор данных с dota2protracker.com",
+        description="Dota 2 Loadout - D2PT API и конфигурации героев",
         epilog="""
 Примеры использования:
-  run_d2loadout.bat                 # API + конфиги (без Chrome)
+  run_d2loadout.bat                 # API + конфиги
   python main.py --quiet            # Тихий режим
   python main.py                    # API + конфиги с логами
   python main.py --config           # Только обработка CSV → hero_configs.json
-  python main.py --scrape-all       # DEPRECATED: Selenium, два CSV
-  python main.py --no-headless      # Только для legacy --scrape*
         """,
         formatter_class=argparse.RawDescriptionHelpFormatter,
-    )
-    parser.add_argument(
-        "--scrape",
-        action="store_true",
-        help="DEPRECATED: только данные с фасетами (Selenium + Chrome)",
-    )
-    parser.add_argument(
-        "--scrape-no-facets",
-        action="store_true",
-        help="DEPRECATED: только данные без фасетов (Selenium)",
-    )
-    parser.add_argument(
-        "--scrape-all",
-        action="store_true",
-        help="DEPRECATED: Selenium — heroes_data + heroes_no_facets за один проход",
     )
     parser.add_argument(
         "--config",
@@ -365,11 +187,6 @@ def main():
         help="Полный процесс: API + обработка конфигураций (как запуск без флагов)",
     )
     parser.add_argument(
-        "--no-headless",
-        action="store_true",
-        help="Показывать браузер Chrome (полезно для отладки)",
-    )
-    parser.add_argument(
         "--quiet",
         action="store_true",
         help="Тихий режим - минимум логов для пользователей",
@@ -378,11 +195,6 @@ def main():
         "--debug",
         action="store_true",
         help="Расширенное логирование и диагностика",
-    )
-    parser.add_argument(
-        "--debug-dotabuff",
-        action="store_true",
-        help="DEPRECATED: фасеты через Dotabuff (Selenium)",
     )
     parser.add_argument(
         "--period",
@@ -413,54 +225,20 @@ def main():
         QUIET_MODE = False
     setup_logging(QUIET_MODE, DEBUG_MODE)
 
-    needs_selenium = (
-        args.scrape or args.scrape_no_facets or args.scrape_all
-    )
-    if needs_selenium:
-        if not check_selenium_installed():
-            sys.exit(1)
-    else:
-        if not check_core_dependencies():
-            sys.exit(1)
-
-    # Протаскиваем настройки для скрапинга
-    setattr(run_heroes_scraping, "_headless", not args.no_headless)
-    setattr(run_full_scraping, "_headless", not args.no_headless)
-    setattr(run_heroes_scraping, "_debug_dotabuff", args.debug_dotabuff)
-    setattr(run_full_scraping, "_debug_dotabuff", args.debug_dotabuff)
+    if not check_core_dependencies():
+        sys.exit(1)
 
     success_count = 0
     total_count = 0
 
-    # Определяем, какие процессы запускать
-    if args.scrape:
-        total_count += 1
-        if run_heroes_scraping():
-            success_count += 1
-    elif args.scrape_no_facets:
-        total_count += 1
-        if run_heroes_no_facets_scraping():
-            success_count += 1
-    elif args.scrape_all:
-        if not QUIET_MODE:
-            logger.info("Запуск legacy-скрапинга (Selenium)...")
-        total_count += 2
-        success_with_facets, success_no_facets = run_full_scraping()
-        if success_with_facets:
-            success_count += 1
-        if success_no_facets:
-            success_count += 1
-    elif args.config:
+    if args.config:
         total_count += 1
         if run_config_processing():
             success_count += 1
-    elif args.all or not any(
-        [args.scrape, args.scrape_no_facets, args.scrape_all, args.config]
-    ):
+    elif args.all or not args.config:
         if not QUIET_MODE:
             logger.info("Запуск полного процесса (D2PT API + конфиги)...")
 
-        # auto-period: patch, если последний патч моложе 8 дней, иначе 8 days
         period = args.period
         if isinstance(period, str) and period.lower() == "auto":
             try:
@@ -474,7 +252,9 @@ def main():
                         f"({age_days} дн. назад) -> period={period}"
                     )
                 else:
-                    user_print(f"Auto period: не удалось определить патч -> period={period}")
+                    user_print(
+                        f"Auto period: не удалось определить патч -> period={period}"
+                    )
             except Exception as e:
                 user_print(f"Auto period: ошибка определения патча ({e}) -> period=8")
                 period = "8"
@@ -491,7 +271,6 @@ def main():
                 "(проверьте сеть или попробуйте позже)."
             )
 
-    # Итоговый отчет
     if QUIET_MODE:
         if success_count == total_count:
             user_print("ГОТОВО! Конфигурации обновлены в Dota 2")
