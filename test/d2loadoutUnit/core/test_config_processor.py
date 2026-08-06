@@ -147,8 +147,8 @@ class TestConfigProcessor:
         )
         assert config is None
 
-    def test_d2pt_wr_same_heroes_sorted_by_wr(self, processor):
-        """D2PT&WR: тот же топ-N по D2PT, что и у D2PT, но порядок по WR."""
+    def test_wr_config_same_heroes_as_d2pt_sorted_by_wr(self, processor):
+        """WR: тот же топ-N по D2PT, что и у D2PT, но порядок по WR."""
         df = pd.DataFrame(
             {
                 "Hero": ["h1", "h2", "h3", "h4", "h5"],
@@ -169,19 +169,42 @@ class TestConfigProcessor:
             rating_above_average=True,
             max_heroes_per_position=2,
         )
-        combo = processor._create_flat_position_config(
+        wr = processor._create_flat_position_config(
             df,
-            f"D2PT&WR {base}+",
+            f"WR {base}+",
             "D2PT Rating",
             base,
-            category_label="D2PT&WR",
+            category_label="WR",
             rating_above_average=True,
             max_heroes_per_position=2,
             final_sort_field="WR",
         )
-        assert d2pt is not None and combo is not None
+        assert d2pt is not None and wr is not None
         ids_d2pt = d2pt["categories"][0]["hero_ids"]
-        ids_combo = combo["categories"][0]["hero_ids"]
+        ids_wr = wr["categories"][0]["hero_ids"]
         assert ids_d2pt == [1, 2]
-        assert ids_combo == [2, 1]
-        assert set(ids_d2pt) == set(ids_combo)
+        assert ids_wr == [2, 1]
+        assert set(ids_d2pt) == set(ids_wr)
+
+    def test_matches_config_ignores_wr_and_d2pt_filters(self, processor):
+        """Matches: отбор только по матчам, без порога WR и среднего D2PT."""
+        df = pd.DataFrame(
+            {
+                "Hero": ["low_wr", "low_d2pt", "ok"],
+                "Role": ["pos 1", "pos 1", "pos 1"],
+                "Matches": [200, 200, 50],
+                "WR": [40.0, 60.0, 60.0],
+                "D2PT Rating": [9.0, 1.0, 9.0],
+                "hero_id": [1, 2, 3],
+            }
+        )
+        cfg = processor._create_flat_position_config(
+            df,
+            "Matches 100+",
+            "Matches",
+            100,
+            category_label="Matches",
+            max_heroes_per_position=10,
+        )
+        assert cfg is not None
+        assert set(cfg["categories"][0]["hero_ids"]) == {1, 2}

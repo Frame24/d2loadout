@@ -19,11 +19,9 @@ logger = logging.getLogger(__name__)
 # Порог «значимого» объёма матчей на роли: перцентиль считаем только по героям с Matches строго выше этого значения.
 _ROLE_PCTL_SHARE = 0.0025
 _ROLE_PCTL_MIN_MATCHES = 100
-# WR-пресет: порог матчей = max(100, q-й перцентиль выборки по роли).
+# Порог матчей для WR-ветки через перцентиль по роли (логирование / утилиты).
 _WR_MATCH_PCTL_Q = 0.15
 _WR_MATCH_MIN_AFTER_PCTL = 100
-# Минимальный WR (%) для WR-пресета (и для имени конфига "WR {n}+").
-_WR_MIN_THRESHOLD = 51
 
 
 class ConfigProcessor:
@@ -571,15 +569,13 @@ class ConfigProcessor:
             config = {
                 "version": 3,
                 "configs": [
+                    # Только порог матчей: без фильтров WR / D2PT Rating.
                     self._create_flat_position_config(
                         heroes_df,
-                        f"WR {_WR_MIN_THRESHOLD}+",
-                        "WR",
-                        0,
-                        category_label="WR",
-                        wr_threshold=_WR_MIN_THRESHOLD,
-                        max_heroes_per_position=None,
-                        match_percentile_per_role=_WR_MATCH_PCTL_Q,
+                        f"Matches {base_threshold}+",
+                        "Matches",
+                        base_threshold,
+                        category_label="Matches",
                     ),
                     self._create_flat_position_config(
                         heroes_df,
@@ -589,12 +585,13 @@ class ConfigProcessor:
                         category_label="D2PT",
                         rating_above_average=True,
                     ),
+                    # Тот же отбор, что у D2PT, порядок в колонке по WR.
                     self._create_flat_position_config(
                         heroes_df,
-                        f"D2PT&WR {base_threshold}+",
+                        f"WR {base_threshold}+",
                         "D2PT Rating",
                         base_threshold,
-                        category_label="D2PT&WR",
+                        category_label="WR",
                         rating_above_average=True,
                         final_sort_field="WR",
                     ),
